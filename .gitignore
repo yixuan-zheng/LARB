@@ -1,0 +1,14 @@
+preflight/run-output/
+__pycache__/
+*.pyc
+.venv/
+venv/
+hf-cache/
+*.safetensors
+*.pt
+*.pth
+*.bin
+.env
+.env.*
+*token*
+!preflight/code/access_status.json

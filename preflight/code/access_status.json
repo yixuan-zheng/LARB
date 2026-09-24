@@ -1,0 +1,38 @@
+{
+  "model": "google/gemma-3n-E4B",
+  "revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+  "authenticated": true,
+  "config_and_tokenizer_access": true,
+  "files": {
+    "config.json": {
+      "bytes": 4496,
+      "sha256": "2626e2448413725c830a4b77f718ff6f07d919d623a71d3b143f2914c712f1ec"
+    },
+    "tokenizer.json": {
+      "bytes": 33442559,
+      "sha256": "c4c19736bf24d1c6805cf49340e31bd02c70fb7857a2cb31065c90c2b5719c4e"
+    },
+    "tokenizer.model": {
+      "bytes": 4696020,
+      "sha256": "ea5f0cc48abfbfc04d14562270a32e02149a3e7035f368cc5a462786f4a59961"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1202311,
+      "sha256": "53f610f9a24692d444ab7f64b9b6ac07b0edabca6b15bb530d1b056bd36bc6e2"
+    },
+    "special_tokens_map.json": {
+      "bytes": 769,
+      "sha256": "d0585986e1fa2764eb2ca29cd854da40478d804a9953ba2e2c1c682d1428adc6"
+    }
+  },
+  "config_check": {
+    "num_layers": 35,
+    "full_ffn_hidden_dim": 16384,
+    "attention_heads": 8,
+    "kv_heads": 2,
+    "head_dim": 256,
+    "kv_shared_layers": 15,
+    "presets_fit_official_config": true,
+    "tokenizer_tokens_in_sample": 6
+  }
+}

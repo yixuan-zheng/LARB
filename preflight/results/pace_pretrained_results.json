@@ -1,0 +1,70 @@
+{
+  "model": "google/gemma-3n-E4B",
+  "revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+  "device": "NVIDIA L40S",
+  "checks": {
+    "load": {
+      "passed": true,
+      "seconds": 17.44
+    },
+    "generation": {
+      "passed": true,
+      "new_tokens": 8,
+      "seconds": 12.75,
+      "text": "The capital of France is a city of contrasts. It is a"
+    },
+    "full_width_equivalence": {
+      "passed": true,
+      "max_abs_logit_error": 0.0
+    },
+    "small_width_slice": {
+      "passed": true,
+      "ffn_width": 8192,
+      "max_abs_mlp_error": 0.0,
+      "finite_pretrained_logits": true
+    },
+    "cache_large": {
+      "max_abs_logit_error": 1.025390625,
+      "same_argmax": true,
+      "cached_shape": [
+        1,
+        1,
+        262400
+      ],
+      "numerical_equivalence_established": false,
+      "finite_logits": true
+    },
+    "cache_small": {
+      "max_abs_logit_error": 1.34375,
+      "same_argmax": true,
+      "cached_shape": [
+        1,
+        1,
+        262400
+      ],
+      "numerical_equivalence_established": false,
+      "finite_logits": true
+    },
+    "switch_large_to_small": {
+      "passed": true,
+      "finite_logits": true,
+      "shape": [
+        1,
+        1,
+        262400
+      ]
+    },
+    "switch_small_to_large": {
+      "passed": true,
+      "finite_logits": true,
+      "shape": [
+        1,
+        1,
+        262400
+      ]
+    }
+  },
+  "load_seconds": 17.44,
+  "peak_gpu_bytes_after_load": 15644096000,
+  "peak_gpu_bytes": 15690238464
+}

@@ -1,0 +1,12 @@
+{
+  "model": "google/gemma-3n-E4B",
+  "revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+  "shards": {
+    "model-00001-of-00004.safetensors": 3077103824,
+    "model-00002-of-00004.safetensors": 4966792808,
+    "model-00003-of-00004.safetensors": 4992870216,
+    "model-00004-of-00004.safetensors": 2663414864
+  },
+  "total_shard_bytes": 15700181712,
+  "complete": true
+}

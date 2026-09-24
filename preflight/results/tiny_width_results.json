@@ -1,0 +1,14 @@
+{
+  "torch": "2.14.0",
+  "model": "Gemma3nForCausalLM, randomly initialized tiny 10-layer model",
+  "widths": [
+    32,
+    64
+  ],
+  "activation_sparsity_tested": true,
+  "full_vs_stock_max_abs_logit_error": 0.0,
+  "narrow_vs_extracted_max_abs_logit_error": 0.0,
+  "restored_full_max_abs_logit_error": 0.0,
+  "tolerance_atol_rtol": 1e-05,
+  "passed": true
+}

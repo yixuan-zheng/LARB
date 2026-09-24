@@ -1,0 +1,18 @@
+Preflight package: prior checks, not the Week 1 experiment code.
+
+PACE setup for a teammate's own account:
+1. Clone the repository and `cd MatFormer-ElasticServing`.
+2. `bash preflight/environment/setup_pace.sh`
+3. `source preflight/environment/activate_pace.sh`
+4. Accept the terms for google/gemma-3n-E4B on Hugging Face, then run `hf auth login` and `hf auth whoami` in your shell. Never commit or share the token.
+5. Download the pinned checkpoint to your own HF_HOME: `python preflight/code/fetch_model.py`. This is about 15.7 GB of weight shards; check scratch free space first. Do not run the pretrained checks on a login node.
+6. In a PACE GPU allocation, run `python preflight/code/pace_check_access.py`, then `python preflight/code/pace_pretrained_checks.py` and other `pace_*.py` experiments as needed.
+
+CPU-only checks, including on a Mac with Python 3.10:
+- Install compatible torch and transformers in a local virtual environment.
+- `python preflight/code/check_presets.py`
+- `python preflight/code/test_tiny_width.py`
+
+The preflight/code and preflight/results directories hold source snapshots and preserved results. New script output goes to preflight/run-output, which is Git-ignored. The PACE environment lives in your own scratch directory, configured through MATFORMER_PROJECT_ROOT; it never modifies cbm39. Use preflight/environment/pace-requirements.txt for the exact original environment freeze, and requirements.txt for a smaller setup. The pinned model revision and Google preset revision are in the code and presets.json.
+
+Some checks are exploratory and may take significant GPU memory, especially float32. Schedule those separately. The result files are records of the initial runs, not guaranteed reference scores on a different GPU or software version.

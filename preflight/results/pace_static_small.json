@@ -1,0 +1,12 @@
+{
+  "model": "google/gemma-3n-E4B",
+  "revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+  "preset": "small",
+  "dtype": "bfloat16",
+  "static_model": "separate Gemma3nForCausalLM with physically sliced E4B tensor views",
+  "layers": 35,
+  "sliced_layers": 20,
+  "max_abs_logit_error": 0.0,
+  "same_argmax": true,
+  "passed": true
+}
