@@ -1,0 +1,64 @@
+{
+  "task": "GSM8K 8-shot chain-of-thought, base LM (no chat template)",
+  "dataset": {
+    "name": "openai/gsm8k",
+    "config": "main",
+    "split": "test",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "file": "gsm8k_eval.jsonl",
+    "file_sha256": "6fd8b9c7cc3012546ae5a7229651b585b313041dae722ee37cc7d435b50d3cd8"
+  },
+  "splits": {
+    "seed": 6222,
+    "dev": 250,
+    "heldout": 250,
+    "diagnostic": "first 50 dev examples (teacher-forced gold solutions)"
+  },
+  "prompt": {
+    "file": "fewshot_prompt.txt",
+    "file_sha256": "3d55795c084e26f6ebb6925833999a44f75c4280eb7ab4d66f9bb940244e4847",
+    "format": "<fewshot>Q: {question}\\nA:"
+  },
+  "decoding": {
+    "greedy": true,
+    "max_new_tokens": 256,
+    "stop_strings": [
+      "\n\n",
+      "\nQ:"
+    ]
+  },
+  "metric": "exact match of the extracted final number against the gold answer",
+  "answer_extraction": "number after the last 'The answer is'; otherwise the last number in the output; commas, '$' and a trailing '.' removed; compared numerically",
+  "quality_floor": {
+    "reference": "static_L on the same examples",
+    "tolerance_pp": 5.0,
+    "rule": "pass (non-inferior) if the lower bound of the 95% paired bootstrap CI on accuracy(schedule) - accuracy(static_L) is >= -5.0 pp",
+    "not_established": "point estimate >= -5.0 pp but CI lower bound < -5.0 pp",
+    "aligned_with": "team-wide Week 1 quality gate (<= 5 pp loss vs Large, 95% paired bootstrap)"
+  },
+  "uncertainty": [
+    "Wilson 95% CI per accuracy",
+    "paired bootstrap 95% CI on the difference vs static_L (10,000 resamples, seed 6222; examples resampled individually since GSM8K questions are independent)",
+    "exact McNemar p-value vs static_L"
+  ],
+  "protocol": "schedules and restrictions are chosen on dev; held-out is evaluated once, after selection",
+  "manifest": {
+    "run_id": "prepare-data-20261001-002759",
+    "seed": 6222,
+    "command": "python prepare_data.py",
+    "git_commit": "79431c7c8a30c7ab59f74685ded6e4dda6f1a95c",
+    "git_dirty": false,
+    "model": "google/gemma-3n-E4B",
+    "model_revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+    "presets_sha256": "03a51e2b98bf340f5001c9b41d890874fa7d2cee621ffb04ab3e2860eef56788",
+    "presets_source_revision": "cf93a642430e7e6891ca38537b5c8d8dd9ba5a7e",
+    "hardware": "cpu",
+    "dtype": null,
+    "packages": {
+      "torch": "2.9.1",
+      "transformers": "5.7.0"
+    },
+    "created": "2026-10-01T00:27:59-0400",
+    "datasets_version": "5.0.1"
+  }
+}
