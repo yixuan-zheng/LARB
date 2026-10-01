@@ -1,0 +1,8 @@
+...............sss                                                       [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:368
+  <DOWNLOADS>/CS6222-nanochat-inference/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at <PYTORCH_BUILD>/torch/csrc/utils/tensor_numpy.cpp:84.)
+    cpu = _conversion_method_template(device=torch.device("cpu"))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+15 passed, 3 skipped, 1 warning in 1.02s

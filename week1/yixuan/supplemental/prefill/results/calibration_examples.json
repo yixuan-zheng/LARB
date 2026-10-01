@@ -1,0 +1,778 @@
+[
+  {
+    "id": "5726b4745951b619008f7b24",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "Simon Kelner",
+    "raw_output": " Simon Kelner\n",
+    "references": [
+      "Simon Kelner"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679,
+      4210862.932142468,
+      4210862.992737934
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "570e7ff60b85d914000d7f59",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "gold",
+    "raw_output": " gold\n",
+    "references": [
+      "gold"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 2,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56de7d2d4396321400ee2967",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "30 minutes",
+    "raw_output": " 30 minutes",
+    "references": [
+      "half an hour"
+    ],
+    "em": 0,
+    "f1": 0,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679,
+      4210862.932142468,
+      4210862.992737934,
+      4210863.053658885
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5726f6ecf1498d1400e8f124",
+    "bucket": 256,
+    "prompt_tokens": 251,
+    "answer": "The world",
+    "raw_output": " The world",
+    "references": [
+      "world"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 2,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679,
+      4210862.932142468
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5728ca18ff5b5019007da6b1",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "Russian military bases",
+    "raw_output": " Russian military bases\n",
+    "references": [
+      "Russian military bases"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679,
+      4210862.932142468,
+      4210862.992737934
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "572843fc4b864d1900164863",
+    "bucket": 256,
+    "prompt_tokens": 254,
+    "answer": "",
+    "raw_output": "",
+    "references": [
+      "those responsible for the attacks on 11 September 2001"
+    ],
+    "em": 0,
+    "f1": 0,
+    "tokens": 0,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5727f0053acd2414000df033",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "Nasser's goal was to become a military officer.",
+    "raw_output": " Nasser's goal was to become a military officer.\n",
+    "references": [
+      "a military career"
+    ],
+    "em": 0,
+    "f1": 0.2222222222222222,
+    "tokens": 12,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679,
+      4210862.932142468,
+      4210862.992737934,
+      4210863.053658885,
+      4210863.114739753,
+      4210863.175870697,
+      4210863.236707367,
+      4210863.297328762,
+      4210863.358488216,
+      4210863.418765393,
+      4210863.479575208
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56df5e858bc80c19004e4b3e",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "Lady Astor",
+    "raw_output": " Lady Astor\n",
+    "references": [
+      "Lady Astor"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 3,
+    "truncated": false,
+    "token_times": [
+      4210862.810956228,
+      4210862.871840679,
+      4210862.932142468
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "57097f61ed30961900e8422c",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "Because it is difficult to develop such a broad range of skills.",
+    "raw_output": " Because it is difficult to develop such a broad range of skills.",
+    "references": [
+      "it is difficult to develop such a broad range of skills"
+    ],
+    "em": 0,
+    "f1": 0.9523809523809523,
+    "tokens": 13,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884,
+      4210864.329250732,
+      4210864.387227208,
+      4210864.445344831,
+      4210864.503326312,
+      4210864.561164325,
+      4210864.619103016,
+      4210864.676799141,
+      4210864.734237593,
+      4210864.791654798,
+      4210864.849649707,
+      4210864.907097698
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "573435f44776f41900661a8e",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "Los Angeles",
+    "raw_output": " Los Angeles\n",
+    "references": [
+      "Los Angeles ports"
+    ],
+    "em": 0,
+    "f1": 0.8,
+    "tokens": 3,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "57315f42497a881900248e91",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "1860",
+    "raw_output": " 1860\n",
+    "references": [
+      "1860"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 6,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884,
+      4210864.329250732,
+      4210864.387227208,
+      4210864.445344831
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "570e808e0b85d914000d7f61",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "9 May 1901",
+    "raw_output": " 9 May 1901",
+    "references": [
+      "9 May 1901"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 8,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884,
+      4210864.329250732,
+      4210864.387227208,
+      4210864.445344831,
+      4210864.503326312,
+      4210864.561164325,
+      4210864.619103016
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "570d94c3fed7b91900d46247",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "volcanic activity",
+    "raw_output": " volcanic activity",
+    "references": [
+      "volcanic"
+    ],
+    "em": 0,
+    "f1": 0.6666666666666666,
+    "tokens": 2,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5728253a2ca10214002d9ef4",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "68",
+    "raw_output": " 68\n",
+    "references": [
+      "68"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884,
+      4210864.329250732
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56f89db09b226e1400dd0ccf",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "500",
+    "raw_output": " 500\n",
+    "references": [
+      "500"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 5,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884,
+      4210864.329250732,
+      4210864.387227208
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56f73c54aef2371900625a35",
+    "bucket": 256,
+    "prompt_tokens": 253,
+    "answer": "1400 to 1600",
+    "raw_output": " 1400 to 1600\n",
+    "references": [
+      "from 1400 to 1600"
+    ],
+    "em": 0,
+    "f1": 0.8571428571428571,
+    "tokens": 12,
+    "truncated": false,
+    "token_times": [
+      4210864.155487543,
+      4210864.213897648,
+      4210864.271584884,
+      4210864.329250732,
+      4210864.387227208,
+      4210864.445344831,
+      4210864.503326312,
+      4210864.561164325,
+      4210864.619103016,
+      4210864.676799141,
+      4210864.734237593,
+      4210864.791654798
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56e08680231d4119001ac26e",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "1947",
+    "raw_output": " 1947\n",
+    "references": [
+      "1947"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 6,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429,
+      4210865.989367861,
+      4210866.049269852
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "572e9d48cb0c0d14000f136e",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "13 kPa (100 Torr)",
+    "raw_output": " 13 kPa (100 Torr)\n",
+    "references": [
+      "13 kPa (100 Torr),"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 11,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429,
+      4210865.989367861,
+      4210866.049269852,
+      4210866.108974835,
+      4210866.169099612,
+      4210866.228969378,
+      4210866.288977134,
+      4210866.349443073
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "57326423e99e3014001e6766",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "children from parents",
+    "raw_output": " children from parents\n",
+    "references": [
+      "children from parents"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5731a60de17f3d14004222b3",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "Billboard",
+    "raw_output": " Billboard\n",
+    "references": [
+      "Billboard"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 2,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56dfefe9231d4119001abec5",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "gastro-pubs",
+    "raw_output": " gastro-pubs\n",
+    "references": [
+      "gastro-pubs"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5728eae32ca10214002daa8e",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "The British destroyed the major government buildings, oil wells and mines for tungsten, tin, lead and silver to keep them from the Japanese. Myanmar was bombed extensively by",
+    "raw_output": " The British destroyed the major government buildings, oil wells and mines for tungsten, tin, lead and silver to keep them from the Japanese. Myanmar was bombed extensively by",
+    "references": [
+      "British destroyed the major government buildings, oil wells and mines for tungsten, tin, lead and silver to keep them from the Japanese."
+    ],
+    "em": 0,
+    "f1": 0.8888888888888888,
+    "tokens": 32,
+    "truncated": true,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429,
+      4210865.989367861,
+      4210866.049269852,
+      4210866.108974835,
+      4210866.169099612,
+      4210866.228969378,
+      4210866.288977134,
+      4210866.349443073,
+      4210866.409709851,
+      4210866.469687145,
+      4210866.529833698,
+      4210866.589944451,
+      4210866.649919933,
+      4210866.710331407,
+      4210866.770232806,
+      4210866.830030381,
+      4210866.889862205,
+      4210866.949574194,
+      4210867.009377136,
+      4210867.069065717,
+      4210867.128676903,
+      4210867.188126199,
+      4210867.247811887,
+      4210867.307284429,
+      4210867.367126421,
+      4210867.426718263,
+      4210867.485880209,
+      4210867.545700439,
+      4210867.605462105
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "57273aa2dd62a815002e99c3",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "Charles I of Hungary",
+    "raw_output": " Charles I of Hungary\n",
+    "references": [
+      "Charles I of Hungary"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 5,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429,
+      4210865.989367861
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56dee82a3277331400b4d7f3",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "Lambda-CDM",
+    "raw_output": " Lambda-CDM\n",
+    "references": [
+      "Lambda-CDM model"
+    ],
+    "em": 0,
+    "f1": 0.6666666666666666,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210865.748061716,
+      4210865.808589433,
+      4210865.868832093,
+      4210865.928939429
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "57266dcf5951b619008f727b",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "William IV",
+    "raw_output": " William IV\n",
+    "references": [
+      "William IV"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 3,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56de6c80cffd8e1900b4b8a2",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "18th century",
+    "raw_output": " 18th century\n",
+    "references": [
+      "18th"
+    ],
+    "em": 0,
+    "f1": 0.6666666666666666,
+    "tokens": 6,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916,
+      4210868.686054693,
+      4210868.746424665,
+      4210868.806809341
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56f6ef2e3d8e2e1400e372be",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "classical music",
+    "raw_output": " classical music\n",
+    "references": [
+      "classical music"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 3,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56cf2e15aab44d1400b88dca",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "Spectre (2015)",
+    "raw_output": " Spectre (2015)\n",
+    "references": [
+      "Spectre"
+    ],
+    "em": 0,
+    "f1": 0.6666666666666666,
+    "tokens": 8,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916,
+      4210868.686054693,
+      4210868.746424665,
+      4210868.806809341,
+      4210868.866635483,
+      4210868.927058267
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5727c6e83acd2414000dec1d",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "Hart Plaza and the Renaissance Center",
+    "raw_output": " Hart Plaza and the Renaissance Center\n",
+    "references": [
+      "Hart Plaza to the Renaissance Center"
+    ],
+    "em": 0,
+    "f1": 0.8,
+    "tokens": 7,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916,
+      4210868.686054693,
+      4210868.746424665,
+      4210868.806809341,
+      4210868.866635483
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "570a5ced4103511400d5966c",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "26%",
+    "raw_output": " 26%\n",
+    "references": [
+      "26%"
+    ],
+    "em": 1,
+    "f1": 1.0,
+    "tokens": 5,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916,
+      4210868.686054693,
+      4210868.746424665
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "56d5fc2a1c85041400946ea0",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "Natural selection and selective breeding",
+    "raw_output": " Natural selection and selective breeding\n",
+    "references": [
+      "breed"
+    ],
+    "em": 0,
+    "f1": 0,
+    "tokens": 6,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916,
+      4210868.686054693,
+      4210868.746424665,
+      4210868.806809341
+    ],
+    "prefill": "large",
+    "decode": "large"
+  },
+  {
+    "id": "5726d7f05951b619008f7fb2",
+    "bucket": 1024,
+    "prompt_tokens": 1021,
+    "answer": "safe harbor provisions",
+    "raw_output": " safe harbor provisions\n",
+    "references": [
+      "safe harbor"
+    ],
+    "em": 0,
+    "f1": 0.8,
+    "tokens": 4,
+    "truncated": false,
+    "token_times": [
+      4210868.504872295,
+      4210868.565498758,
+      4210868.625994916,
+      4210868.686054693
+    ],
+    "prefill": "large",
+    "decode": "large"
+  }
+]

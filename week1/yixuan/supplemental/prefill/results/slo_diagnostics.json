@@ -1,0 +1,22 @@
+{
+  "adaptive": {
+    "requests": 360,
+    "ttft_fail": 143,
+    "itl_fail": 0
+  },
+  "fixed_hybrid": {
+    "requests": 360,
+    "ttft_fail": 142,
+    "itl_fail": 0
+  },
+  "large": {
+    "requests": 360,
+    "ttft_fail": 143,
+    "itl_fail": 1
+  },
+  "small": {
+    "requests": 360,
+    "ttft_fail": 144,
+    "itl_fail": 0
+  }
+}

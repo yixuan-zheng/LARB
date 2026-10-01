@@ -1,0 +1,132 @@
+{
+  "seed": 7,
+  "pattern": "steady",
+  "requests": [
+    {
+      "request_id": "steady-00",
+      "arrival_ms": 0,
+      "prompt_tokens": 128,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-01",
+      "arrival_ms": 30,
+      "prompt_tokens": 128,
+      "output_tokens": 16,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-02",
+      "arrival_ms": 60,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-03",
+      "arrival_ms": 90,
+      "prompt_tokens": 192,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-04",
+      "arrival_ms": 120,
+      "prompt_tokens": 128,
+      "output_tokens": 16,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-05",
+      "arrival_ms": 150,
+      "prompt_tokens": 96,
+      "output_tokens": 16,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-06",
+      "arrival_ms": 180,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-07",
+      "arrival_ms": 210,
+      "prompt_tokens": 96,
+      "output_tokens": 12,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-08",
+      "arrival_ms": 240,
+      "prompt_tokens": 128,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "steady-09",
+      "arrival_ms": 270,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-10",
+      "arrival_ms": 300,
+      "prompt_tokens": 192,
+      "output_tokens": 12,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-11",
+      "arrival_ms": 330,
+      "prompt_tokens": 96,
+      "output_tokens": 16,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-12",
+      "arrival_ms": 360,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-13",
+      "arrival_ms": 390,
+      "prompt_tokens": 192,
+      "output_tokens": 16,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-14",
+      "arrival_ms": 420,
+      "prompt_tokens": 192,
+      "output_tokens": 8,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-15",
+      "arrival_ms": 450,
+      "prompt_tokens": 192,
+      "output_tokens": 16,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-16",
+      "arrival_ms": 480,
+      "prompt_tokens": 128,
+      "output_tokens": 8,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "steady-17",
+      "arrival_ms": 510,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 24
+    }
+  ]
+}

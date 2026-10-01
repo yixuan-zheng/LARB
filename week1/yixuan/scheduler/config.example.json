@@ -1,0 +1,9 @@
+{
+  "pressure_threshold": 4,
+  "minimum_dwell_tokens": 4,
+  "max_batch_size": 8,
+  "ttft_slo_ms": null,
+  "itl_slo_ms": null,
+  "quality_floor": null,
+  "allowed_switches": [["large", "small"], ["small", "large"]]
+}

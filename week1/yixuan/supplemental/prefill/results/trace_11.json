@@ -1,0 +1,602 @@
+[
+  {
+    "index": 6,
+    "arrival_s": 0.20940653464702016,
+    "period": "light"
+  },
+  {
+    "index": 146,
+    "arrival_s": 0.3225674311986555,
+    "period": "light"
+  },
+  {
+    "index": 76,
+    "arrival_s": 0.3414195350093439,
+    "period": "light"
+  },
+  {
+    "index": 94,
+    "arrival_s": 0.47227852662923464,
+    "period": "light"
+  },
+  {
+    "index": 120,
+    "arrival_s": 0.7714073477214316,
+    "period": "light"
+  },
+  {
+    "index": 106,
+    "arrival_s": 2.199309997932512,
+    "period": "light"
+  },
+  {
+    "index": 67,
+    "arrival_s": 2.2375218452615333,
+    "period": "light"
+  },
+  {
+    "index": 145,
+    "arrival_s": 2.296376437332597,
+    "period": "light"
+  },
+  {
+    "index": 20,
+    "arrival_s": 2.5328103790710093,
+    "period": "light"
+  },
+  {
+    "index": 89,
+    "arrival_s": 2.69159513885423,
+    "period": "light"
+  },
+  {
+    "index": 28,
+    "arrival_s": 3.213142988857154,
+    "period": "light"
+  },
+  {
+    "index": 79,
+    "arrival_s": 3.504708906628451,
+    "period": "light"
+  },
+  {
+    "index": 96,
+    "arrival_s": 4.664118523852658,
+    "period": "light"
+  },
+  {
+    "index": 45,
+    "arrival_s": 5.016239461834671,
+    "period": "light"
+  },
+  {
+    "index": 41,
+    "arrival_s": 6.0321959416387045,
+    "period": "light"
+  },
+  {
+    "index": 32,
+    "arrival_s": 6.286604148908755,
+    "period": "light"
+  },
+  {
+    "index": 105,
+    "arrival_s": 6.4613599303544,
+    "period": "light"
+  },
+  {
+    "index": 185,
+    "arrival_s": 6.608989503678474,
+    "period": "light"
+  },
+  {
+    "index": 44,
+    "arrival_s": 6.622468107221057,
+    "period": "light"
+  },
+  {
+    "index": 163,
+    "arrival_s": 6.982860135836203,
+    "period": "light"
+  },
+  {
+    "index": 160,
+    "arrival_s": 6.995151725170929,
+    "period": "burst"
+  },
+  {
+    "index": 125,
+    "arrival_s": 7.006156723996657,
+    "period": "burst"
+  },
+  {
+    "index": 133,
+    "arrival_s": 7.065038343693291,
+    "period": "burst"
+  },
+  {
+    "index": 129,
+    "arrival_s": 7.088249924213747,
+    "period": "burst"
+  },
+  {
+    "index": 176,
+    "arrival_s": 7.1001318301354175,
+    "period": "burst"
+  },
+  {
+    "index": 187,
+    "arrival_s": 7.195496581122123,
+    "period": "burst"
+  },
+  {
+    "index": 91,
+    "arrival_s": 7.267953615564488,
+    "period": "burst"
+  },
+  {
+    "index": 69,
+    "arrival_s": 7.275141273384952,
+    "period": "burst"
+  },
+  {
+    "index": 109,
+    "arrival_s": 7.710153610080844,
+    "period": "burst"
+  },
+  {
+    "index": 169,
+    "arrival_s": 7.9213039918220645,
+    "period": "burst"
+  },
+  {
+    "index": 68,
+    "arrival_s": 7.943228391632846,
+    "period": "burst"
+  },
+  {
+    "index": 78,
+    "arrival_s": 8.465845245359375,
+    "period": "burst"
+  },
+  {
+    "index": 149,
+    "arrival_s": 8.531894714650136,
+    "period": "burst"
+  },
+  {
+    "index": 93,
+    "arrival_s": 8.545919779348589,
+    "period": "burst"
+  },
+  {
+    "index": 46,
+    "arrival_s": 8.647228043453964,
+    "period": "burst"
+  },
+  {
+    "index": 70,
+    "arrival_s": 8.660004730851275,
+    "period": "burst"
+  },
+  {
+    "index": 35,
+    "arrival_s": 8.967679513253994,
+    "period": "burst"
+  },
+  {
+    "index": 178,
+    "arrival_s": 9.423853085032352,
+    "period": "burst"
+  },
+  {
+    "index": 134,
+    "arrival_s": 9.42871039027541,
+    "period": "burst"
+  },
+  {
+    "index": 142,
+    "arrival_s": 9.53822265735513,
+    "period": "burst"
+  },
+  {
+    "index": 85,
+    "arrival_s": 9.544006104520728,
+    "period": "light"
+  },
+  {
+    "index": 108,
+    "arrival_s": 9.972848857301516,
+    "period": "light"
+  },
+  {
+    "index": 19,
+    "arrival_s": 10.161180460138858,
+    "period": "light"
+  },
+  {
+    "index": 63,
+    "arrival_s": 10.166128785741561,
+    "period": "light"
+  },
+  {
+    "index": 100,
+    "arrival_s": 10.195755630850723,
+    "period": "light"
+  },
+  {
+    "index": 113,
+    "arrival_s": 10.233296253446175,
+    "period": "light"
+  },
+  {
+    "index": 92,
+    "arrival_s": 10.281819773564761,
+    "period": "light"
+  },
+  {
+    "index": 51,
+    "arrival_s": 10.399286094150993,
+    "period": "light"
+  },
+  {
+    "index": 183,
+    "arrival_s": 10.611941078674707,
+    "period": "light"
+  },
+  {
+    "index": 30,
+    "arrival_s": 10.770244828821722,
+    "period": "light"
+  },
+  {
+    "index": 126,
+    "arrival_s": 11.845584166581247,
+    "period": "light"
+  },
+  {
+    "index": 8,
+    "arrival_s": 12.31361248105825,
+    "period": "light"
+  },
+  {
+    "index": 29,
+    "arrival_s": 12.555408656563552,
+    "period": "light"
+  },
+  {
+    "index": 158,
+    "arrival_s": 12.800766414306857,
+    "period": "light"
+  },
+  {
+    "index": 55,
+    "arrival_s": 13.108623697817267,
+    "period": "light"
+  },
+  {
+    "index": 184,
+    "arrival_s": 13.397519630970619,
+    "period": "light"
+  },
+  {
+    "index": 197,
+    "arrival_s": 13.683010839617616,
+    "period": "light"
+  },
+  {
+    "index": 170,
+    "arrival_s": 13.829740326340747,
+    "period": "light"
+  },
+  {
+    "index": 107,
+    "arrival_s": 13.866016041461936,
+    "period": "light"
+  },
+  {
+    "index": 171,
+    "arrival_s": 13.874921973687856,
+    "period": "light"
+  },
+  {
+    "index": 66,
+    "arrival_s": 14.373622880237557,
+    "period": "burst"
+  },
+  {
+    "index": 180,
+    "arrival_s": 14.392551409541454,
+    "period": "burst"
+  },
+  {
+    "index": 81,
+    "arrival_s": 14.6317853308361,
+    "period": "burst"
+  },
+  {
+    "index": 64,
+    "arrival_s": 14.802327227329007,
+    "period": "burst"
+  },
+  {
+    "index": 190,
+    "arrival_s": 14.907590482414168,
+    "period": "burst"
+  },
+  {
+    "index": 88,
+    "arrival_s": 15.265899589147429,
+    "period": "burst"
+  },
+  {
+    "index": 37,
+    "arrival_s": 15.338400484154944,
+    "period": "burst"
+  },
+  {
+    "index": 111,
+    "arrival_s": 15.362827388286581,
+    "period": "burst"
+  },
+  {
+    "index": 136,
+    "arrival_s": 15.512340653697368,
+    "period": "burst"
+  },
+  {
+    "index": 33,
+    "arrival_s": 15.627799731356705,
+    "period": "burst"
+  },
+  {
+    "index": 56,
+    "arrival_s": 15.84927326760201,
+    "period": "burst"
+  },
+  {
+    "index": 84,
+    "arrival_s": 15.915541356092433,
+    "period": "burst"
+  },
+  {
+    "index": 18,
+    "arrival_s": 16.336457386573937,
+    "period": "burst"
+  },
+  {
+    "index": 5,
+    "arrival_s": 16.44546024284756,
+    "period": "burst"
+  },
+  {
+    "index": 103,
+    "arrival_s": 16.489137398630806,
+    "period": "burst"
+  },
+  {
+    "index": 140,
+    "arrival_s": 16.57111940968296,
+    "period": "burst"
+  },
+  {
+    "index": 116,
+    "arrival_s": 16.616707181763516,
+    "period": "burst"
+  },
+  {
+    "index": 182,
+    "arrival_s": 16.775618048968223,
+    "period": "burst"
+  },
+  {
+    "index": 26,
+    "arrival_s": 17.03291412982146,
+    "period": "burst"
+  },
+  {
+    "index": 2,
+    "arrival_s": 17.254939542083314,
+    "period": "burst"
+  },
+  {
+    "index": 38,
+    "arrival_s": 17.343240305909337,
+    "period": "light"
+  },
+  {
+    "index": 179,
+    "arrival_s": 17.43846693037263,
+    "period": "light"
+  },
+  {
+    "index": 175,
+    "arrival_s": 17.536411783416902,
+    "period": "light"
+  },
+  {
+    "index": 195,
+    "arrival_s": 18.53823066952451,
+    "period": "light"
+  },
+  {
+    "index": 168,
+    "arrival_s": 18.631302988066874,
+    "period": "light"
+  },
+  {
+    "index": 147,
+    "arrival_s": 18.688393622703988,
+    "period": "light"
+  },
+  {
+    "index": 123,
+    "arrival_s": 18.859034775545805,
+    "period": "light"
+  },
+  {
+    "index": 14,
+    "arrival_s": 19.751898456614256,
+    "period": "light"
+  },
+  {
+    "index": 49,
+    "arrival_s": 19.768261513991284,
+    "period": "light"
+  },
+  {
+    "index": 82,
+    "arrival_s": 19.794449829917877,
+    "period": "light"
+  },
+  {
+    "index": 122,
+    "arrival_s": 21.34713633775426,
+    "period": "light"
+  },
+  {
+    "index": 174,
+    "arrival_s": 22.02869448323541,
+    "period": "light"
+  },
+  {
+    "index": 95,
+    "arrival_s": 22.07599106454746,
+    "period": "light"
+  },
+  {
+    "index": 144,
+    "arrival_s": 22.32781919652635,
+    "period": "light"
+  },
+  {
+    "index": 57,
+    "arrival_s": 23.355021685743974,
+    "period": "light"
+  },
+  {
+    "index": 186,
+    "arrival_s": 24.05715096439638,
+    "period": "light"
+  },
+  {
+    "index": 148,
+    "arrival_s": 24.24763401790424,
+    "period": "light"
+  },
+  {
+    "index": 87,
+    "arrival_s": 24.537580508120378,
+    "period": "light"
+  },
+  {
+    "index": 22,
+    "arrival_s": 24.97815531824477,
+    "period": "light"
+  },
+  {
+    "index": 62,
+    "arrival_s": 25.475842774355694,
+    "period": "light"
+  },
+  {
+    "index": 154,
+    "arrival_s": 25.767329409626175,
+    "period": "burst"
+  },
+  {
+    "index": 139,
+    "arrival_s": 25.922232392806055,
+    "period": "burst"
+  },
+  {
+    "index": 110,
+    "arrival_s": 25.983257837803095,
+    "period": "burst"
+  },
+  {
+    "index": 12,
+    "arrival_s": 26.262095717245277,
+    "period": "burst"
+  },
+  {
+    "index": 124,
+    "arrival_s": 26.313596854371713,
+    "period": "burst"
+  },
+  {
+    "index": 31,
+    "arrival_s": 26.461408343950485,
+    "period": "burst"
+  },
+  {
+    "index": 155,
+    "arrival_s": 26.640609838399957,
+    "period": "burst"
+  },
+  {
+    "index": 172,
+    "arrival_s": 26.692757346665825,
+    "period": "burst"
+  },
+  {
+    "index": 97,
+    "arrival_s": 26.76186055650021,
+    "period": "burst"
+  },
+  {
+    "index": 52,
+    "arrival_s": 26.927438595067017,
+    "period": "burst"
+  },
+  {
+    "index": 173,
+    "arrival_s": 27.05863274179143,
+    "period": "burst"
+  },
+  {
+    "index": 42,
+    "arrival_s": 27.22051412100058,
+    "period": "burst"
+  },
+  {
+    "index": 39,
+    "arrival_s": 27.302610832006884,
+    "period": "burst"
+  },
+  {
+    "index": 11,
+    "arrival_s": 27.335894478343977,
+    "period": "burst"
+  },
+  {
+    "index": 43,
+    "arrival_s": 27.567602805532236,
+    "period": "burst"
+  },
+  {
+    "index": 34,
+    "arrival_s": 27.616560802101528,
+    "period": "burst"
+  },
+  {
+    "index": 86,
+    "arrival_s": 27.855298656034734,
+    "period": "burst"
+  },
+  {
+    "index": 99,
+    "arrival_s": 28.107161196115584,
+    "period": "burst"
+  },
+  {
+    "index": 25,
+    "arrival_s": 28.76075254982936,
+    "period": "burst"
+  },
+  {
+    "index": 198,
+    "arrival_s": 28.780112738892488,
+    "period": "burst"
+  }
+]
