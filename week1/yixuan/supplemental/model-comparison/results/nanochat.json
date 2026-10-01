@@ -1,0 +1,1935 @@
+{
+  "model": "nanochat",
+  "gpu": "NVIDIA L40S",
+  "torch": "2.9.1+cu128",
+  "dtype": "bfloat16",
+  "quality_design": "24 hand-written 3-choice cloze examples; mean continuation log probability; diagnostic only",
+  "quality": [
+    {
+      "id": 0,
+      "mode": "XL",
+      "prompt": "The capital of France is",
+      "options": [
+        " Paris",
+        " Rome",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.1232798099517822,
+        -8.504995346069336,
+        -10.975126266479492
+      ],
+      "correct": true,
+      "margin": 7.381715536117554
+    },
+    {
+      "id": 1,
+      "mode": "XL",
+      "prompt": "The capital of Japan is",
+      "options": [
+        " Tokyo",
+        " Madrid",
+        " London"
+      ],
+      "scores_mean_logprob": [
+        -0.8951275944709778,
+        -14.265959739685059,
+        -12.57038402557373
+      ],
+      "correct": true,
+      "margin": 11.675256431102753
+    },
+    {
+      "id": 2,
+      "mode": "XL",
+      "prompt": "The capital of Italy is",
+      "options": [
+        " Rome",
+        " Paris",
+        " Tokyo"
+      ],
+      "scores_mean_logprob": [
+        -0.860477864742279,
+        -9.614513397216797,
+        -12.719854354858398
+      ],
+      "correct": true,
+      "margin": 8.754035532474518
+    },
+    {
+      "id": 3,
+      "mode": "XL",
+      "prompt": "The capital of Germany is",
+      "options": [
+        " Berlin",
+        " Rome",
+        " Madrid"
+      ],
+      "scores_mean_logprob": [
+        -1.744523286819458,
+        -9.309950828552246,
+        -10.001992225646973
+      ],
+      "correct": true,
+      "margin": 7.565427541732788
+    },
+    {
+      "id": 4,
+      "mode": "XL",
+      "prompt": "The capital of Spain is",
+      "options": [
+        " Madrid",
+        " Tokyo",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.5648430585861206,
+        -13.223430633544922,
+        -12.28203010559082
+      ],
+      "correct": true,
+      "margin": 10.7171870470047
+    },
+    {
+      "id": 5,
+      "mode": "XL",
+      "prompt": "The largest planet in our solar system is",
+      "options": [
+        " Jupiter",
+        " Mars",
+        " Venus"
+      ],
+      "scores_mean_logprob": [
+        -2.222381114959717,
+        -4.0121588706970215,
+        -4.782567024230957
+      ],
+      "correct": true,
+      "margin": 1.7897777557373047
+    },
+    {
+      "id": 6,
+      "mode": "XL",
+      "prompt": "The planet closest to the Sun is",
+      "options": [
+        " Mercury",
+        " Saturn",
+        " Neptune"
+      ],
+      "scores_mean_logprob": [
+        -3.972336530685425,
+        -6.092311859130859,
+        -2.0294666290283203
+      ],
+      "correct": false,
+      "margin": -1.9428699016571045
+    },
+    {
+      "id": 7,
+      "mode": "XL",
+      "prompt": "Water freezes at zero degrees",
+      "options": [
+        " Celsius",
+        " Fahrenheit",
+        " Kelvin"
+      ],
+      "scores_mean_logprob": [
+        -0.879575252532959,
+        -1.6243376731872559,
+        -5.637370586395264
+      ],
+      "correct": true,
+      "margin": 0.7447624206542969
+    },
+    {
+      "id": 8,
+      "mode": "XL",
+      "prompt": "The chemical symbol for oxygen is",
+      "options": [
+        " O",
+        " H",
+        " C"
+      ],
+      "scores_mean_logprob": [
+        -0.09751671552658081,
+        -6.455893516540527,
+        -7.387584209442139
+      ],
+      "correct": true,
+      "margin": 6.3583768010139465
+    },
+    {
+      "id": 9,
+      "mode": "XL",
+      "prompt": "The chemical symbol for gold is",
+      "options": [
+        " Au",
+        " Ag",
+        " Fe"
+      ],
+      "scores_mean_logprob": [
+        -0.0544901005923748,
+        -9.319682121276855,
+        -11.067283630371094
+      ],
+      "correct": true,
+      "margin": 9.26519202068448
+    },
+    {
+      "id": 10,
+      "mode": "XL",
+      "prompt": "A triangle has",
+      "options": [
+        " three sides",
+        " four sides",
+        " five sides"
+      ],
+      "scores_mean_logprob": [
+        -1.3989589214324951,
+        -2.336911678314209,
+        -3.5115771293640137
+      ],
+      "correct": true,
+      "margin": 0.9379527568817139
+    },
+    {
+      "id": 11,
+      "mode": "XL",
+      "prompt": "A week has",
+      "options": [
+        " seven days",
+        " six days",
+        " eight days"
+      ],
+      "scores_mean_logprob": [
+        -6.056546688079834,
+        -6.523726463317871,
+        -6.702489852905273
+      ],
+      "correct": true,
+      "margin": 0.4671797752380371
+    },
+    {
+      "id": 12,
+      "mode": "XL",
+      "prompt": "An hour contains",
+      "options": [
+        " sixty minutes",
+        " thirty minutes",
+        " ninety minutes"
+      ],
+      "scores_mean_logprob": [
+        -3.8743984699249268,
+        -3.5561883449554443,
+        -3.4910027980804443
+      ],
+      "correct": false,
+      "margin": -0.3833956718444824
+    },
+    {
+      "id": 13,
+      "mode": "XL",
+      "prompt": "The opposite of hot is",
+      "options": [
+        " cold",
+        " warm",
+        " bright"
+      ],
+      "scores_mean_logprob": [
+        -0.2987995147705078,
+        -5.227923393249512,
+        -8.195362091064453
+      ],
+      "correct": true,
+      "margin": 4.929123878479004
+    },
+    {
+      "id": 14,
+      "mode": "XL",
+      "prompt": "The opposite of north is",
+      "options": [
+        " south",
+        " east",
+        " west"
+      ],
+      "scores_mean_logprob": [
+        -0.3006305694580078,
+        -3.2789783477783203,
+        -4.721738815307617
+      ],
+      "correct": true,
+      "margin": 2.9783477783203125
+    },
+    {
+      "id": 15,
+      "mode": "XL",
+      "prompt": "Birds are covered in",
+      "options": [
+        " feathers",
+        " scales",
+        " fur"
+      ],
+      "scores_mean_logprob": [
+        -1.2588908672332764,
+        -3.7120282649993896,
+        -4.528545379638672
+      ],
+      "correct": true,
+      "margin": 2.4531373977661133
+    },
+    {
+      "id": 16,
+      "mode": "XL",
+      "prompt": "Fish breathe through",
+      "options": [
+        " gills",
+        " lungs",
+        " wings"
+      ],
+      "scores_mean_logprob": [
+        -0.9683575630187988,
+        -4.402493953704834,
+        -14.465898513793945
+      ],
+      "correct": true,
+      "margin": 3.434136390686035
+    },
+    {
+      "id": 17,
+      "mode": "XL",
+      "prompt": "Plants use sunlight for",
+      "options": [
+        " photosynthesis",
+        " digestion",
+        " evaporation"
+      ],
+      "scores_mean_logprob": [
+        -0.7300556302070618,
+        -9.477651596069336,
+        -14.839722633361816
+      ],
+      "correct": true,
+      "margin": 8.747595965862274
+    },
+    {
+      "id": 18,
+      "mode": "XL",
+      "prompt": "The organ that pumps blood is the",
+      "options": [
+        " heart",
+        " liver",
+        " stomach"
+      ],
+      "scores_mean_logprob": [
+        -1.1806530952453613,
+        -3.8598504066467285,
+        -7.674375057220459
+      ],
+      "correct": true,
+      "margin": 2.679197311401367
+    },
+    {
+      "id": 19,
+      "mode": "XL",
+      "prompt": "The Earth orbits the",
+      "options": [
+        " Sun",
+        " Moon",
+        " Mars"
+      ],
+      "scores_mean_logprob": [
+        -0.4968970715999603,
+        -6.479372978210449,
+        -10.646919250488281
+      ],
+      "correct": true,
+      "margin": 5.982475906610489
+    },
+    {
+      "id": 20,
+      "mode": "XL",
+      "prompt": "In Python, a function is declared using",
+      "options": [
+        " def",
+        " class",
+        " import"
+      ],
+      "scores_mean_logprob": [
+        -6.784937858581543,
+        -6.2423529624938965,
+        -7.918943881988525
+      ],
+      "correct": false,
+      "margin": -0.5425848960876465
+    },
+    {
+      "id": 21,
+      "mode": "XL",
+      "prompt": "In Python, the boolean values are True and",
+      "options": [
+        " False",
+        " None",
+        " zero"
+      ],
+      "scores_mean_logprob": [
+        -0.04929691180586815,
+        -11.797684669494629,
+        -14.276622772216797
+      ],
+      "correct": true,
+      "margin": 11.74838775768876
+    },
+    {
+      "id": 22,
+      "mode": "XL",
+      "prompt": "The language used to style HTML pages is",
+      "options": [
+        " CSS",
+        " SQL",
+        " CSV"
+      ],
+      "scores_mean_logprob": [
+        -5.337097644805908,
+        -10.175750732421875,
+        -5.546895980834961
+      ],
+      "correct": true,
+      "margin": 0.20979833602905273
+    },
+    {
+      "id": 23,
+      "mode": "XL",
+      "prompt": "A kilogram contains one thousand",
+      "options": [
+        " grams",
+        " meters",
+        " liters"
+      ],
+      "scores_mean_logprob": [
+        -1.704258680343628,
+        -7.186518669128418,
+        -4.780245780944824
+      ],
+      "correct": true,
+      "margin": 3.0759871006011963
+    },
+    {
+      "id": 0,
+      "mode": "L",
+      "prompt": "The capital of France is",
+      "options": [
+        " Paris",
+        " Rome",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.1358050107955933,
+        -8.441837310791016,
+        -11.030129432678223
+      ],
+      "correct": true,
+      "margin": 7.306032299995422
+    },
+    {
+      "id": 1,
+      "mode": "L",
+      "prompt": "The capital of Japan is",
+      "options": [
+        " Tokyo",
+        " Madrid",
+        " London"
+      ],
+      "scores_mean_logprob": [
+        -0.8464297652244568,
+        -14.278274536132812,
+        -12.659918785095215
+      ],
+      "correct": true,
+      "margin": 11.813489019870758
+    },
+    {
+      "id": 2,
+      "mode": "L",
+      "prompt": "The capital of Italy is",
+      "options": [
+        " Rome",
+        " Paris",
+        " Tokyo"
+      ],
+      "scores_mean_logprob": [
+        -0.906920313835144,
+        -9.654075622558594,
+        -12.720376968383789
+      ],
+      "correct": true,
+      "margin": 8.74715530872345
+    },
+    {
+      "id": 3,
+      "mode": "L",
+      "prompt": "The capital of Germany is",
+      "options": [
+        " Berlin",
+        " Rome",
+        " Madrid"
+      ],
+      "scores_mean_logprob": [
+        -1.8012357950210571,
+        -9.310863494873047,
+        -10.086788177490234
+      ],
+      "correct": true,
+      "margin": 7.50962769985199
+    },
+    {
+      "id": 4,
+      "mode": "L",
+      "prompt": "The capital of Spain is",
+      "options": [
+        " Madrid",
+        " Tokyo",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.5627570152282715,
+        -13.179727554321289,
+        -12.22189712524414
+      ],
+      "correct": true,
+      "margin": 10.65914011001587
+    },
+    {
+      "id": 5,
+      "mode": "L",
+      "prompt": "The largest planet in our solar system is",
+      "options": [
+        " Jupiter",
+        " Mars",
+        " Venus"
+      ],
+      "scores_mean_logprob": [
+        -2.172105073928833,
+        -4.015790939331055,
+        -4.779736518859863
+      ],
+      "correct": true,
+      "margin": 1.8436858654022217
+    },
+    {
+      "id": 6,
+      "mode": "L",
+      "prompt": "The planet closest to the Sun is",
+      "options": [
+        " Mercury",
+        " Saturn",
+        " Neptune"
+      ],
+      "scores_mean_logprob": [
+        -3.975615978240967,
+        -6.1004252433776855,
+        -2.0725903511047363
+      ],
+      "correct": false,
+      "margin": -1.9030256271362305
+    },
+    {
+      "id": 7,
+      "mode": "L",
+      "prompt": "Water freezes at zero degrees",
+      "options": [
+        " Celsius",
+        " Fahrenheit",
+        " Kelvin"
+      ],
+      "scores_mean_logprob": [
+        -0.8991090655326843,
+        -1.609412431716919,
+        -5.552369594573975
+      ],
+      "correct": true,
+      "margin": 0.7103033661842346
+    },
+    {
+      "id": 8,
+      "mode": "L",
+      "prompt": "The chemical symbol for oxygen is",
+      "options": [
+        " O",
+        " H",
+        " C"
+      ],
+      "scores_mean_logprob": [
+        -0.09841100871562958,
+        -6.456090927124023,
+        -7.201297283172607
+      ],
+      "correct": true,
+      "margin": 6.357679918408394
+    },
+    {
+      "id": 9,
+      "mode": "L",
+      "prompt": "The chemical symbol for gold is",
+      "options": [
+        " Au",
+        " Ag",
+        " Fe"
+      ],
+      "scores_mean_logprob": [
+        -0.05720113590359688,
+        -9.097871780395508,
+        -11.133865356445312
+      ],
+      "correct": true,
+      "margin": 9.040670644491911
+    },
+    {
+      "id": 10,
+      "mode": "L",
+      "prompt": "A triangle has",
+      "options": [
+        " three sides",
+        " four sides",
+        " five sides"
+      ],
+      "scores_mean_logprob": [
+        -1.4236503839492798,
+        -2.392514228820801,
+        -3.536531925201416
+      ],
+      "correct": true,
+      "margin": 0.968863844871521
+    },
+    {
+      "id": 11,
+      "mode": "L",
+      "prompt": "A week has",
+      "options": [
+        " seven days",
+        " six days",
+        " eight days"
+      ],
+      "scores_mean_logprob": [
+        -6.000707626342773,
+        -6.518434047698975,
+        -6.689841270446777
+      ],
+      "correct": true,
+      "margin": 0.5177264213562012
+    },
+    {
+      "id": 12,
+      "mode": "L",
+      "prompt": "An hour contains",
+      "options": [
+        " sixty minutes",
+        " thirty minutes",
+        " ninety minutes"
+      ],
+      "scores_mean_logprob": [
+        -3.842050552368164,
+        -3.5285072326660156,
+        -3.4698314666748047
+      ],
+      "correct": false,
+      "margin": -0.3722190856933594
+    },
+    {
+      "id": 13,
+      "mode": "L",
+      "prompt": "The opposite of hot is",
+      "options": [
+        " cold",
+        " warm",
+        " bright"
+      ],
+      "scores_mean_logprob": [
+        -0.29302552342414856,
+        -5.246464252471924,
+        -8.18958854675293
+      ],
+      "correct": true,
+      "margin": 4.953438729047775
+    },
+    {
+      "id": 14,
+      "mode": "L",
+      "prompt": "The opposite of north is",
+      "options": [
+        " south",
+        " east",
+        " west"
+      ],
+      "scores_mean_logprob": [
+        -0.30853232741355896,
+        -3.323962688446045,
+        -4.693332195281982
+      ],
+      "correct": true,
+      "margin": 3.015430361032486
+    },
+    {
+      "id": 15,
+      "mode": "L",
+      "prompt": "Birds are covered in",
+      "options": [
+        " feathers",
+        " scales",
+        " fur"
+      ],
+      "scores_mean_logprob": [
+        -1.2760854959487915,
+        -3.7292227745056152,
+        -4.456396579742432
+      ],
+      "correct": true,
+      "margin": 2.4531372785568237
+    },
+    {
+      "id": 16,
+      "mode": "L",
+      "prompt": "Fish breathe through",
+      "options": [
+        " gills",
+        " lungs",
+        " wings"
+      ],
+      "scores_mean_logprob": [
+        -0.9288754463195801,
+        -4.319036960601807,
+        -14.318733215332031
+      ],
+      "correct": true,
+      "margin": 3.3901615142822266
+    },
+    {
+      "id": 17,
+      "mode": "L",
+      "prompt": "Plants use sunlight for",
+      "options": [
+        " photosynthesis",
+        " digestion",
+        " evaporation"
+      ],
+      "scores_mean_logprob": [
+        -0.7091254591941833,
+        -9.34412956237793,
+        -14.733055114746094
+      ],
+      "correct": true,
+      "margin": 8.635004103183746
+    },
+    {
+      "id": 18,
+      "mode": "L",
+      "prompt": "The organ that pumps blood is the",
+      "options": [
+        " heart",
+        " liver",
+        " stomach"
+      ],
+      "scores_mean_logprob": [
+        -1.037966012954712,
+        -3.7059929370880127,
+        -7.555244445800781
+      ],
+      "correct": true,
+      "margin": 2.668026924133301
+    },
+    {
+      "id": 19,
+      "mode": "L",
+      "prompt": "The Earth orbits the",
+      "options": [
+        " Sun",
+        " Moon",
+        " Mars"
+      ],
+      "scores_mean_logprob": [
+        -0.49828606843948364,
+        -6.422567844390869,
+        -10.6229248046875
+      ],
+      "correct": true,
+      "margin": 5.9242817759513855
+    },
+    {
+      "id": 20,
+      "mode": "L",
+      "prompt": "In Python, a function is declared using",
+      "options": [
+        " def",
+        " class",
+        " import"
+      ],
+      "scores_mean_logprob": [
+        -6.795748710632324,
+        -6.325390815734863,
+        -7.871423721313477
+      ],
+      "correct": false,
+      "margin": -0.47035789489746094
+    },
+    {
+      "id": 21,
+      "mode": "L",
+      "prompt": "In Python, the boolean values are True and",
+      "options": [
+        " False",
+        " None",
+        " zero"
+      ],
+      "scores_mean_logprob": [
+        -0.04736972600221634,
+        -11.691855430603027,
+        -14.299091339111328
+      ],
+      "correct": true,
+      "margin": 11.644485704600811
+    },
+    {
+      "id": 22,
+      "mode": "L",
+      "prompt": "The language used to style HTML pages is",
+      "options": [
+        " CSS",
+        " SQL",
+        " CSV"
+      ],
+      "scores_mean_logprob": [
+        -5.391802787780762,
+        -10.187211990356445,
+        -5.5183424949646
+      ],
+      "correct": true,
+      "margin": 0.1265397071838379
+    },
+    {
+      "id": 23,
+      "mode": "L",
+      "prompt": "A kilogram contains one thousand",
+      "options": [
+        " grams",
+        " meters",
+        " liters"
+      ],
+      "scores_mean_logprob": [
+        -1.8203542232513428,
+        -7.038383483886719,
+        -4.865701675415039
+      ],
+      "correct": true,
+      "margin": 3.0453474521636963
+    },
+    {
+      "id": 0,
+      "mode": "M",
+      "prompt": "The capital of France is",
+      "options": [
+        " Paris",
+        " Rome",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.2941850423812866,
+        -8.424057006835938,
+        -10.941554069519043
+      ],
+      "correct": true,
+      "margin": 7.129871964454651
+    },
+    {
+      "id": 1,
+      "mode": "M",
+      "prompt": "The capital of Japan is",
+      "options": [
+        " Tokyo",
+        " Madrid",
+        " London"
+      ],
+      "scores_mean_logprob": [
+        -0.8802757263183594,
+        -14.262786865234375,
+        -12.763993263244629
+      ],
+      "correct": true,
+      "margin": 11.88371753692627
+    },
+    {
+      "id": 2,
+      "mode": "M",
+      "prompt": "The capital of Italy is",
+      "options": [
+        " Rome",
+        " Paris",
+        " Tokyo"
+      ],
+      "scores_mean_logprob": [
+        -0.8513826727867126,
+        -9.723193168640137,
+        -12.711883544921875
+      ],
+      "correct": true,
+      "margin": 8.871810495853424
+    },
+    {
+      "id": 3,
+      "mode": "M",
+      "prompt": "The capital of Germany is",
+      "options": [
+        " Berlin",
+        " Rome",
+        " Madrid"
+      ],
+      "scores_mean_logprob": [
+        -1.7911831140518188,
+        -9.163722038269043,
+        -9.868316650390625
+      ],
+      "correct": true,
+      "margin": 7.372538924217224
+    },
+    {
+      "id": 4,
+      "mode": "M",
+      "prompt": "The capital of Spain is",
+      "options": [
+        " Madrid",
+        " Tokyo",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.7035133838653564,
+        -13.475167274475098,
+        -12.24020767211914
+      ],
+      "correct": true,
+      "margin": 10.536694288253784
+    },
+    {
+      "id": 5,
+      "mode": "M",
+      "prompt": "The largest planet in our solar system is",
+      "options": [
+        " Jupiter",
+        " Mars",
+        " Venus"
+      ],
+      "scores_mean_logprob": [
+        -2.1559994220733643,
+        -3.770662546157837,
+        -4.585418701171875
+      ],
+      "correct": true,
+      "margin": 1.6146631240844727
+    },
+    {
+      "id": 6,
+      "mode": "M",
+      "prompt": "The planet closest to the Sun is",
+      "options": [
+        " Mercury",
+        " Saturn",
+        " Neptune"
+      ],
+      "scores_mean_logprob": [
+        -3.856309652328491,
+        -6.019495010375977,
+        -2.039949655532837
+      ],
+      "correct": false,
+      "margin": -1.8163599967956543
+    },
+    {
+      "id": 7,
+      "mode": "M",
+      "prompt": "Water freezes at zero degrees",
+      "options": [
+        " Celsius",
+        " Fahrenheit",
+        " Kelvin"
+      ],
+      "scores_mean_logprob": [
+        -0.8919457197189331,
+        -1.675862193107605,
+        -5.69826078414917
+      ],
+      "correct": true,
+      "margin": 0.7839164733886719
+    },
+    {
+      "id": 8,
+      "mode": "M",
+      "prompt": "The chemical symbol for oxygen is",
+      "options": [
+        " O",
+        " H",
+        " C"
+      ],
+      "scores_mean_logprob": [
+        -0.09563320875167847,
+        -6.451363563537598,
+        -7.184632778167725
+      ],
+      "correct": true,
+      "margin": 6.355730354785919
+    },
+    {
+      "id": 9,
+      "mode": "M",
+      "prompt": "The chemical symbol for gold is",
+      "options": [
+        " Au",
+        " Ag",
+        " Fe"
+      ],
+      "scores_mean_logprob": [
+        -0.052646078169345856,
+        -8.978724479675293,
+        -11.292440414428711
+      ],
+      "correct": true,
+      "margin": 8.926078401505947
+    },
+    {
+      "id": 10,
+      "mode": "M",
+      "prompt": "A triangle has",
+      "options": [
+        " three sides",
+        " four sides",
+        " five sides"
+      ],
+      "scores_mean_logprob": [
+        -1.3516778945922852,
+        -2.4016098976135254,
+        -3.6503729820251465
+      ],
+      "correct": true,
+      "margin": 1.0499320030212402
+    },
+    {
+      "id": 11,
+      "mode": "M",
+      "prompt": "A week has",
+      "options": [
+        " seven days",
+        " six days",
+        " eight days"
+      ],
+      "scores_mean_logprob": [
+        -6.008517265319824,
+        -6.4684224128723145,
+        -6.56157922744751
+      ],
+      "correct": true,
+      "margin": 0.45990514755249023
+    },
+    {
+      "id": 12,
+      "mode": "M",
+      "prompt": "An hour contains",
+      "options": [
+        " sixty minutes",
+        " thirty minutes",
+        " ninety minutes"
+      ],
+      "scores_mean_logprob": [
+        -3.9038007259368896,
+        -3.654661178588867,
+        -3.573570966720581
+      ],
+      "correct": false,
+      "margin": -0.3302297592163086
+    },
+    {
+      "id": 13,
+      "mode": "M",
+      "prompt": "The opposite of hot is",
+      "options": [
+        " cold",
+        " warm",
+        " bright"
+      ],
+      "scores_mean_logprob": [
+        -0.3130011260509491,
+        -5.424497127532959,
+        -8.27525806427002
+      ],
+      "correct": true,
+      "margin": 5.11149600148201
+    },
+    {
+      "id": 14,
+      "mode": "M",
+      "prompt": "The opposite of north is",
+      "options": [
+        " south",
+        " east",
+        " west"
+      ],
+      "scores_mean_logprob": [
+        -0.30573245882987976,
+        -3.2825753688812256,
+        -4.7109904289245605
+      ],
+      "correct": true,
+      "margin": 2.976842910051346
+    },
+    {
+      "id": 15,
+      "mode": "M",
+      "prompt": "Birds are covered in",
+      "options": [
+        " feathers",
+        " scales",
+        " fur"
+      ],
+      "scores_mean_logprob": [
+        -1.3743997812271118,
+        -3.7554078102111816,
+        -4.628879070281982
+      ],
+      "correct": true,
+      "margin": 2.38100802898407
+    },
+    {
+      "id": 16,
+      "mode": "M",
+      "prompt": "Fish breathe through",
+      "options": [
+        " gills",
+        " lungs",
+        " wings"
+      ],
+      "scores_mean_logprob": [
+        -0.9987668991088867,
+        -4.407560348510742,
+        -14.147356986999512
+      ],
+      "correct": true,
+      "margin": 3.4087934494018555
+    },
+    {
+      "id": 17,
+      "mode": "M",
+      "prompt": "Plants use sunlight for",
+      "options": [
+        " photosynthesis",
+        " digestion",
+        " evaporation"
+      ],
+      "scores_mean_logprob": [
+        -0.701602041721344,
+        -9.120047569274902,
+        -14.645319938659668
+      ],
+      "correct": true,
+      "margin": 8.418445527553558
+    },
+    {
+      "id": 18,
+      "mode": "M",
+      "prompt": "The organ that pumps blood is the",
+      "options": [
+        " heart",
+        " liver",
+        " stomach"
+      ],
+      "scores_mean_logprob": [
+        -0.879570722579956,
+        -3.8539912700653076,
+        -8.44927978515625
+      ],
+      "correct": true,
+      "margin": 2.9744205474853516
+    },
+    {
+      "id": 19,
+      "mode": "M",
+      "prompt": "The Earth orbits the",
+      "options": [
+        " Sun",
+        " Moon",
+        " Mars"
+      ],
+      "scores_mean_logprob": [
+        -0.5022530555725098,
+        -5.873309135437012,
+        -10.315607070922852
+      ],
+      "correct": true,
+      "margin": 5.371056079864502
+    },
+    {
+      "id": 20,
+      "mode": "M",
+      "prompt": "In Python, a function is declared using",
+      "options": [
+        " def",
+        " class",
+        " import"
+      ],
+      "scores_mean_logprob": [
+        -6.323315620422363,
+        -6.506758689880371,
+        -7.647021293640137
+      ],
+      "correct": true,
+      "margin": 0.1834430694580078
+    },
+    {
+      "id": 21,
+      "mode": "M",
+      "prompt": "In Python, the boolean values are True and",
+      "options": [
+        " False",
+        " None",
+        " zero"
+      ],
+      "scores_mean_logprob": [
+        -0.05782723054289818,
+        -11.794363021850586,
+        -13.843278884887695
+      ],
+      "correct": true,
+      "margin": 11.736535791307688
+    },
+    {
+      "id": 22,
+      "mode": "M",
+      "prompt": "The language used to style HTML pages is",
+      "options": [
+        " CSS",
+        " SQL",
+        " CSV"
+      ],
+      "scores_mean_logprob": [
+        -5.377839088439941,
+        -9.877642631530762,
+        -5.494319915771484
+      ],
+      "correct": true,
+      "margin": 0.11648082733154297
+    },
+    {
+      "id": 23,
+      "mode": "M",
+      "prompt": "A kilogram contains one thousand",
+      "options": [
+        " grams",
+        " meters",
+        " liters"
+      ],
+      "scores_mean_logprob": [
+        -2.00069522857666,
+        -7.252388954162598,
+        -4.987507343292236
+      ],
+      "correct": true,
+      "margin": 2.986812114715576
+    },
+    {
+      "id": 0,
+      "mode": "S",
+      "prompt": "The capital of France is",
+      "options": [
+        " Paris",
+        " Rome",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.1695629358291626,
+        -6.880932807922363,
+        -9.771356582641602
+      ],
+      "correct": true,
+      "margin": 5.711369872093201
+    },
+    {
+      "id": 1,
+      "mode": "S",
+      "prompt": "The capital of Japan is",
+      "options": [
+        " Tokyo",
+        " Madrid",
+        " London"
+      ],
+      "scores_mean_logprob": [
+        -0.8208916187286377,
+        -13.844009399414062,
+        -12.821332931518555
+      ],
+      "correct": true,
+      "margin": 12.000441312789917
+    },
+    {
+      "id": 2,
+      "mode": "S",
+      "prompt": "The capital of Italy is",
+      "options": [
+        " Rome",
+        " Paris",
+        " Tokyo"
+      ],
+      "scores_mean_logprob": [
+        -1.0112652778625488,
+        -9.278236389160156,
+        -12.490631103515625
+      ],
+      "correct": true,
+      "margin": 8.266971111297607
+    },
+    {
+      "id": 3,
+      "mode": "S",
+      "prompt": "The capital of Germany is",
+      "options": [
+        " Berlin",
+        " Rome",
+        " Madrid"
+      ],
+      "scores_mean_logprob": [
+        -1.694065809249878,
+        -8.36981201171875,
+        -9.498486518859863
+      ],
+      "correct": true,
+      "margin": 6.675746202468872
+    },
+    {
+      "id": 4,
+      "mode": "S",
+      "prompt": "The capital of Spain is",
+      "options": [
+        " Madrid",
+        " Tokyo",
+        " Berlin"
+      ],
+      "scores_mean_logprob": [
+        -1.9083563089370728,
+        -13.173102378845215,
+        -11.503474235534668
+      ],
+      "correct": true,
+      "margin": 9.595117926597595
+    },
+    {
+      "id": 5,
+      "mode": "S",
+      "prompt": "The largest planet in our solar system is",
+      "options": [
+        " Jupiter",
+        " Mars",
+        " Venus"
+      ],
+      "scores_mean_logprob": [
+        -2.4815890789031982,
+        -4.047487258911133,
+        -5.025815010070801
+      ],
+      "correct": true,
+      "margin": 1.5658981800079346
+    },
+    {
+      "id": 6,
+      "mode": "S",
+      "prompt": "The planet closest to the Sun is",
+      "options": [
+        " Mercury",
+        " Saturn",
+        " Neptune"
+      ],
+      "scores_mean_logprob": [
+        -4.598648548126221,
+        -6.142013072967529,
+        -2.448671817779541
+      ],
+      "correct": false,
+      "margin": -2.1499767303466797
+    },
+    {
+      "id": 7,
+      "mode": "S",
+      "prompt": "Water freezes at zero degrees",
+      "options": [
+        " Celsius",
+        " Fahrenheit",
+        " Kelvin"
+      ],
+      "scores_mean_logprob": [
+        -0.9091292023658752,
+        -1.5736398696899414,
+        -4.991967678070068
+      ],
+      "correct": true,
+      "margin": 0.6645106673240662
+    },
+    {
+      "id": 8,
+      "mode": "S",
+      "prompt": "The chemical symbol for oxygen is",
+      "options": [
+        " O",
+        " H",
+        " C"
+      ],
+      "scores_mean_logprob": [
+        -0.10966022312641144,
+        -6.778997898101807,
+        -7.198659896850586
+      ],
+      "correct": true,
+      "margin": 6.669337674975395
+    },
+    {
+      "id": 9,
+      "mode": "S",
+      "prompt": "The chemical symbol for gold is",
+      "options": [
+        " Au",
+        " Ag",
+        " Fe"
+      ],
+      "scores_mean_logprob": [
+        -0.07755926251411438,
+        -8.968144416809082,
+        -11.307546615600586
+      ],
+      "correct": true,
+      "margin": 8.890585154294968
+    },
+    {
+      "id": 10,
+      "mode": "S",
+      "prompt": "A triangle has",
+      "options": [
+        " three sides",
+        " four sides",
+        " five sides"
+      ],
+      "scores_mean_logprob": [
+        -1.4705538749694824,
+        -2.585230827331543,
+        -3.837480068206787
+      ],
+      "correct": true,
+      "margin": 1.1146769523620605
+    },
+    {
+      "id": 11,
+      "mode": "S",
+      "prompt": "A week has",
+      "options": [
+        " seven days",
+        " six days",
+        " eight days"
+      ],
+      "scores_mean_logprob": [
+        -6.431370735168457,
+        -6.865079402923584,
+        -6.928231239318848
+      ],
+      "correct": true,
+      "margin": 0.43370866775512695
+    },
+    {
+      "id": 12,
+      "mode": "S",
+      "prompt": "An hour contains",
+      "options": [
+        " sixty minutes",
+        " thirty minutes",
+        " ninety minutes"
+      ],
+      "scores_mean_logprob": [
+        -3.9928319454193115,
+        -3.6650705337524414,
+        -3.5000228881835938
+      ],
+      "correct": false,
+      "margin": -0.4928090572357178
+    },
+    {
+      "id": 13,
+      "mode": "S",
+      "prompt": "The opposite of hot is",
+      "options": [
+        " cold",
+        " warm",
+        " bright"
+      ],
+      "scores_mean_logprob": [
+        -0.3406272232532501,
+        -4.8872504234313965,
+        -8.121844291687012
+      ],
+      "correct": true,
+      "margin": 4.546623200178146
+    },
+    {
+      "id": 14,
+      "mode": "S",
+      "prompt": "The opposite of north is",
+      "options": [
+        " south",
+        " east",
+        " west"
+      ],
+      "scores_mean_logprob": [
+        -0.2897632122039795,
+        -3.3392131328582764,
+        -4.869725227355957
+      ],
+      "correct": true,
+      "margin": 3.049449920654297
+    },
+    {
+      "id": 15,
+      "mode": "S",
+      "prompt": "Birds are covered in",
+      "options": [
+        " feathers",
+        " scales",
+        " fur"
+      ],
+      "scores_mean_logprob": [
+        -1.5848278999328613,
+        -4.574310779571533,
+        -4.712188720703125
+      ],
+      "correct": true,
+      "margin": 2.989482879638672
+    },
+    {
+      "id": 16,
+      "mode": "S",
+      "prompt": "Fish breathe through",
+      "options": [
+        " gills",
+        " lungs",
+        " wings"
+      ],
+      "scores_mean_logprob": [
+        -0.9430880546569824,
+        -4.725860595703125,
+        -14.191184997558594
+      ],
+      "correct": true,
+      "margin": 3.7827725410461426
+    },
+    {
+      "id": 17,
+      "mode": "S",
+      "prompt": "Plants use sunlight for",
+      "options": [
+        " photosynthesis",
+        " digestion",
+        " evaporation"
+      ],
+      "scores_mean_logprob": [
+        -1.070326566696167,
+        -8.361512184143066,
+        -12.764755249023438
+      ],
+      "correct": true,
+      "margin": 7.291185617446899
+    },
+    {
+      "id": 18,
+      "mode": "S",
+      "prompt": "The organ that pumps blood is the",
+      "options": [
+        " heart",
+        " liver",
+        " stomach"
+      ],
+      "scores_mean_logprob": [
+        -0.926091730594635,
+        -3.354033946990967,
+        -8.231450080871582
+      ],
+      "correct": true,
+      "margin": 2.427942216396332
+    },
+    {
+      "id": 19,
+      "mode": "S",
+      "prompt": "The Earth orbits the",
+      "options": [
+        " Sun",
+        " Moon",
+        " Mars"
+      ],
+      "scores_mean_logprob": [
+        -0.47619014978408813,
+        -5.3760833740234375,
+        -9.51920223236084
+      ],
+      "correct": true,
+      "margin": 4.899893224239349
+    },
+    {
+      "id": 20,
+      "mode": "S",
+      "prompt": "In Python, a function is declared using",
+      "options": [
+        " def",
+        " class",
+        " import"
+      ],
+      "scores_mean_logprob": [
+        -6.824848175048828,
+        -6.374773025512695,
+        -8.709779739379883
+      ],
+      "correct": false,
+      "margin": -0.4500751495361328
+    },
+    {
+      "id": 21,
+      "mode": "S",
+      "prompt": "In Python, the boolean values are True and",
+      "options": [
+        " False",
+        " None",
+        " zero"
+      ],
+      "scores_mean_logprob": [
+        -0.059474390000104904,
+        -11.65379524230957,
+        -14.178461074829102
+      ],
+      "correct": true,
+      "margin": 11.594320852309465
+    },
+    {
+      "id": 22,
+      "mode": "S",
+      "prompt": "The language used to style HTML pages is",
+      "options": [
+        " CSS",
+        " SQL",
+        " CSV"
+      ],
+      "scores_mean_logprob": [
+        -5.83414363861084,
+        -9.532698631286621,
+        -5.480550765991211
+      ],
+      "correct": false,
+      "margin": -0.3535928726196289
+    },
+    {
+      "id": 23,
+      "mode": "S",
+      "prompt": "A kilogram contains one thousand",
+      "options": [
+        " grams",
+        " meters",
+        " liters"
+      ],
+      "scores_mean_logprob": [
+        -1.8621773719787598,
+        -6.887074947357178,
+        -5.741087436676025
+      ],
+      "correct": true,
+      "margin": 3.8789100646972656
+    }
+  ],
+  "timing": [
+    {
+      "mode": "XL",
+      "batch": 1,
+      "context": 32,
+      "prefill_ms": 11.776345781981945,
+      "decode_ms": 11.162524722749367,
+      "trials": [
+        {
+          "prefill_ms": 11.807864997535944,
+          "decode_ms": 11.108298931503668
+        },
+        {
+          "prefill_ms": 11.716079898178577,
+          "decode_ms": 11.178594926605001
+        },
+        {
+          "prefill_ms": 11.776345781981945,
+          "decode_ms": 11.162524722749367
+        }
+      ]
+    },
+    {
+      "mode": "S",
+      "batch": 1,
+      "context": 32,
+      "prefill_ms": 11.65029313415289,
+      "decode_ms": 11.12543125054799,
+      "trials": [
+        {
+          "prefill_ms": 11.65029313415289,
+          "decode_ms": 11.136149667436257
+        },
+        {
+          "prefill_ms": 11.649468913674355,
+          "decode_ms": 11.119877744931728
+        },
+        {
+          "prefill_ms": 11.650890111923218,
+          "decode_ms": 11.12543125054799
+        }
+      ]
+    },
+    {
+      "mode": "XL",
+      "batch": 1,
+      "context": 256,
+      "prefill_ms": 12.25112285465002,
+      "decode_ms": 11.276651115622371,
+      "trials": [
+        {
+          "prefill_ms": 12.535625137388706,
+          "decode_ms": 11.33315300103277
+        },
+        {
+          "prefill_ms": 12.25112285465002,
+          "decode_ms": 11.265892186202109
+        },
+        {
+          "prefill_ms": 12.076877057552338,
+          "decode_ms": 11.276651115622371
+        }
+      ]
+    },
+    {
+      "mode": "S",
+      "batch": 1,
+      "context": 256,
+      "prefill_ms": 11.89881982281804,
+      "decode_ms": 11.249704170040786,
+      "trials": [
+        {
+          "prefill_ms": 11.89881982281804,
+          "decode_ms": 11.290481750620529
+        },
+        {
+          "prefill_ms": 11.8007049895823,
+          "decode_ms": 11.238790379138663
+        },
+        {
+          "prefill_ms": 11.939267162233591,
+          "decode_ms": 11.249704170040786
+        }
+      ]
+    },
+    {
+      "mode": "XL",
+      "batch": 8,
+      "context": 32,
+      "prefill_ms": 11.878511868417263,
+      "decode_ms": 11.498650681460276,
+      "trials": [
+        {
+          "prefill_ms": 11.878511868417263,
+          "decode_ms": 11.498650681460276
+        },
+        {
+          "prefill_ms": 11.977577582001686,
+          "decode_ms": 11.508955474710092
+        },
+        {
+          "prefill_ms": 11.791298165917397,
+          "decode_ms": 11.465879448223859
+        }
+      ]
+    },
+    {
+      "mode": "S",
+      "batch": 8,
+      "context": 32,
+      "prefill_ms": 11.736779008060694,
+      "decode_ms": 11.362916702637449,
+      "trials": [
+        {
+          "prefill_ms": 11.736779008060694,
+          "decode_ms": 11.362916702637449
+        },
+        {
+          "prefill_ms": 11.622073128819466,
+          "decode_ms": 11.350120010320097
+        },
+        {
+          "prefill_ms": 11.761887930333614,
+          "decode_ms": 11.36999623849988
+        }
+      ]
+    },
+    {
+      "mode": "XL",
+      "batch": 8,
+      "context": 256,
+      "prefill_ms": 23.416955955326557,
+      "decode_ms": 11.681146948831156,
+      "trials": [
+        {
+          "prefill_ms": 23.416955955326557,
+          "decode_ms": 11.681146948831156
+        },
+        {
+          "prefill_ms": 23.426339030265808,
+          "decode_ms": 11.649011430563405
+        },
+        {
+          "prefill_ms": 23.411210626363754,
+          "decode_ms": 11.684379045618698
+        }
+      ]
+    },
+    {
+      "mode": "S",
+      "batch": 8,
+      "context": 256,
+      "prefill_ms": 16.781522426754236,
+      "decode_ms": 11.494878417579457,
+      "trials": [
+        {
+          "prefill_ms": 16.781522426754236,
+          "decode_ms": 11.494878417579457
+        },
+        {
+          "prefill_ms": 16.795389354228973,
+          "decode_ms": 11.476071376819164
+        },
+        {
+          "prefill_ms": 16.755939926952124,
+          "decode_ms": 11.500311986310408
+        }
+      ]
+    },
+    {
+      "mode": "compact_small",
+      "batch": 1,
+      "context": 32,
+      "prefill_ms": 11.563807260245085,
+      "decode_ms": 11.076797440182418,
+      "trials": [
+        {
+          "prefill_ms": 11.61981513723731,
+          "decode_ms": 11.076460737967864
+        },
+        {
+          "prefill_ms": 11.550411116331816,
+          "decode_ms": 11.083679069997743
+        },
+        {
+          "prefill_ms": 11.563807260245085,
+          "decode_ms": 11.076797440182418
+        }
+      ]
+    },
+    {
+      "mode": "compact_small",
+      "batch": 1,
+      "context": 256,
+      "prefill_ms": 11.922722216695547,
+      "decode_ms": 11.307290551485494,
+      "trials": [
+        {
+          "prefill_ms": 11.926031671464443,
+          "decode_ms": 11.313676863210276
+        },
+        {
+          "prefill_ms": 11.860544793307781,
+          "decode_ms": 11.295621690806001
+        },
+        {
+          "prefill_ms": 11.922722216695547,
+          "decode_ms": 11.307290551485494
+        }
+      ]
+    },
+    {
+      "mode": "compact_small",
+      "batch": 8,
+      "context": 32,
+      "prefill_ms": 11.623996775597334,
+      "decode_ms": 11.326920794090256,
+      "trials": [
+        {
+          "prefill_ms": 11.644789949059486,
+          "decode_ms": 11.318858800223097
+        },
+        {
+          "prefill_ms": 11.591583956032991,
+          "decode_ms": 11.326920794090256
+        },
+        {
+          "prefill_ms": 11.623996775597334,
+          "decode_ms": 11.364619043888524
+        }
+      ]
+    },
+    {
+      "mode": "compact_small",
+      "batch": 8,
+      "context": 256,
+      "prefill_ms": 16.773035284131765,
+      "decode_ms": 11.527754133567214,
+      "trials": [
+        {
+          "prefill_ms": 16.773035284131765,
+          "decode_ms": 11.527754133567214
+        },
+        {
+          "prefill_ms": 16.733992379158735,
+          "decode_ms": 11.543108761543408
+        },
+        {
+          "prefill_ms": 16.818298026919365,
+          "decode_ms": 11.520247673615813
+        }
+      ]
+    }
+  ],
+  "switches": [
+    {
+      "schedule": [
+        "XL",
+        "S",
+        "XL"
+      ],
+      "step_ms": [
+        11.284917127341032,
+        11.726621072739363,
+        11.404538992792368,
+        11.325508821755648,
+        11.30204414948821,
+        11.22211990877986,
+        11.278782039880753,
+        11.254920158535242
+      ],
+      "finite": true
+    },
+    {
+      "schedule": [
+        "S",
+        "XL",
+        "S"
+      ],
+      "step_ms": [
+        11.241880245506763,
+        11.255878023803234,
+        11.284545995295048,
+        11.275167111307383,
+        11.241109110414982,
+        11.161055881530046,
+        11.229887139052153,
+        11.221219785511494
+      ],
+      "finite": true
+    }
+  ],
+  "compact_small_max_logit_diff": 0.0,
+  "completed": true
+}

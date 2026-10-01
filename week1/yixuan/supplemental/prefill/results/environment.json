@@ -1,0 +1,9 @@
+{
+  "torch_package": "2.9.1",
+  "torch_runtime": "2.9.1+cu128",
+  "transformers": "5.7.0",
+  "huggingface-hub": "1.32.0",
+  "safetensors": "0.8.0",
+  "gpu": "NVIDIA L40S",
+  "precision": "bfloat16"
+}

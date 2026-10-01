@@ -1,0 +1,132 @@
+{
+  "seed": 7,
+  "pattern": "changing_mix",
+  "requests": [
+    {
+      "request_id": "changing_mix-00",
+      "arrival_ms": 0,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-01",
+      "arrival_ms": 25,
+      "prompt_tokens": 192,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-02",
+      "arrival_ms": 50,
+      "prompt_tokens": 96,
+      "output_tokens": 16,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-03",
+      "arrival_ms": 75,
+      "prompt_tokens": 128,
+      "output_tokens": 16,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-04",
+      "arrival_ms": 100,
+      "prompt_tokens": 128,
+      "output_tokens": 12,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-05",
+      "arrival_ms": 125,
+      "prompt_tokens": 192,
+      "output_tokens": 12,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-06",
+      "arrival_ms": 150,
+      "prompt_tokens": 128,
+      "output_tokens": 16,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-07",
+      "arrival_ms": 175,
+      "prompt_tokens": 96,
+      "output_tokens": 8,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-08",
+      "arrival_ms": 200,
+      "prompt_tokens": 192,
+      "output_tokens": 12,
+      "estimated_output_tokens": 16
+    },
+    {
+      "request_id": "changing_mix-09",
+      "arrival_ms": 225,
+      "prompt_tokens": 512,
+      "output_tokens": 28,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-10",
+      "arrival_ms": 250,
+      "prompt_tokens": 512,
+      "output_tokens": 28,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-11",
+      "arrival_ms": 275,
+      "prompt_tokens": 768,
+      "output_tokens": 20,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-12",
+      "arrival_ms": 300,
+      "prompt_tokens": 1024,
+      "output_tokens": 20,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-13",
+      "arrival_ms": 325,
+      "prompt_tokens": 1024,
+      "output_tokens": 36,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-14",
+      "arrival_ms": 350,
+      "prompt_tokens": 768,
+      "output_tokens": 28,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-15",
+      "arrival_ms": 375,
+      "prompt_tokens": 1024,
+      "output_tokens": 28,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-16",
+      "arrival_ms": 400,
+      "prompt_tokens": 1024,
+      "output_tokens": 28,
+      "estimated_output_tokens": 24
+    },
+    {
+      "request_id": "changing_mix-17",
+      "arrival_ms": 425,
+      "prompt_tokens": 1024,
+      "output_tokens": 28,
+      "estimated_output_tokens": 24
+    }
+  ]
+}

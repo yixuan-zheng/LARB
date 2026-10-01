@@ -1,0 +1,645 @@
+{
+  "source_commit": "3337ff6bdffc0b4f6dcecd6fdad8ceb7f3c56a24",
+  "model_repo": "atrost/nanochat-d24-matformer-ffnlog-fullattn-20260507",
+  "model_revision": "d96d29fa20dc53abbd0830bd7f8ced8e9c123e77",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "dtype": "bfloat16",
+  "load_seconds": 88.35115673439577,
+  "metadata": {
+    "step": 3624,
+    "model_config": {
+      "sequence_len": 2048,
+      "vocab_size": 32768,
+      "n_layer": 24,
+      "n_head": 16,
+      "n_kv_head": 16,
+      "n_embd": 1280,
+      "window_pattern": "L",
+      "norm_type": "rmsnorm",
+      "attn_alpha_init_value": 1.0,
+      "ffn_alpha_init_value": 1.0,
+      "dec_alpha_init_value": 1.0,
+      "head_dim": 80,
+      "matformer_ffn_hidden_dims": [
+        640,
+        1280,
+        2560,
+        5120
+      ],
+      "matformer_head_counts": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    "trained_widths": {
+      "S": 640,
+      "M": 1280,
+      "L": 2560,
+      "XL": 5120
+    },
+    "parameter_count": 1059064138,
+    "allocated_gpu_bytes": 2118459904
+  },
+  "fixed_width": [
+    {
+      "width": "S",
+      "full_top1": 9714,
+      "cached_top1": 9714,
+      "cache_position": 6,
+      "cache_shape": [
+        24,
+        1,
+        6,
+        16,
+        80
+      ],
+      "max_abs_logit_difference": 0.1122274398803711,
+      "mean_abs_logit_difference": 0.006924789398908615
+    },
+    {
+      "width": "M",
+      "full_top1": 9714,
+      "cached_top1": 9714,
+      "cache_position": 6,
+      "cache_shape": [
+        24,
+        1,
+        6,
+        16,
+        80
+      ],
+      "max_abs_logit_difference": 0.135467529296875,
+      "mean_abs_logit_difference": 0.011210638098418713
+    },
+    {
+      "width": "L",
+      "full_top1": 9714,
+      "cached_top1": 9714,
+      "cache_position": 6,
+      "cache_shape": [
+        24,
+        1,
+        6,
+        16,
+        80
+      ],
+      "max_abs_logit_difference": 0.11521053314208984,
+      "mean_abs_logit_difference": 0.0036095785908401012
+    },
+    {
+      "width": "XL",
+      "full_top1": 9714,
+      "cached_top1": 9714,
+      "cache_position": 6,
+      "cache_shape": [
+        24,
+        1,
+        6,
+        16,
+        80
+      ],
+      "max_abs_logit_difference": 0.0,
+      "mean_abs_logit_difference": 0.0
+    }
+  ],
+  "switches": [
+    {
+      "schedule": "S->XL",
+      "cache_position": 7,
+      "cache_pointer_unchanged": true,
+      "earlier_k_unchanged": true,
+      "earlier_v_unchanged": true,
+      "switched_top1": 262,
+      "recomputed_target_top1": 262,
+      "max_abs_logit_difference_from_recomputed_target": 0.7693983316421509
+    },
+    {
+      "schedule": "XL->S",
+      "cache_position": 7,
+      "cache_pointer_unchanged": true,
+      "earlier_k_unchanged": true,
+      "earlier_v_unchanged": true,
+      "switched_top1": 262,
+      "recomputed_target_top1": 262,
+      "max_abs_logit_difference_from_recomputed_target": 0.8900492191314697
+    },
+    {
+      "schedule": "M->L",
+      "cache_position": 7,
+      "cache_pointer_unchanged": true,
+      "earlier_k_unchanged": true,
+      "earlier_v_unchanged": true,
+      "switched_top1": 262,
+      "recomputed_target_top1": 262,
+      "max_abs_logit_difference_from_recomputed_target": 0.26376914978027344
+    }
+  ],
+  "generation": [
+    {
+      "prompt": "The capital of France is",
+      "schedule": "S",
+      "tokens": [
+        9714,
+        44,
+        537,
+        306,
+        262,
+        6987,
+        285,
+        7296,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46
+      ],
+      "continuation": " Paris, which is the capital of France. The capital of France is Paris."
+    },
+    {
+      "prompt": "The capital of France is",
+      "schedule": "M",
+      "tokens": [
+        9714,
+        44,
+        262,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46
+      ],
+      "continuation": " Paris, the capital of France is Paris. The capital of France is Paris."
+    },
+    {
+      "prompt": "The capital of France is",
+      "schedule": "L",
+      "tokens": [
+        9714,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46
+      ],
+      "continuation": " Paris. The capital of France is Paris. The capital of France is Paris."
+    },
+    {
+      "prompt": "The capital of France is",
+      "schedule": "XL",
+      "tokens": [
+        9714,
+        44,
+        262,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46
+      ],
+      "continuation": " Paris, the capital of France is Paris. The capital of France is Paris."
+    },
+    {
+      "prompt": "The capital of France is",
+      "schedule": "S->@8->XL",
+      "tokens": [
+        9714,
+        44,
+        537,
+        306,
+        262,
+        6987,
+        285,
+        7296,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46
+      ],
+      "continuation": " Paris, which is the capital of France. The capital of France is Paris."
+    },
+    {
+      "prompt": "The capital of France is",
+      "schedule": "XL->@8->S",
+      "tokens": [
+        9714,
+        44,
+        262,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46,
+        370,
+        6987,
+        285,
+        7296,
+        306,
+        9714,
+        46
+      ],
+      "continuation": " Paris, the capital of France is Paris. The capital of France is Paris."
+    },
+    {
+      "prompt": "Once upon a time, a curious scientist",
+      "schedule": "S",
+      "tokens": [
+        4580,
+        18700,
+        5262,
+        283,
+        2346,
+        283,
+        257,
+        1918,
+        10991,
+        1308,
+        1364,
+        2698,
+        46,
+        2458,
+        952,
+        1948
+      ],
+      "continuation": " named Alice decided to travel to a faraway place called Earth. She had never"
+    },
+    {
+      "prompt": "Once upon a time, a curious scientist",
+      "schedule": "M",
+      "tokens": [
+        4580,
+        2407,
+        46,
+        15206,
+        6665,
+        287,
+        257,
+        948,
+        6561,
+        1364,
+        18238,
+        3332,
+        7561,
+        46,
+        2458,
+        6298
+      ],
+      "continuation": " named Dr. Sarah lived in a small town called Harmonyville. She loved"
+    },
+    {
+      "prompt": "Once upon a time, a curious scientist",
+      "schedule": "L",
+      "tokens": [
+        4580,
+        2407,
+        46,
+        15206,
+        6665,
+        287,
+        257,
+        948,
+        6561,
+        4979,
+        347,
+        9641,
+        3025,
+        288,
+        5664,
+        1597
+      ],
+      "continuation": " named Dr. Sarah lived in a small town filled with colorful flowers and friendly animals"
+    },
+    {
+      "prompt": "Once upon a time, a curious scientist",
+      "schedule": "XL",
+      "tokens": [
+        4580,
+        2407,
+        46,
+        15206,
+        5262,
+        283,
+        2839,
+        346,
+        3595,
+        283,
+        1130,
+        614,
+        803,
+        1538,
+        285,
+        2677
+      ],
+      "continuation": " named Dr. Sarah decided to conduct an experiment to understand how different types of bacteria"
+    },
+    {
+      "prompt": "Once upon a time, a curious scientist",
+      "schedule": "S->@8->XL",
+      "tokens": [
+        4580,
+        18700,
+        5262,
+        283,
+        2346,
+        283,
+        257,
+        1918,
+        10991,
+        2031,
+        1364,
+        2698,
+        46,
+        2458,
+        952,
+        1490
+      ],
+      "continuation": " named Alice decided to travel to a faraway land called Earth. She had always"
+    },
+    {
+      "prompt": "Once upon a time, a curious scientist",
+      "schedule": "XL->@8->S",
+      "tokens": [
+        4580,
+        2407,
+        46,
+        15206,
+        5262,
+        283,
+        2839,
+        346,
+        3595,
+        283,
+        1130,
+        614,
+        262,
+        2138,
+        1728,
+        46
+      ],
+      "continuation": " named Dr. Sarah decided to conduct an experiment to understand how the brain works."
+    },
+    {
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return",
+      "schedule": "S",
+      "tokens": [
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        1715,
+        13210,
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        12383,
+        6091,
+        601,
+        309
+      ],
+      "continuation": " fibonacci(n)\ndef fibonacci(n):\n    if n"
+    },
+    {
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return",
+      "schedule": "M",
+      "tokens": [
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        1715,
+        13210,
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        12383,
+        6091,
+        601,
+        309
+      ],
+      "continuation": " fibonacci(n)\ndef fibonacci(n):\n    if n"
+    },
+    {
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return",
+      "schedule": "L",
+      "tokens": [
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        45,
+        49,
+        1715,
+        13210,
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        12383,
+        6091
+      ],
+      "continuation": " fibonacci(n-1)\ndef fibonacci(n):\n   "
+    },
+    {
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return",
+      "schedule": "XL",
+      "tokens": [
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        45,
+        49,
+        1715,
+        13210,
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        12383,
+        6091
+      ],
+      "continuation": " fibonacci(n-1)\ndef fibonacci(n):\n   "
+    },
+    {
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return",
+      "schedule": "S->@8->XL",
+      "tokens": [
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        1715,
+        13210,
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        12383,
+        6091,
+        601,
+        309
+      ],
+      "continuation": " fibonacci(n)\ndef fibonacci(n):\n    if n"
+    },
+    {
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return",
+      "schedule": "XL->@8->S",
+      "tokens": [
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        45,
+        49,
+        1715,
+        13210,
+        2719,
+        261,
+        5931,
+        105,
+        19860,
+        12383,
+        6091
+      ],
+      "continuation": " fibonacci(n-1)\ndef fibonacci(n):\n   "
+    }
+  ],
+  "timing": [
+    {
+      "width": "S",
+      "prompt_tokens": 74,
+      "batch_size": 1,
+      "prefill_median_ms": 11.605934705585241,
+      "decode_per_token_median_ms": 11.206494877114892,
+      "trials": [
+        {
+          "prefill_ms": 11.603889055550098,
+          "decode_per_token_ms": 11.25259604305029
+        },
+        {
+          "prefill_ms": 11.684959754347801,
+          "decode_per_token_ms": 11.206494877114892
+        },
+        {
+          "prefill_ms": 11.605934705585241,
+          "decode_per_token_ms": 11.19284424930811
+        }
+      ]
+    },
+    {
+      "width": "M",
+      "prompt_tokens": 74,
+      "batch_size": 1,
+      "prefill_median_ms": 11.64968591183424,
+      "decode_per_token_median_ms": 11.21812779456377,
+      "trials": [
+        {
+          "prefill_ms": 11.695357970893383,
+          "decode_per_token_ms": 11.246925685554743
+        },
+        {
+          "prefill_ms": 11.620325036346912,
+          "decode_per_token_ms": 11.216373182833195
+        },
+        {
+          "prefill_ms": 11.64968591183424,
+          "decode_per_token_ms": 11.21812779456377
+        }
+      ]
+    },
+    {
+      "width": "L",
+      "prompt_tokens": 74,
+      "batch_size": 1,
+      "prefill_median_ms": 11.592017021030188,
+      "decode_per_token_median_ms": 11.219351552426815,
+      "trials": [
+        {
+          "prefill_ms": 11.584695894271135,
+          "decode_per_token_ms": 11.219351552426815
+        },
+        {
+          "prefill_ms": 11.615158058702946,
+          "decode_per_token_ms": 11.23399706557393
+        },
+        {
+          "prefill_ms": 11.592017021030188,
+          "decode_per_token_ms": 11.199322529137135
+        }
+      ]
+    },
+    {
+      "width": "XL",
+      "prompt_tokens": 74,
+      "batch_size": 1,
+      "prefill_median_ms": 11.713214218616486,
+      "decode_per_token_median_ms": 11.251823976635933,
+      "trials": [
+        {
+          "prefill_ms": 11.834586039185524,
+          "decode_per_token_ms": 11.264261789619923
+        },
+        {
+          "prefill_ms": 11.713214218616486,
+          "decode_per_token_ms": 11.251823976635933
+        },
+        {
+          "prefill_ms": 11.698597110807896,
+          "decode_per_token_ms": 11.247529415413737
+        }
+      ]
+    }
+  ],
+  "peak_allocated_gpu_bytes": 2171923968,
+  "completed": true
+}

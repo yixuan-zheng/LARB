@@ -1,0 +1,65 @@
+iteration,operation,request_ids,preset,from_preset,start_ms,end_ms,batch_size,context_tokens,cost_source,reason
+0,prefill,steady-00,large,,0.0,21.65625,1,128,EXAMPLE_ONLY,FIFO prefill; shared GPU
+1,decode,steady-00,large,,21.65625,28.875,1,128,EXAMPLE_ONLY,fixed at request start
+2,decode,steady-00,large,,28.875,36.09375,1,128,EXAMPLE_ONLY,fixed at request start
+3,prefill,steady-01,large,,36.09375,57.75,1,128,EXAMPLE_ONLY,FIFO prefill; shared GPU
+4,decode,steady-00|steady-01,large,,57.75,66.9178125,2,128,EXAMPLE_ONLY,fixed at request start
+5,prefill,steady-02,large,,66.9178125,88.5740625,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+6,decode,steady-00|steady-01|steady-02,large,,88.5740625,97.741875,3,128,EXAMPLE_ONLY_NEAREST:2:128,fixed at request start
+7,prefill,steady-03,small,,97.741875,113.210625,1,192,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+8,decode,steady-01|steady-02,large,,113.210625,122.37843749999999,2,128,EXAMPLE_ONLY,switch blocked by dwell or allowed_switches
+9,decode,steady-03,small,,122.37843749999999,127.53468749999999,1,128,EXAMPLE_ONLY,fixed at request start
+10,transition_decode,steady-00,small,large,127.53468749999999,135.6909375,1,128,EXAMPLE_ONLY,pressure=4; dwell satisfied
+11,prefill,steady-04,small,,135.6909375,151.1596875,1,128,EXAMPLE_ONLY,FIFO prefill; shared GPU
+12,prefill,steady-05,small,,151.1596875,166.6284375,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+13,decode,steady-01|steady-02,large,,166.6284375,175.79625,2,128,EXAMPLE_ONLY,switch blocked by dwell or allowed_switches
+14,decode,steady-00|steady-03|steady-04|steady-05,small,,175.79625,185.12906249999997,4,128,EXAMPLE_ONLY,fixed at request start
+15,prefill,steady-06,small,,185.12906249999997,200.59781249999997,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+16,decode,steady-02,large,,200.59781249999997,207.81656249999997,1,128,EXAMPLE_ONLY,switch blocked by dwell or allowed_switches
+17,decode,steady-00|steady-03|steady-04|steady-05|steady-06,small,,207.81656249999997,217.14937499999996,5,128,EXAMPLE_ONLY_NEAREST:4:128,fixed at request start
+18,transition_decode,steady-01,small,large,217.14937499999996,225.30562499999996,1,128,EXAMPLE_ONLY,pressure=7; dwell satisfied
+19,prefill,steady-07,small,,225.30562499999996,240.77437499999996,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+20,prefill,steady-08,small,,240.77437499999996,256.24312499999996,1,128,EXAMPLE_ONLY,FIFO prefill; shared GPU
+21,decode,steady-00|steady-01|steady-03|steady-04|steady-05|steady-06|steady-07,small,,256.24312499999996,271.1446875,7,128,EXAMPLE_ONLY_NEAREST:8:128,fixed at request start
+22,transition_decode,steady-02,small,large,271.1446875,279.3009375,1,128,EXAMPLE_ONLY,pressure=9; dwell satisfied
+23,decode,steady-08,small,,279.3009375,284.4571875,1,128,EXAMPLE_ONLY,fixed at request start
+24,prefill,steady-09,small,,284.4571875,299.9259375,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+25,decode,steady-01|steady-02|steady-03|steady-04|steady-05|steady-06|steady-07|steady-08,small,,299.9259375,314.8275,8,128,EXAMPLE_ONLY,fixed at request start
+26,decode,steady-09,small,,314.8275,319.98375,1,128,EXAMPLE_ONLY,fixed at request start
+27,prefill,steady-10,small,,319.98375,335.4525,1,192,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+28,prefill,steady-11,small,,335.4525,350.92125,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+29,decode,steady-01|steady-02|steady-03|steady-04|steady-05|steady-06|steady-07|steady-08,small,,350.92125,365.8228125,8,128,EXAMPLE_ONLY,fixed at request start
+30,decode,steady-09|steady-10|steady-11,small,,365.8228125,372.37125,3,128,EXAMPLE_ONLY_NEAREST:2:128,fixed at request start
+31,prefill,steady-12,small,,372.37125,387.84,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+32,decode,steady-01|steady-02|steady-03|steady-04|steady-05|steady-06|steady-07|steady-08,small,,387.84,402.7415625,8,128,EXAMPLE_ONLY,fixed at request start
+33,decode,steady-09|steady-10|steady-11|steady-12,small,,402.7415625,412.074375,4,128,EXAMPLE_ONLY,fixed at request start
+34,prefill,steady-13,small,,412.074375,427.543125,1,192,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+35,prefill,steady-14,small,,427.543125,443.011875,1,192,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+36,decode,steady-01|steady-03|steady-04|steady-05|steady-06|steady-07|steady-08|steady-09,small,,443.011875,457.9134375,8,128,EXAMPLE_ONLY,fixed at request start
+37,decode,steady-10|steady-11|steady-12|steady-13|steady-14,small,,457.9134375,467.24625,5,128,EXAMPLE_ONLY_NEAREST:4:128,fixed at request start
+38,prefill,steady-15,small,,467.24625,482.715,1,192,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+39,prefill,steady-16,small,,482.715,498.18375,1,128,EXAMPLE_ONLY,FIFO prefill; shared GPU
+40,decode,steady-01|steady-04|steady-05|steady-06|steady-07|steady-08|steady-09|steady-10,small,,498.18375,513.0853125,8,128,EXAMPLE_ONLY,fixed at request start
+41,decode,steady-11|steady-12|steady-13|steady-14|steady-15|steady-16,small,,513.0853125,522.418125,6,128,EXAMPLE_ONLY_NEAREST:4:128,fixed at request start
+42,prefill,steady-17,small,,522.418125,537.886875,1,96,EXAMPLE_ONLY_NEAREST:1:128,FIFO prefill; shared GPU
+43,decode,steady-01|steady-04|steady-05|steady-06|steady-07|steady-08|steady-09|steady-10,small,,537.886875,552.7884375,8,128,EXAMPLE_ONLY,fixed at request start
+44,decode,steady-11|steady-12|steady-13|steady-14|steady-15|steady-16|steady-17,small,,552.7884375,567.6899999999999,7,128,EXAMPLE_ONLY_NEAREST:8:128,fixed at request start
+45,decode,steady-01|steady-04|steady-05|steady-07|steady-08|steady-09|steady-10|steady-11,small,,567.6899999999999,582.5915624999999,8,128,EXAMPLE_ONLY,fixed at request start
+46,decode,steady-12|steady-13|steady-14|steady-15|steady-16|steady-17,small,,582.5915624999999,591.9243749999999,6,128,EXAMPLE_ONLY_NEAREST:4:128,fixed at request start
+47,decode,steady-01|steady-04|steady-05|steady-07|steady-09|steady-10|steady-11|steady-12,small,,591.9243749999999,606.8259374999999,8,128,EXAMPLE_ONLY,fixed at request start
+48,decode,steady-13|steady-14|steady-15|steady-16|steady-17,small,,606.8259374999999,616.1587499999999,5,128,EXAMPLE_ONLY_NEAREST:4:128,fixed at request start
+49,decode,steady-01|steady-04|steady-05|steady-07|steady-10|steady-11|steady-12|steady-13,small,,616.1587499999999,631.0603124999999,8,128,EXAMPLE_ONLY,fixed at request start
+50,decode,steady-14|steady-15|steady-16|steady-17,small,,631.0603124999999,640.3931249999999,4,128,EXAMPLE_ONLY,fixed at request start
+51,decode,steady-01|steady-04|steady-05|steady-07|steady-10|steady-11|steady-12|steady-13,small,,640.3931249999999,655.2946874999999,8,128,EXAMPLE_ONLY,fixed at request start
+52,decode,steady-14|steady-15|steady-16|steady-17,small,,655.2946874999999,664.6274999999999,4,128,EXAMPLE_ONLY,fixed at request start
+53,decode,steady-04|steady-05|steady-07|steady-10|steady-11|steady-13|steady-14|steady-15,small,,664.6274999999999,679.5290624999999,8,128,EXAMPLE_ONLY,fixed at request start
+54,decode,steady-16|steady-17,small,,679.5290624999999,686.0774999999999,2,128,EXAMPLE_ONLY,fixed at request start
+55,decode,steady-04|steady-05|steady-10|steady-11|steady-13|steady-15|steady-16|steady-17,small,,686.0774999999999,700.9790624999998,8,128,EXAMPLE_ONLY,fixed at request start
+56,decode,steady-04|steady-05|steady-10|steady-11|steady-13|steady-15|steady-17,small,,700.9790624999998,715.8806249999998,7,128,EXAMPLE_ONLY_NEAREST:8:128,fixed at request start
+57,transition_decode,steady-11|steady-13|steady-15,large,small,715.8806249999998,729.0484749999998,3,128,EXAMPLE_ONLY_NEAREST:2:128,pressure=3; dwell satisfied
+58,decode,steady-11|steady-13|steady-15,large,,729.0484749999998,738.2162874999998,3,128,EXAMPLE_ONLY_NEAREST:2:128,fixed at request start
+59,decode,steady-11|steady-13|steady-15,large,,738.2162874999998,747.3840999999998,3,128,EXAMPLE_ONLY_NEAREST:2:128,fixed at request start
+60,decode,steady-11|steady-13|steady-15,large,,747.3840999999998,756.5519124999997,3,128,EXAMPLE_ONLY_NEAREST:2:128,fixed at request start
+61,decode,steady-13|steady-15,large,,756.5519124999997,765.7197249999997,2,128,EXAMPLE_ONLY,fixed at request start
+62,decode,steady-13|steady-15,large,,765.7197249999997,774.8875374999997,2,128,EXAMPLE_ONLY,fixed at request start
+63,decode,steady-15,large,,774.8875374999997,782.1062874999997,1,128,EXAMPLE_ONLY,fixed at request start

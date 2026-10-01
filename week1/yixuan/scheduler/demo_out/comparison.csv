@@ -1,0 +1,13 @@
+trace,policy,requests,makespan_ms,throughput_requests_per_s,latency_only_simulated_goodput_requests_per_s,mean_ttft_ms,mean_completion_ms,switches,quality_constrained_goodput
+burst,static_large,18,1010.264,17.8171,17.8171,302.13,820.095,0,NOT_EVALUATED
+burst,static_small,18,727.753,24.7337,24.7337,183.918,537.474,0,NOT_EVALUATED
+burst,request,18,727.753,24.7337,24.7337,183.918,537.474,0,NOT_EVALUATED
+burst,iteration,18,741.117,24.2877,24.2877,183.918,538.729,2,NOT_EVALUATED
+changing_mix,static_large,18,1691.018,10.6445,10.6445,180.562,1114.009,0,NOT_EVALUATED
+changing_mix,static_small,18,1210.022,14.8758,14.8758,100.412,670.795,0,NOT_EVALUATED
+changing_mix,request,18,1277.866,14.086,14.086,112.962,780.367,0,NOT_EVALUATED
+changing_mix,iteration,18,1289.243,13.9617,13.9617,135.603,787.052,4,NOT_EVALUATED
+steady,static_large,18,949.266,18.962,18.962,76.02,552.987,0,NOT_EVALUATED
+steady,static_small,18,709.139,25.3829,25.3829,35.678,260.745,0,NOT_EVALUATED
+steady,request,18,784.07,22.9571,22.9571,53.088,387.719,0,NOT_EVALUATED
+steady,iteration,18,782.106,23.0148,23.0148,49.883,379.539,6,NOT_EVALUATED

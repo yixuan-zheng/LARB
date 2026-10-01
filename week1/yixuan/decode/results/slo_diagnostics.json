@@ -1,0 +1,22 @@
+{
+  "iteration": {
+    "requests": 360,
+    "ttft_fail": 133,
+    "itl_fail": 0
+  },
+  "large": {
+    "requests": 360,
+    "ttft_fail": 134,
+    "itl_fail": 0
+  },
+  "request": {
+    "requests": 360,
+    "ttft_fail": 143,
+    "itl_fail": 0
+  },
+  "small": {
+    "requests": 360,
+    "ttft_fail": 155,
+    "itl_fail": 4
+  }
+}
