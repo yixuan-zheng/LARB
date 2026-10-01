@@ -1,0 +1,3 @@
+-r ../../../preflight/environment/requirements.txt
+# only prepare_data.py needs datasets; the GPU scripts read the frozen JSONL instead
+datasets==5.0.1
