@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "n_checks": 32,
+  "checks": [
+    {
+      "check": "quantile_endpoints",
+      "passed": true,
+      "detail": "q0/q1 exact"
+    },
+    {
+      "check": "quantile_median",
+      "passed": true,
+      "detail": "interpolated median 2.5"
+    },
+    {
+      "check": "quantile_matches_statistics",
+      "passed": true,
+      "detail": "linear interpolation at p25"
+    },
+    {
+      "check": "summarize_fields",
+      "passed": true,
+      "detail": "n/median/min/max = 4/2.5/1.0/4.0"
+    },
+    {
+      "check": "paired_null_ratio",
+      "passed": true,
+      "detail": "ratio=1.0"
+    },
+    {
+      "check": "paired_null_ci_contains_one",
+      "passed": true,
+      "detail": "ci=[1.0000,1.0000]"
+    },
+    {
+      "check": "paired_null_not_appreciable",
+      "passed": true,
+      "detail": "identical samples flagged as noise"
+    },
+    {
+      "check": "paired_effect_ratio",
+      "passed": true,
+      "detail": "ratio=0.7499999999999999"
+    },
+    {
+      "check": "paired_effect_ci_excludes_one",
+      "passed": true,
+      "detail": "ci=[0.7500,0.7500]"
+    },
+    {
+      "check": "paired_effect_appreciable",
+      "passed": true,
+      "detail": "verdict=appreciable"
+    },
+    {
+      "check": "paired_speedup_reciprocal",
+      "passed": true,
+      "detail": "speedup=1.333333"
+    },
+    {
+      "check": "linear_fit_intercept",
+      "passed": true,
+      "detail": "a=0.05"
+    },
+    {
+      "check": "linear_fit_slope",
+      "passed": true,
+      "detail": "b=2.0"
+    },
+    {
+      "check": "linear_fit_r2",
+      "passed": true,
+      "detail": "r2=1.0"
+    },
+    {
+      "check": "layer_types_full_count",
+      "passed": true,
+      "detail": "7 full / 28 sliding attention layers"
+    },
+    {
+      "check": "kv_owning_layers",
+      "passed": true,
+      "detail": "20 layers own KV projections"
+    },
+    {
+      "check": "kv_full_length_owners",
+      "passed": true,
+      "detail": "one full-length KV owner per attention type"
+    },
+    {
+      "check": "ffn_flops_m1",
+      "passed": true,
+      "detail": "7046430720 FLOP == 6*H*W*layers"
+    },
+    {
+      "check": "attn_proj_flops_m1",
+      "passed": true,
+      "detail": "671088640 FLOP"
+    },
+    {
+      "check": "ffn_share_dominates",
+      "passed": true,
+      "detail": "FFN is 88.6% of linear FLOPs at 2048 ctx"
+    },
+    {
+      "check": "sliding_window_caps_attention",
+      "passed": true,
+      "detail": "core 1.468e+08 < 5.872e+08 at long context"
+    },
+    {
+      "check": "causal_cheaper_than_full",
+      "passed": true,
+      "detail": "causal 3.765e+10 < full 7.516e+10"
+    },
+    {
+      "check": "ffn_bytes_small_over_large",
+      "passed": true,
+      "detail": "ratio=0.714286 (expected 0.714286)"
+    },
+    {
+      "check": "ffn_bytes_values",
+      "passed": true,
+      "detail": "large=7046430720 small=5033164800"
+    },
+    {
+      "check": "weight_bytes_sum",
+      "passed": true,
+      "detail": "total=13.73 GiB"
+    },
+    {
+      "check": "lm_head_untied_counted",
+      "passed": true,
+      "detail": "lm_head 1.00 GiB, untied"
+    },
+    {
+      "check": "tied_variant_omits_lm_head",
+      "passed": true,
+      "detail": "untied default is counted"
+    },
+    {
+      "check": "embeddings_dominate_width_free",
+      "passed": true,
+      "detail": "embeddings 5.38 GiB vs ffn 6.56 GiB"
+    },
+    {
+      "check": "kv_resident_bytes",
+      "passed": true,
+      "detail": "27262976 bytes == 27262976"
+    },
+    {
+      "check": "mfu_half_peak",
+      "passed": true,
+      "detail": "full peak at 1 s gives MFU 1.0"
+    },
+    {
+      "check": "bw_utilization",
+      "passed": true,
+      "detail": "full peak at 1 s gives 1.0"
+    },
+    {
+      "check": "peaks_table_has_l40s",
+      "passed": true,
+      "detail": "3 device roofs tabulated"
+    }
+  ],
+  "key_numbers": {
+    "ffn_flops_per_token_full_width": 7046430720.0,
+    "attn_proj_flops_per_token": 671088640.0,
+    "ffn_bytes_large": 7046430720,
+    "ffn_bytes_small": 5033164800,
+    "weight_bytes_large": 14740931960,
+    "kv_bytes_ctx2048_batch1": 27262976
+  }
+}

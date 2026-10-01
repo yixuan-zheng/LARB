@@ -1,0 +1,11 @@
+preset,bucket,bytes,gib
+medium,altup,865760,0.0008
+medium,attention,671116800,0.625
+medium,embeddings,1074790400,1.001
+medium,embeddings_per_layer,4697620480,4.375
+medium,ffn,6039797760,5.625
+medium,laurel,18493440,0.0172
+medium,norms,720896,0.0007
+medium,other,1125122048,1.0479
+medium,per_layer_input,110100992,0.1025
+medium,total,13738628576,12.7951

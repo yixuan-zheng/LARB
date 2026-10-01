@@ -11,6 +11,8 @@ from transformers import AutoTokenizer, Gemma3nForConditionalGeneration
 ROOT = Path(__file__).resolve().parent
 MODEL = "google/gemma-3n-E4B"
 REVISION = "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee"
+OUTPUT_DIR = ROOT.parent / "run-output"
+OUTPUT_DIR.mkdir(exist_ok=True)
 presets = json.loads((ROOT / "presets.json").read_text())["presets"]
 torch.set_num_threads(4)
 assert torch.cuda.is_available()
