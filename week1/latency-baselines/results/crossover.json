@@ -1,0 +1,340 @@
+{
+  "fits": [
+    {
+      "label": "decode_step",
+      "fitted": true,
+      "n_rows": 13,
+      "coef": {
+        "intercept_ms": 52.819766301681945,
+        "ms_per_weight_byte": 2.1002582191903096e-10
+      },
+      "dropped_collinear": [
+        {
+          "name": "ms_per_token",
+          "constant": 1.0
+        },
+        {
+          "name": "ms_per_kv_byte",
+          "constant": 0.0
+        }
+      ],
+      "r2": 0.04476043411903907,
+      "rows": [
+        {
+          "key": "small_L128",
+          "preset": "small",
+          "block": "L128",
+          "gpu_ms_median": 54.674943923950195,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L128",
+          "preset": "medium",
+          "block": "L128",
+          "gpu_ms_median": 54.7512149810791,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L128",
+          "preset": "large",
+          "block": "L128",
+          "gpu_ms_median": 55.050750732421875,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L512",
+          "preset": "small",
+          "block": "L512",
+          "gpu_ms_median": 56.19603157043457,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L512",
+          "preset": "medium",
+          "block": "L512",
+          "gpu_ms_median": 56.3317756652832,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L512",
+          "preset": "large",
+          "block": "L512",
+          "gpu_ms_median": 56.5427188873291,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L2048",
+          "preset": "small",
+          "block": "L2048",
+          "gpu_ms_median": 56.230384826660156,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L2048",
+          "preset": "medium",
+          "block": "L2048",
+          "gpu_ms_median": 56.562177658081055,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L2048",
+          "preset": "large",
+          "block": "L2048",
+          "gpu_ms_median": 56.62822341918945,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L128",
+          "preset": "small",
+          "block": "L128",
+          "gpu_ms_median": 54.13625526428223,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "large_L128",
+          "preset": "large",
+          "block": "L128",
+          "gpu_ms_median": 54.59712028503418,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L512",
+          "preset": "small",
+          "block": "L512",
+          "gpu_ms_median": 55.96672058105469,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "large_L512",
+          "preset": "large",
+          "block": "L512",
+          "gpu_ms_median": 56.499711990356445,
+          "tokens_per_step": 1,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        }
+      ],
+      "width_effect": {
+        "large_weight_bytes": 14745261536,
+        "small_weight_bytes": 12731995616,
+        "delta_bytes": 2013265920,
+        "predicted_delta_ms": 0.42283782958957405,
+        "predicted_ratio_at_batch1": 0.9920582804600043,
+        "predicted_speedup_at_batch1": 1.0080052953505043
+      }
+    },
+    {
+      "label": "prefill",
+      "fitted": true,
+      "n_rows": 18,
+      "coef": {
+        "intercept_ms": -176.98375292220337,
+        "ms_per_token": 0.09033386701087125,
+        "ms_per_weight_byte": 1.2947004771982643e-08
+      },
+      "dropped_collinear": [
+        {
+          "name": "ms_per_kv_byte",
+          "constant": 0.0
+        }
+      ],
+      "r2": 0.9789430653312946,
+      "rows": [
+        {
+          "key": "small_L128_B1",
+          "preset": "small",
+          "block": "L128_B1",
+          "gpu_ms_median": 57.20217514038086,
+          "tokens_per_step": 128,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L128_B1",
+          "preset": "medium",
+          "block": "L128_B1",
+          "gpu_ms_median": 57.54265594482422,
+          "tokens_per_step": 128,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L128_B1",
+          "preset": "large",
+          "block": "L128_B1",
+          "gpu_ms_median": 57.931264877319336,
+          "tokens_per_step": 128,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L128_B4",
+          "preset": "small",
+          "block": "L128_B4",
+          "gpu_ms_median": 57.27129554748535,
+          "tokens_per_step": 512,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L128_B4",
+          "preset": "medium",
+          "block": "L128_B4",
+          "gpu_ms_median": 57.96044731140137,
+          "tokens_per_step": 512,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L128_B4",
+          "preset": "large",
+          "block": "L128_B4",
+          "gpu_ms_median": 58.646047592163086,
+          "tokens_per_step": 512,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L512_B1",
+          "preset": "small",
+          "block": "L512_B1",
+          "gpu_ms_median": 60.185089111328125,
+          "tokens_per_step": 512,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L512_B1",
+          "preset": "medium",
+          "block": "L512_B1",
+          "gpu_ms_median": 60.92902374267578,
+          "tokens_per_step": 512,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L512_B1",
+          "preset": "large",
+          "block": "L512_B1",
+          "gpu_ms_median": 61.52960014343262,
+          "tokens_per_step": 512,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L512_B4",
+          "preset": "small",
+          "block": "L512_B4",
+          "gpu_ms_median": 122.20211029052734,
+          "tokens_per_step": 2048,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L512_B4",
+          "preset": "medium",
+          "block": "L512_B4",
+          "gpu_ms_median": 135.18438720703125,
+          "tokens_per_step": 2048,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L512_B4",
+          "preset": "large",
+          "block": "L512_B4",
+          "gpu_ms_median": 148.38118743896484,
+          "tokens_per_step": 2048,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L2048_B1",
+          "preset": "small",
+          "block": "L2048_B1",
+          "gpu_ms_median": 133.3053436279297,
+          "tokens_per_step": 2048,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L2048_B1",
+          "preset": "medium",
+          "block": "L2048_B1",
+          "gpu_ms_median": 146.51852416992188,
+          "tokens_per_step": 2048,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L2048_B1",
+          "preset": "large",
+          "block": "L2048_B1",
+          "gpu_ms_median": 160.0773162841797,
+          "tokens_per_step": 2048,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        },
+        {
+          "key": "small_L2048_B4",
+          "preset": "small",
+          "block": "L2048_B4",
+          "gpu_ms_median": 710.9795227050781,
+          "tokens_per_step": 8192,
+          "kv_resident_bytes": null,
+          "weight_bytes": 12731995616
+        },
+        {
+          "key": "medium_L2048_B4",
+          "preset": "medium",
+          "block": "L2048_B4",
+          "gpu_ms_median": 761.4668884277344,
+          "tokens_per_step": 8192,
+          "kv_resident_bytes": null,
+          "weight_bytes": 13738628576
+        },
+        {
+          "key": "large_L2048_B4",
+          "preset": "large",
+          "block": "L2048_B4",
+          "gpu_ms_median": 810.9747009277344,
+          "tokens_per_step": 8192,
+          "kv_resident_bytes": null,
+          "weight_bytes": 14745261536
+        }
+      ],
+      "width_effect": {
+        "large_weight_bytes": 14745261536,
+        "small_weight_bytes": 12731995616,
+        "delta_bytes": 2013265920,
+        "predicted_delta_ms": 26.065763473510025,
+        "predicted_ratio_at_batch1": 1.1728181968551108,
+        "predicted_speedup_at_batch1": null
+      }
+    }
+  ]
+}

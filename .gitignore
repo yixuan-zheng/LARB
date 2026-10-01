@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+pip-cache/
 hf-cache/
 *.safetensors
 *.pt
@@ -12,3 +13,7 @@ hf-cache/
 .env.*
 *token*
 !preflight/code/access_status.json
+
+# Week 1 latency profile local run artifacts
+week1/latency-baselines/run-output/
+tmp/
