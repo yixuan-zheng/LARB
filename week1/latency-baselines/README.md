@@ -8,9 +8,11 @@ profiles that ratio properly instead of concluding from a single unvalidated set
 
 Scope discipline, stated up front:
 
-* **Statically extracted sub-models only.** One FFN width per process; three workers
-  (`small` E2.98B, `medium` E3.49B, `large` E3.98B) built from the published presets.
-* **No dynamic switching and no switching-cost measurement.** That is a separate question.
+* **Statically extracted sub-models first, then a dynamic-switching extension.** S0-S7
+  measure one FFN width per process; three workers (`small` E2.98B, `medium` E3.49B,
+  `large` E3.98B) are built from the published presets. **S8-S11** (below) measure the
+  cost and the value of *changing that width per iteration* on a single full-weight model,
+  and compare it against exactly these static baselines.
 * **Text only**, via `Gemma3nForCausalLM`. The multimodal class peaks at ~15.6 GiB on load
   and its vision/audio towers do no work here.
 * **Not a serving benchmark.** Single process, eager PyTorch unless a scenario opts into
@@ -31,27 +33,36 @@ Scope discipline, stated up front:
 | `s5_backends.py` | eager vs `torch.compile` vs CUDA Graphs; tests whether host dispatch hides the effect |
 | `s6_layer_profile.py` | per-layer FFN runtime, module attribution, analytic speedup ceiling |
 | `s7_memory_roofline.py` | weights by component, KV/token, max batch before OOM, achieved BW and MFU |
-| `analyze_latency.py` | aggregates everything into CSVs plus a fitted `T = a + b*tokens + c*kv + d*weights` |
-| `test_flop_model.py` | CPU-only correctness tests for the cost model (31 checks) |
+| `dynamic_lib.py` | dynamic extension: `SwitchController` (per-iteration FFN width on one full-weight model), scheduled generation, static-reference builders |
+| `switch_schedules.py` | stdlib-only width plans and schedule generators (const/alternate/block/random/phase); testable on a login node |
+| `s8_switch_mechanism.py` | **gate**: dynamic-at-W vs static-W logits, switch-operation cost, mechanism tax (`view` vs `materialize`), cold-switch penalty, null control |
+| `s9_switch_phase.py` | one switch at the prefill/decode boundary; prefill-win "capture fraction" and boundary cost |
+| `s10_switch_iteration.py` | per-token decode switching (alternate/block/random); alternation overhead vs the width-weighted static prediction |
+| `s11_switch_flexibility.py` | weights per option, max batch before OOM, retarget cost: what one switchable weight set buys |
+| `test_switch_schedules.py` | CPU-only correctness tests for the schedule algebra (24 checks) |
+| `analyze_latency.py` | aggregates everything into CSVs plus a fitted `T = a + b*tokens + c*kv + d*weights`; extracts s0/s4/s6/s7 detail and a coverage audit; also emits `switch_summary.json` |
+| `test_flop_model.py` | CPU-only correctness tests for the cost model (32 checks) |
 | `run_suite.sh` | driver; one process per preset for S6/S7 |
+| `report_latency.py` | renders the aggregated JSON into `results/latency_report.md`, ending with provenance and any coverage gap |
 | `run_session.sh` | driver for one allocation, sized from measurement, with per-scenario `timeout` guards and a status file; set the `SCENARIOS` env var to resume a subset |
 | `probe_cost.py` | measures real per-configuration cost (prefill, decode, seconds per iteration) so a grid is sized from data rather than guessed |
-| `report_latency.py` | renders the aggregated JSON into `results/latency_report.md` |
 | `env.sh` | checkpoints and caches under `MATFORMER_PROJECT_ROOT` (mirrors `preflight`) |
 | `run-output/` | Git-ignored; every measurement is flushed as it lands |
-| `results/` | archived CSVs, aggregated JSON, and the cost-model test record |
+| `results/` | archived CSVs, aggregated JSON, per-scenario extracts, and the cost-model test record |
 
 ## Running
 
 ```bash
 source week1/latency-baselines/env.sh          # HF cache + venv, per preflight convention
-python week1/latency-baselines/test_flop_model.py   # CPU-only, seconds, no GPU needed
+python week1/latency-baselines/test_flop_model.py       # CPU-only, seconds, no GPU needed
+python week1/latency-baselines/test_switch_schedules.py # CPU-only, schedule algebra
 
 bash week1/latency-baselines/run_suite.sh fast      # gate + tiny grids
 bash week1/latency-baselines/run_suite.sh full      # the intended grid
 
 PRESETS="small,large" bash run_suite.sh full        # if all three workers will not fit
 SCENARIOS="s1 s3" bash run_suite.sh fast            # any subset
+SCENARIOS="s8" bash run_suite.sh fast               # dynamic gate only (run it before s9-s11)
 ```
 
 Run on an allocated GPU node, never a login node (the checkpoints are ~16 GiB and S2/S3
@@ -70,9 +81,42 @@ can reach tens of GiB of VRAM; this mirrors `preflight/environment/SETUP.txt`).
 * **S5** — the decisive test. If `alpha` is what hides the effect, removing it must move the
   ratio toward the 0.714 weight ratio.
 * **S6** — attribution and the ceiling: a width change touches one of ~13 units per layer,
-  so `ceiling_speedup = 1 / (1 - ffn_time_share * (1 - 0.714))` bounds every claim.
+  so `ceiling_speedup = 1 / (1 - ffn_time_share * (1 - 0.714))` bounds the win at that
+  grid (a grid with lighter attention has a larger FFN share, hence a higher ceiling).
 * **S7** — the memory side, which is arithmetically certain even where latency is not:
-  7.05 GiB vs 5.03 GiB of FFN weights, plus max batch and context at fixed capacity.
+  6.56 GiB vs 4.69 GiB of FFN weights, plus max batch and context at fixed capacity.
+* **S8** — the dynamic gate. Proves a runtime-width model is *numerically identical* to the
+  static baselines (dynamic-at-W == static-W, `max_abs_logit 0.0`, on the L40S), prices the
+  switch itself (host `apply`, ~87 us for 35 layers), and reports the *mechanism tax*
+  (dynamic-at-W vs static-at-W, per `slice_mode`) and the cold-switch penalty.
+* **S9** — the flexibility win that the static suite cannot express: narrow prefill then one
+  switch to wide decode. Reports the `capture_fraction` of the static prefill win banked and
+  what the boundary switch adds to the next token.
+* **S10** — iteration-level switching inside decode: alternate/block/random schedules; its
+  headline number is the *alternation overhead* against the width-weighted static prediction,
+  i.e. what switching every token costs beyond the widths being switched between.
+* **S11** — what one switchable weight set buys: weights per option, max batch before OOM, and
+  the retarget cost (a host `apply`) against a full reload.
+
+### Dynamic switching (s8-s11): method
+
+S8-S11 reuse every instrument (clock guard, L2 flusher, dual-clock timer, interleaved
+shuffled sampling, crash-safe records) and add a `SwitchController` that keeps the *full*
+E4B weights resident and serves any per-layer width by slicing at call time. The switch is
+a per-layer attribute write, timed on the host and reported separately from the step. Two
+design points matter for honesty:
+
+* **Contiguity is an axis, not a footnote.** `slice_mode=view` is the preflight pilot's
+  strided-view path; `materialize` caches contiguous slices. Reporting both stops a
+  contiguity penalty from being mislabelled as "the cost of switching" (the static workers
+  already call `.contiguous()` for exactly this reason).
+* **Cold and warm are separated.** A switch touches no device state; the only possible cost
+  is the shape change on the *next* forward, so cold-switch is measured deliberately on
+  prefill (decode is always warm, because building the cache runs a forward first).
+
+The dynamic model is the `large` worker (all layers 16384), and each preset is a legal slice
+of it, so one resident weight set emulates all three presets; static references for `small`/
+`medium` are built from the same single parent load.
 
 ## Measurement methodology
 
@@ -84,7 +128,8 @@ Cheap to state, expensive to get wrong:
   distributions, never a single number).
 * **Shuffled interleaving.** Each configuration contributes one sample per round in a
   reshuffled order, so clock/thermal drift cannot masquerade as an effect and the paired
-  statistics are valid. S0 measured a ~1.4% residual bias before shuffling.
+  statistics are valid. S0 measured a ~1.4% minimum detectable difference and a ~0.9%
+  residual bias.
 * **Both clocks on the same call.** `wall_ms` (perf_counter, GPU-synchronised) and `gpu_ms`
   (CUDA events). Their difference is reported as `alpha_ms`, the host dispatch cost, which
   is the single most explanatory quantity in this profile.
@@ -113,13 +158,29 @@ Cheap to state, expensive to get wrong:
   suite's own S0/S1 pair exists to catch.
 * A wider GEMM is *relatively more efficient* (a 2x large GEMM took 2.17x, not 2.0x), so
   width reduction fights a geometric-efficiency penalty as well as enjoying a byte saving.
-* The text model is **12.73 GiB** of weights, of which **5.38 GiB is embedding tables** that no
-  width change touches. Narrowing the FFN moves ~2 GiB, about 15% of residency.
-* The FFN is **88.6%** of linear-layer FLOPs at a 2048-token context, yet removing 15% of the
+* The text model is **13.73 GiB** of weights (the `large` preset; `small` is 11.86 GiB), of
+  which **5.38 GiB is embedding tables** that no width change touches. Narrowing the FFN moves
+  ~1.88 GiB, about 14% of residency.
+* The FFN is **88.6%** of linear-layer FLOPs at a 2048-token context, yet removing ~14% of the
   weight bytes (large 13.73 GiB -> small 11.86 GiB, both matching the analytic model exactly)
   moves a batch-1 decode step by **0.7% at 128 context and 0% at 512** (S1 smoke run). The
   arithmetic is large and the byte saving is real; neither is what the step time is spent on.
   S6 is the scenario that explains where it does go.
+* **Dynamic switching is measured on the full session grid (S8-S11, L40S).** The switchable
+  model is *numerically identical* to the static baselines in-process (`max_abs_logit 0.0` at
+  large, medium and small); the switch costs ~87 us of host time for all 35 layers; and the
+  mechanism tax (dynamic-at-W vs static-at-W, `view` and `materialize`), the cold-switch
+  penalty, and a two-identical-conditions null control are all `within_noise` (|tax| <= ~1.5%).
+  On the schedule side a single switch at the prefill/decode boundary **captures 0.99-1.01x of
+  the static prefill win wherever that win is resolvable** (S9: 0.991 @L2048_B1, 0.994 @L2048_B4,
+  1.008 @L512_B4; at L512_B1 the static win is 0.39 ms and the fraction is reported `n/a`), and
+  per-token alternation costs **<= 0.06%** (S10). S10 also shows the static large-vs-small
+  *decode* widths are themselves unresolvable (|delta| < 0.34 ms), so that ~0 is "nothing to
+  lose in decode", not "switching is free everywhere" -- the report states this explicitly.
+  S11 quantifies the flexibility: one 13.73 GiB switchable weight set emulates all three presets
+  where two static models need 25.59 GiB (at +1.88 GiB over small-only), and its max batch is
+  unchanged vs a static worker even with only one model resident at a time (cap-limited at
+  short context, activation/KV-bound at long context).
 
 ## Reading the output
 
@@ -128,9 +189,26 @@ versions, device, clocks, protocol), every raw sample, summaries, comparisons an
 utilization. `completed: true` distinguishes a finished run from a preempted one. Then:
 
 ```bash
-python analyze_latency.py      # -> results/latency_profile.{json,csv}
+python analyze_latency.py      # -> results/latency_profile.{json,csv} + per-scenario detail
 python report_latency.py       # -> results/latency_report.md
 ```
 
-`results/crossover.json` contains the fitted model and the implied width effect; the CSVs
-are plottable with whatever tooling the reader prefers (no new dependency is imposed).
+`analyze_latency.py` writes one extract per scenario into `results/`, so no
+conclusion-determining number lives only in `run-output/`:
+
+| file | contents |
+|---|---|
+| `results/latency_profile.json` | the whole aggregated structure (utilization, comparisons, `end_to_end`, `attribution`, `memory`, `gates`, `switching`, `summary.coverage`) |
+| `results/latency_profile.csv`, `results/comparisons.csv` | utilization and paired Large-vs-Small rows (s1, s2, s3, s5, s7) |
+| `results/s4_end_to_end.csv`, `results/s4_end_to_end_ratios.csv` | TTFT/ITL/e2e/throughput per request, plus the cross-process width ratio |
+| `results/s6_attribution.csv` | per-module shares, kernel-category shares and the analytic speedup ceiling |
+| `results/s7_memory.csv` | resident weights per bucket, KV per token, capacity cap, roofline utilization |
+| `results/scenario_coverage.csv` | rows each scenario contributed to each table (a scenario that produced none is named) |
+| `results/crossover.json`, `results/switch_summary.json` | the fitted cost model and the s8-s11 switching blocks |
+
+`report_latency.py` renders every scenario that ran, leads with a `Verdicts at a
+glance` table, prints the `Coverage` accounting (including any scenario present in
+the records but missing from every table) and closes with a `Provenance` table
+mapping each block back to its raw record. `results/crossover.json` contains the
+fitted model and the implied width effect; the CSVs are plottable with whatever
+tooling the reader prefers (no new dependency is imposed).

@@ -16,8 +16,10 @@ Workload definition and why it was chosen
   tiers because it has fully static input shapes and no ``past_key_values`` argument, so
   it is legitimately capturable. A decode step with a mutating cache is not, and faking
   it would produce a benchmark that measures something other than the model.
-* A decode workload is also measured, with ``torch.compile`` only. Its cache handling is
-  left alone and any failure is recorded rather than worked around.
+* Decode is deliberately not measured here. Every tier in this scenario is a prefill: a
+  decode step carries a mutating ``past_key_values`` cache that is not graph-capturable,
+  the prefill regime is where the width effect actually lives (S2/S6), and eager decode is
+  already profiled by S1, S3 and the dynamic schedules in S10.
 
 Backend tiers
 -------------

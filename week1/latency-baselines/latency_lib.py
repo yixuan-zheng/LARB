@@ -4,9 +4,10 @@ Scope
 -----
 Every scenario script in this directory measures *statically extracted* Gemma 3n
 sub-models (one FFN width per process) with one request at a time and eager PyTorch
-unless a scenario explicitly opts into a faster backend. Dynamic width switching and
-switching cost are deliberately out of scope; the preflight package established that
-side of the story separately.
+unless a scenario explicitly opts into a faster backend. The static scenarios (s0-s7)
+keep one FFN width per process; the dynamic-switching extension (s8-s11, see
+``dynamic_lib``/``switch_schedules``) reuses this module's instruments and is documented
+there.
 
 What this module owns
 ---------------------

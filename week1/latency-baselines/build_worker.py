@@ -4,8 +4,9 @@ A worker is a real, independent ``Gemma3nForCausalLM``: the FFN hidden dimension
 from the Google slicing preset and the E4B tensors are physically sliced
 (``gate/up_proj[:W]``, ``down_proj[:, :W]``) and copied in. No view into the parent is
 retained, so the parent can be freed and measured VRAM belongs to the worker alone.
-This is the unit under test for every scenario here; dynamic width switching is
-out of scope.
+This is the unit under test for the static scenarios (s0-s7); the dynamic-switching
+extension (s8-s11) instead keeps the full E4B weights resident and slices at call time
+(see ``dynamic_lib``).
 
 Why text-only
 -------------

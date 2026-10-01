@@ -28,7 +28,7 @@ LOG_DIR="$here/run-output/logs"
 mkdir -p "$LOG_DIR" "$here/run-output"
 PRESETS="${PRESETS:-small,medium,large}"
 PRESET_LIST="${PRESETS//,/ }"
-SCENARIOS="${SCENARIOS:-s0 s1 s2 s3 s4 s5 s6 s7}"
+SCENARIOS="${SCENARIOS:-s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11}"
 
 case "$GRID" in
   fast)
@@ -39,6 +39,10 @@ case "$GRID" in
     S5_ARGS="--prompt-len 256 --batch 4 --backends eager,compile --reps 10 --warmup 3"
     S6_ARGS="--prompt-len 512 --batch 2 --reps 3 --warmup 2"
     S7_ARGS="--prefill-len 512 --batch 1 --capacity-contexts 1 --reps 5 --warmup 2"
+    S8_ARGS="--statics small --slice-modes view --prompt-len 256 --batch 2 --reps 8 --warmup 3"
+    S9_ARGS="--prompt-lengths 512 --batch-sizes 1 --new-tokens 16 --reps 1 --warmup 1"
+    S10_ARGS="--context-lengths 512 --batch-sizes 1 --new-tokens 24 --reps 1 --warmup 1"
+    S11_ARGS="--statics small --capacity-contexts 1 --capacity-cap 16"
     ;;
   full)
     S1_ARGS="--context-lengths 128,512,2048,8192 --reps 40 --warmup 10"
@@ -48,6 +52,10 @@ case "$GRID" in
     S5_ARGS="--prompt-len 512 --batch 4 --backends eager,compile,cudagraph --reps 40 --warmup 10"
     S6_ARGS="--prompt-len 1024 --batch 8 --reps 5 --warmup 2"
     S7_ARGS="--prefill-len 2048 --batch 4 --capacity-contexts 1,2048 --reps 10 --warmup 3"
+    S8_ARGS="--statics small,medium --slice-modes view,materialize --prompt-len 512 --batch 4 --reps 30 --warmup 8"
+    S9_ARGS="--prompt-lengths 512,2048 --batch-sizes 1,4 --new-tokens 32 --reps 2 --warmup 1"
+    S10_ARGS="--context-lengths 512,2048 --batch-sizes 1,8 --new-tokens 48 --reps 2 --warmup 1"
+    S11_ARGS="--statics small,medium --capacity-contexts 1,2048 --capacity-cap 64"
     ;;
   *)
     echo "unknown grid '$GRID' (expected 'fast' or 'full')" >&2
@@ -105,7 +113,25 @@ for scenario in s6 s7; do
   fi
 done
 
+# Dynamic switching extension (s8-s11). These build one full-weight switchable model plus
+# static references, so they take --statics rather than --presets and run one process each.
+for scenario in s8 s9 s10 s11; do
+  if has "$scenario"; then
+    case "$scenario" in
+      s8) extra="$S8_ARGS";;
+      s9) extra="$S9_ARGS";;
+      s10) extra="$S10_ARGS";;
+      s11) extra="$S11_ARGS";;
+    esac
+    # shellcheck disable=SC2086
+    run_one "${scenario}_switch_$tag" python -u "$scenario"_*.py --tag "$tag" $extra
+  fi
+done
+
 echo "--- aggregating"
 run_one "analyze_$tag" python -u analyze_latency.py
+# Render immediately: the report is what a reader (and a future decision) sees, and the
+# tracked results/latency_report.md must not lag the tracked profile it is derived from.
+run_one "report_$tag" python -u report_latency.py
 
 echo "--- suite complete: $GRID grid, presets '$PRESETS'"

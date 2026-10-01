@@ -1,0 +1,13 @@
+scenario,records,rendered_rows,sections,files
+s0_harness_validation,1,15,"{'utilization': 11, 'comparisons': 3, 'gates': 1}",['s0_harness_validation__all__local.json']
+s10_switch_iteration,1,1,{'switching': 1},['s10_switch_iteration__all__session.json']
+s11_switch_flexibility,1,1,{'switching': 1},['s11_switch_flexibility__all__session.json']
+s1_decode_step,2,29,"{'utilization': 13, 'comparisons': 16}","['s1_decode_step__all__session.json', 's1_decode_step__all__smoke.json']"
+s2_prefill,1,42,"{'utilization': 18, 'comparisons': 24}",['s2_prefill__all__session.json']
+s3_batch_decode,2,70,"{'utilization': 30, 'comparisons': 40}","['s3_batch_decode__all__s3b.json', 's3_batch_decode__all__session.json']"
+s4_end_to_end,3,20,"{'end_to_end': 12, 'end_to_end_ratios': 8}","['s4_end_to_end__large__session.json', 's4_end_to_end__medium__session.json', 's4_end_to_end__small__session.json']"
+s5_backends,1,10,"{'utilization': 6, 'comparisons': 4}",['s5_backends__all__session.json']
+s6_layer_profile,3,12,{'attribution': 12},"['s6_layer_profile__large__session.json', 's6_layer_profile__medium__session.json', 's6_layer_profile__small__session.json']"
+s7_memory_roofline,3,9,"{'utilization': 6, 'memory': 3}","['s7_memory_roofline__large__session.json', 's7_memory_roofline__medium__session.json', 's7_memory_roofline__small__session.json']"
+s8_switch_mechanism,1,39,"{'utilization': 38, 'switching': 1}",['s8_switch_mechanism__all__session.json']
+s9_switch_phase,1,1,{'switching': 1},['s9_switch_phase__all__session.json']
