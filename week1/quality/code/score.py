@@ -115,7 +115,8 @@ def main():
     for r in table:
         print(f"{r['schedule']:9} n={r['n']:3} acc={r['accuracy']:5.1f} [{r['acc_lo']:.1f}, {r['acc_hi']:.1f}]  "
               f"delta={r['delta_pp']:+5.1f} pp [{r['delta_lo']:+.1f}, {r['delta_hi']:+.1f}]  "
-              f"p={r['mcnemar_p']:.3f}  floor={r['floor']}  switched={r['frac_switched']:.0%}")
+              f"p={r['mcnemar_p']:.3f}  floor={r['floor']}  switched={r['frac_switched']:.0%}  "
+              f"no_answer={r['no_answer']}  max_len={r['hit_max_len']}")
     print(f"wrote {run_dir / 'quality_table.csv'} and scored.jsonl")
 
 
