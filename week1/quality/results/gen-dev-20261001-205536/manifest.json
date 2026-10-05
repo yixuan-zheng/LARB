@@ -1,0 +1,39 @@
+{
+  "run_id": "gen-dev-20261001-205536",
+  "seed": 6222,
+  "command": "python run_generation.py --split dev",
+  "git_commit": "12c35031fac87a394787e311c864a54de22ee711",
+  "git_dirty": false,
+  "model": "google/gemma-3n-E4B",
+  "model_revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+  "presets_sha256": "03a51e2b98bf340f5001c9b41d890874fa7d2cee621ffb04ab3e2860eef56788",
+  "presets_source_revision": "cf93a642430e7e6891ca38537b5c8d8dd9ba5a7e",
+  "hardware": "NVIDIA L40S",
+  "dtype": "bfloat16",
+  "packages": {
+    "torch": "2.9.1+cu128",
+    "transformers": "5.7.0"
+  },
+  "created": "2026-10-01T20:55:36-0400",
+  "split": "dev",
+  "batch_size": 8,
+  "limit": null,
+  "schedules": [
+    "static_L",
+    "static_S",
+    "LS_early",
+    "SL_early",
+    "LS_late",
+    "SL_late",
+    "alt16",
+    "alt4"
+  ],
+  "decoding": {
+    "greedy": true,
+    "max_new_tokens": 256,
+    "stop_strings": [
+      "\n\n",
+      "\nQ:"
+    ]
+  }
+}
