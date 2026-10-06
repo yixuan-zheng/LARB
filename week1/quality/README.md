@@ -7,6 +7,7 @@
 - **Task:** GSM8K, 8-shot chain-of-thought, greedy, exact match on the final number. Answers average ~95 tokens, so switches really do happen mid-answer.
 - **Splits** (seed 6222): 250 dev, 250 held-out, and the first 50 dev questions as a diagnostic set. The rules were frozen in `manifests/quality_contract.json` before any results.
 - **Quality gate** (team-wide): ≤ 5 pp loss vs Large. A schedule is certified only if the 95% paired-bootstrap lower bound is ≥ −5 pp.
+- **Batching:** batches of 8, built once by prompt length and reused for every schedule, so paired comparisons see identical padding. The results assume that which requests share a batch doesn't change greedy outputs beyond bf16 noise.
 - **Schedules:** one width per step for the whole batch. The KV cache is always retained, so earlier tokens keep the history computed at the old width.
   - `LS`/`SL`: switch Large→Small or Small→Large, either right after prefill (`early`) or at step 64 (`late`).
   - `alt16`/`alt4`: alternate every 16 or 4 steps.
@@ -41,8 +42,18 @@ At each step, the mixed-history run is compared with a run at the same width but
 
 - **The history effect is real but small.** It's about 7–10× the drift on the first step after a switch, falls about 3× within 8 steps, and stays above drift afterwards.
 - **The gold-token effect is small and has no consistent direction.** ΔNLL at the first step after a switch is at most about 0.08 nats in size, with signs that differ across schedules (e.g. SL_early +0.082, LS_late +0.033, SL_late −0.023). From step 2 on, it's within about ±0.02.
+- **For scale:** full-prefix gold NLL is 0.680 nats per token for Large and 0.703 for Small, a 0.023 gap. A single step right after a switch can move by several times that gap; later steps stay within about the gap itself.
 - **Disturbance is largest for switches right after the prompt** (first-step JS 0.0028–0.0029) and smaller for switches later in the answer (late and alternating, 0.0004–0.0014). Predictions also get more confident deeper into an answer, so this doesn't show why.
 - Comparing against a full-prefix recompute instead gives the same picture.
+
+## Plots
+![Quality vs measured latency](results/plots/quality_vs_latency_dev.png)
+
+The latency is the measured end-to-end result from the latency-baselines branch, for the closest cell to these runs (batch 8, ~1k-token prompt, L40S). Small is about 12% faster to the first token and about 1.6% faster per decoded token. Only the static presets appear, because they're the only configurations with measured latency.
+
+![Transition quality](results/plots/transition_quality.png)
+
+Alternating schedules pool both widths in each bucket. The `before` bucket is left out because it's zero by construction.
 
 ## What the evidence supports
 - **The static configurations (what request-level selection would choose between), infrequent switching and repeated switching (down to every 4 steps) are indistinguishable from each other and from Large at n = 250.** Every switching schedule lands between Small and Large, with no accuracy cost beyond the width mix itself. The logit diagnostics show a small effect that doesn't reach accuracy.
@@ -51,7 +62,7 @@ At each step, the mixed-history run is compared with a run at the same width but
 - **On GSM8K, quality isn't what separates request-level from iteration-level control.** The case for iteration-level switching rests on whether narrower FFNs give a real decode speedup.
 
 ## Needs more data / not done
-- **Held-out confirmation is not run yet.** The planned single run is static_L, static_S, SL_early and alt4.
+- **Held-out confirmation is pending.** The single held-out run (static_L, static_S, SL_early, alt4, chosen from the dev results) is submitted.
 - Resolving gaps under ~5 pp needs a narrower CI. Halving its width takes about 4× the questions; 819 GSM8K test questions are still unused.
 - No request-level policy was run; only its two static endpoints were.
 - **One task and one model.** The SQuAD pilot showed a larger Large–Small gap (6.5 pp), so the gap depends on the task.
@@ -65,5 +76,10 @@ python run_generation.py --split dev --run-id gen-dev-20261001-205536 --schedule
 python score.py --run-id gen-dev-20261001-205536   # quality_table.csv, scored.jsonl
 python teacher_forced.py                    # diagnostics_summary.csv
 python test_schedules.py && python test_score.py && python test_teacher_forced.py   # CPU tests
+```
+Plots (CPU, any machine with matplotlib):
+```bash
+git show origin/latency-baselines:week1/latency-baselines/results/s4_end_to_end.csv > /tmp/s4_end_to_end.csv
+python plots.py --latency-csv /tmp/s4_end_to_end.csv
 ```
 Runs: `results/gen-dev-20261001-205536` (generation) and `results/diag-dev-20261002-134051` (diagnostics). Per-example data is in `generations.jsonl` (text, run-length `width_history` per step) and `scored.jsonl` (prediction, gold, correct). Each has a `manifest.json` with the command, commit, seed, revisions, hardware and package versions.
