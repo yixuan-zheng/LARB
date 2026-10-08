@@ -1,0 +1,157 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-07-2026 16:23:10
+Job ID:    6092263
+User ID:   yzheng609
+Account:   coc
+Job name:  decode-rescue
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Wed Oct  7 16:23:10 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 615.71.09              KMD Version: 615.71.09     CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:1B:00.0 Off |                    0 |
+| N/A   33C    P8             27W /  350W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[build_worker] loading E4B parent on CPU (dtype=torch.bfloat16) ...
+Loading weights:   0%|          | 0/1631 [00:00<?, ?it/s]Loading weights:   1%|          | 12/1631 [00:00<00:13, 119.19it/s]Loading weights:   1%|▏         | 24/1631 [00:00<00:21, 75.65it/s] Loading weights:   2%|▏         | 36/1631 [00:00<00:17, 90.18it/s]Loading weights:   3%|▎         | 46/1631 [00:00<00:20, 76.95it/s]Loading weights:   3%|▎         | 56/1631 [00:00<00:19, 79.80it/s]Loading weights:   5%|▍         | 81/1631 [00:00<00:12, 125.86it/s]Loading weights:   6%|▌         | 95/1631 [00:00<00:14, 108.21it/s]Loading weights:   7%|▋         | 108/1631 [00:01<00:15, 98.79it/s]Loading weights:   7%|▋         | 121/1631 [00:01<00:16, 90.80it/s]Loading weights:   9%|▊         | 142/1631 [00:01<00:12, 115.64it/s]Loading weights:  10%|▉         | 155/1631 [00:01<00:16, 90.62it/s] Loading weights:  10%|█         | 166/1631 [00:01<00:18, 80.49it/s]Loading weights:  11%|█         | 176/1631 [00:01<00:18, 78.56it/s]Loading weights:  11%|█▏        | 185/1631 [00:02<00:23, 62.74it/s]Loading weights:  12%|█▏        | 197/1631 [00:02<00:20, 70.00it/s]Loading weights:  13%|█▎        | 214/1631 [00:02<00:15, 89.14it/s]Loading weights:  14%|█▍        | 230/1631 [00:02<00:13, 103.75it/s]Loading weights:  15%|█▍        | 242/1631 [00:02<00:13, 101.78it/s]Loading weights:  16%|█▌        | 254/1631 [00:02<00:13, 101.16it/s]Loading weights:  16%|█▌        | 265/1631 [00:02<00:14, 93.33it/s] Loading weights:  17%|█▋        | 275/1631 [00:03<00:14, 93.04it/s]Loading weights:  17%|█▋        | 285/1631 [00:03<00:16, 80.46it/s]Loading weights:  18%|█▊        | 296/1631 [00:03<00:19, 70.25it/s]Loading weights:  19%|█▊        | 304/1631 [00:03<00:19, 68.23it/s]Loading weights:  19%|█▉        | 312/1631 [00:03<00:19, 66.62it/s]Loading weights:  20%|█▉        | 320/1631 [00:03<00:20, 65.46it/s]Loading weights:  20%|██        | 327/1631 [00:03<00:20, 62.96it/s]Loading weights:  21%|██        | 342/1631 [00:04<00:16, 77.60it/s]Loading weights:  21%|██▏       | 350/1631 [00:04<00:18, 69.02it/s]Loading weights:  22%|██▏       | 359/1631 [00:04<00:17, 73.60it/s]Loading weights:  23%|██▎       | 370/1631 [00:04<00:15, 79.65it/s]Loading weights:  23%|██▎       | 379/1631 [00:04<00:15, 79.77it/s]Loading weights:  24%|██▍       | 391/1631 [00:04<00:15, 81.33it/s]Loading weights:  25%|██▍       | 400/1631 [00:04<00:14, 82.38it/s]Loading weights:  26%|██▌       | 420/1631 [00:04<00:10, 112.00it/s]Loading weights:  26%|██▋       | 432/1631 [00:05<00:11, 106.86it/s]Loading weights:  27%|██▋       | 443/1631 [00:05<00:12, 97.14it/s] Loading weights:  28%|██▊       | 463/1631 [00:05<00:09, 122.25it/s]Loading weights:  29%|██▉       | 478/1631 [00:05<00:09, 126.94it/s]Loading weights:  30%|███       | 496/1631 [00:05<00:08, 141.01it/s]Loading weights:  31%|███▏      | 511/1631 [00:05<00:09, 122.92it/s]Loading weights:  32%|███▏      | 524/1631 [00:05<00:09, 115.74it/s]Loading weights:  33%|███▎      | 538/1631 [00:05<00:08, 121.52it/s]Loading weights:  34%|███▍      | 556/1631 [00:05<00:07, 135.06it/s]Loading weights:  35%|███▌      | 572/1631 [00:06<00:07, 136.93it/s]Loading weights:  36%|███▌      | 587/1631 [00:06<00:07, 137.93it/s]Loading weights:  37%|███▋      | 602/1631 [00:06<00:09, 102.95it/s]Loading weights:  39%|███▉      | 634/1631 [00:06<00:06, 150.80it/s]Loading weights:  40%|███▉      | 652/1631 [00:06<00:06, 153.51it/s]Loading weights:  41%|████      | 670/1631 [00:06<00:06, 143.61it/s]Loading weights:  42%|████▏     | 686/1631 [00:06<00:08, 117.66it/s]Loading weights:  44%|████▎     | 713/1631 [00:07<00:06, 148.74it/s]Loading weights:  45%|████▍     | 730/1631 [00:07<00:07, 113.12it/s]Loading weights:  46%|████▌     | 744/1631 [00:07<00:07, 117.38it/s]Loading weights:  47%|████▋     | 760/1631 [00:07<00:07, 118.71it/s]Loading weights:  47%|████▋     | 774/1631 [00:07<00:07, 118.94it/s]Loading weights:  48%|████▊     | 787/1631 [00:07<00:08, 97.22it/s] Loading weights:  49%|████▉     | 798/1631 [00:08<00:09, 92.13it/s]Loading weights:  50%|████▉     | 809/1631 [00:08<00:08, 95.63it/s]Loading weights:  50%|█████     | 820/1631 [00:08<00:08, 97.84it/s]Loading weights:  52%|█████▏    | 848/1631 [00:08<00:05, 140.97it/s]Loading weights:  54%|█████▎    | 874/1631 [00:08<00:04, 168.24it/s]Loading weights:  55%|█████▍    | 892/1631 [00:08<00:04, 151.62it/s]Loading weights:  56%|█████▌    | 909/1631 [00:08<00:05, 140.28it/s]Loading weights:  57%|█████▋    | 931/1631 [00:08<00:04, 151.95it/s]Loading weights: 100%|██████████| 1631/1631 [00:08<00:00, 183.49it/s]
+[build_worker] large: 13.73 GiB weights (ffn 6.56 GiB, embeddings 1.00 GiB), narrow=0, 14.6s
+CELL B1 L128
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B1 L128 speedup=1.0083 ratioCI=0.9906,0.9930
+CELL B8 L128
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B8 L128 speedup=1.0104 ratioCI=0.9888,0.9907
+CELL B16 L128
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B16 L128 speedup=1.0098 ratioCI=0.9894,0.9913
+CELL B32 L128
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B32 L128 speedup=1.0126 ratioCI=0.9868,0.9883
+CELL B64 L128
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B64 L128 speedup=1.0113 ratioCI=0.9878,0.9899
+CELL B1 L2048
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B1 L2048 speedup=1.0071 ratioCI=0.9908,0.9963
+CELL B8 L2048
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B8 L2048 speedup=1.0113 ratioCI=0.9880,0.9896
+CELL B16 L2048
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B16 L2048 speedup=1.0119 ratioCI=0.9868,0.9900
+CELL B32 L2048
+    rep 4/40
+    rep 8/40
+    rep 12/40
+    rep 16/40
+    rep 20/40
+    rep 24/40
+    rep 28/40
+    rep 32/40
+    rep 36/40
+    rep 40/40
+RESULT B32 L2048 speedup=1.0138 ratioCI=0.9854,0.9875
+CELL B64 L2048
+    rep 4/40
+    rep 8/40
+    rep 12/40
+[2026-10-07T16:55:34.054] error: *** JOB 6092263 ON atl1-1-03-004-21-0 CANCELLED AT 2026-10-07T16:55:34 DUE to SIGNAL Terminated ***
+---------------------------------------
+Begin Slurm Epilog: Oct-07-2026 16:55:36
+Job ID:        6092263
+User ID:       yzheng609
+Account:       coc
+Job name:      decode-rescue
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=02:09:36,vmem=0,walltime=00:32:24,mem=9566924K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-21-0
+---------------------------------------

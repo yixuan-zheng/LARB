@@ -1,0 +1,57 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-07-2026 18:22:01
+Job ID:    6092969
+User ID:   yzheng609
+Account:   coc
+Job name:  decode-profile
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Wed Oct  7 18:22:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 615.71.09              KMD Version: 615.71.09     CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:1B:00.0 Off |                    0 |
+| N/A   32C    P8             33W /  350W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[build_worker] loading E4B parent on CPU (dtype=torch.bfloat16) ...
+Loading weights:   0%|          | 0/1631 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 798/1631 [00:00<00:00, 7953.42it/s]Loading weights: 100%|██████████| 1631/1631 [00:00<00:00, 12393.20it/s]
+[build_worker] large: 13.73 GiB weights (ffn 6.56 GiB, embeddings 1.00 GiB), narrow=0, 5.9s
+PROFILE B1 large rep0
+PROFILE B1 small rep0
+PROFILE B1 small rep1
+PROFILE B1 large rep1
+PROFILE B1 large rep2
+PROFILE B1 small rep2
+PROFILE B64 large rep0
+PROFILE B64 small rep0
+PROFILE B64 large rep1
+PROFILE B64 small rep1
+PROFILE B64 small rep2
+PROFILE B64 large rep2
+PROFILE COMPLETE
+---------------------------------------
+Begin Slurm Epilog: Oct-07-2026 18:27:21
+Job ID:        6092969
+User ID:       yzheng609
+Account:       coc
+Job name:      decode-profile
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=00:21:12,vmem=0,walltime=00:05:18,mem=2008948K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-21-0
+---------------------------------------
