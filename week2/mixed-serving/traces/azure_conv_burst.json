@@ -1,0 +1,8491 @@
+{
+ "schema_version": 1,
+ "trace_id": "azure_conv_burst",
+ "seed": 6222,
+ "source": {
+  "kind": "azure_llm_2023_conv",
+  "url": "https://raw.githubusercontent.com/Azure/AzurePublicDataset/master/data/AzureLLMInferenceTrace_conv.csv",
+  "sha256": "2f1e5b666d4e3055fdbba98598ce2ec307767b9064e03e2fa46676dbcc7d0bf8",
+  "window_start_s": 1740.0,
+  "window_len_s": 180.0
+ },
+ "generator": {
+  "kind": "measured_trace",
+  "selection_criterion": "burst",
+  "rate_score": 2.310254484892649,
+  "mixshift_score": 0.1686535328612069
+ },
+ "notes": [
+  "Window selected by the declared 'burst' criterion over a 180 s sliding window with a 60 s stride; offsets and statistics are in manifest.json."
+ ],
+ "stats": {
+  "requests": 1408,
+  "span_s": 179.576342,
+  "mean_rps": 7.840676473964482,
+  "prompt_tokens": {
+   "mean": 1422.3920454545455,
+   "p50": 430.5,
+   "p90": 4084.0,
+   "p99": 4144.860000000001,
+   "max": 5305
+  },
+  "output_tokens": {
+   "mean": 126.6122159090909,
+   "p50": 90.0,
+   "p90": 386.0,
+   "p99": 538.7900000000002,
+   "max": 642
+  },
+  "prefill_token_share": 0.918262190061614
+ },
+ "requests": [
+  {
+   "request_id": "req000000",
+   "arrival_s": 0.0,
+   "prompt_tokens": 4087,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req000001",
+   "arrival_s": 0.029938,
+   "prompt_tokens": 1060,
+   "output_tokens": 507
+  },
+  {
+   "request_id": "req000002",
+   "arrival_s": 0.275284,
+   "prompt_tokens": 398,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000003",
+   "arrival_s": 0.275406,
+   "prompt_tokens": 4078,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000004",
+   "arrival_s": 0.29659,
+   "prompt_tokens": 4090,
+   "output_tokens": 144
+  },
+  {
+   "request_id": "req000005",
+   "arrival_s": 0.349573,
+   "prompt_tokens": 1190,
+   "output_tokens": 392
+  },
+  {
+   "request_id": "req000006",
+   "arrival_s": 0.422125,
+   "prompt_tokens": 4090,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000007",
+   "arrival_s": 0.59946,
+   "prompt_tokens": 4085,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000008",
+   "arrival_s": 0.633836,
+   "prompt_tokens": 1610,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000009",
+   "arrival_s": 0.842727,
+   "prompt_tokens": 4076,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000010",
+   "arrival_s": 0.915259,
+   "prompt_tokens": 412,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000011",
+   "arrival_s": 0.991511,
+   "prompt_tokens": 398,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000012",
+   "arrival_s": 1.283484,
+   "prompt_tokens": 1092,
+   "output_tokens": 422
+  },
+  {
+   "request_id": "req000013",
+   "arrival_s": 1.520733,
+   "prompt_tokens": 4073,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000014",
+   "arrival_s": 1.615856,
+   "prompt_tokens": 4126,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000015",
+   "arrival_s": 1.810609,
+   "prompt_tokens": 375,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000016",
+   "arrival_s": 2.022818,
+   "prompt_tokens": 4097,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000017",
+   "arrival_s": 2.072089,
+   "prompt_tokens": 371,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000018",
+   "arrival_s": 2.265729,
+   "prompt_tokens": 382,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000019",
+   "arrival_s": 2.371815,
+   "prompt_tokens": 394,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000020",
+   "arrival_s": 2.410648,
+   "prompt_tokens": 420,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000021",
+   "arrival_s": 2.57064,
+   "prompt_tokens": 379,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000022",
+   "arrival_s": 2.603316,
+   "prompt_tokens": 410,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000023",
+   "arrival_s": 2.649967,
+   "prompt_tokens": 378,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req000024",
+   "arrival_s": 2.819744,
+   "prompt_tokens": 4079,
+   "output_tokens": 32
+  },
+  {
+   "request_id": "req000025",
+   "arrival_s": 2.969729,
+   "prompt_tokens": 385,
+   "output_tokens": 32
+  },
+  {
+   "request_id": "req000026",
+   "arrival_s": 2.992134,
+   "prompt_tokens": 406,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000027",
+   "arrival_s": 3.038165,
+   "prompt_tokens": 4099,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req000028",
+   "arrival_s": 3.060751,
+   "prompt_tokens": 740,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000029",
+   "arrival_s": 3.18256,
+   "prompt_tokens": 405,
+   "output_tokens": 116
+  },
+  {
+   "request_id": "req000030",
+   "arrival_s": 3.182571,
+   "prompt_tokens": 389,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000031",
+   "arrival_s": 3.230175,
+   "prompt_tokens": 400,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000032",
+   "arrival_s": 3.25065,
+   "prompt_tokens": 7,
+   "output_tokens": 142
+  },
+  {
+   "request_id": "req000033",
+   "arrival_s": 3.579663,
+   "prompt_tokens": 4080,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000034",
+   "arrival_s": 3.691358,
+   "prompt_tokens": 403,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000035",
+   "arrival_s": 4.031773,
+   "prompt_tokens": 384,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req000036",
+   "arrival_s": 4.106899,
+   "prompt_tokens": 387,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000037",
+   "arrival_s": 4.117326,
+   "prompt_tokens": 422,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000038",
+   "arrival_s": 4.123271,
+   "prompt_tokens": 399,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000039",
+   "arrival_s": 4.223213,
+   "prompt_tokens": 4090,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req000040",
+   "arrival_s": 4.342091,
+   "prompt_tokens": 378,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000041",
+   "arrival_s": 4.36837,
+   "prompt_tokens": 1152,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000042",
+   "arrival_s": 4.41225,
+   "prompt_tokens": 409,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000043",
+   "arrival_s": 4.443135,
+   "prompt_tokens": 395,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000044",
+   "arrival_s": 4.474806,
+   "prompt_tokens": 415,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000045",
+   "arrival_s": 4.52691,
+   "prompt_tokens": 1315,
+   "output_tokens": 226
+  },
+  {
+   "request_id": "req000046",
+   "arrival_s": 4.795975,
+   "prompt_tokens": 4083,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req000047",
+   "arrival_s": 5.395274,
+   "prompt_tokens": 1201,
+   "output_tokens": 375
+  },
+  {
+   "request_id": "req000048",
+   "arrival_s": 5.528978,
+   "prompt_tokens": 2367,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000049",
+   "arrival_s": 5.759355,
+   "prompt_tokens": 1017,
+   "output_tokens": 534
+  },
+  {
+   "request_id": "req000050",
+   "arrival_s": 5.823234,
+   "prompt_tokens": 386,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000051",
+   "arrival_s": 6.373299,
+   "prompt_tokens": 4076,
+   "output_tokens": 33
+  },
+  {
+   "request_id": "req000052",
+   "arrival_s": 6.413527,
+   "prompt_tokens": 1141,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000053",
+   "arrival_s": 6.581266,
+   "prompt_tokens": 4509,
+   "output_tokens": 134
+  },
+  {
+   "request_id": "req000054",
+   "arrival_s": 6.680643,
+   "prompt_tokens": 380,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000055",
+   "arrival_s": 6.903007,
+   "prompt_tokens": 398,
+   "output_tokens": 126
+  },
+  {
+   "request_id": "req000056",
+   "arrival_s": 6.945476,
+   "prompt_tokens": 405,
+   "output_tokens": 162
+  },
+  {
+   "request_id": "req000057",
+   "arrival_s": 6.977694,
+   "prompt_tokens": 374,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000058",
+   "arrival_s": 6.984719,
+   "prompt_tokens": 4078,
+   "output_tokens": 154
+  },
+  {
+   "request_id": "req000059",
+   "arrival_s": 7.052288,
+   "prompt_tokens": 4081,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000060",
+   "arrival_s": 7.170545,
+   "prompt_tokens": 401,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000061",
+   "arrival_s": 7.214485,
+   "prompt_tokens": 406,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000062",
+   "arrival_s": 7.252794,
+   "prompt_tokens": 378,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000063",
+   "arrival_s": 7.282805,
+   "prompt_tokens": 401,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000064",
+   "arrival_s": 7.34377,
+   "prompt_tokens": 401,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000065",
+   "arrival_s": 7.454863,
+   "prompt_tokens": 910,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000066",
+   "arrival_s": 7.555909,
+   "prompt_tokens": 381,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000067",
+   "arrival_s": 7.971219,
+   "prompt_tokens": 402,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000068",
+   "arrival_s": 8.04915,
+   "prompt_tokens": 4078,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req000069",
+   "arrival_s": 8.36611,
+   "prompt_tokens": 404,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000070",
+   "arrival_s": 8.565532,
+   "prompt_tokens": 422,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000071",
+   "arrival_s": 8.750646,
+   "prompt_tokens": 390,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000072",
+   "arrival_s": 8.854233,
+   "prompt_tokens": 1181,
+   "output_tokens": 125
+  },
+  {
+   "request_id": "req000073",
+   "arrival_s": 9.105395,
+   "prompt_tokens": 4133,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000074",
+   "arrival_s": 9.315793,
+   "prompt_tokens": 4082,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000075",
+   "arrival_s": 9.420159,
+   "prompt_tokens": 386,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000076",
+   "arrival_s": 9.517467,
+   "prompt_tokens": 378,
+   "output_tokens": 152
+  },
+  {
+   "request_id": "req000077",
+   "arrival_s": 9.660328,
+   "prompt_tokens": 406,
+   "output_tokens": 149
+  },
+  {
+   "request_id": "req000078",
+   "arrival_s": 9.669746,
+   "prompt_tokens": 400,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000079",
+   "arrival_s": 9.67783,
+   "prompt_tokens": 1010,
+   "output_tokens": 444
+  },
+  {
+   "request_id": "req000080",
+   "arrival_s": 9.798535,
+   "prompt_tokens": 389,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000081",
+   "arrival_s": 10.313536,
+   "prompt_tokens": 419,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000082",
+   "arrival_s": 10.463668,
+   "prompt_tokens": 1314,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000083",
+   "arrival_s": 10.479916,
+   "prompt_tokens": 4149,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000084",
+   "arrival_s": 10.564656,
+   "prompt_tokens": 407,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000085",
+   "arrival_s": 11.239057,
+   "prompt_tokens": 2178,
+   "output_tokens": 133
+  },
+  {
+   "request_id": "req000086",
+   "arrival_s": 11.272043,
+   "prompt_tokens": 374,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000087",
+   "arrival_s": 11.54175,
+   "prompt_tokens": 410,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000088",
+   "arrival_s": 11.719772,
+   "prompt_tokens": 405,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000089",
+   "arrival_s": 11.721861,
+   "prompt_tokens": 373,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000090",
+   "arrival_s": 11.742927,
+   "prompt_tokens": 440,
+   "output_tokens": 132
+  },
+  {
+   "request_id": "req000091",
+   "arrival_s": 11.82462,
+   "prompt_tokens": 398,
+   "output_tokens": 129
+  },
+  {
+   "request_id": "req000092",
+   "arrival_s": 12.229458,
+   "prompt_tokens": 4072,
+   "output_tokens": 139
+  },
+  {
+   "request_id": "req000093",
+   "arrival_s": 12.343901,
+   "prompt_tokens": 912,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000094",
+   "arrival_s": 12.42173,
+   "prompt_tokens": 4088,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req000095",
+   "arrival_s": 12.732495,
+   "prompt_tokens": 398,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000096",
+   "arrival_s": 12.779255,
+   "prompt_tokens": 399,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000097",
+   "arrival_s": 12.801349,
+   "prompt_tokens": 4078,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000098",
+   "arrival_s": 12.891162,
+   "prompt_tokens": 4159,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000099",
+   "arrival_s": 13.299749,
+   "prompt_tokens": 4155,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000100",
+   "arrival_s": 13.533909,
+   "prompt_tokens": 380,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000101",
+   "arrival_s": 13.602293,
+   "prompt_tokens": 400,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000102",
+   "arrival_s": 13.645024,
+   "prompt_tokens": 130,
+   "output_tokens": 205
+  },
+  {
+   "request_id": "req000103",
+   "arrival_s": 13.796187,
+   "prompt_tokens": 1178,
+   "output_tokens": 409
+  },
+  {
+   "request_id": "req000104",
+   "arrival_s": 13.901319,
+   "prompt_tokens": 459,
+   "output_tokens": 327
+  },
+  {
+   "request_id": "req000105",
+   "arrival_s": 13.923111,
+   "prompt_tokens": 403,
+   "output_tokens": 147
+  },
+  {
+   "request_id": "req000106",
+   "arrival_s": 14.095953,
+   "prompt_tokens": 4079,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req000107",
+   "arrival_s": 14.564319,
+   "prompt_tokens": 438,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000108",
+   "arrival_s": 14.602003,
+   "prompt_tokens": 405,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000109",
+   "arrival_s": 14.632297,
+   "prompt_tokens": 8,
+   "output_tokens": 159
+  },
+  {
+   "request_id": "req000110",
+   "arrival_s": 14.672299,
+   "prompt_tokens": 1319,
+   "output_tokens": 189
+  },
+  {
+   "request_id": "req000111",
+   "arrival_s": 15.063633,
+   "prompt_tokens": 406,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000112",
+   "arrival_s": 15.094917,
+   "prompt_tokens": 396,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000113",
+   "arrival_s": 15.141664,
+   "prompt_tokens": 378,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req000114",
+   "arrival_s": 15.159614,
+   "prompt_tokens": 403,
+   "output_tokens": 125
+  },
+  {
+   "request_id": "req000115",
+   "arrival_s": 15.202312,
+   "prompt_tokens": 8,
+   "output_tokens": 131
+  },
+  {
+   "request_id": "req000116",
+   "arrival_s": 15.297139,
+   "prompt_tokens": 378,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req000117",
+   "arrival_s": 15.41922,
+   "prompt_tokens": 408,
+   "output_tokens": 113
+  },
+  {
+   "request_id": "req000118",
+   "arrival_s": 15.587419,
+   "prompt_tokens": 416,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000119",
+   "arrival_s": 15.654889,
+   "prompt_tokens": 430,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req000120",
+   "arrival_s": 15.877611,
+   "prompt_tokens": 4074,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req000121",
+   "arrival_s": 15.977194,
+   "prompt_tokens": 386,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req000122",
+   "arrival_s": 15.999322,
+   "prompt_tokens": 379,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000123",
+   "arrival_s": 16.049483,
+   "prompt_tokens": 395,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000124",
+   "arrival_s": 16.072457,
+   "prompt_tokens": 4080,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req000125",
+   "arrival_s": 16.134963,
+   "prompt_tokens": 30,
+   "output_tokens": 139
+  },
+  {
+   "request_id": "req000126",
+   "arrival_s": 16.361451,
+   "prompt_tokens": 4083,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000127",
+   "arrival_s": 16.397312,
+   "prompt_tokens": 394,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000128",
+   "arrival_s": 16.45402,
+   "prompt_tokens": 377,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000129",
+   "arrival_s": 16.787001,
+   "prompt_tokens": 388,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req000130",
+   "arrival_s": 16.991928,
+   "prompt_tokens": 1078,
+   "output_tokens": 401
+  },
+  {
+   "request_id": "req000131",
+   "arrival_s": 17.254851,
+   "prompt_tokens": 4095,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req000132",
+   "arrival_s": 17.341573,
+   "prompt_tokens": 399,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000133",
+   "arrival_s": 17.415576,
+   "prompt_tokens": 425,
+   "output_tokens": 160
+  },
+  {
+   "request_id": "req000134",
+   "arrival_s": 17.873751,
+   "prompt_tokens": 1018,
+   "output_tokens": 393
+  },
+  {
+   "request_id": "req000135",
+   "arrival_s": 18.15915,
+   "prompt_tokens": 398,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000136",
+   "arrival_s": 18.253323,
+   "prompt_tokens": 1183,
+   "output_tokens": 372
+  },
+  {
+   "request_id": "req000137",
+   "arrival_s": 18.272369,
+   "prompt_tokens": 421,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000138",
+   "arrival_s": 18.414028,
+   "prompt_tokens": 387,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000139",
+   "arrival_s": 18.440847,
+   "prompt_tokens": 398,
+   "output_tokens": 135
+  },
+  {
+   "request_id": "req000140",
+   "arrival_s": 18.966689,
+   "prompt_tokens": 1186,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req000141",
+   "arrival_s": 19.046862,
+   "prompt_tokens": 410,
+   "output_tokens": 112
+  },
+  {
+   "request_id": "req000142",
+   "arrival_s": 19.123685,
+   "prompt_tokens": 407,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000143",
+   "arrival_s": 19.163954,
+   "prompt_tokens": 377,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000144",
+   "arrival_s": 19.326677,
+   "prompt_tokens": 4106,
+   "output_tokens": 35
+  },
+  {
+   "request_id": "req000145",
+   "arrival_s": 19.401562,
+   "prompt_tokens": 4091,
+   "output_tokens": 35
+  },
+  {
+   "request_id": "req000146",
+   "arrival_s": 19.407623,
+   "prompt_tokens": 4082,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req000147",
+   "arrival_s": 19.650874,
+   "prompt_tokens": 452,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000148",
+   "arrival_s": 19.67103,
+   "prompt_tokens": 4098,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000149",
+   "arrival_s": 19.743641,
+   "prompt_tokens": 408,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000150",
+   "arrival_s": 19.834086,
+   "prompt_tokens": 1004,
+   "output_tokens": 467
+  },
+  {
+   "request_id": "req000151",
+   "arrival_s": 19.995031,
+   "prompt_tokens": 416,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000152",
+   "arrival_s": 20.151676,
+   "prompt_tokens": 1505,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000153",
+   "arrival_s": 20.250434,
+   "prompt_tokens": 446,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000154",
+   "arrival_s": 20.476456,
+   "prompt_tokens": 4121,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req000155",
+   "arrival_s": 20.493706,
+   "prompt_tokens": 314,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req000156",
+   "arrival_s": 20.521253,
+   "prompt_tokens": 4084,
+   "output_tokens": 62
+  },
+  {
+   "request_id": "req000157",
+   "arrival_s": 20.572369,
+   "prompt_tokens": 2946,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000158",
+   "arrival_s": 20.730283,
+   "prompt_tokens": 404,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000159",
+   "arrival_s": 20.867833,
+   "prompt_tokens": 2309,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000160",
+   "arrival_s": 20.934065,
+   "prompt_tokens": 392,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000161",
+   "arrival_s": 21.022037,
+   "prompt_tokens": 399,
+   "output_tokens": 136
+  },
+  {
+   "request_id": "req000162",
+   "arrival_s": 21.02413,
+   "prompt_tokens": 419,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000163",
+   "arrival_s": 21.055139,
+   "prompt_tokens": 4084,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req000164",
+   "arrival_s": 21.10438,
+   "prompt_tokens": 4131,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req000165",
+   "arrival_s": 21.163964,
+   "prompt_tokens": 390,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000166",
+   "arrival_s": 21.292664,
+   "prompt_tokens": 1088,
+   "output_tokens": 423
+  },
+  {
+   "request_id": "req000167",
+   "arrival_s": 21.306778,
+   "prompt_tokens": 1993,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000168",
+   "arrival_s": 21.435879,
+   "prompt_tokens": 372,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000169",
+   "arrival_s": 21.467134,
+   "prompt_tokens": 379,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000170",
+   "arrival_s": 21.531584,
+   "prompt_tokens": 404,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000171",
+   "arrival_s": 21.771157,
+   "prompt_tokens": 1508,
+   "output_tokens": 114
+  },
+  {
+   "request_id": "req000172",
+   "arrival_s": 22.12552,
+   "prompt_tokens": 371,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000173",
+   "arrival_s": 22.199661,
+   "prompt_tokens": 4084,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req000174",
+   "arrival_s": 22.202248,
+   "prompt_tokens": 4080,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000175",
+   "arrival_s": 22.204775,
+   "prompt_tokens": 4086,
+   "output_tokens": 133
+  },
+  {
+   "request_id": "req000176",
+   "arrival_s": 22.603672,
+   "prompt_tokens": 1353,
+   "output_tokens": 155
+  },
+  {
+   "request_id": "req000177",
+   "arrival_s": 22.656285,
+   "prompt_tokens": 404,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000178",
+   "arrival_s": 22.741214,
+   "prompt_tokens": 398,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000179",
+   "arrival_s": 22.864517,
+   "prompt_tokens": 1010,
+   "output_tokens": 407
+  },
+  {
+   "request_id": "req000180",
+   "arrival_s": 22.866059,
+   "prompt_tokens": 462,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000181",
+   "arrival_s": 22.998981,
+   "prompt_tokens": 400,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000182",
+   "arrival_s": 23.350847,
+   "prompt_tokens": 401,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000183",
+   "arrival_s": 23.495467,
+   "prompt_tokens": 1321,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000184",
+   "arrival_s": 23.81448,
+   "prompt_tokens": 443,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000185",
+   "arrival_s": 23.848202,
+   "prompt_tokens": 406,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000186",
+   "arrival_s": 23.982574,
+   "prompt_tokens": 1678,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000187",
+   "arrival_s": 24.079972,
+   "prompt_tokens": 879,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000188",
+   "arrival_s": 24.38181,
+   "prompt_tokens": 2738,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000189",
+   "arrival_s": 24.650625,
+   "prompt_tokens": 4165,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000190",
+   "arrival_s": 24.709788,
+   "prompt_tokens": 2700,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000191",
+   "arrival_s": 24.789268,
+   "prompt_tokens": 838,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000192",
+   "arrival_s": 24.796116,
+   "prompt_tokens": 384,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000193",
+   "arrival_s": 24.833349,
+   "prompt_tokens": 401,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req000194",
+   "arrival_s": 24.963464,
+   "prompt_tokens": 381,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000195",
+   "arrival_s": 24.966301,
+   "prompt_tokens": 11,
+   "output_tokens": 182
+  },
+  {
+   "request_id": "req000196",
+   "arrival_s": 25.036708,
+   "prompt_tokens": 1190,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req000197",
+   "arrival_s": 25.188262,
+   "prompt_tokens": 393,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000198",
+   "arrival_s": 25.371276,
+   "prompt_tokens": 428,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000199",
+   "arrival_s": 25.41211,
+   "prompt_tokens": 395,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req000200",
+   "arrival_s": 25.569909,
+   "prompt_tokens": 403,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000201",
+   "arrival_s": 25.802911,
+   "prompt_tokens": 4077,
+   "output_tokens": 115
+  },
+  {
+   "request_id": "req000202",
+   "arrival_s": 25.832407,
+   "prompt_tokens": 4087,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000203",
+   "arrival_s": 25.989016,
+   "prompt_tokens": 1820,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000204",
+   "arrival_s": 26.28728,
+   "prompt_tokens": 390,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000205",
+   "arrival_s": 26.51887,
+   "prompt_tokens": 4084,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req000206",
+   "arrival_s": 26.652983,
+   "prompt_tokens": 203,
+   "output_tokens": 217
+  },
+  {
+   "request_id": "req000207",
+   "arrival_s": 26.654509,
+   "prompt_tokens": 378,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000208",
+   "arrival_s": 26.877946,
+   "prompt_tokens": 4143,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000209",
+   "arrival_s": 27.027936,
+   "prompt_tokens": 2221,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000210",
+   "arrival_s": 27.143255,
+   "prompt_tokens": 4081,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000211",
+   "arrival_s": 27.270442,
+   "prompt_tokens": 393,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000212",
+   "arrival_s": 27.310298,
+   "prompt_tokens": 956,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req000213",
+   "arrival_s": 27.508088,
+   "prompt_tokens": 4098,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000214",
+   "arrival_s": 27.51516,
+   "prompt_tokens": 4092,
+   "output_tokens": 146
+  },
+  {
+   "request_id": "req000215",
+   "arrival_s": 27.558312,
+   "prompt_tokens": 396,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000216",
+   "arrival_s": 27.580041,
+   "prompt_tokens": 372,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000217",
+   "arrival_s": 27.580135,
+   "prompt_tokens": 393,
+   "output_tokens": 125
+  },
+  {
+   "request_id": "req000218",
+   "arrival_s": 27.833601,
+   "prompt_tokens": 371,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000219",
+   "arrival_s": 28.119061,
+   "prompt_tokens": 379,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000220",
+   "arrival_s": 28.389111,
+   "prompt_tokens": 397,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000221",
+   "arrival_s": 28.535411,
+   "prompt_tokens": 405,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000222",
+   "arrival_s": 28.595391,
+   "prompt_tokens": 4101,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000223",
+   "arrival_s": 28.605673,
+   "prompt_tokens": 399,
+   "output_tokens": 150
+  },
+  {
+   "request_id": "req000224",
+   "arrival_s": 28.640915,
+   "prompt_tokens": 387,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000225",
+   "arrival_s": 28.649918,
+   "prompt_tokens": 4076,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000226",
+   "arrival_s": 28.846409,
+   "prompt_tokens": 4088,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000227",
+   "arrival_s": 28.847503,
+   "prompt_tokens": 377,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000228",
+   "arrival_s": 28.959844,
+   "prompt_tokens": 383,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000229",
+   "arrival_s": 29.152898,
+   "prompt_tokens": 374,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000230",
+   "arrival_s": 29.64832,
+   "prompt_tokens": 396,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000231",
+   "arrival_s": 29.651246,
+   "prompt_tokens": 1110,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000232",
+   "arrival_s": 29.930598,
+   "prompt_tokens": 986,
+   "output_tokens": 592
+  },
+  {
+   "request_id": "req000233",
+   "arrival_s": 30.109352,
+   "prompt_tokens": 4086,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000234",
+   "arrival_s": 30.431005,
+   "prompt_tokens": 406,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000235",
+   "arrival_s": 30.491627,
+   "prompt_tokens": 429,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000236",
+   "arrival_s": 30.6459,
+   "prompt_tokens": 4086,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000237",
+   "arrival_s": 30.92191,
+   "prompt_tokens": 373,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000238",
+   "arrival_s": 31.04891,
+   "prompt_tokens": 421,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000239",
+   "arrival_s": 31.139621,
+   "prompt_tokens": 378,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000240",
+   "arrival_s": 31.185594,
+   "prompt_tokens": 407,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000241",
+   "arrival_s": 31.580863,
+   "prompt_tokens": 4094,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req000242",
+   "arrival_s": 31.758538,
+   "prompt_tokens": 1884,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000243",
+   "arrival_s": 31.811627,
+   "prompt_tokens": 381,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000244",
+   "arrival_s": 32.528354,
+   "prompt_tokens": 4098,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000245",
+   "arrival_s": 32.585112,
+   "prompt_tokens": 402,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000246",
+   "arrival_s": 32.61035,
+   "prompt_tokens": 389,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000247",
+   "arrival_s": 32.909429,
+   "prompt_tokens": 371,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000248",
+   "arrival_s": 32.959612,
+   "prompt_tokens": 1026,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000249",
+   "arrival_s": 33.689309,
+   "prompt_tokens": 374,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req000250",
+   "arrival_s": 33.777901,
+   "prompt_tokens": 3795,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000251",
+   "arrival_s": 33.907542,
+   "prompt_tokens": 397,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000252",
+   "arrival_s": 33.930659,
+   "prompt_tokens": 4074,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req000253",
+   "arrival_s": 33.952692,
+   "prompt_tokens": 1102,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req000254",
+   "arrival_s": 33.961657,
+   "prompt_tokens": 415,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000255",
+   "arrival_s": 34.036977,
+   "prompt_tokens": 398,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000256",
+   "arrival_s": 34.036984,
+   "prompt_tokens": 398,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000257",
+   "arrival_s": 34.080927,
+   "prompt_tokens": 306,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req000258",
+   "arrival_s": 34.347865,
+   "prompt_tokens": 430,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000259",
+   "arrival_s": 34.375043,
+   "prompt_tokens": 2585,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000260",
+   "arrival_s": 34.511568,
+   "prompt_tokens": 1792,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000261",
+   "arrival_s": 34.540477,
+   "prompt_tokens": 4077,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000262",
+   "arrival_s": 34.578674,
+   "prompt_tokens": 403,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000263",
+   "arrival_s": 34.665107,
+   "prompt_tokens": 407,
+   "output_tokens": 139
+  },
+  {
+   "request_id": "req000264",
+   "arrival_s": 34.718405,
+   "prompt_tokens": 1783,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000265",
+   "arrival_s": 34.943245,
+   "prompt_tokens": 4079,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000266",
+   "arrival_s": 34.96024,
+   "prompt_tokens": 1010,
+   "output_tokens": 409
+  },
+  {
+   "request_id": "req000267",
+   "arrival_s": 35.300625,
+   "prompt_tokens": 404,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000268",
+   "arrival_s": 35.544672,
+   "prompt_tokens": 406,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000269",
+   "arrival_s": 35.628127,
+   "prompt_tokens": 181,
+   "output_tokens": 148
+  },
+  {
+   "request_id": "req000270",
+   "arrival_s": 35.6298,
+   "prompt_tokens": 389,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000271",
+   "arrival_s": 35.822036,
+   "prompt_tokens": 372,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000272",
+   "arrival_s": 35.990904,
+   "prompt_tokens": 374,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000273",
+   "arrival_s": 36.050985,
+   "prompt_tokens": 1330,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000274",
+   "arrival_s": 36.07249,
+   "prompt_tokens": 4074,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req000275",
+   "arrival_s": 36.427554,
+   "prompt_tokens": 883,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000276",
+   "arrival_s": 36.54183,
+   "prompt_tokens": 4075,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req000277",
+   "arrival_s": 36.779456,
+   "prompt_tokens": 4087,
+   "output_tokens": 37
+  },
+  {
+   "request_id": "req000278",
+   "arrival_s": 36.921246,
+   "prompt_tokens": 369,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000279",
+   "arrival_s": 36.977105,
+   "prompt_tokens": 426,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000280",
+   "arrival_s": 37.071827,
+   "prompt_tokens": 4145,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000281",
+   "arrival_s": 37.539873,
+   "prompt_tokens": 4098,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000282",
+   "arrival_s": 37.594574,
+   "prompt_tokens": 4091,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000283",
+   "arrival_s": 37.598547,
+   "prompt_tokens": 375,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000284",
+   "arrival_s": 37.921146,
+   "prompt_tokens": 4088,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req000285",
+   "arrival_s": 38.040252,
+   "prompt_tokens": 3807,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000286",
+   "arrival_s": 38.861317,
+   "prompt_tokens": 4132,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000287",
+   "arrival_s": 38.909825,
+   "prompt_tokens": 380,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000288",
+   "arrival_s": 39.145082,
+   "prompt_tokens": 22,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req000289",
+   "arrival_s": 39.148287,
+   "prompt_tokens": 1111,
+   "output_tokens": 617
+  },
+  {
+   "request_id": "req000290",
+   "arrival_s": 39.295314,
+   "prompt_tokens": 390,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000291",
+   "arrival_s": 39.409495,
+   "prompt_tokens": 4107,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000292",
+   "arrival_s": 39.442519,
+   "prompt_tokens": 400,
+   "output_tokens": 172
+  },
+  {
+   "request_id": "req000293",
+   "arrival_s": 39.743575,
+   "prompt_tokens": 386,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000294",
+   "arrival_s": 40.31259,
+   "prompt_tokens": 410,
+   "output_tokens": 115
+  },
+  {
+   "request_id": "req000295",
+   "arrival_s": 40.609604,
+   "prompt_tokens": 1113,
+   "output_tokens": 383
+  },
+  {
+   "request_id": "req000296",
+   "arrival_s": 40.631345,
+   "prompt_tokens": 1314,
+   "output_tokens": 150
+  },
+  {
+   "request_id": "req000297",
+   "arrival_s": 40.687326,
+   "prompt_tokens": 4080,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req000298",
+   "arrival_s": 40.730252,
+   "prompt_tokens": 4088,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000299",
+   "arrival_s": 40.837722,
+   "prompt_tokens": 371,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req000300",
+   "arrival_s": 41.173072,
+   "prompt_tokens": 390,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000301",
+   "arrival_s": 41.211644,
+   "prompt_tokens": 418,
+   "output_tokens": 126
+  },
+  {
+   "request_id": "req000302",
+   "arrival_s": 41.345777,
+   "prompt_tokens": 1085,
+   "output_tokens": 440
+  },
+  {
+   "request_id": "req000303",
+   "arrival_s": 41.395338,
+   "prompt_tokens": 423,
+   "output_tokens": 145
+  },
+  {
+   "request_id": "req000304",
+   "arrival_s": 41.441864,
+   "prompt_tokens": 384,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000305",
+   "arrival_s": 41.443904,
+   "prompt_tokens": 380,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000306",
+   "arrival_s": 41.47719,
+   "prompt_tokens": 1773,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000307",
+   "arrival_s": 41.850879,
+   "prompt_tokens": 1156,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000308",
+   "arrival_s": 42.015566,
+   "prompt_tokens": 417,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000309",
+   "arrival_s": 42.115828,
+   "prompt_tokens": 402,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000310",
+   "arrival_s": 42.192358,
+   "prompt_tokens": 374,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000311",
+   "arrival_s": 42.256738,
+   "prompt_tokens": 374,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000312",
+   "arrival_s": 42.416216,
+   "prompt_tokens": 386,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req000313",
+   "arrival_s": 42.606146,
+   "prompt_tokens": 1201,
+   "output_tokens": 543
+  },
+  {
+   "request_id": "req000314",
+   "arrival_s": 42.65346,
+   "prompt_tokens": 4077,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req000315",
+   "arrival_s": 42.776486,
+   "prompt_tokens": 4074,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req000316",
+   "arrival_s": 42.876514,
+   "prompt_tokens": 1622,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000317",
+   "arrival_s": 42.877994,
+   "prompt_tokens": 407,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000318",
+   "arrival_s": 42.901623,
+   "prompt_tokens": 402,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000319",
+   "arrival_s": 43.520153,
+   "prompt_tokens": 372,
+   "output_tokens": 120
+  },
+  {
+   "request_id": "req000320",
+   "arrival_s": 43.595921,
+   "prompt_tokens": 1051,
+   "output_tokens": 388
+  },
+  {
+   "request_id": "req000321",
+   "arrival_s": 43.822806,
+   "prompt_tokens": 395,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000322",
+   "arrival_s": 43.837571,
+   "prompt_tokens": 4089,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000323",
+   "arrival_s": 43.97377,
+   "prompt_tokens": 4084,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000324",
+   "arrival_s": 44.087207,
+   "prompt_tokens": 382,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000325",
+   "arrival_s": 44.218288,
+   "prompt_tokens": 2,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000326",
+   "arrival_s": 44.34612,
+   "prompt_tokens": 381,
+   "output_tokens": 176
+  },
+  {
+   "request_id": "req000327",
+   "arrival_s": 44.359912,
+   "prompt_tokens": 409,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000328",
+   "arrival_s": 44.431511,
+   "prompt_tokens": 375,
+   "output_tokens": 136
+  },
+  {
+   "request_id": "req000329",
+   "arrival_s": 44.472368,
+   "prompt_tokens": 404,
+   "output_tokens": 120
+  },
+  {
+   "request_id": "req000330",
+   "arrival_s": 44.591919,
+   "prompt_tokens": 392,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000331",
+   "arrival_s": 44.761653,
+   "prompt_tokens": 4088,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000332",
+   "arrival_s": 44.999899,
+   "prompt_tokens": 420,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000333",
+   "arrival_s": 45.020896,
+   "prompt_tokens": 1315,
+   "output_tokens": 142
+  },
+  {
+   "request_id": "req000334",
+   "arrival_s": 45.032404,
+   "prompt_tokens": 1036,
+   "output_tokens": 386
+  },
+  {
+   "request_id": "req000335",
+   "arrival_s": 45.262517,
+   "prompt_tokens": 4078,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000336",
+   "arrival_s": 45.440666,
+   "prompt_tokens": 1161,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000337",
+   "arrival_s": 45.863079,
+   "prompt_tokens": 1099,
+   "output_tokens": 526
+  },
+  {
+   "request_id": "req000338",
+   "arrival_s": 45.922435,
+   "prompt_tokens": 1212,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req000339",
+   "arrival_s": 45.995838,
+   "prompt_tokens": 395,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000340",
+   "arrival_s": 46.067637,
+   "prompt_tokens": 4074,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000341",
+   "arrival_s": 46.330124,
+   "prompt_tokens": 242,
+   "output_tokens": 14
+  },
+  {
+   "request_id": "req000342",
+   "arrival_s": 46.660055,
+   "prompt_tokens": 495,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000343",
+   "arrival_s": 46.919023,
+   "prompt_tokens": 4089,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000344",
+   "arrival_s": 46.943305,
+   "prompt_tokens": 399,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000345",
+   "arrival_s": 47.067576,
+   "prompt_tokens": 1058,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req000346",
+   "arrival_s": 47.110253,
+   "prompt_tokens": 428,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000347",
+   "arrival_s": 47.146493,
+   "prompt_tokens": 442,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000348",
+   "arrival_s": 47.305163,
+   "prompt_tokens": 1113,
+   "output_tokens": 408
+  },
+  {
+   "request_id": "req000349",
+   "arrival_s": 47.410375,
+   "prompt_tokens": 4078,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000350",
+   "arrival_s": 47.507643,
+   "prompt_tokens": 374,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000351",
+   "arrival_s": 47.539908,
+   "prompt_tokens": 2118,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000352",
+   "arrival_s": 47.610631,
+   "prompt_tokens": 396,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req000353",
+   "arrival_s": 47.718734,
+   "prompt_tokens": 373,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req000354",
+   "arrival_s": 47.791384,
+   "prompt_tokens": 383,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000355",
+   "arrival_s": 47.884033,
+   "prompt_tokens": 4081,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000356",
+   "arrival_s": 47.946479,
+   "prompt_tokens": 387,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req000357",
+   "arrival_s": 47.995801,
+   "prompt_tokens": 432,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000358",
+   "arrival_s": 48.074513,
+   "prompt_tokens": 414,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000359",
+   "arrival_s": 48.129974,
+   "prompt_tokens": 4086,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req000360",
+   "arrival_s": 48.141499,
+   "prompt_tokens": 375,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000361",
+   "arrival_s": 48.328579,
+   "prompt_tokens": 986,
+   "output_tokens": 423
+  },
+  {
+   "request_id": "req000362",
+   "arrival_s": 48.335635,
+   "prompt_tokens": 399,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000363",
+   "arrival_s": 48.387333,
+   "prompt_tokens": 203,
+   "output_tokens": 217
+  },
+  {
+   "request_id": "req000364",
+   "arrival_s": 48.711803,
+   "prompt_tokens": 1364,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req000365",
+   "arrival_s": 48.911295,
+   "prompt_tokens": 1692,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000366",
+   "arrival_s": 49.053977,
+   "prompt_tokens": 4078,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req000367",
+   "arrival_s": 49.102953,
+   "prompt_tokens": 2229,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req000368",
+   "arrival_s": 49.257679,
+   "prompt_tokens": 382,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000369",
+   "arrival_s": 49.400258,
+   "prompt_tokens": 411,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000370",
+   "arrival_s": 49.452993,
+   "prompt_tokens": 448,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000371",
+   "arrival_s": 49.70188,
+   "prompt_tokens": 383,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000372",
+   "arrival_s": 49.777432,
+   "prompt_tokens": 1136,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req000373",
+   "arrival_s": 49.820792,
+   "prompt_tokens": 385,
+   "output_tokens": 145
+  },
+  {
+   "request_id": "req000374",
+   "arrival_s": 50.005197,
+   "prompt_tokens": 395,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000375",
+   "arrival_s": 50.190215,
+   "prompt_tokens": 379,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000376",
+   "arrival_s": 50.199242,
+   "prompt_tokens": 181,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000377",
+   "arrival_s": 50.433266,
+   "prompt_tokens": 400,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000378",
+   "arrival_s": 50.55253,
+   "prompt_tokens": 416,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000379",
+   "arrival_s": 50.589034,
+   "prompt_tokens": 384,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000380",
+   "arrival_s": 50.941881,
+   "prompt_tokens": 391,
+   "output_tokens": 116
+  },
+  {
+   "request_id": "req000381",
+   "arrival_s": 50.980796,
+   "prompt_tokens": 2584,
+   "output_tokens": 141
+  },
+  {
+   "request_id": "req000382",
+   "arrival_s": 51.079825,
+   "prompt_tokens": 2159,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000383",
+   "arrival_s": 51.097288,
+   "prompt_tokens": 417,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000384",
+   "arrival_s": 51.17767,
+   "prompt_tokens": 4090,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000385",
+   "arrival_s": 51.193323,
+   "prompt_tokens": 415,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000386",
+   "arrival_s": 51.452599,
+   "prompt_tokens": 4100,
+   "output_tokens": 142
+  },
+  {
+   "request_id": "req000387",
+   "arrival_s": 51.756391,
+   "prompt_tokens": 372,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000388",
+   "arrival_s": 51.832059,
+   "prompt_tokens": 1065,
+   "output_tokens": 413
+  },
+  {
+   "request_id": "req000389",
+   "arrival_s": 51.902077,
+   "prompt_tokens": 1193,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000390",
+   "arrival_s": 52.07729,
+   "prompt_tokens": 378,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000391",
+   "arrival_s": 52.20498,
+   "prompt_tokens": 384,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000392",
+   "arrival_s": 52.289889,
+   "prompt_tokens": 375,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000393",
+   "arrival_s": 52.393758,
+   "prompt_tokens": 880,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000394",
+   "arrival_s": 52.473898,
+   "prompt_tokens": 442,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000395",
+   "arrival_s": 52.528331,
+   "prompt_tokens": 412,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000396",
+   "arrival_s": 52.911476,
+   "prompt_tokens": 1641,
+   "output_tokens": 143
+  },
+  {
+   "request_id": "req000397",
+   "arrival_s": 53.251279,
+   "prompt_tokens": 390,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000398",
+   "arrival_s": 53.292859,
+   "prompt_tokens": 410,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000399",
+   "arrival_s": 53.310678,
+   "prompt_tokens": 4075,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req000400",
+   "arrival_s": 53.310684,
+   "prompt_tokens": 1111,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req000401",
+   "arrival_s": 53.378155,
+   "prompt_tokens": 1025,
+   "output_tokens": 426
+  },
+  {
+   "request_id": "req000402",
+   "arrival_s": 53.48707,
+   "prompt_tokens": 879,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000403",
+   "arrival_s": 53.692994,
+   "prompt_tokens": 440,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000404",
+   "arrival_s": 53.730535,
+   "prompt_tokens": 1467,
+   "output_tokens": 113
+  },
+  {
+   "request_id": "req000405",
+   "arrival_s": 53.897514,
+   "prompt_tokens": 385,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000406",
+   "arrival_s": 54.04969,
+   "prompt_tokens": 4084,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000407",
+   "arrival_s": 54.328889,
+   "prompt_tokens": 395,
+   "output_tokens": 135
+  },
+  {
+   "request_id": "req000408",
+   "arrival_s": 54.467842,
+   "prompt_tokens": 397,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000409",
+   "arrival_s": 54.467852,
+   "prompt_tokens": 417,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000410",
+   "arrival_s": 54.524728,
+   "prompt_tokens": 1231,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000411",
+   "arrival_s": 54.657245,
+   "prompt_tokens": 2694,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000412",
+   "arrival_s": 54.983439,
+   "prompt_tokens": 411,
+   "output_tokens": 133
+  },
+  {
+   "request_id": "req000413",
+   "arrival_s": 55.012987,
+   "prompt_tokens": 1312,
+   "output_tokens": 159
+  },
+  {
+   "request_id": "req000414",
+   "arrival_s": 55.050496,
+   "prompt_tokens": 419,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000415",
+   "arrival_s": 55.199741,
+   "prompt_tokens": 393,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000416",
+   "arrival_s": 55.222697,
+   "prompt_tokens": 376,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000417",
+   "arrival_s": 55.33102,
+   "prompt_tokens": 4077,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req000418",
+   "arrival_s": 55.531858,
+   "prompt_tokens": 413,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000419",
+   "arrival_s": 55.674833,
+   "prompt_tokens": 374,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000420",
+   "arrival_s": 55.793637,
+   "prompt_tokens": 4081,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000421",
+   "arrival_s": 56.119592,
+   "prompt_tokens": 418,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000422",
+   "arrival_s": 56.178109,
+   "prompt_tokens": 377,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000423",
+   "arrival_s": 56.23718,
+   "prompt_tokens": 404,
+   "output_tokens": 120
+  },
+  {
+   "request_id": "req000424",
+   "arrival_s": 56.29418,
+   "prompt_tokens": 388,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000425",
+   "arrival_s": 56.484418,
+   "prompt_tokens": 398,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000426",
+   "arrival_s": 56.530202,
+   "prompt_tokens": 405,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000427",
+   "arrival_s": 56.57239,
+   "prompt_tokens": 421,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req000428",
+   "arrival_s": 56.951282,
+   "prompt_tokens": 406,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000429",
+   "arrival_s": 57.00569,
+   "prompt_tokens": 4076,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req000430",
+   "arrival_s": 57.009674,
+   "prompt_tokens": 1080,
+   "output_tokens": 413
+  },
+  {
+   "request_id": "req000431",
+   "arrival_s": 57.132396,
+   "prompt_tokens": 1067,
+   "output_tokens": 373
+  },
+  {
+   "request_id": "req000432",
+   "arrival_s": 57.162621,
+   "prompt_tokens": 4077,
+   "output_tokens": 31
+  },
+  {
+   "request_id": "req000433",
+   "arrival_s": 57.86207,
+   "prompt_tokens": 4143,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000434",
+   "arrival_s": 57.949192,
+   "prompt_tokens": 4077,
+   "output_tokens": 32
+  },
+  {
+   "request_id": "req000435",
+   "arrival_s": 57.990247,
+   "prompt_tokens": 4080,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000436",
+   "arrival_s": 58.043803,
+   "prompt_tokens": 378,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000437",
+   "arrival_s": 58.045563,
+   "prompt_tokens": 181,
+   "output_tokens": 118
+  },
+  {
+   "request_id": "req000438",
+   "arrival_s": 58.1218,
+   "prompt_tokens": 1200,
+   "output_tokens": 399
+  },
+  {
+   "request_id": "req000439",
+   "arrival_s": 58.14541,
+   "prompt_tokens": 4082,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000440",
+   "arrival_s": 58.213224,
+   "prompt_tokens": 406,
+   "output_tokens": 122
+  },
+  {
+   "request_id": "req000441",
+   "arrival_s": 58.226957,
+   "prompt_tokens": 375,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req000442",
+   "arrival_s": 58.254089,
+   "prompt_tokens": 396,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000443",
+   "arrival_s": 58.260409,
+   "prompt_tokens": 4085,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000444",
+   "arrival_s": 58.275754,
+   "prompt_tokens": 442,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000445",
+   "arrival_s": 58.543265,
+   "prompt_tokens": 385,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000446",
+   "arrival_s": 59.083313,
+   "prompt_tokens": 475,
+   "output_tokens": 114
+  },
+  {
+   "request_id": "req000447",
+   "arrival_s": 59.121547,
+   "prompt_tokens": 1058,
+   "output_tokens": 397
+  },
+  {
+   "request_id": "req000448",
+   "arrival_s": 59.186748,
+   "prompt_tokens": 2296,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000449",
+   "arrival_s": 59.2729,
+   "prompt_tokens": 2447,
+   "output_tokens": 121
+  },
+  {
+   "request_id": "req000450",
+   "arrival_s": 59.401898,
+   "prompt_tokens": 4077,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000451",
+   "arrival_s": 59.509279,
+   "prompt_tokens": 2494,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000452",
+   "arrival_s": 59.533373,
+   "prompt_tokens": 2538,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000453",
+   "arrival_s": 59.876707,
+   "prompt_tokens": 1010,
+   "output_tokens": 472
+  },
+  {
+   "request_id": "req000454",
+   "arrival_s": 59.889969,
+   "prompt_tokens": 394,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000455",
+   "arrival_s": 59.894602,
+   "prompt_tokens": 396,
+   "output_tokens": 153
+  },
+  {
+   "request_id": "req000456",
+   "arrival_s": 60.09175,
+   "prompt_tokens": 1099,
+   "output_tokens": 572
+  },
+  {
+   "request_id": "req000457",
+   "arrival_s": 60.772745,
+   "prompt_tokens": 380,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000458",
+   "arrival_s": 61.009297,
+   "prompt_tokens": 4081,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000459",
+   "arrival_s": 61.109368,
+   "prompt_tokens": 1137,
+   "output_tokens": 416
+  },
+  {
+   "request_id": "req000460",
+   "arrival_s": 61.522091,
+   "prompt_tokens": 372,
+   "output_tokens": 123
+  },
+  {
+   "request_id": "req000461",
+   "arrival_s": 61.69932,
+   "prompt_tokens": 3000,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000462",
+   "arrival_s": 61.734045,
+   "prompt_tokens": 406,
+   "output_tokens": 114
+  },
+  {
+   "request_id": "req000463",
+   "arrival_s": 61.830563,
+   "prompt_tokens": 393,
+   "output_tokens": 121
+  },
+  {
+   "request_id": "req000464",
+   "arrival_s": 61.835193,
+   "prompt_tokens": 4092,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000465",
+   "arrival_s": 61.835568,
+   "prompt_tokens": 403,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000466",
+   "arrival_s": 61.868884,
+   "prompt_tokens": 4085,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000467",
+   "arrival_s": 62.105515,
+   "prompt_tokens": 459,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000468",
+   "arrival_s": 62.326763,
+   "prompt_tokens": 377,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req000469",
+   "arrival_s": 62.448045,
+   "prompt_tokens": 4078,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000470",
+   "arrival_s": 62.462858,
+   "prompt_tokens": 1069,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req000471",
+   "arrival_s": 62.53363,
+   "prompt_tokens": 392,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000472",
+   "arrival_s": 63.080476,
+   "prompt_tokens": 181,
+   "output_tokens": 230
+  },
+  {
+   "request_id": "req000473",
+   "arrival_s": 63.438248,
+   "prompt_tokens": 942,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000474",
+   "arrival_s": 63.455787,
+   "prompt_tokens": 392,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000475",
+   "arrival_s": 63.540936,
+   "prompt_tokens": 402,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000476",
+   "arrival_s": 63.545171,
+   "prompt_tokens": 1314,
+   "output_tokens": 232
+  },
+  {
+   "request_id": "req000477",
+   "arrival_s": 63.749929,
+   "prompt_tokens": 395,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000478",
+   "arrival_s": 63.907318,
+   "prompt_tokens": 395,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000479",
+   "arrival_s": 64.167779,
+   "prompt_tokens": 1138,
+   "output_tokens": 395
+  },
+  {
+   "request_id": "req000480",
+   "arrival_s": 64.679379,
+   "prompt_tokens": 1071,
+   "output_tokens": 395
+  },
+  {
+   "request_id": "req000481",
+   "arrival_s": 64.689663,
+   "prompt_tokens": 1094,
+   "output_tokens": 429
+  },
+  {
+   "request_id": "req000482",
+   "arrival_s": 64.731845,
+   "prompt_tokens": 4076,
+   "output_tokens": 38
+  },
+  {
+   "request_id": "req000483",
+   "arrival_s": 64.768554,
+   "prompt_tokens": 379,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000484",
+   "arrival_s": 64.815602,
+   "prompt_tokens": 2443,
+   "output_tokens": 119
+  },
+  {
+   "request_id": "req000485",
+   "arrival_s": 65.362684,
+   "prompt_tokens": 449,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000486",
+   "arrival_s": 65.380226,
+   "prompt_tokens": 4078,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000487",
+   "arrival_s": 65.46523,
+   "prompt_tokens": 387,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000488",
+   "arrival_s": 65.472479,
+   "prompt_tokens": 4076,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000489",
+   "arrival_s": 65.569935,
+   "prompt_tokens": 4076,
+   "output_tokens": 29
+  },
+  {
+   "request_id": "req000490",
+   "arrival_s": 65.981292,
+   "prompt_tokens": 1059,
+   "output_tokens": 375
+  },
+  {
+   "request_id": "req000491",
+   "arrival_s": 66.165217,
+   "prompt_tokens": 4987,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000492",
+   "arrival_s": 66.31451,
+   "prompt_tokens": 412,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000493",
+   "arrival_s": 66.34024,
+   "prompt_tokens": 372,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req000494",
+   "arrival_s": 66.359117,
+   "prompt_tokens": 377,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000495",
+   "arrival_s": 66.670067,
+   "prompt_tokens": 4076,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000496",
+   "arrival_s": 67.30718,
+   "prompt_tokens": 392,
+   "output_tokens": 160
+  },
+  {
+   "request_id": "req000497",
+   "arrival_s": 67.336074,
+   "prompt_tokens": 1134,
+   "output_tokens": 385
+  },
+  {
+   "request_id": "req000498",
+   "arrival_s": 67.47098,
+   "prompt_tokens": 181,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000499",
+   "arrival_s": 67.635317,
+   "prompt_tokens": 1086,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000500",
+   "arrival_s": 67.648598,
+   "prompt_tokens": 4076,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req000501",
+   "arrival_s": 67.886807,
+   "prompt_tokens": 4086,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000502",
+   "arrival_s": 67.899064,
+   "prompt_tokens": 1070,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req000503",
+   "arrival_s": 67.899261,
+   "prompt_tokens": 1066,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req000504",
+   "arrival_s": 67.931868,
+   "prompt_tokens": 4077,
+   "output_tokens": 37
+  },
+  {
+   "request_id": "req000505",
+   "arrival_s": 68.30803,
+   "prompt_tokens": 391,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000506",
+   "arrival_s": 68.468724,
+   "prompt_tokens": 212,
+   "output_tokens": 191
+  },
+  {
+   "request_id": "req000507",
+   "arrival_s": 68.568313,
+   "prompt_tokens": 383,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req000508",
+   "arrival_s": 68.584374,
+   "prompt_tokens": 4079,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000509",
+   "arrival_s": 68.629461,
+   "prompt_tokens": 1036,
+   "output_tokens": 565
+  },
+  {
+   "request_id": "req000510",
+   "arrival_s": 68.757129,
+   "prompt_tokens": 375,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req000511",
+   "arrival_s": 69.566767,
+   "prompt_tokens": 402,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000512",
+   "arrival_s": 69.625819,
+   "prompt_tokens": 1992,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000513",
+   "arrival_s": 69.829424,
+   "prompt_tokens": 447,
+   "output_tokens": 125
+  },
+  {
+   "request_id": "req000514",
+   "arrival_s": 69.969197,
+   "prompt_tokens": 4159,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000515",
+   "arrival_s": 70.43964,
+   "prompt_tokens": 377,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000516",
+   "arrival_s": 70.767101,
+   "prompt_tokens": 908,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000517",
+   "arrival_s": 70.817312,
+   "prompt_tokens": 1460,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000518",
+   "arrival_s": 71.397462,
+   "prompt_tokens": 405,
+   "output_tokens": 166
+  },
+  {
+   "request_id": "req000519",
+   "arrival_s": 71.422888,
+   "prompt_tokens": 2175,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000520",
+   "arrival_s": 71.451919,
+   "prompt_tokens": 181,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000521",
+   "arrival_s": 71.533651,
+   "prompt_tokens": 4073,
+   "output_tokens": 37
+  },
+  {
+   "request_id": "req000522",
+   "arrival_s": 71.580174,
+   "prompt_tokens": 395,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000523",
+   "arrival_s": 71.644172,
+   "prompt_tokens": 372,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000524",
+   "arrival_s": 71.729673,
+   "prompt_tokens": 1042,
+   "output_tokens": 395
+  },
+  {
+   "request_id": "req000525",
+   "arrival_s": 71.730851,
+   "prompt_tokens": 181,
+   "output_tokens": 116
+  },
+  {
+   "request_id": "req000526",
+   "arrival_s": 71.73353,
+   "prompt_tokens": 1358,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req000527",
+   "arrival_s": 71.803615,
+   "prompt_tokens": 392,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000528",
+   "arrival_s": 71.861071,
+   "prompt_tokens": 402,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000529",
+   "arrival_s": 71.93519,
+   "prompt_tokens": 406,
+   "output_tokens": 139
+  },
+  {
+   "request_id": "req000530",
+   "arrival_s": 71.946535,
+   "prompt_tokens": 375,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000531",
+   "arrival_s": 72.172577,
+   "prompt_tokens": 4089,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000532",
+   "arrival_s": 72.365165,
+   "prompt_tokens": 402,
+   "output_tokens": 182
+  },
+  {
+   "request_id": "req000533",
+   "arrival_s": 72.623358,
+   "prompt_tokens": 1035,
+   "output_tokens": 405
+  },
+  {
+   "request_id": "req000534",
+   "arrival_s": 72.999062,
+   "prompt_tokens": 1070,
+   "output_tokens": 406
+  },
+  {
+   "request_id": "req000535",
+   "arrival_s": 73.207114,
+   "prompt_tokens": 424,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000536",
+   "arrival_s": 73.281341,
+   "prompt_tokens": 4086,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req000537",
+   "arrival_s": 73.325753,
+   "prompt_tokens": 4098,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req000538",
+   "arrival_s": 73.408396,
+   "prompt_tokens": 4075,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000539",
+   "arrival_s": 73.413523,
+   "prompt_tokens": 4080,
+   "output_tokens": 27
+  },
+  {
+   "request_id": "req000540",
+   "arrival_s": 73.61648,
+   "prompt_tokens": 393,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req000541",
+   "arrival_s": 73.687055,
+   "prompt_tokens": 1313,
+   "output_tokens": 190
+  },
+  {
+   "request_id": "req000542",
+   "arrival_s": 73.797821,
+   "prompt_tokens": 334,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req000543",
+   "arrival_s": 73.8633,
+   "prompt_tokens": 456,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000544",
+   "arrival_s": 73.999634,
+   "prompt_tokens": 1316,
+   "output_tokens": 213
+  },
+  {
+   "request_id": "req000545",
+   "arrival_s": 74.01763,
+   "prompt_tokens": 416,
+   "output_tokens": 118
+  },
+  {
+   "request_id": "req000546",
+   "arrival_s": 74.072434,
+   "prompt_tokens": 374,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000547",
+   "arrival_s": 74.188488,
+   "prompt_tokens": 398,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000548",
+   "arrival_s": 74.212741,
+   "prompt_tokens": 4091,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000549",
+   "arrival_s": 74.305781,
+   "prompt_tokens": 382,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000550",
+   "arrival_s": 74.331086,
+   "prompt_tokens": 387,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000551",
+   "arrival_s": 74.34263,
+   "prompt_tokens": 437,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000552",
+   "arrival_s": 74.363199,
+   "prompt_tokens": 406,
+   "output_tokens": 150
+  },
+  {
+   "request_id": "req000553",
+   "arrival_s": 74.436718,
+   "prompt_tokens": 394,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000554",
+   "arrival_s": 74.437122,
+   "prompt_tokens": 398,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000555",
+   "arrival_s": 74.666252,
+   "prompt_tokens": 1052,
+   "output_tokens": 514
+  },
+  {
+   "request_id": "req000556",
+   "arrival_s": 74.780103,
+   "prompt_tokens": 908,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000557",
+   "arrival_s": 74.804918,
+   "prompt_tokens": 398,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000558",
+   "arrival_s": 74.878369,
+   "prompt_tokens": 389,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000559",
+   "arrival_s": 75.016239,
+   "prompt_tokens": 4078,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000560",
+   "arrival_s": 75.031602,
+   "prompt_tokens": 457,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000561",
+   "arrival_s": 75.789565,
+   "prompt_tokens": 413,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000562",
+   "arrival_s": 75.970495,
+   "prompt_tokens": 440,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000563",
+   "arrival_s": 76.061592,
+   "prompt_tokens": 1604,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000564",
+   "arrival_s": 76.233369,
+   "prompt_tokens": 1573,
+   "output_tokens": 126
+  },
+  {
+   "request_id": "req000565",
+   "arrival_s": 76.262286,
+   "prompt_tokens": 4075,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000566",
+   "arrival_s": 76.297589,
+   "prompt_tokens": 1069,
+   "output_tokens": 411
+  },
+  {
+   "request_id": "req000567",
+   "arrival_s": 76.620762,
+   "prompt_tokens": 1099,
+   "output_tokens": 572
+  },
+  {
+   "request_id": "req000568",
+   "arrival_s": 76.651527,
+   "prompt_tokens": 405,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000569",
+   "arrival_s": 76.715349,
+   "prompt_tokens": 1040,
+   "output_tokens": 439
+  },
+  {
+   "request_id": "req000570",
+   "arrival_s": 76.763203,
+   "prompt_tokens": 403,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000571",
+   "arrival_s": 76.821353,
+   "prompt_tokens": 1059,
+   "output_tokens": 446
+  },
+  {
+   "request_id": "req000572",
+   "arrival_s": 76.851309,
+   "prompt_tokens": 405,
+   "output_tokens": 125
+  },
+  {
+   "request_id": "req000573",
+   "arrival_s": 77.016752,
+   "prompt_tokens": 402,
+   "output_tokens": 171
+  },
+  {
+   "request_id": "req000574",
+   "arrival_s": 77.086496,
+   "prompt_tokens": 1229,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000575",
+   "arrival_s": 77.095966,
+   "prompt_tokens": 404,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000576",
+   "arrival_s": 77.145967,
+   "prompt_tokens": 398,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000577",
+   "arrival_s": 77.288715,
+   "prompt_tokens": 1357,
+   "output_tokens": 138
+  },
+  {
+   "request_id": "req000578",
+   "arrival_s": 77.417986,
+   "prompt_tokens": 4079,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req000579",
+   "arrival_s": 77.456571,
+   "prompt_tokens": 401,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000580",
+   "arrival_s": 77.587017,
+   "prompt_tokens": 998,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000581",
+   "arrival_s": 77.652352,
+   "prompt_tokens": 4102,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000582",
+   "arrival_s": 78.172702,
+   "prompt_tokens": 398,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000583",
+   "arrival_s": 78.240206,
+   "prompt_tokens": 375,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000584",
+   "arrival_s": 78.339056,
+   "prompt_tokens": 379,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000585",
+   "arrival_s": 78.343563,
+   "prompt_tokens": 120,
+   "output_tokens": 12
+  },
+  {
+   "request_id": "req000586",
+   "arrival_s": 78.60447,
+   "prompt_tokens": 1065,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req000587",
+   "arrival_s": 78.714588,
+   "prompt_tokens": 372,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req000588",
+   "arrival_s": 78.812694,
+   "prompt_tokens": 423,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000589",
+   "arrival_s": 78.820744,
+   "prompt_tokens": 4113,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req000590",
+   "arrival_s": 78.922053,
+   "prompt_tokens": 1108,
+   "output_tokens": 534
+  },
+  {
+   "request_id": "req000591",
+   "arrival_s": 79.149334,
+   "prompt_tokens": 1933,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000592",
+   "arrival_s": 79.187001,
+   "prompt_tokens": 4082,
+   "output_tokens": 32
+  },
+  {
+   "request_id": "req000593",
+   "arrival_s": 79.30431,
+   "prompt_tokens": 1136,
+   "output_tokens": 437
+  },
+  {
+   "request_id": "req000594",
+   "arrival_s": 79.456028,
+   "prompt_tokens": 4092,
+   "output_tokens": 51
+  },
+  {
+   "request_id": "req000595",
+   "arrival_s": 79.586743,
+   "prompt_tokens": 396,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req000596",
+   "arrival_s": 79.802358,
+   "prompt_tokens": 396,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000597",
+   "arrival_s": 79.829885,
+   "prompt_tokens": 395,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000598",
+   "arrival_s": 79.832852,
+   "prompt_tokens": 2320,
+   "output_tokens": 120
+  },
+  {
+   "request_id": "req000599",
+   "arrival_s": 80.32888,
+   "prompt_tokens": 410,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000600",
+   "arrival_s": 80.346725,
+   "prompt_tokens": 2530,
+   "output_tokens": 35
+  },
+  {
+   "request_id": "req000601",
+   "arrival_s": 80.401845,
+   "prompt_tokens": 1315,
+   "output_tokens": 149
+  },
+  {
+   "request_id": "req000602",
+   "arrival_s": 80.651367,
+   "prompt_tokens": 4078,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req000603",
+   "arrival_s": 80.776559,
+   "prompt_tokens": 4071,
+   "output_tokens": 38
+  },
+  {
+   "request_id": "req000604",
+   "arrival_s": 80.778993,
+   "prompt_tokens": 4082,
+   "output_tokens": 340
+  },
+  {
+   "request_id": "req000605",
+   "arrival_s": 80.939611,
+   "prompt_tokens": 409,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000606",
+   "arrival_s": 81.048592,
+   "prompt_tokens": 381,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000607",
+   "arrival_s": 81.075662,
+   "prompt_tokens": 4075,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req000608",
+   "arrival_s": 81.09327,
+   "prompt_tokens": 384,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000609",
+   "arrival_s": 81.228091,
+   "prompt_tokens": 4075,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000610",
+   "arrival_s": 81.241042,
+   "prompt_tokens": 1128,
+   "output_tokens": 386
+  },
+  {
+   "request_id": "req000611",
+   "arrival_s": 81.42421,
+   "prompt_tokens": 2026,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000612",
+   "arrival_s": 81.597705,
+   "prompt_tokens": 4079,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000613",
+   "arrival_s": 81.647266,
+   "prompt_tokens": 412,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000614",
+   "arrival_s": 81.814126,
+   "prompt_tokens": 376,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req000615",
+   "arrival_s": 82.326168,
+   "prompt_tokens": 401,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000616",
+   "arrival_s": 82.408867,
+   "prompt_tokens": 1200,
+   "output_tokens": 407
+  },
+  {
+   "request_id": "req000617",
+   "arrival_s": 82.750579,
+   "prompt_tokens": 398,
+   "output_tokens": 131
+  },
+  {
+   "request_id": "req000618",
+   "arrival_s": 82.826325,
+   "prompt_tokens": 4080,
+   "output_tokens": 26
+  },
+  {
+   "request_id": "req000619",
+   "arrival_s": 82.954962,
+   "prompt_tokens": 1217,
+   "output_tokens": 135
+  },
+  {
+   "request_id": "req000620",
+   "arrival_s": 83.121167,
+   "prompt_tokens": 399,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000621",
+   "arrival_s": 83.565392,
+   "prompt_tokens": 4077,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000622",
+   "arrival_s": 83.609048,
+   "prompt_tokens": 408,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000623",
+   "arrival_s": 83.629445,
+   "prompt_tokens": 4087,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000624",
+   "arrival_s": 84.049621,
+   "prompt_tokens": 12,
+   "output_tokens": 151
+  },
+  {
+   "request_id": "req000625",
+   "arrival_s": 84.194598,
+   "prompt_tokens": 4386,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000626",
+   "arrival_s": 84.211312,
+   "prompt_tokens": 4089,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000627",
+   "arrival_s": 84.283242,
+   "prompt_tokens": 374,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req000628",
+   "arrival_s": 84.722086,
+   "prompt_tokens": 407,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000629",
+   "arrival_s": 84.722306,
+   "prompt_tokens": 402,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000630",
+   "arrival_s": 84.985475,
+   "prompt_tokens": 406,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req000631",
+   "arrival_s": 85.190234,
+   "prompt_tokens": 397,
+   "output_tokens": 121
+  },
+  {
+   "request_id": "req000632",
+   "arrival_s": 85.195171,
+   "prompt_tokens": 1086,
+   "output_tokens": 560
+  },
+  {
+   "request_id": "req000633",
+   "arrival_s": 85.3301,
+   "prompt_tokens": 398,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req000634",
+   "arrival_s": 85.36743,
+   "prompt_tokens": 1029,
+   "output_tokens": 407
+  },
+  {
+   "request_id": "req000635",
+   "arrival_s": 85.56386,
+   "prompt_tokens": 385,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000636",
+   "arrival_s": 85.566864,
+   "prompt_tokens": 392,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000637",
+   "arrival_s": 85.660883,
+   "prompt_tokens": 181,
+   "output_tokens": 119
+  },
+  {
+   "request_id": "req000638",
+   "arrival_s": 85.703227,
+   "prompt_tokens": 408,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000639",
+   "arrival_s": 85.802586,
+   "prompt_tokens": 4098,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000640",
+   "arrival_s": 86.145237,
+   "prompt_tokens": 397,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req000641",
+   "arrival_s": 86.473589,
+   "prompt_tokens": 4151,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req000642",
+   "arrival_s": 86.579473,
+   "prompt_tokens": 393,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000643",
+   "arrival_s": 86.619712,
+   "prompt_tokens": 396,
+   "output_tokens": 130
+  },
+  {
+   "request_id": "req000644",
+   "arrival_s": 86.92537,
+   "prompt_tokens": 380,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req000645",
+   "arrival_s": 87.081718,
+   "prompt_tokens": 394,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000646",
+   "arrival_s": 87.140212,
+   "prompt_tokens": 397,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000647",
+   "arrival_s": 87.156608,
+   "prompt_tokens": 393,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000648",
+   "arrival_s": 87.237623,
+   "prompt_tokens": 1358,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req000649",
+   "arrival_s": 87.314037,
+   "prompt_tokens": 1036,
+   "output_tokens": 545
+  },
+  {
+   "request_id": "req000650",
+   "arrival_s": 87.642837,
+   "prompt_tokens": 377,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000651",
+   "arrival_s": 87.887089,
+   "prompt_tokens": 375,
+   "output_tokens": 163
+  },
+  {
+   "request_id": "req000652",
+   "arrival_s": 87.888758,
+   "prompt_tokens": 1144,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req000653",
+   "arrival_s": 87.988217,
+   "prompt_tokens": 2584,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000654",
+   "arrival_s": 88.042361,
+   "prompt_tokens": 309,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req000655",
+   "arrival_s": 88.092219,
+   "prompt_tokens": 1261,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000656",
+   "arrival_s": 88.192855,
+   "prompt_tokens": 1242,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req000657",
+   "arrival_s": 88.285923,
+   "prompt_tokens": 423,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000658",
+   "arrival_s": 88.364063,
+   "prompt_tokens": 396,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000659",
+   "arrival_s": 88.403778,
+   "prompt_tokens": 438,
+   "output_tokens": 132
+  },
+  {
+   "request_id": "req000660",
+   "arrival_s": 88.63202,
+   "prompt_tokens": 4080,
+   "output_tokens": 51
+  },
+  {
+   "request_id": "req000661",
+   "arrival_s": 88.679111,
+   "prompt_tokens": 1314,
+   "output_tokens": 170
+  },
+  {
+   "request_id": "req000662",
+   "arrival_s": 88.71474,
+   "prompt_tokens": 451,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000663",
+   "arrival_s": 88.88862,
+   "prompt_tokens": 385,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000664",
+   "arrival_s": 89.089602,
+   "prompt_tokens": 404,
+   "output_tokens": 130
+  },
+  {
+   "request_id": "req000665",
+   "arrival_s": 89.115028,
+   "prompt_tokens": 396,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000666",
+   "arrival_s": 89.119453,
+   "prompt_tokens": 181,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000667",
+   "arrival_s": 89.193154,
+   "prompt_tokens": 404,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000668",
+   "arrival_s": 89.278394,
+   "prompt_tokens": 400,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000669",
+   "arrival_s": 89.281205,
+   "prompt_tokens": 412,
+   "output_tokens": 116
+  },
+  {
+   "request_id": "req000670",
+   "arrival_s": 89.611543,
+   "prompt_tokens": 1083,
+   "output_tokens": 384
+  },
+  {
+   "request_id": "req000671",
+   "arrival_s": 89.759886,
+   "prompt_tokens": 382,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000672",
+   "arrival_s": 90.116203,
+   "prompt_tokens": 403,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000673",
+   "arrival_s": 90.309214,
+   "prompt_tokens": 385,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req000674",
+   "arrival_s": 90.507817,
+   "prompt_tokens": 1460,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req000675",
+   "arrival_s": 90.587249,
+   "prompt_tokens": 4140,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req000676",
+   "arrival_s": 90.628547,
+   "prompt_tokens": 415,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req000677",
+   "arrival_s": 90.797521,
+   "prompt_tokens": 4121,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000678",
+   "arrival_s": 90.870666,
+   "prompt_tokens": 3436,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req000679",
+   "arrival_s": 90.885616,
+   "prompt_tokens": 1315,
+   "output_tokens": 191
+  },
+  {
+   "request_id": "req000680",
+   "arrival_s": 90.890818,
+   "prompt_tokens": 395,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000681",
+   "arrival_s": 90.892342,
+   "prompt_tokens": 4083,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req000682",
+   "arrival_s": 90.968339,
+   "prompt_tokens": 4085,
+   "output_tokens": 38
+  },
+  {
+   "request_id": "req000683",
+   "arrival_s": 91.105394,
+   "prompt_tokens": 373,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000684",
+   "arrival_s": 91.138027,
+   "prompt_tokens": 424,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000685",
+   "arrival_s": 91.218891,
+   "prompt_tokens": 390,
+   "output_tokens": 126
+  },
+  {
+   "request_id": "req000686",
+   "arrival_s": 91.302137,
+   "prompt_tokens": 1315,
+   "output_tokens": 195
+  },
+  {
+   "request_id": "req000687",
+   "arrival_s": 91.478686,
+   "prompt_tokens": 4074,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req000688",
+   "arrival_s": 92.256874,
+   "prompt_tokens": 428,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000689",
+   "arrival_s": 92.541104,
+   "prompt_tokens": 2453,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req000690",
+   "arrival_s": 92.687262,
+   "prompt_tokens": 7,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000691",
+   "arrival_s": 92.792951,
+   "prompt_tokens": 416,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000692",
+   "arrival_s": 93.009575,
+   "prompt_tokens": 1049,
+   "output_tokens": 496
+  },
+  {
+   "request_id": "req000693",
+   "arrival_s": 93.089539,
+   "prompt_tokens": 393,
+   "output_tokens": 147
+  },
+  {
+   "request_id": "req000694",
+   "arrival_s": 93.176864,
+   "prompt_tokens": 4091,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req000695",
+   "arrival_s": 93.446074,
+   "prompt_tokens": 863,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req000696",
+   "arrival_s": 93.49213,
+   "prompt_tokens": 242,
+   "output_tokens": 14
+  },
+  {
+   "request_id": "req000697",
+   "arrival_s": 93.650088,
+   "prompt_tokens": 400,
+   "output_tokens": 140
+  },
+  {
+   "request_id": "req000698",
+   "arrival_s": 93.749143,
+   "prompt_tokens": 1193,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000699",
+   "arrival_s": 93.85228,
+   "prompt_tokens": 449,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req000700",
+   "arrival_s": 93.978445,
+   "prompt_tokens": 1017,
+   "output_tokens": 388
+  },
+  {
+   "request_id": "req000701",
+   "arrival_s": 94.114825,
+   "prompt_tokens": 120,
+   "output_tokens": 12
+  },
+  {
+   "request_id": "req000702",
+   "arrival_s": 94.151165,
+   "prompt_tokens": 1058,
+   "output_tokens": 395
+  },
+  {
+   "request_id": "req000703",
+   "arrival_s": 94.182269,
+   "prompt_tokens": 382,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000704",
+   "arrival_s": 94.204732,
+   "prompt_tokens": 386,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000705",
+   "arrival_s": 94.20493,
+   "prompt_tokens": 418,
+   "output_tokens": 113
+  },
+  {
+   "request_id": "req000706",
+   "arrival_s": 94.411227,
+   "prompt_tokens": 382,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000707",
+   "arrival_s": 94.438866,
+   "prompt_tokens": 4082,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000708",
+   "arrival_s": 94.469354,
+   "prompt_tokens": 2783,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000709",
+   "arrival_s": 94.740259,
+   "prompt_tokens": 1593,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000710",
+   "arrival_s": 95.240567,
+   "prompt_tokens": 397,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000711",
+   "arrival_s": 95.309898,
+   "prompt_tokens": 390,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000712",
+   "arrival_s": 95.460583,
+   "prompt_tokens": 4163,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000713",
+   "arrival_s": 95.469517,
+   "prompt_tokens": 379,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000714",
+   "arrival_s": 95.807389,
+   "prompt_tokens": 395,
+   "output_tokens": 118
+  },
+  {
+   "request_id": "req000715",
+   "arrival_s": 95.886482,
+   "prompt_tokens": 943,
+   "output_tokens": 138
+  },
+  {
+   "request_id": "req000716",
+   "arrival_s": 96.092486,
+   "prompt_tokens": 4131,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req000717",
+   "arrival_s": 96.196448,
+   "prompt_tokens": 22,
+   "output_tokens": 150
+  },
+  {
+   "request_id": "req000718",
+   "arrival_s": 96.342668,
+   "prompt_tokens": 1123,
+   "output_tokens": 407
+  },
+  {
+   "request_id": "req000719",
+   "arrival_s": 96.41765,
+   "prompt_tokens": 4097,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000720",
+   "arrival_s": 96.579973,
+   "prompt_tokens": 380,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000721",
+   "arrival_s": 96.580647,
+   "prompt_tokens": 4089,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req000722",
+   "arrival_s": 96.652666,
+   "prompt_tokens": 377,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req000723",
+   "arrival_s": 96.770783,
+   "prompt_tokens": 431,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000724",
+   "arrival_s": 96.882543,
+   "prompt_tokens": 1063,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req000725",
+   "arrival_s": 96.900601,
+   "prompt_tokens": 1096,
+   "output_tokens": 412
+  },
+  {
+   "request_id": "req000726",
+   "arrival_s": 97.274951,
+   "prompt_tokens": 432,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000727",
+   "arrival_s": 97.294936,
+   "prompt_tokens": 181,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000728",
+   "arrival_s": 97.579405,
+   "prompt_tokens": 326,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req000729",
+   "arrival_s": 97.598828,
+   "prompt_tokens": 1137,
+   "output_tokens": 445
+  },
+  {
+   "request_id": "req000730",
+   "arrival_s": 97.64799,
+   "prompt_tokens": 413,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000731",
+   "arrival_s": 97.648242,
+   "prompt_tokens": 401,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000732",
+   "arrival_s": 98.004259,
+   "prompt_tokens": 414,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000733",
+   "arrival_s": 98.141962,
+   "prompt_tokens": 181,
+   "output_tokens": 147
+  },
+  {
+   "request_id": "req000734",
+   "arrival_s": 98.287685,
+   "prompt_tokens": 372,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000735",
+   "arrival_s": 98.33487,
+   "prompt_tokens": 386,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000736",
+   "arrival_s": 98.469591,
+   "prompt_tokens": 411,
+   "output_tokens": 146
+  },
+  {
+   "request_id": "req000737",
+   "arrival_s": 98.684869,
+   "prompt_tokens": 4072,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req000738",
+   "arrival_s": 98.925154,
+   "prompt_tokens": 400,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req000739",
+   "arrival_s": 98.993448,
+   "prompt_tokens": 405,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000740",
+   "arrival_s": 100.020337,
+   "prompt_tokens": 394,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000741",
+   "arrival_s": 100.170373,
+   "prompt_tokens": 14,
+   "output_tokens": 172
+  },
+  {
+   "request_id": "req000742",
+   "arrival_s": 100.672605,
+   "prompt_tokens": 406,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000743",
+   "arrival_s": 100.764255,
+   "prompt_tokens": 1040,
+   "output_tokens": 539
+  },
+  {
+   "request_id": "req000744",
+   "arrival_s": 100.786343,
+   "prompt_tokens": 474,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000745",
+   "arrival_s": 100.863049,
+   "prompt_tokens": 405,
+   "output_tokens": 131
+  },
+  {
+   "request_id": "req000746",
+   "arrival_s": 100.946664,
+   "prompt_tokens": 1153,
+   "output_tokens": 118
+  },
+  {
+   "request_id": "req000747",
+   "arrival_s": 101.024173,
+   "prompt_tokens": 374,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000748",
+   "arrival_s": 101.127997,
+   "prompt_tokens": 384,
+   "output_tokens": 125
+  },
+  {
+   "request_id": "req000749",
+   "arrival_s": 101.363599,
+   "prompt_tokens": 400,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000750",
+   "arrival_s": 101.454912,
+   "prompt_tokens": 441,
+   "output_tokens": 134
+  },
+  {
+   "request_id": "req000751",
+   "arrival_s": 101.49082,
+   "prompt_tokens": 989,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req000752",
+   "arrival_s": 101.516316,
+   "prompt_tokens": 1363,
+   "output_tokens": 163
+  },
+  {
+   "request_id": "req000753",
+   "arrival_s": 101.644977,
+   "prompt_tokens": 382,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req000754",
+   "arrival_s": 101.819795,
+   "prompt_tokens": 437,
+   "output_tokens": 74
+  },
+  {
+   "request_id": "req000755",
+   "arrival_s": 101.821398,
+   "prompt_tokens": 411,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000756",
+   "arrival_s": 101.84931,
+   "prompt_tokens": 387,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000757",
+   "arrival_s": 102.071762,
+   "prompt_tokens": 4079,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000758",
+   "arrival_s": 102.073503,
+   "prompt_tokens": 406,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000759",
+   "arrival_s": 102.512148,
+   "prompt_tokens": 181,
+   "output_tokens": 145
+  },
+  {
+   "request_id": "req000760",
+   "arrival_s": 102.557254,
+   "prompt_tokens": 4087,
+   "output_tokens": 153
+  },
+  {
+   "request_id": "req000761",
+   "arrival_s": 102.566115,
+   "prompt_tokens": 380,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req000762",
+   "arrival_s": 102.665692,
+   "prompt_tokens": 372,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req000763",
+   "arrival_s": 102.956182,
+   "prompt_tokens": 4075,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req000764",
+   "arrival_s": 103.060391,
+   "prompt_tokens": 120,
+   "output_tokens": 12
+  },
+  {
+   "request_id": "req000765",
+   "arrival_s": 103.079277,
+   "prompt_tokens": 1138,
+   "output_tokens": 390
+  },
+  {
+   "request_id": "req000766",
+   "arrival_s": 103.159412,
+   "prompt_tokens": 409,
+   "output_tokens": 140
+  },
+  {
+   "request_id": "req000767",
+   "arrival_s": 103.186848,
+   "prompt_tokens": 386,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000768",
+   "arrival_s": 103.335354,
+   "prompt_tokens": 1307,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000769",
+   "arrival_s": 103.344873,
+   "prompt_tokens": 2249,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req000770",
+   "arrival_s": 103.474584,
+   "prompt_tokens": 407,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000771",
+   "arrival_s": 103.574013,
+   "prompt_tokens": 4075,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000772",
+   "arrival_s": 103.720857,
+   "prompt_tokens": 376,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000773",
+   "arrival_s": 103.739388,
+   "prompt_tokens": 406,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000774",
+   "arrival_s": 103.852913,
+   "prompt_tokens": 1074,
+   "output_tokens": 371
+  },
+  {
+   "request_id": "req000775",
+   "arrival_s": 103.946762,
+   "prompt_tokens": 1165,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000776",
+   "arrival_s": 104.035462,
+   "prompt_tokens": 377,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000777",
+   "arrival_s": 104.03669,
+   "prompt_tokens": 4080,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000778",
+   "arrival_s": 104.211425,
+   "prompt_tokens": 1616,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000779",
+   "arrival_s": 104.22824,
+   "prompt_tokens": 877,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req000780",
+   "arrival_s": 104.391501,
+   "prompt_tokens": 392,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000781",
+   "arrival_s": 104.497721,
+   "prompt_tokens": 391,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000782",
+   "arrival_s": 104.552124,
+   "prompt_tokens": 4097,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000783",
+   "arrival_s": 104.930305,
+   "prompt_tokens": 436,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req000784",
+   "arrival_s": 104.961301,
+   "prompt_tokens": 1695,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000785",
+   "arrival_s": 105.031682,
+   "prompt_tokens": 374,
+   "output_tokens": 33
+  },
+  {
+   "request_id": "req000786",
+   "arrival_s": 105.124096,
+   "prompt_tokens": 385,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req000787",
+   "arrival_s": 105.640406,
+   "prompt_tokens": 4110,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000788",
+   "arrival_s": 105.761282,
+   "prompt_tokens": 385,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000789",
+   "arrival_s": 106.036929,
+   "prompt_tokens": 194,
+   "output_tokens": 217
+  },
+  {
+   "request_id": "req000790",
+   "arrival_s": 106.089836,
+   "prompt_tokens": 399,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000791",
+   "arrival_s": 106.123242,
+   "prompt_tokens": 372,
+   "output_tokens": 62
+  },
+  {
+   "request_id": "req000792",
+   "arrival_s": 106.162323,
+   "prompt_tokens": 408,
+   "output_tokens": 132
+  },
+  {
+   "request_id": "req000793",
+   "arrival_s": 106.300207,
+   "prompt_tokens": 403,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000794",
+   "arrival_s": 106.308707,
+   "prompt_tokens": 181,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req000795",
+   "arrival_s": 106.334632,
+   "prompt_tokens": 4085,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req000796",
+   "arrival_s": 106.363722,
+   "prompt_tokens": 4077,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req000797",
+   "arrival_s": 106.441112,
+   "prompt_tokens": 2240,
+   "output_tokens": 115
+  },
+  {
+   "request_id": "req000798",
+   "arrival_s": 106.633324,
+   "prompt_tokens": 417,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000799",
+   "arrival_s": 106.692706,
+   "prompt_tokens": 408,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000800",
+   "arrival_s": 106.745408,
+   "prompt_tokens": 181,
+   "output_tokens": 176
+  },
+  {
+   "request_id": "req000801",
+   "arrival_s": 107.147328,
+   "prompt_tokens": 1036,
+   "output_tokens": 386
+  },
+  {
+   "request_id": "req000802",
+   "arrival_s": 107.15573,
+   "prompt_tokens": 407,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req000803",
+   "arrival_s": 107.190045,
+   "prompt_tokens": 1010,
+   "output_tokens": 536
+  },
+  {
+   "request_id": "req000804",
+   "arrival_s": 107.336757,
+   "prompt_tokens": 405,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000805",
+   "arrival_s": 107.341463,
+   "prompt_tokens": 4081,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req000806",
+   "arrival_s": 107.575655,
+   "prompt_tokens": 414,
+   "output_tokens": 142
+  },
+  {
+   "request_id": "req000807",
+   "arrival_s": 107.577666,
+   "prompt_tokens": 998,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000808",
+   "arrival_s": 107.593652,
+   "prompt_tokens": 369,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req000809",
+   "arrival_s": 107.652619,
+   "prompt_tokens": 438,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000810",
+   "arrival_s": 107.843963,
+   "prompt_tokens": 1821,
+   "output_tokens": 137
+  },
+  {
+   "request_id": "req000811",
+   "arrival_s": 107.961077,
+   "prompt_tokens": 4117,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000812",
+   "arrival_s": 108.029852,
+   "prompt_tokens": 1096,
+   "output_tokens": 400
+  },
+  {
+   "request_id": "req000813",
+   "arrival_s": 108.0364,
+   "prompt_tokens": 4075,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req000814",
+   "arrival_s": 108.121602,
+   "prompt_tokens": 1026,
+   "output_tokens": 446
+  },
+  {
+   "request_id": "req000815",
+   "arrival_s": 108.304081,
+   "prompt_tokens": 1113,
+   "output_tokens": 406
+  },
+  {
+   "request_id": "req000816",
+   "arrival_s": 108.663847,
+   "prompt_tokens": 4087,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000817",
+   "arrival_s": 108.976387,
+   "prompt_tokens": 4077,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req000818",
+   "arrival_s": 108.98636,
+   "prompt_tokens": 418,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000819",
+   "arrival_s": 109.018592,
+   "prompt_tokens": 1382,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000820",
+   "arrival_s": 109.040423,
+   "prompt_tokens": 394,
+   "output_tokens": 123
+  },
+  {
+   "request_id": "req000821",
+   "arrival_s": 109.100703,
+   "prompt_tokens": 392,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000822",
+   "arrival_s": 109.222592,
+   "prompt_tokens": 400,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000823",
+   "arrival_s": 109.46319,
+   "prompt_tokens": 391,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000824",
+   "arrival_s": 109.46395,
+   "prompt_tokens": 394,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req000825",
+   "arrival_s": 109.465656,
+   "prompt_tokens": 4004,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000826",
+   "arrival_s": 109.47694,
+   "prompt_tokens": 72,
+   "output_tokens": 224
+  },
+  {
+   "request_id": "req000827",
+   "arrival_s": 109.489391,
+   "prompt_tokens": 4090,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000828",
+   "arrival_s": 109.655494,
+   "prompt_tokens": 4085,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000829",
+   "arrival_s": 109.691794,
+   "prompt_tokens": 414,
+   "output_tokens": 164
+  },
+  {
+   "request_id": "req000830",
+   "arrival_s": 110.089688,
+   "prompt_tokens": 382,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req000831",
+   "arrival_s": 110.098985,
+   "prompt_tokens": 4089,
+   "output_tokens": 174
+  },
+  {
+   "request_id": "req000832",
+   "arrival_s": 110.179935,
+   "prompt_tokens": 405,
+   "output_tokens": 159
+  },
+  {
+   "request_id": "req000833",
+   "arrival_s": 110.702994,
+   "prompt_tokens": 2674,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000834",
+   "arrival_s": 110.74732,
+   "prompt_tokens": 389,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000835",
+   "arrival_s": 110.869819,
+   "prompt_tokens": 400,
+   "output_tokens": 151
+  },
+  {
+   "request_id": "req000836",
+   "arrival_s": 110.873364,
+   "prompt_tokens": 1091,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000837",
+   "arrival_s": 110.921874,
+   "prompt_tokens": 382,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000838",
+   "arrival_s": 111.088289,
+   "prompt_tokens": 4085,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000839",
+   "arrival_s": 111.108435,
+   "prompt_tokens": 381,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000840",
+   "arrival_s": 111.175556,
+   "prompt_tokens": 1298,
+   "output_tokens": 202
+  },
+  {
+   "request_id": "req000841",
+   "arrival_s": 111.705728,
+   "prompt_tokens": 1996,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000842",
+   "arrival_s": 111.753294,
+   "prompt_tokens": 4088,
+   "output_tokens": 62
+  },
+  {
+   "request_id": "req000843",
+   "arrival_s": 111.754276,
+   "prompt_tokens": 2557,
+   "output_tokens": 132
+  },
+  {
+   "request_id": "req000844",
+   "arrival_s": 111.929816,
+   "prompt_tokens": 1038,
+   "output_tokens": 390
+  },
+  {
+   "request_id": "req000845",
+   "arrival_s": 112.319432,
+   "prompt_tokens": 420,
+   "output_tokens": 187
+  },
+  {
+   "request_id": "req000846",
+   "arrival_s": 112.363084,
+   "prompt_tokens": 964,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req000847",
+   "arrival_s": 112.502355,
+   "prompt_tokens": 404,
+   "output_tokens": 123
+  },
+  {
+   "request_id": "req000848",
+   "arrival_s": 112.727958,
+   "prompt_tokens": 393,
+   "output_tokens": 123
+  },
+  {
+   "request_id": "req000849",
+   "arrival_s": 112.948088,
+   "prompt_tokens": 421,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req000850",
+   "arrival_s": 113.122647,
+   "prompt_tokens": 4103,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req000851",
+   "arrival_s": 113.152398,
+   "prompt_tokens": 461,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000852",
+   "arrival_s": 113.436076,
+   "prompt_tokens": 385,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000853",
+   "arrival_s": 113.510544,
+   "prompt_tokens": 4089,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000854",
+   "arrival_s": 113.544075,
+   "prompt_tokens": 396,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req000855",
+   "arrival_s": 113.822116,
+   "prompt_tokens": 2560,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req000856",
+   "arrival_s": 113.858025,
+   "prompt_tokens": 4077,
+   "output_tokens": 29
+  },
+  {
+   "request_id": "req000857",
+   "arrival_s": 113.899668,
+   "prompt_tokens": 378,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req000858",
+   "arrival_s": 113.947912,
+   "prompt_tokens": 181,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000859",
+   "arrival_s": 114.031709,
+   "prompt_tokens": 4101,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000860",
+   "arrival_s": 114.512529,
+   "prompt_tokens": 413,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req000861",
+   "arrival_s": 114.557898,
+   "prompt_tokens": 4077,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000862",
+   "arrival_s": 114.624109,
+   "prompt_tokens": 4093,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req000863",
+   "arrival_s": 114.814431,
+   "prompt_tokens": 4094,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req000864",
+   "arrival_s": 114.873894,
+   "prompt_tokens": 391,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000865",
+   "arrival_s": 115.007719,
+   "prompt_tokens": 4083,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000866",
+   "arrival_s": 115.040594,
+   "prompt_tokens": 4091,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000867",
+   "arrival_s": 115.099107,
+   "prompt_tokens": 4102,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000868",
+   "arrival_s": 115.115766,
+   "prompt_tokens": 386,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req000869",
+   "arrival_s": 115.327063,
+   "prompt_tokens": 410,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000870",
+   "arrival_s": 115.410594,
+   "prompt_tokens": 402,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000871",
+   "arrival_s": 115.469919,
+   "prompt_tokens": 395,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000872",
+   "arrival_s": 115.606318,
+   "prompt_tokens": 1048,
+   "output_tokens": 470
+  },
+  {
+   "request_id": "req000873",
+   "arrival_s": 115.622919,
+   "prompt_tokens": 308,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req000874",
+   "arrival_s": 115.904625,
+   "prompt_tokens": 4074,
+   "output_tokens": 38
+  },
+  {
+   "request_id": "req000875",
+   "arrival_s": 116.012472,
+   "prompt_tokens": 431,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000876",
+   "arrival_s": 116.414534,
+   "prompt_tokens": 1316,
+   "output_tokens": 198
+  },
+  {
+   "request_id": "req000877",
+   "arrival_s": 116.510874,
+   "prompt_tokens": 376,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req000878",
+   "arrival_s": 116.587833,
+   "prompt_tokens": 4088,
+   "output_tokens": 29
+  },
+  {
+   "request_id": "req000879",
+   "arrival_s": 116.633525,
+   "prompt_tokens": 758,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000880",
+   "arrival_s": 116.686362,
+   "prompt_tokens": 1098,
+   "output_tokens": 497
+  },
+  {
+   "request_id": "req000881",
+   "arrival_s": 117.03112,
+   "prompt_tokens": 392,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000882",
+   "arrival_s": 117.122082,
+   "prompt_tokens": 393,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000883",
+   "arrival_s": 117.513259,
+   "prompt_tokens": 1017,
+   "output_tokens": 436
+  },
+  {
+   "request_id": "req000884",
+   "arrival_s": 117.67605,
+   "prompt_tokens": 1586,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req000885",
+   "arrival_s": 117.852675,
+   "prompt_tokens": 403,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000886",
+   "arrival_s": 117.865108,
+   "prompt_tokens": 4076,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000887",
+   "arrival_s": 117.947556,
+   "prompt_tokens": 374,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000888",
+   "arrival_s": 118.024127,
+   "prompt_tokens": 1029,
+   "output_tokens": 411
+  },
+  {
+   "request_id": "req000889",
+   "arrival_s": 118.126522,
+   "prompt_tokens": 1335,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000890",
+   "arrival_s": 118.421291,
+   "prompt_tokens": 374,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000891",
+   "arrival_s": 118.572821,
+   "prompt_tokens": 376,
+   "output_tokens": 62
+  },
+  {
+   "request_id": "req000892",
+   "arrival_s": 118.599224,
+   "prompt_tokens": 425,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req000893",
+   "arrival_s": 118.736496,
+   "prompt_tokens": 4087,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req000894",
+   "arrival_s": 118.742466,
+   "prompt_tokens": 410,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000895",
+   "arrival_s": 118.790447,
+   "prompt_tokens": 4075,
+   "output_tokens": 41
+  },
+  {
+   "request_id": "req000896",
+   "arrival_s": 118.818171,
+   "prompt_tokens": 400,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000897",
+   "arrival_s": 118.909608,
+   "prompt_tokens": 387,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req000898",
+   "arrival_s": 119.347535,
+   "prompt_tokens": 4082,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000899",
+   "arrival_s": 119.513374,
+   "prompt_tokens": 4088,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req000900",
+   "arrival_s": 119.576562,
+   "prompt_tokens": 4095,
+   "output_tokens": 136
+  },
+  {
+   "request_id": "req000901",
+   "arrival_s": 119.689501,
+   "prompt_tokens": 989,
+   "output_tokens": 388
+  },
+  {
+   "request_id": "req000902",
+   "arrival_s": 119.745336,
+   "prompt_tokens": 1058,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req000903",
+   "arrival_s": 119.876608,
+   "prompt_tokens": 1314,
+   "output_tokens": 261
+  },
+  {
+   "request_id": "req000904",
+   "arrival_s": 120.083069,
+   "prompt_tokens": 4075,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req000905",
+   "arrival_s": 120.188463,
+   "prompt_tokens": 403,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000906",
+   "arrival_s": 120.345004,
+   "prompt_tokens": 985,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req000907",
+   "arrival_s": 120.744003,
+   "prompt_tokens": 2000,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req000908",
+   "arrival_s": 120.782917,
+   "prompt_tokens": 382,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req000909",
+   "arrival_s": 120.943926,
+   "prompt_tokens": 1313,
+   "output_tokens": 144
+  },
+  {
+   "request_id": "req000910",
+   "arrival_s": 120.950205,
+   "prompt_tokens": 417,
+   "output_tokens": 144
+  },
+  {
+   "request_id": "req000911",
+   "arrival_s": 121.12124,
+   "prompt_tokens": 4093,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000912",
+   "arrival_s": 121.340737,
+   "prompt_tokens": 1017,
+   "output_tokens": 476
+  },
+  {
+   "request_id": "req000913",
+   "arrival_s": 121.566365,
+   "prompt_tokens": 424,
+   "output_tokens": 122
+  },
+  {
+   "request_id": "req000914",
+   "arrival_s": 121.757646,
+   "prompt_tokens": 1071,
+   "output_tokens": 446
+  },
+  {
+   "request_id": "req000915",
+   "arrival_s": 121.864594,
+   "prompt_tokens": 398,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000916",
+   "arrival_s": 122.014589,
+   "prompt_tokens": 418,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000917",
+   "arrival_s": 122.420969,
+   "prompt_tokens": 395,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000918",
+   "arrival_s": 122.481926,
+   "prompt_tokens": 1328,
+   "output_tokens": 185
+  },
+  {
+   "request_id": "req000919",
+   "arrival_s": 122.501745,
+   "prompt_tokens": 386,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req000920",
+   "arrival_s": 122.65578,
+   "prompt_tokens": 4078,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000921",
+   "arrival_s": 122.814955,
+   "prompt_tokens": 374,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req000922",
+   "arrival_s": 122.837759,
+   "prompt_tokens": 399,
+   "output_tokens": 147
+  },
+  {
+   "request_id": "req000923",
+   "arrival_s": 122.967641,
+   "prompt_tokens": 2427,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req000924",
+   "arrival_s": 123.23609,
+   "prompt_tokens": 2143,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req000925",
+   "arrival_s": 123.475269,
+   "prompt_tokens": 181,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req000926",
+   "arrival_s": 123.81916,
+   "prompt_tokens": 4078,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req000927",
+   "arrival_s": 123.819691,
+   "prompt_tokens": 375,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000928",
+   "arrival_s": 123.856654,
+   "prompt_tokens": 392,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req000929",
+   "arrival_s": 124.282566,
+   "prompt_tokens": 1713,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req000930",
+   "arrival_s": 124.529014,
+   "prompt_tokens": 393,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req000931",
+   "arrival_s": 124.560046,
+   "prompt_tokens": 388,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req000932",
+   "arrival_s": 124.574344,
+   "prompt_tokens": 1118,
+   "output_tokens": 522
+  },
+  {
+   "request_id": "req000933",
+   "arrival_s": 124.646365,
+   "prompt_tokens": 1081,
+   "output_tokens": 411
+  },
+  {
+   "request_id": "req000934",
+   "arrival_s": 124.779274,
+   "prompt_tokens": 392,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req000935",
+   "arrival_s": 124.832145,
+   "prompt_tokens": 1112,
+   "output_tokens": 423
+  },
+  {
+   "request_id": "req000936",
+   "arrival_s": 124.878982,
+   "prompt_tokens": 372,
+   "output_tokens": 59
+  },
+  {
+   "request_id": "req000937",
+   "arrival_s": 124.987825,
+   "prompt_tokens": 4116,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req000938",
+   "arrival_s": 125.162436,
+   "prompt_tokens": 1049,
+   "output_tokens": 388
+  },
+  {
+   "request_id": "req000939",
+   "arrival_s": 125.171548,
+   "prompt_tokens": 1083,
+   "output_tokens": 422
+  },
+  {
+   "request_id": "req000940",
+   "arrival_s": 125.215964,
+   "prompt_tokens": 4088,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000941",
+   "arrival_s": 125.244985,
+   "prompt_tokens": 395,
+   "output_tokens": 117
+  },
+  {
+   "request_id": "req000942",
+   "arrival_s": 125.259132,
+   "prompt_tokens": 405,
+   "output_tokens": 119
+  },
+  {
+   "request_id": "req000943",
+   "arrival_s": 125.321895,
+   "prompt_tokens": 400,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000944",
+   "arrival_s": 125.342667,
+   "prompt_tokens": 402,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req000945",
+   "arrival_s": 125.730593,
+   "prompt_tokens": 4078,
+   "output_tokens": 140
+  },
+  {
+   "request_id": "req000946",
+   "arrival_s": 126.078084,
+   "prompt_tokens": 4075,
+   "output_tokens": 113
+  },
+  {
+   "request_id": "req000947",
+   "arrival_s": 126.223339,
+   "prompt_tokens": 436,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000948",
+   "arrival_s": 126.240477,
+   "prompt_tokens": 387,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req000949",
+   "arrival_s": 126.323822,
+   "prompt_tokens": 402,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req000950",
+   "arrival_s": 126.406131,
+   "prompt_tokens": 4090,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req000951",
+   "arrival_s": 126.758778,
+   "prompt_tokens": 20,
+   "output_tokens": 129
+  },
+  {
+   "request_id": "req000952",
+   "arrival_s": 126.776464,
+   "prompt_tokens": 399,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req000953",
+   "arrival_s": 126.814793,
+   "prompt_tokens": 375,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req000954",
+   "arrival_s": 126.876498,
+   "prompt_tokens": 4095,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req000955",
+   "arrival_s": 126.878068,
+   "prompt_tokens": 392,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req000956",
+   "arrival_s": 127.104261,
+   "prompt_tokens": 237,
+   "output_tokens": 14
+  },
+  {
+   "request_id": "req000957",
+   "arrival_s": 127.202977,
+   "prompt_tokens": 4089,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000958",
+   "arrival_s": 127.340442,
+   "prompt_tokens": 1797,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000959",
+   "arrival_s": 127.387886,
+   "prompt_tokens": 399,
+   "output_tokens": 126
+  },
+  {
+   "request_id": "req000960",
+   "arrival_s": 127.505415,
+   "prompt_tokens": 387,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000961",
+   "arrival_s": 127.716828,
+   "prompt_tokens": 1084,
+   "output_tokens": 440
+  },
+  {
+   "request_id": "req000962",
+   "arrival_s": 127.744344,
+   "prompt_tokens": 996,
+   "output_tokens": 451
+  },
+  {
+   "request_id": "req000963",
+   "arrival_s": 127.75536,
+   "prompt_tokens": 374,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000964",
+   "arrival_s": 127.944649,
+   "prompt_tokens": 1238,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req000965",
+   "arrival_s": 128.166393,
+   "prompt_tokens": 1046,
+   "output_tokens": 440
+  },
+  {
+   "request_id": "req000966",
+   "arrival_s": 128.225754,
+   "prompt_tokens": 396,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req000967",
+   "arrival_s": 128.234982,
+   "prompt_tokens": 4081,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req000968",
+   "arrival_s": 128.354642,
+   "prompt_tokens": 410,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req000969",
+   "arrival_s": 128.611207,
+   "prompt_tokens": 432,
+   "output_tokens": 200
+  },
+  {
+   "request_id": "req000970",
+   "arrival_s": 128.612725,
+   "prompt_tokens": 394,
+   "output_tokens": 119
+  },
+  {
+   "request_id": "req000971",
+   "arrival_s": 128.622664,
+   "prompt_tokens": 1040,
+   "output_tokens": 534
+  },
+  {
+   "request_id": "req000972",
+   "arrival_s": 128.776074,
+   "prompt_tokens": 1315,
+   "output_tokens": 217
+  },
+  {
+   "request_id": "req000973",
+   "arrival_s": 128.807672,
+   "prompt_tokens": 419,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req000974",
+   "arrival_s": 128.975086,
+   "prompt_tokens": 428,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000975",
+   "arrival_s": 128.993065,
+   "prompt_tokens": 181,
+   "output_tokens": 158
+  },
+  {
+   "request_id": "req000976",
+   "arrival_s": 129.075519,
+   "prompt_tokens": 398,
+   "output_tokens": 168
+  },
+  {
+   "request_id": "req000977",
+   "arrival_s": 129.080558,
+   "prompt_tokens": 1684,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req000978",
+   "arrival_s": 129.102189,
+   "prompt_tokens": 4075,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req000979",
+   "arrival_s": 129.1685,
+   "prompt_tokens": 418,
+   "output_tokens": 120
+  },
+  {
+   "request_id": "req000980",
+   "arrival_s": 129.174933,
+   "prompt_tokens": 4078,
+   "output_tokens": 24
+  },
+  {
+   "request_id": "req000981",
+   "arrival_s": 129.199923,
+   "prompt_tokens": 1036,
+   "output_tokens": 564
+  },
+  {
+   "request_id": "req000982",
+   "arrival_s": 129.250212,
+   "prompt_tokens": 402,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req000983",
+   "arrival_s": 129.339735,
+   "prompt_tokens": 377,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000984",
+   "arrival_s": 129.386515,
+   "prompt_tokens": 1328,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req000985",
+   "arrival_s": 129.437904,
+   "prompt_tokens": 400,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req000986",
+   "arrival_s": 129.735833,
+   "prompt_tokens": 414,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req000987",
+   "arrival_s": 129.737847,
+   "prompt_tokens": 1046,
+   "output_tokens": 489
+  },
+  {
+   "request_id": "req000988",
+   "arrival_s": 129.833332,
+   "prompt_tokens": 181,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req000989",
+   "arrival_s": 129.849644,
+   "prompt_tokens": 1074,
+   "output_tokens": 433
+  },
+  {
+   "request_id": "req000990",
+   "arrival_s": 130.216737,
+   "prompt_tokens": 4081,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req000991",
+   "arrival_s": 130.237894,
+   "prompt_tokens": 380,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000992",
+   "arrival_s": 130.887625,
+   "prompt_tokens": 382,
+   "output_tokens": 123
+  },
+  {
+   "request_id": "req000993",
+   "arrival_s": 130.928879,
+   "prompt_tokens": 1086,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req000994",
+   "arrival_s": 131.070134,
+   "prompt_tokens": 2798,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req000995",
+   "arrival_s": 131.10564,
+   "prompt_tokens": 4085,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req000996",
+   "arrival_s": 131.111099,
+   "prompt_tokens": 373,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req000997",
+   "arrival_s": 131.209685,
+   "prompt_tokens": 1048,
+   "output_tokens": 480
+  },
+  {
+   "request_id": "req000998",
+   "arrival_s": 131.303492,
+   "prompt_tokens": 424,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req000999",
+   "arrival_s": 131.303499,
+   "prompt_tokens": 398,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req001000",
+   "arrival_s": 131.462303,
+   "prompt_tokens": 1727,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req001001",
+   "arrival_s": 131.687233,
+   "prompt_tokens": 1085,
+   "output_tokens": 440
+  },
+  {
+   "request_id": "req001002",
+   "arrival_s": 131.709474,
+   "prompt_tokens": 371,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001003",
+   "arrival_s": 131.746995,
+   "prompt_tokens": 4100,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req001004",
+   "arrival_s": 131.764113,
+   "prompt_tokens": 1080,
+   "output_tokens": 413
+  },
+  {
+   "request_id": "req001005",
+   "arrival_s": 131.855251,
+   "prompt_tokens": 380,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req001006",
+   "arrival_s": 131.864601,
+   "prompt_tokens": 2301,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req001007",
+   "arrival_s": 131.928822,
+   "prompt_tokens": 391,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req001008",
+   "arrival_s": 132.657896,
+   "prompt_tokens": 386,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req001009",
+   "arrival_s": 132.721925,
+   "prompt_tokens": 394,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req001010",
+   "arrival_s": 132.787759,
+   "prompt_tokens": 1999,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req001011",
+   "arrival_s": 132.851164,
+   "prompt_tokens": 2361,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req001012",
+   "arrival_s": 132.976415,
+   "prompt_tokens": 4097,
+   "output_tokens": 71
+  },
+  {
+   "request_id": "req001013",
+   "arrival_s": 133.016053,
+   "prompt_tokens": 4084,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req001014",
+   "arrival_s": 133.074937,
+   "prompt_tokens": 386,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req001015",
+   "arrival_s": 133.075977,
+   "prompt_tokens": 378,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req001016",
+   "arrival_s": 133.154015,
+   "prompt_tokens": 1046,
+   "output_tokens": 532
+  },
+  {
+   "request_id": "req001017",
+   "arrival_s": 133.156957,
+   "prompt_tokens": 406,
+   "output_tokens": 114
+  },
+  {
+   "request_id": "req001018",
+   "arrival_s": 133.157083,
+   "prompt_tokens": 414,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req001019",
+   "arrival_s": 133.177146,
+   "prompt_tokens": 4081,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req001020",
+   "arrival_s": 133.292222,
+   "prompt_tokens": 1039,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req001021",
+   "arrival_s": 133.359259,
+   "prompt_tokens": 404,
+   "output_tokens": 114
+  },
+  {
+   "request_id": "req001022",
+   "arrival_s": 133.519935,
+   "prompt_tokens": 181,
+   "output_tokens": 147
+  },
+  {
+   "request_id": "req001023",
+   "arrival_s": 133.616149,
+   "prompt_tokens": 4076,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req001024",
+   "arrival_s": 133.649748,
+   "prompt_tokens": 4088,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req001025",
+   "arrival_s": 133.653975,
+   "prompt_tokens": 2303,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req001026",
+   "arrival_s": 133.725513,
+   "prompt_tokens": 405,
+   "output_tokens": 133
+  },
+  {
+   "request_id": "req001027",
+   "arrival_s": 133.73699,
+   "prompt_tokens": 406,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req001028",
+   "arrival_s": 133.749185,
+   "prompt_tokens": 369,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req001029",
+   "arrival_s": 133.816978,
+   "prompt_tokens": 1017,
+   "output_tokens": 462
+  },
+  {
+   "request_id": "req001030",
+   "arrival_s": 133.916202,
+   "prompt_tokens": 4084,
+   "output_tokens": 29
+  },
+  {
+   "request_id": "req001031",
+   "arrival_s": 134.305788,
+   "prompt_tokens": 394,
+   "output_tokens": 108
+  },
+  {
+   "request_id": "req001032",
+   "arrival_s": 134.308952,
+   "prompt_tokens": 408,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req001033",
+   "arrival_s": 134.339367,
+   "prompt_tokens": 5305,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req001034",
+   "arrival_s": 134.36907,
+   "prompt_tokens": 400,
+   "output_tokens": 120
+  },
+  {
+   "request_id": "req001035",
+   "arrival_s": 134.379509,
+   "prompt_tokens": 169,
+   "output_tokens": 217
+  },
+  {
+   "request_id": "req001036",
+   "arrival_s": 134.853917,
+   "prompt_tokens": 422,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req001037",
+   "arrival_s": 134.957406,
+   "prompt_tokens": 1313,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req001038",
+   "arrival_s": 135.294712,
+   "prompt_tokens": 4078,
+   "output_tokens": 29
+  },
+  {
+   "request_id": "req001039",
+   "arrival_s": 135.388693,
+   "prompt_tokens": 833,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req001040",
+   "arrival_s": 135.541555,
+   "prompt_tokens": 4075,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req001041",
+   "arrival_s": 135.567376,
+   "prompt_tokens": 4075,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req001042",
+   "arrival_s": 135.630364,
+   "prompt_tokens": 410,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req001043",
+   "arrival_s": 135.680942,
+   "prompt_tokens": 1099,
+   "output_tokens": 572
+  },
+  {
+   "request_id": "req001044",
+   "arrival_s": 135.686612,
+   "prompt_tokens": 4080,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req001045",
+   "arrival_s": 135.709028,
+   "prompt_tokens": 385,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req001046",
+   "arrival_s": 135.720598,
+   "prompt_tokens": 1122,
+   "output_tokens": 587
+  },
+  {
+   "request_id": "req001047",
+   "arrival_s": 135.781962,
+   "prompt_tokens": 4079,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req001048",
+   "arrival_s": 135.846734,
+   "prompt_tokens": 1988,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req001049",
+   "arrival_s": 136.127122,
+   "prompt_tokens": 373,
+   "output_tokens": 53
+  },
+  {
+   "request_id": "req001050",
+   "arrival_s": 136.208633,
+   "prompt_tokens": 409,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001051",
+   "arrival_s": 136.215489,
+   "prompt_tokens": 373,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req001052",
+   "arrival_s": 136.263322,
+   "prompt_tokens": 181,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req001053",
+   "arrival_s": 136.455261,
+   "prompt_tokens": 375,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req001054",
+   "arrival_s": 136.648966,
+   "prompt_tokens": 461,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req001055",
+   "arrival_s": 136.691946,
+   "prompt_tokens": 4082,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req001056",
+   "arrival_s": 136.71807,
+   "prompt_tokens": 237,
+   "output_tokens": 14
+  },
+  {
+   "request_id": "req001057",
+   "arrival_s": 136.910931,
+   "prompt_tokens": 4084,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req001058",
+   "arrival_s": 136.931235,
+   "prompt_tokens": 373,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req001059",
+   "arrival_s": 136.936453,
+   "prompt_tokens": 372,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req001060",
+   "arrival_s": 136.97341,
+   "prompt_tokens": 373,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req001061",
+   "arrival_s": 137.015004,
+   "prompt_tokens": 4178,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001062",
+   "arrival_s": 137.069463,
+   "prompt_tokens": 1314,
+   "output_tokens": 206
+  },
+  {
+   "request_id": "req001063",
+   "arrival_s": 137.231599,
+   "prompt_tokens": 2695,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req001064",
+   "arrival_s": 137.297831,
+   "prompt_tokens": 413,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req001065",
+   "arrival_s": 137.310805,
+   "prompt_tokens": 1131,
+   "output_tokens": 412
+  },
+  {
+   "request_id": "req001066",
+   "arrival_s": 137.407173,
+   "prompt_tokens": 403,
+   "output_tokens": 140
+  },
+  {
+   "request_id": "req001067",
+   "arrival_s": 137.509288,
+   "prompt_tokens": 3922,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req001068",
+   "arrival_s": 137.544965,
+   "prompt_tokens": 4089,
+   "output_tokens": 54
+  },
+  {
+   "request_id": "req001069",
+   "arrival_s": 137.68207,
+   "prompt_tokens": 1044,
+   "output_tokens": 398
+  },
+  {
+   "request_id": "req001070",
+   "arrival_s": 137.841993,
+   "prompt_tokens": 4089,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req001071",
+   "arrival_s": 137.917206,
+   "prompt_tokens": 4087,
+   "output_tokens": 112
+  },
+  {
+   "request_id": "req001072",
+   "arrival_s": 138.108414,
+   "prompt_tokens": 1043,
+   "output_tokens": 413
+  },
+  {
+   "request_id": "req001073",
+   "arrival_s": 138.115872,
+   "prompt_tokens": 386,
+   "output_tokens": 122
+  },
+  {
+   "request_id": "req001074",
+   "arrival_s": 138.118189,
+   "prompt_tokens": 1834,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req001075",
+   "arrival_s": 138.183843,
+   "prompt_tokens": 1312,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req001076",
+   "arrival_s": 138.184605,
+   "prompt_tokens": 1095,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req001077",
+   "arrival_s": 138.22001,
+   "prompt_tokens": 4083,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req001078",
+   "arrival_s": 138.320188,
+   "prompt_tokens": 4088,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req001079",
+   "arrival_s": 138.479511,
+   "prompt_tokens": 1008,
+   "output_tokens": 418
+  },
+  {
+   "request_id": "req001080",
+   "arrival_s": 139.010293,
+   "prompt_tokens": 4086,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req001081",
+   "arrival_s": 139.085269,
+   "prompt_tokens": 397,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001082",
+   "arrival_s": 139.19544,
+   "prompt_tokens": 4084,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req001083",
+   "arrival_s": 139.526615,
+   "prompt_tokens": 407,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req001084",
+   "arrival_s": 139.634035,
+   "prompt_tokens": 4086,
+   "output_tokens": 33
+  },
+  {
+   "request_id": "req001085",
+   "arrival_s": 139.839693,
+   "prompt_tokens": 399,
+   "output_tokens": 121
+  },
+  {
+   "request_id": "req001086",
+   "arrival_s": 139.949616,
+   "prompt_tokens": 434,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req001087",
+   "arrival_s": 140.036242,
+   "prompt_tokens": 2489,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req001088",
+   "arrival_s": 140.069324,
+   "prompt_tokens": 436,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req001089",
+   "arrival_s": 140.180019,
+   "prompt_tokens": 181,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req001090",
+   "arrival_s": 140.257149,
+   "prompt_tokens": 4077,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001091",
+   "arrival_s": 140.349951,
+   "prompt_tokens": 419,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001092",
+   "arrival_s": 140.41786,
+   "prompt_tokens": 4079,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req001093",
+   "arrival_s": 140.442372,
+   "prompt_tokens": 395,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req001094",
+   "arrival_s": 140.768491,
+   "prompt_tokens": 422,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req001095",
+   "arrival_s": 140.848996,
+   "prompt_tokens": 912,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req001096",
+   "arrival_s": 140.970554,
+   "prompt_tokens": 382,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req001097",
+   "arrival_s": 141.111678,
+   "prompt_tokens": 2125,
+   "output_tokens": 132
+  },
+  {
+   "request_id": "req001098",
+   "arrival_s": 141.16164,
+   "prompt_tokens": 1029,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req001099",
+   "arrival_s": 141.546329,
+   "prompt_tokens": 206,
+   "output_tokens": 183
+  },
+  {
+   "request_id": "req001100",
+   "arrival_s": 141.585998,
+   "prompt_tokens": 377,
+   "output_tokens": 65
+  },
+  {
+   "request_id": "req001101",
+   "arrival_s": 141.689462,
+   "prompt_tokens": 1081,
+   "output_tokens": 402
+  },
+  {
+   "request_id": "req001102",
+   "arrival_s": 141.892376,
+   "prompt_tokens": 376,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001103",
+   "arrival_s": 142.133227,
+   "prompt_tokens": 1014,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req001104",
+   "arrival_s": 142.252427,
+   "prompt_tokens": 374,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req001105",
+   "arrival_s": 142.373397,
+   "prompt_tokens": 376,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req001106",
+   "arrival_s": 142.481753,
+   "prompt_tokens": 897,
+   "output_tokens": 141
+  },
+  {
+   "request_id": "req001107",
+   "arrival_s": 142.486359,
+   "prompt_tokens": 4092,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req001108",
+   "arrival_s": 142.499823,
+   "prompt_tokens": 402,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req001109",
+   "arrival_s": 142.588334,
+   "prompt_tokens": 2623,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req001110",
+   "arrival_s": 142.683482,
+   "prompt_tokens": 395,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001111",
+   "arrival_s": 142.82966,
+   "prompt_tokens": 2363,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req001112",
+   "arrival_s": 142.9127,
+   "prompt_tokens": 385,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req001113",
+   "arrival_s": 143.531011,
+   "prompt_tokens": 2584,
+   "output_tokens": 170
+  },
+  {
+   "request_id": "req001114",
+   "arrival_s": 143.685602,
+   "prompt_tokens": 418,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req001115",
+   "arrival_s": 143.792479,
+   "prompt_tokens": 399,
+   "output_tokens": 123
+  },
+  {
+   "request_id": "req001116",
+   "arrival_s": 144.250374,
+   "prompt_tokens": 4070,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req001117",
+   "arrival_s": 144.269083,
+   "prompt_tokens": 4120,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req001118",
+   "arrival_s": 144.563271,
+   "prompt_tokens": 31,
+   "output_tokens": 157
+  },
+  {
+   "request_id": "req001119",
+   "arrival_s": 144.564736,
+   "prompt_tokens": 415,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req001120",
+   "arrival_s": 144.759439,
+   "prompt_tokens": 1759,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req001121",
+   "arrival_s": 144.762612,
+   "prompt_tokens": 401,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req001122",
+   "arrival_s": 145.100606,
+   "prompt_tokens": 120,
+   "output_tokens": 12
+  },
+  {
+   "request_id": "req001123",
+   "arrival_s": 145.155001,
+   "prompt_tokens": 389,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001124",
+   "arrival_s": 145.327039,
+   "prompt_tokens": 387,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req001125",
+   "arrival_s": 145.382372,
+   "prompt_tokens": 4079,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req001126",
+   "arrival_s": 145.47937,
+   "prompt_tokens": 1317,
+   "output_tokens": 243
+  },
+  {
+   "request_id": "req001127",
+   "arrival_s": 145.520784,
+   "prompt_tokens": 401,
+   "output_tokens": 127
+  },
+  {
+   "request_id": "req001128",
+   "arrival_s": 145.553042,
+   "prompt_tokens": 428,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001129",
+   "arrival_s": 145.61493,
+   "prompt_tokens": 4116,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req001130",
+   "arrival_s": 145.870003,
+   "prompt_tokens": 387,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req001131",
+   "arrival_s": 145.875874,
+   "prompt_tokens": 1315,
+   "output_tokens": 231
+  },
+  {
+   "request_id": "req001132",
+   "arrival_s": 145.877678,
+   "prompt_tokens": 239,
+   "output_tokens": 14
+  },
+  {
+   "request_id": "req001133",
+   "arrival_s": 145.880664,
+   "prompt_tokens": 426,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001134",
+   "arrival_s": 145.882731,
+   "prompt_tokens": 1919,
+   "output_tokens": 70
+  },
+  {
+   "request_id": "req001135",
+   "arrival_s": 145.894369,
+   "prompt_tokens": 4085,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req001136",
+   "arrival_s": 146.081036,
+   "prompt_tokens": 2840,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req001137",
+   "arrival_s": 146.11112,
+   "prompt_tokens": 1293,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req001138",
+   "arrival_s": 146.149797,
+   "prompt_tokens": 1017,
+   "output_tokens": 426
+  },
+  {
+   "request_id": "req001139",
+   "arrival_s": 146.249138,
+   "prompt_tokens": 397,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001140",
+   "arrival_s": 146.395703,
+   "prompt_tokens": 197,
+   "output_tokens": 162
+  },
+  {
+   "request_id": "req001141",
+   "arrival_s": 146.599908,
+   "prompt_tokens": 4123,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req001142",
+   "arrival_s": 146.65493,
+   "prompt_tokens": 4320,
+   "output_tokens": 116
+  },
+  {
+   "request_id": "req001143",
+   "arrival_s": 147.046775,
+   "prompt_tokens": 394,
+   "output_tokens": 155
+  },
+  {
+   "request_id": "req001144",
+   "arrival_s": 147.085204,
+   "prompt_tokens": 454,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req001145",
+   "arrival_s": 147.123578,
+   "prompt_tokens": 4097,
+   "output_tokens": 38
+  },
+  {
+   "request_id": "req001146",
+   "arrival_s": 147.234126,
+   "prompt_tokens": 1192,
+   "output_tokens": 393
+  },
+  {
+   "request_id": "req001147",
+   "arrival_s": 147.367643,
+   "prompt_tokens": 373,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req001148",
+   "arrival_s": 147.423444,
+   "prompt_tokens": 4082,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req001149",
+   "arrival_s": 147.652318,
+   "prompt_tokens": 396,
+   "output_tokens": 134
+  },
+  {
+   "request_id": "req001150",
+   "arrival_s": 147.746906,
+   "prompt_tokens": 396,
+   "output_tokens": 94
+  },
+  {
+   "request_id": "req001151",
+   "arrival_s": 147.90699,
+   "prompt_tokens": 408,
+   "output_tokens": 88
+  },
+  {
+   "request_id": "req001152",
+   "arrival_s": 148.019723,
+   "prompt_tokens": 4072,
+   "output_tokens": 199
+  },
+  {
+   "request_id": "req001153",
+   "arrival_s": 148.045487,
+   "prompt_tokens": 406,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req001154",
+   "arrival_s": 148.126487,
+   "prompt_tokens": 395,
+   "output_tokens": 134
+  },
+  {
+   "request_id": "req001155",
+   "arrival_s": 148.143317,
+   "prompt_tokens": 203,
+   "output_tokens": 158
+  },
+  {
+   "request_id": "req001156",
+   "arrival_s": 148.168038,
+   "prompt_tokens": 373,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req001157",
+   "arrival_s": 148.175922,
+   "prompt_tokens": 811,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req001158",
+   "arrival_s": 148.20673,
+   "prompt_tokens": 397,
+   "output_tokens": 133
+  },
+  {
+   "request_id": "req001159",
+   "arrival_s": 148.227592,
+   "prompt_tokens": 1316,
+   "output_tokens": 159
+  },
+  {
+   "request_id": "req001160",
+   "arrival_s": 148.693537,
+   "prompt_tokens": 375,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req001161",
+   "arrival_s": 148.701179,
+   "prompt_tokens": 384,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req001162",
+   "arrival_s": 148.894973,
+   "prompt_tokens": 4076,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req001163",
+   "arrival_s": 148.913518,
+   "prompt_tokens": 1218,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req001164",
+   "arrival_s": 148.972128,
+   "prompt_tokens": 865,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req001165",
+   "arrival_s": 149.023015,
+   "prompt_tokens": 473,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req001166",
+   "arrival_s": 149.026213,
+   "prompt_tokens": 4076,
+   "output_tokens": 33
+  },
+  {
+   "request_id": "req001167",
+   "arrival_s": 149.139277,
+   "prompt_tokens": 181,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req001168",
+   "arrival_s": 149.153171,
+   "prompt_tokens": 1048,
+   "output_tokens": 420
+  },
+  {
+   "request_id": "req001169",
+   "arrival_s": 149.281224,
+   "prompt_tokens": 1324,
+   "output_tokens": 166
+  },
+  {
+   "request_id": "req001170",
+   "arrival_s": 149.354143,
+   "prompt_tokens": 1113,
+   "output_tokens": 406
+  },
+  {
+   "request_id": "req001171",
+   "arrival_s": 149.428514,
+   "prompt_tokens": 381,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req001172",
+   "arrival_s": 149.710342,
+   "prompt_tokens": 381,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req001173",
+   "arrival_s": 149.942432,
+   "prompt_tokens": 413,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req001174",
+   "arrival_s": 149.974698,
+   "prompt_tokens": 1029,
+   "output_tokens": 394
+  },
+  {
+   "request_id": "req001175",
+   "arrival_s": 150.168592,
+   "prompt_tokens": 409,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req001176",
+   "arrival_s": 150.429818,
+   "prompt_tokens": 934,
+   "output_tokens": 452
+  },
+  {
+   "request_id": "req001177",
+   "arrival_s": 150.442142,
+   "prompt_tokens": 400,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req001178",
+   "arrival_s": 150.452411,
+   "prompt_tokens": 4074,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req001179",
+   "arrival_s": 150.713148,
+   "prompt_tokens": 181,
+   "output_tokens": 145
+  },
+  {
+   "request_id": "req001180",
+   "arrival_s": 150.898505,
+   "prompt_tokens": 398,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req001181",
+   "arrival_s": 151.11152,
+   "prompt_tokens": 4083,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req001182",
+   "arrival_s": 151.357667,
+   "prompt_tokens": 381,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req001183",
+   "arrival_s": 151.520949,
+   "prompt_tokens": 415,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req001184",
+   "arrival_s": 151.538897,
+   "prompt_tokens": 1156,
+   "output_tokens": 438
+  },
+  {
+   "request_id": "req001185",
+   "arrival_s": 151.961789,
+   "prompt_tokens": 313,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req001186",
+   "arrival_s": 151.98256,
+   "prompt_tokens": 403,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001187",
+   "arrival_s": 151.991812,
+   "prompt_tokens": 399,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req001188",
+   "arrival_s": 152.419126,
+   "prompt_tokens": 725,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req001189",
+   "arrival_s": 152.428981,
+   "prompt_tokens": 401,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req001190",
+   "arrival_s": 152.429546,
+   "prompt_tokens": 401,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001191",
+   "arrival_s": 152.433792,
+   "prompt_tokens": 1045,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req001192",
+   "arrival_s": 152.554152,
+   "prompt_tokens": 377,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req001193",
+   "arrival_s": 152.60023,
+   "prompt_tokens": 407,
+   "output_tokens": 131
+  },
+  {
+   "request_id": "req001194",
+   "arrival_s": 153.497149,
+   "prompt_tokens": 4092,
+   "output_tokens": 35
+  },
+  {
+   "request_id": "req001195",
+   "arrival_s": 153.526789,
+   "prompt_tokens": 1481,
+   "output_tokens": 63
+  },
+  {
+   "request_id": "req001196",
+   "arrival_s": 153.626301,
+   "prompt_tokens": 473,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001197",
+   "arrival_s": 153.71065,
+   "prompt_tokens": 709,
+   "output_tokens": 106
+  },
+  {
+   "request_id": "req001198",
+   "arrival_s": 153.779472,
+   "prompt_tokens": 374,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001199",
+   "arrival_s": 153.843363,
+   "prompt_tokens": 401,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req001200",
+   "arrival_s": 154.133343,
+   "prompt_tokens": 387,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req001201",
+   "arrival_s": 154.334571,
+   "prompt_tokens": 397,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req001202",
+   "arrival_s": 154.441152,
+   "prompt_tokens": 2440,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req001203",
+   "arrival_s": 154.532273,
+   "prompt_tokens": 4078,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001204",
+   "arrival_s": 154.540053,
+   "prompt_tokens": 4077,
+   "output_tokens": 62
+  },
+  {
+   "request_id": "req001205",
+   "arrival_s": 154.726186,
+   "prompt_tokens": 4074,
+   "output_tokens": 43
+  },
+  {
+   "request_id": "req001206",
+   "arrival_s": 154.834374,
+   "prompt_tokens": 1153,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req001207",
+   "arrival_s": 154.945685,
+   "prompt_tokens": 1038,
+   "output_tokens": 436
+  },
+  {
+   "request_id": "req001208",
+   "arrival_s": 155.049879,
+   "prompt_tokens": 374,
+   "output_tokens": 64
+  },
+  {
+   "request_id": "req001209",
+   "arrival_s": 155.057471,
+   "prompt_tokens": 2092,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req001210",
+   "arrival_s": 155.557415,
+   "prompt_tokens": 374,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req001211",
+   "arrival_s": 155.89613,
+   "prompt_tokens": 408,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req001212",
+   "arrival_s": 155.918779,
+   "prompt_tokens": 4090,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req001213",
+   "arrival_s": 155.927326,
+   "prompt_tokens": 396,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req001214",
+   "arrival_s": 155.947162,
+   "prompt_tokens": 181,
+   "output_tokens": 179
+  },
+  {
+   "request_id": "req001215",
+   "arrival_s": 155.993449,
+   "prompt_tokens": 2744,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req001216",
+   "arrival_s": 156.132138,
+   "prompt_tokens": 374,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req001217",
+   "arrival_s": 156.143052,
+   "prompt_tokens": 392,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req001218",
+   "arrival_s": 156.283506,
+   "prompt_tokens": 2010,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req001219",
+   "arrival_s": 156.36772,
+   "prompt_tokens": 200,
+   "output_tokens": 138
+  },
+  {
+   "request_id": "req001220",
+   "arrival_s": 156.389038,
+   "prompt_tokens": 374,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req001221",
+   "arrival_s": 156.464532,
+   "prompt_tokens": 1073,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req001222",
+   "arrival_s": 156.516053,
+   "prompt_tokens": 419,
+   "output_tokens": 76
+  },
+  {
+   "request_id": "req001223",
+   "arrival_s": 156.58818,
+   "prompt_tokens": 374,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req001224",
+   "arrival_s": 156.657948,
+   "prompt_tokens": 410,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req001225",
+   "arrival_s": 156.748415,
+   "prompt_tokens": 387,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req001226",
+   "arrival_s": 156.830325,
+   "prompt_tokens": 4088,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req001227",
+   "arrival_s": 156.911293,
+   "prompt_tokens": 4158,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req001228",
+   "arrival_s": 156.926552,
+   "prompt_tokens": 1273,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req001229",
+   "arrival_s": 157.059453,
+   "prompt_tokens": 391,
+   "output_tokens": 107
+  },
+  {
+   "request_id": "req001230",
+   "arrival_s": 157.265583,
+   "prompt_tokens": 381,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req001231",
+   "arrival_s": 157.399923,
+   "prompt_tokens": 1100,
+   "output_tokens": 33
+  },
+  {
+   "request_id": "req001232",
+   "arrival_s": 157.515207,
+   "prompt_tokens": 1077,
+   "output_tokens": 501
+  },
+  {
+   "request_id": "req001233",
+   "arrival_s": 157.524045,
+   "prompt_tokens": 967,
+   "output_tokens": 398
+  },
+  {
+   "request_id": "req001234",
+   "arrival_s": 157.636966,
+   "prompt_tokens": 401,
+   "output_tokens": 98
+  },
+  {
+   "request_id": "req001235",
+   "arrival_s": 157.67221,
+   "prompt_tokens": 1389,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req001236",
+   "arrival_s": 157.807117,
+   "prompt_tokens": 375,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req001237",
+   "arrival_s": 157.847748,
+   "prompt_tokens": 1073,
+   "output_tokens": 401
+  },
+  {
+   "request_id": "req001238",
+   "arrival_s": 157.983091,
+   "prompt_tokens": 4079,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req001239",
+   "arrival_s": 157.983257,
+   "prompt_tokens": 4084,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req001240",
+   "arrival_s": 158.282676,
+   "prompt_tokens": 4075,
+   "output_tokens": 26
+  },
+  {
+   "request_id": "req001241",
+   "arrival_s": 158.462366,
+   "prompt_tokens": 2058,
+   "output_tokens": 50
+  },
+  {
+   "request_id": "req001242",
+   "arrival_s": 158.864587,
+   "prompt_tokens": 420,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req001243",
+   "arrival_s": 159.250109,
+   "prompt_tokens": 398,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req001244",
+   "arrival_s": 159.336721,
+   "prompt_tokens": 374,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req001245",
+   "arrival_s": 159.368384,
+   "prompt_tokens": 4093,
+   "output_tokens": 24
+  },
+  {
+   "request_id": "req001246",
+   "arrival_s": 159.408842,
+   "prompt_tokens": 420,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req001247",
+   "arrival_s": 159.643741,
+   "prompt_tokens": 410,
+   "output_tokens": 140
+  },
+  {
+   "request_id": "req001248",
+   "arrival_s": 159.685693,
+   "prompt_tokens": 2604,
+   "output_tokens": 51
+  },
+  {
+   "request_id": "req001249",
+   "arrival_s": 159.84013,
+   "prompt_tokens": 4088,
+   "output_tokens": 167
+  },
+  {
+   "request_id": "req001250",
+   "arrival_s": 159.935851,
+   "prompt_tokens": 376,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req001251",
+   "arrival_s": 159.998788,
+   "prompt_tokens": 398,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001252",
+   "arrival_s": 160.014149,
+   "prompt_tokens": 1081,
+   "output_tokens": 375
+  },
+  {
+   "request_id": "req001253",
+   "arrival_s": 160.03613,
+   "prompt_tokens": 4077,
+   "output_tokens": 37
+  },
+  {
+   "request_id": "req001254",
+   "arrival_s": 160.219712,
+   "prompt_tokens": 1156,
+   "output_tokens": 373
+  },
+  {
+   "request_id": "req001255",
+   "arrival_s": 160.284042,
+   "prompt_tokens": 390,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req001256",
+   "arrival_s": 160.471414,
+   "prompt_tokens": 385,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req001257",
+   "arrival_s": 160.588032,
+   "prompt_tokens": 4092,
+   "output_tokens": 28
+  },
+  {
+   "request_id": "req001258",
+   "arrival_s": 160.615985,
+   "prompt_tokens": 1197,
+   "output_tokens": 90
+  },
+  {
+   "request_id": "req001259",
+   "arrival_s": 160.667625,
+   "prompt_tokens": 304,
+   "output_tokens": 18
+  },
+  {
+   "request_id": "req001260",
+   "arrival_s": 160.756504,
+   "prompt_tokens": 4077,
+   "output_tokens": 27
+  },
+  {
+   "request_id": "req001261",
+   "arrival_s": 160.924909,
+   "prompt_tokens": 398,
+   "output_tokens": 104
+  },
+  {
+   "request_id": "req001262",
+   "arrival_s": 161.345412,
+   "prompt_tokens": 378,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req001263",
+   "arrival_s": 161.43611,
+   "prompt_tokens": 2639,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001264",
+   "arrival_s": 161.537837,
+   "prompt_tokens": 1057,
+   "output_tokens": 427
+  },
+  {
+   "request_id": "req001265",
+   "arrival_s": 161.538317,
+   "prompt_tokens": 419,
+   "output_tokens": 167
+  },
+  {
+   "request_id": "req001266",
+   "arrival_s": 161.57909,
+   "prompt_tokens": 1038,
+   "output_tokens": 557
+  },
+  {
+   "request_id": "req001267",
+   "arrival_s": 161.580693,
+   "prompt_tokens": 404,
+   "output_tokens": 121
+  },
+  {
+   "request_id": "req001268",
+   "arrival_s": 161.628333,
+   "prompt_tokens": 1118,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req001269",
+   "arrival_s": 161.721551,
+   "prompt_tokens": 1076,
+   "output_tokens": 435
+  },
+  {
+   "request_id": "req001270",
+   "arrival_s": 161.767039,
+   "prompt_tokens": 397,
+   "output_tokens": 102
+  },
+  {
+   "request_id": "req001271",
+   "arrival_s": 161.794003,
+   "prompt_tokens": 49,
+   "output_tokens": 161
+  },
+  {
+   "request_id": "req001272",
+   "arrival_s": 161.805238,
+   "prompt_tokens": 418,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req001273",
+   "arrival_s": 161.955454,
+   "prompt_tokens": 401,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req001274",
+   "arrival_s": 162.077773,
+   "prompt_tokens": 4077,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req001275",
+   "arrival_s": 162.111191,
+   "prompt_tokens": 403,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req001276",
+   "arrival_s": 162.144138,
+   "prompt_tokens": 4076,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req001277",
+   "arrival_s": 162.292449,
+   "prompt_tokens": 389,
+   "output_tokens": 60
+  },
+  {
+   "request_id": "req001278",
+   "arrival_s": 162.426592,
+   "prompt_tokens": 435,
+   "output_tokens": 140
+  },
+  {
+   "request_id": "req001279",
+   "arrival_s": 162.44647,
+   "prompt_tokens": 378,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req001280",
+   "arrival_s": 162.466935,
+   "prompt_tokens": 409,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001281",
+   "arrival_s": 162.651317,
+   "prompt_tokens": 431,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req001282",
+   "arrival_s": 162.718579,
+   "prompt_tokens": 406,
+   "output_tokens": 143
+  },
+  {
+   "request_id": "req001283",
+   "arrival_s": 162.75099,
+   "prompt_tokens": 2778,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001284",
+   "arrival_s": 162.838921,
+   "prompt_tokens": 4085,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req001285",
+   "arrival_s": 162.956928,
+   "prompt_tokens": 372,
+   "output_tokens": 57
+  },
+  {
+   "request_id": "req001286",
+   "arrival_s": 163.114903,
+   "prompt_tokens": 373,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req001287",
+   "arrival_s": 163.146869,
+   "prompt_tokens": 394,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req001288",
+   "arrival_s": 163.204149,
+   "prompt_tokens": 404,
+   "output_tokens": 103
+  },
+  {
+   "request_id": "req001289",
+   "arrival_s": 163.316262,
+   "prompt_tokens": 417,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001290",
+   "arrival_s": 163.576966,
+   "prompt_tokens": 4081,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req001291",
+   "arrival_s": 163.73375,
+   "prompt_tokens": 4075,
+   "output_tokens": 17
+  },
+  {
+   "request_id": "req001292",
+   "arrival_s": 164.090649,
+   "prompt_tokens": 1805,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req001293",
+   "arrival_s": 164.110497,
+   "prompt_tokens": 434,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req001294",
+   "arrival_s": 164.282148,
+   "prompt_tokens": 1045,
+   "output_tokens": 417
+  },
+  {
+   "request_id": "req001295",
+   "arrival_s": 164.372959,
+   "prompt_tokens": 4084,
+   "output_tokens": 135
+  },
+  {
+   "request_id": "req001296",
+   "arrival_s": 164.423448,
+   "prompt_tokens": 4076,
+   "output_tokens": 48
+  },
+  {
+   "request_id": "req001297",
+   "arrival_s": 164.468029,
+   "prompt_tokens": 2689,
+   "output_tokens": 83
+  },
+  {
+   "request_id": "req001298",
+   "arrival_s": 164.82437,
+   "prompt_tokens": 1254,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req001299",
+   "arrival_s": 164.857195,
+   "prompt_tokens": 384,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001300",
+   "arrival_s": 164.88134,
+   "prompt_tokens": 400,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001301",
+   "arrival_s": 165.088713,
+   "prompt_tokens": 4078,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req001302",
+   "arrival_s": 165.219212,
+   "prompt_tokens": 371,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req001303",
+   "arrival_s": 165.250895,
+   "prompt_tokens": 432,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req001304",
+   "arrival_s": 165.488235,
+   "prompt_tokens": 52,
+   "output_tokens": 124
+  },
+  {
+   "request_id": "req001305",
+   "arrival_s": 165.495947,
+   "prompt_tokens": 398,
+   "output_tokens": 111
+  },
+  {
+   "request_id": "req001306",
+   "arrival_s": 165.764664,
+   "prompt_tokens": 394,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001307",
+   "arrival_s": 165.853481,
+   "prompt_tokens": 1268,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req001308",
+   "arrival_s": 166.203444,
+   "prompt_tokens": 389,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req001309",
+   "arrival_s": 166.229125,
+   "prompt_tokens": 4084,
+   "output_tokens": 228
+  },
+  {
+   "request_id": "req001310",
+   "arrival_s": 166.361545,
+   "prompt_tokens": 383,
+   "output_tokens": 61
+  },
+  {
+   "request_id": "req001311",
+   "arrival_s": 166.57803,
+   "prompt_tokens": 1035,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req001312",
+   "arrival_s": 166.683727,
+   "prompt_tokens": 2161,
+   "output_tokens": 109
+  },
+  {
+   "request_id": "req001313",
+   "arrival_s": 166.812255,
+   "prompt_tokens": 402,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req001314",
+   "arrival_s": 167.093958,
+   "prompt_tokens": 373,
+   "output_tokens": 66
+  },
+  {
+   "request_id": "req001315",
+   "arrival_s": 167.100011,
+   "prompt_tokens": 4077,
+   "output_tokens": 39
+  },
+  {
+   "request_id": "req001316",
+   "arrival_s": 167.128882,
+   "prompt_tokens": 4073,
+   "output_tokens": 34
+  },
+  {
+   "request_id": "req001317",
+   "arrival_s": 167.346631,
+   "prompt_tokens": 1276,
+   "output_tokens": 122
+  },
+  {
+   "request_id": "req001318",
+   "arrival_s": 167.378586,
+   "prompt_tokens": 4074,
+   "output_tokens": 38
+  },
+  {
+   "request_id": "req001319",
+   "arrival_s": 167.57111,
+   "prompt_tokens": 3484,
+   "output_tokens": 55
+  },
+  {
+   "request_id": "req001320",
+   "arrival_s": 167.645989,
+   "prompt_tokens": 413,
+   "output_tokens": 77
+  },
+  {
+   "request_id": "req001321",
+   "arrival_s": 167.996103,
+   "prompt_tokens": 391,
+   "output_tokens": 99
+  },
+  {
+   "request_id": "req001322",
+   "arrival_s": 168.014768,
+   "prompt_tokens": 2266,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req001323",
+   "arrival_s": 168.374179,
+   "prompt_tokens": 380,
+   "output_tokens": 85
+  },
+  {
+   "request_id": "req001324",
+   "arrival_s": 168.700457,
+   "prompt_tokens": 1313,
+   "output_tokens": 184
+  },
+  {
+   "request_id": "req001325",
+   "arrival_s": 168.709437,
+   "prompt_tokens": 17,
+   "output_tokens": 206
+  },
+  {
+   "request_id": "req001326",
+   "arrival_s": 168.84523,
+   "prompt_tokens": 402,
+   "output_tokens": 122
+  },
+  {
+   "request_id": "req001327",
+   "arrival_s": 168.862712,
+   "prompt_tokens": 1056,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req001328",
+   "arrival_s": 168.924889,
+   "prompt_tokens": 181,
+   "output_tokens": 139
+  },
+  {
+   "request_id": "req001329",
+   "arrival_s": 168.983884,
+   "prompt_tokens": 378,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req001330",
+   "arrival_s": 169.17253,
+   "prompt_tokens": 4083,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req001331",
+   "arrival_s": 169.272811,
+   "prompt_tokens": 428,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req001332",
+   "arrival_s": 169.404613,
+   "prompt_tokens": 374,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req001333",
+   "arrival_s": 169.736607,
+   "prompt_tokens": 398,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001334",
+   "arrival_s": 169.7686,
+   "prompt_tokens": 964,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req001335",
+   "arrival_s": 169.972036,
+   "prompt_tokens": 387,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req001336",
+   "arrival_s": 169.972043,
+   "prompt_tokens": 404,
+   "output_tokens": 96
+  },
+  {
+   "request_id": "req001337",
+   "arrival_s": 170.129513,
+   "prompt_tokens": 4091,
+   "output_tokens": 36
+  },
+  {
+   "request_id": "req001338",
+   "arrival_s": 170.132997,
+   "prompt_tokens": 4075,
+   "output_tokens": 46
+  },
+  {
+   "request_id": "req001339",
+   "arrival_s": 170.225533,
+   "prompt_tokens": 4083,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req001340",
+   "arrival_s": 170.365468,
+   "prompt_tokens": 4085,
+   "output_tokens": 67
+  },
+  {
+   "request_id": "req001341",
+   "arrival_s": 170.552142,
+   "prompt_tokens": 985,
+   "output_tokens": 414
+  },
+  {
+   "request_id": "req001342",
+   "arrival_s": 170.627227,
+   "prompt_tokens": 386,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req001343",
+   "arrival_s": 170.665223,
+   "prompt_tokens": 1077,
+   "output_tokens": 501
+  },
+  {
+   "request_id": "req001344",
+   "arrival_s": 171.064747,
+   "prompt_tokens": 371,
+   "output_tokens": 44
+  },
+  {
+   "request_id": "req001345",
+   "arrival_s": 171.234161,
+   "prompt_tokens": 419,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req001346",
+   "arrival_s": 171.246861,
+   "prompt_tokens": 4090,
+   "output_tokens": 42
+  },
+  {
+   "request_id": "req001347",
+   "arrival_s": 171.480964,
+   "prompt_tokens": 4086,
+   "output_tokens": 30
+  },
+  {
+   "request_id": "req001348",
+   "arrival_s": 171.706909,
+   "prompt_tokens": 384,
+   "output_tokens": 58
+  },
+  {
+   "request_id": "req001349",
+   "arrival_s": 172.012347,
+   "prompt_tokens": 1529,
+   "output_tokens": 68
+  },
+  {
+   "request_id": "req001350",
+   "arrival_s": 172.2113,
+   "prompt_tokens": 396,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001351",
+   "arrival_s": 172.224988,
+   "prompt_tokens": 403,
+   "output_tokens": 135
+  },
+  {
+   "request_id": "req001352",
+   "arrival_s": 172.437171,
+   "prompt_tokens": 1080,
+   "output_tokens": 385
+  },
+  {
+   "request_id": "req001353",
+   "arrival_s": 172.441908,
+   "prompt_tokens": 394,
+   "output_tokens": 73
+  },
+  {
+   "request_id": "req001354",
+   "arrival_s": 172.596302,
+   "prompt_tokens": 4084,
+   "output_tokens": 52
+  },
+  {
+   "request_id": "req001355",
+   "arrival_s": 172.609592,
+   "prompt_tokens": 2494,
+   "output_tokens": 84
+  },
+  {
+   "request_id": "req001356",
+   "arrival_s": 172.72599,
+   "prompt_tokens": 4089,
+   "output_tokens": 47
+  },
+  {
+   "request_id": "req001357",
+   "arrival_s": 172.747279,
+   "prompt_tokens": 1174,
+   "output_tokens": 388
+  },
+  {
+   "request_id": "req001358",
+   "arrival_s": 172.812455,
+   "prompt_tokens": 382,
+   "output_tokens": 72
+  },
+  {
+   "request_id": "req001359",
+   "arrival_s": 172.969818,
+   "prompt_tokens": 1969,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req001360",
+   "arrival_s": 173.007862,
+   "prompt_tokens": 374,
+   "output_tokens": 56
+  },
+  {
+   "request_id": "req001361",
+   "arrival_s": 173.13377,
+   "prompt_tokens": 400,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001362",
+   "arrival_s": 173.225323,
+   "prompt_tokens": 1314,
+   "output_tokens": 189
+  },
+  {
+   "request_id": "req001363",
+   "arrival_s": 173.229559,
+   "prompt_tokens": 1056,
+   "output_tokens": 415
+  },
+  {
+   "request_id": "req001364",
+   "arrival_s": 173.323431,
+   "prompt_tokens": 384,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req001365",
+   "arrival_s": 173.557878,
+   "prompt_tokens": 1010,
+   "output_tokens": 385
+  },
+  {
+   "request_id": "req001366",
+   "arrival_s": 173.55795,
+   "prompt_tokens": 1039,
+   "output_tokens": 395
+  },
+  {
+   "request_id": "req001367",
+   "arrival_s": 173.959248,
+   "prompt_tokens": 1083,
+   "output_tokens": 394
+  },
+  {
+   "request_id": "req001368",
+   "arrival_s": 174.347578,
+   "prompt_tokens": 4098,
+   "output_tokens": 116
+  },
+  {
+   "request_id": "req001369",
+   "arrival_s": 174.501893,
+   "prompt_tokens": 4097,
+   "output_tokens": 49
+  },
+  {
+   "request_id": "req001370",
+   "arrival_s": 174.728177,
+   "prompt_tokens": 430,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001371",
+   "arrival_s": 174.825684,
+   "prompt_tokens": 1056,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req001372",
+   "arrival_s": 174.929799,
+   "prompt_tokens": 418,
+   "output_tokens": 81
+  },
+  {
+   "request_id": "req001373",
+   "arrival_s": 175.154254,
+   "prompt_tokens": 383,
+   "output_tokens": 92
+  },
+  {
+   "request_id": "req001374",
+   "arrival_s": 175.178978,
+   "prompt_tokens": 1088,
+   "output_tokens": 472
+  },
+  {
+   "request_id": "req001375",
+   "arrival_s": 175.25885,
+   "prompt_tokens": 398,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req001376",
+   "arrival_s": 175.363106,
+   "prompt_tokens": 4100,
+   "output_tokens": 89
+  },
+  {
+   "request_id": "req001377",
+   "arrival_s": 175.617312,
+   "prompt_tokens": 1055,
+   "output_tokens": 420
+  },
+  {
+   "request_id": "req001378",
+   "arrival_s": 175.802219,
+   "prompt_tokens": 372,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req001379",
+   "arrival_s": 176.065034,
+   "prompt_tokens": 2318,
+   "output_tokens": 101
+  },
+  {
+   "request_id": "req001380",
+   "arrival_s": 176.19424,
+   "prompt_tokens": 2113,
+   "output_tokens": 93
+  },
+  {
+   "request_id": "req001381",
+   "arrival_s": 176.42219,
+   "prompt_tokens": 398,
+   "output_tokens": 187
+  },
+  {
+   "request_id": "req001382",
+   "arrival_s": 176.637567,
+   "prompt_tokens": 402,
+   "output_tokens": 91
+  },
+  {
+   "request_id": "req001383",
+   "arrival_s": 176.80408,
+   "prompt_tokens": 1131,
+   "output_tokens": 533
+  },
+  {
+   "request_id": "req001384",
+   "arrival_s": 176.837644,
+   "prompt_tokens": 1140,
+   "output_tokens": 78
+  },
+  {
+   "request_id": "req001385",
+   "arrival_s": 176.932042,
+   "prompt_tokens": 424,
+   "output_tokens": 86
+  },
+  {
+   "request_id": "req001386",
+   "arrival_s": 177.047639,
+   "prompt_tokens": 2075,
+   "output_tokens": 80
+  },
+  {
+   "request_id": "req001387",
+   "arrival_s": 177.191904,
+   "prompt_tokens": 402,
+   "output_tokens": 105
+  },
+  {
+   "request_id": "req001388",
+   "arrival_s": 177.200426,
+   "prompt_tokens": 4143,
+   "output_tokens": 40
+  },
+  {
+   "request_id": "req001389",
+   "arrival_s": 177.474733,
+   "prompt_tokens": 1017,
+   "output_tokens": 539
+  },
+  {
+   "request_id": "req001390",
+   "arrival_s": 177.537994,
+   "prompt_tokens": 395,
+   "output_tokens": 97
+  },
+  {
+   "request_id": "req001391",
+   "arrival_s": 177.715953,
+   "prompt_tokens": 2343,
+   "output_tokens": 95
+  },
+  {
+   "request_id": "req001392",
+   "arrival_s": 177.758929,
+   "prompt_tokens": 194,
+   "output_tokens": 161
+  },
+  {
+   "request_id": "req001393",
+   "arrival_s": 177.875946,
+   "prompt_tokens": 4086,
+   "output_tokens": 79
+  },
+  {
+   "request_id": "req001394",
+   "arrival_s": 177.977701,
+   "prompt_tokens": 2240,
+   "output_tokens": 75
+  },
+  {
+   "request_id": "req001395",
+   "arrival_s": 178.034449,
+   "prompt_tokens": 455,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001396",
+   "arrival_s": 178.126874,
+   "prompt_tokens": 2047,
+   "output_tokens": 153
+  },
+  {
+   "request_id": "req001397",
+   "arrival_s": 178.273595,
+   "prompt_tokens": 4083,
+   "output_tokens": 45
+  },
+  {
+   "request_id": "req001398",
+   "arrival_s": 178.317288,
+   "prompt_tokens": 409,
+   "output_tokens": 138
+  },
+  {
+   "request_id": "req001399",
+   "arrival_s": 178.326788,
+   "prompt_tokens": 4088,
+   "output_tokens": 110
+  },
+  {
+   "request_id": "req001400",
+   "arrival_s": 178.57903,
+   "prompt_tokens": 761,
+   "output_tokens": 87
+  },
+  {
+   "request_id": "req001401",
+   "arrival_s": 178.680177,
+   "prompt_tokens": 4088,
+   "output_tokens": 82
+  },
+  {
+   "request_id": "req001402",
+   "arrival_s": 178.680493,
+   "prompt_tokens": 374,
+   "output_tokens": 69
+  },
+  {
+   "request_id": "req001403",
+   "arrival_s": 178.946482,
+   "prompt_tokens": 1300,
+   "output_tokens": 405
+  },
+  {
+   "request_id": "req001404",
+   "arrival_s": 179.212511,
+   "prompt_tokens": 1043,
+   "output_tokens": 642
+  },
+  {
+   "request_id": "req001405",
+   "arrival_s": 179.237878,
+   "prompt_tokens": 430,
+   "output_tokens": 100
+  },
+  {
+   "request_id": "req001406",
+   "arrival_s": 179.53149,
+   "prompt_tokens": 1042,
+   "output_tokens": 396
+  },
+  {
+   "request_id": "req001407",
+   "arrival_s": 179.576342,
+   "prompt_tokens": 392,
+   "output_tokens": 77
+  }
+ ]
+}

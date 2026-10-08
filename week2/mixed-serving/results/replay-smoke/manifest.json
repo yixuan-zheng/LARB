@@ -1,0 +1,214 @@
+{
+ "run_id": "replay-smoke",
+ "started_utc": "2026-10-08T14:31:31Z",
+ "completed": true,
+ "mode": "replay",
+ "trace": {
+  "schema_version": 1,
+  "trace_id": "synth_poisson",
+  "seed": 6222,
+  "source": {
+   "kind": "synthetic",
+   "url": null,
+   "sha256": null,
+   "params_fitted_from": {
+    "prompt_median": 1020.0,
+    "prompt_p90": 2734.5,
+    "output_median": 129.0,
+    "output_p90": 424.0,
+    "source_sha256": "2f1e5b666d4e3055fdbba98598ce2ec307767b9064e03e2fa46676dbcc7d0bf8"
+   }
+  },
+  "generator": {
+   "kind": "poisson",
+   "rate_rps": 5.5,
+   "duration_s": 180.0,
+   "cv": 1.0,
+   "shape": 1.0,
+   "scale": 0.18181818181818182,
+   "prompt_lognormal": {
+    "median": 1020.0,
+    "p90": 2734.5,
+    "mu": 6.927557906278317,
+    "sigma": 0.7694937941021861
+   },
+   "output_lognormal": {
+    "median": 129.0,
+    "p90": 424.0,
+    "mu": 4.859812404361672,
+    "sigma": 0.9285003294928863
+   },
+   "prompt_range": [
+    16,
+    4096
+   ],
+   "output_range": [
+    1,
+    1024
+   ],
+   "bursts": [],
+   "lengths_sampled_independently": true
+  },
+  "notes": [
+   "Synthetic control: arrivals only. The length distributions are lognormal fits, not the raw Azure rows, so this file is reproducible without the source CSV."
+  ],
+  "rate_scale": 0.3,
+  "limited_to": 40,
+  "stats": {
+   "requests": 40,
+   "span_s": 28.76235666666667,
+   "mean_rps": 1.3907066261492016,
+   "prompt_tokens": {
+    "mean": 1213.275,
+    "p50": 1063.0,
+    "p90": 2676.8,
+    "p99": 3319.99,
+    "max": 3460
+   },
+   "output_tokens": {
+    "mean": 218.925,
+    "p50": 157.5,
+    "p90": 501.80000000000007,
+    "p99": 1024.0,
+    "max": 1024
+   },
+   "prefill_token_share": 0.8471407624633431
+  }
+ },
+ "trace_requests": 40,
+ "rate_scale": 0.3,
+ "policies": [
+  "static_large",
+  "static_small",
+  "phase_hybrid"
+ ],
+ "config": {
+  "token_budget": 4096,
+  "prefill_token_budget": 2048,
+  "decode_batch_cap": 64,
+  "prefill_chunk": 0,
+  "prefill_batch_cap": 1,
+  "pad_bucket": 128,
+  "max_running": 96,
+  "max_seq_len": 16384,
+  "seed": 6222
+ },
+ "contract": {
+  "ttft_s": 1.0,
+  "itl_gate_s": 0.2,
+  "tpot_mean_gate_s": 0.1,
+  "itl_gate_name": "max_itl",
+  "ttft_sensitivity_s": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "itl_sensitivity_s": [
+   0.1,
+   0.2
+  ],
+  "quality_floor_pp": 5.0,
+  "quality_reference": "static_large",
+  "quality_eligibility": "deferred_to_week1_quality_schedules"
+ },
+ "runtime": {
+  "cost_table": {
+   "source": {
+    "kind": "week1_tracked_seed",
+    "note": "NOT a loop measurement: reuse of frozen Week 1 cells",
+    "created_utc": "2026-10-08T13:56:05Z",
+    "provenance": {
+     "prefill": {
+      "file": "week1/latency-baselines/results/latency_profile.csv",
+      "scenario": "s2_prefill",
+      "cells": 18,
+      "measure": "median GPU ms of a prefill of `chunk` tokens at `batch`"
+     },
+     "decode": {
+      "file": "week2/decode-study/results/timing/summary.csv",
+      "cells": 20,
+      "measure": "median synchronised wall ms of one decode step at `batch`/`ctx`",
+      "note": "decode width is unresolvable in this runtime (decode study); the ctx-2048 rows are the conservative single cell per batch"
+     },
+     "switch": {
+      "file": "week1/latency-baselines/results/switch_summary.json",
+      "measure": "S8 host apply median; S9 boundary worst case"
+     }
+    }
+   },
+   "prefill_cells": 18,
+   "decode_cells": 20,
+   "switch": {
+    "apply_ms": 0.087,
+    "boundary_ms": 0.6
+   },
+   "kv_bytes_per_token": 40960,
+   "vram_budget_bytes": 36507222016,
+   "lookup_kinds": {}
+  }
+ },
+ "gates": null,
+ "gates_status": "not_run",
+ "git": {
+  "commit": "b90d9fa4b551b4baf6f9971f398e2798643c891b",
+  "dirty": true
+ },
+ "harness_provenance": {
+  "latency_lib.py": "cdbb6d2060da9cbf",
+  "latency_math.py": "690c74276847f5cd",
+  "dynamic_lib.py": "3794178e6e4a70f1",
+  "switch_schedules.py": "a619b693e0ad1b52",
+  "build_worker.py": "08940a87a675d918",
+  "probe_cost.py": "cc48c90abcf106a6",
+  "presets_sha256": "03a51e2b98bf340f"
+ },
+ "slo_stats_backend": "latency_math",
+ "capacity_reference": {
+  "reference": "batch-1 prefill (the loop's default path), largest measured decode batch",
+  "presets": {
+   "large": {
+    "prefill_ms_per_token": 0.07816275209188461,
+    "prefill_tokens_per_s": 12793.817684725904,
+    "decode_tokens_per_s": 1125.0169060214628,
+    "decode_ms_at_largest_batch": 74.1370135001489
+   },
+   "medium": {
+    "prefill_ms_per_token": 0.07154224812984467,
+    "prefill_tokens_per_s": 13977.754769252751,
+    "decode_tokens_per_s": null,
+    "decode_ms_at_largest_batch": null
+   },
+   "small": {
+    "prefill_ms_per_token": 0.06509049981832504,
+    "prefill_tokens_per_s": 15363.22509108262,
+    "decode_tokens_per_s": 1138.2741867144186,
+    "decode_ms_at_largest_batch": 71.64770649978891
+   }
+  },
+  "service": {
+   "mean_prompt_tokens": 1117.0070778564207,
+   "mean_output_tokens": 248.7613751263903,
+   "gpu_seconds_per_request": 0.3084262467802039,
+   "capacity_rps": 3.242266215795303,
+   "prefill_time_fraction": 0.2830769048445837,
+   "decode_time_fraction": 0.7169230951554164
+  },
+  "load_ladder_rps": {
+   "underloaded": 1.6211331078976514,
+   "saturated": 2.9180395942157724,
+   "overloaded": 4.214946080533894,
+   "backlog_inducing": 6.484532431590606,
+   "note": "requests/s; --rate-scale = ladder rate / the trace window's own mean rate"
+  },
+  "recommended_rate_scales": {
+   "underloaded": 0.29465736678278553,
+   "saturated": 0.5303832602090139,
+   "overloaded": 0.7661091536352425,
+   "backlog_inducing": 1.1786294671311421,
+   "trace_mean_rps": 5.501756584598519,
+   "note": "time-compression factors for --rate-scale on THIS trace; derive them before any policy comparison and do not retune"
+  },
+  "trace": "traces/azure_conv_steady.json"
+ },
+ "finished_utc": "2026-10-08T14:31:33Z"
+}

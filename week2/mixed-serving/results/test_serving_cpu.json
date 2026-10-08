@@ -1,0 +1,462 @@
+{
+  "passed": true,
+  "n_checks": 89,
+  "checks": [
+    {
+      "check": "percentile_interpolation",
+      "passed": true,
+      "detail": "median of [1,2,3,4] is 2.5; a single value passes through"
+    },
+    {
+      "check": "azure_csv_ingest",
+      "passed": true,
+      "detail": "3 rows, rebased arrivals [0.0, 0.5, 2.0]"
+    },
+    {
+      "check": "azure_csv_provenance_hash",
+      "passed": true,
+      "detail": "sha256 of the raw bytes recorded"
+    },
+    {
+      "check": "canonical_sorted_and_rebased",
+      "passed": true,
+      "detail": "arrivals sorted and rebased so the first is exactly 0.0"
+    },
+    {
+      "check": "trace_round_trip",
+      "passed": true,
+      "detail": "load(write(x)) preserves the trace"
+    },
+    {
+      "check": "rate_scale_compresses_time",
+      "passed": true,
+      "detail": "lambda=2 halves arrival times and keeps every request"
+    },
+    {
+      "check": "rate_scale_metadata",
+      "passed": true,
+      "detail": "scale recorded in meta"
+    },
+    {
+      "check": "trace_limit",
+      "passed": true,
+      "detail": "limit truncates the tail"
+    },
+    {
+      "check": "trace_schema_guard",
+      "passed": true,
+      "detail": "a future schema_version is refused rather than misread"
+    },
+    {
+      "check": "lognormal_mu_is_ln_median",
+      "passed": true,
+      "detail": "mu=6.9276 = ln(1020)"
+    },
+    {
+      "check": "lognormal_samples_median",
+      "passed": true,
+      "detail": "sampled median 1016 is within 10% of the declared 1020"
+    },
+    {
+      "check": "synthetic_reproducible",
+      "passed": true,
+      "detail": "same seed gives identical arrivals"
+    },
+    {
+      "check": "synthetic_seed_sensitive",
+      "passed": true,
+      "detail": "a different seed gives different arrivals"
+    },
+    {
+      "check": "gamma_cv_exceeds_poisson",
+      "passed": true,
+      "detail": "inter-arrival CV gamma=1.93 > poisson=1.10"
+    },
+    {
+      "check": "synthetic_lengths_in_declared_range",
+      "passed": true,
+      "detail": "declared length range respected"
+    },
+    {
+      "check": "window_burst_found",
+      "passed": true,
+      "detail": "burst pick starts at 72s, rate 10.08/s, and contains the burst at 120s"
+    },
+    {
+      "check": "window_selection_deterministic",
+      "passed": true,
+      "detail": "same criterion, same window"
+    },
+    {
+      "check": "window_mixshift_defined",
+      "passed": true,
+      "detail": "mixshift score 0.00"
+    },
+    {
+      "check": "window_steady_is_representative",
+      "passed": true,
+      "detail": "the steady pick minimizes distance to the global mean rate"
+    },
+    {
+      "check": "static_large_widths",
+      "passed": true,
+      "detail": "large everywhere"
+    },
+    {
+      "check": "static_small_widths",
+      "passed": true,
+      "detail": "small everywhere"
+    },
+    {
+      "check": "phase_hybrid_is_single_switch",
+      "passed": true,
+      "detail": "narrow prefill, wide decode = week1 quality schedule SL_early"
+    },
+    {
+      "check": "phase_hybrid_describe",
+      "passed": true,
+      "detail": "declares one switch per request"
+    },
+    {
+      "check": "view_has_no_output_field",
+      "passed": true,
+      "detail": "EngineView exposes no output-length field for a policy to peek at"
+    },
+    {
+      "check": "view_rejects_extra_field",
+      "passed": true,
+      "detail": "constructing a view with output_tokens fails loudly"
+    },
+    {
+      "check": "load_driven_is_labelled_stub",
+      "passed": true,
+      "detail": "owned by workstream C and flagged as a placeholder"
+    },
+    {
+      "check": "load_driven_narrow_under_pressure",
+      "passed": true,
+      "detail": "queue depth 20 >= threshold 8 -> narrow prefill"
+    },
+    {
+      "check": "load_driven_first_change_is_free",
+      "passed": true,
+      "detail": "the startup decision may switch once before any dwell is owed"
+    },
+    {
+      "check": "load_driven_dwell_blocks_flap",
+      "passed": true,
+      "detail": "min_dwell=4 blocks the immediate switch back to narrow"
+    },
+    {
+      "check": "load_driven_switches_after_dwell",
+      "passed": true,
+      "detail": "after 4 iterations the dwell is satisfied and prefill narrows again"
+    },
+    {
+      "check": "load_driven_decode_always_wide",
+      "passed": true,
+      "detail": "Large-first: decode prefers the wide preset"
+    },
+    {
+      "check": "classify_pass",
+      "passed": true,
+      "detail": "under both gates"
+    },
+    {
+      "check": "classify_fail_ttft",
+      "passed": true,
+      "detail": "TTFT only"
+    },
+    {
+      "check": "classify_fail_itl",
+      "passed": true,
+      "detail": "ITL only"
+    },
+    {
+      "check": "classify_fail_both",
+      "passed": true,
+      "detail": "both gates"
+    },
+    {
+      "check": "classify_incomplete",
+      "passed": true,
+      "detail": "an unfinished request is not attainment"
+    },
+    {
+      "check": "boundary_is_inclusive",
+      "passed": true,
+      "detail": "exactly at the SLO is a pass (<=)"
+    },
+    {
+      "check": "secondary_gate_stricter",
+      "passed": true,
+      "detail": "mean TPOT 150 ms fails the 100 ms secondary gate while passing the primary"
+    },
+    {
+      "check": "stats_backend_declared",
+      "passed": true,
+      "detail": "percentiles come from latency_math"
+    },
+    {
+      "check": "sensitivity_grid_size",
+      "passed": true,
+      "detail": "3 TTFT levels x 2 ITL levels"
+    },
+    {
+      "check": "quantile_matches_week1",
+      "passed": true,
+      "detail": "our quantile equals latency_math.quantile at every tested q"
+    },
+    {
+      "check": "summarize_adds_tail",
+      "passed": true,
+      "detail": "p95=3.85 p99=3.97 added on top of week1's p90"
+    },
+    {
+      "check": "report_attainment",
+      "passed": true,
+      "detail": "1 of 3 requests attains both gates (0.333)"
+    },
+    {
+      "check": "report_breakdown",
+      "passed": true,
+      "detail": "breakdown {'pass': 1, 'fail_ttft': 0, 'fail_itl': 1, 'fail_ttft+itl': 1, 'incomplete': 0}"
+    },
+    {
+      "check": "report_goodput_matches_window",
+      "passed": true,
+      "detail": "goodput = 1 pass / 4.6 s drain (first arrival 0.0 to last finish 4.6) = 0.217/s"
+    },
+    {
+      "check": "report_ttft_in_ms",
+      "passed": true,
+      "detail": "TTFT median reported in ms (400.0)"
+    },
+    {
+      "check": "report_prefill_share",
+      "passed": true,
+      "detail": "prefill token share of scheduled tokens"
+    },
+    {
+      "check": "report_padding_waste",
+      "passed": true,
+      "detail": "padding waste 28.00% for bucket 128 on 100-token prompts"
+    },
+    {
+      "check": "request_rows_have_verdicts",
+      "passed": true,
+      "detail": "per-request rows carry the verdict, not the raw ITL list"
+    },
+    {
+      "check": "prefill_fifo_order",
+      "passed": true,
+      "detail": "FIFO, and the 1024-token budget stops after a(1000) + b(24)"
+    },
+    {
+      "check": "prefill_batch_cap",
+      "passed": true,
+      "detail": "at most 2 requests per prefill batch"
+    },
+    {
+      "check": "prefill_budget_respected",
+      "passed": true,
+      "detail": "1024 <= 1024 new prefill tokens"
+    },
+    {
+      "check": "padding_groups_by_bucket",
+      "passed": true,
+      "detail": "every chunk is rounded to the 128-token bucket, and a batch shares one padded length"
+    },
+    {
+      "check": "decode_excludes_this_iteration_prefills",
+      "passed": true,
+      "detail": "a request prefilled in an iteration does not also decode in it"
+    },
+    {
+      "check": "empty_plan_when_idle",
+      "passed": true,
+      "detail": "no work -> empty plan"
+    },
+    {
+      "check": "chunked_prefill_stickiness",
+      "passed": true,
+      "detail": "the partially prefilled request keeps its turn (no starvation under chunking)"
+    },
+    {
+      "check": "chunk_size_respected",
+      "passed": true,
+      "detail": "no chunk exceeds the configured prefill chunk"
+    },
+    {
+      "check": "decode_takes_prefilled_requests",
+      "passed": true,
+      "detail": "a prefilled, unfinished request is decodable"
+    },
+    {
+      "check": "decode_batch_cap",
+      "passed": true,
+      "detail": "decode batch <= 4"
+    },
+    {
+      "check": "decode_priority_by_last_token",
+      "passed": true,
+      "detail": "the request whose last token is oldest is decoded first"
+    },
+    {
+      "check": "config_validation_rejects_zero_budget",
+      "passed": true,
+      "detail": "a zero budget, a zero padding bucket and a negative chunk are refused"
+    },
+    {
+      "check": "config_allows_budget_larger_than_iteration",
+      "passed": true,
+      "detail": "a per-phase budget larger than the iteration budget is legal (it is capped by token_budget at scheduling time)"
+    },
+    {
+      "check": "count_switches",
+      "passed": true,
+      "detail": "two changes in four steps"
+    },
+    {
+      "check": "replay_completes_every_request",
+      "passed": true,
+      "detail": "31/31 requests completed, 0 rejected"
+    },
+    {
+      "check": "replay_generates_exactly_the_trace_lengths",
+      "passed": true,
+      "detail": "forced generation length: one token per trace output token"
+    },
+    {
+      "check": "replay_token_time_invariant",
+      "passed": true,
+      "detail": "len(token_times) == generated for every request"
+    },
+    {
+      "check": "replay_width_history_invariant",
+      "passed": true,
+      "detail": "decode_widths == generated tokens minus the prefill's token 0, so step_widths() has exactly one entry per generated position"
+    },
+    {
+      "check": "replay_prompt_is_fully_prefilled",
+      "passed": true,
+      "detail": "every request consumed its whole prompt (no silent truncation)"
+    },
+    {
+      "check": "replay_step_widths_match_quality_convention",
+      "passed": true,
+      "detail": "step 0 is the prefill's final chunk, matching week1/quality schedules"
+    },
+    {
+      "check": "replay_static_large_no_switches",
+      "passed": true,
+      "detail": "static_large never switches"
+    },
+    {
+      "check": "replay_reports_mode_and_lookups",
+      "passed": true,
+      "detail": "replay is labelled and its lookups are recorded: {'measured': 82, 'interpolated': 38}"
+    },
+    {
+      "check": "replay_iteration_logs_are_the_same_shape",
+      "passed": true,
+      "detail": "91 iteration records, all with the same fields"
+    },
+    {
+      "check": "replay_phase_hybrid_one_switch_per_request",
+      "passed": true,
+      "detail": "exactly one width change per request (narrow prefill -> wide decode)"
+    },
+    {
+      "check": "replay_phase_hybrid_width_history",
+      "passed": true,
+      "detail": "the recorded per-step schedule is exactly SL_early"
+    },
+    {
+      "check": "replay_static_small_all_narrow",
+      "passed": true,
+      "detail": "static_small never leaves the narrow preset"
+    },
+    {
+      "check": "replay_switch_is_charged",
+      "passed": true,
+      "detail": "29 batch-level switches charged at 0.687 ms each; the per-iteration log sums to the same total"
+    },
+    {
+      "check": "static_config_charges_no_switch",
+      "passed": true,
+      "detail": "static configurations never pay the switching cost"
+    },
+    {
+      "check": "known_effect_control_ttft",
+      "passed": true,
+      "detail": "phase-hybrid TTFT median 92.4 ms < static_large 95.3 ms"
+    },
+    {
+      "check": "known_effect_control_is_diluted",
+      "passed": true,
+      "detail": "the gain is a prefill-share fraction, not a fabricated 2x"
+    },
+    {
+      "check": "null_control_no_invented_effect",
+      "passed": true,
+      "detail": "identical width costs and zero switch cost -> identical TTFT median (95.3 ms vs 95.3 ms)"
+    },
+    {
+      "check": "null_control_charges_switching",
+      "passed": true,
+      "detail": "the per-iteration log charges 19.92 ms == 29 switches x 0.687 ms"
+    },
+    {
+      "check": "null_control_no_large_invented_effect",
+      "passed": true,
+      "detail": "identical width costs -> TTFT median 93.1 ms vs static_large 95.3 ms (within a decode step)"
+    },
+    {
+      "check": "replay_deterministic",
+      "passed": true,
+      "detail": "a second run of the same inputs reproduces every TTFT exactly"
+    },
+    {
+      "check": "load_monotonic_attainment",
+      "passed": true,
+      "detail": "attainment light=1.00 >= heavy=0.52"
+    },
+    {
+      "check": "load_monotonic_ttft",
+      "passed": true,
+      "detail": "TTFT p95 light=94.1 ms <= heavy=1569.2 ms"
+    },
+    {
+      "check": "overload_creates_backlog",
+      "passed": true,
+      "detail": "67% of iterations began with an unstarted queue"
+    },
+    {
+      "check": "prefill_share_is_measured",
+      "passed": true,
+      "detail": "measured prefill token share 0.97"
+    },
+    {
+      "check": "chunked_prefill_changes_chunking_not_policy",
+      "passed": true,
+      "detail": "one switch per request is preserved while prefill work is chunked"
+    },
+    {
+      "check": "chunked_prefill_reports_padding_waste",
+      "passed": true,
+      "detail": "with prefill_batch_cap=1 the padding bucket is capped at the chunk itself, so padding waste is exactly 0 (the metric exists for a future batched-prefill path, and reporting 0 is the honest answer here)"
+    }
+  ],
+  "stats_backend": "latency_math",
+  "week1_math_on_path": true,
+  "cost_table_used": "test_fixture (declared formula, not a measurement)",
+  "key_numbers": {
+    "replay_requests": 31,
+    "static_large_ttft_median_ms": 95.34600000000148,
+    "phase_hybrid_ttft_median_ms": 92.41340000000208,
+    "static_large_attainment": 1.0,
+    "phase_hybrid_attainment": 1.0,
+    "heavy_load_attainment": 0.5161290322580645
+  }
+}

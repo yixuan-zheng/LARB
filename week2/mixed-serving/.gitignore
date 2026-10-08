@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+# raw source traces are downloaded, not committed (see traces/README.md)
+traces/raw/
+# crash-safe raw records; the extracted CSVs live in results/<run_id>/
+run-output/
+results/logs/
