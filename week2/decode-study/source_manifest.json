@@ -1,0 +1,109 @@
+{
+  "note": "Historical result manifests are unchanged. Packaged source changes are only path/import relocation, compressed-trace reading, and removal of import-time directory creation. Before/after edits reconstruct original source hashes. One inherited whitespace-only line is normalized.",
+  "files": [
+    {
+      "file": "code/benchmark.py",
+      "source": "week2/decode-rescue/code/benchmark.py",
+      "original_sha256": "0b42158c34b8429e5b17e3d5bdd905fd7036a00e35ad3d41ace0545f32baa1dd",
+      "packaged_sha256": "ba34972a3ae3f3bb4f412588dad7c9f0fc03c2704ab01c6aced69003fa59fb9c",
+      "changes": [
+        {
+          "before": "ROOT = Path(__file__).resolve().parents[3]",
+          "after": "ROOT = Path(__file__).resolve().parents[1]"
+        },
+        {
+          "before": "str(ROOT / 'week1' / 'latency-baselines')",
+          "after": "str(ROOT / 'code')"
+        }
+      ]
+    },
+    {
+      "file": "code/profile_decode.py",
+      "source": "week2/decode-profile/code/profile_decode.py",
+      "original_sha256": "052e898aa65dee4302f9800a5b6072f0180d33607ea4b5cfd3e29c051c9465cb",
+      "packaged_sha256": "7e85d6e2f2f510fa6e3e2a419c166acbbbe5e488e1135af747f3bb42fa64ab96",
+      "changes": [
+        {
+          "before": "ROOT=Path(__file__).resolve().parents[3]",
+          "after": "ROOT=Path(__file__).resolve().parents[1]"
+        },
+        {
+          "before": "str(ROOT/'week2/decode-rescue/code')",
+          "after": "str(ROOT/'code')"
+        }
+      ]
+    },
+    {
+      "file": "code/analyze_timing.py",
+      "source": "week2/decode-rescue/code/analyze.py",
+      "original_sha256": "f72e78581ab2417bf33c5192e825f2ec1c09070f7b3f247a26fc1847a480e03a",
+      "packaged_sha256": "f72e78581ab2417bf33c5192e825f2ec1c09070f7b3f247a26fc1847a480e03a",
+      "changes": []
+    },
+    {
+      "file": "code/analyze_profile.py",
+      "source": "week2/decode-profile/code/analyze.py",
+      "original_sha256": "6edba07a46b830c89630ebc4ffeac7d8e98bc7d19d78bbf098b3813fe0455616",
+      "packaged_sha256": "6edba07a46b830c89630ebc4ffeac7d8e98bc7d19d78bbf098b3813fe0455616",
+      "changes": []
+    },
+    {
+      "file": "code/audit_profiles.py",
+      "source": "week2/decode-profile/code/audit_traces.py",
+      "original_sha256": "e34be452054aaf45d685014119849e0048e5065a64604e46372807520cc69740",
+      "packaged_sha256": "05c92e88a33727cb6710ee6b696d16e667cef1df2bb1a263d816e7e9e96106af",
+      "changes": [
+        {
+          "before": "import argparse,bisect,collections,json",
+          "after": "import argparse,bisect,collections,gzip,json"
+        },
+        {
+          "before": "  es=json.loads((a.input.parent/capture['trace']).read_text())['traceEvents']",
+          "after": "  trace=a.input.parent/capture['trace']\n  if trace.exists():\n   content=trace.read_text()\n  else:\n   with gzip.open(str(trace)+'.gz','rt') as h:content=h.read()\n  es=json.loads(content)['traceEvents']"
+        }
+      ]
+    },
+    {
+      "file": "code/build_worker.py",
+      "source": "week1/latency-baselines/build_worker.py",
+      "original_sha256": "7671c1da7b8612174205b4f4c46b3449a1b8b5bb9d969541355d6a8e71c29ccf",
+      "packaged_sha256": "7671c1da7b8612174205b4f4c46b3449a1b8b5bb9d969541355d6a8e71c29ccf",
+      "changes": []
+    },
+    {
+      "file": "code/latency_math.py",
+      "source": "week1/latency-baselines/latency_math.py",
+      "original_sha256": "690c74276847f5cdeae9cf22ab30f25c056189b74b63ea1e445d310b159fef4f",
+      "packaged_sha256": "690c74276847f5cdeae9cf22ab30f25c056189b74b63ea1e445d310b159fef4f",
+      "changes": []
+    },
+    {
+      "file": "code/latency_lib.py",
+      "source": "week1/latency-baselines/latency_lib.py",
+      "original_sha256": "ea3753bb0c9816d7b6c8ec54057b6a33a9a365886a68a5289d84e9a18a027b82",
+      "packaged_sha256": "3a1eec0319f6729ac84e66a647c0bc59898b8eec41f7007d26f20880ac3a1fb7",
+      "changes": [
+        {
+          "before": "RUN_OUTPUT = ROOT / \"run-output\"",
+          "after": "RUN_OUTPUT = ROOT.parent / \"results\" / \"run-output\""
+        },
+        {
+          "before": "RESULTS = ROOT / \"results\"",
+          "after": "RESULTS = ROOT.parent / \"results\""
+        },
+        {
+          "before": "RUN_OUTPUT.mkdir(exist_ok=True)\nRESULTS.mkdir(exist_ok=True)\n",
+          "after": "# Output directories are created by the experiment runners.\n"
+        },
+        {
+          "before": "PRESETS_PATH = ROOT.parent.parent / \"preflight\" / \"code\" / \"presets.json\"",
+          "after": "PRESETS_PATH = ROOT / \"presets.json\""
+        },
+        {
+          "before": "            \"allow_tf32\": torch.backends.cuda.matmul.allow_tf32,\n            \n",
+          "after": "            \"allow_tf32\": torch.backends.cuda.matmul.allow_tf32,\n\n"
+        }
+      ]
+    }
+  ]
+}

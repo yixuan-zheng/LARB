@@ -1,0 +1,2348 @@
+[
+  {
+    "batch": 1,
+    "width": "large",
+    "rep": 0,
+    "buckets_device_ms": {
+      "OTHER": 7.685058000000185,
+      "ATTENTION": 3.8320250000000216,
+      "FFN": 10.212031000000005
+    },
+    "gpu_activity_counts": {
+      "kernel": 5370,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3864,
+      "ATTENTION": 1242,
+      "FFN": 315
+    },
+    "ffn_narrowable_layers_device_ms": 5.9309460000000005,
+    "ffn_unchanged_layers_device_ms": 4.281085000000001,
+    "top_bucket_ops": [
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 9.899964
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.323634000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 1.9297679999999826
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.1374090000000008
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.0524590000000025
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 0.691653
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6429079999999973
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 0.6345310000000005
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 0.5353019999999993
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.4940109999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.4075580000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 0.29008100000000003
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.17920000000000008
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.16944199999999984
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.16035500000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.14515500000000006
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.13964600000000013
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.10070600000000003
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 0.091586
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.09126300000000012
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.08275199999999999
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::std",
+        "device_ms": 0.06179400000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.054238000000000015
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.05404899999999999
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.05027100000000001
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.720075999999988,
+        "calls": 5325
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.340352,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6436999999999999,
+        "calls": 51
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 0.641482,
+        "calls": 16
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.046694000000000006,
+        "calls": 35
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.036696,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.030351000000000003,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": 5.3290705182007514e-14,
+      "ATTENTION": 7.904787935331115e-14
+    }
+  },
+  {
+    "batch": 1,
+    "width": "small",
+    "rep": 0,
+    "buckets_device_ms": {
+      "OTHER": 7.684331000000184,
+      "ATTENTION": 3.83029700000002,
+      "FFN": 7.459089000000009
+    },
+    "gpu_activity_counts": {
+      "kernel": 5370,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3864,
+      "ATTENTION": 1242,
+      "FFN": 315
+    },
+    "ffn_narrowable_layers_device_ms": 3.1675410000000004,
+    "ffn_unchanged_layers_device_ms": 4.291548000000001,
+    "top_bucket_ops": [
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 7.168205000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.3264790000000004
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 1.9290629999999807
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.1371599999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.0505660000000014
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 0.6916830000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6430449999999974
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 0.6361940000000008
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 0.5339569999999993
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.49228900000000003
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.40739700000000034
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 0.29078400000000004
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.17814700000000008
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.16953599999999983
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.159775
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.14502900000000007
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.13971700000000012
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.10041499999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 0.09164699999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.09145500000000012
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.08262499999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.05440000000000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.05382599999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.050432000000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::gelu",
+        "device_ms": 0.049536999999999984
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.747656999999958,
+        "calls": 5325
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.343632,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6353219999999998,
+        "calls": 51
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 0.19867600000000002,
+        "calls": 16
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.045449,
+        "calls": 35
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.035339999999999996,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.030968,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": -4.618527782440651e-14,
+      "ATTENTION": -1.9984014443252818e-13
+    }
+  },
+  {
+    "batch": 1,
+    "width": "small",
+    "rep": 1,
+    "buckets_device_ms": {
+      "OTHER": 7.68386800000018,
+      "ATTENTION": 3.8301980000000175,
+      "FFN": 7.457589000000006
+    },
+    "gpu_activity_counts": {
+      "kernel": 5370,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3864,
+      "ATTENTION": 1242,
+      "FFN": 315
+    },
+    "ffn_narrowable_layers_device_ms": 3.1713869999999997,
+    "ffn_unchanged_layers_device_ms": 4.286202,
+    "top_bucket_ops": [
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 7.1661909999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.321761000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 1.9297159999999818
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.135587
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.0539220000000022
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 0.6915870000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6428529999999976
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 0.6346830000000012
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 0.5352699999999991
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.493758
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.40749000000000046
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 0.2899550000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.1788830000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.16944499999999982
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.16060700000000003
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.14499300000000007
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.13948900000000009
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.10102300000000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 0.091711
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.09142600000000009
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.082559
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.05411400000000003
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.053919999999999996
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.05014300000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::gelu",
+        "device_ms": 0.04979299999999998
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 20.566499000000032,
+        "calls": 5325
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.338495,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6636459999999998,
+        "calls": 51
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 0.17801399999999998,
+        "calls": 16
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.049310999999999994,
+        "calls": 35
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.038305,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.03158,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": 7.815970093361102e-14,
+      "ATTENTION": -1.5232259897857148e-13
+    }
+  },
+  {
+    "batch": 1,
+    "width": "large",
+    "rep": 1,
+    "buckets_device_ms": {
+      "OTHER": 7.679273000000189,
+      "ATTENTION": 3.8325000000000204,
+      "FFN": 10.206559000000007
+    },
+    "gpu_activity_counts": {
+      "kernel": 5370,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3864,
+      "ATTENTION": 1242,
+      "FFN": 315
+    },
+    "ffn_narrowable_layers_device_ms": 5.927811000000001,
+    "ffn_unchanged_layers_device_ms": 4.278747999999999,
+    "top_bucket_ops": [
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 9.895074000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.3191900000000008
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 1.929621999999981
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.1369660000000008
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.0512060000000014
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 0.691812
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6429879999999977
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 0.6365170000000006
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 0.5344649999999992
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.49225899999999967
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.40755900000000017
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 0.290976
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.1783650000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.16950399999999988
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.15993800000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.14512000000000005
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.13996700000000015
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.10095799999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 0.092127
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.09181100000000005
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.08262399999999998
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::std",
+        "device_ms": 0.060833000000000005
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.05433800000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.05388999999999999
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.05024300000000002
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 20.39551500000001,
+        "calls": 5325
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.340633,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6598860000000001,
+        "calls": 51
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 0.6152270000000001,
+        "calls": 16
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.04712600000000001,
+        "calls": 35
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.03647,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.035618000000000004,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": -7.105427357601002e-15,
+      "ATTENTION": 8.526512829121202e-14
+    }
+  },
+  {
+    "batch": 1,
+    "width": "large",
+    "rep": 2,
+    "buckets_device_ms": {
+      "OTHER": 7.686220000000188,
+      "ATTENTION": 3.8307000000000264,
+      "FFN": 10.219594999999996
+    },
+    "gpu_activity_counts": {
+      "kernel": 5370,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3864,
+      "ATTENTION": 1242,
+      "FFN": 315
+    },
+    "ffn_narrowable_layers_device_ms": 5.933002999999999,
+    "ffn_unchanged_layers_device_ms": 4.286592000000001,
+    "top_bucket_ops": [
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 9.90711499999999
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.324143000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 1.9307559999999804
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.1362289999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.0524860000000023
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 0.691718
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6433919999999983
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 0.634721000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 0.5346589999999994
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.4933109999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.407588
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 0.2896970000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.17909700000000006
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.1695009999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.1606380000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.14502400000000007
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.1395200000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.10105500000000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 0.09209599999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.09132500000000009
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.082752
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::std",
+        "device_ms": 0.061795
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.05404700000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.053952
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.05030200000000002
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 20.45151400000002,
+        "calls": 5325
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.338404,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6613629999999999,
+        "calls": 51
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 0.6296339999999999,
+        "calls": 16
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.047786,
+        "calls": 35
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.036381,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.031415,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": -1.8118839761882555e-13,
+      "ATTENTION": -1.0658141036401503e-14
+    }
+  },
+  {
+    "batch": 1,
+    "width": "small",
+    "rep": 2,
+    "buckets_device_ms": {
+      "OTHER": 7.684891000000191,
+      "ATTENTION": 3.8302630000000164,
+      "FFN": 7.460879000000009
+    },
+    "gpu_activity_counts": {
+      "kernel": 5370,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3864,
+      "ATTENTION": 1242,
+      "FFN": 315
+    },
+    "ffn_narrowable_layers_device_ms": 3.1761449999999996,
+    "ffn_unchanged_layers_device_ms": 4.284733999999999,
+    "top_bucket_ops": [
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 7.169711000000003
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.324390000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 1.929357999999983
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.1366479999999992
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.0522910000000016
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 0.6917800000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.643363999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 0.636480000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 0.5342749999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.4923469999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.4075550000000005
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 0.2904040000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.17820900000000012
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.16937199999999988
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.15974200000000008
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.14499800000000007
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.13981100000000013
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.10057399999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 0.091777
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.09151900000000009
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.082688
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.054337000000000024
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.05398799999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.05011100000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::gelu",
+        "device_ms": 0.04963299999999999
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 20.415955000000036,
+        "calls": 5325
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.3450959999999998,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6544719999999997,
+        "calls": 51
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 0.184716,
+        "calls": 16
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.04652300000000001,
+        "calls": 35
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.037024999999999995,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.030889000000000003,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": -7.993605777301127e-15,
+      "ATTENTION": -2.2648549702353193e-13
+    }
+  },
+  {
+    "batch": 64,
+    "width": "large",
+    "rep": 0,
+    "buckets_device_ms": {
+      "OTHER": 10.059039000000123,
+      "ATTENTION": 38.67502699999994,
+      "FFN": 11.777344000000003
+    },
+    "gpu_activity_counts": {
+      "kernel": 5536,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3955,
+      "ATTENTION": 1282,
+      "FFN": 350
+    },
+    "ffn_narrowable_layers_device_ms": 6.859623999999999,
+    "ffn_unchanged_layers_device_ms": 4.91772,
+    "top_bucket_ops": [
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 13.781120000000017
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 12.662188999999998
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 11.33341
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 6.464875000000006
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.940865
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 2.9152660000000004
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 2.1389310000000075
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.534542000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.501335000000003
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 1.3523800000000026
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6879759999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.561671999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.49597400000000014
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.259491
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.2565189999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.1870720000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.17958999999999972
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.15193499999999988
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.12377399999999995
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.11504199999999996
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.11292699999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.10332800000000004
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.09529599999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.08409400000000002
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::gelu",
+        "device_ms": 0.082016
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.362322000000027,
+        "calls": 5108
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 6.512170999999999,
+        "calls": 16
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.650487,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.665362,
+        "calls": 51
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.1926559999999999,
+        "calls": 432
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.047419,
+        "calls": 35
+      },
+      {
+        "name": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+        "cpu_ms": 0.04696700000000001,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.031583,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": 7.993605777301127e-14,
+      "ATTENTION": 2.2026824808563106e-13
+    }
+  },
+  {
+    "batch": 64,
+    "width": "small",
+    "rep": 0,
+    "buckets_device_ms": {
+      "OTHER": 9.949818000000125,
+      "ATTENTION": 38.461482999999866,
+      "FFN": 8.529950999999999
+    },
+    "gpu_activity_counts": {
+      "kernel": 5534,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3953,
+      "ATTENTION": 1282,
+      "FFN": 350
+    },
+    "ffn_narrowable_layers_device_ms": 3.614567,
+    "ffn_unchanged_layers_device_ms": 4.915384,
+    "top_bucket_ops": [
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 13.71999800000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 12.683922
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 8.156633
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 6.42234400000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.915213999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 2.895934
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 2.1152000000000064
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.4844220000000035
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.4435639999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 1.3352790000000012
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.680492
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.5539289999999987
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.48918699999999976
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.2563529999999999
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.2529309999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.18515300000000012
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.17766599999999974
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.1501479999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.11379199999999993
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.11212999999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.11209499999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.09772700000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.09507199999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.082048
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::gelu",
+        "device_ms": 0.07033899999999997
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.832889999999963,
+        "calls": 5108
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 5.898252,
+        "calls": 16
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.649226,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.663855,
+        "calls": 51
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.1849490000000001,
+        "calls": 432
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.04785699999999998,
+        "calls": 35
+      },
+      {
+        "name": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+        "cpu_ms": 0.045850000000000016,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.030744,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": -4.085620730620576e-14,
+      "ATTENTION": 5.684341886080802e-14
+    }
+  },
+  {
+    "batch": 64,
+    "width": "large",
+    "rep": 1,
+    "buckets_device_ms": {
+      "OTHER": 10.033219000000127,
+      "ATTENTION": 38.6495139999999,
+      "FFN": 11.765641999999994
+    },
+    "gpu_activity_counts": {
+      "kernel": 5533,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3952,
+      "ATTENTION": 1282,
+      "FFN": 350
+    },
+    "ffn_narrowable_layers_device_ms": 6.849137999999999,
+    "ffn_unchanged_layers_device_ms": 4.916504000000001,
+    "top_bucket_ops": [
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 13.77519400000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 12.667216000000003
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 11.325730999999996
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 6.4435920000000095
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.9415340000000008
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 2.92144
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 2.132059000000008
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.5316580000000004
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.4944240000000018
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 1.3482580000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6847799999999992
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.5587209999999982
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.4929339999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.25948699999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.25571099999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.1871370000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.17936099999999972
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.1513919999999999
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.12284699999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.11468899999999994
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.112421
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.10073700000000006
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.0952
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.08416400000000002
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::gelu",
+        "device_ms": 0.08185800000000001
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.555469999999964,
+        "calls": 5108
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 6.5505640000000005,
+        "calls": 16
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.65581,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.693056,
+        "calls": 51
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.18487199999999993,
+        "calls": 432
+      },
+      {
+        "name": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+        "cpu_ms": 0.054289000000000004,
+        "calls": 35
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.04823699999999998,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.03182299999999999,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": -4.796163466380676e-14,
+      "ATTENTION": -4.973799150320701e-14
+    }
+  },
+  {
+    "batch": 64,
+    "width": "small",
+    "rep": 1,
+    "buckets_device_ms": {
+      "OTHER": 9.87358500000011,
+      "ATTENTION": 38.39864299999992,
+      "FFN": 8.523391999999998
+    },
+    "gpu_activity_counts": {
+      "kernel": 5532,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3951,
+      "ATTENTION": 1282,
+      "FFN": 350
+    },
+    "ffn_narrowable_layers_device_ms": 3.6082620000000003,
+    "ffn_unchanged_layers_device_ms": 4.91513,
+    "top_bucket_ops": [
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 13.686461000000017
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 12.706772
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 8.155581999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 6.382256000000003
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.9025239999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 2.898112
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 2.1002570000000067
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.4694560000000003
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.438383
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 1.3226399999999983
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6743130000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.5496059999999993
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.4842289999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.25439800000000007
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.250437
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.18278800000000006
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.1752609999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.14844099999999982
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.11254599999999987
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.11088099999999997
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.11081799999999996
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.10185900000000003
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.09366300000000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.08153500000000001
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::gelu",
+        "device_ms": 0.06950599999999998
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.526341000000013,
+        "calls": 5108
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 5.926297,
+        "calls": 16
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.6447120000000002,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6662969999999999,
+        "calls": 51
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.18205900000000003,
+        "calls": 432
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.046744000000000015,
+        "calls": 35
+      },
+      {
+        "name": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+        "cpu_ms": 0.046053,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.031465999999999994,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": 4.263256414560601e-14,
+      "ATTENTION": 3.623767952376511e-13
+    }
+  },
+  {
+    "batch": 64,
+    "width": "small",
+    "rep": 2,
+    "buckets_device_ms": {
+      "OTHER": 9.877165000000112,
+      "ATTENTION": 38.406137999999906,
+      "FFN": 8.524061999999995
+    },
+    "gpu_activity_counts": {
+      "kernel": 5530,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3949,
+      "ATTENTION": 1282,
+      "FFN": 350
+    },
+    "ffn_narrowable_layers_device_ms": 3.6088719999999994,
+    "ffn_unchanged_layers_device_ms": 4.91519,
+    "top_bucket_ops": [
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 13.696452000000017
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 12.697229000000002
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 8.155191999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 6.392295000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.9059519999999996
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 2.8974409999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 2.100446000000005
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.4693890000000014
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.4378790000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 1.3235959999999998
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6745660000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.5487789999999991
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.48497000000000007
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.25465399999999994
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.2508869999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.18319900000000014
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.17583799999999974
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.14832099999999981
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.11258099999999992
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.11139299999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.11136099999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.098748
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.09382700000000002
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.081185
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::gelu",
+        "device_ms": 0.06966499999999998
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.547418999999987,
+        "calls": 5108
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 5.899338000000002,
+        "calls": 16
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.65003,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.6784390000000001,
+        "calls": 51
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.18276100000000026,
+        "calls": 432
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.04732099999999999,
+        "calls": 35
+      },
+      {
+        "name": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+        "cpu_ms": 0.046148,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.031567000000000005,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": 9.237055564881302e-14,
+      "ATTENTION": 1.4210854715202004e-14
+    }
+  },
+  {
+    "batch": 64,
+    "width": "large",
+    "rep": 2,
+    "buckets_device_ms": {
+      "OTHER": 10.039367000000137,
+      "ATTENTION": 38.675428999999944,
+      "FFN": 11.781133999999996
+    },
+    "gpu_activity_counts": {
+      "kernel": 5529,
+      "gpu_memcpy": 51
+    },
+    "bucket_gpu_activity_counts": {
+      "OTHER": 3948,
+      "ATTENTION": 1282,
+      "FFN": 350
+    },
+    "ffn_narrowable_layers_device_ms": 6.8612020000000005,
+    "ffn_unchanged_layers_device_ms": 4.919932000000001,
+    "top_bucket_ops": [
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::copy_",
+        "device_ms": 13.772414000000014
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_efficient_attention_forward",
+        "device_ms": 12.671952999999998
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mm",
+        "device_ms": 11.33939799999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::cat",
+        "device_ms": 6.461224000000007
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mm",
+        "device_ms": 2.936446
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::_flash_attention_forward",
+        "device_ms": 2.9175059999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::copy_",
+        "device_ms": 2.1356000000000077
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mm",
+        "device_ms": 1.5367549999999992
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mul",
+        "device_ms": 1.497620000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::mean",
+        "device_ms": 1.351473000000001
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::pow",
+        "device_ms": 0.6864739999999995
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add",
+        "device_ms": 0.5586579999999978
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mul",
+        "device_ms": 0.49392600000000014
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::add_",
+        "device_ms": 0.25987299999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::bmm",
+        "device_ms": 0.25762799999999997
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::mean",
+        "device_ms": 0.18729400000000015
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::pow",
+        "device_ms": 0.17994599999999972
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::add",
+        "device_ms": 0.1517789999999999
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::mul",
+        "device_ms": 0.12336099999999998
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::neg",
+        "device_ms": 0.11510699999999997
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::tanh",
+        "device_ms": 0.11261399999999999
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::fill_",
+        "device_ms": 0.10377900000000002
+      },
+      {
+        "bucket": "OTHER",
+        "op": "aten::div",
+        "device_ms": 0.09513800000000001
+      },
+      {
+        "bucket": "ATTENTION",
+        "op": "aten::where",
+        "device_ms": 0.083746
+      },
+      {
+        "bucket": "FFN",
+        "op": "aten::gelu",
+        "device_ms": 0.08205000000000003
+      }
+    ],
+    "runtime": [
+      {
+        "name": "cudaLaunchKernel",
+        "cpu_ms": 19.477135999999977,
+        "calls": 5108
+      },
+      {
+        "name": "cudaStreamSynchronize",
+        "cpu_ms": 6.555065999999999,
+        "calls": 16
+      },
+      {
+        "name": "cudaDeviceSynchronize",
+        "cpu_ms": 1.639859,
+        "calls": 2
+      },
+      {
+        "name": "cudaMemcpyAsync",
+        "cpu_ms": 0.675661,
+        "calls": 51
+      },
+      {
+        "name": "cudaDeviceGetAttribute",
+        "cpu_ms": 0.18019500000000013,
+        "calls": 432
+      },
+      {
+        "name": "cudaFuncSetAttribute",
+        "cpu_ms": 0.046423,
+        "calls": 35
+      },
+      {
+        "name": "cudaOccupancyMaxActiveBlocksPerMultiprocessor",
+        "cpu_ms": 0.04490699999999999,
+        "calls": 35
+      },
+      {
+        "name": "cudaStreamIsCapturing",
+        "cpu_ms": 0.030969,
+        "calls": 30
+      }
+    ],
+    "scope_counts": {
+      "ATTENTION": 35,
+      "FFN": 35
+    },
+    "profiler_vs_trace_delta_ms": {
+      "FFN": 7.460698725481052e-14,
+      "ATTENTION": -1.4210854715202004e-14
+    }
+  }
+]
