@@ -295,6 +295,45 @@ class StateApplierMixin:
             st.last_token_s = float(t_end)
 
 
+def accounting_check(state) -> dict:
+    """Check every invariant the loop claims, on a finished run.
+
+    Lives here (torch-free) rather than in ``validate_harness`` so that *every* run
+    can self-validate, including CPU replay runs, without importing torch for the
+    check itself.  ``validate_harness.gate_accounting`` is a thin wrapper over it.
+    """
+    problems = []
+    for r in state.completed:
+        outcome = r.outcome()
+        if len(r.token_times) != r.generated:
+            problems.append(f"{r.request_id}: {len(r.token_times)} timestamps vs "
+                            f"{r.generated} tokens")
+        if len(r.prefill_widths) < 1:
+            problems.append(f"{r.request_id}: no prefill width recorded")
+        if len(r.decode_widths) != max(0, r.generated - 1):
+            problems.append(f"{r.request_id}: {len(r.decode_widths)} decode widths vs "
+                            f"{r.generated - 1} decode tokens")
+        if len(r.step_widths()) != r.generated:
+            problems.append(f"{r.request_id}: step_widths length "
+                            f"{len(r.step_widths())} != {r.generated}")
+        if r.generated != r.output_tokens_target:
+            problems.append(f"{r.request_id}: generated {r.generated} != trace "
+                            f"{r.output_tokens_target}")
+        if r.prefill_pos != r.prompt_tokens:
+            problems.append(f"{r.request_id}: prefilled {r.prefill_pos} of "
+                            f"{r.prompt_tokens} prompt tokens")
+        if any(b < a for a, b in zip(r.token_times, r.token_times[1:])):
+            problems.append(f"{r.request_id}: token timestamps are not monotone")
+        if outcome["ttft_s"] is not None and outcome["ttft_s"] <= 0:
+            problems.append(f"{r.request_id}: non-positive TTFT")
+    for it in state.iterations:
+        if abs(it["duration_s"] - max(0.0, it["t_end_s"] - it["t_start_s"])) > 1e-9:
+            problems.append(f"iteration {it['iteration']}: duration != t_end - t_start")
+    return {"passed": not problems, "n_requests": len(state.completed),
+            "n_iterations": state.iteration, "problems": problems[:20],
+            "n_problems": len(problems)}
+
+
 def count_switches(width_seq) -> int:
     return sum(1 for a, b in zip(width_seq, width_seq[1:]) if a != b)
 

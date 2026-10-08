@@ -1,0 +1,11 @@
+trace,rate_scale,runs,paired_ids,id_sets_identical,prompt_mismatches,target_mismatches,arrival_mismatches,passed
+azure_code_steady,1.64,3,220,True,0,0,0,True
+azure_conv_burst,0.14,3,150,True,0,0,0,True
+azure_conv_burst,0.371,3,220,True,0,0,0,True
+azure_conv_burst,0.825,3,220,True,0,0,0,True
+azure_conv_mixshift,0.594,3,220,True,0,0,0,True
+azure_conv_steady,0.1,9,150,True,0,0,0,True
+azure_conv_steady,0.2,3,150,True,0,0,0,True
+azure_conv_steady,0.294,3,220,True,0,0,0,True
+azure_conv_steady,0.529,3,220,True,0,0,0,True
+azure_conv_steady,0.764,3,220,True,0,0,0,True

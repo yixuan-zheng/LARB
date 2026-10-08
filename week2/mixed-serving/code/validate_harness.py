@@ -68,39 +68,13 @@ def _fresh(executor, config, decode_mode=None):
 # Accounting invariants (pure function of a completed run)
 # --------------------------------------------------------------------------- #
 def gate_accounting(state) -> dict:
-    """Every invariant the loop claims, checked on a finished run."""
-    problems = []
-    for r in state.completed:
-        outcome = r.outcome()
-        if len(r.token_times) != r.generated:
-            problems.append(f"{r.request_id}: {len(r.token_times)} timestamps vs "
-                            f"{r.generated} tokens")
-        if len(r.prefill_widths) < 1:
-            problems.append(f"{r.request_id}: no prefill width recorded")
-        if len(r.decode_widths) != max(0, r.generated - 1):
-            problems.append(f"{r.request_id}: {len(r.decode_widths)} decode widths vs "
-                            f"{r.generated - 1} decode tokens")
-        if len(r.step_widths()) != r.generated:
-            problems.append(f"{r.request_id}: step_widths length "
-                            f"{len(r.step_widths())} != {r.generated}")
-        if r.generated != r.output_tokens_target:
-            problems.append(f"{r.request_id}: generated {r.generated} != trace "
-                            f"{r.output_tokens_target}")
-        if r.prefill_pos != r.prompt_tokens:
-            problems.append(f"{r.request_id}: prefilled {r.prefill_pos} of "
-                            f"{r.prompt_tokens} prompt tokens")
-        if any(b < a for a, b in zip(r.token_times, r.token_times[1:])):
-            problems.append(f"{r.request_id}: token timestamps are not monotone")
-        if outcome["ttft_s"] is not None and outcome["ttft_s"] <= 0:
-            problems.append(f"{r.request_id}: non-positive TTFT")
-    for it in state.iterations:
-        if abs(it["duration_s"] - max(0.0, it["t_end_s"] - it["t_start_s"])) > 1e-9:
-            problems.append(f"iteration {it['iteration']}: duration != t_end - t_start")
-    return _verdict("accounting", not problems,
+    """Wrapper over ``serving_core.accounting_check`` (the same check every run gets)."""
+    result = core.accounting_check(state)
+    return _verdict("accounting", result["passed"],
                     "all per-request and per-iteration invariants hold"
-                    if not problems else "; ".join(problems[:5]),
-                    n_requests=len(state.completed), n_iterations=state.iteration,
-                    problems=problems)
+                    if result["passed"] else "; ".join(result["problems"][:5]),
+                    n_requests=result["n_requests"], n_iterations=result["n_iterations"],
+                    problems=result["problems"])
 
 
 # --------------------------------------------------------------------------- #
@@ -156,24 +130,42 @@ def gate_batch_equivalence(executor, prompt_lengths=(24, 48), output_tokens=3,
 
 
 def gate_injected_delay(executor, trace, config, contract, injection_ms=10.0) -> dict:
-    """Insert a known delay into the decode path and check the meter sees it."""
-    def run(inject):
+    """Insert a known delay into the forwards and check the meter sees it.
+
+    Two probes, because they answer different questions:
+
+    * ``inject_all_ms`` delays **every** forward, so every inter-token gap grows by the
+      injection and the reported max-ITL must move by ~the injection.  This is the
+      assertion.
+    * ``inject_decode_ms`` delays only decode steps -- the realistic case, but diluted in
+      a median-of-max-gap statistic whenever a prefill gap dominates each request's
+      maximum.  Measured and reported, not asserted in both directions.
+    """
+    def run(**hooks):
         clone = _fresh(executor, config)
-        clone.inject_decode_ms = float(inject)
+        for name, value in hooks.items():
+            setattr(clone, name, float(value))
         _state, report = serving.measured_run(
             trace, config, policies.build_policy("static_large"), contract, clone,
             clock=core.WallClock())
         return report
 
-    base, injected = run(0.0), run(injection_ms)
-    delta_ms = injected["max_itl_s"]["median"] - base["max_itl_s"]["median"]
-    ok = (0.5 * injection_ms) <= delta_ms <= (3.0 * injection_ms + 5.0)
-    return _verdict("injected_delay", ok,
-                    f"median max-ITL moved {delta_ms:.1f} ms for a {injection_ms:.0f} ms "
-                    f"injection",
-                    injection_ms=injection_ms, delta_ms=delta_ms,
+    base = run()
+    all_forwards = run(inject_all_ms=injection_ms)
+    decode_only = run(inject_decode_ms=injection_ms)
+    delta_all = all_forwards["max_itl_s"]["median"] - base["max_itl_s"]["median"]
+    delta_decode = decode_only["max_itl_s"]["median"] - base["max_itl_s"]["median"]
+    ok = (0.5 * injection_ms) <= delta_all <= (1.5 * injection_ms)
+    detail = (f"all-forward injection moved median max-ITL {delta_all:.1f} ms "
+              f"(expect ~{injection_ms:.0f} ms); decode-only injection moved it "
+              f"{delta_decode:.1f} ms, diluted because each request's largest gap is "
+              f"usually the prefill iteration")
+    return _verdict("injected_delay", ok, detail,
+                    injection_ms=injection_ms, delta_all_ms=delta_all,
+                    delta_decode_only_ms=delta_decode,
                     base_median_ms=base["max_itl_s"]["median"],
-                    injected_median_ms=injected["max_itl_s"]["median"])
+                    all_median_ms=all_forwards["max_itl_s"]["median"],
+                    decode_only_median_ms=decode_only["max_itl_s"]["median"])
 
 
 # --------------------------------------------------------------------------- #
@@ -219,7 +211,17 @@ def run_gates(executor, static_workers, *, trace=None, config=None, contract=Non
                                          decode_batch_cap=4, max_running=4)
     contract = contract or slo_mod.SLOContract(ttft_s=1e6, itl_gate_s=1e6)
     gates = [gate_switchable_equals_static(executor, static_workers),
-             gate_batch_equivalence(executor, config=config)]
+             gate_batch_equivalence(executor, config=config),
+             # Prompts **past the sliding window** (512) as well as short ones: the window
+             # makes per-layer cache lengths differ, which is where a mask sized from one
+             # global length silently breaks.  This is the case that caught exactly that.
+             # ... and with a small prefill budget so the *chunked* prefill path is
+             # exercised as well (long prompts are split, and a sliding layer's keys then
+             # start at a different logical position than a global layer's).
+             gate_batch_equivalence(
+                 executor, prompt_lengths=(700, 900), output_tokens=3,
+                 config=core.EngineConfig(token_budget=512, prefill_token_budget=256,
+                                          decode_batch_cap=8, max_running=8))]
     if trace is not None and level != "none":
         gates.append(gate_injected_delay(executor, trace, config, contract))
         if level == "full":

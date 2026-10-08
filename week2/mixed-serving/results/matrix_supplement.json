@@ -1,0 +1,114 @@
+{
+ "derived_from": "results/costs/capacity.json",
+ "capacity": {
+  "reference": "batch-1 prefill (the loop's default path), largest measured decode batch",
+  "presets": {
+   "large": {
+    "prefill_ms_per_token": 0.07401400059461594,
+    "prefill_tokens_per_s": 13510.95727789566,
+    "decode_tokens_per_s": 1097.6466358711955,
+    "decode_ms_at_largest_batch": 58.30656051635742
+   },
+   "small": {
+    "prefill_ms_per_token": 0.06204500049352646,
+    "prefill_tokens_per_s": 16117.334064721883,
+    "decode_tokens_per_s": 1102.4288935290288,
+    "decode_ms_at_largest_batch": 58.05363082885742
+   }
+  },
+  "service": {
+   "mean_prompt_tokens": 1117.0070778564207,
+   "mean_output_tokens": 248.7613751263903,
+   "gpu_seconds_per_request": 0.3093057277268298,
+   "capacity_rps": 3.2330471451313443,
+   "prefill_time_fraction": 0.2672894651264617,
+   "decode_time_fraction": 0.7327105348735383
+  },
+  "load_ladder_rps": {
+   "underloaded": 1.6165235725656721,
+   "saturated": 2.90974243061821,
+   "overloaded": 4.202961288670748,
+   "backlog_inducing": 6.466094290262689,
+   "note": "requests/s; --rate-scale = ladder rate / the trace window's own mean rate"
+  },
+  "recommended_rate_scales": {
+   "underloaded": 0.29381953703494046,
+   "saturated": 0.5288751666628928,
+   "overloaded": 0.7639307962908453,
+   "backlog_inducing": 1.1752781481397618,
+   "trace_mean_rps": 5.501756584598519,
+   "note": "time-compression factors for --rate-scale on THIS trace; derive them before any policy comparison and do not retune"
+  },
+  "trace": "traces/azure_conv_steady.json",
+  "realized_capacity_note": "The 3.23 req/s model capacity assumes decode batches run full (64 rows). The measured loop cannot sustain that: padded-cache rebuild cost scales with concurrency x context (and needs ~2x the KV when the padded batch is transient), so the first overloaded cell hit CUDA OOM at max_running=96 and the realized equilibrium was ~1.5-1.6 req/s. The frozen ladder is unchanged; two lower control points were added after measuring this, before any policy run completed.",
+  "realized_capacity_rps_estimate": 1.6,
+  "oom_at_max_running": 96,
+  "max_running_used": 48
+ },
+ "ladder_fractions": {
+  "underloaded": 0.5,
+  "saturated": 0.9,
+  "overloaded": 1.3,
+  "backlog": 2.0
+ },
+ "max_run_seconds": 300.0,
+ "trace_stats": {
+  "azure_conv_steady.json": {
+   "mean_rps": 5.501756584598519,
+   "requests": 989,
+   "span_s": 179.76077,
+   "mean_prompt_tokens": 1117.0070778564207,
+   "mean_output_tokens": 248.7613751263903
+  },
+  "azure_conv_burst.json": {
+   "mean_rps": 7.840676473964482,
+   "requests": 1408,
+   "span_s": 179.576342,
+   "mean_prompt_tokens": 1422.3920454545455,
+   "mean_output_tokens": 126.6122159090909
+  }
+ },
+ "policies": [
+  "static_large",
+  "static_small",
+  "phase_hybrid"
+ ],
+ "cells": [
+  {
+   "id": "steady4-control_low",
+   "trace": "azure_conv_steady.json",
+   "rate_scale": 0.1,
+   "reps": 2,
+   "limit": 150,
+   "level": "control_low",
+   "fraction_of_capacity": 0.17,
+   "target_rps": 0.55,
+   "arrivals_rps": 0.55,
+   "x_capacity": 0.17,
+   "requests_used": 150,
+   "estimate_run_s": 348.0,
+   "estimate_s": 2088.0,
+   "truncated_window": true,
+   "notes": "The largest SLO effect of the study is here (static_large 0.520 -> phase_hybrid 0.693), and it rests on a single run per configuration. Two interleaved repetitions of the same cell give (a) the run-to-run spread this machine produces on its own -- including how often a host stall lands in a run -- and (b) 300 paired requests instead of 150, which tightens the exact McNemar test. Everything else is identical to the main-matrix cell: same trace, same limit, same caps.",
+   "max_running": 48
+  },
+  {
+   "id": "burst3-control_mid",
+   "trace": "azure_conv_burst.json",
+   "rate_scale": 0.14,
+   "reps": 1,
+   "limit": 150,
+   "level": "control_mid",
+   "fraction_of_capacity": 0.34,
+   "target_rps": 1.099,
+   "arrivals_rps": 1.099,
+   "x_capacity": 0.34,
+   "requests_used": 150,
+   "estimate_run_s": 211.0,
+   "estimate_s": 634.0,
+   "truncated_window": true,
+   "notes": "The burst window (48% of GPU seconds are prefill) at low load, where the ITL gate is the binding constraint. Tests whether the unloaded-cell result transfers to a different arrival pattern and a different length mix.",
+   "max_running": 48
+  }
+ ]
+}

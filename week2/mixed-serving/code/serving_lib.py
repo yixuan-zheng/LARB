@@ -143,6 +143,20 @@ def trim_last_token(pairs):
     return [(k[..., :-1, :], v[..., :-1, :]) for k, v in pairs]
 
 
+def tail(tensor, keep: int):
+    """The newest ``keep`` sequence positions of a cache tensor (never more than exist)."""
+    seq = cache_seq_len(tensor)
+    return tensor[..., max(0, seq - int(keep)):, :]
+
+
+def left_pad_rows_to(tensor, length: int):
+    """Left-pad a cache tensor's sequence axis to exactly ``length``."""
+    pad = int(length) - cache_seq_len(tensor)
+    if pad <= 0:
+        return tensor
+    return torch.nn.functional.pad(tensor, (0, 0, pad, 0))
+
+
 def left_pad_rows(tensors):
     """Left-pad a list of ``[1, h, L_i, d]`` tensors to a common ``L = max(L_i)``.
 
@@ -210,13 +224,21 @@ class GpuExecutor(core.StateApplierMixin):
         self.kv_high_water = 0
         self.cache_rebuild_ms_total = 0.0
         self.request_index = 0
-        #: Test hook for the harness's own injected-delay gate (``validate_harness``).
+        #: Test hooks for the harness's own injected-delay gate (``validate_harness``).
+        #: ``inject_all_ms`` delays *every* forward (prefill and decode), which is the
+        #: unambiguous probe: every inter-token gap grows by that amount, so the reported
+        #: max-ITL must move by ~the injection.  ``inject_decode_ms`` delays only decode
+        #: steps, which is the realistic case and is diluted in the median-of-max gap
+        #: whenever a prefill gap dominates that maximum -- so it is measured and
+        #: reported, not asserted in both directions.
         self.inject_decode_ms = 0.0
+        self.inject_all_ms = 0.0
         self._plans = {name: sched.WidthPlan.from_preset(name) for name in PRESET_NAMES}
         self._num_layers = len(controller.layers)
         #: KV-owning layers, learned from the first real prefill (E4B: 35 text layers,
         #: 20 of which own a KV cache; the rest share it).
         self._num_kv_layers = None
+        self._kv_layer_types = None
         cfg = model.config.get_text_config() if hasattr(model.config, "get_text_config") \
             else model.config
         self._kv_heads = int(getattr(cfg, "num_key_value_heads", 0) or 0)
@@ -286,43 +308,80 @@ class GpuExecutor(core.StateApplierMixin):
         return len(self.rows)
 
     # -- attention masks ----------------------------------------------------- #
-    def _mask_dict(self, lengths, kv_len: int):
-        """Explicit additive 4-D masks for a padded batch, one per attention type.
+    def _mask_dict(self, logical, padded_by_type: dict):
+        """Explicit additive 4-D masks, one per attention type, sized per type.
 
-        Gemma 3n mixes sliding-window and global attention, and HuggingFace wants a
-        ``{"full_attention": ..., "sliding_attention": ...}`` mapping for that.  Passing
-        a 2-D mask instead makes HF size the mask itself and it rejects the request for
-        padded batches ("size of tensor a (25) must match b (49)"), so the masks are
-        built here: shape ``[batch, 1, q_len=1, kv_len]``, ``0`` where a key may be
-        attended and ``finfo.min`` where it may not.
+        Gemma 3n mixes **sliding-window (512) and global** attention, and HuggingFace
+        wants a ``{"full_attention": ..., "sliding_attention": ...}`` mapping for that.
+        Two things make the sizes non-obvious and both were measured, not assumed:
 
-        Slot ``j`` of row ``i``'s cache holds logical position ``j - (kv_len - 1 - L_i)``,
-        so the logical distance from the new token (position ``L_i``) to slot ``j`` is
-        ``kv_len - 1 - j`` -- independent of the row.  A row may always attend its own
-        real slots and the new token; a sliding layer may additionally only see the last
-        ``sliding_window`` positions, which is the condition ``j > kv_len - 1 - window``.
+        * sliding layers **do not keep cache beyond their window** (the model's own
+          comment: "sliding layers will not remember the full states in their Cache once
+          we are past the sliding window"), so a sliding layer's key tensor has
+          ``min(context, 512)`` positions while a global layer's has the full context.
+          One global mask length therefore cannot work -- passing it produced
+          ``expanded size 1128 must match existing size 512`` on the first overloaded
+          run, which is exactly this mismatch.
+        * rows in a batch have different context lengths, so the mask has to say which
+          slots are real per row.
+
+        Slot ``j`` of a row's cache for a given type holds the row's ``logical``-th
+        newest real token when ``j >= kv - 1 - min(logical, kv - 1)``; the newest slot
+        (the token being generated) is always visible.
         """
         import torch as _torch
 
-        dtype = self.dtype
-        neg = _torch.finfo(dtype).min
-        batch = len(lengths)
-        mask = _torch.full((batch, 1, 1, kv_len), neg, dtype=dtype, device=self.device)
-        register = _torch.arange(kv_len, device=self.device)
-        for row, length in enumerate(lengths):
-            real = register >= (kv_len - 1 - int(length))
-            mask[row, 0, 0, real] = 0.0
-        mask[:, 0, 0, kv_len - 1] = 0.0  # the new token itself is always visible
+        neg = _torch.finfo(self.dtype).min
+        batch = len(logical)
+        out = {}
+        for layer_type, padded in padded_by_type.items():
+            kv = int(padded) + 1
+            if layer_type == "sliding_attention" and self._sliding_window:
+                kv = min(kv, int(self._sliding_window))
+            mask = _torch.full((batch, 1, 1, kv), neg, dtype=self.dtype, device=self.device)
+            register = _torch.arange(kv, device=self.device)
+            for row, length in enumerate(logical):
+                stored = min(int(length), kv - 1)
+                mask[row, 0, 0, register >= (kv - 1 - stored)] = 0.0
+            mask[:, 0, 0, kv - 1] = 0.0
+            out[layer_type] = mask
+        if "full_attention" not in out:
+            out["full_attention"] = out[next(iter(out))]
+        if "sliding_attention" not in out:
+            out["sliding_attention"] = out["full_attention"]
+        return out
+
+    def _prefill_mask(self, stored_by_type: dict, past: int, q_len: int):
+        """Explicit causal (and windowed) 4-D masks for one prefill chunk, per type.
+
+        ``stored_by_type`` is the **measured** number of keys each attention type holds
+        right now (read off the request's own cache), not a theory: a sliding layer keeps
+        only its window, and the exact count is a property of the model (a 700-token
+        context produced 511 stored sliding keys, not the 512 the window size suggests).
+        Deriving it instead of measuring it is what produced a one-slot ``SDPA`` mismatch.
+
+        Key ``j`` of a type with ``stored`` keys sits at logical position
+        ``past - stored + j``, and the query positions are ``past .. past + q_len - 1``, so
+        the causal condition is on logical positions.  Sliding layers additionally keep
+        only the last ``window`` positions.
+        """
+        import torch as _torch
+
+        neg = _torch.finfo(self.dtype).min
+        zero = _torch.zeros((), dtype=self.dtype, device=self.device)
+        floor = _torch.full((), neg, dtype=self.dtype, device=self.device)
         window = int(self._sliding_window or 0)
-        if window <= 0:
-            return {"full_attention": mask, "sliding_attention": mask}
-        sliding = _torch.full((batch, 1, 1, kv_len), neg, dtype=dtype, device=self.device)
-        allowed = register > (kv_len - 1 - window)
-        for row, length in enumerate(lengths):
-            real = register >= (kv_len - 1 - int(length))
-            sliding[row, 0, 0, real & allowed] = 0.0
-        sliding[:, 0, 0, kv_len - 1] = 0.0
-        return {"full_attention": mask, "sliding_attention": sliding}
+        positions = _torch.arange(int(q_len), device=self.device) + int(past)
+        out = {}
+        for layer_type in ("full_attention", "sliding_attention"):
+            stored = int(stored_by_type.get(layer_type, 0))
+            kv = stored + int(q_len)
+            keys = _torch.arange(kv, device=self.device) + (int(past) - stored)
+            allowed = keys.unsqueeze(0) <= positions.unsqueeze(1)
+            if layer_type == "sliding_attention" and window:
+                allowed = allowed & ((positions.unsqueeze(1) - keys.unsqueeze(0)) < window)
+            out[layer_type] = _torch.where(allowed, zero, floor)[None, None]
+        return out
 
     # -- forwards ------------------------------------------------------------ #
     def _prefill_forward(self, assignment, width: str):
@@ -334,19 +393,35 @@ class GpuExecutor(core.StateApplierMixin):
         chunk_ids = row["ids"][:, start:start + int(assignment.chunk_len)]
         self.apply_width(width)
         past = row["cache"]
+        # Explicit positions.  The model's default is ``arange(q) + past_seen_tokens``
+        # where ``past_seen_tokens`` comes from the cache's *first* layer -- a sliding
+        # layer, so it reports ``min(context, window)`` and the default is wrong for any
+        # context past the window (and for every resumed chunk).
+        position_ids = (torch.arange(int(assignment.chunk_len), device=self.device)
+                        + int(state.prefill_pos)).unsqueeze(0)
+        stored = (self._padded_by_type([row["pairs"]]) if row["pairs"]
+                  else {"full_attention": 0, "sliding_attention": 0})
+        attention_mask = self._prefill_mask(stored, int(state.prefill_pos),
+                                            int(assignment.chunk_len))
         with torch.inference_mode():
             out, wall_ms, gpu_ms = self.timer.time(
                 lambda: self.model(input_ids=chunk_ids, past_key_values=past,
+                                   position_ids=position_ids, attention_mask=attention_mask,
                                    use_cache=True, logits_to_keep=1))
         row["cache"] = out.past_key_values
         pairs = cache_pairs(row["cache"])
         if self._num_kv_layers is None:
             self._num_kv_layers = len(pairs)
+            self._kv_layer_types = list(self._layer_types[:self._num_kv_layers]) or \
+                ["full_attention"] * self._num_kv_layers
             if self._num_kv_layers != self._num_layers:
+                sliding = sum(1 for t in self._kv_layer_types if t == "sliding_attention")
                 print(f"[serving] KV sharing detected: {self._num_layers} text layers, "
-                      f"{self._num_kv_layers} own a KV cache", flush=True)
+                      f"{self._num_kv_layers} own a KV cache "
+                      f"({sliding} sliding, {self._num_kv_layers - sliding} full, window "
+                      f"{self._sliding_window})", flush=True)
         row["pairs"] = pairs
-        row["length"] = cache_seq_len(pairs[0][0])
+        row["length"] = int(state.prefill_pos) + int(assignment.chunk_len)
         if assignment.completes:
             # The first generated token comes from this forward's last position,
             # matching the frozen quality convention (step 0 is the prefill).
@@ -372,28 +447,42 @@ class GpuExecutor(core.StateApplierMixin):
         return [self._prefill_forward(a, width) for a in group]
 
     def _decode_batched(self, rows, width: str):
-        """One batched decode step with per-row padded caches and position_ids.
+        """One batched decode step with layer-aware padded caches and per-row positions.
 
-        All rows must present the same cache length to the model, so each row's
-        real KV is left-padded to the batch maximum and hidden with the attention
-        mask; ``position_ids`` restores each row's own logical position.  The pad
-        slots are never computed -- only copied -- and the rebuild time is charged
-        to the iteration as ``cache_rebuild_ms`` rather than hidden.
+        Each layer of each row's cache is left-padded to that layer's own batch maximum
+        and hidden with the mask for its attention type; ``position_ids`` restores each
+        row's own logical position.  The pad slots are copied, never computed, and the
+        rebuild time is charged to the iteration as ``cache_rebuild_ms``.
+
+        The per-layer treatment is not decoration: sliding layers hold at most their
+        window (512), so a single global length would mis-size both the mask and the
+        per-row slices.
         """
-        lengths = [int(self.rows[r]["length"]) for r in rows]
+        logical = [self._logical_length(r) for r in rows]
+        pairs_per_row = [self.rows[r]["pairs"] for r in rows]
         rebuild_start = time.perf_counter()
-        batched = []
-        for layer_idx in range(len(self.rows[rows[0]]["pairs"])):
-            k_batch, max_len = left_pad_rows(
-                [self.rows[r]["pairs"][layer_idx][0] for r in rows])
-            v_batch, _ = left_pad_rows(
-                [self.rows[r]["pairs"][layer_idx][1] for r in rows])
+        batched, padded_by_type = [], {}
+        for layer_idx in range(len(pairs_per_row[0])):
+            k_batch, padded = left_pad_rows([p[layer_idx][0] for p in pairs_per_row])
+            v_batch, _ = left_pad_rows([p[layer_idx][1] for p in pairs_per_row])
             batched.append((k_batch, v_batch))
-        mask = self._mask_dict(lengths, max_len + 1)
-        position_ids = torch.tensor([[length_i] for length_i in lengths],
+            layer_type = self._kv_layer_type(layer_idx)
+            if layer_type in padded_by_type and padded_by_type[layer_type] != padded:
+                # Same attention type must present the same length, or the shared mask
+                # would be wrong for one of them: take the maximum and re-pad.
+                padded_by_type[layer_type] = max(padded_by_type[layer_type], padded)
+            else:
+                padded_by_type[layer_type] = padded
+        for layer_idx in range(len(batched)):
+            target = padded_by_type[self._kv_layer_type(layer_idx)]
+            k, v = batched[layer_idx]
+            if cache_seq_len(k) != target:
+                k, v = left_pad_rows_to(k, target), left_pad_rows_to(v, target)
+                batched[layer_idx] = (k, v)
+        mask = self._mask_dict(logical, padded_by_type)
+        position_ids = torch.tensor([[length] for length in logical],
                                     dtype=torch.long, device=self.device)
-        template = self.rows[rows[0]]["cache"]
-        past = pair_to_cache(batched, template=template)
+        past = pair_to_cache(batched, template=self.rows[rows[0]]["cache"])
         input_ids = self._next_input_ids(rows)
         rebuild_ms = 1000.0 * (time.perf_counter() - rebuild_start)
         self.apply_width(width)
@@ -407,12 +496,13 @@ class GpuExecutor(core.StateApplierMixin):
         tokens = out.logits[:, -1, :].argmax(-1)
         for i, r in enumerate(rows):
             row = self.rows[r]
-            # Keep only this row's real slots: its L_i tokens plus the new one.
-            row["pairs"] = [(k[i:i + 1, ..., max_len - lengths[i]:max_len + 1, :],
-                             v[i:i + 1, ..., max_len - lengths[i]:max_len + 1, :])
+            keep = int(logical[i]) + 1
+            # Keep this row's newest `keep` real slots in every layer (sliding layers
+            # hold fewer, and that is exactly what the model kept).
+            row["pairs"] = [(tail(k[i:i + 1], keep), tail(v[i:i + 1], keep))
                             for k, v in new_pairs]
             row["cache"] = pair_to_cache(row["pairs"], template=new_pairs_cache)
-            row["length"] = lengths[i] + 1
+            row["length"] = keep
             token = int(tokens[i])
             row["tokens"].append(token)
             row["next_ids"] = torch.tensor([[token]], dtype=torch.long, device=self.device)
@@ -425,25 +515,42 @@ class GpuExecutor(core.StateApplierMixin):
         self.apply_width(width)
         for r in rows:
             row = self.rows[r]
-            length = int(row["length"])
+            logical = self._logical_length(r)
             past = row["cache"]
+            mask = self._mask_dict([logical], self._padded_by_type([row["pairs"]]))
+            position_ids = torch.tensor([[logical]], dtype=torch.long, device=self.device)
             with torch.inference_mode():
-                # No attention_mask and no position_ids: this row's cache is entirely
-                # real, so the stock path (what HF generation itself does) is both
-                # correct and the reference the gates compare against.
+                # Explicit mask and positions even for one row: the cache is entirely real
+                # so the mask is "everything visible", but the *sizes* still have to match
+                # each layer's own length (sliding layers hold only their window).
                 out, w, g = self.timer.time(
                     lambda: self.model(input_ids=self._next_input_ids([r]),
+                                       attention_mask=mask, position_ids=position_ids,
                                        past_key_values=past, use_cache=True,
                                        logits_to_keep=1))
             wall_ms += w
             gpu_ms += g
             row["cache"] = out.past_key_values
             row["pairs"] = cache_pairs(row["cache"])
-            row["length"] = length + 1
+            row["length"] = self._logical_length(r) + 1
             token = int(out.logits[0, -1, :].argmax(-1))
             row["tokens"].append(token)
             row["next_ids"] = torch.tensor([[token]], dtype=torch.long, device=self.device)
         return {"wall_ms": wall_ms, "gpu_ms": gpu_ms, "rebuild_ms": 0.0}
+
+    def apply_first_token(self, request_id: str):
+        """Turn a completed prefill's logits into the request's first generated token.
+
+        Shared by the loop and by ``calibrate.py`` so the two cannot drift: a decode
+        step needs ``next_ids`` to exist, and only the prefill can create it.
+        """
+        row = self.rows[request_id]
+        if row.get("logits") is None:
+            return None
+        token = int(row["logits"][0].argmax(-1))
+        row["tokens"] = [token]
+        row["next_ids"] = torch.tensor([[token]], dtype=torch.long, device=self.device)
+        return token
 
     def _next_input_ids(self, rows):
         """The token each row is about to consume (its own last generated token)."""
@@ -459,6 +566,8 @@ class GpuExecutor(core.StateApplierMixin):
 
         for group in plan.prefill_groups:
             results = self._prefill_group(group, plan.prefill_width)
+            if self.inject_all_ms:
+                time.sleep(self.inject_all_ms / 1000.0)
             t_end = clock.now()
             prefill_widths.append(plan.prefill_width)
             for res in results:
@@ -468,12 +577,8 @@ class GpuExecutor(core.StateApplierMixin):
                                      prefill_width=plan.prefill_width)
             self.apply_prefill(one, t_start, t_end)
             for a in group:
-                row = self.rows[a.request_id]
-                if a.completes and row.get("logits") is not None:
-                    token = int(row["logits"][0].argmax(-1))
-                    row["tokens"] = [token]
-                    row["next_ids"] = torch.tensor([[token]], dtype=torch.long,
-                                                   device=self.device)
+                if a.completes:
+                    self.apply_first_token(a.request_id)
 
         if plan.decode:
             fn = self._decode_batched if self.decode_mode == "batched" \
@@ -484,9 +589,9 @@ class GpuExecutor(core.StateApplierMixin):
             rebuild_ms += res["rebuild_ms"]
             self.apply_decode(plan, clock.now())
             if self.inject_decode_ms:
-                # Gate hook: a known extra delay the harness must be able to see.
                 time.sleep(self.inject_decode_ms / 1000.0)
-
+            if self.inject_all_ms:
+                time.sleep(self.inject_all_ms / 1000.0)
         switches = self.controller.n_switches - switches_before
         recent = self.controller.apply_times_ms[-switches:] if switches else []
         log = core.make_iteration_log(
@@ -503,6 +608,45 @@ class GpuExecutor(core.StateApplierMixin):
             cache_rebuild_ms=rebuild_ms,
             note="" if not switches else "width change applied this iteration")
         return {"switches": switches, "log": log}
+
+    # -- bookkeeping the model's own cache cannot be asked for ---------------- #
+    def _padded_by_type(self, pairs_per_row: list) -> dict:
+        """Per-attention-type cache length *before* the appended token, i.e. the mask's kv.
+
+        Layers of one attention type must agree, because the model takes one mask per
+        type; if they ever disagree the mask would be silently wrong for one of them, so
+        this raises instead of guessing.
+        """
+        out = {}
+        for pairs in pairs_per_row:
+            for layer_idx, (k, _v) in enumerate(pairs):
+                layer_type = self._kv_layer_type(layer_idx)
+                seq = cache_seq_len(k)
+                if layer_type in out and out[layer_type] != seq:
+                    raise RuntimeError(
+                        f"layers of type {layer_type!r} disagree on cache length "
+                        f"({out[layer_type]} vs {seq}): the shared mask would be wrong")
+                out[layer_type] = seq
+        if not out:
+            out["full_attention"] = 0
+        return out
+
+    def _logical_length(self, request_id: str) -> int:
+        """A request's logical context length (prompt + generated), independent of cache.
+
+        Never read this back from the cache: sliding layers hold at most their window,
+        so a cache-derived length is not the context length.
+        """
+        state = self.states.get(request_id)
+        if state is None:
+            return int(self.rows[request_id].get("length", 0))
+        return int(state.prefill_pos) + int(state.generated)
+
+    def _kv_layer_type(self, layer_idx: int) -> str:
+        """Attention type of the ``layer_idx``-th *KV-owning* layer."""
+        if self._kv_layer_types and layer_idx < len(self._kv_layer_types):
+            return self._kv_layer_types[layer_idx]
+        return "full_attention"
 
     # -- reporting ----------------------------------------------------------- #
     def describe(self) -> dict:

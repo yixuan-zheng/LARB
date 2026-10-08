@@ -162,6 +162,9 @@ def run_one(spec, trace, config, contract, *, mode, executor=None, cost_table=No
         "policy": policy.name, "policy_stub": bool(policy.stub),
         "policy_describe": policy.describe(), "rep": spec["rep"], "mode": mode,
         "config": config.to_dict(), "contract": contract.to_dict(), "report": report,
+        # Per-run self-validation: the same invariants the gate suite checks, run on
+        # every real run so a corrupt schedule cannot reach the results table.
+        "accounting": core.accounting_check(state),
         "requests": slo_mod.request_rows(outcomes, contract),
         "iterations": state.iterations,
         "wall_s": state.wall_s,
@@ -273,7 +276,9 @@ def main() -> None:
         import serving_lib as serving
         import validate_harness
 
-        lib.prepare_runtime(argparse.Namespace())
+        _ns = argparse.ArgumentParser(add_help=False)
+        lib.add_common_args(_ns, default_reps=1, default_warmup=1)
+        lib.prepare_runtime(_ns.parse_args([]))
         is_cuda = str(args.device).startswith("cuda")
         runtime["clock_ramp"] = (lib.clock_ramp(2.0, device=args.device) if is_cuda
                                  else {"skipped": True})

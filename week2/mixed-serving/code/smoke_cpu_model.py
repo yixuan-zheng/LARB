@@ -46,11 +46,13 @@ import slo as slo_mod  # noqa: E402
 import workload  # noqa: E402
 
 
-def load_model(dtype):
+def load_model(dtype, device: str = "cpu"):
     from transformers import AutoTokenizer, Gemma3nForCausalLM
 
     model = Gemma3nForCausalLM.from_pretrained(
         lib.MODEL, revision=lib.REVISION, dtype=dtype, local_files_only=True).eval()
+    if str(device).startswith("cuda"):
+        model = model.to(device)
     tokenizer = AutoTokenizer.from_pretrained(lib.MODEL, revision=lib.REVISION,
                                               local_files_only=True)
     if tokenizer.pad_token_id is None:
@@ -170,10 +172,11 @@ def diagnose_divergence(model, tokenizer, executor, prompt_len: int, out_tokens:
     return out
 
 
-def run_once(model, controller, tokenizer, trace, policy_name, decode_mode, dtype):
+def run_once(model, controller, tokenizer, trace, policy_name, decode_mode, dtype,
+             device="cpu"):
     config = core.EngineConfig(token_budget=64, prefill_token_budget=4096,
                                decode_batch_cap=8, max_running=8, max_seq_len=8192)
-    executor = serving.GpuExecutor(model, controller, tokenizer, config, device="cpu",
+    executor = serving.GpuExecutor(model, controller, tokenizer, config, device=device,
                                    dtype=dtype, decode_mode=decode_mode,
                                    vram_budget_bytes=None)
     contract = slo_mod.SLOContract(ttft_s=1e6, itl_gate_s=1e6)
@@ -189,14 +192,19 @@ def main() -> None:
     parser.add_argument("--prompt-lengths", default="24,32,48")
     parser.add_argument("--dtype", default="float32")
     parser.add_argument("--out", default=str(ROOT / "results" / "smoke_cpu_model.json"))
+    parser.add_argument("--device", default="cpu",
+                        help="cpu (thorough, slow) or cuda (fast; use --prompt-lengths "
+                             "700,900 to exercise the 512-token sliding window)")
     args = parser.parse_args()
 
+    if str(args.device).startswith("cuda") and args.dtype == "float32":
+        args.dtype = "bfloat16"  # bf16 is the serving precision and is far faster on GPU
     dtype = {"float32": torch.float32, "bfloat16": torch.bfloat16}[args.dtype]
     lengths = [int(x) for x in args.prompt_lengths.split(",")][:args.requests]
     print(f"[smoke] loading {lib.MODEL}@{lib.REVISION[:8]} dtype={args.dtype} on CPU ...",
           flush=True)
     t0 = time.time()
-    model, tokenizer = load_model(dtype)
+    model, tokenizer = load_model(dtype, args.device)
     print(f"[smoke] loaded in {time.time() - t0:.1f}s", flush=True)
 
     trace = make_trace(lengths, args.output_tokens)
@@ -239,7 +247,7 @@ def main() -> None:
     steps = {}
     ctrl_ref.apply(plans["large"])
     executor_plain = run_once(model, _controller(model), tokenizer, trace, "static_large",
-                              "single_row", dtype)[2]
+                              "single_row", dtype, device=args.device)[2]
     verdict["diagnostic"] = diagnose_divergence(model, tokenizer, executor_plain,
                                                 lengths[0], args.output_tokens,
                                                 trace.requests[0]["request_id"])
@@ -248,7 +256,8 @@ def main() -> None:
         for policy_name in ("static_large", "phase_hybrid"):
             controller = _controller(model)
             state, report, executor = run_once(model, controller, tokenizer, trace,
-                                               policy_name, decode_mode, dtype)
+                                               policy_name, decode_mode, dtype,
+                                               device=args.device)
             key = f"{decode_mode}/{policy_name}"
             check(f"{key}_completed", len(state.completed) == len(trace.requests),
                   f"{len(state.completed)}/{len(trace.requests)} requests completed")

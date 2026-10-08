@@ -1,0 +1,47 @@
+{
+ "reference": "batch-1 prefill (the loop's default path), largest measured decode batch",
+ "presets": {
+  "large": {
+   "prefill_ms_per_token": 0.07816275209188461,
+   "prefill_tokens_per_s": 12793.817684725904,
+   "decode_tokens_per_s": 1125.0169060214628,
+   "decode_ms_at_largest_batch": 74.1370135001489
+  },
+  "medium": {
+   "prefill_ms_per_token": 0.07154224812984467,
+   "prefill_tokens_per_s": 13977.754769252751,
+   "decode_tokens_per_s": null,
+   "decode_ms_at_largest_batch": null
+  },
+  "small": {
+   "prefill_ms_per_token": 0.06509049981832504,
+   "prefill_tokens_per_s": 15363.22509108262,
+   "decode_tokens_per_s": 1138.2741867144186,
+   "decode_ms_at_largest_batch": 71.64770649978891
+  }
+ },
+ "service": {
+  "mean_prompt_tokens": 1117.0070778564207,
+  "mean_output_tokens": 248.7613751263903,
+  "gpu_seconds_per_request": 0.3084262467802039,
+  "capacity_rps": 3.242266215795303,
+  "prefill_time_fraction": 0.2830769048445837,
+  "decode_time_fraction": 0.7169230951554164
+ },
+ "load_ladder_rps": {
+  "underloaded": 1.6211331078976514,
+  "saturated": 2.9180395942157724,
+  "overloaded": 4.214946080533894,
+  "backlog_inducing": 6.484532431590606,
+  "note": "requests/s; --rate-scale = ladder rate / the trace window's own mean rate"
+ },
+ "recommended_rate_scales": {
+  "underloaded": 0.29465736678278553,
+  "saturated": 0.5303832602090139,
+  "overloaded": 0.7661091536352425,
+  "backlog_inducing": 1.1786294671311421,
+  "trace_mean_rps": 5.501756584598519,
+  "note": "time-compression factors for --rate-scale on THIS trace; derive them before any policy comparison and do not retune"
+ },
+ "trace": "traces/azure_conv_steady.json"
+}

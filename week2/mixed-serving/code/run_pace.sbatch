@@ -31,6 +31,21 @@ while [ "${1:-}" = "--" ]; do shift; done
 nvidia-smi
 
 case "$MODE" in
+  matrix)
+    # The measured run matrix: every declared cell, sequentially, on this one GPU.
+    # Extra arguments pass through (e.g. --only steady-overloaded --dry-run).
+    python -u code/run_matrix.py --matrix "${MATRIX:-results/matrix.json}" \
+      --budget-seconds "${BUDGET_S:-6300}" --gates "${GATES:-cheap}" "$@"
+    ;;
+  setup)
+    # Gates first (they prove the instrument), then the cost table measured through
+    # the loop's own forwards plus the capacity/load ladder derived from it.
+    python -u code/validate_harness.py --level "${GATE_LEVEL:-full}" --with-trace \
+      --out "results/gates/job-${SLURM_JOB_ID}.json" --min-sm-clock-mhz 1500
+    python -u code/calibrate.py --mode measure --device cuda \
+      --reps "${REPS:-5}" --out results/costs \
+      --trace "${TRACE:-traces/azure_conv_steady.json}"
+    ;;
   validate)
     python -u code/validate_harness.py --level "${GATE_LEVEL:-full}" --with-trace \
       --out "results/gates/job-${SLURM_JOB_ID}.json" --min-sm-clock-mhz 1500

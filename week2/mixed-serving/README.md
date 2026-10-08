@@ -5,9 +5,11 @@ workload at a fixed latency SLO, does a width policy — the single-switch phase
 (Small prefill → Large decode) in particular — improve **SLO-compliant goodput** over
 tuned static Large and static Small, and in which regime?
 
-It is a *harness*: it produces the raw per-request and per-iteration evidence a
-comparison needs. Evaluation, analysis and plotting are deliberately separate later
-steps, and the load-driven policy is workstream C's, not this one's.
+It is a *harness* first: it produces the raw per-request and per-iteration evidence a comparison
+needs, and it refuses to report a run whose accounting does not add up. The measured answer for this
+allocation is written up in `results/REPORT.md` (with every table regenerated from the committed
+artifacts by `code/analyze_serving.py`); plotting and the load-driven policy (workstream C) remain
+out of scope here, as does quality scoring of these runs (workstream B).
 
 ## What is here
 
@@ -22,12 +24,19 @@ steps, and the load-driven policy is workstream C's, not this one's.
 | `code/fetch_trace.py` | one-time download of the Azure trace CSVs into `traces/raw/` (git-ignored) |
 | `code/calibrate.py` | cost table: seeded from frozen Week 1 results, or measured through the loop's own forwards; plus the capacity/load-ladder report |
 | `code/validate_harness.py` | the gate suite (accounting, dynamic≡static, batched≡per-row, injected delay, null control) |
-| `code/run_serving.py` | the runner: interleaved policies × repetitions, crash-safe records, flat CSVs |
+| `code/run_serving.py` | the runner: interleaved policies x repetitions, crash-safe records, flat CSVs |
+| `code/build_matrix.py` | derives the run matrix (cells, rate-scales, per-cell budget caps) from the *measured* capacity, before any policy run |
+| `code/run_matrix.py` | the matrix driver: resumable (skips finished cells), budget-aware (refuses to start a cell it cannot finish), logs one line per cell |
+| `code/analyze_serving.py` | re-validates every run and emits the tables: per-run, per-cell, per-request paired comparisons with bootstrap intervals, SLO sensitivity, and the generated report |
 | `code/test_serving_cpu.py` | 89 CPU-only checks of the stdlib half (login node, seconds) |
 | `code/smoke_cpu_model.py` | **model-backed correctness check on CPU**: padded batched decode must equal the per-row reference *and* a one-shot greedy continuation |
-| `code/run_pace.sbatch` / `code/run_cpu.sbatch` | PACE launchers (GPU: validate/calibrate/serve; CPU: smoke/unit/seed/replay) |
+| `code/run_pace.sbatch` / `code/run_cpu.sbatch` | PACE launchers (GPU: `setup` = gates+calibrate, `matrix` = the run matrix, `validate`, `calibrate`, `serve`; CPU: smoke/unit/seed/replay) |
 | `traces/` | committed normalized windows + synthetic controls + `manifest.json` |
 | `results/contract.json` | **the frozen SLO / regime / goodput contract** (do not retune after seeing results) |
+| `results/plan_matrix.json`, `results/matrix.json` | the declared cells and the capacity-derived rate-scales (written before the runs) |
+| `results/gates/job-*.json` | gate verdicts from the GPU, with the clock guard and the worker digest they were taken under |
+| `results/logs/matrix.jsonl` | one line per finished cell: wall time, return code, per-policy attainment/goodput, accounting verdict |
+| `results/analysis/` | generated: `validation.csv`, `runs.csv`, `cells.csv`, `sensitivity.csv`, `paired_*.csv`, `analysis.json`, `analysis.md` |
 | `results/costs/` | seed cost table + `capacity.json` (the measured load ladder) |
 
 ## The design in six points
@@ -53,6 +62,23 @@ number if it had been left as an assumption:
   layers (HF sizes the mask itself and rejects it). The harness builds the two 4-D
   additive masks explicitly, for `full_attention` and `sliding_attention`, and passes
   them as the mapping HF expects.
+* **Sliding layers (28 of 35, window 512) do not keep cache beyond their window**, and
+  the 20 KV-owning layers are a *mix* (16 sliding + 4 global). So a cache has no single
+  length: a sliding layer holds `min(context, ~512)` keys while a global layer holds the
+  whole context. Three separate failures came out of assuming otherwise, all now covered
+  by gates: (a) a mask sized from one global length crashed with
+  `expanded size 1128 must match existing size 512`; (b) the same thing one level down in
+  a *chunked* prefill (a 2034-token chunk onto a 2048-token prefix is 4082 keys for global
+  layers but 2545 for sliding ones); (c) the exact sliding count is the model's, not the
+  window's (a 700-token context stored 511 sliding keys, not 512), so the harness *reads*
+  each type's stored length off the request's own cache instead of deriving it. Masks and
+  cache slices are therefore built per attention type, and the gate suite includes a
+  long-prompt, small-prefill-budget equivalence check that fails if the sizes drift.
+* **HF derives `past_seen_tokens` from the cache's *first* layer**, which here is a
+  sliding layer, so the model's implicit `position_ids` (`arange(q) + past_seen_tokens`)
+  and its implicit mask offsets are wrong once the context passes the window. Every
+  forward — prefill, chunked prefill and both decode paths — passes explicit
+  `position_ids` and an explicit per-type mask.
 
 1. **One model, three configurations.** Every configuration runs the same resident
    switchable full-weight E4B model and differs only in the width plan it applies.
@@ -164,6 +190,18 @@ sbatch --export=ALL,STUDY_ROOT=$PWD/week2/mixed-serving,STUDY_MODE=serve \
 | `injected_delay` | can the meter see a known delay? | median max-ITL moves by about the injected amount |
 | `null_diff` | how much does the harness move on its own? | identical schedules; the spread is reported as this machine's noise floor |
 
+### Checks on the analysis side, not just the harness side
+
+`analyze_serving.py` refuses to produce a table unless all of these hold, and reports each:
+
+| Check | What it catches |
+|---|---|
+| per-run validation | accounting invariants, request counts, forced output lengths, mode labels, and the identity `decode tokens + requests == generated tokens` (each request's first token comes from its prefill) |
+| pairing integrity | the same `request_id` is the same prompt, the same forced output length and the same arrival (to within wall-clock microseconds) under every configuration -- without this a "paired" comparison is comparing different requests |
+| stall accounting | iterations longer than any prefill chunk (0.4 s here), which fail every concurrent request at once and are host effects, not schedule |
+| attributable failures | ITL-over-gate failures excluding stall-suspect requests, i.e. the schedule-attributable part of the SLO signal |
+| latency identity | `mean_tpot == (e2e - ttft) / (tokens - 1)` and `ttft, max_itl <= e2e` for every finished request (5,820 requests in this allocation; worst relative error 2e-4, which is float storage, and zero ordering violations) |
+
 `run_serving.py --mode measured` runs the suite first and refuses to write results
 unless it passes (`--force` stamps every artifact `gates: failed_forced`).
 
@@ -199,12 +237,18 @@ exercised by the CPU checks and one sanity configuration, with no conclusions dr
 | `results/test_serving_cpu.json` | 89 CPU checks of the scheduler, budget, padding, SLO accounting and replay paths, including the known-effect and null controls |
 | `results/smoke_cpu_model.json` | the **real model on CPU**: `single_row` *and* padded `batched` decode each reproduce a plain one-shot greedy continuation token for token, for both width schedules (`static_large` all-large, `phase_hybrid` `SL_early`), and batched equals per-row |
 | `results/costs/cost_table_seed.json` | cost table seeded from the frozen Week 1 / decode-study measurements, with the source file named per cell |
-| `results/costs/capacity.json` | measured capacity (3.24 req/s, 28% prefill / 72% decode of GPU seconds for the conv window) and the recommended `--rate-scale` ladder |
+| `results/costs/capacity.json` | measured capacity (3.23 req/s, 27% prefill / 73% decode of GPU seconds for the conv window), the recommended `--rate-scale` ladder, and the measured *realized* capacity of this executor (~1.3-1.5 req/s, with the padded-cache rebuild as the cause and the CUDA-OOM point recorded) |
+| `results/costs/cost_table_measure.json` | the cost table measured through the loop's own forwards: prefill 0.7-16.2% cheaper at Small depending on chunk length (launch-bound below ~512 tokens), decode width-blind to within 0.6% |
+| `results/gates/job-*.json` | gate verdicts on the L40S, including a long-prompt, small-prefill-budget batch-equivalence check that covers the 512-token sliding window and chunked prefill |
+| `run-output/measured-cell-*.json` | every measured run: per-request latency and width history, per-iteration schedule and cost, the accounting verdict |
+| `results/REPORT.md` | **the write-up**: gates, measured costs, the frozen ladder and its one correction, all measured cells, the paired per-request comparisons, the stall accounting, and the conclusions |
+| `results/matrix_supplement.json` | the two-cell supplementary pass declared before the main matrix finished (two repetitions of the highest-signal cell, and the burst window at low load) |
+| `results/analysis/` | the re-validated tables (per-run, per-cell, paired per-request with bootstrap intervals, SLO sensitivity) generated by `analyze_serving.py` |
 | `results/replay-smoke/` | one labeled **simulated** run of all three policies on a 40-request load — a demonstration that the reporting path works, not a result |
 
-What is *not* here yet, and is the next work: measured GPU runs, the gate verdicts from
-a real device (`results/gates/job-*.json`), and the cost table measured through the loop
-(`results/costs/cost_table_measure.json`). Those need one L40S hour each and are the
-first thing to run after this harness landed.
+Measured runs from one L40S allocation are in `run-output/` (per run) and summarized
+in `results/analysis/`; `results/REPORT.md` is the human-readable write-up. Quality
+scoring of those runs (workstream B), the load-driven policy (workstream C) and any
+plotting are still out of scope here.
 
 

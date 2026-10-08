@@ -210,6 +210,21 @@ def capacity_report(table_doc: dict, trace_stats: dict | None = None) -> dict:
 # --------------------------------------------------------------------------- #
 # Measuring the loop's own forwards
 # --------------------------------------------------------------------------- #
+def _runtime_namespace(parser_factory=None):
+    """A complete args namespace for ``latency_lib.prepare_runtime``.
+
+    ``prepare_runtime`` reads ``threads`` and ``seed`` (and the peak overrides), so it
+    needs the full set of common arguments rather than a bare Namespace.
+    """
+    import argparse
+
+    import latency_lib as lib
+
+    parser = argparse.ArgumentParser(add_help=False)
+    lib.add_common_args(parser, default_reps=1, default_warmup=1)
+    return parser.parse_args([])
+
+
 def measure(*, statics=("small",), device="cuda", dtype=None, reps=5,
             prefill_chunks=PREFILL_CHUNKS, decode_batches=DECODE_BATCHES,
             min_sm_clock_mhz=1500, clock_ramp_s=2.0, verbose=True) -> dict:
@@ -220,7 +235,7 @@ def measure(*, statics=("small",), device="cuda", dtype=None, reps=5,
     import serving_lib as serving
 
     dtype = dtype or torch.bfloat16
-    lib.prepare_runtime(argparse.Namespace())
+    lib.prepare_runtime(_runtime_namespace())
     is_cuda = str(device).startswith("cuda")
     clock_info = lib.clock_ramp(clock_ramp_s, device=device if is_cuda else "cpu")
     guard = lib.wait_for_sm_clock(min_sm_clock_mhz) if is_cuda else {"skipped": True}
@@ -261,6 +276,7 @@ def measure(*, statics=("small",), device="cuda", dtype=None, reps=5,
                     req = fake(64, 8, f"d-{preset}-{batch}-{rep}-{i}")
                     executor._prefill_forward(  # noqa: SLF001
                         core.PrefillAssignment(req.request_id, 64, True, 64), preset)
+                    executor.apply_first_token(req.request_id)
                     rows.append(req.request_id)
                 samples.append(timed(executor._decode_batched(rows, preset)))  # noqa: SLF001
                 for rid in rows:
