@@ -107,7 +107,12 @@ def main() -> None:
                 if not runnable:
                     print(f"[s4] {grid_key}: SKIPPED (VRAM budget)", flush=True)
                     continue
-                prompt = prompts[prompt_len].repeat(len(runnable), 1).contiguous()
+                # Configured batch, NOT the number of runnable presets. S4 runs one preset
+                # per process, so ``len(runnable)`` is always 1: the configured batch was
+                # silently ignored and every "B8" row was really a batch-1 generation (with
+                # its tokens/second inflated by the batch label). Same fix as s2/s3; the
+                # tracked S4 results predate this and must be regenerated.
+                prompt = prompts[prompt_len].repeat(batch, 1).contiguous()
                 print(f"[s4] {grid_key}: {len(runnable)} presets x {args.reps} generations "
                       f"x {args.new_tokens} tokens", flush=True)
                 for preset in runnable:

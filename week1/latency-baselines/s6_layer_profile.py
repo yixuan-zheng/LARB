@@ -41,6 +41,11 @@ SCENARIO = "s6_layer_profile"
 MODULE_TAGS = (("mlp", "mlp"), ("self_attn", "self_attn"), ("altup", "altup"),
                ("laurel", "laurel"), ("per_layer_input", "per_layer_input_gate"),
                ("per_layer_projection", "per_layer_projection"), ("norm", "norm"))
+#: Modules invoked through named methods instead of ``forward``. Gemma 3n calls
+#: ``altup.predict``/``altup.correct`` directly, so forward hooks never fire for AltUp;
+#: these methods are timed by wrapping, and their parts are summed back into the parent
+#: tag in ``collect`` so the report shows a single ``altup`` share.
+METHOD_TIMED = {"altup": ("predict", "correct")}
 KERNEL_CATEGORIES = (("matmul", ("gemm", "gemv", "cutlass", "nvjet", "cublas", "mma")),
                      ("norm", ("norm", "rms")),
                      ("softmax", ("softmax",)),
@@ -68,7 +73,7 @@ class ModuleTimer:
     """CUDA-event timing for selected submodules, indexed by (tag, layer, rep)."""
 
     def __init__(self, model, reps: int):
-        self.events, self.handles = {}, []
+        self.events, self.handles, self._wrapped = {}, [], []
         layers = model.model.layers
         for layer_idx, layer in enumerate(layers):
             for name, module in layer.named_modules():
@@ -77,17 +82,25 @@ class ModuleTimer:
                 tag = tag_for(name)
                 if tag is None:
                     continue
+                if tag in METHOD_TIMED:
+                    for method_name in METHOD_TIMED[tag]:
+                        key = (f"{tag}:{method_name}", layer_idx)
+                        self.events[key] = [(torch.cuda.Event(enable_timing=True),
+                                             torch.cuda.Event(enable_timing=True))
+                                            for _ in range(reps)]
+                        self._wrap_method(module, method_name, key)
+                    continue
                 key = (tag, layer_idx)
                 self.events[key] = [(torch.cuda.Event(enable_timing=True),
                                      torch.cuda.Event(enable_timing=True)) for _ in range(reps)]
                 self.handles.append(module.register_forward_pre_hook(self._make_pre(key)))
                 self.handles.append(module.register_forward_hook(self._make_post(key)))
         self.rep = 0
-        # A hook pair only yields a duration if BOTH hooks fired. Some submodules are
-        # never invoked through ``forward`` at all -- Gemma 3n calls ``altup.predict``
-        # and ``altup.correct`` directly rather than ``altup(...)`` -- so their events
-        # stay unrecorded and ``elapsed_time`` would raise. Counting invocations makes
-        # that visible instead of fatal, and is itself a useful attribution fact.
+        # A hook pair only yields a duration if BOTH hooks fired; ``hits`` counts them so a
+        # module whose hooks did not both run is skipped rather than passed to
+        # ``elapsed_time`` (which would raise). AltUp is invoked as
+        # ``altup.predict``/``altup.correct`` rather than ``altup(...)`` and is therefore
+        # timed by method wrapping above, not by these forward hooks.
         self.hits = {}
 
     def _bump(self, key):
@@ -105,6 +118,25 @@ class ModuleTimer:
             self._bump(key)
         return hook
 
+    def _wrap_method(self, module, method_name, key):
+        """Time a bound method that bypasses ``forward`` (e.g. ``altup.predict``)."""
+        original = getattr(module, method_name)
+
+        def wrapper(*args, **kwargs):
+            self.events[key][self.rep][0].record()
+            self._bump(key)
+            out = original(*args, **kwargs)
+            self.events[key][self.rep][1].record()
+            self._bump(key)
+            return out
+
+        # Store the plain function as an instance attribute: instance-dict lookups are not
+        # descriptor-bound, so ``module.predict(x)`` calls ``wrapper(x)`` and the already
+        # bound ``original(x)`` receives exactly one argument (MethodType would double-bind
+        # self). ``close`` restores the bound method.
+        setattr(module, method_name, wrapper)
+        self._wrapped.append((module, method_name, original))
+
     def collect(self, reps: int) -> dict:
         """Median elapsed ms per (tag, layer), plus per-tag totals."""
         per_layer, invocations = {}, {}
@@ -119,6 +151,17 @@ class ModuleTimer:
             invocations[tag] += self.hits.get(((tag, layer_idx), 0), 0) // 2
             if samples:
                 per_layer.setdefault(tag, {})[layer_idx] = samples[len(samples) // 2]
+        # Merge method-timed parts (``altup:predict`` + ``altup:correct``) into their parent
+        # tag so the report shows one ``altup`` share rather than two fragments.
+        merged_layer, merged_inv = {}, {}
+        for tag, layers_map in per_layer.items():
+            dest = merged_layer.setdefault(tag.split(":", 1)[0], {})
+            for layer_idx, ms in layers_map.items():
+                dest[layer_idx] = dest.get(layer_idx, 0.0) + ms
+        for tag, count in invocations.items():
+            base = tag.split(":", 1)[0]
+            merged_inv[base] = merged_inv.get(base, 0) + count
+        per_layer, invocations = merged_layer, merged_inv
         totals = {tag: sum(v.values()) for tag, v in per_layer.items()}
         return {"per_layer_median_ms": {t: {str(k): v for k, v in sorted(d.items())}
                                         for t, d in per_layer.items()},
@@ -126,6 +169,9 @@ class ModuleTimer:
                 "tags_never_invoked": sorted(t for t in invocations if not per_layer.get(t))}
 
     def close(self):
+        for module, method_name, original in self._wrapped:
+            setattr(module, method_name, original)
+        self._wrapped = []
         for handle in self.handles:
             handle.remove()
         self.handles = []

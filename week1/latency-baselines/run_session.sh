@@ -24,7 +24,7 @@ mkdir -p "$LOG_DIR"
 START=$SECONDS
 P="small,medium,large"
 C="--min-sm-clock-mhz 1500"
-SCENARIOS="${SCENARIOS:-s1 s2 s3 s4 s5 s6 s7}"
+SCENARIOS="${SCENARIOS:-s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11}"
 
 record() { echo "$1" | tee -a "$STATUS"; }
 has() { case " $SCENARIOS " in *" $1 "*) return 0;; *) return 1;; esac; }
@@ -94,6 +94,32 @@ if has s7; then
       --prefill-len 1024 --batch 2 --capacity-contexts 1,512 --capacity-cap 64 \
       --reps 10 --warmup 3 $C
   done
+fi
+
+# Dynamic switching extension (s8-s11). Each builds one full-weight switchable model plus
+# the static references it compares against, so it runs as a single process with --statics.
+if has s8; then
+  # The gate: equivalence, switch-operation cost, mechanism tax and cold-switch penalty.
+  # Cheap (small prompts) and must pass before the schedule scenarios mean anything.
+  # shellcheck disable=SC2086
+  run s8_switch_mechanism 1200 python -u s8_switch_mechanism.py --tag session \
+    --statics small,medium --slice-modes view,materialize --prompt-len 512 --batch 4 \
+    --reps 20 --warmup 5 $C
+fi
+if has s9; then
+  # shellcheck disable=SC2086
+  run s9_switch_phase 1800 python -u s9_switch_phase.py --tag session \
+    --prompt-lengths 512,2048 --batch-sizes 1,4 --new-tokens 32 --reps 2 --warmup 1 $C
+fi
+if has s10; then
+  # shellcheck disable=SC2086
+  run s10_switch_iteration 1800 python -u s10_switch_iteration.py --tag session \
+    --context-lengths 512,2048 --batch-sizes 1,8 --new-tokens 48 --reps 2 --warmup 1 $C
+fi
+if has s11; then
+  # shellcheck disable=SC2086
+  run s11_switch_flexibility 900 python -u s11_switch_flexibility.py --tag session \
+    --statics small,medium --capacity-contexts 1,2048 --capacity-cap 128 $C
 fi
 
 run analyze_latency 300 python -u analyze_latency.py
