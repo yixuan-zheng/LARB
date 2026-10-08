@@ -1,0 +1,9 @@
+schedule,split,n,correct,accuracy,acc_lo,acc_hi,delta_pp,delta_lo,delta_hi,mcnemar_p,static_L_only,schedule_only,floor,no_answer,hit_max_len,mean_generated_len,frac_switched,mean_switches,frac_small,run_id
+static_L,dev,250,135,54.0,47.81,60.07,0.0,0.0,0.0,1.0,0,0,pass,0,11,100.3,0.0,0.0,0.0,gen-dev-20261001-205536
+static_S,dev,250,128,51.2,45.03,57.33,-2.8,-8.4,2.8,0.4011,29,22,not_established,0,10,95.6,0.0,0.0,1.0,gen-dev-20261001-205536
+LS_early,dev,250,130,52.0,45.82,58.12,-2.0,-7.6,4.0,0.5901,30,25,not_established,0,7,95.5,1.0,1.0,0.988,gen-dev-20261001-205536
+SL_early,dev,250,131,52.4,46.22,58.51,-1.6,-6.0,2.8,0.5847,17,13,not_established,0,12,99.3,1.0,1.0,0.012,gen-dev-20261001-205536
+LS_late,dev,250,129,51.6,45.43,57.72,-2.4,-5.2,0.0,0.146,9,3,not_established,0,13,101.0,0.808,0.81,0.284,gen-dev-20261001-205536
+SL_late,dev,250,134,53.6,47.41,59.68,-0.4,-5.6,4.8,1.0,22,21,not_established,0,7,94.9,0.812,0.81,0.74,gen-dev-20261001-205536
+alt16,dev,250,129,51.6,45.43,57.72,-2.4,-6.4,1.6,0.3269,16,10,not_established,0,6,97.2,1.0,5.56,0.45,gen-dev-20261001-205536
+alt4,dev,250,129,51.6,45.43,57.72,-2.4,-6.4,1.6,0.3449,17,11,not_established,0,8,96.2,1.0,23.42,0.488,gen-dev-20261001-205536

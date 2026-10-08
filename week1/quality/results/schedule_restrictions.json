@@ -1,0 +1,29 @@
+{
+  "status": "dev",
+  "source_run": "gen-dev-20261001-205536",
+  "task": "GSM8K 8-shot CoT, 250 dev questions, greedy, Gemma 3n E4B bf16",
+  "quality_gate": "<= 5 pp accuracy loss vs static_L; certified only if the 95% paired bootstrap lower bound is >= -5 pp",
+  "dev_results_pp_vs_static_L": {
+    "static_S": {"delta": -2.8, "ci95": [-8.4, 2.8], "mcnemar_p": 0.401},
+    "LS_early": {"delta": -2.0, "ci95": [-7.6, 4.0], "mcnemar_p": 0.590},
+    "SL_early": {"delta": -1.6, "ci95": [-6.0, 2.8], "mcnemar_p": 0.585},
+    "LS_late": {"delta": -2.4, "ci95": [-5.2, 0.0], "mcnemar_p": 0.146},
+    "SL_late": {"delta": -0.4, "ci95": [-5.6, 4.8], "mcnemar_p": 1.0},
+    "alt16": {"delta": -2.4, "ci95": [-6.4, 1.6], "mcnemar_p": 0.327},
+    "alt4": {"delta": -2.4, "ci95": [-6.4, 1.6], "mcnemar_p": 0.345}
+  },
+  "certified_under_strict_gate": ["static_L"],
+  "within_gate_on_point_estimate": ["static_L", "static_S", "LS_early", "SL_early", "LS_late", "SL_late", "alt16", "alt4"],
+  "restrictions": {
+    "switch_directions": "both allowed: no difference between large->small and small->large",
+    "small_prefill": "allowed: SL_early -1.6 pp, SL_late -0.4 pp",
+    "min_dwell_steps": "4 (smallest tested; alt4 is no worse than a single switch)",
+    "max_switches_per_request": "no limit supported by the data up to ~25 switches per answer (alt4)",
+    "per_step_quality_penalty": "none: every switching schedule lands between static_L and static_S, so there is no measured transition cost to model"
+  },
+  "caveats": [
+    "n = 250 gives paired 95% CIs of about +-5 pp; differences under ~5 pp cannot be resolved",
+    "one task (GSM8K) and one model; SQuAD pilot showed a larger Large-Small gap (6.5 pp)",
+    "schedules are global per step, matching one configuration per serving iteration"
+  ]
+}
