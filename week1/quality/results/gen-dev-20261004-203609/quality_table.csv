@@ -1,0 +1,2 @@
+schedule,split,n,correct,accuracy,acc_lo,acc_hi,delta_pp,delta_lo,delta_hi,mcnemar_p,static_L_only,schedule_only,floor,no_answer,hit_max_len,mean_generated_len,frac_switched,mean_switches,frac_small,run_id
+static_L,dev,48,29,60.42,46.31,72.98,0.0,0.0,0.0,1.0,0,0,pass,0,4,100.1,0.0,0.0,0.0,gen-dev-20261004-203609

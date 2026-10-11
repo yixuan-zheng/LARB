@@ -1,0 +1,5 @@
+schedule,split,n,correct,accuracy,acc_lo,acc_hi,delta_pp,delta_lo,delta_hi,mcnemar_p,static_L_only,schedule_only,floor,no_answer,hit_max_len,mean_generated_len,frac_switched,mean_switches,frac_small,run_id
+static_L,heldout,250,129,51.6,45.43,57.72,0.0,0.0,0.0,1.0,0,0,pass,0,9,98.1,0.0,0.0,0.0,gen-heldout-20261004-204404
+static_S,heldout,250,115,46.0,39.93,52.19,-5.6,-11.6,0.4,0.0925,37,23,fail,0,10,100.4,0.0,0.0,1.0,gen-heldout-20261004-204404
+SL_early,heldout,250,134,53.6,47.41,59.68,2.0,-2.8,6.8,0.5114,16,21,pass,0,6,97.2,1.0,1.0,0.012,gen-heldout-20261004-204404
+alt4,heldout,250,116,46.4,40.32,52.59,-5.2,-10.0,-0.4,0.047,25,12,fail,0,7,96.7,1.0,23.53,0.488,gen-heldout-20261004-204404
