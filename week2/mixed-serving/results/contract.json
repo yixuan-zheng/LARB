@@ -1,0 +1,73 @@
+{
+ "contract_version": 1,
+ "frozen_utc": "2026-10-08",
+ "workstream": "week2/mixed-serving (Week 2 workstream A: mixed prefill+decode goodput/SLO harness)",
+ "ownership": {
+  "harness_and_slo_definitions": "workstream A (this directory)",
+  "quality_floor": "week1/quality + workstream B (imported, not re-derived here)",
+  "load_driven_policy": "workstream C (a placeholder stub lives in code/policies.py)"
+ },
+ "primary": {
+  "ttft_s": 1.0,
+  "itl_gate_s": 0.2,
+  "itl_gate_name": "max_itl",
+  "tpot_mean_gate_s": 0.1,
+  "rule": "a request attains iff TTFT <= ttft_s AND max ITL <= itl_gate_s; the mean-TPOT gate is reported as a stricter secondary and TTFT-only attainment is reported alongside, so neither gate can hide the other's effect"
+ },
+ "sensitivity": {
+  "ttft_s": [0.5, 1.0, 2.0],
+  "max_itl_s": [0.1, 0.2],
+  "note": "reported for every run; the point of the grid is to show whether a width effect depends on the SLO choice, not to pick a winner"
+ },
+ "rationale": {
+  "ttft_1s": "measured unloaded TTFT here is 113-135 ms at batch 1 (128/1024-token prompts) and 738-840 ms for a batch-8 x 1024-token prefill (week1 s4_end_to_end). 1.0 s is ~7x the unloaded batch-1 value yet just above the single-shot batch-8 prefill, so it is achievable when the server is not saturated and is violated only when queueing/prefill interference appears. It is also the Week 1 pilot's value (week1/yixuan), so Week 1 and Week 2 numbers stay comparable. DistServe's chatbot tier for a small model is TTFT 0.25 s; 0.5-2.0 s brackets the practical range for an E4B-class model.",
+  "itl_200ms": "measured decode ITL is 53.6-57.3 ms and is width-independent (week1 s1/s3/s10 and week2/decode-study agree), so the ITL gate is a fairness guard rather than a width-sensitive lever; it binds only when prefill work is packed into an iteration with decodes. A 2048-token prefill costs about 29+131 = 160 ms of GPU before the ~55 ms decode step, so 200 ms max-ITL fires exactly on prefill-heavy iterations. Sarathi-Serve's rule (P99 TBT = 5x strict / 25x relaxed the single-request decode step) gives 275 ms / 1.4 s here; 200 ms sits between their relaxed and strict settings, and the 100 ms mean-TPOT secondary is the strict analogue."
+ },
+ "goodput": {
+  "definition": "completed, quality-eligible, SLO-satisfying requests per unit wall time",
+  "windows": {
+   "trace_window": "first arrival to the last completion (the Week 1 pilot's convention)",
+   "evaluation_window": "a declared warm-up removed, ending at the last completion"
+  },
+  "reported_always": [
+   "attainment rate (primary, secondary and TTFT-only)",
+   "non-attainment breakdown: TTFT-only, ITL-only, both, incomplete",
+   "TTFT p50/p95/p99, max-ITL p50/p95/p99, mean-TPOT, e2e",
+   "switches applied, requests that switched, prefill token share, padding waste",
+   "queue/backlog: fraction of iterations that began with an unstarted queue or an undecoded backlog",
+   "peak concurrent requests, VRAM deferrals, measured per-iteration GPU/host/cache-rebuild ms"
+  ]
+ },
+ "regime": {
+  "traces": [
+   "azure_conv_steady (180 s window at the trace's mean rate)",
+   "azure_conv_burst (180 s window at the highest measured rate)",
+   "azure_conv_mixshift (window with the largest change in length mix between halves)",
+   "azure_code_* (prefill-heavy negative control: p50 output 13 tokens)",
+   "synth_poisson, synth_gamma_burst (self-contained synthetic controls)"
+  ],
+  "load_ladder": {
+   "primary_variable": "--rate-scale (time compression t -> t/scale, scale > 1 = more load)",
+   "derivation": "results/costs/capacity.json: measured prefill/decode throughput -> gpu_seconds_per_request -> capacity_rps -> recommended rate scales (underloaded / saturated / overloaded / backlog-inducing), computed before any policy comparison"
+  },
+  "sustained_backlog_definition": "a run counts as overloaded iff (a) the fraction of iterations that began with an unstarted queue or an undecoded backlog exceeds 0.5 AND (b) TTFT p50 exceeds twice the unloaded TTFT for the same length mix. Runs that fail this are reported as underloaded and are never pooled with overloaded runs."
+ },
+ "quality_floor": {
+  "carried_from": "week1/quality (GSM8K 8-shot CoT, <= 5 pp EM loss vs static_L, 95% paired bootstrap)",
+  "allowed_transitions": "week1/quality/results/schedule_restrictions.json (both directions allowed; no dwell below 4 steps)",
+  "harness_policy": "the harness records the exact per-step width history of every request so the quality layer can score the schedule that actually ran; it applies no online quality penalty",
+  "phase_hybrid_note": "phase_hybrid's width history is exactly the SL_early schedule the frozen quality harness already scored on GSM8K dev (-1.6 pp, inside the floor)"
+ },
+ "limitations_to_state_in_every_result": [
+  "one FFN width per batch per iteration is the mechanism; mixed-width batches are unsupported",
+  "prefill and decode are executed sequentially inside an iteration (no fused mixed forward): this changes overlap, not work",
+  "batched decode left-pads per-row KV caches to the batch maximum and passes explicit position_ids; the rebuild cost is measured per iteration and charged (a production paged-attention server would not pay it, so absolute throughput here is conservative)",
+  "generation length is forced to the trace's output length (the Azure dataset's own replay convention), so output length cannot differ between configurations",
+  "single process, eager PyTorch, no continuous-batching runtime: this is a serving-loop harness, not a serving engine"
+ ],
+ "provenance": {
+  "instrument": "week1/latency-baselines (frozen): Timer dual-clock, clock guard, VRAM budget, latency_math statistics, dynamic_lib.SwitchController (S8 equivalence gate), switch_schedules.WidthPlan",
+  "workload_source": "Azure LLM inference traces 2023 (CC-BY, Splitwise ISCA 2024) shipped in the AzurePublicDataset repository",
+  "measured_vs_simulated": "results carry mode=measured or mode=replay; replay output is a cross-check, never evidence"
+ }
+}

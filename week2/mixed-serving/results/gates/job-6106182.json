@@ -1,0 +1,203 @@
+{
+ "level": "full",
+ "passed": true,
+ "gates": [
+  {
+   "gate": "switchable_equals_static",
+   "passed": true,
+   "detail": "dynamic width path is bit-identical to the static workers",
+   "per_preset": {
+    "small": {
+     "max_abs_logit": 0.0,
+     "mean_abs_logit": 0.0,
+     "same_argmax": true,
+     "finite": true
+    }
+   }
+  },
+  {
+   "gate": "batch_equivalence",
+   "passed": true,
+   "detail": "batched tokens equal per-row tokens",
+   "batched": {
+    "g0": [
+     108,
+     818,
+     108
+    ],
+    "g1": [
+     2157,
+     529,
+     1699
+    ]
+   },
+   "single_row": {
+    "g0": [
+     108,
+     818,
+     108
+    ],
+    "g1": [
+     2157,
+     529,
+     1699
+    ]
+   }
+  },
+  {
+   "gate": "injected_delay",
+   "passed": true,
+   "detail": "all-forward injection moved median max-ITL 9.6 ms (expect ~10 ms); decode-only injection moved it 4.4 ms, diluted because each request's largest gap is usually the prefill iteration",
+   "injection_ms": 10.0,
+   "delta_all_ms": 9.627378487493843,
+   "delta_decode_only_ms": 4.435137496329844,
+   "base_median_ms": 118.94452851265669,
+   "all_median_ms": 128.57190700015053,
+   "decode_only_median_ms": 123.37966600898653
+  },
+  {
+   "gate": "null_diff",
+   "passed": true,
+   "detail": "identical schedules; spread 0.0% TTFT / 0.2% ITL over 2 runs",
+   "ttft_median_ms": [
+    63.44830900488888,
+    63.4448675060412
+   ],
+   "itl_median_ms": [
+    118.16648200328927,
+    118.38341900147498
+   ],
+   "spread_ttft": 5.424245719598432e-05,
+   "spread_itl": 0.0018341753453647181,
+   "identical_schedule": true
+  }
+ ],
+ "created_utc": "2026-10-08T15:58:58Z",
+ "clock_guard": {
+  "ok": true,
+  "clocks": {
+   "sm_mhz": 1950.0,
+   "mem_mhz": 9001.0,
+   "power_w": 350.25,
+   "util_pct": 99.0
+  },
+  "waited_s": 0.021
+ },
+ "worker": {
+  "large": {
+   "preset": "large",
+   "widths": [
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384
+   ],
+   "dtype": "torch.bfloat16",
+   "device": "NVIDIA L40S",
+   "load_seconds": 5.951840870984597,
+   "param_bytes": {
+    "embeddings": 1074790400,
+    "attention": 671116800,
+    "ffn": 7046430720,
+    "norms": 720896,
+    "altup": 865760,
+    "laurel": 18493440,
+    "per_layer_input": 110100992,
+    "embeddings_per_layer": 4697620480,
+    "other": 1125122048,
+    "total": 14745261536
+   },
+   "narrow_ffn_layers": 0,
+   "wide_ffn_layers": 35
+  },
+  "small": {
+   "preset": "small",
+   "widths": [
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    16384,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192,
+    8192
+   ],
+   "dtype": "torch.bfloat16",
+   "device": "NVIDIA L40S",
+   "load_seconds": 1.439031011017505,
+   "param_bytes": {
+    "embeddings": 1074790400,
+    "attention": 671116800,
+    "ffn": 5033164800,
+    "norms": 720896,
+    "altup": 865760,
+    "laurel": 18493440,
+    "per_layer_input": 110100992,
+    "embeddings_per_layer": 4697620480,
+    "other": 1125122048,
+    "total": 12731995616
+   },
+   "narrow_ffn_layers": 20,
+   "wide_ffn_layers": 15
+  }
+ },
+ "device": "cuda"
+}

@@ -1,0 +1,45 @@
+{
+ "reference": "batch-1 prefill (the loop's default path), largest measured decode batch",
+ "presets": {
+  "large": {
+   "prefill_ms_per_token": 0.07401400059461594,
+   "prefill_tokens_per_s": 13510.95727789566,
+   "decode_tokens_per_s": 1097.6466358711955,
+   "decode_ms_at_largest_batch": 58.30656051635742
+  },
+  "small": {
+   "prefill_ms_per_token": 0.06204500049352646,
+   "prefill_tokens_per_s": 16117.334064721883,
+   "decode_tokens_per_s": 1102.4288935290288,
+   "decode_ms_at_largest_batch": 58.05363082885742
+  }
+ },
+ "service": {
+  "mean_prompt_tokens": 1117.0070778564207,
+  "mean_output_tokens": 248.7613751263903,
+  "gpu_seconds_per_request": 0.3093057277268298,
+  "capacity_rps": 3.2330471451313443,
+  "prefill_time_fraction": 0.2672894651264617,
+  "decode_time_fraction": 0.7327105348735383
+ },
+ "load_ladder_rps": {
+  "underloaded": 1.6165235725656721,
+  "saturated": 2.90974243061821,
+  "overloaded": 4.202961288670748,
+  "backlog_inducing": 6.466094290262689,
+  "note": "requests/s; --rate-scale = ladder rate / the trace window's own mean rate"
+ },
+ "recommended_rate_scales": {
+  "underloaded": 0.29381953703494046,
+  "saturated": 0.5288751666628928,
+  "overloaded": 0.7639307962908453,
+  "backlog_inducing": 1.1752781481397618,
+  "trace_mean_rps": 5.501756584598519,
+  "note": "time-compression factors for --rate-scale on THIS trace; derive them before any policy comparison and do not retune"
+ },
+ "trace": "traces/azure_conv_steady.json",
+ "realized_capacity_note": "The 3.23 req/s model capacity assumes decode batches run full (64 rows). The measured loop cannot sustain that: padded-cache rebuild cost scales with concurrency x context (and needs ~2x the KV when the padded batch is transient), so the first overloaded cell hit CUDA OOM at max_running=96 and the realized equilibrium was ~1.5-1.6 req/s. The frozen ladder is unchanged; two lower control points were added after measuring this, before any policy run completed.",
+ "realized_capacity_rps_estimate": 1.6,
+ "oom_at_max_running": 96,
+ "max_running_used": 48
+}

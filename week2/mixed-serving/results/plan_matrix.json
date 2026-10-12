@@ -1,0 +1,75 @@
+[
+ {
+  "id": "steady2",
+  "trace": "azure_conv_steady.json",
+  "levels": [
+   "control_mid",
+   "control_low"
+  ],
+  "limit": 150,
+  "fractions": {
+   "control_mid": 0.34,
+   "control_low": 0.17
+  },
+  "reps": 1,
+  "max_running": 48,
+  "notes": "low-load controls (0.34x and 0.17x nominal capacity, i.e. ~0.7x and ~0.34x the measured realized capacity of ~1.6 req/s). Added after measuring that realized capacity, before any policy run completed, to bracket a genuinely unloaded regime. Limited to 150 requests because low load means a long arrival span. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy."
+ },
+ {
+  "id": "steady",
+  "trace": "azure_conv_steady.json",
+  "levels": [
+   "saturated",
+   "overloaded",
+   "underloaded"
+  ],
+  "limit": 220,
+  "reps": 1,
+  "max_running": 48,
+  "notes": "representative window (mean prompt 1117, mean output 249), frozen ladder points; ordered first because the knee is where a width policy can matter. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy."
+ },
+ {
+  "id": "code",
+  "trace": "azure_code_steady.json",
+  "levels": [
+   "overloaded"
+  ],
+  "limit": 220,
+  "reps": 1,
+  "max_running": 48,
+  "notes": "prefill-heavy control (p50 output 13 tokens): the lever's best case. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy."
+ },
+ {
+  "id": "burst",
+  "trace": "azure_conv_burst.json",
+  "levels": [
+   "saturated"
+  ],
+  "limit": 220,
+  "reps": 1,
+  "max_running": 48,
+  "notes": "highest-rate real window; short prompts (ctx p50 430), so decode-heavy. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy."
+ },
+ {
+  "id": "mixshift",
+  "trace": "azure_conv_mixshift.json",
+  "levels": [
+   "overloaded"
+  ],
+  "limit": 220,
+  "reps": 1,
+  "max_running": 48,
+  "notes": "largest change in request-length mix between halves. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy."
+ },
+ {
+  "id": "burst2",
+  "trace": "azure_conv_burst.json",
+  "levels": [
+   "backlog"
+  ],
+  "limit": 220,
+  "reps": 1,
+  "max_running": 48,
+  "notes": "burst window at 2x nominal capacity. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy."
+ }
+]

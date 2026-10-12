@@ -1,0 +1,418 @@
+{
+ "schema_version": 1,
+ "source": {
+  "kind": "measured_loop",
+  "created_utc": "2026-10-08T16:04:03Z",
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "reps": 5,
+  "clock_ramp": {
+   "seconds": 2.0018723210087046,
+   "matrix": 4096
+  },
+  "clock_guard": {
+   "ok": true,
+   "clocks": {
+    "sm_mhz": 1920.0,
+    "mem_mhz": 9001.0,
+    "power_w": 351.06,
+    "util_pct": 99.0
+   },
+   "waited_s": 0.021
+  },
+  "worker": {
+   "large": {
+    "preset": "large",
+    "widths": [
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384
+    ],
+    "dtype": "torch.bfloat16",
+    "device": "NVIDIA L40S",
+    "load_seconds": 5.958307460998185,
+    "param_bytes": {
+     "embeddings": 1074790400,
+     "attention": 671116800,
+     "ffn": 7046430720,
+     "norms": 720896,
+     "altup": 865760,
+     "laurel": 18493440,
+     "per_layer_input": 110100992,
+     "embeddings_per_layer": 4697620480,
+     "other": 1125122048,
+     "total": 14745261536
+    },
+    "narrow_ffn_layers": 0,
+    "wide_ffn_layers": 35
+   },
+   "small": {
+    "preset": "small",
+    "widths": [
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     16384,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192,
+     8192
+    ],
+    "dtype": "torch.bfloat16",
+    "device": "NVIDIA L40S",
+    "load_seconds": 1.44038084501517,
+    "param_bytes": {
+     "embeddings": 1074790400,
+     "attention": 671116800,
+     "ffn": 5033164800,
+     "norms": 720896,
+     "altup": 865760,
+     "laurel": 18493440,
+     "per_layer_input": 110100992,
+     "embeddings_per_layer": 4697620480,
+     "other": 1125122048,
+     "total": 12731995616
+    },
+    "narrow_ffn_layers": 20,
+    "wide_ffn_layers": 15
+   }
+  },
+  "executor": {
+   "mode": "measured",
+   "device": "cuda",
+   "dtype": "torch.bfloat16",
+   "decode_mode": "batched",
+   "num_layers": 35,
+   "num_kv_layers": 20,
+   "controller_switches": 3,
+   "cache_rebuild_ms_total": 905.6393509672489,
+   "kv_high_water_tokens": 511,
+   "resident_sequences": 0,
+   "vram_budget_bytes": 36507222016
+  },
+  "note": "measured through the loop's own forwards, not a separate microbenchmark"
+ },
+ "cells": {
+  "prefill": [
+   {
+    "preset": "large",
+    "batch": 1,
+    "chunk": 128,
+    "ctx": 0,
+    "n": 5,
+    "ms": 58.09766387939453,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "large",
+    "batch": 1,
+    "chunk": 256,
+    "ctx": 0,
+    "n": 5,
+    "ms": 57.57747268676758,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "large",
+    "batch": 1,
+    "chunk": 512,
+    "ctx": 0,
+    "n": 5,
+    "ms": 59.59270477294922,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "large",
+    "batch": 1,
+    "chunk": 1024,
+    "ctx": 0,
+    "n": 5,
+    "ms": 77.62329864501953,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "large",
+    "batch": 1,
+    "chunk": 2048,
+    "ctx": 0,
+    "n": 5,
+    "ms": 151.58067321777344,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "large",
+    "batch": 1,
+    "chunk": 4096,
+    "ctx": 0,
+    "n": 5,
+    "ms": 354.1575622558594,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "chunk": 128,
+    "ctx": 0,
+    "n": 5,
+    "ms": 56.93030548095703,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "chunk": 256,
+    "ctx": 0,
+    "n": 5,
+    "ms": 57.160606384277344,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "chunk": 512,
+    "ctx": 0,
+    "n": 5,
+    "ms": 58.52665710449219,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "chunk": 1024,
+    "ctx": 0,
+    "n": 5,
+    "ms": 68.24038696289062,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "chunk": 2048,
+    "ctx": 0,
+    "n": 5,
+    "ms": 127.06816101074219,
+    "source": "loop _prefill_forward at batch 1"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "chunk": 4096,
+    "ctx": 0,
+    "n": 5,
+    "ms": 305.9650573730469,
+    "source": "loop _prefill_forward at batch 1"
+   }
+  ],
+  "decode": [
+   {
+    "preset": "large",
+    "batch": 1,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.017921447753906,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 2,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.98659133911133,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 4,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.39884948730469,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 8,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.50214385986328,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 16,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.65484619140625,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 24,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.6168327331543,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 32,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.243072509765625,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 48,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.84815979003906,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "large",
+    "batch": 64,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.30656051635742,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 1,
+    "ctx": 64,
+    "n": 5,
+    "ms": 55.69535827636719,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 2,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.30361557006836,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 4,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.9958381652832,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 8,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.74803161621094,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 16,
+    "ctx": 64,
+    "n": 5,
+    "ms": 56.50534439086914,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 24,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.385406494140625,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 32,
+    "ctx": 64,
+    "n": 5,
+    "ms": 57.91641616821289,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 48,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.52364730834961,
+    "source": "loop _decode_batched at context 64"
+   },
+   {
+    "preset": "small",
+    "batch": 64,
+    "ctx": 64,
+    "n": 5,
+    "ms": 58.05363082885742,
+    "source": "loop _decode_batched at context 64"
+   }
+  ],
+  "switch": {
+   "apply_ms": 0.11704549251589924,
+   "boundary_ms": 0.6
+  }
+ },
+ "kv_bytes_per_token": 40960,
+ "vram_budget_bytes": 36507222016
+}

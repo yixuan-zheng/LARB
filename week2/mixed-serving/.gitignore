@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+# raw source traces are downloaded, not committed (see traces/README.md)
+traces/raw/
+# crash-safe raw records; the extracted CSVs live in results/<run_id>/
+run-output/
+results/logs/
+# per-request / per-iteration CSV extracts (2-7 MB per cell). Kept out of git like the raw
+# records they are derived from; results/analysis/ holds the small aggregated tables that the
+# report is generated from, and results/REPORT.md is the write-up.
+results/measured-cell-*/
+results/replay-smoke/

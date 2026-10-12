@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "check": "one_shot_reference_ran",
+      "passed": true,
+      "detail": "plain unbatched greedy continuation produced the requested token counts"
+    },
+    {
+      "check": "single_row/static_large_completed",
+      "passed": true,
+      "detail": "3/3 requests completed"
+    },
+    {
+      "check": "single_row/static_large_matches_one_shot_greedy",
+      "passed": true,
+      "detail": "generated tokens equal the unbatched one-shot greedy continuation"
+    },
+    {
+      "check": "single_row/phase_hybrid_completed",
+      "passed": true,
+      "detail": "3/3 requests completed"
+    },
+    {
+      "check": "single_row/phase_hybrid_matches_one_shot_greedy",
+      "passed": true,
+      "detail": "generated tokens equal the unbatched one-shot greedy continuation"
+    },
+    {
+      "check": "batched/static_large_completed",
+      "passed": true,
+      "detail": "3/3 requests completed"
+    },
+    {
+      "check": "batched/static_large_matches_one_shot_greedy",
+      "passed": true,
+      "detail": "generated tokens equal the unbatched one-shot greedy continuation"
+    },
+    {
+      "check": "batched/phase_hybrid_completed",
+      "passed": true,
+      "detail": "3/3 requests completed"
+    },
+    {
+      "check": "batched/phase_hybrid_matches_one_shot_greedy",
+      "passed": true,
+      "detail": "generated tokens equal the unbatched one-shot greedy continuation"
+    },
+    {
+      "check": "batched_equals_single_row_static_large",
+      "passed": true,
+      "detail": "the padded batched decode reproduces the per-row reference tokens"
+    },
+    {
+      "check": "batched_equals_single_row_phase_hybrid",
+      "passed": true,
+      "detail": "the padded batched decode reproduces the per-row reference tokens"
+    },
+    {
+      "check": "static_large_widths_all_large",
+      "passed": true,
+      "detail": "static_large recorded large at every step"
+    },
+    {
+      "check": "phase_hybrid_widths_are_sl_early",
+      "passed": true,
+      "detail": "phase_hybrid recorded exactly SL_early (narrow prefill, wide decode)"
+    }
+  ],
+  "requests": 3,
+  "output_tokens": 3,
+  "prompt_lengths": [
+    24,
+    32,
+    48
+  ],
+  "device": "cpu",
+  "dtype": "float32",
+  "note": "correctness only: CPU latency numbers are meaningless",
+  "diagnostic": {
+    "prompt_len": 24,
+    "modes": {
+      "stock": [
+        192289,
+        166555,
+        169998
+      ],
+      "rebuilt": [
+        192289,
+        160119,
+        113283
+      ],
+      "my_args": [
+        192289,
+        160119,
+        113283
+      ]
+    },
+    "cache_layers": 20,
+    "cache_seq_len_dim": {
+      "shape": [
+        1,
+        2,
+        24,
+        256
+      ],
+      "shape[-2]": 24,
+      "get_seq_length": 24
+    },
+    "first_token": 192289
+  },
+  "passed": true
+}

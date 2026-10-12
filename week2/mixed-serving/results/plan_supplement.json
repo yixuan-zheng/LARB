@@ -1,0 +1,30 @@
+[
+ {
+  "id": "steady4",
+  "trace": "azure_conv_steady.json",
+  "levels": [
+   "control_low"
+  ],
+  "fractions": {
+   "control_low": 0.17
+  },
+  "limit": 150,
+  "reps": 2,
+  "max_running": 48,
+  "notes": "The largest SLO effect of the study is here (static_large 0.520 -> phase_hybrid 0.693), and it rests on a single run per configuration. Two interleaved repetitions of the same cell give (a) the run-to-run spread this machine produces on its own -- including how often a host stall lands in a run -- and (b) 300 paired requests instead of 150, which tightens the exact McNemar test. Everything else is identical to the main-matrix cell: same trace, same limit, same caps."
+ },
+ {
+  "id": "burst3",
+  "trace": "azure_conv_burst.json",
+  "levels": [
+   "control_mid"
+  ],
+  "fractions": {
+   "control_mid": 0.34
+  },
+  "limit": 150,
+  "reps": 1,
+  "max_running": 48,
+  "notes": "The burst window (48% of GPU seconds are prefill) at low load, where the ITL gate is the binding constraint. Tests whether the unloaded-cell result transfers to a different arrival pattern and a different length mix."
+ }
+]

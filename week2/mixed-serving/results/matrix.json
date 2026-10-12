@@ -1,0 +1,255 @@
+{
+ "derived_from": "results/costs/capacity.json",
+ "capacity": {
+  "reference": "batch-1 prefill (the loop's default path), largest measured decode batch",
+  "presets": {
+   "large": {
+    "prefill_ms_per_token": 0.07401400059461594,
+    "prefill_tokens_per_s": 13510.95727789566,
+    "decode_tokens_per_s": 1097.6466358711955,
+    "decode_ms_at_largest_batch": 58.30656051635742
+   },
+   "small": {
+    "prefill_ms_per_token": 0.06204500049352646,
+    "prefill_tokens_per_s": 16117.334064721883,
+    "decode_tokens_per_s": 1102.4288935290288,
+    "decode_ms_at_largest_batch": 58.05363082885742
+   }
+  },
+  "service": {
+   "mean_prompt_tokens": 1117.0070778564207,
+   "mean_output_tokens": 248.7613751263903,
+   "gpu_seconds_per_request": 0.3093057277268298,
+   "capacity_rps": 3.2330471451313443,
+   "prefill_time_fraction": 0.2672894651264617,
+   "decode_time_fraction": 0.7327105348735383
+  },
+  "load_ladder_rps": {
+   "underloaded": 1.6165235725656721,
+   "saturated": 2.90974243061821,
+   "overloaded": 4.202961288670748,
+   "backlog_inducing": 6.466094290262689,
+   "note": "requests/s; --rate-scale = ladder rate / the trace window's own mean rate"
+  },
+  "recommended_rate_scales": {
+   "underloaded": 0.29381953703494046,
+   "saturated": 0.5288751666628928,
+   "overloaded": 0.7639307962908453,
+   "backlog_inducing": 1.1752781481397618,
+   "trace_mean_rps": 5.501756584598519,
+   "note": "time-compression factors for --rate-scale on THIS trace; derive them before any policy comparison and do not retune"
+  },
+  "trace": "traces/azure_conv_steady.json",
+  "realized_capacity_note": "The 3.23 req/s model capacity assumes decode batches run full (64 rows). The measured loop cannot sustain that: padded-cache rebuild cost scales with concurrency x context (and needs ~2x the KV when the padded batch is transient), so the first overloaded cell hit CUDA OOM at max_running=96 and the realized equilibrium was ~1.5-1.6 req/s. The frozen ladder is unchanged; two lower control points were added after measuring this, before any policy run completed.",
+  "realized_capacity_rps_estimate": 1.6,
+  "oom_at_max_running": 96,
+  "max_running_used": 48
+ },
+ "ladder_fractions": {
+  "underloaded": 0.5,
+  "saturated": 0.9,
+  "overloaded": 1.3,
+  "backlog": 2.0
+ },
+ "max_run_seconds": 300.0,
+ "trace_stats": {
+  "azure_conv_steady.json": {
+   "mean_rps": 5.501756584598519,
+   "requests": 989,
+   "span_s": 179.76077,
+   "mean_prompt_tokens": 1117.0070778564207,
+   "mean_output_tokens": 248.7613751263903
+  },
+  "azure_conv_burst.json": {
+   "mean_rps": 7.840676473964482,
+   "requests": 1408,
+   "span_s": 179.576342,
+   "mean_prompt_tokens": 1422.3920454545455,
+   "mean_output_tokens": 126.6122159090909
+  },
+  "azure_code_steady.json": {
+   "mean_rps": 2.5633109636363876,
+   "requests": 414,
+   "span_s": 161.509862,
+   "mean_prompt_tokens": 2222.6014492753625,
+   "mean_output_tokens": 27.246376811594203
+  },
+  "azure_conv_mixshift.json": {
+   "mean_rps": 7.081213661326404,
+   "requests": 1274,
+   "span_s": 179.912662,
+   "mean_prompt_tokens": 1138.160125588697,
+   "mean_output_tokens": 149.82182103610674
+  }
+ },
+ "policies": [
+  "static_large",
+  "static_small",
+  "phase_hybrid"
+ ],
+ "cells": [
+  {
+   "id": "steady2-control_mid",
+   "trace": "azure_conv_steady.json",
+   "rate_scale": 0.2,
+   "reps": 1,
+   "limit": 150,
+   "level": "control_mid",
+   "fraction_of_capacity": 0.34,
+   "target_rps": 1.099,
+   "arrivals_rps": 1.099,
+   "x_capacity": 0.34,
+   "requests_used": 150,
+   "estimate_run_s": 211.0,
+   "estimate_s": 634.0,
+   "truncated_window": true,
+   "notes": "low-load controls (0.34x and 0.17x nominal capacity, i.e. ~0.7x and ~0.34x the measured realized capacity of ~1.6 req/s). Added after measuring that realized capacity, before any policy run completed, to bracket a genuinely unloaded regime. Limited to 150 requests because low load means a long arrival span. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "steady-underloaded",
+   "trace": "azure_conv_steady.json",
+   "rate_scale": 0.294,
+   "reps": 1,
+   "limit": 220,
+   "level": "underloaded",
+   "fraction_of_capacity": 0.5,
+   "target_rps": 1.617,
+   "arrivals_rps": 1.617,
+   "x_capacity": 0.5,
+   "requests_used": 220,
+   "estimate_run_s": 211.0,
+   "estimate_s": 633.0,
+   "truncated_window": true,
+   "notes": "representative window (mean prompt 1117, mean output 249), frozen ladder points; ordered first because the knee is where a width policy can matter. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "code-overloaded",
+   "trace": "azure_code_steady.json",
+   "rate_scale": 1.64,
+   "reps": 1,
+   "limit": 220,
+   "level": "overloaded",
+   "fraction_of_capacity": 1.3,
+   "target_rps": 4.203,
+   "arrivals_rps": 4.203,
+   "x_capacity": 1.3,
+   "requests_used": 220,
+   "estimate_run_s": 151.0,
+   "estimate_s": 452.0,
+   "truncated_window": true,
+   "notes": "prefill-heavy control (p50 output 13 tokens): the lever's best case. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "steady2-control_low",
+   "trace": "azure_conv_steady.json",
+   "rate_scale": 0.1,
+   "reps": 1,
+   "limit": 150,
+   "level": "control_low",
+   "fraction_of_capacity": 0.17,
+   "target_rps": 0.55,
+   "arrivals_rps": 0.55,
+   "x_capacity": 0.17,
+   "requests_used": 150,
+   "estimate_run_s": 348.0,
+   "estimate_s": 1044.0,
+   "truncated_window": true,
+   "notes": "low-load controls (0.34x and 0.17x nominal capacity, i.e. ~0.7x and ~0.34x the measured realized capacity of ~1.6 req/s). Added after measuring that realized capacity, before any policy run completed, to bracket a genuinely unloaded regime. Limited to 150 requests because low load means a long arrival span. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "burst-saturated",
+   "trace": "azure_conv_burst.json",
+   "rate_scale": 0.371,
+   "reps": 1,
+   "limit": 220,
+   "level": "saturated",
+   "fraction_of_capacity": 0.9,
+   "target_rps": 2.91,
+   "arrivals_rps": 2.91,
+   "x_capacity": 0.9,
+   "requests_used": 220,
+   "estimate_run_s": 151.0,
+   "estimate_s": 452.0,
+   "truncated_window": true,
+   "notes": "highest-rate real window; short prompts (ctx p50 430), so decode-heavy. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "mixshift-overloaded",
+   "trace": "azure_conv_mixshift.json",
+   "rate_scale": 0.594,
+   "reps": 1,
+   "limit": 220,
+   "level": "overloaded",
+   "fraction_of_capacity": 1.3,
+   "target_rps": 4.203,
+   "arrivals_rps": 4.203,
+   "x_capacity": 1.3,
+   "requests_used": 220,
+   "estimate_run_s": 151.0,
+   "estimate_s": 452.0,
+   "truncated_window": true,
+   "notes": "largest change in request-length mix between halves. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "steady-saturated",
+   "trace": "azure_conv_steady.json",
+   "rate_scale": 0.529,
+   "reps": 1,
+   "limit": 220,
+   "level": "saturated",
+   "fraction_of_capacity": 0.9,
+   "target_rps": 2.91,
+   "arrivals_rps": 2.91,
+   "x_capacity": 0.9,
+   "requests_used": 220,
+   "estimate_run_s": 151.0,
+   "estimate_s": 452.0,
+   "truncated_window": true,
+   "notes": "representative window (mean prompt 1117, mean output 249), frozen ladder points; ordered first because the knee is where a width policy can matter. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "burst2-backlog",
+   "trace": "azure_conv_burst.json",
+   "rate_scale": 0.825,
+   "reps": 1,
+   "limit": 220,
+   "level": "backlog",
+   "fraction_of_capacity": 2.0,
+   "target_rps": 6.466,
+   "arrivals_rps": 6.466,
+   "x_capacity": 2.0,
+   "requests_used": 220,
+   "estimate_run_s": 151.0,
+   "estimate_s": 452.0,
+   "truncated_window": true,
+   "notes": "burst window at 2x nominal capacity. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  },
+  {
+   "id": "steady-overloaded",
+   "trace": "azure_conv_steady.json",
+   "rate_scale": 0.764,
+   "reps": 1,
+   "limit": 220,
+   "level": "overloaded",
+   "fraction_of_capacity": 1.3,
+   "target_rps": 4.203,
+   "arrivals_rps": 4.203,
+   "x_capacity": 1.3,
+   "requests_used": 220,
+   "estimate_run_s": 151.0,
+   "estimate_s": 452.0,
+   "truncated_window": true,
+   "notes": "representative window (mean prompt 1117, mean output 249), frozen ladder points; ordered first because the knee is where a width policy can matter. All cells limited in request count and capped at max_running=48 (the padded-cache rebuild needs about twice the KV when the padded batch is transient; max_running=96 hit CUDA OOM at ~1.9k context). Caps are identical for every policy.",
+   "max_running": 48
+  }
+ ],
+ "ordering_note": "Cells are ordered most-informative-first. The realized capacity of this executor is well below the cost model (the padded-cache rebuild), so the frozen ladder runs from about 1x to about 4x realized capacity: at the nominal saturated point (rate-scale 0.529) the first complete run of the earlier ordering gave attainment 0.014 and TTFT p50 26 s, i.e. deep overload, while at rate-scale 0.2 the queue stays empty. The near-knee cells therefore carry the SLO comparison and the deep-overload cells act as the negative control. That single partial run (one policy, so not a cell) is kept in run-output/superseded/ for transparency and is excluded from the analysis."
+}
