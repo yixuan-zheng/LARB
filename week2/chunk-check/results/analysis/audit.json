@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "runs": 12,
+  "requests_per_run": 150,
+  "gates_passed": true,
+  "stalls_retained": true,
+  "quality_evaluated": false,
+  "upstream_commit": "96e8f1097d2f0be6a513eede6cda04330824da71"
+}
