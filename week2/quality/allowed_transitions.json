@@ -1,0 +1,56 @@
+{
+  "status": "validated on held-out (evaluated once)",
+  "replaces": "week1/quality/results/schedule_restrictions.json (dev only; allowed everything because nothing was distinguishable at n = 250)",
+  "quality_gate": "<= 5 pp accuracy loss vs static_L; pass only if the 95% paired bootstrap lower bound is >= -5 pp",
+  "task": "GSM8K 8-shot CoT, base LM, greedy, exact match (week1/quality/manifests/quality_contract.json)",
+  "model": "google/gemma-3n-E4B @ af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee, bf16, NVIDIA L40S, batch 8",
+  "source_runs": {
+    "dev": "week1/quality/results/gen-dev-20261001-205536",
+    "heldout": "week1/quality/results/gen-heldout-20261004-204404",
+    "batch_check": "week1/quality/results/gen-dev-20261004-203609"
+  },
+
+  "rules": {
+    "small_allowed_in": "prefill only",
+    "decode_width": "large for every generated token after the first",
+    "directions": ["small->large"],
+    "max_switches_per_request": 1,
+    "switch_point": "right after prefill (the first generated token comes from the small prefill pass)",
+    "prefill_width": "one width for the whole prompt; if prefill is chunked, every chunk of a request uses the same width",
+    "per_iteration": "one width per batch per iteration, so an iteration may run small only if every row in it is prefill; any iteration that carries a decode step runs large",
+    "request_level": "static large only; static small fails the gate"
+  },
+
+  "allowed": {
+    "static_L": {"role": "reference", "heldout_acc": 51.6, "dev_acc": 54.0},
+    "SL_early": {
+      "meaning": "small prefill, then large decode (the phase hybrid)",
+      "heldout": {"acc": 53.6, "delta": 2.0, "ci95": [-2.8, 6.8], "mcnemar_p": 0.511, "floor": "pass"},
+      "dev": {"acc": 52.4, "delta": -1.6, "ci95": [-6.0, 2.8], "mcnemar_p": 0.585, "floor": "not_established"},
+      "frac_small_steps": 0.012
+    }
+  },
+
+  "not_allowed": {
+    "static_S": {
+      "reason": "fails on held-out",
+      "heldout": {"acc": 46.0, "delta": -5.6, "ci95": [-11.6, 0.4], "mcnemar_p": 0.092, "floor": "fail"},
+      "dev": {"delta": -2.8, "ci95": [-8.4, 2.8], "floor": "not_established"}
+    },
+    "alt4": {
+      "reason": "fails on held-out and is significantly worse than large; stands in for all repeated switching",
+      "heldout": {"acc": 46.4, "delta": -5.2, "ci95": [-10.0, -0.4], "mcnemar_p": 0.047, "floor": "fail"},
+      "dev": {"delta": -2.4, "ci95": [-6.4, 1.6], "floor": "not_established"}
+    },
+    "LS_early, LS_late, SL_late, alt16": {
+      "reason": "dev only, never run on held-out, so not certified; LS_* and alt16 also decode at small, which fails above"
+    }
+  },
+
+  "caveats": [
+    "SL_early's +2.0 pp is noise in the favorable direction, not a gain: 99% of its steps run at large",
+    "batch noise floor: batch 1 vs batch 8 changed 4 of 48 static_L predictions (2 in correctness), so a few pp per-request variation comes from batching alone",
+    "one task (GSM8K) and one model; quality transfers to the serving harness only through the width history, not the prompts",
+    "block k = 1 alternation was not run; alt4 already fails, so it cannot change the rules"
+  ]
+}

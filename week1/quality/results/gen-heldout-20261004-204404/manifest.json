@@ -1,0 +1,35 @@
+{
+  "run_id": "gen-heldout-20261004-204404",
+  "seed": 6222,
+  "command": "python run_generation.py --split heldout --schedules static_L,static_S,SL_early,alt4",
+  "git_commit": "9d004cc964b1ed93ce80760bc4cdb67b9e76ec45",
+  "git_dirty": false,
+  "model": "google/gemma-3n-E4B",
+  "model_revision": "af70430f84ea4d7ac191aaa2bd8e14d2a5e8f6ee",
+  "presets_sha256": "03a51e2b98bf340f5001c9b41d890874fa7d2cee621ffb04ab3e2860eef56788",
+  "presets_source_revision": "cf93a642430e7e6891ca38537b5c8d8dd9ba5a7e",
+  "hardware": "NVIDIA L40S",
+  "dtype": "bfloat16",
+  "packages": {
+    "torch": "2.9.1+cu128",
+    "transformers": "5.7.0"
+  },
+  "created": "2026-10-04T20:44:04-0400",
+  "split": "heldout",
+  "batch_size": 8,
+  "limit": null,
+  "schedules": [
+    "static_L",
+    "static_S",
+    "SL_early",
+    "alt4"
+  ],
+  "decoding": {
+    "greedy": true,
+    "max_new_tokens": 256,
+    "stop_strings": [
+      "\n\n",
+      "\nQ:"
+    ]
+  }
+}
