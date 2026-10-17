@@ -1,0 +1,206 @@
+{
+  "preflight": [
+    {
+      "answer": "22",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Gary counted the number of whiskers on the faces of his two cats.  Princess Puff has 14 whiskers, while Catman Do has 6 less than twice the number of whiskers as Princess puff.  How many whiskers does Catman Do have?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 0
+    },
+    {
+      "answer": "54",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Mitchell has 30 pencils. He has 6 more pencils than Antonio. How many pencils does Mitchell and Antonio have together?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 1
+    },
+    {
+      "answer": "1280",
+      "messages": [
+        {
+          "role": "user",
+          "content": "When Herman\u2019s team is busy working on large projects he stops at the drive-through 5 days, every week to buy a breakfast combo for himself and 3 members of his team.  Each meal costs $4.00.  This current project will last 16 weeks.  How much will Herman spend on breakfast?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 2
+    },
+    {
+      "answer": "69",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A new book sold 15 copies at the bookstore on Wednesday. On Thursday the book sold three times that many copies. On Friday the book sold one-fifth the number of copies it did on Thursday. How many copies of the book did the bookstore sell by Friday?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 3
+    }
+  ],
+  "comparison": [
+    {
+      "answer": "12500",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A person borrowed an amount of money for a year at an interest rate of 12%. If the total interest is $1500, what was the original borrowed amount?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 16
+    },
+    {
+      "answer": "19",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Juliet is 3 years older than her sister Maggie but 2 years younger than her elder brother Ralph. If Juliet is 10 years old, what is the sum of Maggie's and Ralph's ages?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 17
+    },
+    {
+      "answer": "31",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Annie does a survey of the sixth-grade classes to see who prefers pretzels to goldfish. In Miss Johnson's class, 1/6 of the students preferred goldfish. In Mr. Feldstein's class, 2/3rds of the students preferred goldfish. In Ms. Henderson's class, 1/5 of the students prefer goldfish. If each class has 30 students, how many people total prefer goldfish?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 18
+    },
+    {
+      "answer": "168",
+      "messages": [
+        {
+          "role": "user",
+          "content": "On the night of the dance, 400 students show up to the party. 70% of the students who showed up were invited. If 40% of those invited to the party had their invitation revoked and were not allowed into the party, how many invited students attended the party?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 19
+    },
+    {
+      "answer": "354",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Wally buys bears at the park. A bear is priced at $4.00 for the first bear and a discount of 50 cents per bear is given after that. How much does Wally pay for 101 bears?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 20
+    },
+    {
+      "answer": "27",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Alfred is storing a tonne of maize each month for the next 2 years.  If 5 tonnes are stolen and 8 tonnes are given to him as a donation, how many tonnes of maize does he have at the end of the 2 years.\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 21
+    },
+    {
+      "answer": "194",
+      "messages": [
+        {
+          "role": "user",
+          "content": "In a stationery store, there are three kinds of pencils. A pencil with an eraser, which costs $0.8 each, a regular pencil for $0.5 each, and a short pencil for $0.4 each. This store was able to sell 200 pencils with an eraser, 40 regular pencils, and 35 short pencils. How much money did the store make from these sales?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 22
+    },
+    {
+      "answer": "80",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A car traveled 360 miles in 4 hours and 30 minutes. What was its speed in miles per hour?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 23
+    },
+    {
+      "answer": "5",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Toby is filling his swimming pool for the summer. The pool normally takes 50 hours to fill. He knows his hose runs at 100 gallons per hour. Water costs 1 cent for 10 gallons. How many dollars does it cost to fill the pool?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 24
+    },
+    {
+      "answer": "20",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Boris has 100 pieces of Halloween candy. His daughter eats 8 pieces of candy. He separates the remaining pieces of candy into equal portions into 4 different bowls. Then he takes away 3 pieces of candy from each bowl to keep for himself. How many pieces of candy are in one bowl?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 25
+    },
+    {
+      "answer": "240",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hallie is working as a waitress for $10/hour. On Monday, she works for 7 hours, and she receives $18 in tips. On Tuesday she works for 5 hours, and she receives $12 in tips. On Wednesday she works for 7 hours, and she receives $20 in tips. How much money does she earn in total from Monday to Wednesday?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 26
+    },
+    {
+      "answer": "670",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Brinley's teacher took the grade six students to the San Diego Zoo to watch and learn about animals. While at the zoo, Brinley counted 100 snakes, 80 arctic foxes, and 20 leopards. She also saw ten times more bee-eaters than leopards, half as many cheetahs as snakes, and twice as many alligators as the total number of Arctic foxes and leopards. What's the total number of animals Brinley counted at the zoo?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 27
+    },
+    {
+      "answer": "9",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Eduardo is a teacher. He taught 3 classes last week while his colleague Frankie taught double what Eduardo teaches. How many classes did Eduardo and Frankie teach in total?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 28
+    },
+    {
+      "answer": "4",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Julie, Letitia and Anton decided to have dinner together at a nearby restaurant.  Julie orders $10 worth of food, Letitia orders $20 worth of food, and Anton orders $30 worth of food.  How much should each pay in tips if they want to split a 20% tip for the whole meal evenly?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 29
+    },
+    {
+      "answer": "5",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Mary earns $20 washing cars and $40 walking dogs each month. If she puts half of that money away each month how long would it take her to save $150?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 30
+    },
+    {
+      "answer": "5",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Nora is selling muffins to raise $120 for an upcoming school trip. She has packaged the muffins in cases. Each case has three packs of muffins. Each pack has four muffins. If she prices each muffin at two dollars, how many cases of muffins must she sell to raise enough money for the trip?\nPlease put your final answer within \\boxed{}.\nBefore giving the answer, you must check your arithmetic using the calculator tool. Call it exactly like <calculator>15 + 27</calculator>, with the expression for this problem. Wait for its output, then continue your reasoning. Use the calculator again if another calculation is needed. Do not write Python. End with the final numeric answer inside \\boxed{}."
+        }
+      ],
+      "source_id": 31
+    }
+  ]
+}

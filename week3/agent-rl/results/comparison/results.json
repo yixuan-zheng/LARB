@@ -1,0 +1,280 @@
+{
+  "preflight": {
+    "policy": "fifo",
+    "capacity": 16,
+    "wall_seconds": 34.66604251298122,
+    "episodes": 16,
+    "mixed_groups": 3,
+    "accepted_groups": 4,
+    "reward_mean": 0.5,
+    "generated_tokens": 4711,
+    "tokens_per_second": 135.89667751188776,
+    "mixed_groups_per_second": 0.08654001964246726,
+    "generation_calls": 45,
+    "gate_admissions": 45,
+    "gate_wait_seconds": {
+      "min": 1.0400079190731049e-05,
+      "median": 1.1971918866038322e-05,
+      "p90": 1.3546529226005078e-05,
+      "max": 2.971501089632511e-05
+    },
+    "queued_admissions": 0,
+    "max_recorded_queue_depth": 0,
+    "stats": {
+      "admissions": 45,
+      "reordered": 0,
+      "informative_admissions": 0,
+      "max_active": 16
+    },
+    "accepted_times": []
+  },
+  "native": {
+    "policy": "native",
+    "capacity": 16,
+    "wall_seconds": 34.12897397798952,
+    "episodes": 64,
+    "mixed_groups": 12,
+    "accepted_groups": 12,
+    "reward_mean": 0.3125,
+    "generated_tokens": 52313,
+    "tokens_per_second": 1532.8031845826288,
+    "mixed_groups_per_second": 0.35160740571161175,
+    "generation_calls": 206,
+    "gate_admissions": 206,
+    "gate_wait_seconds": {
+      "min": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0.0
+    },
+    "queued_admissions": 0,
+    "max_recorded_queue_depth": 0,
+    "stats": null,
+    "accepted_times": [
+      5.529406785964966,
+      6.227273225784302,
+      6.679102420806885,
+      8.808850049972534,
+      9.82019591331482,
+      9.977691888809204,
+      20.837054014205933,
+      29.50034785270691,
+      33.711342096328735,
+      33.73029899597168,
+      34.018653869628906,
+      34.11795234680176
+    ],
+    "time_to_common_k_mixed_groups": 29.50034785270691,
+    "time_to_all_common_mixed_sources": 34.11795234680176
+  },
+  "fifo16": {
+    "policy": "fifo",
+    "capacity": 16,
+    "wall_seconds": 37.94580984197091,
+    "episodes": 64,
+    "mixed_groups": 10,
+    "accepted_groups": 10,
+    "reward_mean": 0.21875,
+    "generated_tokens": 38737,
+    "tokens_per_second": 1020.8505276689067,
+    "mixed_groups_per_second": 0.26353370877169285,
+    "generation_calls": 180,
+    "gate_admissions": 180,
+    "gate_wait_seconds": {
+      "min": 1.0657007806003094e-05,
+      "median": 2.1673424019827507,
+      "p90": 6.785983344633132,
+      "max": 7.893425815971568
+    },
+    "queued_admissions": 138,
+    "max_recorded_queue_depth": 47,
+    "stats": {
+      "admissions": 180,
+      "reordered": 0,
+      "informative_admissions": 42,
+      "max_active": 16
+    },
+    "accepted_times": [
+      14.56588625907898,
+      15.175543069839478,
+      15.380173444747925,
+      18.137022972106934,
+      18.85652184486389,
+      20.47674822807312,
+      24.057095050811768,
+      34.01820611953735,
+      34.13005495071411,
+      37.913068532943726
+    ],
+    "time_to_common_k_mixed_groups": 34.01820611953735,
+    "time_to_all_common_mixed_sources": 34.13005495071411
+  },
+  "priority16": {
+    "policy": "priority",
+    "capacity": 16,
+    "wall_seconds": 37.84678442403674,
+    "episodes": 64,
+    "mixed_groups": 12,
+    "accepted_groups": 12,
+    "reward_mean": 0.296875,
+    "generated_tokens": 35581,
+    "tokens_per_second": 940.1327098584966,
+    "mixed_groups_per_second": 0.31706788786998563,
+    "generation_calls": 169,
+    "gate_admissions": 169,
+    "gate_wait_seconds": {
+      "min": 9.979004971683025e-06,
+      "median": 2.0441937430296093,
+      "p90": 6.164108876907268,
+      "max": 6.925519802025519
+    },
+    "queued_admissions": 134,
+    "max_recorded_queue_depth": 47,
+    "stats": {
+      "admissions": 169,
+      "reordered": 16,
+      "informative_admissions": 29,
+      "max_active": 16
+    },
+    "accepted_times": [
+      7.109888076782227,
+      9.534072399139404,
+      11.210574388504028,
+      11.705943584442139,
+      14.97429895401001,
+      15.113879442214966,
+      15.527531623840332,
+      16.894952297210693,
+      17.701574563980103,
+      18.271201848983765,
+      23.296652793884277,
+      37.83419680595398
+    ],
+    "time_to_common_k_mixed_groups": 16.894952297210693,
+    "time_to_all_common_mixed_sources": 23.296652793884277
+  },
+  "fifo8": {
+    "policy": "fifo",
+    "capacity": 8,
+    "wall_seconds": 48.66988847195171,
+    "episodes": 64,
+    "mixed_groups": 8,
+    "accepted_groups": 8,
+    "reward_mean": 0.21875,
+    "generated_tokens": 37081,
+    "tokens_per_second": 761.8879180577875,
+    "mixed_groups_per_second": 0.1643726799294059,
+    "generation_calls": 178,
+    "gate_admissions": 178,
+    "gate_wait_seconds": {
+      "min": 9.443960152566433e-06,
+      "median": 4.836327084514778,
+      "p90": 11.145720142521895,
+      "max": 12.76217306102626
+    },
+    "queued_admissions": 153,
+    "max_recorded_queue_depth": 55,
+    "stats": {
+      "admissions": 178,
+      "reordered": 0,
+      "informative_admissions": 13,
+      "max_active": 8
+    },
+    "accepted_times": [
+      11.384904623031616,
+      17.664705276489258,
+      25.310861587524414,
+      25.8337242603302,
+      28.08014988899231,
+      40.376548051834106,
+      47.31018090248108,
+      48.65949988365173
+    ],
+    "time_to_common_k_mixed_groups": 48.65949988365173,
+    "time_to_all_common_mixed_sources": 48.65949988365173
+  },
+  "priority16_repeat": {
+    "policy": "priority",
+    "capacity": 16,
+    "wall_seconds": 41.166039403062314,
+    "episodes": 64,
+    "mixed_groups": 9,
+    "accepted_groups": 9,
+    "reward_mean": 0.203125,
+    "generated_tokens": 55582,
+    "tokens_per_second": 1350.1906135732186,
+    "mixed_groups_per_second": 0.21862681303585635,
+    "generation_calls": 210,
+    "gate_admissions": 210,
+    "gate_wait_seconds": {
+      "min": 9.55001451075077e-06,
+      "median": 1.9224340434884652,
+      "p90": 4.860493828484323,
+      "max": 6.531417651916854
+    },
+    "queued_admissions": 159,
+    "max_recorded_queue_depth": 47,
+    "stats": {
+      "admissions": 210,
+      "reordered": 18,
+      "informative_admissions": 30,
+      "max_active": 16
+    },
+    "accepted_times": [
+      7.941512584686279,
+      10.784605503082275,
+      11.111913681030273,
+      14.866083860397339,
+      22.457700490951538,
+      29.533369302749634,
+      32.03952074050903,
+      32.209296226501465,
+      40.606098651885986
+    ],
+    "time_to_common_k_mixed_groups": 32.209296226501465,
+    "time_to_all_common_mixed_sources": 40.606098651885986
+  },
+  "fifo16_repeat": {
+    "policy": "fifo",
+    "capacity": 16,
+    "wall_seconds": 43.49198727495968,
+    "episodes": 64,
+    "mixed_groups": 11,
+    "accepted_groups": 11,
+    "reward_mean": 0.234375,
+    "generated_tokens": 46033,
+    "tokens_per_second": 1058.4248475236561,
+    "mixed_groups_per_second": 0.25292015125584294,
+    "generation_calls": 198,
+    "gate_admissions": 198,
+    "gate_wait_seconds": {
+      "min": 9.870040230453014e-06,
+      "median": 2.8033993130084127,
+      "p90": 6.3137322690221485,
+      "max": 7.3820821170229465
+    },
+    "queued_admissions": 152,
+    "max_recorded_queue_depth": 47,
+    "stats": {
+      "admissions": 198,
+      "reordered": 0,
+      "informative_admissions": 38,
+      "max_active": 16
+    },
+    "accepted_times": [
+      15.248754024505615,
+      16.730348110198975,
+      20.27686381340027,
+      20.892943859100342,
+      21.85897970199585,
+      23.346445322036743,
+      23.8598210811615,
+      26.69391369819641,
+      37.085139751434326,
+      38.62662100791931,
+      40.177796602249146
+    ],
+    "time_to_common_k_mixed_groups": 26.69391369819641,
+    "time_to_all_common_mixed_sources": 23.346445322036743
+  }
+}

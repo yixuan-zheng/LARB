@@ -1,0 +1,23 @@
+{"event": "experiment_start", "time": 1792040533.9138584, "monotonic": 705881.178099506, "pid": 3190708, "fixed_policy": true, "seed": 617}
+{"event": "phase_start", "time": 1792040729.1769009, "monotonic": 706076.441142239, "pid": 3190708, "phase": "preflight", "policy": "fifo", "capacity": 16, "groups": 4, "filtered": false}
+{"event": "phase_end", "time": 1792040763.8438337, "monotonic": 706111.108074218, "pid": 3190708, "phase": "preflight", "seconds": 34.66604251298122, "returned_groups": 4}
+{"event": "phase_verified", "time": 1792040763.8484616, "monotonic": 706111.112702472, "pid": 3190708, "phase": "preflight", "episodes": 16, "mixed_groups": 3}
+{"event": "phase_start", "time": 1792040763.8517046, "monotonic": 706111.115945425, "pid": 3190708, "phase": "native", "policy": "native", "capacity": 16, "groups": 16, "filtered": true}
+{"event": "phase_end", "time": 1792040797.9813914, "monotonic": 706145.245632308, "pid": 3190708, "phase": "native", "seconds": 34.12897397798952, "returned_groups": 12}
+{"event": "phase_verified", "time": 1792040797.9943979, "monotonic": 706145.258638775, "pid": 3190708, "phase": "native", "episodes": 64, "mixed_groups": 12}
+{"event": "phase_start", "time": 1792040797.9950993, "monotonic": 706145.259340175, "pid": 3190708, "phase": "fifo16", "policy": "fifo", "capacity": 16, "groups": 16, "filtered": true}
+{"event": "phase_end", "time": 1792040835.9415557, "monotonic": 706183.205796198, "pid": 3190708, "phase": "fifo16", "seconds": 37.94580984197091, "returned_groups": 10}
+{"event": "phase_verified", "time": 1792040835.9583266, "monotonic": 706183.222567254, "pid": 3190708, "phase": "fifo16", "episodes": 64, "mixed_groups": 10}
+{"event": "phase_start", "time": 1792040835.9590409, "monotonic": 706183.223281468, "pid": 3190708, "phase": "priority16", "policy": "priority", "capacity": 16, "groups": 16, "filtered": true}
+{"event": "phase_end", "time": 1792040873.8064644, "monotonic": 706221.070704958, "pid": 3190708, "phase": "priority16", "seconds": 37.84678442403674, "returned_groups": 12}
+{"event": "phase_verified", "time": 1792040873.8303347, "monotonic": 706221.094575612, "pid": 3190708, "phase": "priority16", "episodes": 64, "mixed_groups": 12}
+{"event": "phase_start", "time": 1792040873.8310516, "monotonic": 706221.095292145, "pid": 3190708, "phase": "fifo8", "policy": "fifo", "capacity": 8, "groups": 16, "filtered": true}
+{"event": "phase_end", "time": 1792040922.501527, "monotonic": 706269.765767614, "pid": 3190708, "phase": "fifo8", "seconds": 48.66988847195171, "returned_groups": 8}
+{"event": "phase_verified", "time": 1792040922.5284042, "monotonic": 706269.792644859, "pid": 3190708, "phase": "fifo8", "episodes": 64, "mixed_groups": 8}
+{"event": "phase_start", "time": 1792040922.5290093, "monotonic": 706269.793250081, "pid": 3190708, "phase": "priority16_repeat", "policy": "priority", "capacity": 16, "groups": 16, "filtered": true}
+{"event": "phase_end", "time": 1792040963.6956499, "monotonic": 706310.95989046, "pid": 3190708, "phase": "priority16_repeat", "seconds": 41.166039403062314, "returned_groups": 9}
+{"event": "phase_verified", "time": 1792040963.7311492, "monotonic": 706310.995390226, "pid": 3190708, "phase": "priority16_repeat", "episodes": 64, "mixed_groups": 9}
+{"event": "phase_start", "time": 1792040963.7320235, "monotonic": 706310.996264357, "pid": 3190708, "phase": "fifo16_repeat", "policy": "fifo", "capacity": 16, "groups": 16, "filtered": true}
+{"event": "phase_end", "time": 1792041007.2246718, "monotonic": 706354.488912207, "pid": 3190708, "phase": "fifo16_repeat", "seconds": 43.49198727495968, "returned_groups": 11}
+{"event": "phase_verified", "time": 1792041007.2656853, "monotonic": 706354.529926194, "pid": 3190708, "phase": "fifo16_repeat", "episodes": 64, "mixed_groups": 11}
+{"event": "experiment_complete", "time": 1792041007.266463, "monotonic": 706354.530703722, "pid": 3190708}

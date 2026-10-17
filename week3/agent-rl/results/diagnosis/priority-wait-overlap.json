@@ -1,0 +1,22 @@
+{
+  "calcasync": {
+    "known_mixed_later_requests_started_during_collection": 31,
+    "groups": 16,
+    "tokens": 9511
+  },
+  "calccapped": {
+    "known_mixed_later_requests_started_during_collection": 69,
+    "groups": 22,
+    "tokens": 27523
+  },
+  "calcfresh": {
+    "known_mixed_later_requests_started_during_collection": 75,
+    "groups": 22,
+    "tokens": 30978
+  },
+  "calcdynamic": {
+    "known_mixed_later_requests_started_during_collection": 61,
+    "groups": 17,
+    "tokens": 23901
+  }
+}

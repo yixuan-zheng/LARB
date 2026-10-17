@@ -1,0 +1,12 @@
+{
+  "areal_repository": "https://github.com/areal-project/AReaL",
+  "areal_commit": "ba237a1b21703417541c2f107adb923d8ca1f504",
+  "python": "3.12.15",
+  "torch": "2.10.0+cu128",
+  "vllm": "0.19.1",
+  "transformers": "5.6.2",
+  "comparison_job": "6278460",
+  "comparison_hardware": "one NVIDIA RTX PRO 6000 Blackwell MIG 2G.48GB instance",
+  "comparison_allocated_seconds": 757,
+  "scope": "external research adapters; upstream framework and model weights excluded"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "versions": [
+      0,
+      8
+    ],
+    "collection_seconds": 48.46086705592461,
+    "collection_per_update": 6.057608381990576,
+    "native_stage_sum_excluding_eval": 84.880415943,
+    "rollout_fraction": 0.5710857971354887
+  },
+  {
+    "versions": [
+      8,
+      16
+    ],
+    "collection_seconds": 16.64525280194357,
+    "collection_per_update": 2.0806566002429463,
+    "native_stage_sum_excluding_eval": 37.717550213,
+    "rollout_fraction": 0.4416231941346736
+  },
+  {
+    "versions": [
+      16,
+      24
+    ],
+    "collection_seconds": 7.688514411915094,
+    "collection_per_update": 0.9610643014893867,
+    "native_stage_sum_excluding_eval": 25.878156982,
+    "rollout_fraction": 0.29753579844792055
+  }
+]

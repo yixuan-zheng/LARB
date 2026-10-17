@@ -1,0 +1,16 @@
+{"event": "experiment_start", "time": 1792004342.2111208, "monotonic": 670143.443482629, "pid": 2803385, "trial": "calcfresh", "steps": 24, "max_head_offpolicyness": 0}
+{"event": "batch_consumed", "time": 1792004490.887329, "monotonic": 670292.119690195, "pid": 2803385, "seconds": 32.4008536770707, "version": 0, "task_ids": [1, 3, 2, 5, 6, 0, 4, 7], "count": 8}
+{"event": "batch_consumed", "time": 1792004526.2671587, "monotonic": 670327.499519991, "pid": 2803385, "seconds": 29.10038882808294, "version": 1, "task_ids": [10, 14, 11, 8, 13, 15, 12, 9], "count": 8}
+{"event": "batch_consumed", "time": 1792004558.4065483, "monotonic": 670359.638909275, "pid": 2803385, "seconds": 28.83223480801098, "version": 2, "task_ids": [17, 23, 19, 22, 18, 16, 21, 20], "count": 8}
+{"event": "batch_consumed", "time": 1792004590.3661175, "monotonic": 670391.598478487, "pid": 2803385, "seconds": 29.189508176990785, "version": 3, "task_ids": [28, 24, 26, 30, 27, 29, 25, 31], "count": 8}
+{"event": "batch_consumed", "time": 1792004622.5816493, "monotonic": 670423.814010454, "pid": 2803385, "seconds": 29.41635120403953, "version": 4, "task_ids": [36, 37, 33, 38, 32, 35, 39, 34], "count": 8}
+{"event": "batch_consumed", "time": 1792004653.8596227, "monotonic": 670455.091983777, "pid": 2803385, "seconds": 28.973532334086485, "version": 5, "task_ids": [41, 44, 42, 46, 40, 43, 47, 45], "count": 8}
+{"event": "batch_consumed", "time": 1792004685.5766435, "monotonic": 670486.80900468, "pid": 2803385, "seconds": 28.910611316096038, "version": 6, "task_ids": [49, 50, 53, 54, 48, 55, 51, 52], "count": 8}
+{"event": "batch_consumed", "time": 1792004716.7638497, "monotonic": 670517.996210821, "pid": 2803385, "seconds": 28.635180494980887, "version": 7, "task_ids": [63, 60, 58, 59, 61, 57, 56, 62], "count": 8}
+{"event": "batch_consumed", "time": 1792004755.9866452, "monotonic": 670557.219006395, "pid": 2803385, "seconds": 29.05600504495669, "version": 8, "task_ids": [66, 64, 70, 65, 68, 69, 71, 67], "count": 8}
+{"event": "batch_consumed", "time": 1792004788.5755463, "monotonic": 670589.807907548, "pid": 2803385, "seconds": 29.533432919997722, "version": 9, "task_ids": [77, 72, 79, 75, 74, 73, 76, 78], "count": 8}
+{"event": "batch_consumed", "time": 1792004822.613325, "monotonic": 670623.845686116, "pid": 2803385, "seconds": 30.279972210060805, "version": 10, "task_ids": [85, 81, 84, 87, 80, 82, 83, 86], "count": 8}
+{"event": "batch_consumed", "time": 1792004857.034356, "monotonic": 670658.266717252, "pid": 2803385, "seconds": 29.449750165920705, "version": 11, "task_ids": [90, 94, 95, 88, 93, 89, 91, 92], "count": 8}
+{"event": "batch_consumed", "time": 1792004890.9926665, "monotonic": 670692.225027381, "pid": 2803385, "seconds": 30.119142150040716, "version": 12, "task_ids": [96, 99, 103, 98, 101, 97, 100, 102], "count": 8}
+{"event": "batch_consumed", "time": 1792004925.2069278, "monotonic": 670726.439288969, "pid": 2803385, "seconds": 29.981906499015167, "version": 13, "task_ids": [104, 111, 105, 110, 109, 108, 107, 106], "count": 8}
+{"event": "experiment_error", "time": 1792004953.1827242, "monotonic": 670754.415085839, "pid": 2803385, "error": "KeyboardInterrupt()"}

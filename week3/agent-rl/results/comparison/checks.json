@@ -1,0 +1,59 @@
+{
+  "preflight": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "native": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "fifo16": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "priority16": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "fifo8": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "priority16_repeat": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "fifo16_repeat": {
+    "complete_episodes": true,
+    "complete_groups": true,
+    "filter_rows_four": true,
+    "filter_accounting": true
+  },
+  "common_k": 8,
+  "outcome_differences_vs_first_arm": {
+    "native": 0,
+    "fifo16": 16,
+    "priority16": 13,
+    "fifo8": 12,
+    "priority16_repeat": 13,
+    "fifo16_repeat": 13
+  },
+  "common_mixed_sources": [
+    21,
+    23,
+    25,
+    29
+  ]
+}

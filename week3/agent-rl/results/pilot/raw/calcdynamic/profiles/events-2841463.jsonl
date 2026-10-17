@@ -1,0 +1,4 @@
+{"event": "experiment_start", "time": 1792005393.0722039, "monotonic": 671194.304565457, "pid": 2841463, "trial": "calcdynamic", "steps": 8, "max_head_offpolicyness": 2}
+{"event": "batch_consumed", "time": 1792005547.484593, "monotonic": 671348.716954048, "pid": 2841463, "seconds": 38.25939401506912, "version": 0, "task_ids": [3, 5, 6, 0, 4, 7, 12, 14], "count": 8}
+{"event": "batch_consumed", "time": 1792005593.5544815, "monotonic": 671394.786842428, "pid": 2841463, "seconds": 39.252976596937515, "version": 1, "task_ids": [22, 16, 21, 20, 15, 10, 25, 32], "count": 8}
+{"event": "batch_consumed", "time": 1792005640.388388, "monotonic": 671441.620749107, "pid": 2841463, "seconds": 43.96788288804237, "version": 2, "task_ids": [30, 33, 38, 35, 40, 37, 51, 50], "count": 8}

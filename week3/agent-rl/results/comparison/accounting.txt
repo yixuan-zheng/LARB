@@ -1,0 +1,3 @@
+JobID|State|ElapsedRaw|AllocTRES
+6278460|COMPLETED|757|billing=2,cpu=2,gres/gpu:rtx_pro_6000_blackwell=1,gres/gpu=1,mem=32G,node=1
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)

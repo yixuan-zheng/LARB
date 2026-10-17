@@ -1,0 +1,170 @@
+{
+  "calcasync": {
+    "updates": 8,
+    "groups": 64,
+    "mixed_consumed_groups": 30,
+    "dispatcher_collection_seconds": 48.46086705592461,
+    "native_stage_seconds_excluding_eval": {
+      "timeperf/update_weights": 3.6476300000000004,
+      "timeperf/save": 0.000325348,
+      "timeperf/rollout": 48.474,
+      "timeperf/clear_batches": 0.0442243,
+      "timeperf/checkpoint_for_recover": 0.00021629500000000003,
+      "timeperf/compute_advantage": 2.45533,
+      "timeperf/train_step": 21.1529,
+      "timeperf/recompute_logp": 9.105789999999999
+    },
+    "native_stage_sum_excluding_eval": 84.880415943,
+    "native_rollout_fraction_of_stage_sum": 0.5710857971354887,
+    "collection_seconds_per_update": {
+      "min": 1.479936548974365,
+      "median": 3.8654662969638593,
+      "p90": 13.493329595297109,
+      "max": 15.498912559938617
+    },
+    "last_member_end_to_return_seconds": {
+      "min": 0.01111292839050293,
+      "median": 0.013376474380493164,
+      "p90": 0.044882178306579576,
+      "max": 0.08873248100280762
+    },
+    "group_ready_to_return_seconds": {
+      "min": 0.01111292839050293,
+      "median": 3.7092671394348145,
+      "p90": 9.719792032241822,
+      "max": 17.45350193977356
+    },
+    "first_collection_to_last_return_seconds": 82.72179102897644,
+    "mixed_groups_per_observed_window_second": 0.36266139341073217,
+    "completed_generation_tokens_in_window": 185710,
+    "completed_generation_tokens_per_window_second": 2244.994912343569,
+    "initial_collection_seconds": 15.498912559938617,
+    "later_collection_seconds": 32.96195449598599
+  },
+  "calccapped": {
+    "updates": 8,
+    "groups": 64,
+    "mixed_consumed_groups": 34,
+    "dispatcher_collection_seconds": 130.6632994292304,
+    "native_stage_seconds_excluding_eval": {
+      "timeperf/update_weights": 3.72603,
+      "timeperf/save": 0.00030406700000000004,
+      "timeperf/rollout": 130.6752899,
+      "timeperf/clear_batches": 0.0420492,
+      "timeperf/checkpoint_for_recover": 0.000224618,
+      "timeperf/compute_advantage": 2.2890699999999997,
+      "timeperf/train_step": 21.813599999999997,
+      "timeperf/recompute_logp": 8.15238
+    },
+    "native_stage_sum_excluding_eval": 166.69894778500003,
+    "native_rollout_fraction_of_stage_sum": 0.7838999084057714,
+    "collection_seconds_per_update": {
+      "min": 0.0017760329646989703,
+      "median": 18.574249807046726,
+      "p90": 25.716848523484078,
+      "max": 28.433749163057655
+    },
+    "last_member_end_to_return_seconds": {
+      "min": 0.010730266571044922,
+      "median": 0.014541387557983398,
+      "p90": 0.668025970458984,
+      "max": 2.1597490310668945
+    },
+    "group_ready_to_return_seconds": {
+      "min": 0.010730266571044922,
+      "median": 6.918274760246277,
+      "p90": 19.230290937423707,
+      "max": 26.532618761062622
+    },
+    "first_collection_to_last_return_seconds": 163.29544734954834,
+    "mixed_groups_per_observed_window_second": 0.20821156101933444,
+    "completed_generation_tokens_in_window": 246166,
+    "completed_generation_tokens_per_window_second": 1507.4884449966319,
+    "initial_collection_seconds": 28.433749163057655,
+    "later_collection_seconds": 102.22955026617274
+  },
+  "calcfresh": {
+    "updates": 8,
+    "groups": 64,
+    "mixed_consumed_groups": 29,
+    "dispatcher_collection_seconds": 235.45866083935834,
+    "native_stage_seconds_excluding_eval": {
+      "timeperf/update_weights": 3.69851,
+      "timeperf/save": 0.000317241,
+      "timeperf/rollout": 235.468,
+      "timeperf/clear_batches": 0.0428655,
+      "timeperf/checkpoint_for_recover": 0.000223135,
+      "timeperf/compute_advantage": 2.2847299999999997,
+      "timeperf/train_step": 13.6739,
+      "timeperf/recompute_logp": 4.81511
+    },
+    "native_stage_sum_excluding_eval": 259.983655876,
+    "native_rollout_fraction_of_stage_sum": 0.9057030881676161,
+    "collection_seconds_per_update": {
+      "min": 28.635180494980887,
+      "median": 29.036960581084713,
+      "p90": 30.31170194594888,
+      "max": 32.4008536770707
+    },
+    "last_member_end_to_return_seconds": {
+      "min": 0.013445854187011719,
+      "median": 0.017249464988708496,
+      "p90": 0.02359015941619873,
+      "max": 0.026813030242919922
+    },
+    "group_ready_to_return_seconds": {
+      "min": 0.013445854187011719,
+      "median": 19.75250232219696,
+      "p90": 27.392441606521608,
+      "max": 28.049660444259644
+    },
+    "first_collection_to_last_return_seconds": 258.2773742675781,
+    "mixed_groups_per_observed_window_second": 0.11228238664822297,
+    "completed_generation_tokens_in_window": 149486,
+    "completed_generation_tokens_per_window_second": 578.780856913664,
+    "initial_collection_seconds": 32.4008536770707,
+    "later_collection_seconds": 203.05780716228765
+  },
+  "calcdynamic": {
+    "updates": 3,
+    "groups": 24,
+    "mixed_consumed_groups": 24,
+    "dispatcher_collection_seconds": 121.480253500049,
+    "native_stage_seconds_excluding_eval": {
+      "timeperf/update_weights": 1.69839,
+      "timeperf/save": 0.000124914,
+      "timeperf/rollout": 121.487,
+      "timeperf/clear_batches": 0.0158641,
+      "timeperf/checkpoint_for_recover": 8.6697e-05,
+      "timeperf/compute_advantage": 0.95359,
+      "timeperf/train_step": 6.0059,
+      "timeperf/recompute_logp": 3.20091
+    },
+    "native_stage_sum_excluding_eval": 133.361865711,
+    "native_rollout_fraction_of_stage_sum": 0.9109575616111034,
+    "collection_seconds_per_update": {
+      "min": 38.25939401506912,
+      "median": 39.252976596937515,
+      "p90": 43.0249016298214,
+      "max": 43.96788288804237
+    },
+    "last_member_end_to_return_seconds": {
+      "min": 0.010385513305664062,
+      "median": 0.011221885681152344,
+      "p90": 0.01139068603515625,
+      "max": 0.011432886123657227
+    },
+    "group_ready_to_return_seconds": {
+      "min": 0.010385513305664062,
+      "median": 23.732221007347107,
+      "p90": 36.45377376079559,
+      "max": 44.134143114089966
+    },
+    "first_collection_to_last_return_seconds": 131.16318893432617,
+    "mixed_groups_per_observed_window_second": 0.18297816784568174,
+    "completed_generation_tokens_in_window": 181624,
+    "completed_generation_tokens_per_window_second": 1384.7177815335042,
+    "initial_collection_seconds": 38.25939401506912,
+    "later_collection_seconds": 83.22085948497988
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "calcasync": {
+    "change_difference_vs_fresh": 0.28125,
+    "conditional_95ci": [
+      0.140625,
+      0.421875
+    ]
+  },
+  "calccapped": {
+    "change_difference_vs_fresh": 0.15625,
+    "conditional_95ci": [
+      0.0234375,
+      0.296875
+    ]
+  }
+}
