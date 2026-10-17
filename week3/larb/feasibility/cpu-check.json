@@ -1,0 +1,11 @@
+{
+  "scope": "Existing BudgetState only; no engine integration, model execution, or GPU allocation",
+  "checks": {
+    "lower_below_generated_count_triggers_next_step": true,
+    "other_request_unaffected": true,
+    "cache_reference_unchanged": true,
+    "close_does_not_end_response": true,
+    "answer_continues": true,
+    "closed_request_not_retriggered": true
+  }
+}

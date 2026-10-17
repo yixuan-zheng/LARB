@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 21:44:05
+Job ID:    6307435
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-sweetspot
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading nonthinking indices [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 14146.05it/s]
+{"index": 60, "configuration": "nonthinking", "generated_tokens": 2048, "finish_reason": "answer_cap", "elapsed_seconds": 44.918940661940724}
+{"index": 61, "configuration": "nonthinking", "generated_tokens": 466, "finish_reason": "eos", "elapsed_seconds": 10.251091695041396}
+{"index": 62, "configuration": "nonthinking", "generated_tokens": 1621, "finish_reason": "eos", "elapsed_seconds": 35.63573321700096}
+{"index": 63, "configuration": "nonthinking", "generated_tokens": 1190, "finish_reason": "eos", "elapsed_seconds": 26.06424211303238}
+{"index": 64, "configuration": "nonthinking", "generated_tokens": 1963, "finish_reason": "eos", "elapsed_seconds": 42.80659858894069}
+{"index": 65, "configuration": "nonthinking", "generated_tokens": 259, "finish_reason": "eos", "elapsed_seconds": 5.662908728001639}
+{"index": 66, "configuration": "nonthinking", "generated_tokens": 403, "finish_reason": "eos", "elapsed_seconds": 8.869135699933395}
+{"index": 67, "configuration": "nonthinking", "generated_tokens": 397, "finish_reason": "eos", "elapsed_seconds": 8.752573478966951}
+{"index": 68, "configuration": "nonthinking", "generated_tokens": 510, "finish_reason": "eos", "elapsed_seconds": 11.22341066703666}
+{"index": 69, "configuration": "nonthinking", "generated_tokens": 615, "finish_reason": "eos", "elapsed_seconds": 13.51006446708925}
+{"index": 70, "configuration": "nonthinking", "generated_tokens": 302, "finish_reason": "eos", "elapsed_seconds": 6.649536777986214}
+{"index": 71, "configuration": "nonthinking", "generated_tokens": 441, "finish_reason": "eos", "elapsed_seconds": 9.717675769003108}
+{"index": 72, "configuration": "nonthinking", "generated_tokens": 295, "finish_reason": "eos", "elapsed_seconds": 6.511612133937888}
+{"index": 73, "configuration": "nonthinking", "generated_tokens": 273, "finish_reason": "eos", "elapsed_seconds": 6.032583225984126}
+{"index": 74, "configuration": "nonthinking", "generated_tokens": 412, "finish_reason": "eos", "elapsed_seconds": 9.087420604075305}
+{"index": 75, "configuration": "nonthinking", "generated_tokens": 428, "finish_reason": "eos", "elapsed_seconds": 9.42328818095848}
+{"index": 76, "configuration": "nonthinking", "generated_tokens": 364, "finish_reason": "eos", "elapsed_seconds": 8.007684838958085}
+{"index": 77, "configuration": "nonthinking", "generated_tokens": 169, "finish_reason": "eos", "elapsed_seconds": 3.711668060044758}
+{"index": 78, "configuration": "nonthinking", "generated_tokens": 1031, "finish_reason": "eos", "elapsed_seconds": 22.7005921760574}
+{"index": 79, "configuration": "nonthinking", "generated_tokens": 182, "finish_reason": "eos", "elapsed_seconds": 4.004085029941052}
+COMPLETE nonthinking 3
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 21:49:12
+Job ID:        6307435
+Array Job ID:  6307328_23
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-sweetspot
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=00:20:28,vmem=0,walltime=00:05:07,mem=1525616K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-25-0
+---------------------------------------

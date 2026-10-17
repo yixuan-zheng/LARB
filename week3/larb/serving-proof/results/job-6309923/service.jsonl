@@ -1,0 +1,8 @@
+{"event": "submitted", "monotonic": 874039.673677713, "pid": 1612169, "key": "A", "index": 1}
+{"event": "submitted", "monotonic": 874041.662842057, "pid": 1612169, "key": "B", "index": 0}
+{"event": "submitted", "monotonic": 874042.56699941, "pid": 1612169, "key": "C", "index": 2}
+{"event": "budget_written", "monotonic": 874047.312062243, "pid": 1612169, "key": "A", "budget": 512, "version": 1}
+{"event": "completed", "monotonic": 874057.080783688, "pid": 1612169, "key": "A", "tokens": 1268, "finish_reason": "stop"}
+{"event": "budget_written", "monotonic": 874061.239155224, "pid": 1612169, "key": "B", "budget": 1, "version": 1}
+{"event": "completed", "monotonic": 874066.1398423, "pid": 1612169, "key": "B", "tokens": 1843, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 874093.721248059, "pid": 1612169, "key": "C", "tokens": 3043, "finish_reason": "stop"}

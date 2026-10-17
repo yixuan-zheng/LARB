@@ -1,0 +1,21 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-17-2026 10:33:10
+Job ID:    6320907
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-burst-pilot
+Partition: ice-gpu
+QOS:       coc-ice
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Oct-17-2026 10:54:13
+Job ID:        6320907
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-burst-pilot
+Resources:     cpu=4,gres/gpu:h100=1,mem=64G,node=1
+Rsrc Used:     cput=01:24:16,vmem=0,walltime=00:21:04,mem=4209612K,energy_used=0
+Partition:     ice-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-012-23-0
+---------------------------------------

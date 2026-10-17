@@ -1,0 +1,54 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 16:48:15
+Job ID:    6303281
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-baseline
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Fri Oct 16 16:48:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 615.71.09              KMD Version: 615.71.09     CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:A0:00.0 Off |                    0 |
+| N/A   31C    P8             32W /  350W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:   8%|▊         | 1/13 [00:00<00:08,  1.38it/s]Fetching 13 files:  69%|██████▉   | 9/13 [00:00<00:00, 13.64it/s]Fetching 13 files: 100%|██████████| 13/13 [00:15<00:00,  1.52s/it]Fetching 13 files: 100%|██████████| 13/13 [00:15<00:00,  1.21s/it]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7539.83it/s]
+{"index": 0, "thinking_tokens": 1431, "generated_tokens": 1723, "elapsed_seconds": 42.84234201803338, "exact_match": false, "finish_reason": "eos"}
+{"index": 1, "thinking_tokens": 6582, "generated_tokens": 7258, "elapsed_seconds": 160.9281233769143, "exact_match": true, "finish_reason": "eos"}
+{"index": 2, "thinking_tokens": 1973, "generated_tokens": 2356, "elapsed_seconds": 51.84282273799181, "exact_match": false, "finish_reason": "eos"}
+{"index": 3, "thinking_tokens": 1501, "generated_tokens": 2102, "elapsed_seconds": 46.13603274489287, "exact_match": true, "finish_reason": "eos"}
+{"index": 4, "thinking_tokens": 3245, "generated_tokens": 3827, "elapsed_seconds": 84.14540249097627, "exact_match": false, "finish_reason": "eos"}
+{"index": 5, "thinking_tokens": 3238, "generated_tokens": 3633, "elapsed_seconds": 79.8381059820531, "exact_match": true, "finish_reason": "eos"}
+{"index": 6, "thinking_tokens": 3063, "generated_tokens": 3568, "elapsed_seconds": 78.69092282396741, "exact_match": true, "finish_reason": "eos"}
+{"index": 7, "thinking_tokens": 3420, "generated_tokens": 4180, "elapsed_seconds": 99.74150820006616, "exact_match": false, "finish_reason": "eos"}
+{"index": 8, "thinking_tokens": 1546, "generated_tokens": 1878, "elapsed_seconds": 42.0462035239907, "exact_match": true, "finish_reason": "eos"}
+{"index": 9, "thinking_tokens": null, "generated_tokens": 16384, "elapsed_seconds": 368.739037174033, "exact_match": false, "finish_reason": "safety_cap"}
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 17:06:59
+Job ID:        6303281
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-baseline
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=01:15:00,vmem=0,walltime=00:18:45,mem=10284684K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-27-0
+---------------------------------------

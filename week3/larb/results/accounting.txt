@@ -1,0 +1,8 @@
+JobID|State|Elapsed|ExitCode|AllocTRES
+6303266|FAILED|00:00:51|1:0|billing=4,cpu=4,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1
+6303266.batch|FAILED|00:00:51|1:0|cpu=4,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1
+6303266.extern|COMPLETED|00:00:51|0:0|billing=4,cpu=4,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1
+6303281|COMPLETED|00:18:45|0:0|billing=4,cpu=4,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1
+6303281.batch|COMPLETED|00:18:45|0:0|cpu=4,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1
+6303281.extern|COMPLETED|00:18:45|0:0|billing=4,cpu=4,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1
+6303281.0|COMPLETED|00:00:01|0:0|cpu=1,gres/gpu:l40s=1,gres/gpu=1,mem=64G,node=1

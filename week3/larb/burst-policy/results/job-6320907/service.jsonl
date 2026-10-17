@@ -1,0 +1,80 @@
+{"event": "phase", "monotonic": 916320.346306915, "pid": 480165, "phase": "calib", "policy": "full"}
+{"event": "arrival", "monotonic": 916320.851400113, "pid": 480165, "key": "calib-02", "index": 2, "policy": "full", "budget": 16384, "waiting_before": [], "pressure_step": 0, "pressure_age_ms": 75262.8462749999}
+{"event": "arrival", "monotonic": 916321.170255418, "pid": 480165, "key": "calib-00", "index": 0, "policy": "full", "budget": 16384, "waiting_before": [], "pressure_step": 0, "pressure_age_ms": 75581.59573201556}
+{"event": "completed", "monotonic": 916350.472502724, "pid": 480165, "key": "calib-00", "tokens": 1606, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916374.658742084, "pid": 480165, "key": "calib-02", "tokens": 3093, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 916375.678087116, "pid": 480165, "phase": "arrival", "policy": "arrival"}
+{"event": "arrival", "monotonic": 916376.181345971, "pid": 480165, "key": "arrival-01", "index": 1, "policy": "arrival", "budget": 16384, "waiting_before": [], "pressure_step": 3094, "pressure_age_ms": 1524.1968280170113}
+{"event": "arrival", "monotonic": 916376.183174383, "pid": 480165, "key": "arrival-00", "index": 0, "policy": "arrival", "budget": 16384, "waiting_before": [], "pressure_step": 3094, "pressure_age_ms": 1526.0646999813616}
+{"event": "arrival", "monotonic": 916383.586231794, "pid": 480165, "key": "arrival-02", "index": 2, "policy": "arrival", "budget": 16384, "waiting_before": [], "pressure_step": 3535, "pressure_age_ms": 12.397810001857579}
+{"event": "arrival", "monotonic": 916383.636266584, "pid": 480165, "key": "arrival-03", "index": 3, "policy": "arrival", "budget": 16384, "waiting_before": ["arrival-02"], "pressure_step": 3539, "pressure_age_ms": 5.124571966007352}
+{"event": "arrival", "monotonic": 916383.686112788, "pid": 480165, "key": "arrival-04", "index": 4, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03"], "pressure_step": 3541, "pressure_age_ms": 15.953046968206763}
+{"event": "arrival", "monotonic": 916383.736134422, "pid": 480165, "key": "arrival-05", "index": 5, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04"], "pressure_step": 3545, "pressure_age_ms": 6.9888250436633825}
+{"event": "arrival", "monotonic": 916383.786631906, "pid": 480165, "key": "arrival-06", "index": 6, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04", "arrival-05"], "pressure_step": 3548, "pressure_age_ms": 14.92601993959397}
+{"event": "arrival", "monotonic": 916383.835968433, "pid": 480165, "key": "arrival-07", "index": 7, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04", "arrival-05", "arrival-06"], "pressure_step": 3550, "pressure_age_ms": 36.0158639959991}
+{"event": "arrival", "monotonic": 916383.885754205, "pid": 480165, "key": "arrival-08", "index": 8, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04", "arrival-05", "arrival-06", "arrival-07"], "pressure_step": 3554, "pressure_age_ms": 4.972102935425937}
+{"event": "arrival", "monotonic": 916383.9367685, "pid": 480165, "key": "arrival-09", "index": 9, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04", "arrival-05", "arrival-06", "arrival-07", "arrival-08"], "pressure_step": 3556, "pressure_age_ms": 25.434272014535964}
+{"event": "arrival", "monotonic": 916383.986517409, "pid": 480165, "key": "arrival-10", "index": 10, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04", "arrival-05", "arrival-06", "arrival-07", "arrival-08", "arrival-09"], "pressure_step": 3559, "pressure_age_ms": 10.983812971971929}
+{"event": "arrival", "monotonic": 916384.036237936, "pid": 480165, "key": "arrival-11", "index": 11, "policy": "arrival", "budget": 2048, "waiting_before": ["arrival-02", "arrival-03", "arrival-04", "arrival-05", "arrival-06", "arrival-07", "arrival-08", "arrival-09", "arrival-10"], "pressure_step": 3562, "pressure_age_ms": 2.9443559469655156}
+{"event": "completed", "monotonic": 916402.971674565, "pid": 480165, "key": "arrival-00", "tokens": 1589, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916445.450477595, "pid": 480165, "key": "arrival-02", "tokens": 2502, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916484.704021137, "pid": 480165, "key": "arrival-03", "tokens": 2351, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916492.329419618, "pid": 480165, "key": "arrival-01", "tokens": 6886, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916527.593557368, "pid": 480165, "key": "arrival-04", "tokens": 2596, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916528.89708453, "pid": 480165, "key": "arrival-05", "tokens": 2233, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916568.29618026, "pid": 480165, "key": "arrival-06", "tokens": 2547, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916573.621617499, "pid": 480165, "key": "arrival-07", "tokens": 2806, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916595.0504668, "pid": 480165, "key": "arrival-08", "tokens": 1726, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916629.616706451, "pid": 480165, "key": "arrival-09", "tokens": 3628, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916635.780794786, "pid": 480165, "key": "arrival-10", "tokens": 2646, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916675.933595015, "pid": 480165, "key": "arrival-11", "tokens": 3255, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 916676.940641523, "pid": 480165, "phase": "live", "policy": "live"}
+{"event": "arrival", "monotonic": 916677.444296128, "pid": 480165, "key": "live-01", "index": 1, "policy": "live", "budget": 16384, "waiting_before": [], "pressure_step": 21903, "pressure_age_ms": 1512.528734980151}
+{"event": "arrival", "monotonic": 916677.446263347, "pid": 480165, "key": "live-00", "index": 0, "policy": "live", "budget": 16384, "waiting_before": [], "pressure_step": 21903, "pressure_age_ms": 1514.2959730001166}
+{"event": "arrival", "monotonic": 916684.849326028, "pid": 480165, "key": "live-02", "index": 2, "policy": "live", "budget": 16384, "waiting_before": [], "pressure_step": 22383, "pressure_age_ms": 8.329504984430969}
+{"event": "arrival", "monotonic": 916684.900006561, "pid": 480165, "key": "live-03", "index": 3, "policy": "live", "budget": 16384, "waiting_before": ["live-02"], "pressure_step": 22387, "pressure_age_ms": 1.192516996525228}
+{"event": "arrival", "monotonic": 916684.948933542, "pid": 480165, "key": "live-04", "index": 4, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03"], "pressure_step": 22390, "pressure_age_ms": 7.352081011049449}
+{"event": "arrival", "monotonic": 916684.998419153, "pid": 480165, "key": "live-05", "index": 5, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04"], "pressure_step": 22393, "pressure_age_ms": 9.018826996907592}
+{"event": "arrival", "monotonic": 916685.048920983, "pid": 480165, "key": "live-06", "index": 6, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04", "live-05"], "pressure_step": 22397, "pressure_age_ms": 3.0212660785764456}
+{"event": "arrival", "monotonic": 916685.099225031, "pid": 480165, "key": "live-07", "index": 7, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04", "live-05", "live-06"], "pressure_step": 22400, "pressure_age_ms": 10.98092901520431}
+{"event": "arrival", "monotonic": 916685.149048725, "pid": 480165, "key": "live-08", "index": 8, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04", "live-05", "live-06", "live-07"], "pressure_step": 22404, "pressure_age_ms": 3.1202799873426557}
+{"event": "arrival", "monotonic": 916685.198798405, "pid": 480165, "key": "live-09", "index": 9, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04", "live-05", "live-06", "live-07", "live-08"], "pressure_step": 22407, "pressure_age_ms": 9.444453055039048}
+{"event": "arrival", "monotonic": 916685.248896197, "pid": 480165, "key": "live-10", "index": 10, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04", "live-05", "live-06", "live-07", "live-08", "live-09"], "pressure_step": 22411, "pressure_age_ms": 2.9210979118943214}
+{"event": "arrival", "monotonic": 916685.298441546, "pid": 480165, "key": "live-11", "index": 11, "policy": "live", "budget": 2048, "waiting_before": ["live-02", "live-03", "live-04", "live-05", "live-06", "live-07", "live-08", "live-09", "live-10"], "pressure_step": 22414, "pressure_age_ms": 9.005418047308922}
+{"event": "completed", "monotonic": 916701.97736072, "pid": 480165, "key": "live-00", "tokens": 1589, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916718.292199814, "pid": 480165, "key": "live-01", "tokens": 2652, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916739.261974762, "pid": 480165, "key": "live-02", "tokens": 2424, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916745.128969288, "pid": 480165, "key": "live-03", "tokens": 1737, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916779.822966532, "pid": 480165, "key": "live-04", "tokens": 2638, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916782.445239245, "pid": 480165, "key": "live-05", "tokens": 2430, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916820.417328941, "pid": 480165, "key": "live-06", "tokens": 2682, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916822.181774386, "pid": 480165, "key": "live-07", "tokens": 2631, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916854.407778824, "pid": 480165, "key": "live-08", "tokens": 2265, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916869.420983193, "pid": 480165, "key": "live-09", "tokens": 3125, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916894.394989638, "pid": 480165, "key": "live-10", "tokens": 2630, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916929.295624739, "pid": 480165, "key": "live-11", "tokens": 4110, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 916930.326039814, "pid": 480165, "phase": "full", "policy": "full"}
+{"event": "arrival", "monotonic": 916930.829816026, "pid": 480165, "key": "full-01", "index": 1, "policy": "full", "budget": 16384, "waiting_before": [], "pressure_step": 38589, "pressure_age_ms": 1536.1402430571616}
+{"event": "arrival", "monotonic": 916930.847224551, "pid": 480165, "key": "full-00", "index": 0, "policy": "full", "budget": 16384, "waiting_before": [], "pressure_step": 38589, "pressure_age_ms": 1553.9466220652685}
+{"event": "arrival", "monotonic": 916938.235289351, "pid": 480165, "key": "full-02", "index": 2, "policy": "full", "budget": 16384, "waiting_before": [], "pressure_step": 39059, "pressure_age_ms": 8.307878975756466}
+{"event": "arrival", "monotonic": 916938.285291974, "pid": 480165, "key": "full-03", "index": 3, "policy": "full", "budget": 16384, "waiting_before": ["full-02"], "pressure_step": 39062, "pressure_age_ms": 13.089491054415703}
+{"event": "arrival", "monotonic": 916938.334515143, "pid": 480165, "key": "full-04", "index": 4, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03"], "pressure_step": 39063, "pressure_age_ms": 46.28867201972753}
+{"event": "arrival", "monotonic": 916938.385360832, "pid": 480165, "key": "full-05", "index": 5, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04"], "pressure_step": 39066, "pressure_age_ms": 10.964693035930395}
+{"event": "arrival", "monotonic": 916938.434467563, "pid": 480165, "key": "full-06", "index": 6, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04", "full-05"], "pressure_step": 39070, "pressure_age_ms": 3.931076033040881}
+{"event": "arrival", "monotonic": 916938.484593395, "pid": 480165, "key": "full-07", "index": 7, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04", "full-05", "full-06"], "pressure_step": 39073, "pressure_age_ms": 10.890063946135342}
+{"event": "arrival", "monotonic": 916938.534161404, "pid": 480165, "key": "full-08", "index": 8, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04", "full-05", "full-06", "full-07"], "pressure_step": 39077, "pressure_age_ms": 3.9275860181078315}
+{"event": "arrival", "monotonic": 916938.584925351, "pid": 480165, "key": "full-09", "index": 9, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04", "full-05", "full-06", "full-07", "full-08"], "pressure_step": 39080, "pressure_age_ms": 11.919604032300413}
+{"event": "arrival", "monotonic": 916938.634384525, "pid": 480165, "key": "full-10", "index": 10, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04", "full-05", "full-06", "full-07", "full-08", "full-09"], "pressure_step": 39084, "pressure_age_ms": 3.945309086702764}
+{"event": "arrival", "monotonic": 916938.684232841, "pid": 480165, "key": "full-11", "index": 11, "policy": "full", "budget": 16384, "waiting_before": ["full-02", "full-03", "full-04", "full-05", "full-06", "full-07", "full-08", "full-09", "full-10"], "pressure_step": 39087, "pressure_age_ms": 10.940337087959051}
+{"event": "completed", "monotonic": 916955.240311612, "pid": 480165, "key": "full-00", "tokens": 1589, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 916992.740428982, "pid": 480165, "key": "full-02", "tokens": 2502, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917028.444622447, "pid": 480165, "key": "full-03", "tokens": 2351, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917035.203642187, "pid": 480165, "key": "full-01", "tokens": 6886, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917069.012358393, "pid": 480165, "key": "full-05", "tokens": 2233, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917098.702464719, "pid": 480165, "key": "full-04", "tokens": 4615, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917116.929838133, "pid": 480165, "key": "full-06", "tokens": 3141, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917142.402166889, "pid": 480165, "key": "full-08", "tokens": 1651, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917153.578888784, "pid": 480165, "key": "full-07", "tokens": 3590, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917231.500984354, "pid": 480165, "key": "full-10", "tokens": 5142, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917378.396524376, "pid": 480165, "key": "full-11", "tokens": 9541, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 917392.10659083, "pid": 480165, "key": "full-09", "tokens": 16385, "finish_reason": "stop"}

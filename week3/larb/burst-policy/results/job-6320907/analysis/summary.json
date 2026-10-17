@@ -1,0 +1,179 @@
+{
+  "summary": [
+    {
+      "policy": "full",
+      "n": 12,
+      "completed_correct": 11,
+      "accuracy_percent": 91.66666666666667,
+      "correct_on_time": 4,
+      "client_correct_on_time": 4,
+      "deadline_goodput_per_minute": 2.0783664610036503,
+      "median_completion_seconds": 169.42982471501455,
+      "mean_completion_seconds": 195.66553296196312,
+      "mean_queue_seconds": 119.93369949988362,
+      "drain_seconds": 461.2735263189534,
+      "normal_completions": 11,
+      "finish_counts": {
+        "eos": 11,
+        "thinking_cap": 1
+      },
+      "initial_short_budgets": 0,
+      "cue_starts": 0,
+      "live_reductions": 0,
+      "genuine_live_cutoffs": 0,
+      "max_injection_lag_ms": 1.3174674240872264
+    },
+    {
+      "policy": "arrival",
+      "n": 12,
+      "completed_correct": 10,
+      "accuracy_percent": 83.33333333333333,
+      "correct_on_time": 3,
+      "client_correct_on_time": 3,
+      "deadline_goodput_per_minute": 1.5587748457527377,
+      "median_completion_seconds": 164.83499319502153,
+      "mean_completion_seconds": 164.14674871693327,
+      "mean_queue_seconds": 117.53764458017152,
+      "drain_seconds": 299.7528154810425,
+      "normal_completions": 12,
+      "finish_counts": {
+        "eos": 12
+      },
+      "initial_short_budgets": 8,
+      "cue_starts": 5,
+      "live_reductions": 0,
+      "genuine_live_cutoffs": 0,
+      "max_injection_lag_ms": 1.1359730269759893
+    },
+    {
+      "policy": "live",
+      "n": 12,
+      "completed_correct": 11,
+      "accuracy_percent": 91.66666666666667,
+      "correct_on_time": 6,
+      "client_correct_on_time": 6,
+      "deadline_goodput_per_minute": 3.1175496915054755,
+      "median_completion_seconds": 116.40672762296163,
+      "mean_completion_seconds": 120.9515536329709,
+      "mean_queue_seconds": 81.88724484024958,
+      "drain_seconds": 251.85214631201234,
+      "normal_completions": 11,
+      "finish_counts": {
+        "eos": 11,
+        "answer_cap": 1
+      },
+      "initial_short_budgets": 8,
+      "cue_starts": 9,
+      "live_reductions": 4,
+      "genuine_live_cutoffs": 1,
+      "max_injection_lag_ms": 1.6976760234683752
+    }
+  ],
+  "screen": {
+    "genuine_live_cutoff": true,
+    "more_correct_on_time_than_both": true,
+    "no_fewer_completed_correct_than_full": true
+  },
+  "screen_passed": true,
+  "trace": {
+    "calibration_indices": [
+      0,
+      2
+    ],
+    "calibration_latencies_seconds": [
+      29.623844149988145,
+      53.809671744005755
+    ],
+    "burst_at_seconds": 7.405961037497036,
+    "relative_deadline_seconds": 107.61934348801151,
+    "arrivals": [
+      {
+        "index": 0,
+        "offset_seconds": 0
+      },
+      {
+        "index": 1,
+        "offset_seconds": 0
+      },
+      {
+        "index": 2,
+        "offset_seconds": 7.405961037497036
+      },
+      {
+        "index": 3,
+        "offset_seconds": 7.455961037497036
+      },
+      {
+        "index": 4,
+        "offset_seconds": 7.505961037497036
+      },
+      {
+        "index": 5,
+        "offset_seconds": 7.5559610374970365
+      },
+      {
+        "index": 6,
+        "offset_seconds": 7.605961037497036
+      },
+      {
+        "index": 7,
+        "offset_seconds": 7.655961037497036
+      },
+      {
+        "index": 8,
+        "offset_seconds": 7.705961037497036
+      },
+      {
+        "index": 9,
+        "offset_seconds": 7.755961037497036
+      },
+      {
+        "index": 10,
+        "offset_seconds": 7.8059610374970365
+      },
+      {
+        "index": 11,
+        "offset_seconds": 7.855961037497036
+      }
+    ],
+    "fixed_observation_horizon_seconds": 115.47530452550855,
+    "frozen_monotonic": 916374.661830214,
+    "order": [
+      "arrival",
+      "live",
+      "full"
+    ]
+  },
+  "paired_vs_full": {
+    "arrival": {
+      "correctness_losses": [
+        11
+      ],
+      "correctness_gains": [],
+      "new_correct_on_time": [],
+      "lost_correct_on_time": [
+        1
+      ]
+    },
+    "live": {
+      "correctness_losses": [
+        11
+      ],
+      "correctness_gains": [
+        9
+      ],
+      "new_correct_on_time": [
+        4,
+        5
+      ],
+      "lost_correct_on_time": []
+    }
+  },
+  "max_active": 2,
+  "measured_records": 36,
+  "calibration_records": 2,
+  "row_move_events": 0,
+  "matched_prefixes": 8,
+  "compared_prefixes": 24,
+  "validation": "Complete records and source hashes; identical frozen trace; pressure rules, cue sequences, caps, no reopening, monotonic computation, retained sampled KV prefixes, zero preemption verified"
+}

@@ -1,0 +1,25 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 20:08:56
+Job ID:    6306428
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-cue
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   2%|▏         | 8/398 [00:00<00:04, 78.20it/s]Loading weights:   4%|▍         | 16/398 [00:00<00:07, 53.42it/s]Loading weights:   7%|▋         | 26/398 [00:00<00:05, 68.03it/s]Loading weights:  10%|█         | 40/398 [00:00<00:03, 90.22it/s]Loading weights:  13%|█▎        | 53/398 [00:00<00:03, 93.94it/s]Loading weights:  16%|█▋        | 65/398 [00:00<00:03, 94.53it/s]Loading weights:  19%|█▉        | 75/398 [00:00<00:03, 84.72it/s]Loading weights:  21%|██        | 84/398 [00:01<00:03, 84.88it/s]Loading weights:  23%|██▎       | 93/398 [00:01<00:03, 82.64it/s]Loading weights:  26%|██▌       | 102/398 [00:01<00:04, 71.46it/s]Loading weights:  28%|██▊       | 110/398 [00:01<00:04, 64.89it/s]Loading weights:  30%|██▉       | 118/398 [00:01<00:04, 67.22it/s]Loading weights:  32%|███▏      | 128/398 [00:01<00:03, 71.76it/s]Loading weights:  34%|███▍      | 136/398 [00:01<00:03, 68.43it/s]Loading weights:  36%|███▌      | 143/398 [00:01<00:03, 66.74it/s]Loading weights:  38%|███▊      | 150/398 [00:02<00:03, 64.37it/s]Loading weights:  39%|███▉      | 157/398 [00:02<00:03, 63.65it/s]Loading weights:  41%|████      | 164/398 [00:02<00:03, 61.15it/s]Loading weights:  43%|████▎     | 172/398 [00:02<00:03, 61.72it/s]Loading weights:  45%|████▍     | 179/398 [00:02<00:03, 62.23it/s]Loading weights:  48%|████▊     | 192/398 [00:02<00:02, 72.29it/s]Loading weights:  52%|█████▏    | 208/398 [00:02<00:02, 87.79it/s]Loading weights:  55%|█████▍    | 217/398 [00:02<00:02, 71.86it/s]Loading weights:  58%|█████▊    | 231/398 [00:03<00:02, 82.72it/s]Loading weights:  61%|██████    | 243/398 [00:03<00:01, 88.12it/s]Loading weights: 100%|██████████| 398/398 [00:03<00:00, 122.53it/s]
+{"index": 0, "thinking_tokens": 524, "answer_tokens": 312, "forced_positions": [512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525], "prefix_matches_stage1": true, "exact_match": false, "finish_reason": "eos", "elapsed_seconds": 18.522002869052812}
+{"index": 1, "thinking_tokens": 524, "answer_tokens": 703, "forced_positions": [512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525], "prefix_matches_stage1": true, "exact_match": true, "finish_reason": "eos", "elapsed_seconds": 26.786441338947043}
+{"index": 9, "thinking_tokens": 524, "answer_tokens": 714, "forced_positions": [512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525], "prefix_matches_stage1": true, "exact_match": false, "finish_reason": "eos", "elapsed_seconds": 27.049694722052664}
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 20:11:39
+Job ID:        6306428
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-cue
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=00:10:52,vmem=0,walltime=00:02:43,mem=8488252K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-21-0
+---------------------------------------

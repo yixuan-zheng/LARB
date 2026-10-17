@@ -1,0 +1,54 @@
+[
+  {
+    "event": "client_submit",
+    "monotonic": 874039.649537643,
+    "key": "A",
+    "index": 1
+  },
+  {
+    "event": "client_submit",
+    "monotonic": 874041.661280647,
+    "key": "B",
+    "index": 0
+  },
+  {
+    "event": "client_submit",
+    "monotonic": 874042.565525311,
+    "key": "C",
+    "index": 2
+  },
+  {
+    "event": "client_budget_update",
+    "monotonic": 874047.308918456,
+    "key": "A",
+    "budget": 512,
+    "tokens_seen": 512,
+    "finished": false
+  },
+  {
+    "event": "client_finished",
+    "monotonic": 874057.081221612,
+    "key": "A",
+    "tokens": 1268
+  },
+  {
+    "event": "client_budget_update",
+    "monotonic": 874061.236824844,
+    "key": "B",
+    "budget": 1,
+    "tokens_seen": 1460,
+    "finished": false
+  },
+  {
+    "event": "client_finished",
+    "monotonic": 874066.14035546,
+    "key": "B",
+    "tokens": 1843
+  },
+  {
+    "event": "client_finished",
+    "monotonic": 874093.723284145,
+    "key": "C",
+    "tokens": 3043
+  }
+]

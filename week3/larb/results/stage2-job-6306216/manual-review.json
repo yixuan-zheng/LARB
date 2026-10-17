@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "(3, \\frac{\\pi}{2})",
+    "reference": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "reason": "Correct polar coordinate pair; LaTeX delimiter formatting differs from reference."
+  },
+  {
+    "index": 1,
+    "boxed_answer_correct": false,
+    "completed_correct": false,
+    "extracted": null,
+    "reference": "p - q",
+    "reason": "Contains the correct expression in the continuation, but no boxed final answer or normal completion before the answer cap."
+  },
+  {
+    "index": 2,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "\\frac{14}{3}",
+    "reference": "\\frac{14}{3}",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 3,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "9",
+    "reference": "9",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 4,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "\\text{Evelyn}",
+    "reference": "\\text{Evelyn}",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 5,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "42",
+    "reference": "42",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 6,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "27",
+    "reference": "27",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 7,
+    "boxed_answer_correct": true,
+    "completed_correct": false,
+    "extracted": "90",
+    "reference": "90^\\circ",
+    "reason": "Contains a correct boxed 90, but keeps generating and reaches the answer cap. Not counted as a successfully completed response."
+  },
+  {
+    "index": 8,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "3\\sqrt{13}",
+    "reference": "3\\sqrt{13}",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 9,
+    "boxed_answer_correct": false,
+    "completed_correct": false,
+    "extracted": null,
+    "reference": "4",
+    "reason": "No boxed final answer before the answer cap."
+  }
+]

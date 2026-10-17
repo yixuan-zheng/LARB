@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 20:45:41
+Job ID:    6307329
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-sweetspot
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading full indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:05,  6.02it/s]Loading weights:   1%|          | 2/398 [00:00<00:54,  7.27it/s]Loading weights:   2%|▏         | 6/398 [00:00<00:20, 18.67it/s]Loading weights:   6%|▌         | 23/398 [00:00<00:05, 68.62it/s]Loading weights:  11%|█         | 43/398 [00:00<00:03, 110.20it/s]Loading weights:  15%|█▍        | 59/398 [00:00<00:02, 115.09it/s]Loading weights:  18%|█▊        | 73/398 [00:00<00:02, 115.59it/s]Loading weights:  21%|██▏       | 85/398 [00:01<00:03, 82.67it/s] Loading weights:  30%|██▉       | 118/398 [00:01<00:02, 132.36it/s]Loading weights:  34%|███▎      | 134/398 [00:01<00:01, 138.55it/s]Loading weights:  39%|███▉      | 155/398 [00:01<00:01, 148.66it/s]Loading weights:  43%|████▎     | 172/398 [00:01<00:01, 119.97it/s]Loading weights:  47%|████▋     | 186/398 [00:01<00:01, 120.05it/s]Loading weights:  53%|█████▎    | 210/398 [00:01<00:01, 134.18it/s]Loading weights:  57%|█████▋    | 225/398 [00:02<00:01, 133.64it/s]Loading weights:  60%|██████    | 239/398 [00:02<00:01, 134.68it/s]Loading weights:  64%|██████▎   | 253/398 [00:02<00:01, 131.43it/s]Loading weights:  67%|██████▋   | 267/398 [00:02<00:01, 127.92it/s]Loading weights:  70%|███████   | 280/398 [00:02<00:01, 93.15it/s] Loading weights:  74%|███████▎  | 293/398 [00:02<00:01, 92.87it/s]Loading weights:  76%|███████▋  | 304/398 [00:02<00:01, 87.36it/s]Loading weights:  81%|████████  | 321/398 [00:03<00:00, 103.26it/s]Loading weights:  84%|████████▎ | 333/398 [00:03<00:00, 100.90it/s]Loading weights: 100%|██████████| 398/398 [00:03<00:00, 126.03it/s]
+{"index": 0, "configuration": "full", "generated_tokens": 1723, "finish_reason": "eos", "elapsed_seconds": 41.496956765069626}
+{"index": 1, "configuration": "full", "generated_tokens": 7258, "finish_reason": "eos", "elapsed_seconds": 158.67848518805113}
+{"index": 2, "configuration": "full", "generated_tokens": 2356, "finish_reason": "eos", "elapsed_seconds": 51.593967359978706}
+{"index": 3, "configuration": "full", "generated_tokens": 2102, "finish_reason": "eos", "elapsed_seconds": 46.03083061799407}
+{"index": 4, "configuration": "full", "generated_tokens": 3827, "finish_reason": "eos", "elapsed_seconds": 83.65627820708323}
+{"index": 5, "configuration": "full", "generated_tokens": 3633, "finish_reason": "eos", "elapsed_seconds": 79.15920768491924}
+{"index": 6, "configuration": "full", "generated_tokens": 3568, "finish_reason": "eos", "elapsed_seconds": 77.97291908203624}
+{"index": 7, "configuration": "full", "generated_tokens": 4180, "finish_reason": "eos", "elapsed_seconds": 91.21075660199858}
+{"index": 8, "configuration": "full", "generated_tokens": 1878, "finish_reason": "eos", "elapsed_seconds": 40.981965142069384}
+{"index": 9, "configuration": "full", "generated_tokens": 16384, "finish_reason": "thinking_cap", "elapsed_seconds": 365.867490015924}
+{"index": 10, "configuration": "full", "generated_tokens": 8102, "finish_reason": "eos", "elapsed_seconds": 176.83355028904043}
+{"index": 11, "configuration": "full", "generated_tokens": 3954, "finish_reason": "eos", "elapsed_seconds": 86.83220513502602}
+{"index": 12, "configuration": "full", "generated_tokens": 3628, "finish_reason": "eos", "elapsed_seconds": 79.47673732007388}
+{"index": 13, "configuration": "full", "generated_tokens": 1066, "finish_reason": "eos", "elapsed_seconds": 23.360378250014037}
+{"index": 14, "configuration": "full", "generated_tokens": 2148, "finish_reason": "eos", "elapsed_seconds": 46.92937126394827}
+{"index": 15, "configuration": "full", "generated_tokens": 5929, "finish_reason": "eos", "elapsed_seconds": 129.7588544320315}
+{"index": 16, "configuration": "full", "generated_tokens": 3660, "finish_reason": "eos", "elapsed_seconds": 79.98999972094316}
+{"index": 17, "configuration": "full", "generated_tokens": 6004, "finish_reason": "eos", "elapsed_seconds": 131.31617947400082}
+{"index": 18, "configuration": "full", "generated_tokens": 14686, "finish_reason": "eos", "elapsed_seconds": 324.6138043690007}
+{"index": 19, "configuration": "full", "generated_tokens": 6613, "finish_reason": "eos", "elapsed_seconds": 145.1111916960217}
+COMPLETE full 0
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 21:27:07
+Job ID:        6307329
+Array Job ID:  6307328_0
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-sweetspot
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=02:45:44,vmem=0,walltime=00:41:26,mem=5379948K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-25-0
+---------------------------------------

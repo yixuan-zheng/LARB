@@ -1,0 +1,2402 @@
+[
+  {
+    "configuration": "budget-256",
+    "index": 0,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 1,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 2,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 3,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 4,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 5,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 6,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 7,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 8,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 9,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 10,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 11,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 12,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 13,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 14,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 15,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 16,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 17,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 18,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 19,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 20,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 21,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 22,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 23,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 24,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 25,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 26,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 27,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 28,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 29,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 30,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 31,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 32,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 33,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 34,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 35,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 36,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 37,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 38,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 39,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 40,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 41,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 42,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 43,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 44,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 45,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 46,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 47,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 48,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 49,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 50,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 51,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 52,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 53,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 54,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 55,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 56,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 57,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 58,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 59,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 60,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 61,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 62,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 63,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 64,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 65,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 66,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 67,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 68,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 69,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 70,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 71,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 72,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 73,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 74,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 75,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 76,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 77,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 78,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 79,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 80,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 81,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 82,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 83,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 84,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 85,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 86,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 87,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 88,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 89,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 90,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 91,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 92,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 93,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 94,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 95,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 96,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 97,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 98,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-256",
+    "index": 99,
+    "tokens_compared": 256,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 0,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 1,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 2,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 3,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 4,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 5,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 6,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 7,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 8,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 9,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 10,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 11,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 12,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 13,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 14,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 15,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 16,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 17,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 18,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 19,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 20,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 21,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 22,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 23,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 24,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 25,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 26,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 27,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 28,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 29,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 30,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 31,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 32,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 33,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 34,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 35,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 36,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 37,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 38,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 39,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 40,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 41,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 42,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 43,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 44,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 45,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 46,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 47,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 48,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 49,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 50,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 51,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 52,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 53,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 54,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 55,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 56,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 57,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 58,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 59,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 60,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 61,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 62,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 63,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 64,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 65,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 66,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 67,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 68,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 69,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 70,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 71,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 72,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 73,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 74,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 75,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 76,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 77,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 78,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 79,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 80,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 81,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 82,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 83,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 84,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 85,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 86,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 87,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 88,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 89,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 90,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 91,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 92,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 93,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 94,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 95,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 96,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 97,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 98,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-512",
+    "index": 99,
+    "tokens_compared": 512,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 0,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 1,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 2,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 3,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 4,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 5,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 6,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 7,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 8,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 9,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 10,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 11,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 12,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 13,
+    "tokens_compared": 825,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 14,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 15,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 16,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 17,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 18,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 19,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 20,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 21,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 22,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 23,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 24,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 25,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 26,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 27,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 28,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 29,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 30,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 31,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 32,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 33,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 34,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 35,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 36,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 37,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 38,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 39,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 40,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 41,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 42,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 43,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 44,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 45,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 46,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 47,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 48,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 49,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 50,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 51,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 52,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 53,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 54,
+    "tokens_compared": 883,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 55,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 56,
+    "tokens_compared": 842,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 57,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 58,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 59,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 60,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 61,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 62,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 63,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 64,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 65,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 66,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 67,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 68,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 69,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 70,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 71,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 72,
+    "tokens_compared": 950,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 73,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 74,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 75,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 76,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 77,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 78,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 79,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 80,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 81,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 82,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 83,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 84,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 85,
+    "tokens_compared": 981,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 86,
+    "tokens_compared": 717,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 87,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 88,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 89,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 90,
+    "tokens_compared": 1009,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 91,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 92,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 93,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 94,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 95,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 96,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 97,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 98,
+    "tokens_compared": 896,
+    "match": true
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 99,
+    "tokens_compared": 1024,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 0,
+    "tokens_compared": 1431,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 1,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 2,
+    "tokens_compared": 1973,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 3,
+    "tokens_compared": 1501,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 4,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 5,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 6,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 7,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 8,
+    "tokens_compared": 1546,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 9,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 10,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 11,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 12,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 13,
+    "tokens_compared": 825,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 14,
+    "tokens_compared": 1731,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 15,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 16,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 17,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 18,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 19,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 20,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 21,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 22,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 23,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 24,
+    "tokens_compared": 1943,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 25,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 26,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 27,
+    "tokens_compared": 1591,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 28,
+    "tokens_compared": 1965,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 29,
+    "tokens_compared": 1238,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 30,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 31,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 32,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 33,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 34,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 35,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 36,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 37,
+    "tokens_compared": 1743,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 38,
+    "tokens_compared": 1309,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 39,
+    "tokens_compared": 1749,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 40,
+    "tokens_compared": 1896,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 41,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 42,
+    "tokens_compared": 1310,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 43,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 44,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 45,
+    "tokens_compared": 1304,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 46,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 47,
+    "tokens_compared": 1680,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 48,
+    "tokens_compared": 1660,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 49,
+    "tokens_compared": 1947,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 50,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 51,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 52,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 53,
+    "tokens_compared": 1280,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 54,
+    "tokens_compared": 883,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 55,
+    "tokens_compared": 1891,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 56,
+    "tokens_compared": 842,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 57,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 58,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 59,
+    "tokens_compared": 1131,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 60,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 61,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 62,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 63,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 64,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 65,
+    "tokens_compared": 1135,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 66,
+    "tokens_compared": 1715,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 67,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 68,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 69,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 70,
+    "tokens_compared": 1482,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 71,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 72,
+    "tokens_compared": 950,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 73,
+    "tokens_compared": 2008,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 74,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 75,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 76,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 77,
+    "tokens_compared": 1740,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 78,
+    "tokens_compared": 1821,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 79,
+    "tokens_compared": 1131,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 80,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 81,
+    "tokens_compared": 1067,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 82,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 83,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 84,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 85,
+    "tokens_compared": 981,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 86,
+    "tokens_compared": 717,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 87,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 88,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 89,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 90,
+    "tokens_compared": 1009,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 91,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 92,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 93,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 94,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 95,
+    "tokens_compared": 1346,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 96,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 97,
+    "tokens_compared": 2048,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 98,
+    "tokens_compared": 896,
+    "match": true
+  },
+  {
+    "configuration": "budget-2048",
+    "index": 99,
+    "tokens_compared": 2048,
+    "match": true
+  }
+]

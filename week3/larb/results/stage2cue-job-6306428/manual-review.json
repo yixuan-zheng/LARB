@@ -1,0 +1,26 @@
+[
+  {
+    "index": 0,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "(3, \\frac{\\pi}{2})",
+    "reference": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "reason": "Correct polar coordinate pair; LaTeX delimiter formatting differs from reference."
+  },
+  {
+    "index": 1,
+    "boxed_answer_correct": true,
+    "completed_correct": true,
+    "extracted": "p - q",
+    "reference": "p - q",
+    "reason": "Correct answer; manually checked against the problem and reference."
+  },
+  {
+    "index": 9,
+    "boxed_answer_correct": false,
+    "completed_correct": false,
+    "extracted": "14",
+    "reference": "4",
+    "reason": "Wrong final answer 14 instead of 4."
+  }
+]

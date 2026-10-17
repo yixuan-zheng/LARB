@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 21:54:32
+Job ID:    6307439
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-sweetspot
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading budget-2048 indices [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/398 [00:00<00:06, 62.33it/s]Loading weights:   5%|▍         | 19/398 [00:00<00:04, 76.84it/s]Loading weights:   7%|▋         | 27/398 [00:00<00:05, 72.71it/s]Loading weights:  10%|█         | 41/398 [00:00<00:04, 84.35it/s]Loading weights:  13%|█▎        | 50/398 [00:00<00:04, 81.07it/s]Loading weights:  15%|█▍        | 59/398 [00:00<00:04, 68.63it/s]Loading weights:  17%|█▋        | 67/398 [00:00<00:05, 59.59it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 367.57it/s]
+{"index": 80, "configuration": "budget-2048", "generated_tokens": 3893, "finish_reason": "eos", "elapsed_seconds": 87.75988720008172}
+{"index": 81, "configuration": "budget-2048", "generated_tokens": 1412, "finish_reason": "eos", "elapsed_seconds": 30.7531277599046}
+{"index": 82, "configuration": "budget-2048", "generated_tokens": 2919, "finish_reason": "eos", "elapsed_seconds": 63.42546055803541}
+{"index": 83, "configuration": "budget-2048", "generated_tokens": 2647, "finish_reason": "eos", "elapsed_seconds": 57.59963352396153}
+{"index": 84, "configuration": "budget-2048", "generated_tokens": 2801, "finish_reason": "eos", "elapsed_seconds": 61.335040899924934}
+{"index": 85, "configuration": "budget-2048", "generated_tokens": 1317, "finish_reason": "eos", "elapsed_seconds": 28.85506347496994}
+{"index": 86, "configuration": "budget-2048", "generated_tokens": 927, "finish_reason": "eos", "elapsed_seconds": 20.274670229991898}
+{"index": 87, "configuration": "budget-2048", "generated_tokens": 2501, "finish_reason": "eos", "elapsed_seconds": 54.543343778001145}
+{"index": 88, "configuration": "budget-2048", "generated_tokens": 3217, "finish_reason": "eos", "elapsed_seconds": 70.51175035990309}
+{"index": 89, "configuration": "budget-2048", "generated_tokens": 2450, "finish_reason": "eos", "elapsed_seconds": 55.382637778064236}
+{"index": 90, "configuration": "budget-2048", "generated_tokens": 1269, "finish_reason": "eos", "elapsed_seconds": 27.86664937704336}
+{"index": 91, "configuration": "budget-2048", "generated_tokens": 2499, "finish_reason": "eos", "elapsed_seconds": 54.994083647965454}
+{"index": 92, "configuration": "budget-2048", "generated_tokens": 2564, "finish_reason": "eos", "elapsed_seconds": 56.64872492791619}
+{"index": 93, "configuration": "budget-2048", "generated_tokens": 2504, "finish_reason": "eos", "elapsed_seconds": 54.850682071060874}
+{"index": 94, "configuration": "budget-2048", "generated_tokens": 2908, "finish_reason": "eos", "elapsed_seconds": 63.587305549997836}
+{"index": 95, "configuration": "budget-2048", "generated_tokens": 2105, "finish_reason": "eos", "elapsed_seconds": 46.00151929492131}
+{"index": 96, "configuration": "budget-2048", "generated_tokens": 3475, "finish_reason": "eos", "elapsed_seconds": 76.03202379005961}
+{"index": 97, "configuration": "budget-2048", "generated_tokens": 2320, "finish_reason": "eos", "elapsed_seconds": 50.8251027680235}
+{"index": 98, "configuration": "budget-2048", "generated_tokens": 1079, "finish_reason": "eos", "elapsed_seconds": 23.570240980945528}
+{"index": 99, "configuration": "budget-2048", "generated_tokens": 2911, "finish_reason": "eos", "elapsed_seconds": 63.83763395505957}
+COMPLETE budget-2048 4
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 22:13:31
+Job ID:        6307439
+Array Job ID:  6307328_28
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-sweetspot
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=01:15:52,vmem=0,walltime=00:18:58,mem=8233580K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-27-0
+---------------------------------------

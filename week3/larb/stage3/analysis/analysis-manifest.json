@@ -1,0 +1,9 @@
+{
+  "python": "3.11.8",
+  "numpy": "2.2.6",
+  "matplotlib": "3.9.2",
+  "source_sha256": "826bf5891062a6d69af2ad2a8fa9e0d6ad07796a60e7357b8c9eb1886fba3659",
+  "graded_sha256": "4e331f8d4a51f013bc23c027a7bfdf1d9fecbe93dbecd1b8bc142ddbc8d790c8",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 622203
+}

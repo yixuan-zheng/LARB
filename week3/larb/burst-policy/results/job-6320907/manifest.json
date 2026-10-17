@@ -1,0 +1,23 @@
+{
+  "python": "3.10.13",
+  "job": "6320907",
+  "versions": {
+    "vllm": "0.11.2",
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "aiohttp": "3.14.5",
+    "fastapi": "0.143.3"
+  },
+  "sources": {
+    "run.py": "eca9173b447261d37f5d83fbd2fc3dc8a8b5e299a3a7d4934cc978817eb52af9",
+    "policy.py": "daad24eaf79e8a8ff94e5667b461bb17f3a9d44bd02bafadc63f8852a2290bee",
+    "test_policy.py": "2262c3a84e452c5c085d3cfd81a997a11955e3257a63373ba32a259608090c46",
+    "server.py": "490fdb656ccf13d86c67db0170d8054570f9b7b2d18222f9ca20eef4ddb72384",
+    "adapter.py": "13305356b1ada2741bd48899a36cea398a46d21b5deb8fbe210b8e418c9db473",
+    "proof-control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd"
+  },
+  "spec_sha256": "25c66570b6409141dca82615f7d512e7c8d19b2091c8b08b2c4706ff80fdba35",
+  "model_path": "/home/hice1/yzheng609/scratch/CS6222-qwen3-baseline/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+  "max_num_seqs": 2,
+  "note": "Instrumented eager vLLM pilot; one trace, one sampled response per problem/policy"
+}

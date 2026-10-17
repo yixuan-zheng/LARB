@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 21:15:38
+Job ID:    6307426
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-sweetspot
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading budget-256 indices [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 13526.94it/s]
+{"index": 40, "configuration": "budget-256", "generated_tokens": 603, "finish_reason": "eos", "elapsed_seconds": 13.343748225015588}
+{"index": 41, "configuration": "budget-256", "generated_tokens": 1067, "finish_reason": "eos", "elapsed_seconds": 23.40440832497552}
+{"index": 42, "configuration": "budget-256", "generated_tokens": 510, "finish_reason": "eos", "elapsed_seconds": 11.201156129012816}
+{"index": 43, "configuration": "budget-256", "generated_tokens": 2317, "finish_reason": "answer_cap", "elapsed_seconds": 50.81740049109794}
+{"index": 44, "configuration": "budget-256", "generated_tokens": 764, "finish_reason": "eos", "elapsed_seconds": 16.73258218599949}
+{"index": 45, "configuration": "budget-256", "generated_tokens": 495, "finish_reason": "eos", "elapsed_seconds": 10.898517842055298}
+{"index": 46, "configuration": "budget-256", "generated_tokens": 1312, "finish_reason": "eos", "elapsed_seconds": 28.870418766047806}
+{"index": 47, "configuration": "budget-256", "generated_tokens": 642, "finish_reason": "eos", "elapsed_seconds": 14.121508166077547}
+{"index": 48, "configuration": "budget-256", "generated_tokens": 499, "finish_reason": "eos", "elapsed_seconds": 10.975891212932765}
+{"index": 49, "configuration": "budget-256", "generated_tokens": 478, "finish_reason": "eos", "elapsed_seconds": 10.519892459968105}
+{"index": 50, "configuration": "budget-256", "generated_tokens": 1044, "finish_reason": "eos", "elapsed_seconds": 22.915766716003418}
+{"index": 51, "configuration": "budget-256", "generated_tokens": 760, "finish_reason": "eos", "elapsed_seconds": 16.697784638032317}
+{"index": 52, "configuration": "budget-256", "generated_tokens": 679, "finish_reason": "eos", "elapsed_seconds": 14.851545177050866}
+{"index": 53, "configuration": "budget-256", "generated_tokens": 547, "finish_reason": "eos", "elapsed_seconds": 11.92640264495276}
+{"index": 54, "configuration": "budget-256", "generated_tokens": 464, "finish_reason": "eos", "elapsed_seconds": 10.091561284963973}
+{"index": 55, "configuration": "budget-256", "generated_tokens": 576, "finish_reason": "eos", "elapsed_seconds": 12.5730999490479}
+{"index": 56, "configuration": "budget-256", "generated_tokens": 574, "finish_reason": "eos", "elapsed_seconds": 12.498890349059366}
+{"index": 57, "configuration": "budget-256", "generated_tokens": 545, "finish_reason": "eos", "elapsed_seconds": 11.925196447991766}
+{"index": 58, "configuration": "budget-256", "generated_tokens": 626, "finish_reason": "eos", "elapsed_seconds": 13.66379936307203}
+{"index": 59, "configuration": "budget-256", "generated_tokens": 655, "finish_reason": "eos", "elapsed_seconds": 14.281009375932626}
+COMPLETE budget-256 2
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 21:21:23
+Job ID:        6307426
+Array Job ID:  6307328_13
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-sweetspot
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=00:23:00,vmem=0,walltime=00:05:45,mem=1551984K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-25-0
+---------------------------------------

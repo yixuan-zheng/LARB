@@ -1,0 +1,601 @@
+configuration,index,reference,raw_extracted_answer,reviewed_answer,automated_correct,completed_correct,boxed_correct,finish_reason,elapsed_seconds,model_thinking_tokens,manual_review_reason,record_path
+full,0,"\left( 3, \frac{\pi}{2} \right)","(3, \frac{\pi}{2})","(3, \frac{\pi}{2})",True,True,True,eos,41.496956765069626,1431,,results/task-00-full/requests/000.json
+full,1,p - q,p - q,p - q,True,True,True,eos,158.67848518805113,6582,,results/task-00-full/requests/001.json
+full,2,\frac{14}{3},\dfrac{14}{3},\dfrac{14}{3},True,True,True,eos,51.593967359978706,1973,,results/task-00-full/requests/002.json
+full,3,9,9,9,True,True,True,eos,46.03083061799407,1501,,results/task-00-full/requests/003.json
+full,4,\text{Evelyn},Evelyn,Evelyn,True,True,True,eos,83.65627820708323,3245,,results/task-00-full/requests/004.json
+full,5,42,42,42,True,True,True,eos,79.15920768491924,3238,,results/task-00-full/requests/005.json
+full,6,27,27,27,True,True,True,eos,77.97291908203624,3063,,results/task-00-full/requests/006.json
+full,7,90^\circ,90,90,True,True,True,eos,91.21075660199858,3420,,results/task-00-full/requests/007.json
+full,8,3\sqrt{13},3\sqrt{13},3\sqrt{13},True,True,True,eos,40.981965142069384,1546,,results/task-00-full/requests/008.json
+full,9,4,,,False,False,False,thinking_cap,365.867490015924,16384,,results/task-00-full/requests/009.json
+full,10,2220,2220,2220,True,True,True,eos,176.83355028904043,7493,,results/task-00-full/requests/010.json
+full,11,\frac{3}{56},\dfrac{1}{9},\dfrac{1}{9},False,False,False,eos,86.83220513502602,3006,,results/task-00-full/requests/011.json
+full,12,284,284,284,True,True,True,eos,79.47673732007388,3099,,results/task-00-full/requests/012.json
+full,13,5,5,5,True,True,True,eos,23.360378250014037,825,,results/task-00-full/requests/013.json
+full,14,\sqrt{51},\sqrt{51},\sqrt{51},True,True,True,eos,46.92937126394827,1731,,results/task-00-full/requests/014.json
+full,15,6 - 5i,6 - 5i,6 - 5i,True,True,True,eos,129.7588544320315,5032,,results/task-00-full/requests/015.json
+full,16,-50,-50,-50,True,True,True,eos,79.98999972094316,3218,,results/task-00-full/requests/016.json
+full,17,\pi,\pi,\pi,True,True,True,eos,131.31617947400082,5427,,results/task-00-full/requests/017.json
+full,18,28,28,28,True,True,True,eos,324.6138043690007,13713,,results/task-00-full/requests/018.json
+full,19,3,3,3,True,True,True,eos,145.1111916960217,5969,,results/task-00-full/requests/019.json
+budget-256,0,"\left( 3, \frac{\pi}{2} \right)","(3, \frac{\pi}{2})","(3, \frac{\pi}{2})",True,True,True,eos,14.877589717973024,256,,results/task-01-budget-256/requests/000.json
+budget-256,1,p - q,p - q,p - q,True,True,True,eos,21.849929201998748,256,,results/task-01-budget-256/requests/001.json
+budget-256,2,\frac{14}{3},\frac{14}{3},\frac{14}{3},True,True,True,eos,13.612773647066206,256,,results/task-01-budget-256/requests/002.json
+budget-256,3,9,9,9,True,True,True,eos,13.43332445609849,256,,results/task-01-budget-256/requests/003.json
+budget-256,4,\text{Evelyn},\text{Evelyn},\text{Evelyn},True,True,True,eos,21.259262985899113,256,,results/task-01-budget-256/requests/004.json
+budget-256,5,42,42,42,True,True,True,eos,12.720490357954986,256,,results/task-01-budget-256/requests/005.json
+budget-256,6,27,27,27,True,True,True,eos,15.405161111964844,256,,results/task-01-budget-256/requests/006.json
+budget-256,7,90^\circ,90,90,True,True,True,eos,21.181094785919413,256,,results/task-01-budget-256/requests/007.json
+budget-256,8,3\sqrt{13},3\sqrt{13},3\sqrt{13},True,True,True,eos,13.4627650170587,256,,results/task-01-budget-256/requests/008.json
+budget-256,9,4,,,False,False,False,answer_cap,51.21448056795634,256,,results/task-01-budget-256/requests/009.json
+budget-256,10,2220,2220,2220,True,True,True,eos,19.81311021000147,256,,results/task-01-budget-256/requests/010.json
+budget-256,11,\frac{3}{56},\frac{1}{9},\frac{1}{9},False,False,False,eos,33.11428562295623,256,,results/task-01-budget-256/requests/011.json
+budget-256,12,284,284,284,True,True,True,eos,18.746446043020114,256,,results/task-01-budget-256/requests/012.json
+budget-256,13,5,5,5,True,True,True,eos,10.563940890016966,256,,results/task-01-budget-256/requests/013.json
+budget-256,14,\sqrt{51},\sqrt{51},\sqrt{51},True,True,True,eos,20.27053081197664,256,,results/task-01-budget-256/requests/014.json
+budget-256,15,6 - 5i,6 - 3\sqrt{2} - 5i,6 - 3\sqrt{2} - 5i,False,False,False,eos,36.92685278598219,256,,results/task-01-budget-256/requests/015.json
+budget-256,16,-50,-50,-50,True,True,True,eos,13.415052361087874,256,,results/task-01-budget-256/requests/016.json
+budget-256,17,\pi,\pi,\pi,True,True,True,eos,27.333066907012835,256,,results/task-01-budget-256/requests/017.json
+budget-256,18,28,28,28,True,True,True,eos,21.771749677951448,256,,results/task-01-budget-256/requests/018.json
+budget-256,19,3,3,3,True,True,True,eos,30.177919764071703,256,,results/task-01-budget-256/requests/019.json
+budget-512,0,"\left( 3, \frac{\pi}{2} \right)","(3, \frac{\pi}{2})","(3, \frac{\pi}{2})",True,True,True,eos,21.955916935927235,512,,results/task-02-budget-512/requests/000.json
+budget-512,1,p - q,p - q,p - q,True,True,True,eos,26.740919134928845,512,,results/task-02-budget-512/requests/001.json
+budget-512,2,\frac{14}{3},\frac{14}{3},\frac{14}{3},True,True,True,eos,19.29946122399997,512,,results/task-02-budget-512/requests/002.json
+budget-512,3,9,9,9,True,True,True,eos,20.171350046992302,512,,results/task-02-budget-512/requests/003.json
+budget-512,4,\text{Evelyn},\text{Evelyn},\text{Evelyn},True,True,True,eos,27.43877041595988,512,,results/task-02-budget-512/requests/004.json
+budget-512,5,42,42,42,True,True,True,eos,19.301328340079635,512,,results/task-02-budget-512/requests/005.json
+budget-512,6,27,27,27,True,True,True,eos,20.678212275961414,512,,results/task-02-budget-512/requests/006.json
+budget-512,7,90^\circ,90,90,True,True,True,eos,28.296460275072604,512,,results/task-02-budget-512/requests/007.json
+budget-512,8,3\sqrt{13},\sqrt{117},\sqrt{117},True,True,True,eos,17.903403115924448,512,,results/task-02-budget-512/requests/008.json
+budget-512,9,4,14,14,False,False,False,eos,27.07551360607613,512,,results/task-02-budget-512/requests/009.json
+budget-512,10,2220,2220,2220,True,True,True,eos,30.668538870988414,512,,results/task-02-budget-512/requests/010.json
+budget-512,11,\frac{3}{56},\frac{721}{9},\frac{721}{9},False,False,False,eos,48.17014563200064,512,,results/task-02-budget-512/requests/011.json
+budget-512,12,284,284,284,True,True,True,eos,24.44606843800284,512,,results/task-02-budget-512/requests/012.json
+budget-512,13,5,5,5,True,True,True,eos,16.22882760304492,512,,results/task-02-budget-512/requests/013.json
+budget-512,14,\sqrt{51},\sqrt{51},\sqrt{51},True,True,True,eos,23.218368872068822,512,,results/task-02-budget-512/requests/014.json
+budget-512,15,6 - 5i,6 - 5i,6 - 5i,True,True,True,eos,30.007487862021662,512,,results/task-02-budget-512/requests/015.json
+budget-512,16,-50,-50,-50,True,True,True,eos,19.388514622929506,512,,results/task-02-budget-512/requests/016.json
+budget-512,17,\pi,\frac{\pi}{3},\frac{\pi}{3},False,False,False,eos,30.581744687980972,512,,results/task-02-budget-512/requests/017.json
+budget-512,18,28,,,False,False,False,answer_cap,56.06059492495842,512,,results/task-02-budget-512/requests/018.json
+budget-512,19,3,3,3,True,True,True,eos,29.81817093899008,512,,results/task-02-budget-512/requests/019.json
+budget-1024,0,"\left( 3, \frac{\pi}{2} \right)","(3, \frac{\pi}{2})","(3, \frac{\pi}{2})",True,True,True,eos,29.730515791103244,1024,,results/task-03-budget-1024/requests/000.json
+budget-1024,1,p - q,p - q,p - q,True,True,True,eos,39.820175178931095,1024,,results/task-03-budget-1024/requests/001.json
+budget-1024,2,\frac{14}{3},\frac{14}{3},\frac{14}{3},True,True,True,eos,31.788370584021322,1024,,results/task-03-budget-1024/requests/002.json
+budget-1024,3,9,9,9,True,True,True,eos,32.659430630039424,1024,,results/task-03-budget-1024/requests/003.json
+budget-1024,4,\text{Evelyn},\text{Evelyn},\text{Evelyn},True,True,True,eos,34.56478295195848,1024,,results/task-03-budget-1024/requests/004.json
+budget-1024,5,42,42,42,True,True,True,eos,30.05074712401256,1024,,results/task-03-budget-1024/requests/005.json
+budget-1024,6,27,27,27,True,True,True,eos,36.54231540299952,1024,,results/task-03-budget-1024/requests/006.json
+budget-1024,7,90^\circ,90,90,True,True,True,eos,36.68440340505913,1024,,results/task-03-budget-1024/requests/007.json
+budget-1024,8,3\sqrt{13},3\sqrt{13},3\sqrt{13},True,True,True,eos,31.18906208104454,1024,,results/task-03-budget-1024/requests/008.json
+budget-1024,9,4,2,2,False,False,False,eos,51.23813880304806,1024,,results/task-03-budget-1024/requests/009.json
+budget-1024,10,2220,2220,2220,True,True,True,eos,35.55005748500116,1024,,results/task-03-budget-1024/requests/010.json
+budget-1024,11,\frac{3}{56},\frac{1}{9},\frac{1}{9},False,False,False,eos,49.283112636068836,1024,,results/task-03-budget-1024/requests/011.json
+budget-1024,12,284,284,284,True,True,True,eos,37.15514410997275,1024,,results/task-03-budget-1024/requests/012.json
+budget-1024,13,5,5,5,True,True,True,eos,23.44649754301645,825,,results/task-03-budget-1024/requests/013.json
+budget-1024,14,\sqrt{51},\sqrt{51},\sqrt{51},True,True,True,eos,34.375573563040234,1024,,results/task-03-budget-1024/requests/014.json
+budget-1024,15,6 - 5i,6 - 5i,6 - 5i,True,True,True,eos,44.17014258704148,1024,,results/task-03-budget-1024/requests/015.json
+budget-1024,16,-50,-50,-50,True,True,True,eos,31.946520666009746,1024,,results/task-03-budget-1024/requests/016.json
+budget-1024,17,\pi,\pi,\pi,True,True,True,eos,37.658442297019064,1024,,results/task-03-budget-1024/requests/017.json
+budget-1024,18,28,,,False,False,False,answer_cap,67.30483560194261,1024,,results/task-03-budget-1024/requests/018.json
+budget-1024,19,3,3,3,True,True,True,eos,54.07639384805225,1024,,results/task-03-budget-1024/requests/019.json
+budget-2048,0,"\left( 3, \frac{\pi}{2} \right)","(3, \frac{\pi}{2})","(3, \frac{\pi}{2})",True,True,True,eos,38.062255750992335,1431,,results/task-04-budget-2048/requests/000.json
+budget-2048,1,p - q,p - q,p - q,True,True,True,eos,59.23040663392749,2048,,results/task-04-budget-2048/requests/001.json
+budget-2048,2,\frac{14}{3},\dfrac{14}{3},\dfrac{14}{3},True,True,True,eos,51.46623369806912,1973,,results/task-04-budget-2048/requests/002.json
+budget-2048,3,9,9,9,True,True,True,eos,45.71637546108104,1501,,results/task-04-budget-2048/requests/003.json
+budget-2048,4,\text{Evelyn},\text{Evelyn},\text{Evelyn},True,True,True,eos,56.36554011690896,2048,,results/task-04-budget-2048/requests/004.json
+budget-2048,5,42,42,42,True,True,True,eos,53.30870763002895,2048,,results/task-04-budget-2048/requests/005.json
+budget-2048,6,27,27,27,True,True,True,eos,58.835671837907284,2048,,results/task-04-budget-2048/requests/006.json
+budget-2048,7,90^\circ,90,90,True,True,True,eos,59.47375040396582,2048,,results/task-04-budget-2048/requests/007.json
+budget-2048,8,3\sqrt{13},3\sqrt{13},3\sqrt{13},True,True,True,eos,40.96763508091681,1546,,results/task-04-budget-2048/requests/008.json
+budget-2048,9,4,12,12,False,False,False,eos,77.45324817602523,2048,,results/task-04-budget-2048/requests/009.json
+budget-2048,10,2220,2220,2220,True,True,True,eos,57.509647935046814,2048,,results/task-04-budget-2048/requests/010.json
+budget-2048,11,\frac{3}{56},\frac{1}{9},\frac{1}{9},False,False,False,eos,66.30184707196895,2048,,results/task-04-budget-2048/requests/011.json
+budget-2048,12,284,284,284,True,True,True,eos,57.04862518992741,2048,,results/task-04-budget-2048/requests/012.json
+budget-2048,13,5,5,5,True,True,True,eos,23.238437382038683,825,,results/task-04-budget-2048/requests/013.json
+budget-2048,14,\sqrt{51},\sqrt{51},\sqrt{51},True,True,True,eos,46.8289888080908,1731,,results/task-04-budget-2048/requests/014.json
+budget-2048,15,6 - 5i,6 - 5i,6 - 5i,True,True,True,eos,64.25990517507307,2048,,results/task-04-budget-2048/requests/015.json
+budget-2048,16,-50,-50,-50,True,True,True,eos,57.06618707207963,2048,,results/task-04-budget-2048/requests/016.json
+budget-2048,17,\pi,\pi,\pi,True,True,True,eos,63.8596581579186,2048,,results/task-04-budget-2048/requests/017.json
+budget-2048,18,28,56,56,False,False,False,eos,73.86119470791891,2048,,results/task-04-budget-2048/requests/018.json
+budget-2048,19,3,3,3,True,True,True,eos,61.512216081959195,2048,,results/task-04-budget-2048/requests/019.json
+nonthinking,0,"\left( 3, \frac{\pi}{2} \right)","(3, \frac{\pi}{2})","(3, \frac{\pi}{2})",True,True,True,eos,5.235308666946366,0,,results/task-05-nonthinking/requests/000.json
+nonthinking,1,p - q,p - q,p - q,True,True,True,eos,15.511959425988607,0,,results/task-05-nonthinking/requests/001.json
+nonthinking,2,\frac{14}{3},\frac{14}{3},\frac{14}{3},True,True,True,eos,7.884293322917074,0,,results/task-05-nonthinking/requests/002.json
+nonthinking,3,9,9,9,True,True,True,eos,7.380161880981177,0,,results/task-05-nonthinking/requests/003.json
+nonthinking,4,\text{Evelyn},\text{Evelyn},\text{Evelyn},True,True,True,eos,13.050268395920284,0,,results/task-05-nonthinking/requests/004.json
+nonthinking,5,42,42,42,True,True,True,eos,6.576200942974538,0,,results/task-05-nonthinking/requests/005.json
+nonthinking,6,27,27,27,True,True,True,eos,9.430146305006929,0,,results/task-05-nonthinking/requests/006.json
+nonthinking,7,90^\circ,90^\circ,90^\circ,True,True,True,eos,13.946714413003065,0,,results/task-05-nonthinking/requests/007.json
+nonthinking,8,3\sqrt{13},3\sqrt{13},3\sqrt{13},True,True,True,eos,5.626064506010152,0,,results/task-05-nonthinking/requests/008.json
+nonthinking,9,4,3,3,False,False,False,eos,41.056030989973806,0,,results/task-05-nonthinking/requests/009.json
+nonthinking,10,2220,2220,2220,True,True,True,eos,18.284590349998325,0,,results/task-05-nonthinking/requests/010.json
+nonthinking,11,\frac{3}{56},,,False,False,False,answer_cap,45.05758672498632,0,,results/task-05-nonthinking/requests/011.json
+nonthinking,12,284,284,284,True,True,True,eos,16.213190019945614,0,,results/task-05-nonthinking/requests/012.json
+nonthinking,13,5,5,5,True,True,True,eos,5.3093150979839265,0,,results/task-05-nonthinking/requests/013.json
+nonthinking,14,\sqrt{51},10,10,False,False,False,eos,6.8997855510097,0,,results/task-05-nonthinking/requests/014.json
+nonthinking,15,6 - 5i,w = 6 + 3\sqrt{2} - (5 + 3\sqrt{2})i,w = 6 + 3\sqrt{2} - (5 + 3\sqrt{2})i,False,False,False,eos,28.91463076591026,0,,results/task-05-nonthinking/requests/015.json
+nonthinking,16,-50,-50,-50,True,True,True,eos,5.147150718024932,0,,results/task-05-nonthinking/requests/016.json
+nonthinking,17,\pi,\pi,\pi,True,True,True,eos,6.634236179059371,0,,results/task-05-nonthinking/requests/017.json
+nonthinking,18,28,,,False,False,False,answer_cap,44.842951604980044,0,,results/task-05-nonthinking/requests/018.json
+nonthinking,19,3,,,False,False,False,answer_cap,45.12393560807686,0,,results/task-05-nonthinking/requests/019.json
+full,20,6+9i,6 + 9i,6 + 9i,True,True,True,eos,51.922720064991154,2180,,results/task-06-full/requests/020.json
+full,21,13535,13535,13535,True,True,True,eos,110.19479545310605,4191,,results/task-06-full/requests/021.json
+full,22,5,5,5,True,True,True,eos,107.23850708408281,4152,,results/task-06-full/requests/022.json
+full,23,x=5,5,5,True,True,True,eos,61.39075337105896,2269,,results/task-06-full/requests/023.json
+full,24,10,10,10,True,True,True,eos,57.27405191794969,1943,,results/task-06-full/requests/024.json
+full,25,"1,-2",1,"-2, 1",False,True,True,eos,139.9403676170623,5531,"The explicit concluding answer is two separate boxes, -2 and 1. The question asks for all integers; this is exactly the reference set 1,-2 in a different order.",results/task-06-full/requests/025.json
+full,26,144,,,False,False,False,thinking_cap,365.42905341496225,16384,,results/task-06-full/requests/026.json
+full,27,78,78,78,True,True,True,eos,41.522523071966134,1591,,results/task-06-full/requests/027.json
+full,28,-2 + 7i,-2 + 7i,-2 + 7i,True,True,True,eos,49.848596937954426,1965,,results/task-06-full/requests/028.json
+full,29,225,225,225,True,True,True,eos,36.858560460968874,1238,,results/task-06-full/requests/029.json
+full,30,52_8,52,52,True,True,True,eos,83.0038909399882,3408,,results/task-06-full/requests/030.json
+full,31,11\sqrt2,11\sqrt{2},11\sqrt{2},True,True,True,eos,50.411235703970306,2077,,results/task-06-full/requests/031.json
+full,32,720,,,False,False,False,thinking_cap,365.31403239106294,16384,,results/task-06-full/requests/032.json
+full,33,\frac{243}{625},\dfrac{243}{625},\dfrac{243}{625},True,True,True,eos,65.5601964269299,2350,,results/task-06-full/requests/033.json
+full,34,-125,-125,-125,True,True,True,eos,92.77640996302944,3564,,results/task-06-full/requests/034.json
+full,35,3,3,3,True,True,True,eos,60.202129315934144,2361,,results/task-06-full/requests/035.json
+full,36,"3, 5, 7",7,"3, 5, 7",False,True,True,eos,125.24594983097631,5055,The explicit Final Answer lists the complete correct root set in three separate boxes; last-box extraction alone keeps only 7.,results/task-06-full/requests/036.json
+full,37,72,72,72,True,True,True,eos,46.47211629303638,1743,,results/task-06-full/requests/037.json
+full,38,2000,2000,2000,True,True,True,eos,35.90494909300469,1309,,results/task-06-full/requests/038.json
+full,39,23,23,23,True,True,True,eos,44.36829861695878,1749,,results/task-06-full/requests/039.json
+budget-256,20,6+9i,6 + 9i,6 + 9i,True,True,True,eos,14.214880816987716,256,,results/task-07-budget-256/requests/020.json
+budget-256,21,13535,13535,13535,True,True,True,eos,27.066745716962032,256,,results/task-07-budget-256/requests/021.json
+budget-256,22,5,5,5,True,True,True,eos,19.163812218001112,256,,results/task-07-budget-256/requests/022.json
+budget-256,23,x=5,5,5,True,True,True,eos,15.295399121940136,256,,results/task-07-budget-256/requests/023.json
+budget-256,24,10,10,10,True,True,True,eos,22.459716499084607,256,,results/task-07-budget-256/requests/024.json
+budget-256,25,"1,-2","-2, 1","-2, 1",True,True,True,eos,28.616819374030456,256,,results/task-07-budget-256/requests/025.json
+budget-256,26,144,288,288,False,False,False,eos,28.80905382207129,256,,results/task-07-budget-256/requests/026.json
+budget-256,27,78,78,78,True,True,True,eos,13.746217808919027,256,,results/task-07-budget-256/requests/027.json
+budget-256,28,-2 + 7i,-2 + 7i,-2 + 7i,True,True,True,eos,11.31389011500869,256,,results/task-07-budget-256/requests/028.json
+budget-256,29,225,225,225,True,True,True,eos,13.461881626979448,256,,results/task-07-budget-256/requests/029.json
+budget-256,30,52_8,52_8,52_8,True,True,True,eos,12.511590005015023,256,,results/task-07-budget-256/requests/030.json
+budget-256,31,11\sqrt2,11\sqrt{2},11\sqrt{2},True,True,True,eos,11.953692496055737,256,,results/task-07-budget-256/requests/031.json
+budget-256,32,720,720,720,True,True,True,eos,13.174595164950006,256,,results/task-07-budget-256/requests/032.json
+budget-256,33,\frac{243}{625},\frac{243}{625},\frac{243}{625},True,True,True,eos,21.28671061503701,256,,results/task-07-budget-256/requests/033.json
+budget-256,34,-125,-125,-125,True,True,True,eos,19.108276310027577,256,,results/task-07-budget-256/requests/034.json
+budget-256,35,3,3,3,True,True,True,eos,12.413764900062233,256,,results/task-07-budget-256/requests/035.json
+budget-256,36,"3, 5, 7",7,"3, 5, 7",False,True,True,eos,31.161285075941123,256,"The explicit Final Answer block lists three separate boxes: 3, 5, and 7. Together they exactly match the reference solution set; last-box extraction alone loses the first two values.",results/task-07-budget-256/requests/036.json
+budget-256,37,72,72,72,True,True,True,eos,13.300200366065837,256,,results/task-07-budget-256/requests/037.json
+budget-256,38,2000,2000,2000,True,True,True,eos,10.153930883971043,256,,results/task-07-budget-256/requests/038.json
+budget-256,39,23,23,23,True,True,True,eos,16.560164849972352,256,,results/task-07-budget-256/requests/039.json
+budget-512,20,6+9i,6 + 9i,6 + 9i,True,True,True,eos,19.829930852982216,512,,results/task-08-budget-512/requests/020.json
+budget-512,21,13535,13535,13535,True,True,True,eos,40.76768773701042,512,,results/task-08-budget-512/requests/021.json
+budget-512,22,5,5,5,True,True,True,eos,29.086376451072283,512,,results/task-08-budget-512/requests/022.json
+budget-512,23,x=5,5,5,True,True,True,eos,21.093427032930776,512,,results/task-08-budget-512/requests/023.json
+budget-512,24,10,10,10,True,True,True,eos,29.970065030036494,512,,results/task-08-budget-512/requests/024.json
+budget-512,25,"1,-2","1, -2","1, -2",True,True,True,eos,31.713124934001826,512,,results/task-08-budget-512/requests/025.json
+budget-512,26,144,288,288,False,False,False,eos,33.23519406002015,512,,results/task-08-budget-512/requests/026.json
+budget-512,27,78,78,78,True,True,True,eos,18.816613891045563,512,,results/task-08-budget-512/requests/027.json
+budget-512,28,-2 + 7i,-2 + 7i,-2 + 7i,True,True,True,eos,17.756877335021272,512,,results/task-08-budget-512/requests/028.json
+budget-512,29,225,225,225,True,True,True,eos,18.55077465507202,512,,results/task-08-budget-512/requests/029.json
+budget-512,30,52_8,52_8,52_8,True,True,True,eos,16.943054164992645,512,,results/task-08-budget-512/requests/030.json
+budget-512,31,11\sqrt2,11\sqrt{2},11\sqrt{2},True,True,True,eos,17.80055117502343,512,,results/task-08-budget-512/requests/031.json
+budget-512,32,720,720,720,True,True,True,eos,19.32343884103466,512,,results/task-08-budget-512/requests/032.json
+budget-512,33,\frac{243}{625},\frac{487}{1250},\frac{487}{1250},False,False,False,eos,30.73065436806064,512,,results/task-08-budget-512/requests/033.json
+budget-512,34,-125,-125,-125,True,True,True,eos,25.11158410203643,512,,results/task-08-budget-512/requests/034.json
+budget-512,35,3,3,3,True,True,True,eos,18.915439350996166,512,,results/task-08-budget-512/requests/035.json
+budget-512,36,"3, 5, 7",7,"3, 5, 7",False,True,True,eos,25.2871799870627,512,"The explicit Final Answer block lists three separate boxes: 3, 5, and 7. Together they exactly match the reference solution set; last-box extraction alone loses the first two values.",results/task-08-budget-512/requests/036.json
+budget-512,37,72,72,72,True,True,True,eos,19.997906288015656,512,,results/task-08-budget-512/requests/037.json
+budget-512,38,2000,2000,2000,True,True,True,eos,15.900300715002231,512,,results/task-08-budget-512/requests/038.json
+budget-512,39,23,23,23,True,True,True,eos,18.026912581990473,512,,results/task-08-budget-512/requests/039.json
+budget-1024,20,6+9i,6 + 9i,6 + 9i,True,True,True,eos,26.987765406956896,1024,,results/task-09-budget-1024/requests/020.json
+budget-1024,21,13535,13535,13535,True,True,True,eos,41.64970128692221,1024,,results/task-09-budget-1024/requests/021.json
+budget-1024,22,5,5,5,True,True,True,eos,37.495730540016666,1024,,results/task-09-budget-1024/requests/022.json
+budget-1024,23,x=5,5,5,True,True,True,eos,34.397865298902616,1024,,results/task-09-budget-1024/requests/023.json
+budget-1024,24,10,10,10,True,True,True,eos,33.531097988947295,1024,,results/task-09-budget-1024/requests/024.json
+budget-1024,25,"1,-2","-2, 1","-2, 1",True,True,True,eos,43.24605083698407,1024,,results/task-09-budget-1024/requests/025.json
+budget-1024,26,144,288,288,False,False,False,eos,44.37881430005655,1024,,results/task-09-budget-1024/requests/026.json
+budget-1024,27,78,78,78,True,True,True,eos,28.98390187404584,1024,,results/task-09-budget-1024/requests/027.json
+budget-1024,28,-2 + 7i,-2 + 7i,-2 + 7i,True,True,True,eos,35.862732862937264,1024,,results/task-09-budget-1024/requests/028.json
+budget-1024,29,225,225,225,True,True,True,eos,31.04966834501829,1024,,results/task-09-budget-1024/requests/029.json
+budget-1024,30,52_8,52_8,52_8,True,True,True,eos,31.315873749903403,1024,,results/task-09-budget-1024/requests/030.json
+budget-1024,31,11\sqrt2,11\sqrt{2},11\sqrt{2},True,True,True,eos,28.459089249023236,1024,,results/task-09-budget-1024/requests/031.json
+budget-1024,32,720,720,720,True,True,True,eos,30.804276008042507,1024,,results/task-09-budget-1024/requests/032.json
+budget-1024,33,\frac{243}{625},\frac{243}{625},\frac{243}{625},True,True,True,eos,37.48475049296394,1024,,results/task-09-budget-1024/requests/033.json
+budget-1024,34,-125,-125,-125,True,True,True,eos,36.65920808701776,1024,,results/task-09-budget-1024/requests/034.json
+budget-1024,35,3,3,3,True,True,True,eos,30.054503880091943,1024,,results/task-09-budget-1024/requests/035.json
+budget-1024,36,"3, 5, 7",7,"3, 5, 7",False,True,True,eos,45.01990690897219,1024,"The explicit Final Answer block lists three separate boxes: 3, 5, and 7. Together they match the reference set.",results/task-09-budget-1024/requests/036.json
+budget-1024,37,72,72,72,True,True,True,eos,29.91458711901214,1024,,results/task-09-budget-1024/requests/037.json
+budget-1024,38,2000,2000,2000,True,True,True,eos,27.677403694950044,1024,,results/task-09-budget-1024/requests/038.json
+budget-1024,39,23,23,23,True,True,True,eos,37.52329095394816,1024,,results/task-09-budget-1024/requests/039.json
+budget-2048,20,6+9i,6 + 9i,6 + 9i,True,True,True,eos,49.39450101798866,2048,,results/task-10-budget-2048/requests/020.json
+budget-2048,21,13535,13535,13535,True,True,True,eos,61.787162713939324,2048,,results/task-10-budget-2048/requests/021.json
+budget-2048,22,5,5,5,True,True,True,eos,60.76520049502142,2048,,results/task-10-budget-2048/requests/022.json
+budget-2048,23,x=5,5,5,True,True,True,eos,57.06801556306891,2048,,results/task-10-budget-2048/requests/023.json
+budget-2048,24,10,10,10,True,True,True,eos,57.916209345916286,1943,,results/task-10-budget-2048/requests/024.json
+budget-2048,25,"1,-2","-2, 1","-2, 1",True,True,True,eos,65.26673595700413,2048,,results/task-10-budget-2048/requests/025.json
+budget-2048,26,144,48,48,False,False,False,eos,71.71758559800219,2048,,results/task-10-budget-2048/requests/026.json
+budget-2048,27,78,78,78,True,True,True,eos,41.621902507031336,1591,,results/task-10-budget-2048/requests/027.json
+budget-2048,28,-2 + 7i,-2 + 7i,-2 + 7i,True,True,True,eos,50.18880238290876,1965,,results/task-10-budget-2048/requests/028.json
+budget-2048,29,225,225,225,True,True,True,eos,36.985216813976876,1238,,results/task-10-budget-2048/requests/029.json
+budget-2048,30,52_8,52_8,52_8,True,True,True,eos,49.88147750101052,2048,,results/task-10-budget-2048/requests/030.json
+budget-2048,31,11\sqrt2,11\sqrt{2},11\sqrt{2},True,True,True,eos,51.07066843402572,2048,,results/task-10-budget-2048/requests/031.json
+budget-2048,32,720,720,720,True,True,True,eos,54.36172837205231,2048,,results/task-10-budget-2048/requests/032.json
+budget-2048,33,\frac{243}{625},\frac{243}{625},\frac{243}{625},True,True,True,eos,59.89734024205245,2048,,results/task-10-budget-2048/requests/033.json
+budget-2048,34,-125,-125,-125,True,True,True,eos,59.11548470600974,2048,,results/task-10-budget-2048/requests/034.json
+budget-2048,35,3,3,3,True,True,True,eos,52.126274973968975,2048,,results/task-10-budget-2048/requests/035.json
+budget-2048,36,"3, 5, 7",5,5,False,False,False,eos,59.12364827794954,2048,,results/task-10-budget-2048/requests/036.json
+budget-2048,37,72,72,72,True,True,True,eos,54.83216208801605,1743,,results/task-10-budget-2048/requests/037.json
+budget-2048,38,2000,2000,2000,True,True,True,eos,37.32193545391783,1309,,results/task-10-budget-2048/requests/038.json
+budget-2048,39,23,23,23,True,True,True,eos,44.54751203604974,1749,,results/task-10-budget-2048/requests/039.json
+nonthinking,20,6+9i,6 + 9i,6 + 9i,True,True,True,eos,3.703158563002944,0,,results/task-11-nonthinking/requests/020.json
+nonthinking,21,13535,13535,13535,True,True,True,eos,36.45952127198689,0,,results/task-11-nonthinking/requests/021.json
+nonthinking,22,5,5,5,True,True,True,eos,17.63639061804861,0,,results/task-11-nonthinking/requests/022.json
+nonthinking,23,x=5,5,5,True,True,True,eos,10.845354828052223,0,,results/task-11-nonthinking/requests/023.json
+nonthinking,24,10,10,10,True,True,True,eos,19.594309370964766,0,,results/task-11-nonthinking/requests/024.json
+nonthinking,25,"1,-2","1, -2","1, -2",True,True,True,eos,27.622308460995555,0,,results/task-11-nonthinking/requests/025.json
+nonthinking,26,144,144,144,True,True,True,eos,18.545704695978202,0,,results/task-11-nonthinking/requests/026.json
+nonthinking,27,78,78,78,True,True,True,eos,7.428540001041256,0,,results/task-11-nonthinking/requests/027.json
+nonthinking,28,-2 + 7i,-2 + 7i,-2 + 7i,True,True,True,eos,4.931495383032598,0,,results/task-11-nonthinking/requests/028.json
+nonthinking,29,225,225,225,True,True,True,eos,7.294203169993125,0,,results/task-11-nonthinking/requests/029.json
+nonthinking,30,52_8,52_8,52_8,True,True,True,eos,4.6486222059465945,0,,results/task-11-nonthinking/requests/030.json
+nonthinking,31,11\sqrt2,11\sqrt{2},11\sqrt{2},True,True,True,eos,5.364141218014993,0,,results/task-11-nonthinking/requests/031.json
+nonthinking,32,720,720,720,True,True,True,eos,12.730852713924833,0,,results/task-11-nonthinking/requests/032.json
+nonthinking,33,\frac{243}{625},\frac{243}{625},\frac{243}{625},True,True,True,eos,16.056839316966943,0,,results/task-11-nonthinking/requests/033.json
+nonthinking,34,-125,-125,-125,True,True,True,eos,15.128248763037845,0,,results/task-11-nonthinking/requests/034.json
+nonthinking,35,3,3,3,True,True,True,eos,8.55045619001612,0,,results/task-11-nonthinking/requests/035.json
+nonthinking,36,"3, 5, 7",7,"3, 5, 7",False,True,True,eos,23.880622365046293,0,"The final section explicitly lists all three roots in separate boxes: 3, 5, and 7; last-box extraction omits two correct values.",results/task-11-nonthinking/requests/036.json
+nonthinking,37,72,360,360,False,False,False,eos,8.232130959979258,0,,results/task-11-nonthinking/requests/037.json
+nonthinking,38,2000,2000,2000,True,True,True,eos,3.2451252409955487,0,,results/task-11-nonthinking/requests/038.json
+nonthinking,39,23,23,23,True,True,True,eos,7.465193335083313,0,,results/task-11-nonthinking/requests/039.json
+full,40,12,12,12,True,True,True,eos,48.749248148989864,1896,,results/task-12-full/requests/040.json
+full,41,17,17,17,True,True,True,eos,167.7404839990195,6501,,results/task-12-full/requests/041.json
+full,42,4,4,4,True,True,True,eos,35.4275634130463,1310,,results/task-12-full/requests/042.json
+full,43,70 \sqrt{2},70\sqrt{2},70\sqrt{2},True,True,True,eos,363.37876372004393,15045,,results/task-12-full/requests/043.json
+full,44,1.25,1.25,1.25,True,True,True,eos,66.85846145893447,2475,,results/task-12-full/requests/044.json
+full,45,2,2,2,True,True,True,eos,39.32674863492139,1304,,results/task-12-full/requests/045.json
+full,46,6,6,6,True,True,True,eos,127.17436177202035,5185,,results/task-12-full/requests/046.json
+full,47,5,5,5,True,True,True,eos,47.50203329010401,1680,,results/task-12-full/requests/047.json
+full,48,\frac{3}{2},\dfrac{3}{2},\dfrac{3}{2},True,True,True,eos,42.417535849963315,1660,,results/task-12-full/requests/048.json
+full,49,83,83,83,True,True,True,eos,51.42716196109541,1947,,results/task-12-full/requests/049.json
+full,50,203,203,203,True,True,True,eos,106.37042629800271,4094,,results/task-12-full/requests/050.json
+full,51,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,True,True,True,eos,82.1988689780701,3126,,results/task-12-full/requests/051.json
+full,52,12,12,12,True,True,True,eos,95.57950663298834,3971,,results/task-12-full/requests/052.json
+full,53,-\frac{\pi}{6},-\dfrac{\pi}{6},-\dfrac{\pi}{6},True,True,True,eos,37.56584139808547,1280,,results/task-12-full/requests/053.json
+full,54,0.15,0.15,0.15,True,True,True,eos,25.440422417013906,883,,results/task-12-full/requests/054.json
+full,55,3,3,3,True,True,True,eos,54.564931061002426,1891,,results/task-12-full/requests/055.json
+full,56,11,11,11,True,True,True,eos,28.31344119599089,842,,results/task-12-full/requests/056.json
+full,57,16,16,16,True,True,True,eos,58.32151355105452,2133,,results/task-12-full/requests/057.json
+full,58,9901,9901,9901,True,True,True,eos,57.22014798701275,2087,,results/task-12-full/requests/058.json
+full,59,5,5,5,True,True,True,eos,32.72751667397097,1131,,results/task-12-full/requests/059.json
+budget-256,40,12,12,12,True,True,True,eos,13.343748225015588,256,,results/task-13-budget-256/requests/040.json
+budget-256,41,17,17,17,True,True,True,eos,23.40440832497552,256,,results/task-13-budget-256/requests/041.json
+budget-256,42,4,4,4,True,True,True,eos,11.201156129012816,256,,results/task-13-budget-256/requests/042.json
+budget-256,43,70 \sqrt{2},,,False,False,False,answer_cap,50.81740049109794,256,,results/task-13-budget-256/requests/043.json
+budget-256,44,1.25,1.25,1.25,True,True,True,eos,16.73258218599949,256,,results/task-13-budget-256/requests/044.json
+budget-256,45,2,2,2,True,True,True,eos,10.898517842055298,256,,results/task-13-budget-256/requests/045.json
+budget-256,46,6,6,6,True,True,True,eos,28.870418766047806,256,,results/task-13-budget-256/requests/046.json
+budget-256,47,5,5,5,True,True,True,eos,14.121508166077547,256,,results/task-13-budget-256/requests/047.json
+budget-256,48,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,10.975891212932765,256,,results/task-13-budget-256/requests/048.json
+budget-256,49,83,83,83,True,True,True,eos,10.519892459968105,256,,results/task-13-budget-256/requests/049.json
+budget-256,50,203,203,203,True,True,True,eos,22.915766716003418,256,,results/task-13-budget-256/requests/050.json
+budget-256,51,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,True,True,True,eos,16.697784638032317,256,,results/task-13-budget-256/requests/051.json
+budget-256,52,12,12,12,True,True,True,eos,14.851545177050866,256,,results/task-13-budget-256/requests/052.json
+budget-256,53,-\frac{\pi}{6},-\frac{\pi}{6},-\frac{\pi}{6},True,True,True,eos,11.92640264495276,256,,results/task-13-budget-256/requests/053.json
+budget-256,54,0.15,0.15,0.15,True,True,True,eos,10.091561284963973,256,,results/task-13-budget-256/requests/054.json
+budget-256,55,3,3,3,True,True,True,eos,12.5730999490479,256,,results/task-13-budget-256/requests/055.json
+budget-256,56,11,11,11,True,True,True,eos,12.498890349059366,256,,results/task-13-budget-256/requests/056.json
+budget-256,57,16,16,16,True,True,True,eos,11.925196447991766,256,,results/task-13-budget-256/requests/057.json
+budget-256,58,9901,9901,9901,True,True,True,eos,13.66379936307203,256,,results/task-13-budget-256/requests/058.json
+budget-256,59,5,5,5,True,True,True,eos,14.281009375932626,256,,results/task-13-budget-256/requests/059.json
+budget-512,40,12,12,12,True,True,True,eos,17.305368461995386,512,,results/task-14-budget-512/requests/040.json
+budget-512,41,17,17,17,True,True,True,eos,33.82027100690175,512,,results/task-14-budget-512/requests/041.json
+budget-512,42,4,4,4,True,True,True,eos,18.25222461298108,512,,results/task-14-budget-512/requests/042.json
+budget-512,43,70 \sqrt{2},10\sqrt{65},10\sqrt{65},False,False,False,eos,45.324387678992935,512,,results/task-14-budget-512/requests/043.json
+budget-512,44,1.25,1.25,1.25,True,True,True,eos,23.078710873029195,512,,results/task-14-budget-512/requests/044.json
+budget-512,45,2,2,2,True,True,True,eos,18.305461928015575,512,,results/task-14-budget-512/requests/045.json
+budget-512,46,6,6,6,True,True,True,eos,30.436292349011637,512,,results/task-14-budget-512/requests/046.json
+budget-512,47,5,5,5,True,True,True,eos,25.096459704916924,512,,results/task-14-budget-512/requests/047.json
+budget-512,48,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,16.409063572995365,512,,results/task-14-budget-512/requests/048.json
+budget-512,49,83,83,83,True,True,True,eos,15.964921268983744,512,,results/task-14-budget-512/requests/049.json
+budget-512,50,203,203,203,True,True,True,eos,33.043337117997,512,,results/task-14-budget-512/requests/050.json
+budget-512,51,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,True,True,True,eos,23.463413437013514,512,,results/task-14-budget-512/requests/051.json
+budget-512,52,12,12,12,True,True,True,eos,18.846105269971304,512,,results/task-14-budget-512/requests/052.json
+budget-512,53,-\frac{\pi}{6},-\frac{\pi}{6},-\frac{\pi}{6},True,True,True,eos,18.285199483972974,512,,results/task-14-budget-512/requests/053.json
+budget-512,54,0.15,0.15,0.15,True,True,True,eos,16.022480385028757,512,,results/task-14-budget-512/requests/054.json
+budget-512,55,3,3,3,True,True,True,eos,22.194730919087306,512,,results/task-14-budget-512/requests/055.json
+budget-512,56,11,11,11,True,True,True,eos,20.586173395975493,512,,results/task-14-budget-512/requests/056.json
+budget-512,57,16,16,16,True,True,True,eos,17.88594144396484,512,,results/task-14-budget-512/requests/057.json
+budget-512,58,9901,9901,9901,True,True,True,eos,16.67110059596598,512,,results/task-14-budget-512/requests/058.json
+budget-512,59,5,5,5,True,True,True,eos,18.8831494449405,512,,results/task-14-budget-512/requests/059.json
+budget-1024,40,12,12,12,True,True,True,eos,30.181588222971186,1024,,results/task-15-budget-1024/requests/040.json
+budget-1024,41,17,17,17,True,True,True,eos,39.113297843025066,1024,,results/task-15-budget-1024/requests/041.json
+budget-1024,42,4,4,4,True,True,True,eos,28.31795899895951,1024,,results/task-15-budget-1024/requests/042.json
+budget-1024,43,70 \sqrt{2},,,False,False,False,answer_cap,68.0506027690135,1024,,results/task-15-budget-1024/requests/043.json
+budget-1024,44,1.25,1.25,1.25,True,True,True,eos,32.2886200529756,1024,,results/task-15-budget-1024/requests/044.json
+budget-1024,45,2,2,2,True,True,True,eos,31.42339891300071,1024,,results/task-15-budget-1024/requests/045.json
+budget-1024,46,6,6,6,True,True,True,eos,43.11230988102034,1024,,results/task-15-budget-1024/requests/046.json
+budget-1024,47,5,5,5,True,True,True,eos,33.56753703695722,1024,,results/task-15-budget-1024/requests/047.json
+budget-1024,48,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,28.901101434021257,1024,,results/task-15-budget-1024/requests/048.json
+budget-1024,49,83,83,83,True,True,True,eos,29.50264621793758,1024,,results/task-15-budget-1024/requests/049.json
+budget-1024,50,203,203,203,True,True,True,eos,39.879288173047826,1024,,results/task-15-budget-1024/requests/050.json
+budget-1024,51,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,True,True,True,eos,35.23515102406964,1024,,results/task-15-budget-1024/requests/051.json
+budget-1024,52,12,12,12,True,True,True,eos,30.165681920014322,1024,,results/task-15-budget-1024/requests/052.json
+budget-1024,53,-\frac{\pi}{6},-\frac{\pi}{6},-\frac{\pi}{6},True,True,True,eos,31.32221603090875,1024,,results/task-15-budget-1024/requests/053.json
+budget-1024,54,0.15,0.15,0.15,True,True,True,eos,25.36658841499593,883,,results/task-15-budget-1024/requests/054.json
+budget-1024,55,3,3,3,True,True,True,eos,36.592702883062884,1024,,results/task-15-budget-1024/requests/055.json
+budget-1024,56,11,11,11,True,True,True,eos,28.28706030198373,842,,results/task-15-budget-1024/requests/056.json
+budget-1024,57,16,16,16,True,True,True,eos,31.856781789916568,1024,,results/task-15-budget-1024/requests/057.json
+budget-1024,58,9901,9901,9901,True,True,True,eos,30.16963996202685,1024,,results/task-15-budget-1024/requests/058.json
+budget-1024,59,5,5,5,True,True,True,eos,30.086880478076637,1024,,results/task-15-budget-1024/requests/059.json
+budget-2048,40,12,12,12,True,True,True,eos,48.94245230604429,1896,,results/task-16-budget-2048/requests/040.json
+budget-2048,41,17,17,17,True,True,True,eos,63.71702227194328,2048,,results/task-16-budget-2048/requests/041.json
+budget-2048,42,4,4,4,True,True,True,eos,35.45641690003686,1310,,results/task-16-budget-2048/requests/042.json
+budget-2048,43,70 \sqrt{2},20\sqrt{5} + 10\sqrt{34},20\sqrt{5} + 10\sqrt{34},False,False,False,eos,75.21399359498173,2048,,results/task-16-budget-2048/requests/043.json
+budget-2048,44,1.25,1.25,1.25,True,True,True,eos,55.584454346913844,2048,,results/task-16-budget-2048/requests/044.json
+budget-2048,45,2,2,2,True,True,True,eos,39.380569789907895,1304,,results/task-16-budget-2048/requests/045.json
+budget-2048,46,6,6,6,True,True,True,eos,66.47574131004512,2048,,results/task-16-budget-2048/requests/046.json
+budget-2048,47,5,5,5,True,True,True,eos,47.375912998919375,1680,,results/task-16-budget-2048/requests/047.json
+budget-2048,48,\frac{3}{2},\dfrac{3}{2},\dfrac{3}{2},True,True,True,eos,42.19603385403752,1660,,results/task-16-budget-2048/requests/048.json
+budget-2048,49,83,83,83,True,True,True,eos,51.6149408390047,1947,,results/task-16-budget-2048/requests/049.json
+budget-2048,50,203,203,203,True,True,True,eos,59.614821239956655,2048,,results/task-16-budget-2048/requests/050.json
+budget-2048,51,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,True,True,True,eos,58.75686200207565,2048,,results/task-16-budget-2048/requests/051.json
+budget-2048,52,12,12,12,True,True,True,eos,50.48635846807156,2048,,results/task-16-budget-2048/requests/052.json
+budget-2048,53,-\frac{\pi}{6},-\dfrac{\pi}{6},-\dfrac{\pi}{6},True,True,True,eos,37.54378141602501,1280,,results/task-16-budget-2048/requests/053.json
+budget-2048,54,0.15,0.15,0.15,True,True,True,eos,25.296931131044403,883,,results/task-16-budget-2048/requests/054.json
+budget-2048,55,3,3,3,True,True,True,eos,54.07410503504798,1891,,results/task-16-budget-2048/requests/055.json
+budget-2048,56,11,11,11,True,True,True,eos,28.212951124063693,842,,results/task-16-budget-2048/requests/056.json
+budget-2048,57,16,16,16,True,True,True,eos,55.63785744598135,2048,,results/task-16-budget-2048/requests/057.json
+budget-2048,58,9901,9901,9901,True,True,True,eos,52.4858314669691,2048,,results/task-16-budget-2048/requests/058.json
+budget-2048,59,5,5,5,True,True,True,eos,32.668542196042836,1131,,results/task-16-budget-2048/requests/059.json
+nonthinking,40,12,12,12,True,True,True,eos,5.011994021013379,0,,results/task-17-nonthinking/requests/040.json
+nonthinking,41,17,17,17,True,True,True,eos,26.582052943995222,0,,results/task-17-nonthinking/requests/041.json
+nonthinking,42,4,4,4,True,True,True,eos,5.160790109075606,0,,results/task-17-nonthinking/requests/042.json
+nonthinking,43,70 \sqrt{2},,,False,False,False,answer_cap,44.39805855497252,0,,results/task-17-nonthinking/requests/043.json
+nonthinking,44,1.25,1.25,1.25,True,True,True,eos,10.045534436008893,0,,results/task-17-nonthinking/requests/044.json
+nonthinking,45,2,2,2,True,True,True,eos,3.7195424149977043,0,,results/task-17-nonthinking/requests/045.json
+nonthinking,46,6,6,6,True,True,True,eos,18.56662558496464,0,,results/task-17-nonthinking/requests/046.json
+nonthinking,47,5,5,5,True,True,True,eos,8.917804413940758,0,,results/task-17-nonthinking/requests/047.json
+nonthinking,48,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,5.144287516013719,0,,results/task-17-nonthinking/requests/048.json
+nonthinking,49,83,83,83,True,True,True,eos,4.071373580954969,0,,results/task-17-nonthinking/requests/049.json
+nonthinking,50,203,,,False,False,False,answer_cap,44.460154484026134,0,,results/task-17-nonthinking/requests/050.json
+nonthinking,51,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,x^5 - x^4 + x^3 - x^2 + x - 1,True,True,True,eos,17.90173082589172,0,,results/task-17-nonthinking/requests/051.json
+nonthinking,52,12,12,12,True,True,True,eos,5.504452607012354,0,,results/task-17-nonthinking/requests/052.json
+nonthinking,53,-\frac{\pi}{6},-\frac{\pi}{6},-\frac{\pi}{6},True,True,True,eos,7.323860449017957,0,,results/task-17-nonthinking/requests/053.json
+nonthinking,54,0.15,0.15,0.15,True,True,True,eos,1.4271765049779788,0,,results/task-17-nonthinking/requests/054.json
+nonthinking,55,3,3,3,True,True,True,eos,11.844848169013858,0,,results/task-17-nonthinking/requests/055.json
+nonthinking,56,11,11,11,True,True,True,eos,5.443517777952366,0,,results/task-17-nonthinking/requests/056.json
+nonthinking,57,16,16,16,True,True,True,eos,5.705553918960504,0,,results/task-17-nonthinking/requests/057.json
+nonthinking,58,9901,9901,9901,True,True,True,eos,4.123941143043339,0,,results/task-17-nonthinking/requests/058.json
+nonthinking,59,5,5,5,True,True,True,eos,7.528220709995367,0,,results/task-17-nonthinking/requests/059.json
+full,60,"(6,31,-1)","(6, 31, -1)","(6, 31, -1)",True,True,True,eos,214.76416767307092,8471,,results/task-18-full/requests/060.json
+full,61,-256,-256,-256,True,True,True,eos,141.84612831298728,5802,,results/task-18-full/requests/061.json
+full,62,4,4,4,True,True,True,eos,99.28578275500331,3754,,results/task-18-full/requests/062.json
+full,63,10,10,10,True,True,True,eos,109.41693575796671,4187,,results/task-18-full/requests/063.json
+full,64,\frac{35}{64},\dfrac{35}{64},\dfrac{35}{64},True,True,True,eos,186.39352080202661,7925,,results/task-18-full/requests/064.json
+full,65,1,1,1,True,True,True,eos,32.99684657296166,1135,,results/task-18-full/requests/065.json
+full,66,x^3+3x-6,x^3 + 3x - 6,x^3 + 3x - 6,True,True,True,eos,45.048036924912594,1715,,results/task-18-full/requests/066.json
+full,67,10,10,10,True,True,True,eos,108.79305463994388,4636,,results/task-18-full/requests/067.json
+full,68,46,46,46,True,True,True,eos,78.41604710102547,2789,,results/task-18-full/requests/068.json
+full,69,-1,-1,-1,True,True,True,eos,108.26284614298493,4433,,results/task-18-full/requests/069.json
+full,70,40_9,40_9,40_9,True,True,True,eos,42.18394485092722,1482,,results/task-18-full/requests/070.json
+full,71,2516_8,2516,2516,True,True,True,eos,201.20933805801906,8692,,results/task-18-full/requests/071.json
+full,72,3,3,3,True,True,True,eos,31.659724544966593,950,,results/task-18-full/requests/072.json
+full,73,\frac{3\sqrt{3}}{4},\dfrac{3\sqrt{3}}{4},\dfrac{3\sqrt{3}}{4},True,True,True,eos,54.37892845098395,2008,,results/task-18-full/requests/073.json
+full,74,\cot x,\cot x,\cot x,True,True,True,eos,68.57774720306043,2672,,results/task-18-full/requests/074.json
+full,75,\frac{11}{36},\dfrac{11}{36},\dfrac{11}{36},True,True,True,eos,84.12830068799667,3394,,results/task-18-full/requests/075.json
+full,76,0,0,0,True,True,True,eos,106.75712159997784,4484,,results/task-18-full/requests/076.json
+full,77,4,4,4,True,True,True,eos,43.79359914502129,1740,,results/task-18-full/requests/077.json
+full,78,"(-2,1)","(-2, 1)","(-2, 1)",True,True,True,eos,57.3697148259962,1821,,results/task-18-full/requests/078.json
+full,79,2,2,2,True,True,True,eos,30.399025114020333,1131,,results/task-18-full/requests/079.json
+budget-256,60,"(6,31,-1)",,,False,False,False,answer_cap,50.42040099692531,256,,results/task-19-budget-256/requests/060.json
+budget-256,61,-256,-256,-256,True,True,True,eos,14.768320831935853,256,,results/task-19-budget-256/requests/061.json
+budget-256,62,4,4,4,True,True,True,eos,24.46671637194231,256,,results/task-19-budget-256/requests/062.json
+budget-256,63,10,10,10,True,True,True,eos,25.05123533704318,256,,results/task-19-budget-256/requests/063.json
+budget-256,64,\frac{35}{64},-\frac{35}{64},-\frac{35}{64},False,False,False,eos,31.920640054973774,256,,results/task-19-budget-256/requests/064.json
+budget-256,65,1,1,1,True,True,True,eos,11.94607854099013,256,,results/task-19-budget-256/requests/065.json
+budget-256,66,x^3+3x-6,x^3 + 3x - 6,x^3 + 3x - 6,True,True,True,eos,14.294591334997676,256,,results/task-19-budget-256/requests/066.json
+budget-256,67,10,10,10,True,True,True,eos,14.42190097994171,256,,results/task-19-budget-256/requests/067.json
+budget-256,68,46,46,46,True,True,True,eos,18.88956151797902,256,,results/task-19-budget-256/requests/068.json
+budget-256,69,-1,-1,-1,True,True,True,eos,15.248973667039536,256,,results/task-19-budget-256/requests/069.json
+budget-256,70,40_9,40_9,40_9,True,True,True,eos,13.707755106966943,256,,results/task-19-budget-256/requests/070.json
+budget-256,71,2516_8,12436_8,12436_8,False,False,False,eos,40.92843021196313,256,,results/task-19-budget-256/requests/071.json
+budget-256,72,3,3,3,True,True,True,eos,11.868789472035132,256,,results/task-19-budget-256/requests/072.json
+budget-256,73,\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},True,True,True,eos,12.636949438019656,256,,results/task-19-budget-256/requests/073.json
+budget-256,74,\cot x,\cot x,\cot x,True,True,True,eos,16.12909365305677,256,,results/task-19-budget-256/requests/074.json
+budget-256,75,\frac{11}{36},\frac{11}{36},\frac{11}{36},True,True,True,eos,15.923038448090665,256,,results/task-19-budget-256/requests/075.json
+budget-256,76,0,0,0,True,True,True,eos,13.66084598004818,256,,results/task-19-budget-256/requests/076.json
+budget-256,77,4,4,4,True,True,True,eos,10.820221479050815,256,,results/task-19-budget-256/requests/077.json
+budget-256,78,"(-2,1)","(-2, 1)","(-2, 1)",True,True,True,eos,25.565666073933244,256,,results/task-19-budget-256/requests/078.json
+budget-256,79,2,2,2,True,True,True,eos,10.311331465956755,256,,results/task-19-budget-256/requests/079.json
+budget-512,60,"(6,31,-1)","(6, 31, -1)","(6, 31, -1)",True,True,True,eos,54.13876046403311,512,,results/task-20-budget-512/requests/060.json
+budget-512,61,-256,-256,-256,True,True,True,eos,21.66122877795715,512,,results/task-20-budget-512/requests/061.json
+budget-512,62,4,4,4,True,True,True,eos,25.72106224100571,512,,results/task-20-budget-512/requests/062.json
+budget-512,63,10,10,10,True,True,True,eos,30.24412100506015,512,,results/task-20-budget-512/requests/063.json
+budget-512,64,\frac{35}{64},\frac{35}{16},\frac{35}{16},False,False,False,eos,44.8751491389703,512,,results/task-20-budget-512/requests/064.json
+budget-512,65,1,1,1,True,True,True,eos,17.37980570702348,512,,results/task-20-budget-512/requests/065.json
+budget-512,66,x^3+3x-6,x^3 + 3x - 6,x^3 + 3x - 6,True,True,True,eos,20.00764026795514,512,,results/task-20-budget-512/requests/066.json
+budget-512,67,10,10,10,True,True,True,eos,19.175462151062675,512,,results/task-20-budget-512/requests/067.json
+budget-512,68,46,,,False,False,False,answer_cap,56.351377259008586,512,,results/task-20-budget-512/requests/068.json
+budget-512,69,-1,-1,-1,True,True,True,eos,20.605630723992363,512,,results/task-20-budget-512/requests/069.json
+budget-512,70,40_9,40_9,40_9,True,True,True,eos,19.61339457402937,512,,results/task-20-budget-512/requests/070.json
+budget-512,71,2516_8,2516_8,2516_8,True,True,True,eos,20.884550355025567,512,,results/task-20-budget-512/requests/071.json
+budget-512,72,3,3,3,True,True,True,eos,19.653969231061637,512,,results/task-20-budget-512/requests/072.json
+budget-512,73,\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},True,True,True,eos,19.036557973944582,512,,results/task-20-budget-512/requests/073.json
+budget-512,74,\cot x,\cot x,\cot x,True,True,True,eos,20.900835255975835,512,,results/task-20-budget-512/requests/074.json
+budget-512,75,\frac{11}{36},\frac{11}{36},\frac{11}{36},True,True,True,eos,21.995215057046153,512,,results/task-20-budget-512/requests/075.json
+budget-512,76,0,0,0,True,True,True,eos,18.732233936083503,512,,results/task-20-budget-512/requests/076.json
+budget-512,77,4,4,4,True,True,True,eos,16.94811915291939,512,,results/task-20-budget-512/requests/077.json
+budget-512,78,"(-2,1)","(-2, 1)","(-2, 1)",True,True,True,eos,30.933314076042734,512,,results/task-20-budget-512/requests/078.json
+budget-512,79,2,2,2,True,True,True,eos,16.23356184794102,512,,results/task-20-budget-512/requests/079.json
+budget-1024,60,"(6,31,-1)",,,False,False,False,answer_cap,68.32042537501547,1024,,results/task-21-budget-1024/requests/060.json
+budget-1024,61,-256,-256,-256,True,True,True,eos,35.66311090392992,1024,,results/task-21-budget-1024/requests/061.json
+budget-1024,62,4,4,4,True,True,True,eos,55.55656033800915,1024,,results/task-21-budget-1024/requests/062.json
+budget-1024,63,10,10,10,True,True,True,eos,40.53633232996799,1024,,results/task-21-budget-1024/requests/063.json
+budget-1024,64,\frac{35}{64},-35,-35,False,False,False,eos,40.57110229996033,1024,,results/task-21-budget-1024/requests/064.json
+budget-1024,65,1,1,1,True,True,True,eos,29.779316422063857,1024,,results/task-21-budget-1024/requests/065.json
+budget-1024,66,x^3+3x-6,x^3 + 3x - 6,x^3 + 3x - 6,True,True,True,eos,30.352626897976734,1024,,results/task-21-budget-1024/requests/066.json
+budget-1024,67,10,10,10,True,True,True,eos,31.510356567101553,1024,,results/task-21-budget-1024/requests/067.json
+budget-1024,68,46,46,46,True,True,True,eos,35.47782909497619,1024,,results/task-21-budget-1024/requests/068.json
+budget-1024,69,-1,-1,-1,True,True,True,eos,33.79095608298667,1024,,results/task-21-budget-1024/requests/069.json
+budget-1024,70,40_9,40_9,40_9,True,True,True,eos,33.43738229491282,1024,,results/task-21-budget-1024/requests/070.json
+budget-1024,71,2516_8,2526_8,2526_8,False,False,False,eos,31.969711413956247,1024,,results/task-21-budget-1024/requests/071.json
+budget-1024,72,3,3,3,True,True,True,eos,31.27867970895022,950,,results/task-21-budget-1024/requests/072.json
+budget-1024,73,\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},True,True,True,eos,29.718870435026474,1024,,results/task-21-budget-1024/requests/073.json
+budget-1024,74,\cot x,\cot x,\cot x,True,True,True,eos,33.44282923801802,1024,,results/task-21-budget-1024/requests/074.json
+budget-1024,75,\frac{11}{36},\frac{11}{36},\frac{11}{36},True,True,True,eos,32.423898348002695,1024,,results/task-21-budget-1024/requests/075.json
+budget-1024,76,0,0,0,True,True,True,eos,32.72503150696866,1024,,results/task-21-budget-1024/requests/076.json
+budget-1024,77,4,4,4,True,True,True,eos,28.449501559021883,1024,,results/task-21-budget-1024/requests/077.json
+budget-1024,78,"(-2,1)","(-2, 1)","(-2, 1)",True,True,True,eos,38.28055115789175,1024,,results/task-21-budget-1024/requests/078.json
+budget-1024,79,2,2,2,True,True,True,eos,28.293398865964264,1024,,results/task-21-budget-1024/requests/079.json
+budget-2048,60,"(6,31,-1)","(6, 31, -1)","(6, 31, -1)",True,True,True,eos,72.49124126997776,2048,,results/task-22-budget-2048/requests/060.json
+budget-2048,61,-256,-256,-256,True,True,True,eos,57.946264746948145,2048,,results/task-22-budget-2048/requests/061.json
+budget-2048,62,4,4,4,True,True,True,eos,62.08813510497566,2048,,results/task-22-budget-2048/requests/062.json
+budget-2048,63,10,10,10,True,True,True,eos,59.490930315922014,2048,,results/task-22-budget-2048/requests/063.json
+budget-2048,64,\frac{35}{64},,,False,False,False,answer_cap,89.14797020994592,2048,,results/task-22-budget-2048/requests/064.json
+budget-2048,65,1,1,1,True,True,True,eos,33.02028724702541,1135,,results/task-22-budget-2048/requests/065.json
+budget-2048,66,x^3+3x-6,x^3 + 3x - 6,x^3 + 3x - 6,True,True,True,eos,44.822351776994765,1715,,results/task-22-budget-2048/requests/066.json
+budget-2048,67,10,10,10,True,True,True,eos,53.67720797902439,2048,,results/task-22-budget-2048/requests/067.json
+budget-2048,68,46,46,46,True,True,True,eos,58.47956843394786,2048,,results/task-22-budget-2048/requests/068.json
+budget-2048,69,-1,-1,-1,True,True,True,eos,54.535824463004246,2048,,results/task-22-budget-2048/requests/069.json
+budget-2048,70,40_9,40_9,40_9,True,True,True,eos,41.92569707101211,1482,,results/task-22-budget-2048/requests/070.json
+budget-2048,71,2516_8,2536_8,2536_8,False,False,False,eos,53.38741477392614,2048,,results/task-22-budget-2048/requests/071.json
+budget-2048,72,3,3,3,True,True,True,eos,31.270174956996925,950,,results/task-22-budget-2048/requests/072.json
+budget-2048,73,\frac{3\sqrt{3}}{4},\dfrac{3\sqrt{3}}{4},\dfrac{3\sqrt{3}}{4},True,True,True,eos,51.234386433963664,2008,,results/task-22-budget-2048/requests/073.json
+budget-2048,74,\cot x,\cot x,\cot x,True,True,True,eos,54.661751082050614,2048,,results/task-22-budget-2048/requests/074.json
+budget-2048,75,\frac{11}{36},\frac{11}{36},\frac{11}{36},True,True,True,eos,55.22455367993098,2048,,results/task-22-budget-2048/requests/075.json
+budget-2048,76,0,0,0,True,True,True,eos,52.051028246991336,2048,,results/task-22-budget-2048/requests/076.json
+budget-2048,77,4,4,4,True,True,True,eos,43.819402321008965,1740,,results/task-22-budget-2048/requests/077.json
+budget-2048,78,"(-2,1)","(-2, 1)","(-2, 1)",True,True,True,eos,57.10450205800589,1821,,results/task-22-budget-2048/requests/078.json
+budget-2048,79,2,2,2,True,True,True,eos,30.42038590006996,1131,,results/task-22-budget-2048/requests/079.json
+nonthinking,60,"(6,31,-1)",,,False,False,False,answer_cap,44.918940661940724,0,,results/task-23-nonthinking/requests/060.json
+nonthinking,61,-256,-256,-256,True,True,True,eos,10.251091695041396,0,,results/task-23-nonthinking/requests/061.json
+nonthinking,62,4,4,4,True,True,True,eos,35.63573321700096,0,,results/task-23-nonthinking/requests/062.json
+nonthinking,63,10,10,10,True,True,True,eos,26.06424211303238,0,,results/task-23-nonthinking/requests/063.json
+nonthinking,64,\frac{35}{64},-\frac{35}{64},-\frac{35}{64},False,False,False,eos,42.80659858894069,0,,results/task-23-nonthinking/requests/064.json
+nonthinking,65,1,1,1,True,True,True,eos,5.662908728001639,0,,results/task-23-nonthinking/requests/065.json
+nonthinking,66,x^3+3x-6,x^3 + 3x - 6,x^3 + 3x - 6,True,True,True,eos,8.869135699933395,0,,results/task-23-nonthinking/requests/066.json
+nonthinking,67,10,10\%,10\%,True,True,True,eos,8.752573478966951,0,,results/task-23-nonthinking/requests/067.json
+nonthinking,68,46,46,46,True,True,True,eos,11.22341066703666,0,,results/task-23-nonthinking/requests/068.json
+nonthinking,69,-1,-1,-1,True,True,True,eos,13.51006446708925,0,,results/task-23-nonthinking/requests/069.json
+nonthinking,70,40_9,40_9,40_9,True,True,True,eos,6.649536777986214,0,,results/task-23-nonthinking/requests/070.json
+nonthinking,71,2516_8,2516_8,2516_8,True,True,True,eos,9.717675769003108,0,,results/task-23-nonthinking/requests/071.json
+nonthinking,72,3,3,3,True,True,True,eos,6.511612133937888,0,,results/task-23-nonthinking/requests/072.json
+nonthinking,73,\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},\frac{3\sqrt{3}}{4},True,True,True,eos,6.032583225984126,0,,results/task-23-nonthinking/requests/073.json
+nonthinking,74,\cot x,\cot x,\cot x,True,True,True,eos,9.087420604075305,0,,results/task-23-nonthinking/requests/074.json
+nonthinking,75,\frac{11}{36},\frac{11}{36},\frac{11}{36},True,True,True,eos,9.42328818095848,0,,results/task-23-nonthinking/requests/075.json
+nonthinking,76,0,0,0,True,True,True,eos,8.007684838958085,0,,results/task-23-nonthinking/requests/076.json
+nonthinking,77,4,4,4,True,True,True,eos,3.711668060044758,0,,results/task-23-nonthinking/requests/077.json
+nonthinking,78,"(-2,1)","(-2, 1)","(-2, 1)",True,True,True,eos,22.7005921760574,0,,results/task-23-nonthinking/requests/078.json
+nonthinking,79,2,2,2,True,True,True,eos,4.004085029941052,0,,results/task-23-nonthinking/requests/079.json
+full,80,501,501,501,True,True,True,eos,310.1189105139347,13244,,results/task-24-full/requests/080.json
+full,81,3,3,3,True,True,True,eos,30.912159716011956,1067,,results/task-24-full/requests/081.json
+full,82,\frac{3}{2},\dfrac{3}{2},\dfrac{3}{2},True,True,True,eos,352.8227031440474,15178,,results/task-24-full/requests/082.json
+full,83,2,2,2,True,True,True,eos,101.81654652801808,4025,,results/task-24-full/requests/083.json
+full,84,-1,-1,-1,True,True,True,eos,83.1951095839031,3032,,results/task-24-full/requests/084.json
+full,85,\sqrt{5},\sqrt{5},\sqrt{5},True,True,True,eos,28.822112031979486,981,,results/task-24-full/requests/085.json
+full,86,240,240,240,True,True,True,eos,20.28856795001775,717,,results/task-24-full/requests/086.json
+full,87,1,1,1,True,True,True,eos,70.32604306202848,2676,,results/task-24-full/requests/087.json
+full,88,2,2,2,True,True,True,eos,185.4296471440466,7357,,results/task-24-full/requests/088.json
+full,89,21,21,21,True,True,True,eos,68.81008918001316,2747,,results/task-24-full/requests/089.json
+full,90,\frac{3}{2},\dfrac{3}{2},\dfrac{3}{2},True,True,True,eos,27.75107476406265,1009,,results/task-24-full/requests/090.json
+full,91,1,1,1,True,True,True,eos,103.21604795497842,4215,,results/task-24-full/requests/091.json
+full,92,\frac{448}{15625},\dfrac{448}{15625},\dfrac{448}{15625},True,True,True,eos,121.68849081289954,4917,,results/task-24-full/requests/092.json
+full,93,33,33,33,True,True,True,eos,104.15889516100287,4212,,results/task-24-full/requests/093.json
+full,94,80,80,80,True,True,True,eos,354.06531994906254,15283,,results/task-24-full/requests/094.json
+full,95,-4,-4,-4,True,True,True,eos,46.22675730090123,1346,,results/task-24-full/requests/095.json
+full,96,1 \pm \sqrt{19},,,False,False,False,thinking_cap,366.544425824075,16384,,results/task-24-full/requests/096.json
+full,97,\text{east},east,east,True,True,True,eos,70.94031970005017,2916,,results/task-24-full/requests/097.json
+full,98,2k+2,2k + 2,2k + 2,True,True,True,eos,24.442995664081536,896,,results/task-24-full/requests/098.json
+full,99,\begin{pmatrix} -1/3 \\ 2/3 \\ 5/3 \end{pmatrix},\begin{pmatrix} -\dfrac{1}{3} \\ \dfrac{2}{3} \\ \dfrac{5}{3} \end{pmatrix},\begin{pmatrix} -\dfrac{1}{3} \\ \dfrac{2}{3} \\ \dfrac{5}{3} \end{pmatrix},True,True,True,eos,127.99853861099109,4710,,results/task-24-full/requests/099.json
+budget-256,80,501,1,1,False,False,False,eos,31.191179011017084,256,,results/task-25-budget-256/requests/080.json
+budget-256,81,3,3,3,True,True,True,eos,14.943571590003558,256,,results/task-25-budget-256/requests/081.json
+budget-256,82,\frac{3}{2},2,2,False,False,False,eos,44.08869385602884,256,,results/task-25-budget-256/requests/082.json
+budget-256,83,2,2,2,True,True,True,eos,33.28859255404677,256,,results/task-25-budget-256/requests/083.json
+budget-256,84,-1,-1,-1,True,True,True,eos,23.424958375981078,256,,results/task-25-budget-256/requests/084.json
+budget-256,85,\sqrt{5},\sqrt{5},\sqrt{5},True,True,True,eos,13.650438035954721,256,,results/task-25-budget-256/requests/085.json
+budget-256,86,240,240,240,True,True,True,eos,9.570521851070225,256,,results/task-25-budget-256/requests/086.json
+budget-256,87,1,1,1,True,True,True,eos,16.760086799040437,256,,results/task-25-budget-256/requests/087.json
+budget-256,88,2,2,2,True,True,True,eos,28.35563888703473,256,,results/task-25-budget-256/requests/088.json
+budget-256,89,21,21,21,True,True,True,eos,14.002062376006506,256,,results/task-25-budget-256/requests/089.json
+budget-256,90,\frac{3}{2},15,15,False,False,False,eos,10.955923861009069,256,,results/task-25-budget-256/requests/090.json
+budget-256,91,1,1,1,True,True,True,eos,14.181397107080556,256,,results/task-25-budget-256/requests/091.json
+budget-256,92,\frac{448}{15625},\frac{2240}{78125},\frac{2240}{78125},True,True,True,eos,14.824934248928912,256,,results/task-25-budget-256/requests/092.json
+budget-256,93,33,33,33,True,True,True,eos,17.210522767039947,256,,results/task-25-budget-256/requests/093.json
+budget-256,94,80,,,False,False,False,answer_cap,50.32907293201424,256,,results/task-25-budget-256/requests/094.json
+budget-256,95,-4,-4,-4,True,True,True,eos,17.876852924004197,256,,results/task-25-budget-256/requests/095.json
+budget-256,96,1 \pm \sqrt{19},,,False,False,False,answer_cap,50.40927761700004,256,,results/task-25-budget-256/requests/096.json
+budget-256,97,\text{east},\text{east},\text{east},True,True,True,eos,12.420775620033965,256,,results/task-25-budget-256/requests/097.json
+budget-256,98,2k+2,2k + 2,2k + 2,True,True,True,eos,10.082876791944727,256,,results/task-25-budget-256/requests/098.json
+budget-256,99,\begin{pmatrix} -1/3 \\ 2/3 \\ 5/3 \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},True,True,True,eos,23.680040425038897,256,,results/task-25-budget-256/requests/099.json
+budget-512,80,501,1,1,False,False,False,eos,31.022105555050075,512,,results/task-26-budget-512/requests/080.json
+budget-512,81,3,3,3,True,True,True,eos,19.728656467981637,512,,results/task-26-budget-512/requests/081.json
+budget-512,82,\frac{3}{2},\frac{3}{5},\frac{3}{5},False,False,False,eos,33.57456266100053,512,,results/task-26-budget-512/requests/082.json
+budget-512,83,2,2,2,True,True,True,eos,19.97390484402422,512,,results/task-26-budget-512/requests/083.json
+budget-512,84,-1,-1,-1,True,True,True,eos,27.755825545988046,512,,results/task-26-budget-512/requests/084.json
+budget-512,85,\sqrt{5},\sqrt{5},\sqrt{5},True,True,True,eos,19.374650751939043,512,,results/task-26-budget-512/requests/085.json
+budget-512,86,240,240,240,True,True,True,eos,16.52186074096244,512,,results/task-26-budget-512/requests/086.json
+budget-512,87,1,1,1,True,True,True,eos,21.020311283995397,512,,results/task-26-budget-512/requests/087.json
+budget-512,88,2,2,2,True,True,True,eos,51.44367968197912,512,,results/task-26-budget-512/requests/088.json
+budget-512,89,21,21,21,True,True,True,eos,19.869501448934898,512,,results/task-26-budget-512/requests/089.json
+budget-512,90,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,16.06438802194316,512,,results/task-26-budget-512/requests/090.json
+budget-512,91,1,1,1,True,True,True,eos,21.072593285003677,512,,results/task-26-budget-512/requests/091.json
+budget-512,92,\frac{448}{15625},\frac{2240}{78125},\frac{2240}{78125},True,True,True,eos,22.48625292198267,512,,results/task-26-budget-512/requests/092.json
+budget-512,93,33,33,33,True,True,True,eos,23.245384339941666,512,,results/task-26-budget-512/requests/093.json
+budget-512,94,80,110,110,False,False,False,eos,33.714569032075815,512,,results/task-26-budget-512/requests/094.json
+budget-512,95,-4,-4,-4,True,True,True,eos,25.509062687982805,512,,results/task-26-budget-512/requests/095.json
+budget-512,96,1 \pm \sqrt{19},,,False,False,False,answer_cap,55.7871845489135,512,,results/task-26-budget-512/requests/096.json
+budget-512,97,\text{east},\text{east},\text{east},True,True,True,eos,17.61825221090112,512,,results/task-26-budget-512/requests/097.json
+budget-512,98,2k+2,2k + 2,2k + 2,True,True,True,eos,15.433035345980898,512,,results/task-26-budget-512/requests/098.json
+budget-512,99,\begin{pmatrix} -1/3 \\ 2/3 \\ 5/3 \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},True,True,True,eos,33.83909787191078,512,,results/task-26-budget-512/requests/099.json
+budget-1024,80,501,1,1,False,False,False,eos,55.45948755601421,1024,,results/task-27-budget-1024/requests/080.json
+budget-1024,81,3,3,3,True,True,True,eos,30.414568373002112,1024,,results/task-27-budget-1024/requests/081.json
+budget-1024,82,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,44.144672636990435,1024,,results/task-27-budget-1024/requests/082.json
+budget-1024,83,2,2,2,True,True,True,eos,32.58678712800611,1024,,results/task-27-budget-1024/requests/083.json
+budget-1024,84,-1,-1,-1,True,True,True,eos,38.885265483986586,1024,,results/task-27-budget-1024/requests/084.json
+budget-1024,85,\sqrt{5},\sqrt{5},\sqrt{5},True,True,True,eos,28.679647180018947,981,,results/task-27-budget-1024/requests/085.json
+budget-1024,86,240,240,240,True,True,True,eos,20.168583816033788,717,,results/task-27-budget-1024/requests/086.json
+budget-1024,87,1,1,1,True,True,True,eos,31.881590430042706,1024,,results/task-27-budget-1024/requests/087.json
+budget-1024,88,2,2,2,True,True,True,eos,54.367471068981104,1024,,results/task-27-budget-1024/requests/088.json
+budget-1024,89,21,21,21,True,True,True,eos,31.05258354707621,1024,,results/task-27-budget-1024/requests/089.json
+budget-1024,90,\frac{3}{2},\dfrac{3}{2},\dfrac{3}{2},True,True,True,eos,27.501408815965988,1009,,results/task-27-budget-1024/requests/090.json
+budget-1024,91,1,1,1,True,True,True,eos,32.012899119989015,1024,,results/task-27-budget-1024/requests/091.json
+budget-1024,92,\frac{448}{15625},\frac{2240}{78125},\frac{2240}{78125},True,True,True,eos,32.11686158704106,1024,,results/task-27-budget-1024/requests/092.json
+budget-1024,93,33,33,33,True,True,True,eos,32.59293443604838,1024,,results/task-27-budget-1024/requests/093.json
+budget-1024,94,80,130,130,False,False,False,eos,38.34667281003203,1024,,results/task-27-budget-1024/requests/094.json
+budget-1024,95,-4,-4,-4,True,True,True,eos,40.64780870010145,1024,,results/task-27-budget-1024/requests/095.json
+budget-1024,96,1 \pm \sqrt{19},,,False,False,False,answer_cap,67.2846902719466,1024,,results/task-27-budget-1024/requests/096.json
+budget-1024,97,\text{east},east,east,True,True,True,eos,27.802928672987036,1024,,results/task-27-budget-1024/requests/097.json
+budget-1024,98,2k+2,2k + 2,2k + 2,True,True,True,eos,23.51420779596083,896,,results/task-27-budget-1024/requests/098.json
+budget-1024,99,\begin{pmatrix} -1/3 \\ 2/3 \\ 5/3 \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},True,True,True,eos,44.04589201405179,1024,,results/task-27-budget-1024/requests/099.json
+budget-2048,80,501,501,501,True,True,True,eos,87.75988720008172,2048,,results/task-28-budget-2048/requests/080.json
+budget-2048,81,3,3,3,True,True,True,eos,30.7531277599046,1067,,results/task-28-budget-2048/requests/081.json
+budget-2048,82,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,63.42546055803541,2048,,results/task-28-budget-2048/requests/082.json
+budget-2048,83,2,2,2,True,True,True,eos,57.59963352396153,2048,,results/task-28-budget-2048/requests/083.json
+budget-2048,84,-1,-1,-1,True,True,True,eos,61.335040899924934,2048,,results/task-28-budget-2048/requests/084.json
+budget-2048,85,\sqrt{5},\sqrt{5},\sqrt{5},True,True,True,eos,28.85506347496994,981,,results/task-28-budget-2048/requests/085.json
+budget-2048,86,240,240,240,True,True,True,eos,20.274670229991898,717,,results/task-28-budget-2048/requests/086.json
+budget-2048,87,1,1,1,True,True,True,eos,54.543343778001145,2048,,results/task-28-budget-2048/requests/087.json
+budget-2048,88,2,2,2,True,True,True,eos,70.51175035990309,2048,,results/task-28-budget-2048/requests/088.json
+budget-2048,89,21,21,21,True,True,True,eos,55.382637778064236,2048,,results/task-28-budget-2048/requests/089.json
+budget-2048,90,\frac{3}{2},\dfrac{3}{2},\dfrac{3}{2},True,True,True,eos,27.86664937704336,1009,,results/task-28-budget-2048/requests/090.json
+budget-2048,91,1,1,1,True,True,True,eos,54.994083647965454,2048,,results/task-28-budget-2048/requests/091.json
+budget-2048,92,\frac{448}{15625},\frac{448}{15625},\frac{448}{15625},True,True,True,eos,56.64872492791619,2048,,results/task-28-budget-2048/requests/092.json
+budget-2048,93,33,33,33,True,True,True,eos,54.850682071060874,2048,,results/task-28-budget-2048/requests/093.json
+budget-2048,94,80,130,130,False,False,False,eos,63.587305549997836,2048,,results/task-28-budget-2048/requests/094.json
+budget-2048,95,-4,-4,-4,True,True,True,eos,46.00151929492131,1346,,results/task-28-budget-2048/requests/095.json
+budget-2048,96,1 \pm \sqrt{19},"1 + \sqrt{11}, 1 - \sqrt{11}, 1 + \sqrt{17}, 1 - \sqrt{17}","1 + \sqrt{11}, 1 - \sqrt{11}, 1 + \sqrt{17}, 1 - \sqrt{17}",False,False,False,eos,76.03202379005961,2048,,results/task-28-budget-2048/requests/096.json
+budget-2048,97,\text{east},east,east,True,True,True,eos,50.8251027680235,2048,,results/task-28-budget-2048/requests/097.json
+budget-2048,98,2k+2,2k + 2,2k + 2,True,True,True,eos,23.570240980945528,896,,results/task-28-budget-2048/requests/098.json
+budget-2048,99,\begin{pmatrix} -1/3 \\ 2/3 \\ 5/3 \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},True,True,True,eos,63.83763395505957,2048,,results/task-28-budget-2048/requests/099.json
+nonthinking,80,501,1,1,False,False,False,eos,27.336400113999844,0,,results/task-29-nonthinking/requests/080.json
+nonthinking,81,3,3,3,True,True,True,eos,9.327281469013542,0,,results/task-29-nonthinking/requests/081.json
+nonthinking,82,\frac{3}{2},\frac{3}{2},\frac{3}{2},True,True,True,eos,26.375156449037604,0,,results/task-29-nonthinking/requests/082.json
+nonthinking,83,2,2,2,True,True,True,eos,17.644394933944568,0,,results/task-29-nonthinking/requests/083.json
+nonthinking,84,-1,-1,-1,True,True,True,eos,19.48338921193499,0,,results/task-29-nonthinking/requests/084.json
+nonthinking,85,\sqrt{5},\sqrt{5},\sqrt{5},True,True,True,eos,8.264406168018468,0,,results/task-29-nonthinking/requests/085.json
+nonthinking,86,240,240,240,True,True,True,eos,2.9571319159585983,0,,results/task-29-nonthinking/requests/086.json
+nonthinking,87,1,1,1,True,True,True,eos,12.123478858033195,0,,results/task-29-nonthinking/requests/087.json
+nonthinking,88,2,2,2,True,True,True,eos,41.73199570295401,0,,results/task-29-nonthinking/requests/088.json
+nonthinking,89,21,21,21,True,True,True,eos,8.576071290997788,0,,results/task-29-nonthinking/requests/089.json
+nonthinking,90,\frac{3}{2},15,15,False,False,False,eos,4.167262093047611,0,,results/task-29-nonthinking/requests/090.json
+nonthinking,91,1,1,1,True,True,True,eos,8.006292308913544,0,,results/task-29-nonthinking/requests/091.json
+nonthinking,92,\frac{448}{15625},\frac{2240}{78125},\frac{2240}{78125},True,True,True,eos,11.639139224076644,0,,results/task-29-nonthinking/requests/092.json
+nonthinking,93,33,33,33,True,True,True,eos,11.787939583067782,0,,results/task-29-nonthinking/requests/093.json
+nonthinking,94,80,128^\circ,128^\circ,False,False,False,eos,43.23488995595835,0,,results/task-29-nonthinking/requests/094.json
+nonthinking,95,-4,-4,-4,True,True,True,eos,13.042396957054734,0,,results/task-29-nonthinking/requests/095.json
+nonthinking,96,1 \pm \sqrt{19},,,False,False,False,answer_cap,44.44754525204189,0,,results/task-29-nonthinking/requests/096.json
+nonthinking,97,\text{east},\text{East},\text{East},True,True,True,eos,5.428950209985487,0,,results/task-29-nonthinking/requests/097.json
+nonthinking,98,2k+2,2k + 2,2k + 2,True,True,True,eos,2.4594348090467975,0,,results/task-29-nonthinking/requests/098.json
+nonthinking,99,\begin{pmatrix} -1/3 \\ 2/3 \\ 5/3 \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},\begin{pmatrix} -\frac{1}{3} \\ \frac{2}{3} \\ \frac{5}{3} \end{pmatrix},True,True,True,eos,21.789612198015675,0,,results/task-29-nonthinking/requests/099.json

@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 21:04:26
+Job ID:    6307734
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-sweetspot
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading full indices [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 13440.36it/s]
+{"index": 20, "configuration": "full", "generated_tokens": 2369, "finish_reason": "eos", "elapsed_seconds": 51.922720064991154}
+{"index": 21, "configuration": "full", "generated_tokens": 5059, "finish_reason": "eos", "elapsed_seconds": 110.19479545310605}
+{"index": 22, "configuration": "full", "generated_tokens": 4921, "finish_reason": "eos", "elapsed_seconds": 107.23850708408281}
+{"index": 23, "configuration": "full", "generated_tokens": 2822, "finish_reason": "eos", "elapsed_seconds": 61.39075337105896}
+{"index": 24, "configuration": "full", "generated_tokens": 2633, "finish_reason": "eos", "elapsed_seconds": 57.27405191794969}
+{"index": 25, "configuration": "full", "generated_tokens": 6415, "finish_reason": "eos", "elapsed_seconds": 139.9403676170623}
+{"index": 26, "configuration": "full", "generated_tokens": 16384, "finish_reason": "thinking_cap", "elapsed_seconds": 365.42905341496225}
+{"index": 27, "configuration": "full", "generated_tokens": 1902, "finish_reason": "eos", "elapsed_seconds": 41.522523071966134}
+{"index": 28, "configuration": "full", "generated_tokens": 2293, "finish_reason": "eos", "elapsed_seconds": 49.848596937954426}
+{"index": 29, "configuration": "full", "generated_tokens": 1688, "finish_reason": "eos", "elapsed_seconds": 36.858560460968874}
+{"index": 30, "configuration": "full", "generated_tokens": 3801, "finish_reason": "eos", "elapsed_seconds": 83.0038909399882}
+{"index": 31, "configuration": "full", "generated_tokens": 2310, "finish_reason": "eos", "elapsed_seconds": 50.411235703970306}
+{"index": 32, "configuration": "full", "generated_tokens": 16384, "finish_reason": "thinking_cap", "elapsed_seconds": 365.31403239106294}
+{"index": 33, "configuration": "full", "generated_tokens": 3010, "finish_reason": "eos", "elapsed_seconds": 65.5601964269299}
+{"index": 34, "configuration": "full", "generated_tokens": 4250, "finish_reason": "eos", "elapsed_seconds": 92.77640996302944}
+{"index": 35, "configuration": "full", "generated_tokens": 2756, "finish_reason": "eos", "elapsed_seconds": 60.202129315934144}
+{"index": 36, "configuration": "full", "generated_tokens": 5739, "finish_reason": "eos", "elapsed_seconds": 125.24594983097631}
+{"index": 37, "configuration": "full", "generated_tokens": 2127, "finish_reason": "eos", "elapsed_seconds": 46.47211629303638}
+{"index": 38, "configuration": "full", "generated_tokens": 1643, "finish_reason": "eos", "elapsed_seconds": 35.90494909300469}
+{"index": 39, "configuration": "full", "generated_tokens": 2029, "finish_reason": "eos", "elapsed_seconds": 44.36829861695878}
+COMPLETE full 1
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 21:37:50
+Job ID:        6307734
+Array Job ID:  6307328_6
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-sweetspot
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=02:13:36,vmem=0,walltime=00:33:24,mem=1599016K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-25-0
+---------------------------------------

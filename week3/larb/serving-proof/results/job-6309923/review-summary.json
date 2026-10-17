@@ -1,0 +1,34 @@
+{
+  "passed_checks": 18,
+  "source_hashes_valid": true,
+  "requests": [
+    {
+      "key": "A",
+      "total_tokens": 1268,
+      "close_index": 525,
+      "post_close_tokens": 742,
+      "forced": true,
+      "boxed_answer": "p - q"
+    },
+    {
+      "key": "B",
+      "total_tokens": 1843,
+      "close_index": 1459,
+      "post_close_tokens": 383,
+      "forced": false,
+      "boxed_answer": "(3, \\frac{\\pi}{2})"
+    },
+    {
+      "key": "C",
+      "total_tokens": 3043,
+      "close_index": 2653,
+      "post_close_tokens": 389,
+      "forced": false,
+      "boxed_answer": "\\dfrac{14}{3}"
+    }
+  ],
+  "A_write_to_worker_ms": 6.464255042374134,
+  "A_write_to_cue_ms": 18.3820630190894,
+  "same_worker_step_token_count": true,
+  "actual_row_move_events": 0
+}

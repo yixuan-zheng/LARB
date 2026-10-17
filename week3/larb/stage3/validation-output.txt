@@ -1,0 +1,7 @@
+full 100 completed-correct 95 boxed-correct 95 Counter({'eos': 96, 'thinking_cap': 4})
+budget-256 100 completed-correct 87 boxed-correct 87 Counter({'eos': 95, 'answer_cap': 5})
+budget-512 100 completed-correct 87 boxed-correct 87 Counter({'eos': 97, 'answer_cap': 3})
+budget-1024 100 completed-correct 89 boxed-correct 89 Counter({'eos': 96, 'answer_cap': 4})
+budget-2048 100 completed-correct 90 boxed-correct 90 Counter({'eos': 99, 'answer_cap': 1})
+nonthinking 100 completed-correct 85 boxed-correct 85 Counter({'eos': 93, 'answer_cap': 7})
+Review queue 67 Grader issues 0

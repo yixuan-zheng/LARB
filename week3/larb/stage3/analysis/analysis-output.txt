@@ -1,0 +1,212 @@
+[
+  {
+    "configuration": "full",
+    "completed_correct": 95,
+    "accuracy_pct": 95.0,
+    "boxed_correct": 95,
+    "normal_completions": 96,
+    "thinking_cap_hits": 4,
+    "answer_cap_hits": 0,
+    "missing_boxes": 4,
+    "reopened_thinking": 0,
+    "automated_completed_correct": 93,
+    "manual_corrections": [
+      25,
+      36
+    ],
+    "median_seconds": 74.4566193910432,
+    "mean_seconds": 102.65310810785508,
+    "p95_seconds": 354.5309921376116,
+    "total_seconds": 10265.310810785508,
+    "median_model_thinking_tokens": 2852.5,
+    "accuracy_delta_pp": 0.0,
+    "accuracy_delta_ci95": [
+      0.0,
+      0.0
+    ],
+    "median_time_reduction_pct": 0.0,
+    "median_time_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "full_correct_candidate_wrong": 0,
+    "full_wrong_candidate_correct": 0,
+    "full_accuracy_if_all_cap_failures_rescued_pct": 99.0,
+    "accuracy_delta_vs_optimistic_full_pp": -4.0,
+    "point_screen_pass": false
+  },
+  {
+    "configuration": "budget-256",
+    "completed_correct": 87,
+    "accuracy_pct": 87.0,
+    "boxed_correct": 87,
+    "normal_completions": 95,
+    "thinking_cap_hits": 0,
+    "answer_cap_hits": 5,
+    "missing_boxes": 5,
+    "reopened_thinking": 0,
+    "automated_completed_correct": 86,
+    "manual_corrections": [
+      36
+    ],
+    "median_seconds": 15.096272628521547,
+    "mean_seconds": 19.63460993053508,
+    "p95_seconds": 44.40071280982809,
+    "total_seconds": 1963.460993053508,
+    "median_model_thinking_tokens": 256.0,
+    "accuracy_delta_pp": -8.0,
+    "accuracy_delta_ci95": [
+      -14.0,
+      -2.0
+    ],
+    "median_time_reduction_pct": 79.72474072555387,
+    "median_time_ratio_ci95": [
+      0.1808366420647184,
+      0.25285930583121147
+    ],
+    "full_correct_candidate_wrong": 9,
+    "full_wrong_candidate_correct": 1,
+    "full_accuracy_if_all_cap_failures_rescued_pct": 99.0,
+    "accuracy_delta_vs_optimistic_full_pp": -12.0,
+    "point_screen_pass": false
+  },
+  {
+    "configuration": "budget-512",
+    "completed_correct": 87,
+    "accuracy_pct": 87.0,
+    "boxed_correct": 87,
+    "normal_completions": 97,
+    "thinking_cap_hits": 0,
+    "answer_cap_hits": 3,
+    "missing_boxes": 3,
+    "reopened_thinking": 0,
+    "automated_completed_correct": 86,
+    "manual_corrections": [
+      36
+    ],
+    "median_seconds": 20.960573269985616,
+    "mean_seconds": 24.96328552773688,
+    "p95_seconds": 48.33382233449955,
+    "total_seconds": 2496.328552773688,
+    "median_model_thinking_tokens": 512.0,
+    "accuracy_delta_pp": -8.0,
+    "accuracy_delta_ci95": [
+      -14.0,
+      -2.0
+    ],
+    "median_time_reduction_pct": 71.84861004781654,
+    "median_time_ratio_ci95": [
+      0.2512695717058494,
+      0.3539951646024172
+    ],
+    "full_correct_candidate_wrong": 9,
+    "full_wrong_candidate_correct": 1,
+    "full_accuracy_if_all_cap_failures_rescued_pct": 99.0,
+    "accuracy_delta_vs_optimistic_full_pp": -12.0,
+    "point_screen_pass": false
+  },
+  {
+    "configuration": "budget-1024",
+    "completed_correct": 89,
+    "accuracy_pct": 89.0,
+    "boxed_correct": 89,
+    "normal_completions": 96,
+    "thinking_cap_hits": 0,
+    "answer_cap_hits": 4,
+    "missing_boxes": 4,
+    "reopened_thinking": 0,
+    "automated_completed_correct": 88,
+    "manual_corrections": [
+      36
+    ],
+    "median_seconds": 32.69223106850404,
+    "mean_seconds": 36.002373658070574,
+    "p95_seconds": 55.46434119511396,
+    "total_seconds": 3600.2373658070574,
+    "median_model_thinking_tokens": 1024.0,
+    "accuracy_delta_pp": -6.0,
+    "accuracy_delta_ci95": [
+      -12.0,
+      -1.0
+    ],
+    "median_time_reduction_pct": 56.092243596495095,
+    "median_time_ratio_ci95": [
+      0.39164804461471514,
+      0.560002902299794
+    ],
+    "full_correct_candidate_wrong": 7,
+    "full_wrong_candidate_correct": 1,
+    "full_accuracy_if_all_cap_failures_rescued_pct": 99.0,
+    "accuracy_delta_vs_optimistic_full_pp": -10.0,
+    "point_screen_pass": false
+  },
+  {
+    "configuration": "budget-2048",
+    "completed_correct": 90,
+    "accuracy_pct": 90.0,
+    "boxed_correct": 90,
+    "normal_completions": 99,
+    "thinking_cap_hits": 0,
+    "answer_cap_hits": 1,
+    "missing_boxes": 1,
+    "reopened_thinking": 0,
+    "automated_completed_correct": 90,
+    "manual_corrections": [],
+    "median_seconds": 54.74695658503333,
+    "mean_seconds": 52.73545336586423,
+    "p95_seconds": 73.92883465227204,
+    "total_seconds": 5273.545336586423,
+    "median_model_thinking_tokens": 2048.0,
+    "accuracy_delta_pp": -5.0,
+    "accuracy_delta_ci95": [
+      -10.0,
+      0.0
+    ],
+    "median_time_reduction_pct": 26.47133722590266,
+    "median_time_ratio_ci95": [
+      0.6555320400732978,
+      0.9228120711807142
+    ],
+    "full_correct_candidate_wrong": 6,
+    "full_wrong_candidate_correct": 1,
+    "full_accuracy_if_all_cap_failures_rescued_pct": 99.0,
+    "accuracy_delta_vs_optimistic_full_pp": -9.0,
+    "point_screen_pass": false
+  },
+  {
+    "configuration": "nonthinking",
+    "completed_correct": 85,
+    "accuracy_pct": 85.0,
+    "boxed_correct": 85,
+    "normal_completions": 93,
+    "thinking_cap_hits": 0,
+    "answer_cap_hits": 7,
+    "missing_boxes": 7,
+    "reopened_thinking": 0,
+    "automated_completed_correct": 84,
+    "manual_corrections": [
+      36
+    ],
+    "median_seconds": 9.37528482498601,
+    "mean_seconds": 14.837332751266658,
+    "p95_seconds": 44.448175713641106,
+    "total_seconds": 1483.7332751266658,
+    "median_model_thinking_tokens": 0.0,
+    "accuracy_delta_pp": -10.0,
+    "accuracy_delta_ci95": [
+      -17.0,
+      -3.0
+    ],
+    "median_time_reduction_pct": 87.40839309968213,
+    "median_time_ratio_ci95": [
+      0.1095220913277502,
+      0.15636293160366566
+    ],
+    "full_correct_candidate_wrong": 12,
+    "full_wrong_candidate_correct": 2,
+    "full_accuracy_if_all_cap_failures_rescued_pct": 99.0,
+    "accuracy_delta_vs_optimistic_full_pp": -14.0,
+    "point_screen_pass": false
+  }
+]
+Prefix matches: 400 / 400

@@ -1,0 +1,41 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 22:55:29
+Job ID:    6309923
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-vllm-proof
+Partition: ice-gpu
+QOS:       coc-ice
+---------------------------------------
+{
+  "A_update_observed_after_512_generated_tokens": true,
+  "A_forces_cue_after_update": true,
+  "A_exact_stage3_cue": true,
+  "A_answer_continues_and_ends_normally": true,
+  "all_requests_finish_normally": true,
+  "no_forced_answer_cap_EOS": true,
+  "no_reopened_thinking": true,
+  "one_submission_each": true,
+  "one_worker_admission_each": true,
+  "A_same_worker_output_object": true,
+  "B_natural_close": true,
+  "B_late_update_ignored": true,
+  "A_and_B_actually_scheduled_together": true,
+  "C_waited_while_AB_active": true,
+  "C_admitted_while_another_request_active": true,
+  "no_preemptions": true,
+  "computed_tokens_monotonic_and_KV_blocks_retained": true,
+  "scheduler_samples_exist_before_and_after_A_change": true
+}
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 22:59:21
+Job ID:        6309923
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-vllm-proof
+Resources:     cpu=4,gres/gpu:h100=1,mem=64G,node=1
+Rsrc Used:     cput=00:15:32,vmem=0,walltime=00:03:53,mem=4978852K,energy_used=0
+Partition:     ice-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-012-18-0
+---------------------------------------

@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-16-2026 21:40:55
+Job ID:    6307433
+User ID:   yzheng609
+Account:   coc
+Job name:  qwen3-sweetspot
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Loading budget-1024 indices [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/398 [00:00<00:08, 47.71it/s]Loading weights:   3%|▎         | 11/398 [00:00<00:09, 40.90it/s]Loading weights:   5%|▍         | 19/398 [00:00<00:07, 53.08it/s]Loading weights:   8%|▊         | 30/398 [00:00<00:05, 67.14it/s]Loading weights:  10%|█         | 41/398 [00:00<00:04, 76.23it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:05, 69.71it/s]Loading weights:  15%|█▍        | 59/398 [00:00<00:04, 71.67it/s]Loading weights:  17%|█▋        | 67/398 [00:01<00:04, 69.01it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 362.44it/s]
+{"index": 60, "configuration": "budget-1024", "generated_tokens": 3085, "finish_reason": "answer_cap", "elapsed_seconds": 68.32042537501547}
+{"index": 61, "configuration": "budget-1024", "generated_tokens": 1616, "finish_reason": "eos", "elapsed_seconds": 35.66311090392992}
+{"index": 62, "configuration": "budget-1024", "generated_tokens": 2510, "finish_reason": "eos", "elapsed_seconds": 55.55656033800915}
+{"index": 63, "configuration": "budget-1024", "generated_tokens": 1846, "finish_reason": "eos", "elapsed_seconds": 40.53633232996799}
+{"index": 64, "configuration": "budget-1024", "generated_tokens": 1843, "finish_reason": "eos", "elapsed_seconds": 40.57110229996033}
+{"index": 65, "configuration": "budget-1024", "generated_tokens": 1355, "finish_reason": "eos", "elapsed_seconds": 29.779316422063857}
+{"index": 66, "configuration": "budget-1024", "generated_tokens": 1383, "finish_reason": "eos", "elapsed_seconds": 30.352626897976734}
+{"index": 67, "configuration": "budget-1024", "generated_tokens": 1430, "finish_reason": "eos", "elapsed_seconds": 31.510356567101553}
+{"index": 68, "configuration": "budget-1024", "generated_tokens": 1609, "finish_reason": "eos", "elapsed_seconds": 35.47782909497619}
+{"index": 69, "configuration": "budget-1024", "generated_tokens": 1535, "finish_reason": "eos", "elapsed_seconds": 33.79095608298667}
+{"index": 70, "configuration": "budget-1024", "generated_tokens": 1517, "finish_reason": "eos", "elapsed_seconds": 33.43738229491282}
+{"index": 71, "configuration": "budget-1024", "generated_tokens": 1455, "finish_reason": "eos", "elapsed_seconds": 31.969711413956247}
+{"index": 72, "configuration": "budget-1024", "generated_tokens": 1424, "finish_reason": "eos", "elapsed_seconds": 31.27867970895022}
+{"index": 73, "configuration": "budget-1024", "generated_tokens": 1314, "finish_reason": "eos", "elapsed_seconds": 29.718870435026474}
+{"index": 74, "configuration": "budget-1024", "generated_tokens": 1509, "finish_reason": "eos", "elapsed_seconds": 33.44282923801802}
+{"index": 75, "configuration": "budget-1024", "generated_tokens": 1470, "finish_reason": "eos", "elapsed_seconds": 32.423898348002695}
+{"index": 76, "configuration": "budget-1024", "generated_tokens": 1343, "finish_reason": "eos", "elapsed_seconds": 32.72503150696866}
+{"index": 77, "configuration": "budget-1024", "generated_tokens": 1281, "finish_reason": "eos", "elapsed_seconds": 28.449501559021883}
+{"index": 78, "configuration": "budget-1024", "generated_tokens": 1741, "finish_reason": "eos", "elapsed_seconds": 38.28055115789175}
+{"index": 79, "configuration": "budget-1024", "generated_tokens": 1294, "finish_reason": "eos", "elapsed_seconds": 28.293398865964264}
+COMPLETE budget-1024 3
+---------------------------------------
+Begin Slurm Epilog: Oct-16-2026 21:54:31
+Job ID:        6307433
+Array Job ID:  6307328_21
+User ID:       yzheng609
+Account:       coc
+Job name:      qwen3-sweetspot
+Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1
+Rsrc Used:     cput=00:54:28,vmem=0,walltime=00:13:37,mem=8079600K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-27-0
+---------------------------------------

@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "correct": true,
+    "raw_exact_match": false,
+    "extracted": "(3, \\frac{\\pi}{2})",
+    "reference": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "reason": "Equivalent coordinate pair; reference uses \\left and \\right."
+  },
+  {
+    "index": 1,
+    "correct": true,
+    "raw_exact_match": true,
+    "extracted": "p - q",
+    "reference": "p - q",
+    "reason": "Exact answer match, also checked against the problem and reference."
+  },
+  {
+    "index": 2,
+    "correct": true,
+    "raw_exact_match": false,
+    "extracted": "\\dfrac{14}{3}",
+    "reference": "\\frac{14}{3}",
+    "reason": "Equivalent fraction; \\dfrac and \\frac differ only in display style."
+  },
+  {
+    "index": 3,
+    "correct": true,
+    "raw_exact_match": true,
+    "extracted": "9",
+    "reference": "9",
+    "reason": "Exact answer match, also checked against the problem and reference."
+  },
+  {
+    "index": 4,
+    "correct": true,
+    "raw_exact_match": false,
+    "extracted": "Evelyn",
+    "reference": "\\text{Evelyn}",
+    "reason": "Same name; reference wraps Evelyn in \\text{}."
+  },
+  {
+    "index": 5,
+    "correct": true,
+    "raw_exact_match": true,
+    "extracted": "42",
+    "reference": "42",
+    "reason": "Exact answer match, also checked against the problem and reference."
+  },
+  {
+    "index": 6,
+    "correct": true,
+    "raw_exact_match": true,
+    "extracted": "27",
+    "reference": "27",
+    "reason": "Exact answer match, also checked against the problem and reference."
+  },
+  {
+    "index": 7,
+    "correct": true,
+    "raw_exact_match": false,
+    "extracted": "90",
+    "reference": "90^\\circ",
+    "reason": "90 is correct; question explicitly requests degrees, reference includes degree symbol."
+  },
+  {
+    "index": 8,
+    "correct": true,
+    "raw_exact_match": true,
+    "extracted": "3\\sqrt{13}",
+    "reference": "3\\sqrt{13}",
+    "reason": "Exact answer match, also checked against the problem and reference."
+  },
+  {
+    "index": 9,
+    "correct": false,
+    "raw_exact_match": false,
+    "extracted": null,
+    "reference": "4",
+    "reason": "No final answer or closing thinking marker before the safety cap."
+  }
+]

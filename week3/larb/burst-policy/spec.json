@@ -1,0 +1,59 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "vllm": "0.11.2",
+  "dtype": "bfloat16",
+  "gpu": "one H100",
+  "max_active_sequences": 2,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "calibration_indices": [
+    0,
+    2
+  ],
+  "seed_base": 6222,
+  "policy_order": [
+    "arrival",
+    "live",
+    "full"
+  ],
+  "order_seed": 622204,
+  "policies": {
+    "full": "No overload reduction; stop at thinking safety cap if necessary",
+    "arrival": "Choose 2048 if latest observed engine waiting queue has >=2 requests at arrival; otherwise 16384; never update after arrival",
+    "live": "Same arrival rule, plus irreversible reduction of active thinking requests to 2048 whenever observed engine queue has >=2 waiting"
+  },
+  "pressure": "Atomic post-schedule queue snapshot, published every engine step; phase-scoped; ages and queue IDs logged",
+  "calibration": "Two full-thinking concurrent requests, indices 0 and 2. Freeze burst at 0.25*min(completion latencies), relative deadline at 2*max(completion latencies).",
+  "arrivals": "Indices 0 and 1 at time zero; indices 2..11 at burst_at + (index-2)*0.05 seconds",
+  "full_thinking_safety_cap": 16384,
+  "answer_cap": 2048,
+  "short_budget": 2048,
+  "transition": "Exact Stage 3 14-token cue, budget counts generated tokens before cue; no cue for full safety-cap failures",
+  "timing": "Completion measured from scheduled arrival, includes injection lag and queueing; actual server arrival and worker admission also recorded",
+  "primary": "Correct normal completion within per-request frozen relative deadline; count and count/fixed observation horizon",
+  "secondary": [
+    "completed correctness /12",
+    "queue delay",
+    "completion latency",
+    "drain time",
+    "actual live reductions",
+    "cap failures"
+  ],
+  "grading": "Existing canonical + math-verify 0.9.0; extraction ambiguities reviewed; cap stops count as failures",
+  "continuation_screen": "At least one genuine live intervention; more correct on-time completions than both baselines; no fewer completed-correct than full on this trace",
+  "limits": "One allocation <=60 minutes; <=36 measured +2 calibration attempts; no array, repeats, automatic retries, or tuning after outcomes",
+  "interpretation": "Development pilot, one trace and one seed per problem; cannot establish a 3pp quality floor or a population serving improvement"
+}

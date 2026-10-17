@@ -1,0 +1,19 @@
+{
+  "records": 600,
+  "unique_configuration_problem_pairs": 600,
+  "examples_per_configuration": 100,
+  "complete_tasks": 30,
+  "all_exit_codes_zero": true,
+  "identical_generation_source_and_runtime": true,
+  "prefix_checks": 400,
+  "prefix_matches": 400,
+  "grader_exceptions": 0,
+  "manual_extraction_corrections": 6,
+  "reopened_thinking": 0,
+  "normal_completions_missing_box": 0,
+  "thinking_cap_failures": 4,
+  "answer_cap_failures": 20,
+  "wrong_completed_answers": 43,
+  "gpu_allocation_seconds": 26673,
+  "scope": "600 completed attempts; initial protocol-packaging failure excluded before inference"
+}

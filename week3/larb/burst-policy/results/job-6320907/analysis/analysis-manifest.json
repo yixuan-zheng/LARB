@@ -1,0 +1,18 @@
+{
+  "versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0",
+    "numpy": "2.2.6",
+    "matplotlib": "3.9.2"
+  },
+  "python": "3.11.8",
+  "sources": {
+    "analyze_burst.py": "aa48eefd57644b108d5648e98241a1197ece87fe3912aebad09fb1aec1b7f67d",
+    "grade_stage3.py": "75fca15b0f3c341e52d4374dc71568183e77817d63c933578657704de85ef530",
+    "baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532"
+  },
+  "spec_sha256": "25c66570b6409141dca82615f7d512e7c8d19b2091c8b08b2c4706ff80fdba35",
+  "trace_sha256": "d42ee16aabb0e18ca5126795a9d7a7751a4e6243bc859a52c383a15fa710b3ce",
+  "manual_sha256": null
+}

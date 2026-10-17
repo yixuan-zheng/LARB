@@ -1,0 +1,50 @@
+[
+  {
+    "configuration": "budget-256",
+    "index": 36,
+    "correct": true,
+    "reviewed_answer": "3, 5, 7",
+    "reason": "The explicit Final Answer block lists three separate boxes: 3, 5, and 7. Together they exactly match the reference solution set; last-box extraction alone loses the first two values.",
+    "record_sha256": "b4118b9d7a6e36202d5ef31dd352ae379ebd123900821d5166722258c60ed236"
+  },
+  {
+    "configuration": "budget-512",
+    "index": 36,
+    "correct": true,
+    "reviewed_answer": "3, 5, 7",
+    "reason": "The explicit Final Answer block lists three separate boxes: 3, 5, and 7. Together they exactly match the reference solution set; last-box extraction alone loses the first two values.",
+    "record_sha256": "05de6b82ad63f30edcb15886ee0041fa5fdd59bf3c8fe282002c0862dbadf6f2"
+  },
+  {
+    "configuration": "full",
+    "index": 25,
+    "correct": true,
+    "reviewed_answer": "-2, 1",
+    "reason": "The explicit concluding answer is two separate boxes, -2 and 1. The question asks for all integers; this is exactly the reference set 1,-2 in a different order.",
+    "record_sha256": "f641344bdea9bd30f67bfd55571021d879aa6f3066b14833b3b4213dee9ff22c"
+  },
+  {
+    "configuration": "budget-1024",
+    "index": 36,
+    "correct": true,
+    "reviewed_answer": "3, 5, 7",
+    "reason": "The explicit Final Answer block lists three separate boxes: 3, 5, and 7. Together they match the reference set.",
+    "record_sha256": "2029da9d755aec5a04cd5525f6bfffd4d85f67ef44829d0490c360e6d4a2889a"
+  },
+  {
+    "configuration": "nonthinking",
+    "index": 36,
+    "correct": true,
+    "reviewed_answer": "3, 5, 7",
+    "reason": "The final section explicitly lists all three roots in separate boxes: 3, 5, and 7; last-box extraction omits two correct values.",
+    "record_sha256": "2d5cdb4244e2c6be32806eac3738a49c8ec2dea7e4052152844d8a004e2b9c0f"
+  },
+  {
+    "configuration": "full",
+    "index": 36,
+    "correct": true,
+    "reviewed_answer": "3, 5, 7",
+    "reason": "The explicit Final Answer lists the complete correct root set in three separate boxes; last-box extraction alone keeps only 7.",
+    "record_sha256": "1cedfd9dbbc70ca668bd51d7dbfa4315caaac771151e7cd83c030f5fd59f4d42"
+  }
+]

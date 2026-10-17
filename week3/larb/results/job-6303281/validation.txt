@@ -1,0 +1,31 @@
+Completed: True Requests: 10
+| Index | Thinking tokens | Output tokens | Seconds | Exact match | Finish |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 1431 | 1723 | 42.84 | False | eos |
+| 1 | 6582 | 7258 | 160.93 | True | eos |
+| 2 | 1973 | 2356 | 51.84 | False | eos |
+| 3 | 1501 | 2102 | 46.14 | True | eos |
+| 4 | 3245 | 3827 | 84.15 | False | eos |
+| 5 | 3238 | 3633 | 79.84 | True | eos |
+| 6 | 3063 | 3568 | 78.69 | True | eos |
+| 7 | 3420 | 4180 | 99.74 | False | eos |
+| 8 | 1546 | 1878 | 42.05 | True | eos |
+| 9 | None | 16384 | 368.74 | False | safety_cap |
+Median seconds: 79.26451440301025
+Range seconds: 42.0462035239907 368.739037174033
+Total generation seconds: 1054.950501072919
+Exact matches: 5
+Thinking share, closed outputs only: 0.8517280917280917
+Unclosed output tokens: 16384
+
+Answers to review:
+0 predicted= '(3, \\frac{\\pi}{2})' reference= '\\left( 3, \\frac{\\pi}{2} \\right)'
+1 predicted= 'p - q' reference= 'p - q'
+2 predicted= '\\dfrac{14}{3}' reference= '\\frac{14}{3}'
+3 predicted= '9' reference= '9'
+4 predicted= 'Evelyn' reference= '\\text{Evelyn}'
+5 predicted= '42' reference= '42'
+6 predicted= '27' reference= '27'
+7 predicted= '90' reference= '90^\\circ'
+8 predicted= '3\\sqrt{13}' reference= '3\\sqrt{13}'
+9 predicted= None reference= '4'

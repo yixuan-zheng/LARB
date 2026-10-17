@@ -1,0 +1,21 @@
+Completed: True Requests: 3
+| Index | Pre-close tokens | Answer tokens | Forced | Prefix match | Boxed answer | Finish | Seconds |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 524 | 312 | True | True | (3, \frac{\pi}{2}) | eos | 18.52 |
+| 1 | 524 | 703 | True | True | p - q | eos | 26.79 |
+| 9 | 524 | 714 | True | True | 14 | eos | 27.05 |
+Forced transitions: 3
+Nonempty continuations: 3
+Boxed answers: 3
+Normal EOS completions: 3
+Reopened thinking: 0
+Matching baseline prefixes: 3
+Raw exact matches: 1
+Median total seconds: 26.786441338947043
+Total seconds: 72.35813893005252
+Median forced-marker observation delay ms: 262.5135109992698
+
+Review answers:
+0 predicted= '(3, \\frac{\\pi}{2})' reference= '\\left( 3, \\frac{\\pi}{2} \\right)'
+1 predicted= 'p - q' reference= 'p - q'
+9 predicted= '14' reference= '4'

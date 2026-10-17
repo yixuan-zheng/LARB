@@ -1,0 +1,38 @@
+[
+  {
+    "key": "full-09",
+    "record_sha256": "26a8a6ef593803fc19d5be08a188dfc9a249f0a9961d27f259a53a5217412372",
+    "note": "The run reached 16,384 thinking tokens without closing thinking or producing a final answer. Correct intermediate thoughts do not satisfy the frozen usable-completion criterion.",
+    "score_changed": false
+  },
+  {
+    "key": "arrival-09",
+    "record_sha256": "8a6c82a6e2a4d93762d5dbb86641beafc32501de92b046065b734228d86d2405",
+    "note": "Boxed 8 is wrong. The final explanation includes expressions that change the original operators/grouping rules; the distinct legal values are 121, 122, 126, 144, giving 4.",
+    "score_changed": false
+  },
+  {
+    "key": "arrival-11",
+    "record_sha256": "1de356beb85a7845026ae53b2677b8d1fc10cf6e0b6e3a9749ed8b61dcf01e95",
+    "note": "Boxed 5047/63 is wrong. The derivation assumes the degree-five polynomial is monic, which the problem does not state. Gold is 3/56.",
+    "score_changed": false
+  },
+  {
+    "key": "live-11",
+    "record_sha256": "9469937404de8b48c3ff2c641c8466a8dea8499fd0d18215ad02328e9a9cc3b4",
+    "note": "The post-close calculation exhausts the 2,048-token answer allowance with no final boxed answer. The cap-induced EOS is correctly classified as a failure.",
+    "score_changed": false
+  },
+  {
+    "key": "live-09",
+    "record_sha256": "011439fdc54722c5e8e1e27fb43ea5c26beb8c49c0a635ed2b7e2ae8fc905ccb",
+    "note": "Boxed 4 matches the reference, with legal values 121, 122, 126, and 144 explicitly enumerated. No grading correction needed.",
+    "score_changed": false
+  },
+  {
+    "key": "full-11",
+    "record_sha256": "f4cedc1255be189c1166966103cd789284ed54c7d8c96a0eebc294fed859600a",
+    "note": "Boxed 3/56 matches the reference; the derivation determines both free coefficients using x=1 and x=-1. No grading correction needed.",
+    "score_changed": false
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "completed": true,
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dataset_revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "budget": 512,
+  "answer_cap": 2048,
+  "budget_definition": "generated tokens before first closing marker, including opening marker and whitespace; same count convention as Stage 1",
+  "method": "force only the next </think> token via a logits processor; same generate call and KV cache; no restart or prefix replay",
+  "settings": {
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "seed_base": 6222,
+  "gpu": "NVIDIA L40S",
+  "torch": "2.9.1+cu128",
+  "transformers": "5.7.0",
+  "job_id": "6306216",
+  "timing": "synchronized generation wall time; per-token observation adds CPU/GPU synchronization overhead",
+  "baseline": {
+    "model": "Qwen/Qwen3-4B",
+    "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "dataset": "HuggingFaceH4/MATH-500",
+    "dataset_revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+    "selection": "first 10 rows in the pinned dataset; development smoke test",
+    "problems_sha256": "cd18330386f321642319ce90a5d74cd22918c06a4a0dd1360cd50b143e3747ca",
+    "settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_new_tokens": 16384
+    },
+    "enable_thinking": true,
+    "seed_base": 6222,
+    "gpu": "NVIDIA L40S",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.7.0",
+    "python": "3.10.13",
+    "job_id": "6303281",
+    "cuda": "12.8",
+    "timing": "CUDA-synchronized generate wall time; excludes tokenization, load, and warmup",
+    "scoring": "Exact boxed-answer match after whitespace removal; manually review mismatches",
+    "completed": true
+  },
+  "source_hashes": {
+    "executed-baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532",
+    "executed-interrupt_probe.py": "f62e050881030e3034eead5ddaf7671051bddfec0ae555b4d2a1795fc28f106f",
+    "executed-budget_control.py": "0750e1b695ade08c22fc342017ada9b7103eee5d5ab26116fc9955cf5ecd815b"
+  }
+}

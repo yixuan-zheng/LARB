@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dataset": "HuggingFaceH4/MATH-500",
+  "dataset_revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "selection": "first 10 rows in the pinned dataset; development smoke test",
+  "problems_sha256": "cd18330386f321642319ce90a5d74cd22918c06a4a0dd1360cd50b143e3747ca",
+  "settings": {
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_new_tokens": 16384
+  },
+  "enable_thinking": true,
+  "seed_base": 6222,
+  "gpu": "NVIDIA L40S",
+  "torch": "2.9.1+cu128",
+  "transformers": "5.7.0",
+  "python": "3.10.13",
+  "job_id": "6303281",
+  "cuda": "12.8",
+  "timing": "CUDA-synchronized generate wall time; excludes tokenization, load, and warmup",
+  "scoring": "Exact boxed-answer match after whitespace removal; manually review mismatches",
+  "completed": true
+}

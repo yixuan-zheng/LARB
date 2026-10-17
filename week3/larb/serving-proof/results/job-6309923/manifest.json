@@ -1,0 +1,21 @@
+{
+  "python": "3.10.13",
+  "job": "6309923",
+  "versions": {
+    "vllm": "0.11.2",
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "fastapi": "0.143.3",
+    "aiohttp": "3.14.5"
+  },
+  "sources": {
+    "prove.py": "236b5203622880dbef5c62d1f84e6cac57fdeb552db8cc96c5f2e931ead9f5f9",
+    "server.py": "29c22af3ab2966517c01e54bee0be7848cd7d39575a13665fe74a27cfe162a41",
+    "control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd",
+    "live_budget.py": "2e5a5246d6e1742b3a351e9e3c178cb1d754f02649c2ea623e585a50e4e9c77e",
+    "test_control.py": "0425d10ef386a118cb12786c51cbd09b5fc09562ca9c441d918dde49bd8a5322"
+  },
+  "model_path": "/home/hice1/yzheng609/scratch/CS6222-qwen3-baseline/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+  "max_num_seqs": 2,
+  "note": "Mechanism proof only; eager engine, file control polling, scheduler tracing; not a performance benchmark"
+}
