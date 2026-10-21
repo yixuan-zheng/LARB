@@ -1,0 +1,26 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-21-2026 11:10:36
+Job ID:    6440653
+User ID:   yzheng609
+Account:   coc
+Job name:  larb-w4-compare
+Partition: ice-gpu
+QOS:       coc-ice
+---------------------------------------
+{
+  "passed": true,
+  "sources": 21,
+  "vllm": "0.11.2"
+}
+---------------------------------------
+Begin Slurm Epilog: Oct-21-2026 12:09:00
+Job ID:        6440653
+User ID:       yzheng609
+Account:       coc
+Job name:      larb-w4-compare
+Resources:     cpu=4,gres/gpu:h100=1,mem=64G,node=1
+Rsrc Used:     cput=03:53:36,vmem=0,walltime=00:58:24,mem=5092048K,energy_used=0
+Partition:     ice-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-013-3-0
+---------------------------------------

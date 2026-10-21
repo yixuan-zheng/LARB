@@ -1,0 +1,25 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-21-2026 01:19:41
+Job ID:    6434655
+User ID:   yzheng609
+Account:   coc
+Job name:  larb-w4-step1
+Partition: ice-gpu
+QOS:       coc-ice
+---------------------------------------
+Traceback (most recent call last):
+  File "/storage/ice1/4/2/yzheng609/CS6222-qwen3-baseline/week4/admission-control/run_smoke.py", line 114, in <module>
+    raise RuntimeError('Executed sources differ from the preflight source lock')
+RuntimeError: Executed sources differ from the preflight source lock
+---------------------------------------
+Begin Slurm Epilog: Oct-21-2026 01:19:54
+Job ID:        6434655
+User ID:       yzheng609
+Account:       coc
+Job name:      larb-w4-step1
+Resources:     cpu=4,gres/gpu:h100=1,mem=64G,node=1
+Rsrc Used:     cput=00:00:56,vmem=0,walltime=00:00:14,mem=37652K,energy_used=0
+Partition:     ice-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-013-3-0
+---------------------------------------

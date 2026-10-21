@@ -1,0 +1,35 @@
+{
+  "cpu_unit_tests": {
+    "policy_adapter": 21,
+    "metrics": 6,
+    "passed": true
+  },
+  "replay": {
+    "passed": true,
+    "python": "analysis environment with aiohttp"
+  },
+  "gpu_gate_readback": {
+    "job": "6440402",
+    "checks": 176,
+    "passed": true
+  },
+  "validator_corruption_checks": {
+    "count": 8,
+    "passed": true
+  },
+  "comparison_readback": {
+    "job": "6440653",
+    "complete": true,
+    "validation_passed": true,
+    "outcomes": 96,
+    "unique_problems": 12
+  },
+  "final_record_checks": {
+    "count": 10,
+    "passed": true
+  },
+  "source_locks_verified": true,
+  "policy_adapter_service_byte_identical_to_gpu_candidate": true,
+  "documentation_links_verified": true,
+  "note": "CPU/offline verification after path-only consolidation; no additional GPU job launched."
+}

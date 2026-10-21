@@ -1,0 +1,23 @@
+{
+  "week4/controlled-comparison/metrics.py": "10275d47969ddc92f09210a93a5b395ad308725150ff5798dbf28a51a79df767",
+  "week4/controlled-comparison/test_metrics.py": "deb7d04a89f93a210b2f233cc554b480fbac5b89cdd719ebe0fea167c00d397e",
+  "week4/controlled-comparison/run_comparison.py": "e4b9e8f53894c7cd0d2051cb2a0f03e555aeb1a6b39b454d206acb895ba05dde",
+  "week4/controlled-comparison/analyze.py": "2d8ccd629794aaa7d3579fe4fcbcc6a258e13762a300c0f480052f97caae76cb",
+  "week4/controlled-comparison/spec.json": "7ca405622e802897f284180bcac1d220ce8a12d0466255a9154a53a731c5aa5f",
+  "week4/controlled-comparison/PLAN.md": "35c0ca5389ee7d74f9cd4815de3299761b6219a479dbe93a2c1b7e3909e52f2b",
+  "week4/controlled-comparison/run_comparison.sbatch": "d2307d5371e711505fef80c1d242afdd9fbbe98c83586d4f58e52e38eacbb063",
+  "week4/controlled-comparison/checks/preflight.py": "d8b0802b8cf673cfd056d0dd9a8a020c429a1cf0629878c57100377069a3c6f7",
+  "week4/admission-control/bootstrap.py": "7cb6e36bda821795fe8b7ea87c73dc2828feb76b5f68c20c093cf9d0f0c7e1cb",
+  "week4/admission-control/run_smoke.py": "ee017c22330b9c872d5981e97195abf8478e86d90462362f07e6806119e93d42",
+  "week4/admission-control/test_adapter.py": "8672303a77d01846577176f35fa89c2d6dbf681c98d74e0a08a0c3d4c2f8e2a1",
+  "week4/admission-control/w4_policy.py": "d59c6491dd2955ea2878a3833ecab9f28f7063833be10a5431bfd4791bdc2c48",
+  "week4/admission-control/w4_adapter.py": "9c33ba063f14e9d5242806039f6345b7ad70c0c3c41e2f71f334d0edd1a47364",
+  "week4/admission-control/validate_smoke.py": "132e926dfe7db913da72b5376949606c574aedfc7cf0e0f952f0a86c7fabaf2e",
+  "week4/admission-control/w4_server.py": "7f175b7bff4e3a2d205853c5c08716ba15e115c33823a1d65eee0a7624044c86",
+  "week4/admission-control/test_policy.py": "3eec39fafbe7cb52d02987b4f9127311b59f5664ea0407586f8f3098930b3b34",
+  "week3/larb/burst-policy/adapter.py": "13305356b1ada2741bd48899a36cea398a46d21b5deb8fbe210b8e418c9db473",
+  "week3/larb/burst-policy/policy.py": "daad24eaf79e8a8ff94e5667b461bb17f3a9d44bd02bafadc63f8852a2290bee",
+  "week3/larb/serving-proof/control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd",
+  "week3/larb/code/baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532",
+  "week3/larb/code/grade_stage3.py": "75fca15b0f3c341e52d4374dc71568183e77817d63c933578657704de85ef530"
+}

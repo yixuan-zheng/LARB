@@ -1,0 +1,16 @@
+{
+  "status": "startup_timeout_before_requests",
+  "allocated_seconds": 245,
+  "model_requests": 0,
+  "startup_timeout_seconds": 240,
+  "observed_process": {
+    "pid": 3174434,
+    "elapsed": "02:28",
+    "cpu_time": "00:00:06",
+    "wchan": "cl_sync_io_wait"
+  },
+  "engine_initialization": "Server log reaches model resolution and engine initialization only late in startup; no policy phase starts",
+  "interpretation": "Shared-storage wait observed; 240s startup guard was too short. This does not validate or falsify GPU admission mechanics.",
+  "prepared_fix": "Current spec restores 600s historical startup allowance; not submitted",
+  "further_gpu_submissions": 0
+}

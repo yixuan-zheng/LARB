@@ -1,0 +1,6 @@
+{
+  "base_commit": "0baa9e2afc9cb867e499e7e604c4d0a8396c6812",
+  "branch": "codex/week4-admission-control",
+  "implementation": "Renewed authorization; realistic startup/inference budget; exact source lock",
+  "unrelated_local_edits": "Existing Week 3 local changes excluded from this work"
+}

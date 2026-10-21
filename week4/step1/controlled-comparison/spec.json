@@ -1,0 +1,104 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "vllm": "0.11.2",
+  "dtype": "bfloat16",
+  "max_active_sequences": 2,
+  "short_budget": 2048,
+  "long_budget": 16384,
+  "answer_cap": 2048,
+  "waiting_threshold": 2,
+  "arrival_snapshot_max_age_s": 2.0,
+  "schema_version": "week4.comparison.v1",
+  "purpose": "Controlled development comparison after passing 1C",
+  "arrivals": [
+    {
+      "index": 0,
+      "offset_seconds": 0
+    },
+    {
+      "index": 1,
+      "offset_seconds": 0
+    },
+    {
+      "index": 2,
+      "offset_seconds": 7.0
+    },
+    {
+      "index": 3,
+      "offset_seconds": 7.05
+    },
+    {
+      "index": 4,
+      "offset_seconds": 7.1
+    },
+    {
+      "index": 5,
+      "offset_seconds": 7.15
+    },
+    {
+      "index": 6,
+      "offset_seconds": 7.2
+    },
+    {
+      "index": 7,
+      "offset_seconds": 7.25
+    },
+    {
+      "index": 8,
+      "offset_seconds": 7.3
+    },
+    {
+      "index": 9,
+      "offset_seconds": 7.35
+    },
+    {
+      "index": 10,
+      "offset_seconds": 7.4
+    },
+    {
+      "index": 11,
+      "offset_seconds": 7.45
+    }
+  ],
+  "policy_orders": [
+    [
+      "full",
+      "arrival",
+      "admission",
+      "live"
+    ],
+    [
+      "live",
+      "admission",
+      "arrival",
+      "full"
+    ]
+  ],
+  "calibration_indices": [
+    0,
+    2
+  ],
+  "calibration_rule": {
+    "burst_fraction_of_min_latency": 0.25,
+    "deadline_multiple_of_max_latency": 2,
+    "minimum_deadline_seconds": 30
+  },
+  "limits": {
+    "allocation_minutes": 90,
+    "process_timeout_minutes": 85,
+    "startup_timeout_seconds": 1500,
+    "phase_timeout_seconds": 900,
+    "requests": 98,
+    "automatic_retries": 0
+  },
+  "candidate": "Unchanged admission/live mechanics verified by 1C; source lock fixes exact sources",
+  "metric": "Client terminal receipt minus scheduled arrival; common fixed horizon; caps/errors fail",
+  "selection": "Exposed development indices 0..11, repeated in two matched blocks; 12 unique accuracy examples",
+  "continue_if": {
+    "aggregate_live_correct_on_time_delta_positive": true,
+    "each_block_deadline_delta_nonnegative": true,
+    "each_block_has_binding_live_cutoff": true,
+    "max_net_eventual_correctness_loss_per_block": 1
+  }
+}

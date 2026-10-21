@@ -1,0 +1,7 @@
+{
+  "base_commit": "0baa9e2afc9cb867e499e7e604c4d0a8396c6812",
+  "branch": "codex/week4-admission-control",
+  "candidate": "Same serving/policy sources as renewed 1C job 6440402; exact source hashes recorded",
+  "gate": "Passed real concurrent job 6440402, 176 checks; same candidate source hashes",
+  "source_commit": "762afbac408dede6417e16482be4df470d1044a2"
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "week4.step1.v4-realistic-budget",
+  "purpose": "Mechanical smoke only; not a quality or deadline comparison",
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "vllm": "0.11.2",
+  "dtype": "bfloat16",
+  "max_active_sequences": 2,
+  "short_budget": 2048,
+  "long_budget": 16384,
+  "answer_cap": 2048,
+  "waiting_threshold": 2,
+  "arrival_snapshot_max_age_s": 2.0,
+  "policy_order": [
+    "full",
+    "arrival",
+    "admission",
+    "live"
+  ],
+  "arrivals": [
+    {
+      "index": 0,
+      "offset_seconds": 0.0
+    },
+    {
+      "index": 1,
+      "offset_seconds": 0.0
+    },
+    {
+      "index": 2,
+      "offset_seconds": 7.0
+    },
+    {
+      "index": 3,
+      "offset_seconds": 7.05
+    },
+    {
+      "index": 4,
+      "offset_seconds": 7.1
+    },
+    {
+      "index": 5,
+      "offset_seconds": 7.15
+    }
+  ],
+  "selection": "Exposed development indices 0..5; 0/1 and 7s late burst follow the prior pilot's known mechanism timing. No reserved questions or new quality claims.",
+  "admission": "First stock scheduling step; shared post-schedule queue snapshot; metadata delivered in NewRequestData sampling_params before dispatch",
+  "live": "Same admission rule; later irreversible reductions only after at least one generated token and before natural/forced thinking closure",
+  "limits": {
+    "allocations": 1,
+    "allocation_minutes": 45,
+    "process_timeout_minutes": 40,
+    "phase_timeout_seconds": 1200,
+    "requests": 24,
+    "automatic_retries": 0,
+    "startup_timeout_seconds": 1200,
+    "prior_allocated_gpu_seconds": 259
+  },
+  "repair": "User renewed GPU authorization with realistic startup/inference margins on October 21. Earlier two attempts remain preserved. See week4/EXPERIMENT-SESSION.md.",
+  "hardware": "One H100 for the repair smoke, exact model recorded; all policies use the same allocation and engine",
+  "required": [
+    "four modes finish",
+    "same admission/live initialization for same snapshot",
+    "admission decision before first execution",
+    "overlapping requests",
+    "no admission-only revisions",
+    "live cutoff binds after positive generation progress",
+    "exact cue then answer continuation",
+    "no cap/error failures",
+    "request identity and source/trace provenance"
+  ],
+  "status": "Authorized renewed GPU validation; continue to comparison on passing 1C"
+}

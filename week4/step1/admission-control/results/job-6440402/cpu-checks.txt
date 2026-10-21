@@ -1,0 +1,26 @@
+test_admission_cannot_change_and_live_requires_progress (test_adapter.AdapterTests) ... ok
+test_removed_and_readded_request_keeps_live_revision (test_adapter.AdapterTests) ... ok
+test_scheduler_attaches_before_return_and_preserves_stock_schedule (test_adapter.AdapterTests) ... ok
+test_scheduler_rejects_wrong_step_snapshot (test_adapter.AdapterTests) ... ok
+test_worker_uses_transport_even_if_latest_queue_differs (test_adapter.AdapterTests) ... ok
+test_admission_and_live_same_rule_at_threshold (test_policy.PolicyTests) ... ok
+test_admission_never_changes_during_generation (test_policy.PolicyTests) ... ok
+test_arrival_only_decides_on_arrival (test_policy.PolicyTests) ... ok
+test_arrival_stale_missing_and_future_snapshot_fall_back (test_policy.PolicyTests) ... ok
+test_complete_cue_before_answer_and_shared_answer_cap (test_policy.PolicyTests) ... ok
+test_full_and_arrival_retain_initial_decision_at_admission (test_policy.PolicyTests) ... ok
+test_full_safety_cap_is_failure_without_cue (test_policy.PolicyTests) ... ok
+test_live_does_not_revise_at_zero_generation (test_policy.PolicyTests) ... ok
+test_live_reduces_once_and_starts_cue_next_sample (test_policy.PolicyTests) ... ok
+test_natural_close_blocks_late_reduction (test_policy.PolicyTests) ... ok
+test_new_requests_share_one_post_schedule_snapshot (test_policy.PolicyTests) ... ok
+test_other_phase_does_not_supply_pressure (test_policy.PolicyTests) ... ok
+test_pressure_below_threshold_does_not_reduce (test_policy.PolicyTests) ... ok
+test_repeat_admission_does_not_reset_choice (test_policy.PolicyTests) ... ok
+test_row_moves_retain_request_and_output_identity (test_policy.PolicyTests) ... ok
+test_worker_rejects_missing_scheduler_metadata (test_policy.PolicyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.009s
+
+OK

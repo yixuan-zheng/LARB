@@ -1,0 +1,5 @@
+{
+  "base_commit": "0be0fbb565b0ed98f9e08358a0a15a73105cacf1",
+  "branch": "main",
+  "note": "Consolidated handoff packaging. Result directories preserve original executed source snapshots and hashes. Only path resolution/launch locations and final record packaging checks changed; controller and engine code unchanged. See PACKAGING.md."
+}

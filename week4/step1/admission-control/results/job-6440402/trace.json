@@ -1,0 +1,35 @@
+{
+  "arrivals": [
+    {
+      "index": 0,
+      "offset_seconds": 0.0
+    },
+    {
+      "index": 1,
+      "offset_seconds": 0.0
+    },
+    {
+      "index": 2,
+      "offset_seconds": 7.0
+    },
+    {
+      "index": 3,
+      "offset_seconds": 7.05
+    },
+    {
+      "index": 4,
+      "offset_seconds": 7.1
+    },
+    {
+      "index": 5,
+      "offset_seconds": 7.15
+    }
+  ],
+  "order": [
+    "full",
+    "arrival",
+    "admission",
+    "live"
+  ],
+  "kind": "mechanical smoke; no quality estimates"
+}

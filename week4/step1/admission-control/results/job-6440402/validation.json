@@ -1,0 +1,713 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "complete four-mode run with exact request count",
+      "passed": true
+    },
+    {
+      "name": "frozen trace unchanged",
+      "passed": true
+    },
+    {
+      "name": "trace matches saved specification",
+      "passed": true
+    },
+    {
+      "name": "archived executed sources match source lock",
+      "passed": true
+    },
+    {
+      "name": "input hashes match manifest",
+      "passed": true
+    },
+    {
+      "name": "exactly one scheduler admission per request",
+      "passed": true
+    },
+    {
+      "name": "exactly one initial worker admission per request",
+      "passed": true
+    },
+    {
+      "name": "all requests arrived exactly once",
+      "passed": true
+    },
+    {
+      "name": "no caps, service failures, or worker resumptions",
+      "passed": true
+    },
+    {
+      "name": "only live requests revised after positive generation progress",
+      "passed": true
+    },
+    {
+      "name": "admission-only has no revisions",
+      "passed": true
+    },
+    {
+      "name": "full: simultaneous scheduled requests",
+      "passed": true
+    },
+    {
+      "name": "full: late burst sees initial generation",
+      "passed": true
+    },
+    {
+      "name": "full: identical open-loop schedule",
+      "passed": true
+    },
+    {
+      "name": "arrival: simultaneous scheduled requests",
+      "passed": true
+    },
+    {
+      "name": "arrival: late burst sees initial generation",
+      "passed": true
+    },
+    {
+      "name": "arrival: identical open-loop schedule",
+      "passed": true
+    },
+    {
+      "name": "admission: simultaneous scheduled requests",
+      "passed": true
+    },
+    {
+      "name": "admission: late burst sees initial generation",
+      "passed": true
+    },
+    {
+      "name": "admission: identical open-loop schedule",
+      "passed": true
+    },
+    {
+      "name": "live: simultaneous scheduled requests",
+      "passed": true
+    },
+    {
+      "name": "live: late burst sees initial generation",
+      "passed": true
+    },
+    {
+      "name": "live: identical open-loop schedule",
+      "passed": true
+    },
+    {
+      "name": "full-01: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "full-01: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "full-01: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "full-01: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "full-00: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "full-00: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "full-00: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "full-00: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "full-02: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "full-02: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "full-02: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "full-02: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "full-03: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "full-03: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "full-03: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "full-03: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "full-04: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "full-04: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "full-04: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "full-04: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "full-05: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "full-05: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "full-05: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "full-05: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "arrival-01: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "arrival-01: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-01: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "arrival-01: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "arrival-00: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "arrival-00: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-00: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "arrival-00: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "arrival-02: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "arrival-02: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-02: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "arrival-02: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "arrival-03: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "arrival-03: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-03: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "arrival-03: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: answer continues after entire cue",
+      "passed": true
+    },
+    {
+      "name": "arrival-05: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "arrival-05: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-05: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "arrival-05: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "admission-01: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "admission-01: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "admission-01: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "admission-01: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "admission-00: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "admission-00: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "admission-00: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "admission-00: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "admission-02: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "admission-02: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "admission-02: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "admission-02: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "admission-02: answer continues after entire cue",
+      "passed": true
+    },
+    {
+      "name": "admission-03: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "admission-03: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "admission-03: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "admission-03: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "admission-04: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "admission-04: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "admission-04: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "admission-04: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "admission-05: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "admission-05: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "admission-05: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "admission-05: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-01: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "live-01: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "live-01: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "live-01: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-01: answer continues after entire cue",
+      "passed": true
+    },
+    {
+      "name": "live-00: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "live-00: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "live-00: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "live-00: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-02: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "live-02: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "live-02: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "live-02: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-02: answer continues after entire cue",
+      "passed": true
+    },
+    {
+      "name": "live-03: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "live-03: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "live-03: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "live-03: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-04: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "live-04: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "live-04: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "live-04: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-05: admission uses first scheduling step and its queue",
+      "passed": true
+    },
+    {
+      "name": "live-05: budget transported before generation",
+      "passed": true
+    },
+    {
+      "name": "live-05: normal final with thinking closed and answer tokens",
+      "passed": true
+    },
+    {
+      "name": "live-05: exact forced cue if any",
+      "passed": true
+    },
+    {
+      "name": "live-01: live update uses recorded pressure",
+      "passed": true
+    },
+    {
+      "name": "live-01: live update targets original request object",
+      "passed": true
+    },
+    {
+      "name": "live-00: live update uses recorded pressure",
+      "passed": true
+    },
+    {
+      "name": "live-00: live update targets original request object",
+      "passed": true
+    },
+    {
+      "name": "at least one binding live cutoff after ongoing generation",
+      "passed": true
+    },
+    {
+      "name": "arrival-00: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "arrival-00: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "arrival-04: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "admission-00: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "admission-00: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "live-01: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "live-01: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "live-02: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "live-02: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "live-05: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "live-05: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "arrival-03: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "arrival-03: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "admission-03: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "admission-03: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "live-04: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "live-04: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "arrival-02: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "arrival-02: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "arrival-01: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "arrival-01: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "admission-05: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "admission-05: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "full-00: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "full-00: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "full-01: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "full-01: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "full-05: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "full-05: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "live-03: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "live-03: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "live-00: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "live-00: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "full-02: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "full-02: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "arrival-05: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "arrival-05: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "admission-02: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "admission-02: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "full-03: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "full-03: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "admission-01: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "admission-01: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "full-04: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "full-04: sampled KV allocation prefixes retained",
+      "passed": true
+    },
+    {
+      "name": "admission-04: no preemption and monotonic computation",
+      "passed": true
+    },
+    {
+      "name": "admission-04: sampled KV allocation prefixes retained",
+      "passed": true
+    }
+  ],
+  "requests": 24,
+  "live_reductions": 2,
+  "binding_live_cutoffs": 1,
+  "note": "Mechanical smoke only. CPU tests establish same-input initialization equality; separate GPU policies may see different queue histories."
+}

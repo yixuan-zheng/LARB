@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "records": 36,
+  "mismatches": [],
+  "source_grade_sha256": "6f3edbd86d4f04a04f0739dff523013768fc19d31e3f346f146abfe611e91468",
+  "purpose": "Reproduce existing historical grading; not new model inference or new quality evidence"
+}

@@ -1,0 +1,60 @@
+{
+  "request": "live-01",
+  "record_sha256": "0f83dfeac91c2b2c179fdd686e3eee4f39d0db95190530c1585a3fd834d343e0",
+  "clock": "same-host monotonic offsets from actual server receipt; diagnostic only",
+  "events": [
+    {
+      "event": "admitted",
+      "offset_seconds": 0.16735693579539657,
+      "tokens": 0,
+      "budget": 16384
+    },
+    {
+      "event": "generation_observed",
+      "offset_seconds": 0.402058525942266,
+      "tokens": 1,
+      "budget": 16384
+    },
+    {
+      "event": "live_reduction",
+      "offset_seconds": 7.060751696815714,
+      "tokens": 331,
+      "budget": 2048
+    },
+    {
+      "event": "cue_started",
+      "offset_seconds": 40.255273307906464,
+      "tokens": 2048,
+      "budget": 2048
+    },
+    {
+      "event": "thinking_closed",
+      "offset_seconds": 40.498499233974144,
+      "tokens": null,
+      "budget": null
+    }
+  ],
+  "terminal": {
+    "offset_seconds": 51.31376272300258,
+    "tokens": 2652,
+    "finish_reason": "stop"
+  },
+  "thinking_budget": 2048,
+  "forced_cue_tokens": 14,
+  "answer_tokens_after_full_cue": 590,
+  "next_queued_admission_after_final": {
+    "event": "admission_decision",
+    "monotonic": 1262749.273020455,
+    "pid": 3668821,
+    "key": "live-03",
+    "policy": "live",
+    "step": 35680,
+    "waiting": [
+      "live-04",
+      "live-05"
+    ],
+    "budget": 2048,
+    "snapshot_monotonic": 1262749.238599383
+  },
+  "claim": "A binding live cutoff followed by normal answer completion; subsequent queue admission is temporal evidence, not proof of accuracy preservation"
+}

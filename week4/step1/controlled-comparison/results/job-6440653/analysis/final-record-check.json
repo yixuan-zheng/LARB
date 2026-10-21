@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "complete_audited_comparison": true,
+    "complete_fixed_coverage": true,
+    "all_24_initial_choices_match": true,
+    "no_parser_issues": true,
+    "caps_never_credited": true,
+    "same_candidate_as_gate": true,
+    "archived_sources_match": true,
+    "figure_matches_final_summary": true,
+    "report_table_matches_final_numbers": true,
+    "storage_roundtrip_verified": true
+  },
+  "source_sha256": "f47ee0243210f78f35597758a21ddc0d947dfc6272b216d557d8ec5203f2a87f"
+}

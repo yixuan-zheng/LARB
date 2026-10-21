@@ -1,0 +1,10 @@
+{
+  "status": "failed_before_model_start",
+  "allocated_seconds": 14,
+  "model_requests": 0,
+  "reason": "Native macOS tar upload created eight AppleDouble ._*.py files; source inventory glob included them",
+  "missing_sources": [],
+  "changed_sources": [],
+  "original_source_commit": "ca41a58",
+  "repair_plan": "../../REPAIR-PLAN.md"
+}

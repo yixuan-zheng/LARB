@@ -1,0 +1,38 @@
+{
+  "schema_version": "week4.step1.v2-packaging-repair",
+  "purpose": "Mechanical smoke only; not a quality or deadline comparison",
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "vllm": "0.11.2",
+  "dtype": "bfloat16",
+  "max_active_sequences": 2,
+  "short_budget": 2048,
+  "long_budget": 16384,
+  "answer_cap": 2048,
+  "waiting_threshold": 2,
+  "arrival_snapshot_max_age_s": 2.0,
+  "policy_order": ["full", "arrival", "admission", "live"],
+  "arrivals": [
+    {"index": 0, "offset_seconds": 0.0},
+    {"index": 1, "offset_seconds": 0.0},
+    {"index": 2, "offset_seconds": 7.0},
+    {"index": 3, "offset_seconds": 7.05},
+    {"index": 4, "offset_seconds": 7.10},
+    {"index": 5, "offset_seconds": 7.15}
+  ],
+  "selection": "Exposed development indices 0..5; 0/1 and 7s late burst follow the prior pilot's known mechanism timing. No reserved questions or new quality claims.",
+  "admission": "First stock scheduling step; shared post-schedule queue snapshot; metadata delivered in NewRequestData sampling_params before dispatch",
+  "live": "Same admission rule; later irreversible reductions only after at least one generated token and before natural/forced thinking closure",
+  "limits": {
+    "allocations": 2,
+    "allocation_minutes": 29,
+    "total_allocation_minutes_ceiling": 30,
+    "process_timeout_minutes": 26,
+    "phase_timeout_seconds": 350,
+    "requests": 24,
+    "automatic_retries": 0
+  },
+  "repair": "Job 6434655 failed after 14 allocated seconds before model startup: AppleDouble metadata matched the source glob. One diagnosed packaging repair, then one replacement allocation <=29min; no inference retries or changed questions/traffic/policies. Total allocated GPU time remains <30min. Preserve the first attempt.",
+  "hardware": "One H100 for the repair smoke, exact model recorded; all policies use the same allocation and engine",
+  "required": ["four modes finish", "same admission/live initialization for same snapshot", "admission decision before first execution", "overlapping requests", "no admission-only revisions", "live cutoff binds after positive generation progress", "exact cue then answer continuation", "no cap/error failures", "request identity and source/trace provenance"]
+}

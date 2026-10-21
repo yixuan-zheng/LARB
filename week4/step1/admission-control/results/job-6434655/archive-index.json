@@ -1,0 +1,16 @@
+{
+  "location": "yzheng609@login-ice.pace.gatech.edu:~/scratch/CS6222-qwen3-baseline/week4/admission-control/results/job-6434655/",
+  "sha256": {
+    "accounting.txt": "a5218df7d4a6843c3e7f399dccbf24e804717a52125dfab4b7e572268959e139",
+    "spec.json": "c7b37a75a66ef33900e1e0c4b4c46d448c90f1a67e8af950dfa4374fd05a3ed5",
+    "nvidia-smi.txt": "87db77074a61bf52eee0f4f935e98ca82caa5dcade6d019c174c3ca665a06e26",
+    "source-state.json": "0a0f626fa5392806c00f9fff765e62d7562c11f1a7cb2564671e22829084824f",
+    "stage3-protocol.json": "48dc7337b73fa0f50008b2d2631d33ed2d22d723522f44357d9824c08687e4c1",
+    "cpu-checks.txt": "96c078a8c66d280bcd11444a94e85a06e6321a69029ff17778904bfe8e2e006b",
+    "problems100.json": "ec8bd946d000517564ddfbc5f2e48dad8024591efcfc7e935b04dd4504781598",
+    "requirements-executed.txt": "39063e13c2fbd53537ce18f94e92cad3bc77c9102584992f47ceb838b6ad5b5e",
+    "validation.json": "69c92dd472fb032f2114f0e246f88c9f718a1db7b901445777399061ccc5f04e",
+    "diagnosis.json": "d77a6966d6990fb1eaef41904d13e1695496ce7be30e7fee2a18513d978bbba5",
+    "source-lock.json": "30b5d714de4f73e03dc571c00cb322372783a19188f190aaac14a7064a7cb170"
+  }
+}

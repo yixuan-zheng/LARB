@@ -1,0 +1,200 @@
+{
+  "blocks": [
+    {
+      "block": 0,
+      "pivot": {
+        "index": 1,
+        "matched_prefix_tokens": 2048,
+        "compared_prefix_tokens": 2048,
+        "live_reduction_tokens": [
+          517
+        ],
+        "live_cue_start_tokens": [
+          2048
+        ],
+        "final_server_offset_seconds": {
+          "admission": 123.17352654295973,
+          "live": 42.298104220069945
+        },
+        "next_live_admission_after_pivot_final": {
+          "event": "admission_decision",
+          "monotonic": 1264551.018832833,
+          "pid": 4081579,
+          "key": "b0-live-03",
+          "policy": "live",
+          "step": 78267,
+          "waiting": [
+            "b0-live-04",
+            "b0-live-05",
+            "b0-live-06",
+            "b0-live-07",
+            "b0-live-08",
+            "b0-live-09",
+            "b0-live-10",
+            "b0-live-11"
+          ],
+          "budget": 2048,
+          "snapshot_monotonic": 1264551.01695291
+        },
+        "interpretation": "Event ordering is consistent with capacity release helping queued work. Other generated trajectories also change; do not attribute every timing difference to the cue alone."
+      },
+      "deadline_changes": [
+        {
+          "index": 4,
+          "deadline_delta": 1,
+          "both_eventually_correct": true,
+          "client_completion_seconds": {
+            "admission": 140.91332577122375,
+            "live": 97.0709012481384
+          },
+          "admitted_server_offset_seconds": {
+            "admission": 106.62010896392167,
+            "live": 63.63701059296727
+          },
+          "final_server_offset_seconds": {
+            "admission": 149.37930733291432,
+            "live": 105.53809568309225
+          }
+        },
+        {
+          "index": 5,
+          "deadline_delta": 1,
+          "both_eventually_correct": true,
+          "client_completion_seconds": {
+            "admission": 154.4684875474777,
+            "live": 99.62607831624337
+          },
+          "admitted_server_offset_seconds": {
+            "admission": 123.17512372788042,
+            "live": 69.43633587891236
+          },
+          "final_server_offset_seconds": {
+            "admission": 162.98561209603213,
+            "live": 108.14322185399942
+          }
+        }
+      ],
+      "quality_changes": [
+        {
+          "index": 9,
+          "correctness_delta": 1,
+          "extracted_answers": {
+            "admission": "2",
+            "live": "4"
+          },
+          "initial_budgets": {
+            "admission": 2048,
+            "live": 2048
+          },
+          "own_binding_live_cutoff": false,
+          "common_prefix_tokens": 109,
+          "compared_prefix_tokens": 2048,
+          "interpretation": "Equal seeds do not guarantee equal sampled outputs under changed batching; a quality gain without an own live cutoff is not direct evidence of improved reasoning."
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "pivot": {
+        "index": 1,
+        "matched_prefix_tokens": 2048,
+        "compared_prefix_tokens": 2048,
+        "live_reduction_tokens": [
+          527
+        ],
+        "live_cue_start_tokens": [
+          2048
+        ],
+        "final_server_offset_seconds": {
+          "admission": 119.45204792590812,
+          "live": 41.895307780010626
+        },
+        "next_live_admission_after_pivot_final": {
+          "event": "admission_decision",
+          "monotonic": 1264901.93588377,
+          "pid": 4081579,
+          "key": "b1-live-03",
+          "policy": "live",
+          "step": 100064,
+          "waiting": [
+            "b1-live-04",
+            "b1-live-05",
+            "b1-live-06",
+            "b1-live-07",
+            "b1-live-08",
+            "b1-live-09",
+            "b1-live-10",
+            "b1-live-11"
+          ],
+          "budget": 2048,
+          "snapshot_monotonic": 1264901.93296247
+        },
+        "interpretation": "Event ordering is consistent with capacity release helping queued work. Other generated trajectories also change; do not attribute every timing difference to the cue alone."
+      },
+      "deadline_changes": [
+        {
+          "index": 4,
+          "deadline_delta": 1,
+          "both_eventually_correct": true,
+          "client_completion_seconds": {
+            "admission": 136.61080693500116,
+            "live": 97.89834089227952
+          },
+          "admitted_server_offset_seconds": {
+            "admission": 103.55875916685909,
+            "live": 63.38309530518018
+          },
+          "final_server_offset_seconds": {
+            "admission": 145.07720625400543,
+            "live": 106.36491743801162
+          }
+        },
+        {
+          "index": 5,
+          "deadline_delta": 1,
+          "both_eventually_correct": true,
+          "client_completion_seconds": {
+            "admission": 149.84103765315376,
+            "live": 100.56970906234346
+          },
+          "admitted_server_offset_seconds": {
+            "admission": 119.45379116083495,
+            "live": 69.47027963702567
+          },
+          "final_server_offset_seconds": {
+            "admission": 158.3572826909367,
+            "live": 109.08636098401621
+          }
+        }
+      ],
+      "quality_changes": [
+        {
+          "index": 9,
+          "correctness_delta": 1,
+          "extracted_answers": {
+            "admission": "2",
+            "live": "4"
+          },
+          "initial_budgets": {
+            "admission": 2048,
+            "live": 2048
+          },
+          "own_binding_live_cutoff": false,
+          "common_prefix_tokens": 109,
+          "compared_prefix_tokens": 2048,
+          "interpretation": "Equal seeds do not guarantee equal sampled outputs under changed batching; a quality gain without an own live cutoff is not direct evidence of improved reasoning."
+        }
+      ]
+    }
+  ],
+  "unique_deadline_gain_problems": [
+    4,
+    5
+  ],
+  "unique_deadline_loss_problems": [],
+  "unique_quality_gain_problems": [
+    9
+  ],
+  "unique_quality_loss_problems": [],
+  "source_sha256": "d72ca7eeb742149c27aa2ead188d3008e7f6869af0647331fd824b265c7351d4"
+}

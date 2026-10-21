@@ -1,15 +1,21 @@
 # Week 4: Load-Adaptive Reasoning Budgets
 
-This week we want to answer one question: **does changing a request's thinking budget while it is running help more requests finish correctly on time than choosing its budget when execution begins?**
+Does changing a running request's thinking budget help more answers finish correctly on time than choosing its budget at admission?
 
-Week 3 established that the mechanism works and produced an encouraging burst result. It did not include an admission-only baseline, so it could not isolate the benefit of changing budgets during generation. That is where Week 4 starts.
+All implementation and experimental artifacts for this work are in **[step1/](step1/README.md)**. Start with the **[current handoff](HANDOFF.md)**, then read the [working rules](WORKING-RULES.md) and [checkpoints](CHECKPOINTS.md).
 
-- Read the [working rules](WORKING-RULES.md) for the shared setup and comparison rules.
-- Follow the [checkpoints](CHECKPOINTS.md) for the work and the evidence needed to move forward.
-- Read and update the [handoff](HANDOFF.md) whenever you start or finish a session.
+Step 1 passed 176 real GPU checks. The controlled development comparison completed: live achieved **12/24 correct on time**, admission-only **8/24**, over two replays of 12 unique exposed questions. See the [report](step1/controlled-comparison/REPORT.md) for limitations and evidence. No jobs remain active.
 
-There are no permanent assignments. Whoever is available continues the current checkpoint. If two people work at the same time, agree on separate parts of that checkpoint before editing shared files.
+## How to document and hand off work
 
-**Pull before starting. Push your code, results, and handoff before leaving.** Unfinished work is fine if the next person can see what is verified and what remains.
+Use one authoritative location for each kind of information:
 
-Week 3 code and results stay in [the LARB folder](../week3/larb/README.md). Week 4 contains new work and references that evidence rather than copying it.
+- **HANDOFF.md:** current checkpoint, owner/branch, verified checks, active jobs and collection commands, unresolved issues, compute used, and one concrete next action. Update it at session start and before pushing.
+- **step1/README.md and component READMEs:** navigation, exact reproducible commands, dependencies, and the documentation contract. Keep current instructions here; avoid chronological activity logs.
+- **PLAN.md and spec.json:** freeze the candidate, inputs, traffic, deadlines, policy order, success criteria, analysis, and compute limit before a new experiment.
+- **results/job-ID/:** immutable configuration, executed sources and hashes, environment/hardware, schedule, raw responses/events, scores, validation, and accounting. Keep failures visible. For artifacts omitted from Git, retain checksums and an accessible retrieval location.
+- **REPORT.md:** conclusions and their limits, linked to machine-readable results and raw cases. Distinguish CPU checks, GPU validation, development results, and reserved evaluation.
+
+Pull before starting. Read and update the handoff; coordinate file boundaries if someone else is active. Before leaving, run the documented checks, update the handoff and reports, and push code plus essential evidence together. Do not commit credentials, environments, model weights, caches, or duplicate intermediate collections. See the [detailed contract and run template](step1/README.md#documentation-contract).
+
+Week 3 code and historical evidence remain in [week3/larb](../week3/larb/README.md); Week 4 imports reusable code rather than copying its directories. There are no permanent assignments.

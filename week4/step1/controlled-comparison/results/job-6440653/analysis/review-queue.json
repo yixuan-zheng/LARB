@@ -1,0 +1,274 @@
+[
+  {
+    "block": 0,
+    "policy": "full",
+    "index": 9,
+    "key": "b0-full-09",
+    "reference": "4",
+    "extracted_answer": null,
+    "grading": {
+      "correct": false,
+      "method": "missing_box",
+      "issue": null
+    },
+    "finish": "thinking_cap",
+    "client_completion_seconds": 557.535504805157,
+    "queue_seconds": 249.2019055050332,
+    "thinking_tokens": 16385,
+    "cue_tokens": 0,
+    "output_tokens": 16385,
+    "answer_tokens": 0,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 16384,
+    "injection_lag_ms": 0.9553292766213417,
+    "record_sha256": "01924b4f262eb2056b9819bebb1810c5bd7c7f6a38d7da819c9c2bcc3140c16f",
+    "server_ready_seconds": 557.5304319851566,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 0,
+    "policy": "arrival",
+    "index": 9,
+    "key": "b0-arrival-09",
+    "reference": "4",
+    "extracted_answer": "8",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "4",
+        "4"
+      ],
+      "pred_parse": [
+        "8",
+        "8"
+      ]
+    },
+    "finish": "normal",
+    "client_completion_seconds": 250.9669248983264,
+    "queue_seconds": 190.61331683211029,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 3628,
+    "answer_tokens": 1566,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 2048,
+    "injection_lag_ms": 1.4435623306781054,
+    "record_sha256": "58f5d44b44b5c085b523ec3dc73313f399ef850b19df9c33dbf6b7a4dece2b26",
+    "server_ready_seconds": 250.96135967900045,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 0,
+    "policy": "arrival",
+    "index": 11,
+    "key": "b0-arrival-11",
+    "reference": "\\frac{3}{56}",
+    "extracted_answer": "\\frac{5047}{63}",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "3/56",
+        "\\frac{3}{56}"
+      ],
+      "pred_parse": [
+        "721/9",
+        "\\frac{5047}{63}"
+      ]
+    },
+    "finish": "normal",
+    "client_completion_seconds": 300.9480902114883,
+    "queue_seconds": 250.8645784999244,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 3255,
+    "answer_tokens": 1193,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 2048,
+    "injection_lag_ms": 0.16025244258344173,
+    "record_sha256": "6cb42bbf8db04fa5279fca3ff6bd7f5b37f91edb02bc16f72d0d32a7b6c3fd1a",
+    "server_ready_seconds": 300.94497606996447,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 0,
+    "policy": "admission",
+    "index": 9,
+    "key": "b0-admission-09",
+    "reference": "4",
+    "extracted_answer": "2",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "4",
+        "4"
+      ],
+      "pred_parse": [
+        "2",
+        "2"
+      ]
+    },
+    "finish": "normal",
+    "client_completion_seconds": 247.8104275392834,
+    "queue_seconds": 200.63073186483234,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 2929,
+    "answer_tokens": 867,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 2048,
+    "injection_lag_ms": 1.0051382705569267,
+    "record_sha256": "14b258d6d69bb5b064d634032c56a522f4ed78b2772fb11f16d1703f3a0e3b1c",
+    "server_ready_seconds": 247.80605438584462,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 1,
+    "policy": "admission",
+    "index": 9,
+    "key": "b1-admission-09",
+    "reference": "4",
+    "extracted_answer": "2",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "4",
+        "4"
+      ],
+      "pred_parse": [
+        "2",
+        "2"
+      ]
+    },
+    "finish": "normal",
+    "client_completion_seconds": 243.8720327799674,
+    "queue_seconds": 193.79331584298052,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 2929,
+    "answer_tokens": 867,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 2048,
+    "injection_lag_ms": 0.6082551553845406,
+    "record_sha256": "f157f191f0b95104ef48c70b87f605657c3d1c5467b422bf123c230f34e298bb",
+    "server_ready_seconds": 243.8685296329204,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 1,
+    "policy": "arrival",
+    "index": 9,
+    "key": "b1-arrival-09",
+    "reference": "4",
+    "extracted_answer": "8",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "4",
+        "4"
+      ],
+      "pred_parse": [
+        "8",
+        "8"
+      ]
+    },
+    "finish": "normal",
+    "client_completion_seconds": 239.39532157033682,
+    "queue_seconds": 181.1492780810222,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 3628,
+    "answer_tokens": 1566,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 2048,
+    "injection_lag_ms": 0.670446315780282,
+    "record_sha256": "e74daddd9ea06eb5f33081a964b39ee00f6cc65ca2e4c9dfcb4c6a8edbc910fa",
+    "server_ready_seconds": 239.3913801740855,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 1,
+    "policy": "arrival",
+    "index": 11,
+    "key": "b1-arrival-11",
+    "reference": "\\frac{3}{56}",
+    "extracted_answer": "\\frac{5047}{63}",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "3/56",
+        "\\frac{3}{56}"
+      ],
+      "pred_parse": [
+        "721/9",
+        "\\frac{5047}{63}"
+      ]
+    },
+    "finish": "normal",
+    "client_completion_seconds": 287.9070764614735,
+    "queue_seconds": 239.293920194963,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 3255,
+    "answer_tokens": 1193,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 2048,
+    "injection_lag_ms": 0.7682754658162594,
+    "record_sha256": "19d11e1866dbc906b16f549ebf3668ffcf062a02d2c58610633b678ee38f2308",
+    "server_ready_seconds": 287.9022875048686,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "block": 1,
+    "policy": "full",
+    "index": 9,
+    "key": "b1-full-09",
+    "reference": "4",
+    "extracted_answer": null,
+    "grading": {
+      "correct": false,
+      "method": "missing_box",
+      "issue": null
+    },
+    "finish": "thinking_cap",
+    "client_completion_seconds": 482.48575696814805,
+    "queue_seconds": 215.515327405883,
+    "thinking_tokens": 16385,
+    "cue_tokens": 0,
+    "output_tokens": 16385,
+    "answer_tokens": 0,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "initial_budget": 16384,
+    "injection_lag_ms": 0.9794160723686218,
+    "record_sha256": "589bd968cd436a7a2d3d9fc08c83ed919b95dfe3f587c7cd359cc2f0beaf3e2c",
+    "server_ready_seconds": 482.4807238110807,
+    "completed_correct": false,
+    "correct_on_time": false
+  }
+]

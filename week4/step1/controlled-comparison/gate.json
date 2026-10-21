@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "job": "6440402",
+  "checks": 176,
+  "live_reductions": 2,
+  "binding_live_cutoffs": 1,
+  "validation_sha256": "bcd5534eda7c9668014133c9e92ee59fea40a74a8bea44e944298e03ede0d524",
+  "candidate_sources": {
+    "week4/step1/admission-control/bootstrap.py": "447f231f43d002d01db96664bad1fb6603a00c94aadd085c50064b0894edd2a6",
+    "week4/step1/admission-control/w4_policy.py": "d59c6491dd2955ea2878a3833ecab9f28f7063833be10a5431bfd4791bdc2c48",
+    "week4/step1/admission-control/w4_adapter.py": "9c33ba063f14e9d5242806039f6345b7ad70c0c3c41e2f71f334d0edd1a47364",
+    "week4/step1/admission-control/w4_server.py": "7f175b7bff4e3a2d205853c5c08716ba15e115c33823a1d65eee0a7624044c86",
+    "week3/larb/burst-policy/adapter.py": "13305356b1ada2741bd48899a36cea398a46d21b5deb8fbe210b8e418c9db473",
+    "week3/larb/burst-policy/policy.py": "daad24eaf79e8a8ff94e5667b461bb17f3a9d44bd02bafadc63f8852a2290bee",
+    "week3/larb/serving-proof/control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd"
+  },
+  "dataset_sha256": "ec8bd946d000517564ddfbc5f2e48dad8024591efcfc7e935b04dd4504781598",
+  "protocol_sha256": "48dc7337b73fa0f50008b2d2631d33ed2d22d723522f44357d9824c08687e4c1",
+  "packaging_note": "Original GPU-validated gate and exact source hashes are preserved in results/job-6440653/gate.json. Bootstrap path resolution alone changed for nesting; serving/controller modules are byte-identical. No new GPU validation is claimed for packaging."
+}

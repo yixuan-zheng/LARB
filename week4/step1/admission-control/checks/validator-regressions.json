@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "worker_started_early",
+      "rejected": true,
+      "failed_checks": [
+        "full-01: budget transported before generation"
+      ]
+    },
+    {
+      "case": "admission_revision",
+      "rejected": true,
+      "failed_checks": [
+        "only live requests revised after positive generation progress",
+        "admission-only has no revisions",
+        "admission-01: live update targets original request object"
+      ]
+    },
+    {
+      "case": "cap_failure",
+      "rejected": true,
+      "failed_checks": [
+        "no caps, service failures, or worker resumptions"
+      ]
+    },
+    {
+      "case": "no_live_updates",
+      "rejected": true,
+      "failed_checks": [
+        "only live requests revised after positive generation progress",
+        "at least one binding live cutoff after ongoing generation"
+      ]
+    },
+    {
+      "case": "wrong_admission_budget",
+      "rejected": true,
+      "failed_checks": [
+        "admission-01: budget transported before generation"
+      ]
+    },
+    {
+      "case": "changed_trace",
+      "rejected": true,
+      "failed_checks": [
+        "frozen trace unchanged",
+        "trace matches saved specification"
+      ]
+    },
+    {
+      "case": "source_hash_mismatch",
+      "rejected": true,
+      "failed_checks": [
+        "archived executed sources match source lock"
+      ]
+    },
+    {
+      "case": "incomplete_run",
+      "rejected": true,
+      "failed_checks": [
+        "complete four-mode run with exact request count"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "arrivals": [
+    {
+      "index": 0,
+      "offset_seconds": 0
+    },
+    {
+      "index": 1,
+      "offset_seconds": 0
+    },
+    {
+      "index": 2,
+      "offset_seconds": 8.370955327758566
+    },
+    {
+      "index": 3,
+      "offset_seconds": 8.420955327758566
+    },
+    {
+      "index": 4,
+      "offset_seconds": 8.470955327758565
+    },
+    {
+      "index": 5,
+      "offset_seconds": 8.520955327758566
+    },
+    {
+      "index": 6,
+      "offset_seconds": 8.570955327758565
+    },
+    {
+      "index": 7,
+      "offset_seconds": 8.620955327758566
+    },
+    {
+      "index": 8,
+      "offset_seconds": 8.670955327758566
+    },
+    {
+      "index": 9,
+      "offset_seconds": 8.720955327758565
+    },
+    {
+      "index": 10,
+      "offset_seconds": 8.770955327758566
+    },
+    {
+      "index": 11,
+      "offset_seconds": 8.820955327758565
+    }
+  ],
+  "relative_deadline_seconds": 124.91236048797145,
+  "burst_at_seconds": 8.370955327758566,
+  "observation_horizon_seconds": 133.73331581573,
+  "calibration_latencies_seconds": [
+    33.48382131103426,
+    62.45618024398573
+  ],
+  "orders": [
+    [
+      "full",
+      "arrival",
+      "admission",
+      "live"
+    ],
+    [
+      "live",
+      "admission",
+      "arrival",
+      "full"
+    ]
+  ],
+  "frozen_monotonic": 1263251.708675233,
+  "clock_domain": "client.monotonic"
+}

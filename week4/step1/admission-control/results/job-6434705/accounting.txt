@@ -1,0 +1,5 @@
+JobID|State|ExitCode|Elapsed|AllocTRES
+6434705|FAILED|1:0|00:04:05|billing=4,cpu=4,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1
+6434705.batch|FAILED|1:0|00:04:05|cpu=4,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1
+6434705.extern|COMPLETED|0:0|00:04:05|billing=4,cpu=4,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1
+6434705.0|COMPLETED|0:0|00:00:00|cpu=1,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1
