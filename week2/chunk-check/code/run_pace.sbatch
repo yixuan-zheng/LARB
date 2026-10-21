@@ -8,8 +8,8 @@
 #SBATCH --mem=64G
 #SBATCH --time=01:30:00
 set -euo pipefail
-source "$HOME/scratch/CS6222-matformer-local-test/gemma3n/bin/activate"
-export HF_HOME="$HOME/scratch/CS6222-matformer-local-test/hf-cache"
+source "${PACE_ENV_ROOT:?Set PACE_ENV_ROOT}/gemma3n/bin/activate"
+export HF_HOME="${PACE_ENV_ROOT:?Set PACE_ENV_ROOT}/hf-cache"
 export HF_HUB_OFFLINE=1
 export TOKENIZERS_PARALLELISM=false
 export PYTORCH_ALLOC_CONF=expandable_segments:True

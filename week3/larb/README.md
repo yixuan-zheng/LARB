@@ -13,7 +13,7 @@ Preliminary experiments on adapting reasoning budgets to serving load. Start wit
 | `burst-policy/` | Frozen burst protocol, controller, real serving results, and analysis |
 | Root reports | Plans, feasibility assessment, measured outcomes, and limitations |
 
-Runtime environments, model weights, caches, unrelated experiments, and pre-inference failed-launch logs are excluded. Executed source snapshots and manifests are retained unchanged, including historical paths. The remote workspace name remains `CS6222-qwen3-baseline`.
+Runtime environments, model weights, caches, unrelated experiments, and pre-inference failed-launch logs are excluded. Executed source snapshots and manifests are retained with personal paths removed. Their checksums describe the sanitized files distributed here.
 
 ## Current interpretation
 
@@ -27,10 +27,10 @@ Stage 1 runs ten MATH-500 development problems sequentially with normal thinking
 
 The launcher uses one L40S, the existing read-only Gemma Python environment (PyTorch 2.9.1+cu128 and Transformers 5.7.0), and a separate Qwen workspace and model cache. It does not modify the Gemma environment. Only PyTorch, Transformers, and huggingface_hub are needed by the runner.
 
-Remote workspace: `~/scratch/CS6222-qwen3-baseline/`.
+For cluster execution, `PACE_PROJECT_ROOT` points to your prepared runtime workspace and `PACE_ENV_ROOT` to your Python environment workspace. These are local settings, not repository paths.
 
 ```bash
-cd ~/scratch/CS6222-qwen3-baseline
+cd ${PACE_PROJECT_ROOT}
 sbatch --output=results/slurm-%j.out code/run_stage1.sbatch
 ```
 

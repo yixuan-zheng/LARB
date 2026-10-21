@@ -15,7 +15,7 @@
     "live_budget.py": "2e5a5246d6e1742b3a351e9e3c178cb1d754f02649c2ea623e585a50e4e9c77e",
     "test_control.py": "0425d10ef386a118cb12786c51cbd09b5fc09562ca9c441d918dde49bd8a5322"
   },
-  "model_path": "/home/hice1/yzheng609/scratch/CS6222-qwen3-baseline/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+  "model_path": "/project/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
   "max_num_seqs": 2,
   "note": "Mechanism proof only; eager engine, file control polling, scheduler tracing; not a performance benchmark"
 }

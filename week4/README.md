@@ -1,21 +1,26 @@
 # Week 4: Load-Adaptive Reasoning Budgets
 
-Does changing a running request's thinking budget help more answers finish correctly on time than choosing its budget at admission?
+This week asks whether updating a running request's thinking budget helps more answers finish correctly on time than choosing the budget once, at admission.
 
-All implementation and experimental artifacts for this work are in **[step1/](step1/README.md)**. Start with the **[current handoff](HANDOFF.md)**, then read the [working rules](WORKING-RULES.md) and [checkpoints](CHECKPOINTS.md).
+The implementation and results are in [step1/](step1/README.md). The GPU gate passed **176 checks**. In the controlled development comparison, live updates produced **12/24 correct-on-time answers**, compared with **8/24 for admission-only**. These are two replays of the same 12 exposed questions; the [report](step1/controlled-comparison/REPORT.md) explains what we can and cannot conclude.
 
-Step 1 passed 176 real GPU checks. The controlled development comparison completed: live achieved **12/24 correct on time**, admission-only **8/24**, over two replays of 12 unique exposed questions. See the [report](step1/controlled-comparison/REPORT.md) for limitations and evidence. No jobs remain active.
+## Picking up the work
 
-## How to document and hand off work
+The [handoff](HANDOFF.md) summarizes what is finished, what was checked, and a suggested next step. No jobs are active. The next research question is whether the benefit holds on reserved questions and other traffic patterns, after checking which questions have already been exposed.
 
-Use one authoritative location for each kind of information:
+Useful starting points:
 
-- **HANDOFF.md:** current checkpoint, owner/branch, verified checks, active jobs and collection commands, unresolved issues, compute used, and one concrete next action. Update it at session start and before pushing.
-- **step1/README.md and component READMEs:** navigation, exact reproducible commands, dependencies, and the documentation contract. Keep current instructions here; avoid chronological activity logs.
-- **PLAN.md and spec.json:** freeze the candidate, inputs, traffic, deadlines, policy order, success criteria, analysis, and compute limit before a new experiment.
-- **results/job-ID/:** immutable configuration, executed sources and hashes, environment/hardware, schedule, raw responses/events, scores, validation, and accounting. Keep failures visible. For artifacts omitted from Git, retain checksums and an accessible retrieval location.
-- **REPORT.md:** conclusions and their limits, linked to machine-readable results and raw cases. Distinguish CPU checks, GPU validation, development results, and reserved evaluation.
+- [Step 1 overview and reproduction commands](step1/README.md)
+- [Controlled comparison report](step1/controlled-comparison/REPORT.md)
+- [Admission boundary and GPU validation](step1/admission-control/README.md)
+- [Research checkpoints](CHECKPOINTS.md) and [comparison guidance](WORKING-RULES.md)
 
-Pull before starting. Read and update the handoff; coordinate file boundaries if someone else is active. Before leaving, run the documented checks, update the handoff and reports, and push code plus essential evidence together. Do not commit credentials, environments, model weights, caches, or duplicate intermediate collections. See the [detailed contract and run template](step1/README.md#documentation-contract).
+## Leaving notes for the next person
 
-Week 3 code and historical evidence remain in [week3/larb](../week3/larb/README.md); Week 4 imports reusable code rather than copying its directories. There are no permanent assignments.
+A short update to [HANDOFF.md](HANDOFF.md) helps the next person continue: what changed, what passed, where the results live, any open questions or active jobs, compute used, and a useful next action.
+
+READMEs work well for navigation and runnable commands; reports explain findings and limitations. Each experiment's plan and configuration capture the intended comparison, while its result folder holds inputs, raw outcomes, scores, checks, and environment details. Keeping failed attempts alongside successful ones helps explain decisions without reconstructing a chat history.
+
+[Step 1's notes](step1/README.md#sharing-progress) give a little more detail. Repository-relative paths and configurable local environments make these notes easier for someone else to use.
+
+Earlier code and evidence remain in [week3/larb](../week3/larb/README.md). Week 4 reuses that code where possible.

@@ -1,6 +1,6 @@
 # Packaging and provenance
 
-This folder consolidates the admission implementation, real GPU gate, and completed controlled comparison into one reviewable commit. The original unpushed implementation commits were squashed; historical commit IDs in immutable manifests identify the original session, not commits required to reproduce analysis. Executed source snapshots, exact hashes, inputs, and environment inventories remain in each successful run directory.
+This folder consolidates the admission implementation, real GPU gate, and completed controlled comparison into one reviewable commit. The original unpushed implementation commits were squashed; historical commit IDs in saved manifests identify the original session, not commits required to reproduce analysis. Executed source snapshots, matching hashes, inputs, and environment inventories remain in each successful run directory.
 
 ## What changed during consolidation
 
@@ -12,17 +12,12 @@ The final record checker no longer requires a duplicate provisional block snapsh
 
 Both successful runs retain complete request/event records, inputs, frozen trace/configuration, executed source snapshots, package/hardware inventories, accounting, and validation. Comparison grades and review queue include all failures. Scheduler logs are stored as lossless gzip with raw/compressed SHA-256 and byte counts in `storage-manifest.json`; use `controlled-comparison/checks/pack_events.py --root RUN --unpack`. Plain logs and dependency caches are ignored by Git.
 
-Repeated preflight/installation stdout and the duplicate partial block-0 collection are omitted. Successful final records supersede those progress copies. Two failed setup attempts remain visible with their diagnosis, configuration, validation, accounting, and complete archived-file SHA-256 indexes. They generated no requests and consumed 14 and 245 GPU seconds. Their full original output remains on PACE; the first was a macOS archive metadata issue, the second an unrealistically short startup guard. Neither was a failed scientific comparison.
+Repeated preflight/installation stdout and the duplicate partial block-0 collection are omitted. Successful final records supersede those progress copies. Two failed setup attempts remain visible with their diagnosis, configuration, validation, accounting, and complete archived-file SHA-256 indexes. They generated no requests and consumed 14 and 245 GPU seconds. The first was a macOS archive metadata issue, the second an unrealistically short startup guard. Neither was a failed scientific comparison.
 
-## Original remote archive
+## Privacy cleanup
 
-Login: `ssh yzheng609@login-ice.pace.gatech.edu`. Root: `~/scratch/CS6222-qwen3-baseline/`. Original directories (not relocated on PACE):
+Personal cluster logins, private workspace names, and local machine paths have been removed from the distributed documentation, launchers, manifests, and captured logs across the week folders. Launchers use local environment variables where a runtime location is needed. Analysis provenance uses repository-relative paths.
 
-- `week4/admission-control/results/job-6434655/`
-- `week4/admission-control/results/job-6434705/`
-- `week4/admission-control/results/job-6440402/`
-- `week4/controlled-comparison/results/job-6440653/`
+Sanitized source snapshots and their checksum references describe the files distributed here; they are no longer byte-for-byte copies of the original private execution files. Numeric outcomes, request timing, sampling, grades, and experimental conclusions are unchanged. The failed-attempt indexes retain original file hashes for context, but private retrieval locations are omitted. All records needed to audit the successful gate and comparison are included in Git.
 
-For omitted failed-attempt files, copy only what is needed from the corresponding remote directory using `scp`, then verify against the saved `archive-index.json`. The duplicate intermediate readback is under comparison `checkpoints/block0/`; use the complete final run for conclusions. Remote scratch retention is not guaranteed indefinitely: migrate any omitted artifact needed for future work to durable project storage and update its retrieval index before expiry.
-
-Remote availability note: a fresh SSH check during final packaging timed out on 2026-10-21. Retrieval paths reflect the original collected PACE locations; they were not reverified in this packaging session. All evidence needed for the successful gate and comparison is included in Git.
+Earlier commits may still contain the original private details; this cleanup updates the current repository contents and does not rewrite shared history.

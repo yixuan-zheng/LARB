@@ -1,6 +1,6 @@
 # Admission control and controlled comparison
 
-The [current handoff](../HANDOFF.md) is the authoritative continuation record. Read the [comparison report](controlled-comparison/REPORT.md) for the result and [gate report](admission-control/REPORT.md) for mechanism validation.
+The [handoff](../HANDOFF.md) is a quick introduction for whoever picks this up next. The [comparison report](controlled-comparison/REPORT.md) explains the findings, and the [gate report](admission-control/REPORT.md) covers mechanism validation.
 
 | Location | Contents |
 | --- | --- |
@@ -9,11 +9,11 @@ The [current handoff](../HANDOFF.md) is the authoritative continuation record. R
 | EXPERIMENT-SESSION.md | Saved resource limits and continuation criteria |
 | PACKAGING.md | Relocation, immutable provenance, omitted duplicates, retrieval instructions |
 
-The gate passed 176 checks. Live achieved 12/24 correct-on-time outcomes versus admission 8/24, over two replays of 12 exposed questions. Retain the candidate and prepare reserved evaluation after auditing exposure. No jobs are active.
+The gate passed 176 checks. Live achieved 12/24 correct-on-time outcomes versus admission 8/24, over two replays of 12 exposed questions. The results support trying reserved evaluation with the current candidate, after checking question exposure. No jobs are active.
 
 ## Verify without a GPU
 
-Run from the repository root. Python 3.10+ with `aiohttp` is required for replay; scoring additionally needs the pinned dependencies in `week3/larb/stage3/requirements-analysis.txt`. Install them in a separate analysis environment, not the serving environment. Matplotlib is needed only for figures. Do not copy model weights or environments into Git.
+Run from the repository root. Python 3.10+ with `aiohttp` is required for replay; scoring additionally needs the pinned dependencies in `week3/larb/stage3/requirements-analysis.txt`. A separate analysis environment keeps scoring dependencies apart from serving. Matplotlib is needed only for figures.
 
 ```bash
 python -B -m unittest discover -s week4/step1/admission-control -p 'test_*.py'
@@ -29,10 +29,10 @@ python -B week4/step1/controlled-comparison/checks/check_final_record.py --root 
 
 Expected: 21 + six unit tests, replay pass, 176 gate checks, eight rejected corruptions, audited complete comparison, and final record checks pass. See component READMEs to regenerate cases and figures. Analysis materializes ignored logs and can rewrite deterministic scored artifacts; keep originals when changing the grading method. No GPU submission is needed for these checks.
 
-## Documentation contract
+## Sharing progress
 
-Use the [Week 4 README workflow](../README.md#how-to-document-and-hand-off-work). Keep handoff state in **week4/HANDOFF.md**, reproducible commands in READMEs, conclusions in reports, and immutable evidence in unique run directories. Avoid parallel handoffs and repeated chronological notes.
+The [Week 4 overview](../README.md#leaving-notes-for-the-next-person) describes how the notes fit together. A brief update to `week4/HANDOFF.md` can cover the current checkpoint, changes, checks and their outcomes, result paths, open questions, active jobs (if any), compute used, and a suggested next action.
 
-Before launching, save a plan and configuration including candidate/source lock, question exposure, trace/deadlines, sampling, hardware/software, policy order, success criteria, analysis, allocation/attempt limits. For every attempt retain inputs, raw outcomes/events (including errors and caps), executed sources/hashes, environment/hardware, scores, validation, and compute accounting. Give revised configurations new identifiers. Compress large evidence losslessly; omitted artifacts need SHA-256 hashes and retrieval paths.
+For a new experiment, a saved plan makes later interpretation easier: candidate and source hashes, question exposure, traffic and deadlines, sampling, hardware/software, policy order, success criteria, analysis, and a realistic compute budget. A separate result directory for each attempt keeps configurations, raw responses/events, scores, checks, and accounting together—including failures.
 
-At session end, update the shared handoff using its template, run the checks relevant to changes, verify report numbers against saved machine-readable results, and push code, documentation, and essential evidence together. State what the next person should do first. Never describe CPU fixtures as GPU validation or repeated development questions as independent evaluation examples.
+Reports are most useful when their numbers link back to saved results and distinguish CPU checks, GPU validation, and development findings. Repeated questions are still the same accuracy examples. A short explanation of these limits is more helpful than a long activity log.

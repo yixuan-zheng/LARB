@@ -1,5 +1,4 @@
 {
-  "location": "yzheng609@login-ice.pace.gatech.edu:~/scratch/CS6222-qwen3-baseline/week4/admission-control/results/job-6434655/",
   "sha256": {
     "accounting.txt": "a5218df7d4a6843c3e7f399dccbf24e804717a52125dfab4b7e572268959e139",
     "spec.json": "c7b37a75a66ef33900e1e0c4b4c46d448c90f1a67e8af950dfa4374fd05a3ed5",
@@ -12,5 +11,6 @@
     "validation.json": "69c92dd472fb032f2114f0e246f88c9f718a1db7b901445777399061ccc5f04e",
     "diagnosis.json": "d77a6966d6990fb1eaef41904d13e1695496ce7be30e7fee2a18513d978bbba5",
     "source-lock.json": "30b5d714de4f73e03dc571c00cb322372783a19188f190aaac14a7064a7cb170"
-  }
+  },
+  "note": "Original omitted setup-file hashes; private retrieval locations are not distributed."
 }

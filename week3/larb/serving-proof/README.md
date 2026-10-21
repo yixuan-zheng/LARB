@@ -24,10 +24,10 @@ The file mailbox and per-step logging add overhead. Timing from this instrumente
 
 ## PACE execution
 
-Use the isolated `~/scratch/CS6222-qwen3-baseline/vllm-proof-env` environment, leaving the original experiment environment unchanged. The job uses the cached pinned Qwen3-4B checkpoint offline. The current `run_proof.sbatch` requests one H100 for at most 15 minutes; its proof subprocess has a 12-minute timeout. There is no job array or automatic retry. These launcher defaults were tightened after the successful proof; its archived launcher and scheduler snapshot preserve the original submission and resource overrides.
+Use the isolated `${PACE_PROJECT_ROOT}/vllm-proof-env` environment, leaving the original experiment environment unchanged. The job uses the cached pinned Qwen3-4B checkpoint offline. The current `run_proof.sbatch` requests one H100 for at most 15 minutes; its proof subprocess has a 12-minute timeout. There is no job array or automatic retry. These launcher defaults were tightened after the successful proof; its archived launcher and scheduler snapshot preserve the original submission and resource overrides.
 
 ```bash
-cd ~/scratch/CS6222-qwen3-baseline
+cd ${PACE_PROJECT_ROOT}
 sbatch --output=serving-proof/results/slurm-%j.out serving-proof/run_proof.sbatch
 ```
 

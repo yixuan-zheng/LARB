@@ -2,9 +2,9 @@
 
 ## State and ownership
 
-Checkpoints **1A–1C, 2A–2C, and 3A–3C are complete**. Packaging/hand-off work for 7A is complete; reserved evaluation and closest-method comparison remain outstanding. Branch: `main`. The branch tip is the single consolidated commit; use `git rev-parse HEAD` to identify it. No person has claimed the next checkpoint; update this file when taking it.
+Checkpoints **1A–1C, 2A–2C, and 3A–3C are complete**. Packaging/hand-off work for 7A is complete; reserved evaluation and closest-method comparison remain outstanding. Branch: `main`. The implementation was consolidated in commit `4e3bbe4`; later documentation and privacy cleanup keep the results unchanged. The next checkpoint is available for someone to pick up.
 
-All new implementation, configurations, reports, and essential evidence are under [step1/](step1/README.md). Week 3 imports are unchanged by this work. Read [packaging provenance](step1/PACKAGING.md) before comparing original source paths or historical commit identifiers.
+All new implementation, configurations, reports, and essential evidence are under [step1/](step1/README.md). Week 3 imports are unchanged by this work. [Packaging notes](step1/PACKAGING.md) explain source paths, historical commit identifiers, and privacy cleanup.
 
 ## Verified evidence
 
@@ -18,16 +18,16 @@ These are two replays of **12 exposed development questions**, not 24 independen
 
 ## Jobs, resources, and retrieval
 
-**No active jobs and nothing left to collect.** Do not resubmit either completed experiment to reproduce analysis.
+**No active jobs and nothing left to collect.** The saved records are enough to reproduce the analysis.
 
-Renewed successful jobs used 1:16:37 (1.277 GPU-hours). Including two zero-request setup failures: **1:20:56 (1.349 GPU-hours)**. No policy tuning or inference retries occurred in the comparison. Full failed-attempt evidence remains at the original PACE paths indexed in each saved attempt's `archive-index.json`.
+Renewed successful jobs used 1:16:37 (1.277 GPU-hours). Including two zero-request setup failures: **1:20:56 (1.349 GPU-hours)**. No policy tuning or inference retries occurred in the comparison. Each saved setup attempt includes a diagnosis and an index of the original file hashes. Successful runs are fully included in Git.
 
-PACE: `ssh yzheng609@login-ice.pace.gatech.edu`; root `~/scratch/CS6222-qwen3-baseline`. Original results: `week4/admission-control/results/job-6440402/` and `week4/controlled-comparison/results/job-6440653/`. Git stores lossless event archives and complete successful run records at their new paths under `week4/step1/`; original source snapshots retain original names.
+Successful run records are included in Git under `week4/step1/`, including compressed events, inputs, grades, and executed source snapshots. Local cluster login and workspace settings are intentionally omitted; the launchers accept local environment configuration.
 
 ## Next concrete action
 
-**Begin 5A: audit question exposure before proposing reserved questions and traffic.** Retain the current candidate without tuning to this development result. Read Week 3 exposure records, choose eligible questions only after checking their history, and save a new frozen evaluation plan with traffic conditions, paired order, deadlines, uncertainty, and a realistic compute limit. Do not launch an unplanned campaign. Closest-method comparison (Task 6) remains unresolved.
+A useful next step is **5A: check question exposure, then plan reserved-question and traffic validation**. The current development result supports keeping the candidate as it is. Week 3 exposure records can help identify eligible questions; a new plan can set traffic conditions, paired order, deadlines, uncertainty, and a realistic compute budget. Closest-method comparison (Task 6) also remains open.
 
 ## Session update template
 
-Replace current state above when handing off; keep run history in result directories. Record: checkpoint/owner/branch; changes and rationale; verification commands and outcomes (CPU versus GPU); configuration/output paths; active job IDs plus collection commands or explicitly none; unresolved issues; allocated compute; one next action. Push the updated handoff with code and evidence.
+A short update here can help the next person, with detailed run history left in result directories. Useful details include: checkpoint/owner/branch; changes and rationale; verification commands and outcomes (CPU versus GPU); configuration/output paths; active job IDs plus collection commands or explicitly none; unresolved issues; allocated compute; one next action. Sharing the updated notes with the related code and results keeps the context together.

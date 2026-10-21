@@ -17,7 +17,7 @@
     "proof-control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd"
   },
   "spec_sha256": "25c66570b6409141dca82615f7d512e7c8d19b2091c8b08b2c4706ff80fdba35",
-  "model_path": "/home/hice1/yzheng609/scratch/CS6222-qwen3-baseline/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+  "model_path": "/project/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
   "max_num_seqs": 2,
   "note": "Instrumented eager vLLM pilot; one trace, one sampled response per problem/policy"
 }

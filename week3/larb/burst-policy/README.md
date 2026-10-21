@@ -17,7 +17,7 @@ The full-thinking safety limit stops the response without adding a finalization 
 Use the existing isolated `vllm-proof-env` and cached pinned Qwen3-4B checkpoint. The original Transformers experiment environment is unchanged.
 
 ```bash
-cd ~/scratch/CS6222-qwen3-baseline
+cd ${PACE_PROJECT_ROOT}
 sbatch --output=burst-policy/results/slurm-%j.out burst-policy/run_burst.sbatch
 ```
 
@@ -29,7 +29,7 @@ Use the same math-verify 0.9.0 grading environment as Stage 3; `stage3/requireme
 
 ```bash
 PYTHONPATH=/tmp/qwen-stage3-grading-deps MPLCONFIGDIR=/tmp/qwen-stage3-mpl \
-  /Users/shuyizhang/anaconda3/bin/python -B \
+  python -B \
   week3/larb/code/analyze_burst.py \
   --root week3/larb/burst-policy/results/job-JOB_ID
 ```

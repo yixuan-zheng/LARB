@@ -8,7 +8,7 @@
 #SBATCH --mem=64G
 #SBATCH --time=01:00:00
 set -euo pipefail
-cd "$HOME/scratch/CS6222-qwen3-baseline"
+cd "${PACE_PROJECT_ROOT:?Set PACE_PROJECT_ROOT}"
 source vllm-proof-env/bin/activate
 export HF_HOME="$PWD/hf-cache" HF_HUB_OFFLINE=1 TOKENIZERS_PARALLELISM=false
 export OMP_NUM_THREADS=4 VLLM_WORKER_MULTIPROC_METHOD=spawn

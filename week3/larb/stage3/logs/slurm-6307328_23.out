@@ -1,7 +1,7 @@
 ---------------------------------------
 Begin Slurm Prolog: Oct-16-2026 21:44:05
 Job ID:    6307435
-User ID:   yzheng609
+User ID:   user
 Account:   coc
 Job name:  qwen3-sweetspot
 Partition: coc-gpu
@@ -34,7 +34,7 @@ COMPLETE nonthinking 3
 Begin Slurm Epilog: Oct-16-2026 21:49:12
 Job ID:        6307435
 Array Job ID:  6307328_23
-User ID:       yzheng609
+User ID:       user
 Account:       coc
 Job name:      qwen3-sweetspot
 Resources:     cpu=4,gres/gpu:l40s=1,mem=64G,node=1

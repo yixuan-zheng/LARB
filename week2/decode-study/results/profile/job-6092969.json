@@ -9,7 +9,7 @@
       "1500",
       "--strict-clock"
     ],
-    "cwd": "/storage/ice1/4/2/yzheng609/CS6222-decode-rescue-20261007",
+    "cwd": "/project",
     "git": {
       "sha": null,
       "dirty": false,
@@ -38,7 +38,7 @@
     "dtype_bytes": 2,
     "preset_used": null,
     "preset_widths": null,
-    "presets_source": "/storage/ice1/4/2/yzheng609/CS6222-decode-rescue-20261007/preflight/code/presets.json"
+    "presets_source": "/project/preflight/code/presets.json"
   },
   "completed": true,
   "cells": [

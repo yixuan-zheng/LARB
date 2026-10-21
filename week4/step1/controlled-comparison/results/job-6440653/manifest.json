@@ -9,7 +9,7 @@
     "week4/controlled-comparison/analyze.py": "2d8ccd629794aaa7d3579fe4fcbcc6a258e13762a300c0f480052f97caae76cb",
     "week4/controlled-comparison/spec.json": "7ca405622e802897f284180bcac1d220ce8a12d0466255a9154a53a731c5aa5f",
     "week4/controlled-comparison/PLAN.md": "35c0ca5389ee7d74f9cd4815de3299761b6219a479dbe93a2c1b7e3909e52f2b",
-    "week4/controlled-comparison/run_comparison.sbatch": "d2307d5371e711505fef80c1d242afdd9fbbe98c83586d4f58e52e38eacbb063",
+    "week4/controlled-comparison/run_comparison.sbatch": "c83faddb8514242623d4d59a0f387ec71702e1d011f217e25daebfb0149a60cf",
     "week4/controlled-comparison/checks/preflight.py": "d8b0802b8cf673cfd056d0dd9a8a020c429a1cf0629878c57100377069a3c6f7",
     "week4/admission-control/bootstrap.py": "7cb6e36bda821795fe8b7ea87c73dc2828feb76b5f68c20c093cf9d0f0c7e1cb",
     "week4/admission-control/run_smoke.py": "ee017c22330b9c872d5981e97195abf8478e86d90462362f07e6806119e93d42",
@@ -40,7 +40,7 @@
     "PLAN.md": "35c0ca5389ee7d74f9cd4815de3299761b6219a479dbe93a2c1b7e3909e52f2b",
     "source-state.json": "b5e66433edbd6ceaecc0e18fcb26e29ea556b028ffd9053276dbbc5d3fed18b2"
   },
-  "model_path": "/home/hice1/yzheng609/scratch/CS6222-qwen3-baseline/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+  "model_path": "/project/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
   "engine": {
     "max_num_seqs": 2,
     "dtype": "bfloat16",

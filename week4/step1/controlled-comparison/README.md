@@ -12,7 +12,7 @@ CPU preparation: six metric tests, the real calibration/trace rule, and pinned
 grader regressions passed. Serving dependencies are unchanged; local analysis
 packages live separately in ignored `week4/.analysis-deps/`.
 
-Both jobs are collected; do not submit another copy to reproduce analysis.
+Both jobs are collected, so reproducing the saved analysis needs no new GPU allocation.
 The archived scheduler log is losslessly compressed for Git, with raw/compressed
 hashes in `results/job-6440653/storage-manifest.json`. Plaintext remains locally
 and on PACE. Materialize it before using the original analysis code:
@@ -22,7 +22,7 @@ python3 -B week4/step1/controlled-comparison/checks/pack_events.py \
   --root week4/step1/controlled-comparison/results/job-6440653 --unpack
 ```
 
-Original PACE output: `~/scratch/CS6222-qwen3-baseline/week4/controlled-comparison/results/job-6440653/`.
+Saved results are in `results/job-6440653/`.
 The package pins are in `week3/larb/stage3/requirements-analysis.txt`. From the
 repository root, with those analysis dependencies installed separately:
 
@@ -50,6 +50,6 @@ MPLCONFIGDIR="$PWD/week4/.analysis-deps/matplotlib-cache" \
   --root week4/step1/controlled-comparison/results/job-6440653
 ```
 
-## Recording future work
+## Notes for whoever continues
 
-Follow the [documentation contract](../README.md#documentation-contract). Keep this README for commands, the report for conclusions, and the shared [handoff](../../HANDOFF.md) for current state. Preserve immutable run inputs and raw records; save rescoring separately when grading changes.
+The [handoff](../../HANDOFF.md) summarizes the current state and next research question. The [progress notes](../README.md#sharing-progress) suggest what is useful to leave for the next person: a short explanation of changes, verification results, output paths, open questions, and any active jobs. This README holds commands; the report explains the findings.

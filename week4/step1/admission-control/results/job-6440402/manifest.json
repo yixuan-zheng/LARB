@@ -19,7 +19,7 @@
     "week4/admission-control/run_smoke.py": "ee017c22330b9c872d5981e97195abf8478e86d90462362f07e6806119e93d42",
     "week4/admission-control/bootstrap.py": "7cb6e36bda821795fe8b7ea87c73dc2828feb76b5f68c20c093cf9d0f0c7e1cb",
     "week4/admission-control/spec.json": "0ecfda9f51a557e9ea370a1529e57b6b3d8d62d0047c4c79f49ba1b83894284e",
-    "week4/admission-control/run_smoke.sbatch": "9a262db9a709914c59724f801f342e0d43ce62a273c46431edd0faced472e823",
+    "week4/admission-control/run_smoke.sbatch": "908870e07af79aedad48bc8fbeed1bac177fcc27f8a33abe36168d2573ca3177",
     "week3/larb/burst-policy/adapter.py": "13305356b1ada2741bd48899a36cea398a46d21b5deb8fbe210b8e418c9db473",
     "week3/larb/burst-policy/policy.py": "daad24eaf79e8a8ff94e5667b461bb17f3a9d44bd02bafadc63f8852a2290bee",
     "week3/larb/serving-proof/control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd"
@@ -29,7 +29,7 @@
     "problems100.json": "ec8bd946d000517564ddfbc5f2e48dad8024591efcfc7e935b04dd4504781598",
     "stage3-protocol.json": "48dc7337b73fa0f50008b2d2631d33ed2d22d723522f44357d9824c08687e4c1"
   },
-  "model_path": "/home/hice1/yzheng609/scratch/CS6222-qwen3-baseline/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+  "model_path": "/project/hf-cache/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
   "clocks": "All processes on one allocated host; client timing stays on client clock",
   "quality_claim": false
 }

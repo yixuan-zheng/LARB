@@ -1,6 +1,6 @@
 # Step 1: admission-only and live control
 
-New implementation and evidence live here; Week 3 sources/results are unchanged.
+The implementation and gate evidence live here. Shared Week 3 code supplies the existing serving mechanisms.
 **Current state:** 1A/1B/1C passed. Real job 6440402 passed all 176 GPU checks;
 the controlled comparison is complete. See [the report](REPORT.md).
 Read [the admission boundary](ADMISSION-BOUNDARY.md) for the verified dispatch
@@ -15,7 +15,7 @@ path. This folder implements checkpoint 1, not the controlled quality comparison
   six exposed development questions per mode, one engine/allocation, no retries.
 - `validate_smoke.py`: offline mechanical audit, with explicit failed checks.
 - `checks/`: CPU test output and pinned-runtime source inspection.
-- `results/job-JOB_ID/`: immutable attempts, inputs, executed sources, hashes,
+- `results/job-JOB_ID/`: saved attempts, inputs, sanitized source snapshots, hashes,
   package inventory, hardware, raw responses, client progress, and events.
 
 Run CPU checks from the repository root:
@@ -30,9 +30,7 @@ admission budgets, live-only changes after progress, phase isolation, row moves,
 resumption retention, natural closure, full cue completion, and cap semantics.
 They do not establish GPU operation.
 
-PACE uses the existing `~/scratch/CS6222-qwen3-baseline/vllm-proof-env`, pinned
-cached model, and unchanged historical imports. Only the `week4/` subtree is
-uploaded. Source-lock verification rejects mismatched imported dependencies.
+The launchers use a separate serving environment, a pinned cached model, and historical imports. `PACE_PROJECT_ROOT` is a local configuration value for the prepared runtime workspace; it is not a path supplied by this repository. Source-lock verification rejects mismatched imported dependencies.
 The first job failed in packaging verification (14 allocated seconds); its
 replacement hit a four-minute startup guard (245 allocated seconds). Both
 generated zero requests. See the [bounded repair plan](REPAIR-PLAN.md).
@@ -44,13 +42,13 @@ Other compatible hardware requires an explicit launcher/configuration change
 before submission, recorded with the run.
 
 For a future bounded run, first read the handoff and record the next attempt's
-limit. Then submit from `~/scratch/CS6222-qwen3-baseline`:
+limit. The example below assumes `PACE_PROJECT_ROOT` points to your prepared runtime workspace:
 
 ```bash
 sbatch --output=week4/step1/admission-control/results/slurm-%j.out week4/step1/admission-control/run_smoke.sbatch
 ```
 
-Collect the submitted job; do not submit another copy. After collection:
+The submitted job can be collected and checked with:
 
 ```bash
 python3 -B week4/step1/admission-control/validate_smoke.py --root week4/step1/admission-control/results/job-JOB_ID
@@ -66,6 +64,6 @@ Failure is preserved and diagnosed; the test is not automatically retried.
 corruptions of temporary copies. All eight were rejected on the real passing
 baseline; see `checks/validator-regressions.json`.
 
-## Recording future work
+## Notes for whoever continues
 
-Follow the [documentation contract](../README.md#documentation-contract). Record each attempt and its resource limit before submission, then update the shared [handoff](../../HANDOFF.md) with checks, job status, output paths, and one next action. Successful run events are compressed: use `../controlled-comparison/checks/pack_events.py --root RUN_DIRECTORY --unpack` before validation. Earlier failed attempts retain concise evidence and SHA-256 retrieval indexes; see [packaging](../PACKAGING.md).
+The [handoff](../../HANDOFF.md) summarizes the current state and next research question. The [progress notes](../README.md#sharing-progress) suggest what is useful to leave for the next person: a short explanation of changes, verification results, output paths, open questions, and any active jobs. This README holds commands; the report explains the findings.

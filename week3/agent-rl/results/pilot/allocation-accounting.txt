@@ -1,8 +1,8 @@
-6269576|CANCELLED by 3577342|00:00:00|
+6269576|CANCELLED by redacted|00:00:00|
 6269583|FAILED|00:04:43|billing=8,cpu=8,gres/gpu:h100=2,gres/gpu=2,mem=96G,node=1
-6269656|CANCELLED by 3577342|00:07:11|billing=8,cpu=8,gres/gpu:h100=2,gres/gpu=2,mem=96G,node=1
-6269718|CANCELLED by 3577342|00:00:00|
-6269760|CANCELLED by 3577342|00:00:00|
+6269656|CANCELLED by redacted|00:07:11|billing=8,cpu=8,gres/gpu:h100=2,gres/gpu=2,mem=96G,node=1
+6269718|CANCELLED by redacted|00:00:00|
+6269760|CANCELLED by redacted|00:00:00|
 6269764|FAILED|00:20:55|billing=4,cpu=4,gres/gpu:h200=2,gres/gpu=2,mem=96G,node=1
-6269910|CANCELLED by 3577342|00:00:00|
+6269910|CANCELLED by redacted|00:00:00|
 6270016|TIMEOUT|00:12:14|billing=4,cpu=4,gres/gpu:h200=2,gres/gpu=2,mem=96G,node=1

@@ -8,9 +8,9 @@
 #SBATCH --mem=64G
 #SBATCH --time=00:10:00
 set -euo pipefail
-source "$HOME/scratch/CS6222-matformer-local-test/gemma3n/bin/activate"
-export HF_HOME="$HOME/scratch/CS6222-qwen3-baseline/hf-cache"
+source "${PACE_ENV_ROOT:?Set PACE_ENV_ROOT}/gemma3n/bin/activate"
+export HF_HOME="${PACE_PROJECT_ROOT:?Set PACE_PROJECT_ROOT}/hf-cache"
 export HF_HUB_OFFLINE=1
 export TOKENIZERS_PARALLELISM=false
-cd "$HOME/scratch/CS6222-qwen3-baseline"
+cd "${PACE_PROJECT_ROOT:?Set PACE_PROJECT_ROOT}"
 python -u code/interrupt_probe.py --budget 512 --answer-cap 2048 --transition cue --indices 0,1,9 --out "results/stage2cue-job-$SLURM_JOB_ID"

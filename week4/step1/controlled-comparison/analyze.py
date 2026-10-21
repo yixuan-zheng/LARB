@@ -198,6 +198,6 @@ if __name__=='__main__':
     (out/'review-queue.json').write_text(json.dumps(review,indent=2)+'\n')
     (out/'analysis-manifest.json').write_text(json.dumps(dict(versions={n:metadata.version(n) for n in
         ['math-verify','sympy','latex2sympy2_extended','antlr4-python3-runtime','mpmath']},
-        sources={str(p):digest(p) for p in [Path(__file__),Path(__file__).with_name('metrics.py'),
+        sources={str(p.resolve().relative_to(bootstrap.REPO)):digest(p) for p in [Path(__file__),Path(__file__).with_name('metrics.py'),
                                            bootstrap.LEGACY/'code/grade_stage3.py',bootstrap.LEGACY/'code/baseline.py']}),indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ['rows','paired_live_vs_admission']},indent=2))

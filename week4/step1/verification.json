@@ -31,5 +31,6 @@
   "source_locks_verified": true,
   "policy_adapter_service_byte_identical_to_gpu_candidate": true,
   "documentation_links_verified": true,
-  "note": "CPU/offline verification after path-only consolidation; no additional GPU job launched."
+  "note": "CPU/offline verification after path-only consolidation; no additional GPU job launched.",
+  "privacy_cleanup": "Unit tests, 176 gate checks, comparison analysis and final record checks passed after sanitizing private locations; numeric results unchanged."
 }

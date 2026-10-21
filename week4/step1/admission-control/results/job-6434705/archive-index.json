@@ -1,5 +1,4 @@
 {
-  "location": "yzheng609@login-ice.pace.gatech.edu:~/scratch/CS6222-qwen3-baseline/week4/admission-control/results/job-6434705/",
   "sha256": {
     "accounting.txt": "d4eb164c9c1b6cb0e37a845f9b79d341d97842ba4f90cecc46c4ffc591952e41",
     "spec.json": "68b913bf812e9a9612f2d34c1132ddc7edfc7fae77b028ff8be1b70f9b2bef08",
@@ -32,5 +31,6 @@
     "sources/week3/larb/burst-policy/adapter.py": "13305356b1ada2741bd48899a36cea398a46d21b5deb8fbe210b8e418c9db473",
     "sources/week3/larb/burst-policy/policy.py": "daad24eaf79e8a8ff94e5667b461bb17f3a9d44bd02bafadc63f8852a2290bee",
     "sources/week3/larb/serving-proof/control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd"
-  }
+  },
+  "note": "Original omitted setup-file hashes; private retrieval locations are not distributed."
 }
