@@ -1,0 +1,1 @@
+6481975|COMPLETED|1641|0:0|billing=4,cpu=4,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1|2026-10-22T16:16:05|2026-10-22T16:43:26

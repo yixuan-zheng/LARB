@@ -1,0 +1,307 @@
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 0,
+  "condition": "late_burst",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 7,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 1.9547840366058817,
+      "observation_horizon_seconds": 214.85749429857825,
+      "median_client_seconds": 137.2937299903715,
+      "p95_client_seconds": 263.79418214200996,
+      "mean_queue_seconds": 100.20572883076966,
+      "median_queue_seconds": 107.71542717597913,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 50602,
+      "cue_tokens": 210,
+      "output_tokens": 65479,
+      "token_accounting_complete": true,
+      "answer_tokens": 14658
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 7,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 1.9547840366058817,
+      "observation_horizon_seconds": 214.85749429857825,
+      "median_client_seconds": 134.10232737159822,
+      "p95_client_seconds": 263.1409841920249,
+      "mean_queue_seconds": 97.39918282593135,
+      "median_queue_seconds": 95.69695140351541,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 4,
+      "binding_live_cutoffs": 2,
+      "thinking_tokens": 49523,
+      "cue_tokens": 238,
+      "output_tokens": 65153,
+      "token_accounting_complete": true,
+      "answer_tokens": 15385
+    }
+  ],
+  "paired": [
+    {
+      "block": 0,
+      "index": 205,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-205",
+      "live_key": "b0-live-205",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 217,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-217",
+      "live_key": "b0-live-217",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 227,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-227",
+      "live_key": "b0-live-227",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 228,
+      "deadline_delta": 0,
+      "correctness_delta": 1,
+      "admission_key": "b0-admission-228",
+      "live_key": "b0-live-228",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 261,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-261",
+      "live_key": "b0-live-261",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 362,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-362",
+      "live_key": "b0-live-362",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 368,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-368",
+      "live_key": "b0-live-368",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 429,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-429",
+      "live_key": "b0-live-429",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 452,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-452",
+      "live_key": "b0-live-452",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 458,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-458",
+      "live_key": "b0-live-458",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 482,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-482",
+      "live_key": "b0-live-482",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 495,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-495",
+      "live_key": "b0-live-495",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 205,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-205",
+      "live_key": "b1-live-205",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 217,
+      "deadline_delta": -1,
+      "correctness_delta": -1,
+      "admission_key": "b1-admission-217",
+      "live_key": "b1-live-217",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 227,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-227",
+      "live_key": "b1-live-227",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 228,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-228",
+      "live_key": "b1-live-228",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 261,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-261",
+      "live_key": "b1-live-261",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 362,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-362",
+      "live_key": "b1-live-362",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 368,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-368",
+      "live_key": "b1-live-368",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 429,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-429",
+      "live_key": "b1-live-429",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 452,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-452",
+      "live_key": "b1-live-452",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 458,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-458",
+      "live_key": "b1-live-458",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 482,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-482",
+      "live_key": "b1-live-482",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 495,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-495",
+      "live_key": "b1-live-495",
+      "initial_budget_match": true
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 0,
+    "condition": "late_burst",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 4,
+    "binding_live_cutoffs": 2,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 24,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "6a46723adea03edc506c6a62413e42515083cca13e0ebe2ac081f9f25ec8f7d3",
+    "manifest.json": "90e839c172619ad8831c79d392d76e87ee72fc99d80914241b8a971abbb56c25"
+  },
+  "analysis_sources": {
+    "week4/reserved-validation/analyze.py": "8faefd4bc3c98e7c353c5144d05d664cf39dc1d6b63487dce7d2461b9376af76",
+    "week4/reserved-validation/validate.py": "d0ade4d5f0876c0ea3a996fde6a361f14667e6bf0160696c938fe80d0a3cf593",
+    "week3/larb/code/grade_stage3.py": "75fca15b0f3c341e52d4374dc71568183e77817d63c933578657704de85ef530",
+    "week3/larb/code/baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

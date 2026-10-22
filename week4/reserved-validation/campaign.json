@@ -1,0 +1,106 @@
+{
+  "plan": "week4-5A-v1",
+  "status": "running",
+  "order": [
+    {
+      "shard": 0,
+      "condition": "late_burst"
+    },
+    {
+      "shard": 0,
+      "condition": "sustained_pressure"
+    },
+    {
+      "shard": 0,
+      "condition": "low_load"
+    },
+    {
+      "shard": 1,
+      "condition": "late_burst"
+    },
+    {
+      "shard": 1,
+      "condition": "sustained_pressure"
+    },
+    {
+      "shard": 1,
+      "condition": "low_load"
+    }
+  ],
+  "jobs": [
+    {
+      "stage": 1,
+      "job": "6481923",
+      "shard": 0,
+      "condition": "late_burst",
+      "status": "complete",
+      "allocation_ceiling_minutes": 240,
+      "dependency_afterok": null,
+      "elapsed_seconds": 1440,
+      "exit_code": "0:0",
+      "mechanical_validation_passed": true
+    },
+    {
+      "stage": 2,
+      "job": "6481975",
+      "shard": 0,
+      "condition": "sustained_pressure",
+      "status": "complete",
+      "allocation_ceiling_minutes": 240,
+      "dependency_afterok": "6481923",
+      "elapsed_seconds": 1641,
+      "exit_code": "0:0",
+      "mechanical_validation_passed": true
+    },
+    {
+      "stage": 3,
+      "job": "6481976",
+      "shard": 0,
+      "condition": "low_load",
+      "status": "running",
+      "allocation_ceiling_minutes": 240,
+      "dependency_afterok": "6481975"
+    },
+    {
+      "stage": 4,
+      "job": "6481977",
+      "shard": 1,
+      "condition": "late_burst",
+      "status": "pending",
+      "allocation_ceiling_minutes": 240,
+      "dependency_afterok": "6481976"
+    },
+    {
+      "stage": 5,
+      "job": "6481978",
+      "shard": 1,
+      "condition": "sustained_pressure",
+      "status": "pending",
+      "allocation_ceiling_minutes": 240,
+      "dependency_afterok": "6481977"
+    },
+    {
+      "stage": 6,
+      "job": "6481979",
+      "shard": 1,
+      "condition": "low_load",
+      "status": "pending",
+      "allocation_ceiling_minutes": 240,
+      "dependency_afterok": "6481978"
+    }
+  ],
+  "base_allocation_ceiling_gpu_hours": 24,
+  "total_with_one_repair_gpu_hours": 28,
+  "automatic_retries": 0,
+  "source_commit": "fd2fa465407105aca90e6940fd9466a2184c19d0",
+  "max_simultaneous_gpus": 1,
+  "gate": "Slurm afterok: each predecessor must exit successfully after its mechanical audit and lossless archive; kill invalid downstream dependencies",
+  "postprocessing": {
+    "job": "6482012",
+    "dependency_afterok": "6481979",
+    "resources": "CPU only, 2 cores, 16 GB, 30-minute ceiling",
+    "grader": "Math-Verify 0.9.0 in an isolated analysis target; serving environment unchanged",
+    "status": "submitted"
+  },
+  "allocated_gpu_seconds_completed": 3081
+}

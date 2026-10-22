@@ -1,0 +1,10 @@
+{
+  "scheduler.jsonl": {
+    "raw_bytes": 27647391,
+    "raw_sha256": "068b381081081a1f3ca7a6808c5039c5af930c8e8a3e5f823c7024e2c61f2cee",
+    "gzip_bytes": 1783250,
+    "gzip_sha256": "be6cf9774d710e2db0a7258478f2fa472b0f43e1895cad1c09244fd11839eeac",
+    "lossless_roundtrip_verified": true,
+    "note": "Plaintext retained locally and on PACE; Git stores lossless gzip. Materialize before running the original archived analysis."
+  }
+}

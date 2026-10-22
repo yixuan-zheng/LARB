@@ -1,0 +1,155 @@
+{"event": "phase", "monotonic": 1367154.865234311, "pid": 2434550, "phase": "calib", "policy": "full"}
+{"event": "arrival", "monotonic": 1367155.37033674, "pid": 2434550, "key": "calib-002", "index": 2, "policy": "full", "budget": 16384, "waiting": [], "pressure_age_s": 71.53055268991739, "pressure_step": 0, "pressure_valid": false, "fallback": false}
+{"event": "arrival", "monotonic": 1367155.644176465, "pid": 2434550, "key": "calib-000", "index": 0, "policy": "full", "budget": 16384, "waiting": [], "pressure_age_s": 71.8039721660316, "pressure_step": 0, "pressure_valid": false, "fallback": false}
+{"event": "first_token", "monotonic": 1367156.854348174, "pid": 2434550, "key": "calib-002", "tokens": 1}
+{"event": "first_token", "monotonic": 1367156.934751442, "pid": 2434550, "key": "calib-000", "tokens": 1}
+{"event": "completed", "monotonic": 1367183.098360368, "pid": 2434550, "key": "calib-000", "tokens": 1606, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 1367205.38839963, "pid": 2434550, "key": "calib-002", "tokens": 3093, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 1367205.435172575, "pid": 2434550, "phase": "b0-admission", "policy": "admission"}
+{"event": "arrival", "monotonic": 1367205.938699645, "pid": 2434550, "key": "b0-admission-452", "index": 452, "policy": "admission", "budget": 16384, "waiting": [], "pressure_age_s": 0.551714067813009, "pressure_step": 3094, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367205.940900151, "pid": 2434550, "key": "b0-admission-227", "index": 227, "policy": "admission", "budget": 16384, "waiting": [], "pressure_age_s": 0.5535749539267272, "pressure_step": 3094, "pressure_valid": true, "fallback": false}
+{"event": "first_token", "monotonic": 1367205.964308759, "pid": 2434550, "key": "b0-admission-452", "tokens": 1}
+{"event": "first_token", "monotonic": 1367205.997724991, "pid": 2434550, "key": "b0-admission-227", "tokens": 1}
+{"event": "arrival", "monotonic": 1367212.87139001, "pid": 2434550, "key": "b0-admission-429", "index": 429, "policy": "admission", "budget": 16384, "waiting": [], "pressure_age_s": 0.002413119887933135, "pressure_step": 3522, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367212.921792416, "pid": 2434550, "key": "b0-admission-482", "index": 482, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429"], "pressure_age_s": 0.03824088000692427, "pressure_step": 3523, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367212.970277731, "pid": 2434550, "key": "b0-admission-228", "index": 228, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429"], "pressure_age_s": 0.04973938409239054, "pressure_step": 3524, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.021313567, "pid": 2434550, "key": "b0-admission-458", "index": 458, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228"], "pressure_age_s": 0.015073028858751059, "pressure_step": 3527, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.07010773, "pid": 2434550, "key": "b0-admission-368", "index": 368, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228", "b0-admission-458"], "pressure_age_s": 0.0030479400884360075, "pressure_step": 3531, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.121738895, "pid": 2434550, "key": "b0-admission-205", "index": 205, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228", "b0-admission-458", "b0-admission-368"], "pressure_age_s": 0.011018858989700675, "pressure_step": 3534, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.171124159, "pid": 2434550, "key": "b0-admission-217", "index": 217, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228", "b0-admission-458", "b0-admission-368", "b0-admission-205"], "pressure_age_s": 0.016608988167718053, "pressure_step": 3537, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.220343076, "pid": 2434550, "key": "b0-admission-495", "index": 495, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228", "b0-admission-458", "b0-admission-368", "b0-admission-205", "b0-admission-217"], "pressure_age_s": 0.005130694014951587, "pressure_step": 3541, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.270919077, "pid": 2434550, "key": "b0-admission-261", "index": 261, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228", "b0-admission-458", "b0-admission-368", "b0-admission-205", "b0-admission-217", "b0-admission-495"], "pressure_age_s": 0.009164588060230017, "pressure_step": 3544, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367213.320473242, "pid": 2434550, "key": "b0-admission-362", "index": 362, "policy": "admission", "budget": 16384, "waiting": ["b0-admission-429", "b0-admission-482", "b0-admission-228", "b0-admission-458", "b0-admission-368", "b0-admission-205", "b0-admission-217", "b0-admission-495", "b0-admission-261"], "pressure_age_s": 0.013041312107816339, "pressure_step": 3547, "pressure_valid": true, "fallback": false}
+{"event": "completed", "monotonic": 1367221.979314364, "pid": 2434550, "key": "b0-admission-227", "tokens": 982, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367221.990675581, "pid": 2434550, "key": "b0-admission-429", "tokens": 1}
+{"event": "completed", "monotonic": 1367253.803769144, "pid": 2434550, "key": "b0-admission-452", "tokens": 2963, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367253.824314105, "pid": 2434550, "key": "b0-admission-482", "tokens": 1}
+{"event": "completed", "monotonic": 1367267.130718305, "pid": 2434550, "key": "b0-admission-429", "tokens": 2820, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367267.159381197, "pid": 2434550, "key": "b0-admission-228", "tokens": 1}
+{"event": "completed", "monotonic": 1367297.858166063, "pid": 2434550, "key": "b0-admission-482", "tokens": 2748, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367297.905150023, "pid": 2434550, "key": "b0-admission-458", "tokens": 1}
+{"event": "completed", "monotonic": 1367319.68516357, "pid": 2434550, "key": "b0-admission-228", "tokens": 3253, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367319.698653924, "pid": 2434550, "key": "b0-admission-368", "tokens": 1}
+{"event": "completed", "monotonic": 1367340.244689301, "pid": 2434550, "key": "b0-admission-458", "tokens": 2577, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367340.267290116, "pid": 2434550, "key": "b0-admission-205", "tokens": 1}
+{"event": "completed", "monotonic": 1367362.19753572, "pid": 2434550, "key": "b0-admission-368", "tokens": 2542, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367362.244555725, "pid": 2434550, "key": "b0-admission-217", "tokens": 1}
+{"event": "completed", "monotonic": 1367388.452145611, "pid": 2434550, "key": "b0-admission-205", "tokens": 2931, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367388.472246832, "pid": 2434550, "key": "b0-admission-495", "tokens": 1}
+{"event": "completed", "monotonic": 1367405.088933, "pid": 2434550, "key": "b0-admission-217", "tokens": 2646, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367405.109857515, "pid": 2434550, "key": "b0-admission-261", "tokens": 1}
+{"event": "completed", "monotonic": 1367430.218055271, "pid": 2434550, "key": "b0-admission-495", "tokens": 2584, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367430.241307815, "pid": 2434550, "key": "b0-admission-362", "tokens": 1}
+{"event": "completed", "monotonic": 1367446.777767616, "pid": 2434550, "key": "b0-admission-261", "tokens": 2555, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 1367462.334041557, "pid": 2434550, "key": "b0-admission-362", "tokens": 2022, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 1367462.35221538, "pid": 2434550, "phase": "b0-live", "policy": "live"}
+{"event": "arrival", "monotonic": 1367462.854850573, "pid": 2434550, "key": "b0-live-452", "index": 452, "policy": "live", "budget": 16384, "waiting": [], "pressure_age_s": 0.5442368551157415, "pressure_step": 18920, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367462.85668517, "pid": 2434550, "key": "b0-live-227", "index": 227, "policy": "live", "budget": 16384, "waiting": [], "pressure_age_s": 0.5460163471288979, "pressure_step": 18920, "pressure_valid": true, "fallback": false}
+{"event": "first_token", "monotonic": 1367462.873071861, "pid": 2434550, "key": "b0-live-452", "tokens": 1}
+{"event": "first_token", "monotonic": 1367462.928662583, "pid": 2434550, "key": "b0-live-227", "tokens": 1}
+{"event": "arrival", "monotonic": 1367469.788113941, "pid": 2434550, "key": "b0-live-429", "index": 429, "policy": "live", "budget": 16384, "waiting": [], "pressure_age_s": 0.0073288679122924805, "pressure_step": 19304, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367469.837699746, "pid": 2434550, "key": "b0-live-482", "index": 482, "policy": "live", "budget": 16384, "waiting": ["b0-live-429"], "pressure_age_s": 0.013121958123520017, "pressure_step": 19307, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367469.887508877, "pid": 2434550, "key": "b0-live-228", "index": 228, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482"], "pressure_age_s": 0.0031406329944729805, "pressure_step": 19311, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367469.937925581, "pid": 2434550, "key": "b0-live-458", "index": 458, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228"], "pressure_age_s": 0.006993324030190706, "pressure_step": 19314, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367469.987155578, "pid": 2434550, "key": "b0-live-368", "index": 368, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228", "b0-live-458"], "pressure_age_s": 0.010975928977131844, "pressure_step": 19317, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367470.037581248, "pid": 2434550, "key": "b0-live-205", "index": 205, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228", "b0-live-458", "b0-live-368"], "pressure_age_s": 0.007944697979837656, "pressure_step": 19320, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367470.088290706, "pid": 2434550, "key": "b0-live-217", "index": 217, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228", "b0-live-458", "b0-live-368", "b0-live-205"], "pressure_age_s": 0.010928925825282931, "pressure_step": 19323, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367470.137966026, "pid": 2434550, "key": "b0-live-495", "index": 495, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228", "b0-live-458", "b0-live-368", "b0-live-205", "b0-live-217"], "pressure_age_s": 0.016868595965206623, "pressure_step": 19326, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367470.187707768, "pid": 2434550, "key": "b0-live-261", "index": 261, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228", "b0-live-458", "b0-live-368", "b0-live-205", "b0-live-217", "b0-live-495"], "pressure_age_s": 0.004113354021683335, "pressure_step": 19330, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367470.23750977, "pid": 2434550, "key": "b0-live-362", "index": 362, "policy": "live", "budget": 16384, "waiting": ["b0-live-429", "b0-live-482", "b0-live-228", "b0-live-458", "b0-live-368", "b0-live-205", "b0-live-217", "b0-live-495", "b0-live-261"], "pressure_age_s": 0.0073509858921170235, "pressure_step": 19333, "pressure_valid": true, "fallback": false}
+{"event": "completed", "monotonic": 1367479.230706726, "pid": 2434550, "key": "b0-live-227", "tokens": 982, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367479.251889217, "pid": 2434550, "key": "b0-live-429", "tokens": 1}
+{"event": "completed", "monotonic": 1367506.97040351, "pid": 2434550, "key": "b0-live-452", "tokens": 2704, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367506.984347338, "pid": 2434550, "key": "b0-live-482", "tokens": 1}
+{"event": "completed", "monotonic": 1367525.553276977, "pid": 2434550, "key": "b0-live-429", "tokens": 2872, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367525.566788914, "pid": 2434550, "key": "b0-live-228", "tokens": 1}
+{"event": "completed", "monotonic": 1367551.49971282, "pid": 2434550, "key": "b0-live-482", "tokens": 2795, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367551.511835068, "pid": 2434550, "key": "b0-live-458", "tokens": 1}
+{"event": "completed", "monotonic": 1367573.363307864, "pid": 2434550, "key": "b0-live-228", "tokens": 3012, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367573.378041246, "pid": 2434550, "key": "b0-live-368", "tokens": 1}
+{"event": "completed", "monotonic": 1367592.639295495, "pid": 2434550, "key": "b0-live-458", "tokens": 2531, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367592.654759371, "pid": 2434550, "key": "b0-live-205", "tokens": 1}
+{"event": "completed", "monotonic": 1367614.800387603, "pid": 2434550, "key": "b0-live-368", "tokens": 2585, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367614.814730059, "pid": 2434550, "key": "b0-live-217", "tokens": 1}
+{"event": "completed", "monotonic": 1367639.111627132, "pid": 2434550, "key": "b0-live-205", "tokens": 2918, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367639.125637467, "pid": 2434550, "key": "b0-live-495", "tokens": 1}
+{"event": "completed", "monotonic": 1367662.081377192, "pid": 2434550, "key": "b0-live-217", "tokens": 2981, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367662.095533806, "pid": 2434550, "key": "b0-live-261", "tokens": 1}
+{"event": "completed", "monotonic": 1367680.897155097, "pid": 2434550, "key": "b0-live-495", "tokens": 2668, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367680.910655462, "pid": 2434550, "key": "b0-live-362", "tokens": 1}
+{"event": "completed", "monotonic": 1367727.702062589, "pid": 2434550, "key": "b0-live-261", "tokens": 3644, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 1367737.00711473, "pid": 2434550, "key": "b0-live-362", "tokens": 3066, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 1367737.050713944, "pid": 2434550, "phase": "b1-live", "policy": "live"}
+{"event": "arrival", "monotonic": 1367737.553494755, "pid": 2434550, "key": "b1-live-205", "index": 205, "policy": "live", "budget": 16384, "waiting": [], "pressure_age_s": 0.5475298278033733, "pressure_step": 35603, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367737.559305936, "pid": 2434550, "key": "b1-live-368", "index": 368, "policy": "live", "budget": 16384, "waiting": [], "pressure_age_s": 0.5534905767999589, "pressure_step": 35603, "pressure_valid": true, "fallback": false}
+{"event": "first_token", "monotonic": 1367737.582630261, "pid": 2434550, "key": "b1-live-205", "tokens": 1}
+{"event": "first_token", "monotonic": 1367737.599219688, "pid": 2434550, "key": "b1-live-368", "tokens": 1}
+{"event": "arrival", "monotonic": 1367744.486270219, "pid": 2434550, "key": "b1-live-217", "index": 217, "policy": "live", "budget": 16384, "waiting": [], "pressure_age_s": 0.009357461938634515, "pressure_step": 36038, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.536638246, "pid": 2434550, "key": "b1-live-495", "index": 495, "policy": "live", "budget": 16384, "waiting": ["b1-live-217"], "pressure_age_s": 0.015158690046519041, "pressure_step": 36041, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.586067693, "pid": 2434550, "key": "b1-live-261", "index": 261, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495"], "pressure_age_s": 0.020151697099208832, "pressure_step": 36044, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.635868479, "pid": 2434550, "key": "b1-live-362", "index": 362, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261"], "pressure_age_s": 0.008941028034314513, "pressure_step": 36047, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.685981882, "pid": 2434550, "key": "b1-live-227", "index": 227, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261", "b1-live-362"], "pressure_age_s": 0.014973653014749289, "pressure_step": 36050, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.735483229, "pid": 2434550, "key": "b1-live-452", "index": 452, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261", "b1-live-362", "b1-live-227"], "pressure_age_s": 0.005943640833720565, "pressure_step": 36054, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.785585672, "pid": 2434550, "key": "b1-live-429", "index": 429, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261", "b1-live-362", "b1-live-227", "b1-live-452"], "pressure_age_s": 0.011924165999516845, "pressure_step": 36057, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.835468277, "pid": 2434550, "key": "b1-live-482", "index": 482, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261", "b1-live-362", "b1-live-227", "b1-live-452", "b1-live-429"], "pressure_age_s": 0.0029072859324514866, "pressure_step": 36061, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.885992614, "pid": 2434550, "key": "b1-live-228", "index": 228, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261", "b1-live-362", "b1-live-227", "b1-live-452", "b1-live-429", "b1-live-482"], "pressure_age_s": 0.006950476905331016, "pressure_step": 36064, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1367744.936377977, "pid": 2434550, "key": "b1-live-458", "index": 458, "policy": "live", "budget": 16384, "waiting": ["b1-live-217", "b1-live-495", "b1-live-261", "b1-live-362", "b1-live-227", "b1-live-452", "b1-live-429", "b1-live-482", "b1-live-228"], "pressure_age_s": 0.013136332156136632, "pressure_step": 36067, "pressure_valid": true, "fallback": false}
+{"event": "completed", "monotonic": 1367781.358836299, "pid": 2434550, "key": "b1-live-368", "tokens": 2283, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367781.515688523, "pid": 2434550, "key": "b1-live-217", "tokens": 1}
+{"event": "completed", "monotonic": 1367791.217864099, "pid": 2434550, "key": "b1-live-205", "tokens": 2903, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367791.234806585, "pid": 2434550, "key": "b1-live-495", "tokens": 1}
+{"event": "completed", "monotonic": 1367825.180789033, "pid": 2434550, "key": "b1-live-217", "tokens": 2769, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367825.204086483, "pid": 2434550, "key": "b1-live-261", "tokens": 1}
+{"event": "completed", "monotonic": 1367832.651952372, "pid": 2434550, "key": "b1-live-495", "tokens": 2623, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367832.665399961, "pid": 2434550, "key": "b1-live-362", "tokens": 1}
+{"event": "completed", "monotonic": 1367867.0056561, "pid": 2434550, "key": "b1-live-261", "tokens": 2631, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367867.01970258, "pid": 2434550, "key": "b1-live-227", "tokens": 1}
+{"event": "completed", "monotonic": 1367870.340658208, "pid": 2434550, "key": "b1-live-362", "tokens": 2367, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367870.452705434, "pid": 2434550, "key": "b1-live-452", "tokens": 1}
+{"event": "completed", "monotonic": 1367887.181978019, "pid": 2434550, "key": "b1-live-227", "tokens": 1264, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367887.2063346, "pid": 2434550, "key": "b1-live-429", "tokens": 1}
+{"event": "completed", "monotonic": 1367913.161542987, "pid": 2434550, "key": "b1-live-452", "tokens": 2688, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367913.176544594, "pid": 2434550, "key": "b1-live-482", "tokens": 1}
+{"event": "completed", "monotonic": 1367932.566018764, "pid": 2434550, "key": "b1-live-429", "tokens": 2846, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367932.579976473, "pid": 2434550, "key": "b1-live-228", "tokens": 1}
+{"event": "completed", "monotonic": 1367957.893575692, "pid": 2434550, "key": "b1-live-482", "tokens": 2764, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1367957.907509709, "pid": 2434550, "key": "b1-live-458", "tokens": 1}
+{"event": "completed", "monotonic": 1367997.492190816, "pid": 2434550, "key": "b1-live-458", "tokens": 2500, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 1368008.024929301, "pid": 2434550, "key": "b1-live-228", "tokens": 4757, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 1368008.292346494, "pid": 2434550, "phase": "b1-admission", "policy": "admission"}
+{"event": "arrival", "monotonic": 1368008.795635445, "pid": 2434550, "key": "b1-admission-205", "index": 205, "policy": "admission", "budget": 16384, "waiting": [], "pressure_age_s": 0.7722940240055323, "pressure_step": 52155, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368008.886083028, "pid": 2434550, "key": "b1-admission-368", "index": 368, "policy": "admission", "budget": 16384, "waiting": [], "pressure_age_s": 0.8626635998953134, "pressure_step": 52155, "pressure_valid": true, "fallback": false}
+{"event": "first_token", "monotonic": 1368008.902379704, "pid": 2434550, "key": "b1-admission-205", "tokens": 1}
+{"event": "first_token", "monotonic": 1368008.918279406, "pid": 2434550, "key": "b1-admission-368", "tokens": 1}
+{"event": "arrival", "monotonic": 1368015.72798452, "pid": 2434550, "key": "b1-admission-217", "index": 217, "policy": "admission", "budget": 16384, "waiting": [], "pressure_age_s": 0.011328875087201595, "pressure_step": 52590, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368015.779446786, "pid": 2434550, "key": "b1-admission-495", "index": 495, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217"], "pressure_age_s": 0.015164434909820557, "pressure_step": 52593, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368015.828289809, "pid": 2434550, "key": "b1-admission-261", "index": 261, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495"], "pressure_age_s": 0.0052040270529687405, "pressure_step": 52597, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368015.87907457, "pid": 2434550, "key": "b1-admission-362", "index": 362, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261"], "pressure_age_s": 0.010965369874611497, "pressure_step": 52600, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368015.92902488, "pid": 2434550, "key": "b1-admission-227", "index": 227, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261", "b1-admission-362"], "pressure_age_s": 0.014999529113993049, "pressure_step": 52603, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368015.977622542, "pid": 2434550, "key": "b1-admission-452", "index": 452, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261", "b1-admission-362", "b1-admission-227"], "pressure_age_s": 0.00596428313292563, "pressure_step": 52607, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368016.027613465, "pid": 2434550, "key": "b1-admission-429", "index": 429, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261", "b1-admission-362", "b1-admission-227", "b1-admission-452"], "pressure_age_s": 0.004982724087312818, "pressure_step": 52610, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368016.077942915, "pid": 2434550, "key": "b1-admission-482", "index": 482, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261", "b1-admission-362", "b1-admission-227", "b1-admission-452", "b1-admission-429"], "pressure_age_s": 0.008945883950218558, "pressure_step": 52612, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368016.127649472, "pid": 2434550, "key": "b1-admission-228", "index": 228, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261", "b1-admission-362", "b1-admission-227", "b1-admission-452", "b1-admission-429", "b1-admission-482"], "pressure_age_s": 0.014936945866793394, "pressure_step": 52615, "pressure_valid": true, "fallback": false}
+{"event": "arrival", "monotonic": 1368016.177779509, "pid": 2434550, "key": "b1-admission-458", "index": 458, "policy": "admission", "budget": 16384, "waiting": ["b1-admission-217", "b1-admission-495", "b1-admission-261", "b1-admission-362", "b1-admission-227", "b1-admission-452", "b1-admission-429", "b1-admission-482", "b1-admission-228"], "pressure_age_s": 0.005023167002946138, "pressure_step": 52619, "pressure_valid": true, "fallback": false}
+{"event": "completed", "monotonic": 1368045.324452889, "pid": 2434550, "key": "b1-admission-368", "tokens": 2283, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368045.337233098, "pid": 2434550, "key": "b1-admission-217", "tokens": 1}
+{"event": "completed", "monotonic": 1368084.468766977, "pid": 2434550, "key": "b1-admission-205", "tokens": 4757, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368084.515247146, "pid": 2434550, "key": "b1-admission-495", "tokens": 1}
+{"event": "completed", "monotonic": 1368086.268610269, "pid": 2434550, "key": "b1-admission-217", "tokens": 2578, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368086.285133978, "pid": 2434550, "key": "b1-admission-261", "tokens": 1}
+{"event": "completed", "monotonic": 1368124.700480243, "pid": 2434550, "key": "b1-admission-261", "tokens": 2363, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368124.714447785, "pid": 2434550, "key": "b1-admission-362", "tokens": 1}
+{"event": "completed", "monotonic": 1368126.737073873, "pid": 2434550, "key": "b1-admission-495", "tokens": 2596, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368126.751583249, "pid": 2434550, "key": "b1-admission-227", "tokens": 1}
+{"event": "completed", "monotonic": 1368144.412828582, "pid": 2434550, "key": "b1-admission-227", "tokens": 1121, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368144.427387843, "pid": 2434550, "key": "b1-admission-452", "tokens": 1}
+{"event": "completed", "monotonic": 1368161.976136558, "pid": 2434550, "key": "b1-admission-362", "tokens": 2351, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368162.050242683, "pid": 2434550, "key": "b1-admission-429", "tokens": 1}
+{"event": "completed", "monotonic": 1368191.065376598, "pid": 2434550, "key": "b1-admission-452", "tokens": 2814, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368191.104229123, "pid": 2434550, "key": "b1-admission-482", "tokens": 1}
+{"event": "completed", "monotonic": 1368209.830260686, "pid": 2434550, "key": "b1-admission-429", "tokens": 2897, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368209.844078163, "pid": 2434550, "key": "b1-admission-228", "tokens": 1}
+{"event": "completed", "monotonic": 1368233.717933429, "pid": 2434550, "key": "b1-admission-482", "tokens": 2723, "finish_reason": "stop"}
+{"event": "first_token", "monotonic": 1368233.731765668, "pid": 2434550, "key": "b1-admission-458", "tokens": 1}
+{"event": "completed", "monotonic": 1368279.969936425, "pid": 2434550, "key": "b1-admission-458", "tokens": 2893, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 1368295.616121949, "pid": 2434550, "key": "b1-admission-228", "tokens": 5480, "finish_reason": "stop"}

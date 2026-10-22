@@ -1,0 +1,109 @@
+{
+  "arrivals": [
+    {
+      "index": 0,
+      "offset_seconds": 0
+    },
+    {
+      "index": 2,
+      "offset_seconds": 0
+    },
+    {
+      "index": 120,
+      "offset_seconds": 0
+    },
+    {
+      "index": 148,
+      "offset_seconds": 0
+    },
+    {
+      "index": 153,
+      "offset_seconds": 0
+    },
+    {
+      "index": 174,
+      "offset_seconds": 0
+    },
+    {
+      "index": 205,
+      "offset_seconds": 0
+    },
+    {
+      "index": 217,
+      "offset_seconds": 0
+    },
+    {
+      "index": 227,
+      "offset_seconds": 0
+    },
+    {
+      "index": 228,
+      "offset_seconds": 0
+    },
+    {
+      "index": 243,
+      "offset_seconds": 0
+    },
+    {
+      "index": 261,
+      "offset_seconds": 0
+    },
+    {
+      "index": 297,
+      "offset_seconds": 0
+    },
+    {
+      "index": 299,
+      "offset_seconds": 0
+    },
+    {
+      "index": 311,
+      "offset_seconds": 0
+    },
+    {
+      "index": 346,
+      "offset_seconds": 0
+    },
+    {
+      "index": 362,
+      "offset_seconds": 0
+    },
+    {
+      "index": 368,
+      "offset_seconds": 0
+    },
+    {
+      "index": 391,
+      "offset_seconds": 0
+    },
+    {
+      "index": 417,
+      "offset_seconds": 0
+    },
+    {
+      "index": 429,
+      "offset_seconds": 0
+    },
+    {
+      "index": 438,
+      "offset_seconds": 0
+    },
+    {
+      "index": 452,
+      "offset_seconds": 0
+    },
+    {
+      "index": 458,
+      "offset_seconds": 0
+    },
+    {
+      "index": 482,
+      "offset_seconds": 0
+    },
+    {
+      "index": 495,
+      "offset_seconds": 0
+    }
+  ],
+  "arrival_snapshot_max_age_s": 2.0
+}

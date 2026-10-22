@@ -1,0 +1,8 @@
+{
+  "full_jsonl_sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+  "normalization": "Collapse whitespace and trim; compare SHA-256 of problem text without inspecting answers",
+  "selected_unique_prompts": 24,
+  "selected_vs_development_exact_overlap": 0,
+  "selected_pairwise_exact_duplicates": 0,
+  "scope": "Exact normalized prompt overlap only; semantic similarity and pretraining exposure are not established"
+}

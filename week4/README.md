@@ -2,14 +2,16 @@
 
 This week asks whether updating a running request's thinking budget helps more answers finish correctly on time than choosing the budget once, at admission.
 
-The implementation and results are in [step1/](step1/README.md). The GPU gate passed **176 checks**. In the controlled development comparison, live updates produced **12/24 correct-on-time answers**, compared with **8/24 for admission-only**. These are two replays of the same 12 exposed questions; the [report](step1/controlled-comparison/REPORT.md) explains what we can and cannot conclude.
+The completed development implementation and results are in [step1/](step1/README.md). The GPU gate passed **176 checks**. In the controlled development comparison, live updates produced **12/24 correct-on-time answers**, compared with **8/24 for admission-only**. These are two replays of the same 12 exposed questions; the [report](step1/controlled-comparison/REPORT.md) explains what we can and cannot conclude.
 
 ## Picking up the work
 
-The [handoff](HANDOFF.md) summarizes what is finished, what was checked, and a suggested next step. No jobs are active. The next research question is whether the benefit holds on reserved questions and other traffic patterns, after checking which questions have already been exposed.
+The [handoff](HANDOFF.md) summarizes what is finished, what was checked, and a suggested next step. The [5B staged campaign](reserved-validation/README.md) is now submitted, with safe serial continuation and CPU grading after all stages. [The new 5A/6A planning notes](evaluation-plan/README.md) cover the exposure audit, frozen validation design, closest-method review, and feasibility of deadline-aware coordination.
 
 Useful starting points:
 
+- [5B staged execution](reserved-validation/README.md)
+- [5A evaluation and 6A research plans](evaluation-plan/README.md)
 - [Step 1 overview and reproduction commands](step1/README.md)
 - [Controlled comparison report](step1/controlled-comparison/REPORT.md)
 - [Admission boundary and GPU validation](step1/admission-control/README.md)

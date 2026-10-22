@@ -1,0 +1,24 @@
+{
+  "audit_source_sha256": "62a963628284f1935b36c7ad584030b0b850b64d0c3722968121df88f5207379",
+  "calibration_requests": 12,
+  "candidate_lock_sha256": "4706e99166ac818b3c3a153caeaf7793c602522f1eb5b86a68f55cbbb53cf9b2",
+  "candidate_unchanged": true,
+  "comparison_jobs": 6,
+  "generated_unique_questions": 100,
+  "implementation_gaps": [
+    "Pinned full-dataset input manifest",
+    "5B runner supporting cohort shards and trace rules",
+    "Planning-plan hash recorded by runner",
+    "Upstream contract audit before any 6C runs"
+  ],
+  "measured_outcomes": 288,
+  "passed": true,
+  "plan_sha256": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+  "provisional_reserve": 400,
+  "repeat_is_not_independence": true,
+  "scope": "Offline planning checks; no GPU inference or upstream runtime integration",
+  "selected_unique_questions": 24,
+  "selection_disjoint": true,
+  "source_lock_verified": true,
+  "three_trace_rules_materialized": true
+}

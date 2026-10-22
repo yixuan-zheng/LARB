@@ -1,0 +1,64 @@
+{
+  "checked": "2026-10-22",
+  "scope": "Targeted capability and reproduction review, not exhaustive novelty clearance",
+  "sources": [
+    {
+      "id": "laser",
+      "title": "LASER: Load-Aware Serving with Early-Exit for Reasoning LLMs at the Edge",
+      "url": "https://arxiv.org/html/2606.31580v1",
+      "version": "v1, 2026-06-30",
+      "inspected": "Sections 3\u20135, Algorithm 1, equations 5\u20138; full HTML",
+      "code": "No verified official code located in inspected paper or targeted title/ID search; absence not established",
+      "access": "public"
+    },
+    {
+      "id": "dynasor-paper",
+      "title": "Efficiently Scaling LLM Reasoning with Certaindex",
+      "url": "https://arxiv.org/html/2412.20993v2",
+      "version": "v2, 2025-05-27",
+      "inspected": "Sections 2\u20134 and Appendix D (program/runtime, calibration, gang/SJF scheduling)",
+      "access": "public"
+    },
+    {
+      "id": "dynasor-code",
+      "title": "Dynasor public implementation",
+      "url": "https://github.com/hao-ai-lab/Dynasor/tree/0d2f1b93a60e031cfc7fb43843d2b736b225960c",
+      "version": "0d2f1b93a60e031cfc7fb43843d2b736b225960c",
+      "inspected": [
+        "README.md",
+        "pyproject.toml",
+        "dynasor/cli/vllm_server.py",
+        "dynasor/cli/openai_server.py",
+        "dynasor/core/entropy.py"
+      ],
+      "access": "public; MIT; no vendored implementation",
+      "runtime_verified": false
+    },
+    {
+      "id": "acer",
+      "title": "Controlling Inference-Time Compute for SLO-Aware Early Exit in Reasoning Model Serving",
+      "url": "https://theses-dissertations.princeton.edu/entities/publication/2d46f9cc-4422-4d22-aa42-2e80ebd5b46f",
+      "version": "2026-04-11",
+      "inspected": "Public abstract and landing-page download metadata only",
+      "access": "Landing page labels thesis PDF restricted; public download unavailable through browser tool. No access restriction bypass attempted.",
+      "code": "No verified official code found by targeted title/author search; algorithm-level review unresolved"
+    },
+    {
+      "id": "slai",
+      "title": "Optimal Scheduling Algorithms for LLM Inference: Theory and Practice",
+      "url": "https://arxiv.org/abs/2508.01002v2",
+      "version": "v2, 2025-12-01",
+      "inspected": "Abstract-level scope check, not full algorithm review",
+      "access": "public"
+    },
+    {
+      "id": "conformal",
+      "title": "Conformal Thinking: Risk Control for Reasoning on a Compute Budget",
+      "url": "https://machinelearning.apple.com/research/conformal-thinking-risk-control",
+      "version": "Research page, July 2026",
+      "inspected": "Official research summary, not proof-level analysis",
+      "code": "https://github.com/xidulu/reasoning_risk_control/",
+      "access": "public"
+    }
+  ]
+}

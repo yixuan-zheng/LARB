@@ -1,0 +1,82 @@
+[
+  {
+    "key": "b0-admission-228",
+    "index": 228,
+    "block": 0,
+    "policy": "admission",
+    "initial_budget": 2048,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "cap": null,
+    "close_index": 2060,
+    "cue_start": 2048,
+    "queue_seconds": 54.16151716094464,
+    "record_sha256": "a679b46a5542dd23e467ce2e16cb9bea49de79164bfccb3577a03b217e716291",
+    "shard": 0,
+    "condition": "late_burst",
+    "finish": "normal",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "288*pi",
+        "288 \\pi"
+      ],
+      "pred_parse": [
+        "asphereofradius6centeredattheorigin",
+        "\\text{A sphere of radius 6 centered at the origin}"
+      ]
+    },
+    "extracted_answer": "\\text{A sphere of radius 6 centered at the origin}",
+    "reference": "288 \\pi",
+    "client_completion_seconds": 106.71674479381181,
+    "injection_lag_ms": 0.32192980870604515,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 3253,
+    "answer_tokens": 1191,
+    "completed_correct": false,
+    "correct_on_time": false
+  },
+  {
+    "key": "b1-live-217",
+    "index": 217,
+    "block": 1,
+    "policy": "live",
+    "initial_budget": 2048,
+    "live_reduction": false,
+    "binding_live_cutoff": false,
+    "cap": null,
+    "close_index": 2060,
+    "cue_start": 2048,
+    "queue_seconds": 36.854362096171826,
+    "record_sha256": "dc8a5aa6ce6ee7c49a96531aa5a2816a13869babd33a781bc2934f2e6f1d1b48",
+    "shard": 0,
+    "condition": "late_burst",
+    "finish": "normal",
+    "grading": {
+      "correct": false,
+      "method": "math_verify",
+      "issue": null,
+      "gold_parse": [
+        "11111111100",
+        "11,111,111,100"
+      ],
+      "pred_parse": [
+        "10111111100",
+        "10111111100"
+      ]
+    },
+    "extracted_answer": "10111111100",
+    "reference": "11,\\! 111,\\! 111,\\! 100",
+    "client_completion_seconds": 80.69678702903911,
+    "injection_lag_ms": 0.43058907613158226,
+    "thinking_tokens": 2048,
+    "cue_tokens": 14,
+    "output_tokens": 2769,
+    "answer_tokens": 707,
+    "completed_correct": false,
+    "correct_on_time": false
+  }
+]

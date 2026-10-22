@@ -2,3 +2,4 @@
 .DS_Store
 **/__pycache__/
 step1/**/results/job-*/scheduler.jsonl
+reserved-validation/results/job-*/scheduler.jsonl

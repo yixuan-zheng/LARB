@@ -1,0 +1,39 @@
+{
+  "available": [
+    "queue membership and admission",
+    "generated progress",
+    "budget/cue/close events",
+    "same-host final completion",
+    "offline client deadlines"
+  ],
+  "files": {
+    "analysis/cases.json": "7b31182396a9ea60058f460d9b9b412c207862d13fdb735ac8455fdff8cf7350",
+    "service.jsonl": "0e272762d79fd921554c1bd6b2d341257c88090d6c11255e7db687c8040b5e1a",
+    "worker.jsonl": "c2b815a685f4de238855f911861b5997a1b9b71997c8816fe2bc7277d8d4a118"
+  },
+  "interpretation": "Two binding pivots are a feasibility clue, not a predictor training set or counterfactual replay evaluation.",
+  "missing": [
+    "online deadline metadata in the current controller",
+    "online remaining-natural-work predictor",
+    "online answer reserve estimate",
+    "intervention-specific counterfactual",
+    "calibrated quality risk"
+  ],
+  "observations": [
+    {
+      "close_detection_to_server_final_seconds": 9.462510835146531,
+      "cue_to_server_final_seconds": 9.712991139153019,
+      "key": "b0-live-01"
+    },
+    {
+      "close_detection_to_server_final_seconds": 9.42418542294763,
+      "cue_to_server_final_seconds": 9.65809108200483,
+      "key": "b1-live-01"
+    }
+  ],
+  "rescued_unique_problem_indices": [
+    4,
+    5
+  ],
+  "source_root": "week4/step1/controlled-comparison/results/job-6440653"
+}
