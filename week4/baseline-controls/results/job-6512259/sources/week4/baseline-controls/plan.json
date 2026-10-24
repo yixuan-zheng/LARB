@@ -1,0 +1,197 @@
+{
+  "analysis": {
+    "grading": "Unchanged boxed extraction and Math-Verify 0.9.0; invalid/capped/late kept",
+    "bootstrap": "Descriptive paired question-cluster sensitivity only",
+    "primary": "Live minus each fixed policy correct-on-time fraction separately per condition; no single winning-budget selection",
+    "quality": "Report eventual correctness per condition and block; no cross-condition masking or guarantee"
+  },
+  "budget": {
+    "allocation_minutes_per_job": 240,
+    "automatic_retries": 0,
+    "base_ceiling_gpu_hours": 10,
+    "diagnosed_infrastructure_repairs": 0,
+    "driver_minutes": 230,
+    "incomplete": "Keep partial results; no complete-campaign claim. A repaired matched job repeats all four phases, preserving the earlier attempt.",
+    "jobs": 3,
+    "phase_seconds": 2700,
+    "runtime_fit": "Before reserved inference, compare remaining allocation with four times (trace span + 8*S) plus 10 minutes. If it cannot fit, stop with calibration evidence; revise resources without selecting questions by outcomes.",
+    "startup_seconds": 1500,
+    "total_ceiling_with_repair_gpu_hours": 10
+  },
+  "calibration": {
+    "automatic_quality_driven_recalibration": false,
+    "burst": "B=0.25*min(calibration client durations)",
+    "indices": [
+      0,
+      2
+    ],
+    "per_job": true,
+    "policy": "full",
+    "same_hardware_and_engine": true,
+    "unit": "S=max(30,max(client receipt minus scheduled arrival))"
+  },
+  "candidate": "Unchanged admission/live behavior, plus fixed2048 and fixed4096; development only",
+  "conditions": [
+    "gate",
+    "late_burst",
+    "sustained_pressure"
+  ],
+  "date": "2026-10-24",
+  "decision": {
+    "continuation": "Mechanical success only; quality never gates later workloads",
+    "research": "Compare both fixed alternatives independently; all comparisons descriptive development, no tuning"
+  },
+  "engine": {
+    "answer_cap": 2048,
+    "cue": "Unchanged stage3 protocol transition_text; forced tokens additional and timed",
+    "dataset": "HuggingFaceH4/MATH-500",
+    "dataset_revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+    "dtype": "bfloat16",
+    "enable_prefix_caching": false,
+    "enforce_eager": true,
+    "long_budget": 16384,
+    "max_active_sequences": 2,
+    "max_model_len": 24576,
+    "max_num_batched_tokens": 2048,
+    "model": "Qwen/Qwen3-4B",
+    "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "seed": "6222 + pinned dataset index",
+    "short_budget": 2048,
+    "stock_scheduler": true,
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.95,
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "vllm": "0.11.2",
+    "waiting_threshold": 2
+  },
+  "id": "week4-fixed-controls-v1",
+  "orders": [
+    [
+      "fixed2048",
+      "admission",
+      "live",
+      "fixed4096"
+    ],
+    [
+      "fixed4096",
+      "live",
+      "admission",
+      "fixed2048"
+    ]
+  ],
+  "policies": [
+    "admission",
+    "live"
+  ],
+  "primary": {
+    "comparison": "live minus admission",
+    "counts": "48 request outcomes per condition/policy; 24 unique problems, each replayed twice",
+    "endpoint": "Correct normally completed final received by deadline on client clock, from scheduled arrival",
+    "estimand": "Equal-weight mean paired success-fraction difference across late_burst and sustained_pressure; each condition reports its own result",
+    "goodput": "Per job/condition successes divided by 2*H; report each shard rather than pooling different calibrated horizons as one rate"
+  },
+  "sample": {
+    "indices_in_rank_order": [
+      83,
+      12,
+      89,
+      98,
+      28,
+      42,
+      94,
+      76,
+      10,
+      65,
+      1,
+      77
+    ],
+    "shards": [
+      {
+        "shard": 0,
+        "indices": [
+          83,
+          12,
+          89,
+          98,
+          28,
+          42,
+          94,
+          76,
+          10,
+          65,
+          1,
+          77
+        ],
+        "block_positions": [
+          [
+            83,
+            12,
+            89,
+            98,
+            28,
+            42,
+            94,
+            76,
+            10,
+            65,
+            1,
+            77
+          ],
+          [
+            94,
+            76,
+            10,
+            65,
+            1,
+            77,
+            83,
+            12,
+            89,
+            98,
+            28,
+            42
+          ]
+        ]
+      },
+      {
+        "shard": 1,
+        "indices": [
+          1,
+          4,
+          5
+        ],
+        "block_positions": [
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            5,
+            1,
+            4
+          ]
+        ]
+      }
+    ],
+    "note": "Only previously exposed indices 0\u201399; gate uses known development long example 1, no outcome selection of comparison cohort"
+  },
+  "scope": {
+    "closest_method": "Separate 6B/6C plan and budget; not silently added after seeing these outcomes",
+    "full_arrival_context": "Existing development comparison only; no new matched held-out claim for these modes",
+    "no_gpu_in_this_stage": true,
+    "no_new_controller": true,
+    "reservation": "Selected 24 become exposed on any generation; new-controller development uses 0..99 only. Remaining 376 provisional reserve stays separate."
+  },
+  "status": "Planning frozen before any reserved inference; runtime/input manifest pending 5B",
+  "traffic": {
+    "horizon": "H=max(offset+relative deadline), fixed per job/condition for all policies and blocks",
+    "injection": "Open loop; late requests drain; no policy observes future arrivals",
+    "late_burst": "offset(0)=offset(1)=0; offset(i>=2)=B+0.05*(i-2)",
+    "low_load": "offset(i)=2*S*i",
+    "relative_deadline": "2*S for every request",
+    "sustained_pressure": "offset(i)=0.3*S*i"
+  }
+}

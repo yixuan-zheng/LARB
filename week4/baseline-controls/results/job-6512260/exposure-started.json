@@ -1,0 +1,19 @@
+{
+  "shard": 0,
+  "condition": "sustained_pressure",
+  "indices": [
+    83,
+    12,
+    89,
+    98,
+    28,
+    42,
+    94,
+    76,
+    10,
+    65,
+    1,
+    77
+  ],
+  "note": "Exposed development only"
+}

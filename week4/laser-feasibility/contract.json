@@ -1,0 +1,116 @@
+{
+  "status": "CPU reference and interface design complete; serving adaptation not integrated or benchmarked",
+  "candidate": "Retain unchanged Week 4 LARB controller and 5C evidence",
+  "method_name": "LASER-informed ATP replay adaptation (provisional); not a faithful full-system reproduction",
+  "parameters": {
+    "paper": {
+      "target": 10,
+      "base": 0.95,
+      "beta": 0.04,
+      "gamma": 1.0,
+      "alpha": 0.3,
+      "lower": 0.88,
+      "upper": 0.97,
+      "base_chunks": 10,
+      "min_chunks": 2,
+      "prompt_min": 50,
+      "prompt_max": 275,
+      "difficulty_min": 0.6,
+      "difficulty_max": 1.5
+    },
+    "capacity_variant": {
+      "target": 1,
+      "status": "proposed capacity adaptation, not outcome-tuned or frozen for 6C"
+    },
+    "reset": "one global EMA initialized to zero for each drained policy phase; one ordered update per ATP evaluation, not per decoded token or per auxiliary sequence"
+  },
+  "atp": {
+    "primary": "DEER(W): case-sensitive decoded stop string Wait; no union with Alternatively, no entropy detector",
+    "token_boundary": "Backend must align the first complete marker to token IDs, handle split stream chunks, suppress duplicate detection, and preserve the original token prefix; not implemented in a serving backend",
+    "probe_prefix": "Snapshot before ATP marker plus inducer; rejected probe restores the exact original token IDs including marker. Accepted probe transitions from the checkpoint to finalization. Any discarded suffix is charged.",
+    "inducer": "\n**Final Answer**\n\\boxed",
+    "cadence": "At ATPs only; no fixed token interval disguised as an ATP",
+    "fallback": "No marker: ordinary reasoning until natural close or common hard cap; log absence"
+  },
+  "confidence": {
+    "definition": "exp(mean(raw top-1 log probability per scored position))",
+    "provenance": "DEER Eq.4 supplies a concrete option absent from LASER details; it is a declared inherited/adapted choice",
+    "sampling": "Proposed probes: temperature=0, top_p=1, top_k=-1, logprobs=1; unmodified parent sampling remains 0.6/0.95/20. Record raw_logprobs mode.",
+    "mask": "All newly generated trial tokens including braces/formatting except terminal EOS/think-close; no prompt tokens. Different masking from public helper is explicit.",
+    "validity": "Complete nonempty balanced boxed trial answer, normal terminal result, aligned token/logprob lengths; length cap, missing rank1, malformed/nonfinite data produce no confidence exit.",
+    "comparison": "Strict score > threshold; equality continues; confidence estimates self-certainty rather than correctness",
+    "consistency": "No Dynasor sliding stability window or reference-answer access; contradictory high-confidence probes are possible and are not hidden"
+  },
+  "limits": {
+    "proposed_probe_tokens": 64,
+    "proposed_max_probes": 15,
+    "auxiliary_decode_ceiling": 960,
+    "main_thinking_tokens": 16384,
+    "final_answer_tokens": 2048,
+    "context_tokens": 24576,
+    "global_model_sequences": 2,
+    "status": "draft safety envelope; not an authorized GPU configuration",
+    "budget_units": "variable-length ATP chunks; no fixed chunk-to-token conversion; independent token safety cap, cue, and answer reserve",
+    "paper_difference": "LASER setup uses total generation 16384 and Qwen think_ratio .8; matching our existing caps is a disclosed adaptation"
+  },
+  "early_exit": {
+    "positive": "Complete cue/think-close then regenerate final answer from retained reasoning; trial answer is not a scored final",
+    "negative": "Discard all probe tokens and continue exact saved reasoning prefix; a new request ID/RNG stream cannot preserve the original ongoing RNG state through replay",
+    "budget": "Final allowed chunk still pays its probe before forced finalization, unless natural closure or hard token safety cap takes precedence",
+    "identity": "phase/parent/probe sequence + immutable prefix identity; late/foreign/cancelled results rejected; drain before phase changes"
+  },
+  "runtime": {
+    "available": "AsyncLLM.generate, abort, token prompts, logprobs=1, public request IDs",
+    "missing": "No public per-request KV fork/pause/resume in inspected AsyncLLM; global sleep is not a request-level branch interface",
+    "preferred_eventual_backend": "Native per-request checkpoint/fork and rollback with bounded memory, auxiliary calls charged to shared capacity; new runtime engineering and gate needed",
+    "bounded_prototype": "Serial stop/resubmit with exact token-ID replay through the same engine; cache off initial diagnostic, no hidden second engine. It pays recomputation and changes scheduling/RNG, so report as an adaptation.",
+    "scheduling_gate": "All auxiliary calls obey global max_num_seqs=2 and stock scheduling. Never run engine calls in the logits processor. No waiting parent may hold a semaphore that a child probe needs. Measure re-entry order and active count semantics before comparison.",
+    "load_gate": "Paper active count excludes auxiliary probes and waiting requests. A replay backend must define/check logical versus physical active count; cannot silently count probes as load or substitute queue length.",
+    "cache": "Prefix cache is not branch rollback or RNG restore. If enabled, rerun all arms under the same setting and reset/drain phases; report computed prefill and cache occupancy, not just submitted prefix length."
+  },
+  "costs": {
+    "per_call": [
+      "phase",
+      "parent_id",
+      "child_id",
+      "kind",
+      "queued_at",
+      "start",
+      "end",
+      "submitted_prompt_tokens",
+      "computed_prefill_tokens",
+      "cached_tokens",
+      "decoded_tokens",
+      "discarded_tokens",
+      "abort_tail_tokens",
+      "finish_reason",
+      "controller_cpu_ns"
+    ],
+    "per_request": [
+      "scheduled_arrival",
+      "terminal_client_receipt",
+      "reason/cue/final tokens",
+      "probe_count",
+      "total_auxiliary_decode",
+      "cache_block_peak",
+      "context_cap",
+      "all_failure_reasons"
+    ],
+    "end_to_end": "Client scheduled-arrival to final terminal receipt includes queue, every probe, replay, transition, final answer, and drain; summed call time is not parallel wall latency.",
+    "computation": "Report main/auxiliary tokens and actual computed prefill separately; include repeated prefixes, discarded trial output, cancellation tail, and calibration. FLOPs require a declared model estimator, not a claim that each token costs equally.",
+    "failure_policy": "Invalid/missing counters fail the cost-complete gate; cap/error outcomes stay in denominator; no free retries or accuracy-conditioned replacement"
+  },
+  "calibration": {
+    "allowed_indices": "0\u201399 only; no dataset examples generated in 6B",
+    "forbidden": "No tuning on the 24 consumed 5B questions; preserve remaining 376 provisionally unused",
+    "comparison": "Fresh matched cache/runtime campaign; never pool baseline numbers with old cache-disabled LARB results"
+  },
+  "remaining_gates": [
+    "Tokenizer offset/span mapping and actual boxed-trial extraction",
+    "Serving orchestration with immutable rollback, cancellation, output and cost logging",
+    "Exact active-load semantics and starvation/deadlock checks under two occupied slots",
+    "Small separately approved exposed-only GPU mechanics/cost gate",
+    "Development-only confidence/probe-limit calibration; freeze adaptations and equal calibration budgets",
+    "Fresh matched 6C plan, workload, quality screen and compute ceiling before inference"
+  ]
+}

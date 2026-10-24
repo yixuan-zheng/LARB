@@ -1,0 +1,193 @@
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 1,
+  "condition": "gate",
+  "unique_questions": 3,
+  "measured_outcomes": 24,
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 6,
+      "correct_on_time": 6,
+      "completed_correct": 6,
+      "correct_on_time_per_minute": 1.7531739084758817,
+      "observation_horizon_seconds": 205.34186497959308,
+      "median_client_seconds": 45.790646279929206,
+      "p95_client_seconds": 73.94100797874853,
+      "mean_queue_seconds": 11.826644307506891,
+      "median_queue_seconds": 0.0268203339073807,
+      "terminal_receipts": 6,
+      "normal_completions": 6,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 12288,
+      "cue_tokens": 84,
+      "output_tokens": 15543,
+      "token_accounting_complete": true,
+      "answer_tokens": 3171
+    },
+    {
+      "policy": "fixed4096",
+      "n": 6,
+      "correct_on_time": 4,
+      "completed_correct": 6,
+      "correct_on_time_per_minute": 1.168782605650588,
+      "observation_horizon_seconds": 205.34186497959308,
+      "median_client_seconds": 79.26999611395877,
+      "p95_client_seconds": 117.62692958605476,
+      "mean_queue_seconds": 18.284534462999243,
+      "median_queue_seconds": 0.025954825920052826,
+      "terminal_receipts": 6,
+      "normal_completions": 6,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 21477,
+      "cue_tokens": 42,
+      "output_tokens": 24578,
+      "token_accounting_complete": true,
+      "answer_tokens": 3056
+    },
+    {
+      "policy": "admission",
+      "n": 6,
+      "correct_on_time": 3,
+      "completed_correct": 6,
+      "correct_on_time_per_minute": 0.8765869542379409,
+      "observation_horizon_seconds": 205.34186497959308,
+      "median_client_seconds": 102.69898919202387,
+      "p95_client_seconds": 117.00056848907843,
+      "mean_queue_seconds": 18.481997614726424,
+      "median_queue_seconds": 0.05137817154172808,
+      "terminal_receipts": 6,
+      "normal_completions": 6,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26274,
+      "cue_tokens": 0,
+      "output_tokens": 29386,
+      "token_accounting_complete": true,
+      "answer_tokens": 3106
+    },
+    {
+      "policy": "live",
+      "n": 6,
+      "correct_on_time": 3,
+      "completed_correct": 6,
+      "correct_on_time_per_minute": 0.8765869542379409,
+      "observation_horizon_seconds": 205.34186497959308,
+      "median_client_seconds": 105.34023833239917,
+      "p95_client_seconds": 121.57537748478353,
+      "mean_queue_seconds": 18.90778271399904,
+      "median_queue_seconds": 0.17979804403148592,
+      "terminal_receipts": 6,
+      "normal_completions": 6,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26274,
+      "cue_tokens": 0,
+      "output_tokens": 29386,
+      "token_accounting_complete": true,
+      "answer_tokens": 3106
+    }
+  ],
+  "paired": [
+    {
+      "block": 0,
+      "index": 1,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-001",
+      "live_key": "b0-live-001",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 4,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-004",
+      "live_key": "b0-live-004",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 5,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-005",
+      "live_key": "b0-live-005",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 1,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-001",
+      "live_key": "b1-live-001",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 4,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-004",
+      "live_key": "b1-live-004",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 5,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-005",
+      "live_key": "b1-live-005",
+      "initial_budget_match": true
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 1,
+    "condition": "gate",
+    "requests": 26,
+    "measured_requests": 24,
+    "live_reductions": 0,
+    "binding_live_cutoffs": 0,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-fixed2048": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b0-fixed4096": true,
+      "b1-fixed4096": true,
+      "b1-live": true,
+      "b1-admission": true,
+      "b1-fixed2048": true
+    },
+    "paired_initial_budget_matches": 6,
+    "paired_initial_budget_total": 6,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "7e3cae83eb3cb49fbf54ba3dc042280e6e269d60b9fdb8d557643ece4f77831e",
+    "trace.json": "183e49781813e649179f242aaeb89c73957ce1d10659d25802fca3ad238f2f64",
+    "manifest.json": "0b7c7f28884df7d1516624b7aa7d6c0f89ac333507307b65e897746d979c7a6e"
+  },
+  "analysis_sources": {
+    "week4/baseline-controls/analyze.py": "7d732461ddbd19fa8ff9af5a6e018ccbd3318d1d290a78605aaddcdfb30ff298",
+    "week4/baseline-controls/validate.py": "48f0dabd12f67add33add6572c5837c6511aeadd4ef9847a9498dcc68f505171",
+    "week3/larb/code/grade_stage3.py": "75fca15b0f3c341e52d4374dc71568183e77817d63c933578657704de85ef530",
+    "week3/larb/code/baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

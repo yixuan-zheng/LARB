@@ -1,0 +1,130 @@
+{
+  "shard": 0,
+  "condition": "late_burst",
+  "arrivals_by_block": [
+    [
+      {
+        "index": 83,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 12,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 89,
+        "offset_seconds": 6.776507984264754
+      },
+      {
+        "index": 98,
+        "offset_seconds": 6.826507984264754
+      },
+      {
+        "index": 28,
+        "offset_seconds": 6.876507984264753
+      },
+      {
+        "index": 42,
+        "offset_seconds": 6.926507984264754
+      },
+      {
+        "index": 94,
+        "offset_seconds": 6.976507984264754
+      },
+      {
+        "index": 76,
+        "offset_seconds": 7.026507984264754
+      },
+      {
+        "index": 10,
+        "offset_seconds": 7.076507984264754
+      },
+      {
+        "index": 65,
+        "offset_seconds": 7.126507984264753
+      },
+      {
+        "index": 1,
+        "offset_seconds": 7.176507984264754
+      },
+      {
+        "index": 77,
+        "offset_seconds": 7.226507984264754
+      }
+    ],
+    [
+      {
+        "index": 94,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 76,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 10,
+        "offset_seconds": 6.776507984264754
+      },
+      {
+        "index": 65,
+        "offset_seconds": 6.826507984264754
+      },
+      {
+        "index": 1,
+        "offset_seconds": 6.876507984264753
+      },
+      {
+        "index": 77,
+        "offset_seconds": 6.926507984264754
+      },
+      {
+        "index": 83,
+        "offset_seconds": 6.976507984264754
+      },
+      {
+        "index": 12,
+        "offset_seconds": 7.026507984264754
+      },
+      {
+        "index": 89,
+        "offset_seconds": 7.076507984264754
+      },
+      {
+        "index": 98,
+        "offset_seconds": 7.126507984264753
+      },
+      {
+        "index": 28,
+        "offset_seconds": 7.176507984264754
+      },
+      {
+        "index": 42,
+        "offset_seconds": 7.226507984264754
+      }
+    ]
+  ],
+  "relative_deadline_seconds": 96.89323698217049,
+  "observation_horizon_seconds": 104.11974496643525,
+  "calibration_latencies_seconds": [
+    27.106031937059015,
+    48.446618491085246
+  ],
+  "unit_seconds": 48.446618491085246,
+  "burst_at_seconds": 6.776507984264754,
+  "orders": [
+    [
+      "fixed2048",
+      "admission",
+      "live",
+      "fixed4096"
+    ],
+    [
+      "fixed4096",
+      "live",
+      "admission",
+      "fixed2048"
+    ]
+  ],
+  "frozen_monotonic": 1489737.624367045,
+  "clock_domain": "client.monotonic"
+}

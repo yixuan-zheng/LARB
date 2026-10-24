@@ -16,6 +16,8 @@ import json
 import subprocess
 import sys
 root=Path.cwd()
+metrics=root/'week4/step1/controlled-comparison/metrics.py'
+assert metrics.is_file(), 'Deploy the tracked controlled-comparison/metrics.py before CPU grading'
 ledger=json.loads((root/'week4/reserved-validation/campaign.json').read_text())
 assert len(ledger['jobs'])==6
 runs=[root/'week4/reserved-validation/results'/('job-'+job['job']) for job in ledger['jobs']]

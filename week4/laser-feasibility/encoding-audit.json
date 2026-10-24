@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "mode": "CPU tokenizer only; synthetic strings, no dataset and no model weights loaded",
+  "encodings": {
+    "marker": [
+      14190
+    ],
+    "alternative_marker": [
+      92014
+    ],
+    "probe_inducer": [
+      198,
+      334,
+      19357,
+      21806,
+      1019,
+      59,
+      79075
+    ],
+    "close": [
+      151668
+    ],
+    "eos": [
+      151645
+    ]
+  },
+  "files": {
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+  },
+  "close_count_in_inducer": 0
+}

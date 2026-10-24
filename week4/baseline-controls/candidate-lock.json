@@ -1,0 +1,14 @@
+{
+  "base_commit": "18caa0f98a19b368f30e227510c5fe368247d7ff",
+  "files": {
+    "week3/larb/burst-policy/adapter.py": "13305356b1ada2741bd48899a36cea398a46d21b5deb8fbe210b8e418c9db473",
+    "week3/larb/burst-policy/policy.py": "daad24eaf79e8a8ff94e5667b461bb17f3a9d44bd02bafadc63f8852a2290bee",
+    "week3/larb/code/baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532",
+    "week3/larb/code/grade_stage3.py": "75fca15b0f3c341e52d4374dc71568183e77817d63c933578657704de85ef530",
+    "week3/larb/serving-proof/control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd",
+    "week4/step1/admission-control/bootstrap.py": "447f231f43d002d01db96664bad1fb6603a00c94aadd085c50064b0894edd2a6",
+    "week4/step1/admission-control/w4_adapter.py": "9c33ba063f14e9d5242806039f6345b7ad70c0c3c41e2f71f334d0edd1a47364",
+    "week4/step1/admission-control/w4_policy.py": "d59c6491dd2955ea2878a3833ecab9f28f7063833be10a5431bfd4791bdc2c48",
+    "week4/step1/admission-control/w4_server.py": "7f175b7bff4e3a2d205853c5c08716ba15e115c33823a1d65eee0a7624044c86"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "vllm": "0.11.2",
+  "verification": "CPU-only distribution metadata, file hashes and AST; no vLLM imports or engine construction",
+  "files": {
+    "v1/engine/async_llm.py": {
+      "sha256": "f50e373fa58e6d5950c046bdc0f37b32237067b87b096a4cced5f8181bcec8d3",
+      "classes": {
+        "AsyncLLM": [
+          "__init__",
+          "from_vllm_config",
+          "from_engine_args",
+          "__del__",
+          "shutdown",
+          "get_supported_tasks",
+          "add_request",
+          "_add_request",
+          "generate",
+          "_run_output_handler",
+          "abort",
+          "encode",
+          "tokenizer",
+          "tokenizer",
+          "get_tokenizer",
+          "is_tracing_enabled",
+          "do_log_stats",
+          "check_health",
+          "start_profile",
+          "stop_profile",
+          "reset_mm_cache",
+          "reset_prefix_cache",
+          "sleep",
+          "wake_up",
+          "is_sleeping",
+          "add_lora",
+          "remove_lora",
+          "list_loras",
+          "pin_lora",
+          "collective_rpc",
+          "wait_for_requests_to_drain",
+          "scale_elastic_ep",
+          "is_running",
+          "is_stopped",
+          "errored",
+          "dead_error"
+        ]
+      }
+    },
+    "sampling_params.py": {
+      "sha256": "4816075ad7ede6eeca33ab6b155df3f015998157522a18e65e4c0bcb4d99c4ed",
+      "classes": {
+        "SamplingType": [],
+        "StructuredOutputsParams": [
+          "__post_init__",
+          "all_constraints_none",
+          "all_non_structural_tag_constraints_none"
+        ],
+        "GuidedDecodingParams": [
+          "__post_init__"
+        ],
+        "RequestOutputKind": [],
+        "SamplingParams": [
+          "from_optional",
+          "__post_init__",
+          "_verify_args",
+          "_verify_greedy_sampling",
+          "update_from_generation_config",
+          "update_from_tokenizer",
+          "sampling_type",
+          "all_stop_token_ids",
+          "bad_words_token_ids",
+          "clone",
+          "__repr__"
+        ],
+        "BeamSearchParams": []
+      }
+    },
+    "v1/sample/sampler.py": {
+      "sha256": "1456816aff98297202c09a0809b0103871369b122691cf8621c97af1b5a82ff9",
+      "classes": {
+        "Sampler": [
+          "__init__",
+          "forward",
+          "apply_temperature",
+          "greedy_sample",
+          "sample",
+          "compute_logprobs",
+          "gather_logprobs",
+          "_combine_outputs_with_spec_tokens",
+          "apply_logits_processors",
+          "apply_penalties"
+        ]
+      }
+    },
+    "v1/engine/logprobs.py": {
+      "sha256": "8a64646a46f0cc23a1c19bb7bf1902fd142f1ecbf7bc298a490996e1b43f5916",
+      "classes": {
+        "LogprobsProcessor": [
+          "from_new_request",
+          "_update_sample_logprobs",
+          "_update_prompt_logprobs",
+          "pop_prompt_logprobs",
+          "update_from_output"
+        ]
+      }
+    },
+    "logprobs.py": {
+      "sha256": "257de56b48a8b751c6feb9df77f42c3fb0b5004fafb8015c0fb121f293de25a6",
+      "classes": {
+        "Logprob": [],
+        "FlatLogprobs": [
+          "append",
+          "append_fast",
+          "extend",
+          "__len__",
+          "__getitem__",
+          "__getitem__",
+          "__getitem__",
+          "__setitem__",
+          "__delitem__",
+          "insert",
+          "__iter__"
+        ]
+      }
+    }
+  }
+}

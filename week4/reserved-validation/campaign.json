@@ -1,6 +1,6 @@
 {
   "plan": "week4-5A-v1",
-  "status": "running",
+  "status": "complete_and_assessed",
   "order": [
     {
       "shard": 0,
@@ -57,36 +57,48 @@
       "job": "6481976",
       "shard": 0,
       "condition": "low_load",
-      "status": "running",
+      "status": "complete",
       "allocation_ceiling_minutes": 240,
-      "dependency_afterok": "6481975"
+      "dependency_afterok": "6481975",
+      "elapsed_seconds": 4814,
+      "exit_code": "0:0",
+      "mechanical_validation_passed": true
     },
     {
       "stage": 4,
       "job": "6481977",
       "shard": 1,
       "condition": "late_burst",
-      "status": "pending",
+      "status": "complete",
       "allocation_ceiling_minutes": 240,
-      "dependency_afterok": "6481976"
+      "dependency_afterok": "6481976",
+      "elapsed_seconds": 1684,
+      "exit_code": "0:0",
+      "mechanical_validation_passed": true
     },
     {
       "stage": 5,
       "job": "6481978",
       "shard": 1,
       "condition": "sustained_pressure",
-      "status": "pending",
+      "status": "complete",
       "allocation_ceiling_minutes": 240,
-      "dependency_afterok": "6481977"
+      "dependency_afterok": "6481977",
+      "elapsed_seconds": 1743,
+      "exit_code": "0:0",
+      "mechanical_validation_passed": true
     },
     {
       "stage": 6,
       "job": "6481979",
       "shard": 1,
       "condition": "low_load",
-      "status": "pending",
+      "status": "complete",
       "allocation_ceiling_minutes": 240,
-      "dependency_afterok": "6481978"
+      "dependency_afterok": "6481978",
+      "elapsed_seconds": 7198,
+      "exit_code": "0:0",
+      "mechanical_validation_passed": true
     }
   ],
   "base_allocation_ceiling_gpu_hours": 24,
@@ -96,11 +108,23 @@
   "max_simultaneous_gpus": 1,
   "gate": "Slurm afterok: each predecessor must exit successfully after its mechanical audit and lossless archive; kill invalid downstream dependencies",
   "postprocessing": {
-    "job": "6482012",
-    "dependency_afterok": "6481979",
+    "job": "6502005",
+    "dependency_afterok": null,
     "resources": "CPU only, 2 cores, 16 GB, 30-minute ceiling",
     "grader": "Math-Verify 0.9.0 in an isolated analysis target; serving environment unchanged",
-    "status": "submitted"
+    "status": "complete",
+    "elapsed_seconds": 56,
+    "exit_code": "0:0",
+    "original_attempt": {
+      "job": "6482012",
+      "status": "failed",
+      "elapsed_seconds": 3,
+      "exit_code": "1:0",
+      "reason": "Missing unchanged tracked metrics module in CPU deployment"
+    },
+    "reproduction": "analysis/postprocessing.json"
   },
-  "allocated_gpu_seconds_completed": 3081
+  "allocated_gpu_seconds_completed": 18520,
+  "assessment": "REPORT.md",
+  "automatic_gpu_retries": 0
 }

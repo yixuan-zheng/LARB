@@ -1,0 +1,31 @@
+{
+  "tests_run": 21,
+  "failures": 0,
+  "python": "3.11.5",
+  "gpu_allocations": 0,
+  "model_generation_calls": 0,
+  "dataset_questions_read": 0,
+  "controller_files_unchanged": {
+    "week4/step1/admission-control/w4_policy.py": "d59c6491dd2955ea2878a3833ecab9f28f7063833be10a5431bfd4791bdc2c48",
+    "week4/step1/admission-control/w4_adapter.py": "9c33ba063f14e9d5242806039f6345b7ad70c0c3c41e2f71f334d0edd1a47364",
+    "week4/step1/admission-control/w4_server.py": "7f175b7bff4e3a2d205853c5c08716ba15e115c33823a1d65eee0a7624044c86"
+  },
+  "microbenchmark": {
+    "iterations": 5000,
+    "operation": "budget + one global EMA/threshold update + 20-position confidence; synthetic scalar data only",
+    "median_microseconds": 3.25,
+    "p95_microseconds": 3.375,
+    "limitation": "Local CPU microbenchmark only; excludes tokenizer, IPC, serialization, GPU synchronization, probing, replay, and serving overhead."
+  },
+  "synthetic_accounting_example": {
+    "description": "Four fabricated sequential calls, including one discarded probe; no inference was performed",
+    "totals": {
+      "calls": 4,
+      "prompt_tokens": 4000,
+      "computed_prefill_tokens": 4000,
+      "cached_tokens": 0,
+      "decoded_tokens": 80,
+      "discarded_tokens": 20
+    }
+  }
+}

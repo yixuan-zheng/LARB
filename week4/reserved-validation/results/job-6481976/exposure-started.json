@@ -1,0 +1,20 @@
+{
+  "shard": 0,
+  "condition": "low_load",
+  "indices": [
+    227,
+    452,
+    429,
+    482,
+    228,
+    458,
+    368,
+    205,
+    217,
+    495,
+    261,
+    362
+  ],
+  "first_measured_phase": "b0-admission",
+  "note": "Reserved cohort considered exposed from first submission attempt onward"
+}

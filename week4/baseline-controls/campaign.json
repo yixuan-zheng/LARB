@@ -1,0 +1,46 @@
+{
+  "status": "complete_and_graded",
+  "plan": "week4-fixed-controls-v1",
+  "preflight": {
+    "job": "6512233",
+    "state": "COMPLETED"
+  },
+  "jobs": [
+    {
+      "stage": 1,
+      "job": "6512258",
+      "condition": "gate",
+      "allocation_ceiling_minutes": 120,
+      "state": "COMPLETED",
+      "elapsed_seconds": 1289,
+      "exit_code": "0:0"
+    },
+    {
+      "stage": 2,
+      "job": "6512259",
+      "condition": "late_burst",
+      "allocation_ceiling_minutes": 240,
+      "state": "COMPLETED",
+      "elapsed_seconds": 2424,
+      "exit_code": "0:0"
+    },
+    {
+      "stage": 3,
+      "job": "6512260",
+      "condition": "sustained_pressure",
+      "allocation_ceiling_minutes": 240,
+      "state": "COMPLETED",
+      "elapsed_seconds": 2543,
+      "exit_code": "0:0"
+    }
+  ],
+  "postprocessing": {
+    "job": "6512261",
+    "dependency": "afterany all GPU stages",
+    "ceiling_minutes": 30
+  },
+  "base_gpu_hour_ceiling": 10,
+  "automatic_retries": 0,
+  "source_label": "source-lock-sha256:447fe193e7307907c98c0190fb3816454f906ef1ceca17d3994bc025b6fb6bca",
+  "errors": []
+}

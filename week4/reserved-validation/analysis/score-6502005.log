@@ -1,0 +1,756 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-23-2026 15:14:36
+Job ID:    6502005
+Account:   coc
+Job name:  larb-w4-score
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 0,
+  "condition": "late_burst",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 7,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 1.9547840366058817,
+      "observation_horizon_seconds": 214.85749429857825,
+      "median_client_seconds": 137.2937299903715,
+      "p95_client_seconds": 263.79418214200996,
+      "mean_queue_seconds": 100.20572883076966,
+      "median_queue_seconds": 107.71542717597913,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 50602,
+      "cue_tokens": 210,
+      "output_tokens": 65479,
+      "token_accounting_complete": true,
+      "answer_tokens": 14658
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 7,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 1.9547840366058817,
+      "observation_horizon_seconds": 214.85749429857825,
+      "median_client_seconds": 134.10232737159822,
+      "p95_client_seconds": 263.1409841920249,
+      "mean_queue_seconds": 97.39918282593135,
+      "median_queue_seconds": 95.69695140351541,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 4,
+      "binding_live_cutoffs": 2,
+      "thinking_tokens": 49523,
+      "cue_tokens": 238,
+      "output_tokens": 65153,
+      "token_accounting_complete": true,
+      "answer_tokens": 15385
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 0,
+    "condition": "late_burst",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 4,
+    "binding_live_cutoffs": 2,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 24,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "6a46723adea03edc506c6a62413e42515083cca13e0ebe2ac081f9f25ec8f7d3",
+    "manifest.json": "90e839c172619ad8831c79d392d76e87ee72fc99d80914241b8a971abbb56c25"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 0,
+  "condition": "sustained_pressure",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 13,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 1.3951127614133356,
+      "observation_horizon_seconds": 559.0945919022429,
+      "median_client_seconds": 101.02426249242853,
+      "p95_client_seconds": 156.48136867419817,
+      "mean_queue_seconds": 49.21054630158081,
+      "median_queue_seconds": 61.46666867204476,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 60742,
+      "cue_tokens": 112,
+      "output_tokens": 75521,
+      "token_accounting_complete": true,
+      "answer_tokens": 14651
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 17,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 1.8243782264635926,
+      "observation_horizon_seconds": 559.0945919022429,
+      "median_client_seconds": 64.85208313423209,
+      "p95_client_seconds": 158.04925811081193,
+      "mean_queue_seconds": 30.46056432827997,
+      "median_queue_seconds": 22.9607806900749,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 11,
+      "binding_live_cutoffs": 10,
+      "thinking_tokens": 53377,
+      "cue_tokens": 210,
+      "output_tokens": 68731,
+      "token_accounting_complete": true,
+      "answer_tokens": 15135
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 0,
+    "condition": "sustained_pressure",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 11,
+    "binding_live_cutoffs": 10,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 17,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "da01bcddc92556b794f2540be35ebb58a526b7c09fa230efc11d5b811f180428",
+    "manifest.json": "e9dc8b868562d8227055187992def32444de2ce13cdcae69f3608063cbe3ea7c"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 0,
+  "condition": "low_load",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 20,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 0.5123526495113876,
+      "observation_horizon_seconds": 2342.1368097625673,
+      "median_client_seconds": 61.110718815238215,
+      "p95_client_seconds": 243.47340945107862,
+      "mean_queue_seconds": 0.06369449184664215,
+      "median_queue_seconds": 0.008862351416610181,
+      "terminal_receipts": 24,
+      "normal_completions": 23,
+      "failures": {
+        "thinking_cap": 1
+      },
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 93207,
+      "cue_tokens": 0,
+      "output_tokens": 107870,
+      "token_accounting_complete": true,
+      "answer_tokens": 14640
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 20,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 0.5123526495113876,
+      "observation_horizon_seconds": 2342.1368097625673,
+      "median_client_seconds": 55.67625475709792,
+      "p95_client_seconds": 209.07235425617546,
+      "mean_queue_seconds": 0.13424550390724713,
+      "median_queue_seconds": 0.010237272479571402,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 93017,
+      "cue_tokens": 0,
+      "output_tokens": 108510,
+      "token_accounting_complete": true,
+      "answer_tokens": 15469
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 0,
+    "condition": "low_load",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 0,
+    "binding_live_cutoffs": 0,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 24,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "2f6d0c5870d36efeabed74b96fab8904f96323d461626cecb647cc72ceddc5b4",
+    "manifest.json": "18594332e928446bd096ee55266acdb82b0fd17524759e8ee1c535fe5dac7aa7"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 1,
+  "condition": "late_burst",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 9,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 2.2969001446806123,
+      "observation_horizon_seconds": 235.09946710160003,
+      "median_client_seconds": 143.31693501700647,
+      "p95_client_seconds": 282.34209665935487,
+      "mean_queue_seconds": 100.2292020758711,
+      "median_queue_seconds": 99.85392548353411,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 60824,
+      "cue_tokens": 126,
+      "output_tokens": 73093,
+      "token_accounting_complete": true,
+      "answer_tokens": 12128
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 11,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 2.807322399054082,
+      "observation_horizon_seconds": 235.09946710160003,
+      "median_client_seconds": 127.05042084748857,
+      "p95_client_seconds": 294.082188925473,
+      "mean_queue_seconds": 87.73206724294384,
+      "median_queue_seconds": 87.28535177942831,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 4,
+      "binding_live_cutoffs": 2,
+      "thinking_tokens": 57678,
+      "cue_tokens": 196,
+      "output_tokens": 69899,
+      "token_accounting_complete": true,
+      "answer_tokens": 12015
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 1,
+    "condition": "late_burst",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 4,
+    "binding_live_cutoffs": 2,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 24,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "b1215e0ce20c7be9e145d564ac7c2ffbe9be06244cb97617b25ae78c360b421c",
+    "manifest.json": "5218eb7b212b812d08662e9daceccfb70c3aa232acad101bdb2534ea7a0850b5"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 1,
+  "condition": "sustained_pressure",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 10,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 1.1708598282699774,
+      "observation_horizon_seconds": 512.4439198554959,
+      "median_client_seconds": 99.57087430974934,
+      "p95_client_seconds": 198.38498375262134,
+      "mean_queue_seconds": 51.48575779840272,
+      "median_queue_seconds": 61.94156754447613,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 64743,
+      "cue_tokens": 126,
+      "output_tokens": 77523,
+      "token_accounting_complete": true,
+      "answer_tokens": 12639
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 16,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 1.8733757252319638,
+      "observation_horizon_seconds": 512.4439198554959,
+      "median_client_seconds": 81.49827095749788,
+      "p95_client_seconds": 138.90866530686617,
+      "mean_queue_seconds": 36.52637854152514,
+      "median_queue_seconds": 40.846436442108825,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 8,
+      "binding_live_cutoffs": 6,
+      "thinking_tokens": 54176,
+      "cue_tokens": 154,
+      "output_tokens": 66305,
+      "token_accounting_complete": true,
+      "answer_tokens": 11962
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 1,
+    "condition": "sustained_pressure",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 8,
+    "binding_live_cutoffs": 6,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 21,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "7fc8508aa45ad35bf14e90cc1e2341bffea3ed5a07aa6ec44ded19302c47b0f8",
+    "manifest.json": "863dcd42fb689005a08d407303919cdcd5d4d499e37456dc906f995207df1484"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 1,
+  "condition": "low_load",
+  "unique_questions": 12,
+  "measured_outcomes": 48,
+  "summary": [
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 22,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 0.36972883140769097,
+      "observation_horizon_seconds": 3570.184112973511,
+      "median_client_seconds": 55.33926661044825,
+      "p95_client_seconds": 166.66500605922192,
+      "mean_queue_seconds": 0.08551863785639095,
+      "median_queue_seconds": 0.022161574917845428,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 85635,
+      "cue_tokens": 0,
+      "output_tokens": 98074,
+      "token_accounting_complete": true,
+      "answer_tokens": 12415
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 22,
+      "completed_correct": 24,
+      "correct_on_time_per_minute": 0.36972883140769097,
+      "observation_horizon_seconds": 3570.184112973511,
+      "median_client_seconds": 54.7304192223819,
+      "p95_client_seconds": 171.56409403448924,
+      "mean_queue_seconds": 0.1362219162498756,
+      "median_queue_seconds": 0.03138277039397508,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 87976,
+      "cue_tokens": 0,
+      "output_tokens": 99859,
+      "token_accounting_complete": true,
+      "answer_tokens": 11859
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 1,
+    "condition": "low_load",
+    "requests": 50,
+    "measured_requests": 48,
+    "live_reductions": 0,
+    "binding_live_cutoffs": 0,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b1-live": true,
+      "b1-admission": true
+    },
+    "paired_initial_budget_matches": 24,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "ba4d18d33b6078c17b28975c4edacfd2babb8bc0efdadc113dba7f56d81bb1d7",
+    "trace.json": "ad107f67445e90ff59be345a1650b13dae35b3d02603a190f933eeea9b2d339b",
+    "manifest.json": "1416ad15f2a6e1b22e329a9b2784db7aa9ef2e7b5bd97117d616eb01cf03fed0"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}
+{
+  "complete": true,
+  "measured_outcomes": 288,
+  "unique_questions": 24,
+  "per_condition": [
+    {
+      "condition": "low_load",
+      "policy": "admission",
+      "n": 48,
+      "correct_on_time": 42,
+      "completed_correct": 47,
+      "median_client_seconds": 58.67714312300086,
+      "failures": {
+        "thinking_cap": 1
+      },
+      "binding_live_cutoffs": 0
+    },
+    {
+      "condition": "low_load",
+      "policy": "live",
+      "n": 48,
+      "correct_on_time": 42,
+      "completed_correct": 48,
+      "median_client_seconds": 55.45632100664079,
+      "failures": {},
+      "binding_live_cutoffs": 0
+    },
+    {
+      "condition": "late_burst",
+      "policy": "admission",
+      "n": 48,
+      "correct_on_time": 16,
+      "completed_correct": 47,
+      "median_client_seconds": 143.17015137313865,
+      "failures": {},
+      "binding_live_cutoffs": 0
+    },
+    {
+      "condition": "late_burst",
+      "policy": "live",
+      "n": 48,
+      "correct_on_time": 18,
+      "completed_correct": 47,
+      "median_client_seconds": 127.05042084748857,
+      "failures": {},
+      "binding_live_cutoffs": 4
+    },
+    {
+      "condition": "sustained_pressure",
+      "policy": "admission",
+      "n": 48,
+      "correct_on_time": 23,
+      "completed_correct": 48,
+      "median_client_seconds": 99.57087430974934,
+      "failures": {},
+      "binding_live_cutoffs": 0
+    },
+    {
+      "condition": "sustained_pressure",
+      "policy": "live",
+      "n": 48,
+      "correct_on_time": 33,
+      "completed_correct": 47,
+      "median_client_seconds": 74.64119576488156,
+      "failures": {},
+      "binding_live_cutoffs": 16
+    }
+  ],
+  "deadline_count_deltas": {
+    "low_load": 0,
+    "late_burst": 2,
+    "sustained_pressure": 10
+  },
+  "primary_pressure_success_fraction_difference": 0.125,
+  "eventual_correctness_difference": 0.0,
+  "condition_block_correctness_deltas": {
+    "low_load/b0": 0,
+    "low_load/b1": 1,
+    "late_burst/b0": 1,
+    "late_burst/b1": -1,
+    "sustained_pressure/b0": -1,
+    "sustained_pressure/b1": 0
+  },
+  "condition_block_deadline_deltas": {
+    "low_load/b0": 0,
+    "low_load/b1": 0,
+    "late_burst/b0": 0,
+    "late_burst/b1": 2,
+    "sustained_pressure/b0": 3,
+    "sustained_pressure/b1": 7
+  },
+  "continuation_screen": {
+    "positive_pooled_pressure": true,
+    "neither_pressure_condition_negative": true,
+    "quality_within_observed_tolerance": true,
+    "condition_block_quality_losses_bounded": true,
+    "low_load_deadline_guard": true,
+    "binding_both_pressure_conditions": true
+  },
+  "screen_passed": true,
+  "descriptive_bootstrap": {
+    "resamples": 10000,
+    "seed": 622205,
+    "unit": "question, repeated observations together",
+    "sensitivity_interval": [
+      0.041666666666666664,
+      0.20833333333333334
+    ],
+    "limitation": "Conditional sensitivity only; queue coupling/two shards do not support general serving-population confidence"
+  },
+  "per_question": [
+    {
+      "index": 120,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 148,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 153,
+      "mean_pressure_deadline_difference": 0.5
+    },
+    {
+      "index": 174,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 205,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 217,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 227,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 228,
+      "mean_pressure_deadline_difference": -0.25
+    },
+    {
+      "index": 243,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 261,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 297,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 299,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 311,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 346,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 362,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 368,
+      "mean_pressure_deadline_difference": -0.25
+    },
+    {
+      "index": 391,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 417,
+      "mean_pressure_deadline_difference": 0.5
+    },
+    {
+      "index": 429,
+      "mean_pressure_deadline_difference": 0
+    },
+    {
+      "index": 438,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 452,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 458,
+      "mean_pressure_deadline_difference": 0.5
+    },
+    {
+      "index": 482,
+      "mean_pressure_deadline_difference": 0.25
+    },
+    {
+      "index": 495,
+      "mean_pressure_deadline_difference": 0.25
+    }
+  ],
+  "run_summaries": [
+    {
+      "root": "week4/reserved-validation/results/job-6481923",
+      "sha256": "b8f753151940085dc60d42ecc82b65d2d4a9f5d4e71c5af8f9a514ecf6fcfe61"
+    },
+    {
+      "root": "week4/reserved-validation/results/job-6481975",
+      "sha256": "97fa83cf70f6f0f2b14f3becb504363eb3b938c7f48920fbef2c55d18cb0cdf5"
+    },
+    {
+      "root": "week4/reserved-validation/results/job-6481976",
+      "sha256": "96ff3e6f8c7048c5ca13ab528a3726a77614cdb9dfe863840b32e481a8296ad4"
+    },
+    {
+      "root": "week4/reserved-validation/results/job-6481977",
+      "sha256": "9bfea5b6874483b27f9f209d36ffd7d5f217936de8110ffd38652ffea8f0e833"
+    },
+    {
+      "root": "week4/reserved-validation/results/job-6481978",
+      "sha256": "3070ff4a73705409aebd05980bfe8e45f7c2e84afe0b963b8e5bda35fa08fa76"
+    },
+    {
+      "root": "week4/reserved-validation/results/job-6481979",
+      "sha256": "01723162475fab9d26229e834d554848f9941b0d934868ad9239630750593209"
+    }
+  ],
+  "goodput": "Use each saved job/policy summary horizon; no pooled rate across differently calibrated jobs."
+}
+Complete campaign graded on CPU; GPU allocations ended before scoring.
+---------------------------------------
+Begin Slurm Epilog: Oct-23-2026 15:15:29
+Job ID:        6502005
+Account:       coc
+Job name:      larb-w4-score
+Resources:     cpu=2,mem=16G,node=1
+Rsrc Used:     cput=00:01:52,vmem=0,walltime=00:00:56,mem=669024K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-2-2
+---------------------------------------

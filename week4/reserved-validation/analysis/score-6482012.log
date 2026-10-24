@@ -1,0 +1,28 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-22-2026 21:02:23
+Job ID:    6482012
+Account:   coc
+Job name:  larb-w4-score
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+Traceback (most recent call last):
+  File "<RUNTIME_ROOT>/week4/reserved-validation/analyze.py", line 18, in <module>
+    from metrics import finish_kind,outcome,summarize
+ModuleNotFoundError: No module named 'metrics'
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+  File "/usr/local/pace-apps/manual/packages/anaconda3/2023.03/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['<RUNTIME_ROOT>/vllm-proof-env/bin/python', '-B', 'week4/reserved-validation/analyze.py', '--root', '<RUNTIME_ROOT>/week4/reserved-validation/results/job-6481923']' returned non-zero exit status 1.
+---------------------------------------
+Begin Slurm Epilog: Oct-22-2026 21:02:24
+Job ID:        6482012
+Account:       coc
+Job name:      larb-w4-score
+Resources:     cpu=2,mem=16G,node=1
+Rsrc Used:     cput=00:00:06,vmem=0,walltime=00:00:03,mem=25804K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-02-010-1-2
+---------------------------------------

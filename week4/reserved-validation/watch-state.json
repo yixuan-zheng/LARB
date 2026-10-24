@@ -1,6 +1,7 @@
 {
-  "status": "running",
-  "captured_at": "2026-10-22T16:46:09.441778-04:00",
-  "completed_jobs": 2,
-  "automatic_gpu_retries": 0
+  "status": "complete_and_assessed",
+  "completed_jobs": 6,
+  "automatic_gpu_retries": 0,
+  "observer_note": "Original observer stopped after connection failures; final collection, grading, and assessment completed manually during 5C.",
+  "cpu_reproduction_job": "6502005"
 }

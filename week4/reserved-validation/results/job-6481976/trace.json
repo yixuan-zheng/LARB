@@ -1,0 +1,126 @@
+{
+  "shard": 0,
+  "condition": "low_load",
+  "arrivals_by_block": [
+    [
+      {
+        "index": 227,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 452,
+        "offset_seconds": 97.58903374010697
+      },
+      {
+        "index": 429,
+        "offset_seconds": 195.17806748021394
+      },
+      {
+        "index": 482,
+        "offset_seconds": 292.7671012203209
+      },
+      {
+        "index": 228,
+        "offset_seconds": 390.3561349604279
+      },
+      {
+        "index": 458,
+        "offset_seconds": 487.94516870053485
+      },
+      {
+        "index": 368,
+        "offset_seconds": 585.5342024406418
+      },
+      {
+        "index": 205,
+        "offset_seconds": 683.1232361807488
+      },
+      {
+        "index": 217,
+        "offset_seconds": 780.7122699208558
+      },
+      {
+        "index": 495,
+        "offset_seconds": 878.3013036609627
+      },
+      {
+        "index": 261,
+        "offset_seconds": 975.8903374010697
+      },
+      {
+        "index": 362,
+        "offset_seconds": 1073.4793711411767
+      }
+    ],
+    [
+      {
+        "index": 368,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 205,
+        "offset_seconds": 97.58903374010697
+      },
+      {
+        "index": 217,
+        "offset_seconds": 195.17806748021394
+      },
+      {
+        "index": 495,
+        "offset_seconds": 292.7671012203209
+      },
+      {
+        "index": 261,
+        "offset_seconds": 390.3561349604279
+      },
+      {
+        "index": 362,
+        "offset_seconds": 487.94516870053485
+      },
+      {
+        "index": 227,
+        "offset_seconds": 585.5342024406418
+      },
+      {
+        "index": 452,
+        "offset_seconds": 683.1232361807488
+      },
+      {
+        "index": 429,
+        "offset_seconds": 780.7122699208558
+      },
+      {
+        "index": 482,
+        "offset_seconds": 878.3013036609627
+      },
+      {
+        "index": 228,
+        "offset_seconds": 975.8903374010697
+      },
+      {
+        "index": 458,
+        "offset_seconds": 1073.4793711411767
+      }
+    ]
+  ],
+  "relative_deadline_seconds": 97.58903374010697,
+  "observation_horizon_seconds": 1171.0684048812836,
+  "calibration_latencies_seconds": [
+    27.781717346981168,
+    48.794516870053485
+  ],
+  "unit_seconds": 48.794516870053485,
+  "burst_at_seconds": 6.945429336745292,
+  "orders": [
+    [
+      "admission",
+      "live"
+    ],
+    [
+      "live",
+      "admission"
+    ]
+  ],
+  "frozen_monotonic": 1369576.770159965,
+  "clock_domain": "client.monotonic"
+}

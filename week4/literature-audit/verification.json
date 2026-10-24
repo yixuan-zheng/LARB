@@ -1,0 +1,116 @@
+{
+  "scope": "Arithmetic reproduction from author logs, not independent execution or model-quality validation.",
+  "aggregation": "Paper Eq.10: average over six conditions of candidate/baseline ratios; each condition first averages its available seed runs.",
+  "results": [
+    {
+      "model": "qwen",
+      "summary_rows": 480,
+      "conditions": 6,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "all_logged_requests_succeeded": true,
+      "comparisons": [
+        {
+          "baseline": "mbt_1024_s20",
+          "mean_latency_improvement_percent": 9.684463587217241
+        },
+        {
+          "baseline": "mbt_2048_s20",
+          "mean_latency_improvement_percent": 3.3181360773075097
+        },
+        {
+          "baseline": "mbt_4096_s20",
+          "mean_latency_improvement_percent": 7.137682336171713
+        },
+        {
+          "baseline": "mbt_512_s20",
+          "mean_latency_improvement_percent": 23.550086669035466
+        },
+        {
+          "baseline": "mbt_768_s20",
+          "mean_latency_improvement_percent": 3.022093437304463
+        },
+        {
+          "baseline": "mbt_8192_s20",
+          "mean_latency_improvement_percent": 4.454980349166149
+        },
+        {
+          "baseline": "ppas_2k_768_s20",
+          "mean_latency_improvement_percent": 0.5624142491338358
+        }
+      ],
+      "best_tested_static": "mbt_768_s20",
+      "matched_requests": 488,
+      "candidate_faster": 445,
+      "candidate_faster_percent": 91.18852459016394,
+      "logical_arrivals_and_requested_lengths_match": true,
+      "sha256": "a08e4d4f7d5d43774a2a14bd777dc2e21f36c9717b6b5d424b409dddc9b827da"
+    },
+    {
+      "model": "nemotron",
+      "summary_rows": 528,
+      "conditions": 6,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_logged_requests_succeeded": true,
+      "comparisons": [
+        {
+          "baseline": "mbt_1024_s256",
+          "mean_latency_improvement_percent": 14.852890249154227
+        },
+        {
+          "baseline": "mbt_1280_s256",
+          "mean_latency_improvement_percent": 3.0534259295735167
+        },
+        {
+          "baseline": "mbt_16384_s256",
+          "mean_latency_improvement_percent": 21.184794339678746
+        },
+        {
+          "baseline": "mbt_2048_s256",
+          "mean_latency_improvement_percent": 16.952640240031936
+        },
+        {
+          "baseline": "mbt_4096_s256",
+          "mean_latency_improvement_percent": 16.431906357249815
+        },
+        {
+          "baseline": "mbt_8192_s256",
+          "mean_latency_improvement_percent": 18.365449697889403
+        },
+        {
+          "baseline": "ppas_16k_1280_s256",
+          "mean_latency_improvement_percent": 1.4213452032061924
+        }
+      ],
+      "best_tested_static": "mbt_1280_s256",
+      "matched_requests": 1045,
+      "candidate_faster": 925,
+      "candidate_faster_percent": 88.51674641148325,
+      "logical_arrivals_and_requested_lengths_match": true,
+      "sha256": "9321c3d28f75689986b43aab7b51d771010719308a3296d2603a97ee2c5796e5"
+    }
+  ],
+  "documentation_gap": "Appendix 10.5 states 11 seeds for each condition. Qwen artifact has seeds 0-9; Nemotron has 0-10. No missing Qwen seed inferred or fabricated."
+}

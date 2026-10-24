@@ -1,0 +1,51 @@
+{
+  "checked": "2026-10-23",
+  "deer_commit": "c9dd19fbffa27f841cfe47502d015b63811b4d1b",
+  "scope": "Primary-source review and CPU/static compatibility checks only; no LASER official code verified by paper/title/repository search",
+  "files": {
+    "laser.html": {
+      "url": "https://arxiv.org/html/2606.31580v1",
+      "sha256": "bd3b5e56fb4e74f3141b7d42ffff847003bd2ad988d930428e4dbf718c180611"
+    },
+    "deer.html": {
+      "url": "https://arxiv.org/html/2504.15895v3",
+      "sha256": "e3b2988f32251e8d3c69a5bcddd64ac57f6c2d48af6c0de985b1d4ddee9efaee"
+    },
+    "vllm-deer-qwen3.py": {
+      "url": "https://raw.githubusercontent.com/iie-ycx/DEER/c9dd19fbffa27f841cfe47502d015b63811b4d1b/vllm-deer-qwen3.py",
+      "sha256": "96460df9d532e02ca82535f6b5a6757cffff40bcbb233a4d6a1bd074684cc095"
+    },
+    "vllm-deer.py": {
+      "url": "https://raw.githubusercontent.com/iie-ycx/DEER/c9dd19fbffa27f841cfe47502d015b63811b4d1b/vllm-deer.py",
+      "sha256": "7a11719f968216ef6a2c68bee0e099cc9603428da6209aff3e0ff27422cfd876"
+    },
+    "vanilla_deer.py": {
+      "url": "https://raw.githubusercontent.com/iie-ycx/DEER/c9dd19fbffa27f841cfe47502d015b63811b4d1b/vanilla_deer.py",
+      "sha256": "8a20fdc45ae3511ca569191f0fa1c82680ed47bdde07f4279d8a0282c6ba0707"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/iie-ycx/DEER/c9dd19fbffa27f841cfe47502d015b63811b4d1b/README.md",
+      "sha256": "3e26e9a1ee6076f817b2fd6922ff6468e784f0a07f9bb8f7c6527176f68dcfea"
+    },
+    "async_llm.py": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.11.2/vllm/v1/engine/async_llm.py",
+      "sha256": "f50e373fa58e6d5950c046bdc0f37b32237067b87b096a4cced5f8181bcec8d3"
+    },
+    "sampling_params.py": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.11.2/vllm/sampling_params.py",
+      "sha256": "4816075ad7ede6eeca33ab6b155df3f015998157522a18e65e4c0bcb4d99c4ed"
+    },
+    "logprobs.py": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.11.2/vllm/v1/engine/logprobs.py",
+      "sha256": "8a64646a46f0cc23a1c19bb7bf1902fd142f1ecbf7bc298a490996e1b43f5916"
+    },
+    "sampler.py": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.11.2/vllm/v1/sample/sampler.py",
+      "sha256": "1456816aff98297202c09a0809b0103871369b122691cf8621c97af1b5a82ff9"
+    },
+    "logprobs-core.py": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.11.2/vllm/logprobs.py",
+      "sha256": "257de56b48a8b751c6feb9df77f42c3fb0b5004fafb8015c0fb121f293de25a6"
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "verified": true,
+  "measured_outcomes": 192,
+  "unique_questions": 12,
+  "jobs": [
+    {
+      "job": "6512259",
+      "condition": "late_burst",
+      "raw_requests": 98,
+      "local_regrade_matches_cluster": true,
+      "archive_hashes_verified": true,
+      "analysis_sha256": {
+        "summary.json": "0337ddf8da7909ea61303eaeef6bab74366d26aa8ba5f33cb836f1d72b10ad87",
+        "graded.json": "13aeb9f64d70cdc6005a1b4fc5b16f4a429de21ce6c8c91f423e21578ee6bf1a",
+        "review-queue.json": "84beaae5ebee45d80ad3ef4aa7b6a9ab4d3148c783b6663da9cc8363b2da8bb3"
+      },
+      "paired": [
+        {
+          "baseline": "fixed2048",
+          "block": 0,
+          "on_time_gains": [],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "fixed2048",
+          "block": 1,
+          "on_time_gains": [],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "fixed4096",
+          "block": 0,
+          "on_time_gains": [
+            28,
+            89
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "fixed4096",
+          "block": 1,
+          "on_time_gains": [
+            10,
+            77
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "admission",
+          "block": 0,
+          "on_time_gains": [
+            28,
+            83,
+            98
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "admission",
+          "block": 1,
+          "on_time_gains": [
+            10,
+            65,
+            77
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": [
+            94
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "block": 0,
+          "policy": "fixed2048",
+          "on_time": 5,
+          "eventual": 11
+        },
+        {
+          "block": 0,
+          "policy": "fixed4096",
+          "on_time": 3,
+          "eventual": 11
+        },
+        {
+          "block": 0,
+          "policy": "admission",
+          "on_time": 2,
+          "eventual": 11
+        },
+        {
+          "block": 0,
+          "policy": "live",
+          "on_time": 5,
+          "eventual": 11
+        },
+        {
+          "block": 1,
+          "policy": "fixed2048",
+          "on_time": 4,
+          "eventual": 11
+        },
+        {
+          "block": 1,
+          "policy": "fixed4096",
+          "on_time": 2,
+          "eventual": 11
+        },
+        {
+          "block": 1,
+          "policy": "admission",
+          "on_time": 1,
+          "eventual": 12
+        },
+        {
+          "block": 1,
+          "policy": "live",
+          "on_time": 4,
+          "eventual": 11
+        }
+      ]
+    },
+    {
+      "job": "6512260",
+      "condition": "sustained_pressure",
+      "raw_requests": 98,
+      "local_regrade_matches_cluster": true,
+      "archive_hashes_verified": true,
+      "analysis_sha256": {
+        "summary.json": "42a2bac1c7e9a84ac741f64d408b0061f3245031df23be45081856793f6e780f",
+        "graded.json": "a4ea1a19b0a893c697cff9b946d64804ab7424eeacf3279b9b6e946eb7ca4544",
+        "review-queue.json": "964178a10b8a7dc3bd8772306a77b2a623fa6aa87d16af06ccfe2be3a691c949"
+      },
+      "paired": [
+        {
+          "baseline": "fixed2048",
+          "block": 0,
+          "on_time_gains": [],
+          "on_time_losses": [
+            1,
+            94
+          ],
+          "accuracy_gains": [],
+          "accuracy_losses": [
+            94
+          ]
+        },
+        {
+          "baseline": "fixed2048",
+          "block": 1,
+          "on_time_gains": [],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "fixed4096",
+          "block": 0,
+          "on_time_gains": [
+            10,
+            65,
+            76,
+            77
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "fixed4096",
+          "block": 1,
+          "on_time_gains": [
+            1,
+            10,
+            12,
+            28,
+            42,
+            77,
+            83,
+            89,
+            98
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "admission",
+          "block": 0,
+          "on_time_gains": [
+            10,
+            83
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": []
+        },
+        {
+          "baseline": "admission",
+          "block": 1,
+          "on_time_gains": [
+            1,
+            10,
+            12,
+            28,
+            42,
+            65,
+            77,
+            83,
+            89,
+            98
+          ],
+          "on_time_losses": [],
+          "accuracy_gains": [],
+          "accuracy_losses": [
+            94
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "block": 0,
+          "policy": "fixed2048",
+          "on_time": 12,
+          "eventual": 12
+        },
+        {
+          "block": 0,
+          "policy": "fixed4096",
+          "on_time": 6,
+          "eventual": 11
+        },
+        {
+          "block": 0,
+          "policy": "admission",
+          "on_time": 8,
+          "eventual": 11
+        },
+        {
+          "block": 0,
+          "policy": "live",
+          "on_time": 10,
+          "eventual": 11
+        },
+        {
+          "block": 1,
+          "policy": "fixed2048",
+          "on_time": 11,
+          "eventual": 11
+        },
+        {
+          "block": 1,
+          "policy": "fixed4096",
+          "on_time": 2,
+          "eventual": 11
+        },
+        {
+          "block": 1,
+          "policy": "admission",
+          "on_time": 1,
+          "eventual": 12
+        },
+        {
+          "block": 1,
+          "policy": "live",
+          "on_time": 11,
+          "eventual": 11
+        }
+      ]
+    }
+  ],
+  "note": "Descriptive repeated development questions, not independent population trials. Original cluster analysis bytes preserved."
+}

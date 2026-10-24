@@ -1,0 +1,20 @@
+{
+  "shard": 1,
+  "condition": "sustained_pressure",
+  "indices": [
+    174,
+    148,
+    120,
+    391,
+    299,
+    346,
+    311,
+    243,
+    297,
+    438,
+    153,
+    417
+  ],
+  "first_measured_phase": "b0-admission",
+  "note": "Reserved cohort considered exposed from first submission attempt onward"
+}

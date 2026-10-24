@@ -1,0 +1,10 @@
+{
+  "shard": 1,
+  "condition": "gate",
+  "indices": [
+    1,
+    4,
+    5
+  ],
+  "note": "Exposed development only"
+}

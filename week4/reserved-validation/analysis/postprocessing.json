@@ -1,0 +1,276 @@
+{
+  "aggregate": {
+    "complete": true,
+    "measured_outcomes": 288,
+    "unique_questions": 24,
+    "per_condition": [
+      {
+        "condition": "low_load",
+        "policy": "admission",
+        "n": 48,
+        "correct_on_time": 42,
+        "completed_correct": 47,
+        "median_client_seconds": 58.67714312300086,
+        "failures": {
+          "thinking_cap": 1
+        },
+        "binding_live_cutoffs": 0
+      },
+      {
+        "condition": "low_load",
+        "policy": "live",
+        "n": 48,
+        "correct_on_time": 42,
+        "completed_correct": 48,
+        "median_client_seconds": 55.45632100664079,
+        "failures": {},
+        "binding_live_cutoffs": 0
+      },
+      {
+        "condition": "late_burst",
+        "policy": "admission",
+        "n": 48,
+        "correct_on_time": 16,
+        "completed_correct": 47,
+        "median_client_seconds": 143.17015137313865,
+        "failures": {},
+        "binding_live_cutoffs": 0
+      },
+      {
+        "condition": "late_burst",
+        "policy": "live",
+        "n": 48,
+        "correct_on_time": 18,
+        "completed_correct": 47,
+        "median_client_seconds": 127.05042084748857,
+        "failures": {},
+        "binding_live_cutoffs": 4
+      },
+      {
+        "condition": "sustained_pressure",
+        "policy": "admission",
+        "n": 48,
+        "correct_on_time": 23,
+        "completed_correct": 48,
+        "median_client_seconds": 99.57087430974934,
+        "failures": {},
+        "binding_live_cutoffs": 0
+      },
+      {
+        "condition": "sustained_pressure",
+        "policy": "live",
+        "n": 48,
+        "correct_on_time": 33,
+        "completed_correct": 47,
+        "median_client_seconds": 74.64119576488156,
+        "failures": {},
+        "binding_live_cutoffs": 16
+      }
+    ],
+    "deadline_count_deltas": {
+      "low_load": 0,
+      "late_burst": 2,
+      "sustained_pressure": 10
+    },
+    "primary_pressure_success_fraction_difference": 0.125,
+    "eventual_correctness_difference": 0.0,
+    "condition_block_correctness_deltas": {
+      "low_load/b0": 0,
+      "low_load/b1": 1,
+      "late_burst/b0": 1,
+      "late_burst/b1": -1,
+      "sustained_pressure/b0": -1,
+      "sustained_pressure/b1": 0
+    },
+    "condition_block_deadline_deltas": {
+      "low_load/b0": 0,
+      "low_load/b1": 0,
+      "late_burst/b0": 0,
+      "late_burst/b1": 2,
+      "sustained_pressure/b0": 3,
+      "sustained_pressure/b1": 7
+    },
+    "continuation_screen": {
+      "positive_pooled_pressure": true,
+      "neither_pressure_condition_negative": true,
+      "quality_within_observed_tolerance": true,
+      "condition_block_quality_losses_bounded": true,
+      "low_load_deadline_guard": true,
+      "binding_both_pressure_conditions": true
+    },
+    "screen_passed": true,
+    "descriptive_bootstrap": {
+      "resamples": 10000,
+      "seed": 622205,
+      "unit": "question, repeated observations together",
+      "sensitivity_interval": [
+        0.041666666666666664,
+        0.20833333333333334
+      ],
+      "limitation": "Conditional sensitivity only; queue coupling/two shards do not support general serving-population confidence"
+    },
+    "per_question": [
+      {
+        "index": 120,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 148,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 153,
+        "mean_pressure_deadline_difference": 0.5
+      },
+      {
+        "index": 174,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 205,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 217,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 227,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 228,
+        "mean_pressure_deadline_difference": -0.25
+      },
+      {
+        "index": 243,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 261,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 297,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 299,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 311,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 346,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 362,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 368,
+        "mean_pressure_deadline_difference": -0.25
+      },
+      {
+        "index": 391,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 417,
+        "mean_pressure_deadline_difference": 0.5
+      },
+      {
+        "index": 429,
+        "mean_pressure_deadline_difference": 0
+      },
+      {
+        "index": 438,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 452,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 458,
+        "mean_pressure_deadline_difference": 0.5
+      },
+      {
+        "index": 482,
+        "mean_pressure_deadline_difference": 0.25
+      },
+      {
+        "index": 495,
+        "mean_pressure_deadline_difference": 0.25
+      }
+    ],
+    "run_summaries": [
+      {
+        "root": "week4/reserved-validation/results/job-6481923",
+        "sha256": "b8f753151940085dc60d42ecc82b65d2d4a9f5d4e71c5af8f9a514ecf6fcfe61"
+      },
+      {
+        "root": "week4/reserved-validation/results/job-6481975",
+        "sha256": "97fa83cf70f6f0f2b14f3becb504363eb3b938c7f48920fbef2c55d18cb0cdf5"
+      },
+      {
+        "root": "week4/reserved-validation/results/job-6481976",
+        "sha256": "96ff3e6f8c7048c5ca13ab528a3726a77614cdb9dfe863840b32e481a8296ad4"
+      },
+      {
+        "root": "week4/reserved-validation/results/job-6481977",
+        "sha256": "9bfea5b6874483b27f9f209d36ffd7d5f217936de8110ffd38652ffea8f0e833"
+      },
+      {
+        "root": "week4/reserved-validation/results/job-6481978",
+        "sha256": "3070ff4a73705409aebd05980bfe8e45f7c2e84afe0b963b8e5bda35fa08fa76"
+      },
+      {
+        "root": "week4/reserved-validation/results/job-6481979",
+        "sha256": "01723162475fab9d26229e834d554848f9941b0d934868ad9239630750593209"
+      }
+    ],
+    "goodput": "Use each saved job/policy summary horizon; no pooled rate across differently calibrated jobs."
+  },
+  "per_run": {
+    "6481923": {
+      "summary.json": "b8f753151940085dc60d42ecc82b65d2d4a9f5d4e71c5af8f9a514ecf6fcfe61",
+      "graded.json": "4125edcf11766d82b489ccb0acb1d6da388072f1e01ad5f92ccb946b01e3399a",
+      "review-queue.json": "c93cd6fd9f0b65cb1019208a73967765c847cf42de6ae605f39cb1bc9d728270"
+    },
+    "6481975": {
+      "summary.json": "97fa83cf70f6f0f2b14f3becb504363eb3b938c7f48920fbef2c55d18cb0cdf5",
+      "graded.json": "3aea738a020df025fa958fc6a15f5fbc26dbbc32ca7f833c29b0f9f0c7d6f34e",
+      "review-queue.json": "1cb421be3bb50dc33f430fc334d8053dc25cbc6e0e14be1de2d7db19d06b6376"
+    },
+    "6481976": {
+      "summary.json": "96ff3e6f8c7048c5ca13ab528a3726a77614cdb9dfe863840b32e481a8296ad4",
+      "graded.json": "1c724b7f14cefc14a402ebb286c234f5fa6dde3daaebb7d7dec18241ee7b2ddc",
+      "review-queue.json": "4e419cbf1beac6df9036c463b24c7ce8296a77bd7704efc4063690e56c18a7cd"
+    },
+    "6481977": {
+      "summary.json": "9bfea5b6874483b27f9f209d36ffd7d5f217936de8110ffd38652ffea8f0e833",
+      "graded.json": "0bd47c343f20fa44c755340c57eb26bc035ca0c75ee128f4c14f75b197877970",
+      "review-queue.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "6481978": {
+      "summary.json": "3070ff4a73705409aebd05980bfe8e45f7c2e84afe0b963b8e5bda35fa08fa76",
+      "graded.json": "291c67d5875dcea0b32fcde5b701fc7b445b18be234ef5fcace5109dee4a881e",
+      "review-queue.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "6481979": {
+      "summary.json": "01723162475fab9d26229e834d554848f9941b0d934868ad9239630750593209",
+      "graded.json": "eee9bc25aecfa3a1c0c8dcfda74e53cefe913693c8f81fd796eef14c62d21357",
+      "review-queue.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  },
+  "metrics_sha256": "10275d47969ddc92f09210a93a5b395ad308725150ff5798dbf28a51a79df767",
+  "accounting": "6482012|FAILED|3|1:0\n6502005|COMPLETED|56|0:0\n",
+  "local_cluster_aggregate_exact_match": true,
+  "local_cluster_all_18_analysis_files_exact_match": true,
+  "diagnosis": "Initial CPU deployment omitted the unchanged tracked controlled-comparison/metrics.py. Restored identical source; repeated CPU-only grading. No GPU reruns or score changes.",
+  "reproduction_job": "6502005"
+}

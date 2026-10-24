@@ -1,0 +1,129 @@
+{
+  "review_date": "2026-10-24",
+  "purpose": "Evidence-led prior-work audit to inform LARB, without treating conceptual overlap as disqualification.",
+  "papers": [
+    {
+      "id": "laser",
+      "pdf_url": "https://arxiv.org/pdf/2606.31580v1",
+      "sha256": "2a071212c98a40898476cfc30710338115c32d67c91e67ff296530a105cea8bc",
+      "pages": 12,
+      "inspected": "Algorithm 1; Eqs.5-8; Sections5.1-5.6; Tables1-3; Figures3-4",
+      "visually_inspected_pdf_pages": [
+        8,
+        9,
+        10
+      ],
+      "scope": "Targeted full-paper and figure inspection, not independent reproduction or proof certification."
+    },
+    {
+      "id": "dynasor",
+      "pdf_url": "https://arxiv.org/pdf/2412.20993v2",
+      "sha256": "aee471dfda37977343a2176d9895089ad669aa9fb9e44c66ae147eaeb0830964",
+      "pages": 28,
+      "inspected": "Sections2-4; AppendixD; AppendixE assumptions; AppendixF setup; AppendixG component ablations; Figures6,8,18-19",
+      "visually_inspected_pdf_pages": [
+        9,
+        26,
+        27
+      ],
+      "scope": "Targeted full-paper and figure inspection, not independent reproduction or proof certification."
+    },
+    {
+      "id": "ppas",
+      "pdf_url": "https://arxiv.org/pdf/2608.15171v2",
+      "sha256": "b6f572a7f447743277b9148df56cdaf3ee19abc42e100b90ff75ce2f826ec255",
+      "pages": 15,
+      "inspected": "Sections3-7; Tables1,5,7-8; Appendix10.5; Figures3-4,7",
+      "visually_inspected_pdf_pages": [
+        5,
+        9,
+        10
+      ],
+      "scope": "Targeted full-paper and figure inspection, not independent reproduction or proof certification."
+    },
+    {
+      "id": "queue",
+      "pdf_url": "https://arxiv.org/pdf/2601.10274v1",
+      "sha256": "a5aeb497ec4abcf97c47990978e4d4fe9e031952759d0d63dba1a7998f77bfc9",
+      "pages": 8,
+      "inspected": "SectionsII-IV; stability/rounding qualifications; TableI; Figures2-4",
+      "visually_inspected_pdf_pages": [
+        6,
+        7
+      ],
+      "scope": "Targeted full-paper and figure inspection, not independent reproduction or proof certification."
+    },
+    {
+      "id": "tail",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26n/li26n.pdf",
+      "sha256": "a724614a4c53c6d9c1117b9f0c9d93ab8f6ef53e9c8f963bdb14dcd64418eef7",
+      "pages": 16,
+      "inspected": "Sections3-4; Table2; Figures4-8; Appendix overview",
+      "visually_inspected_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "scope": "Targeted full-paper and figure inspection, not independent reproduction or proof certification."
+    }
+  ],
+  "acer": {
+    "url": "https://theses-dissertations.princeton.edu/entities/publication/2d46f9cc-4422-4d22-aa42-2e80ebd5b46f/full",
+    "status": "Abstract/public metadata only; restricted PDF; linked public download inaccessible; targeted title/author search found no verified alternative full text. Algorithm, figures, baselines and setup remain unassessed."
+  },
+  "ppas_artifacts": {
+    "repository": "https://github.com/TimoSaemann/ppas-vllm",
+    "commit": "3f0fd3eb348b818224d5bc75351e2e6fb66a044c",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/README.md",
+        "cache_filename": "ppas-README.md",
+        "sha256": "19cedf83f350668ea6067c83e21d3b5a186e48a56a69f61fe0ab9d3fc5aa329f"
+      },
+      {
+        "path": "benchmark.py",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/benchmark.py",
+        "cache_filename": "ppas-benchmark.py",
+        "sha256": "a7dd6e93a6199f427e2e821de4b91a5d216075f2c7fa246334b6e354a36ceeb6"
+      },
+      {
+        "path": "evaluate_results.py",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/evaluate_results.py",
+        "cache_filename": "ppas-evaluate_results.py",
+        "sha256": "3293471b78f9abf5d13394277453f05bb8bd6296c23867dd27f69b7d20dae20a"
+      },
+      {
+        "path": "results/vllm_0.27.1/nemotron/ppas_heterogeneous_nemotron.txt",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/results/vllm_0.27.1/nemotron/ppas_heterogeneous_nemotron.txt",
+        "cache_filename": "ppas-results_vllm_0.27.1_nemotron_ppas_heterogeneous_nemotron.txt",
+        "sha256": "9321c3d28f75689986b43aab7b51d771010719308a3296d2603a97ee2c5796e5",
+        "model": "nemotron"
+      },
+      {
+        "path": "results/vllm_0.27.1/qwen/ppas_heterogeneous_qwen.txt",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/results/vllm_0.27.1/qwen/ppas_heterogeneous_qwen.txt",
+        "cache_filename": "ppas-results_vllm_0.27.1_qwen_ppas_heterogeneous_qwen.txt",
+        "sha256": "a08e4d4f7d5d43774a2a14bd777dc2e21f36c9717b6b5d424b409dddc9b827da",
+        "model": "qwen"
+      },
+      {
+        "path": "scheduler/ppas_vllm_0.27.1.patch",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/scheduler/ppas_vllm_0.27.1.patch",
+        "cache_filename": "ppas-scheduler_ppas_vllm_0.27.1.patch",
+        "sha256": "14217e10b3a1f376868c3a70e96780d9b375d80b5e0fd10ac4883c1086893519"
+      },
+      {
+        "path": "scheduler/scheduler_ppas.py",
+        "url": "https://raw.githubusercontent.com/TimoSaemann/ppas-vllm/3f0fd3eb348b818224d5bc75351e2e6fb66a044c/scheduler/scheduler_ppas.py",
+        "cache_filename": "ppas-scheduler_scheduler_ppas.py",
+        "sha256": "75e52a85bd8a5aa12429041e393f4b1b530f0460b04cceae920208458f049833"
+      }
+    ]
+  },
+  "previous_work": {
+    "laser": "week4/laser-feasibility/REPORT.md",
+    "dynasor_code": "week4/evaluation-plan/upstream-audit.json"
+  },
+  "preservation": "Public papers/code/logs inspected in an external temporary cache. Only source identifiers, hashes, compact derived numbers and original analysis are tracked; no third-party full texts or personal paths."
+}

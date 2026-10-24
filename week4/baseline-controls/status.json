@@ -1,0 +1,221 @@
+{
+  "captured_at": "2026-10-24T09:48:17.586318-04:00",
+  "jobs": [
+    {
+      "job": "6512258",
+      "state": "COMPLETED",
+      "elapsed_seconds": 1289,
+      "exit_code": "0:0",
+      "phases": [
+        {
+          "phase": "calib",
+          "completed": true,
+          "terminal_receipts": 2
+        },
+        {
+          "phase": "b0-fixed2048",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b0-admission",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b0-live",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b0-fixed4096",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b1-fixed4096",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b1-live",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b1-admission",
+          "completed": true,
+          "terminal_receipts": 3
+        },
+        {
+          "phase": "b1-fixed2048",
+          "completed": true,
+          "terminal_receipts": 3
+        }
+      ],
+      "runtime-fit.json": {
+        "estimated_remaining_seconds": 1805.4327027415857,
+        "remaining_driver_seconds": 6248.310167212039,
+        "passed": true
+      },
+      "mechanical-validation.json": {
+        "passed": true,
+        "shard": 1,
+        "condition": "gate",
+        "requests": 26,
+        "measured_requests": 24,
+        "live_reductions": 0,
+        "binding_live_cutoffs": 0,
+        "paired_initial_budget_matches": 6,
+        "paired_initial_budget_total": 6,
+        "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+      }
+    },
+    {
+      "job": "6512259",
+      "state": "COMPLETED",
+      "elapsed_seconds": 2424,
+      "exit_code": "0:0",
+      "phases": [
+        {
+          "phase": "calib",
+          "completed": true,
+          "terminal_receipts": 2
+        },
+        {
+          "phase": "b0-fixed2048",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b0-admission",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b0-live",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b0-fixed4096",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-fixed4096",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-live",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-admission",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-fixed2048",
+          "completed": true,
+          "terminal_receipts": 12
+        }
+      ],
+      "runtime-fit.json": {
+        "estimated_remaining_seconds": 3758.3956473035737,
+        "remaining_driver_seconds": 13456.830750897992,
+        "passed": true
+      },
+      "mechanical-validation.json": {
+        "passed": true,
+        "shard": 0,
+        "condition": "late_burst",
+        "requests": 98,
+        "measured_requests": 96,
+        "live_reductions": 4,
+        "binding_live_cutoffs": 4,
+        "paired_initial_budget_matches": 24,
+        "paired_initial_budget_total": 24,
+        "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+      }
+    },
+    {
+      "job": "6512260",
+      "state": "COMPLETED",
+      "elapsed_seconds": 2543,
+      "exit_code": "0:0",
+      "phases": [
+        {
+          "phase": "calib",
+          "completed": true,
+          "terminal_receipts": 2
+        },
+        {
+          "phase": "b0-fixed2048",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b0-admission",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b0-live",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b0-fixed4096",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-fixed4096",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-live",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-admission",
+          "completed": true,
+          "terminal_receipts": 12
+        },
+        {
+          "phase": "b1-fixed2048",
+          "completed": true,
+          "terminal_receipts": 12
+        }
+      ],
+      "runtime-fit.json": {
+        "estimated_remaining_seconds": 4895.4494998967275,
+        "remaining_driver_seconds": 13474.732850818895,
+        "passed": true
+      },
+      "mechanical-validation.json": {
+        "passed": true,
+        "shard": 0,
+        "condition": "sustained_pressure",
+        "requests": 98,
+        "measured_requests": 96,
+        "live_reductions": 15,
+        "binding_live_cutoffs": 10,
+        "paired_initial_budget_matches": 12,
+        "paired_initial_budget_total": 24,
+        "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+      }
+    },
+    {
+      "job": "6512261",
+      "state": "COMPLETED",
+      "elapsed_seconds": 31,
+      "exit_code": "0:0"
+    }
+  ]
+}

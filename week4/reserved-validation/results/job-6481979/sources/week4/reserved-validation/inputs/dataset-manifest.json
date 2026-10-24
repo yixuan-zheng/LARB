@@ -1,0 +1,171 @@
+{
+  "dataset": "HuggingFaceH4/MATH-500",
+  "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "source_url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500/resolve/6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be/test.jsonl",
+  "full_jsonl_sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+  "rows": 500,
+  "first_100_equal_saved": true,
+  "unique_ids": 500,
+  "selected_input_indices": [
+    0,
+    2,
+    120,
+    148,
+    153,
+    174,
+    205,
+    217,
+    227,
+    228,
+    243,
+    261,
+    297,
+    299,
+    311,
+    346,
+    362,
+    368,
+    391,
+    417,
+    429,
+    438,
+    452,
+    458,
+    482,
+    495
+  ],
+  "selected_rows": [
+    {
+      "index": 0,
+      "unique_id": "test/precalculus/807.json",
+      "row_sha256": "0d4aaa49ce633bbae51053c17c1b9703daca6c02271f7e52dfa36c73d05c9a96"
+    },
+    {
+      "index": 2,
+      "unique_id": "test/algebra/2584.json",
+      "row_sha256": "3e60bccf59725386905fbfcb3c1552ebe87f7206af03c953f2e2ef9d27ef78c2"
+    },
+    {
+      "index": 120,
+      "unique_id": "test/intermediate_algebra/128.json",
+      "row_sha256": "11fcebf18cf2554b06a5c75d77c13c152dc04221afe3f97e04d7f38b1d7cc3a6"
+    },
+    {
+      "index": 148,
+      "unique_id": "test/algebra/988.json",
+      "row_sha256": "21476f619db59e12287b07da9da606bf80fa879a0f60a3f7c4bce79889d23cd2"
+    },
+    {
+      "index": 153,
+      "unique_id": "test/counting_and_probability/230.json",
+      "row_sha256": "9a5fd2f5e1fc457d49f9e288d33c1caff4216b04d8a44808f29af4466c6db89c"
+    },
+    {
+      "index": 174,
+      "unique_id": "test/algebra/351.json",
+      "row_sha256": "68f2eacf67ea600a9f6b548f26ace11d73be22c5d76b817f68512533686b06ed"
+    },
+    {
+      "index": 205,
+      "unique_id": "test/precalculus/263.json",
+      "row_sha256": "1e5311f2e72290b93ac8501b229b7301d28f76f76c361bce243f9a57b6a1b844"
+    },
+    {
+      "index": 217,
+      "unique_id": "test/number_theory/417.json",
+      "row_sha256": "46fe6de824d8c1d1f9de8203b1129ae34641ce0f131ca80b7bf3c83633f7ccdf"
+    },
+    {
+      "index": 227,
+      "unique_id": "test/precalculus/819.json",
+      "row_sha256": "c9fd09be61e5af52db2618a2491a6ca35b5e3ac84c53a2b76d9c47f91239ed65"
+    },
+    {
+      "index": 228,
+      "unique_id": "test/precalculus/1056.json",
+      "row_sha256": "e3107e20de9885479165c0a3735ef3b4858f338cd89205c399bbbefed48badd3"
+    },
+    {
+      "index": 243,
+      "unique_id": "test/geometry/254.json",
+      "row_sha256": "1c477c1d399bb3c402c3c43035a248a4fb9a06583840226f0dc58371f77ff2c0"
+    },
+    {
+      "index": 261,
+      "unique_id": "test/geometry/347.json",
+      "row_sha256": "d0a7b46bf0300089d0e518532176c88cb5d18cf742a12c726f72637e50e8552b"
+    },
+    {
+      "index": 297,
+      "unique_id": "test/number_theory/1172.json",
+      "row_sha256": "1c748a1e505f1b8d17c0b4945834967c50b592a4de7ebc1c85149a4664d48e92"
+    },
+    {
+      "index": 299,
+      "unique_id": "test/geometry/1097.json",
+      "row_sha256": "3e0f5e828b2cab609b215f7f37598a55c3d19667ae4fa04e29d5952f0ced189a"
+    },
+    {
+      "index": 311,
+      "unique_id": "test/number_theory/911.json",
+      "row_sha256": "2846e724abd8999df6e4f87f1459e74d81a3c7862fdbc313c6a81fd05f03eaea"
+    },
+    {
+      "index": 346,
+      "unique_id": "test/algebra/1338.json",
+      "row_sha256": "53da0c906893eb2fcbd5827a85dd37c71359faaf837dd34c11bd78826a751292"
+    },
+    {
+      "index": 362,
+      "unique_id": "test/counting_and_probability/14.json",
+      "row_sha256": "17ef62baa7272293118ebc024ef4db730e91ff2902143d45cf8e0c3abcc79435"
+    },
+    {
+      "index": 368,
+      "unique_id": "test/geometry/106.json",
+      "row_sha256": "14ce3dec59848e92d2a9a3828e7f6d5b9c5bd35b54bff2d49b226310697964d9"
+    },
+    {
+      "index": 391,
+      "unique_id": "test/algebra/2277.json",
+      "row_sha256": "06e8d0e9d8d790a430999d221ab74b17d07f0146ae529fca888b28ffa4978daa"
+    },
+    {
+      "index": 417,
+      "unique_id": "test/algebra/776.json",
+      "row_sha256": "4f4346bed51eaddbd8dad46364c2a69db7acfdb816ff7df2f709ec760c850590"
+    },
+    {
+      "index": 429,
+      "unique_id": "test/intermediate_algebra/1014.json",
+      "row_sha256": "9e32e1ea1fa4db3c34498d581018e69a4028eeabafe6ddc36d0ae7163aab9a74"
+    },
+    {
+      "index": 438,
+      "unique_id": "test/number_theory/255.json",
+      "row_sha256": "d82219ed77edf95fb2e12830c1153a757137750ce2cc994d77f503a2e90d04d5"
+    },
+    {
+      "index": 452,
+      "unique_id": "test/algebra/1814.json",
+      "row_sha256": "4257526adc70f90580f1c2e8153f9cd0c14e255046e073036429e53e31605e7d"
+    },
+    {
+      "index": 458,
+      "unique_id": "test/prealgebra/805.json",
+      "row_sha256": "0bc52f5e35b037ca9c7e65cdca14a6b5fe874c27a8450beab629d6d557340366"
+    },
+    {
+      "index": 482,
+      "unique_id": "test/number_theory/1090.json",
+      "row_sha256": "97f79fc51cb95b4186a29d90917f553abd04abbd869cdc58edde545bd2a731a7"
+    },
+    {
+      "index": 495,
+      "unique_id": "test/intermediate_algebra/1981.json",
+      "row_sha256": "1bcb0b774326a627901fbd4b6911bfcda9b8259940560e0dcc66e9999e7024b8"
+    }
+  ],
+  "sparse_input_sha256": "e0ee9b93db037ac63bbb89efb9a47768a24c26974b18c59aae72c03e05f70b17",
+  "note": "Legacy filename retained for unchanged server. 500-position sparse list contains only 24 selected questions and two calibration questions; other rows are null."
+}

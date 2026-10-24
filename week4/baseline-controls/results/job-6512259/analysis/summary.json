@@ -1,0 +1,355 @@
+{
+  "complete": true,
+  "validation_passed": true,
+  "shard": 0,
+  "condition": "late_burst",
+  "unique_questions": 12,
+  "measured_outcomes": 96,
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 24,
+      "correct_on_time": 9,
+      "completed_correct": 22,
+      "correct_on_time_per_minute": 2.5931680882145747,
+      "observation_horizon_seconds": 208.2394899328705,
+      "median_client_seconds": 118.77453416213393,
+      "p95_client_seconds": 199.35583461960778,
+      "mean_queue_seconds": 83.99498614274974,
+      "median_queue_seconds": 75.63152636785526,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 41512,
+      "cue_tokens": 196,
+      "output_tokens": 53793,
+      "token_accounting_complete": true,
+      "answer_tokens": 12075
+    },
+    {
+      "policy": "fixed4096",
+      "n": 24,
+      "correct_on_time": 5,
+      "completed_correct": 22,
+      "correct_on_time_per_minute": 1.440648937896986,
+      "observation_horizon_seconds": 208.2394899328705,
+      "median_client_seconds": 170.56705112429336,
+      "p95_client_seconds": 274.5451362177264,
+      "mean_queue_seconds": 120.47930859129217,
+      "median_queue_seconds": 115.14858625154011,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 63244,
+      "cue_tokens": 98,
+      "output_tokens": 74169,
+      "token_accounting_complete": true,
+      "answer_tokens": 10810
+    },
+    {
+      "policy": "admission",
+      "n": 24,
+      "correct_on_time": 3,
+      "completed_correct": 23,
+      "correct_on_time_per_minute": 0.8643893627381917,
+      "observation_horizon_seconds": 208.2394899328705,
+      "median_client_seconds": 170.62266395473853,
+      "p95_client_seconds": 281.73047020984814,
+      "mean_queue_seconds": 126.85006625570047,
+      "median_queue_seconds": 123.99688302294817,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 58217,
+      "cue_tokens": 126,
+      "output_tokens": 69957,
+      "token_accounting_complete": true,
+      "answer_tokens": 11599
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct_on_time": 9,
+      "completed_correct": 22,
+      "correct_on_time_per_minute": 2.5931680882145747,
+      "observation_horizon_seconds": 208.2394899328705,
+      "median_client_seconds": 119.67995475977659,
+      "p95_client_seconds": 201.09786752262153,
+      "mean_queue_seconds": 85.93256433454614,
+      "median_queue_seconds": 78.02975470700767,
+      "terminal_receipts": 24,
+      "normal_completions": 24,
+      "failures": {},
+      "live_reductions": 4,
+      "binding_live_cutoffs": 4,
+      "thinking_tokens": 45947,
+      "cue_tokens": 182,
+      "output_tokens": 58388,
+      "token_accounting_complete": true,
+      "answer_tokens": 12248
+    }
+  ],
+  "paired": [
+    {
+      "block": 0,
+      "index": 1,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-001",
+      "live_key": "b0-live-001",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 10,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-010",
+      "live_key": "b0-live-010",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 12,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-012",
+      "live_key": "b0-live-012",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 28,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-028",
+      "live_key": "b0-live-028",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 42,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-042",
+      "live_key": "b0-live-042",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 65,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-065",
+      "live_key": "b0-live-065",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 76,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-076",
+      "live_key": "b0-live-076",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 77,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-077",
+      "live_key": "b0-live-077",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 83,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-083",
+      "live_key": "b0-live-083",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 89,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-089",
+      "live_key": "b0-live-089",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 94,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-094",
+      "live_key": "b0-live-094",
+      "initial_budget_match": true
+    },
+    {
+      "block": 0,
+      "index": 98,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b0-admission-098",
+      "live_key": "b0-live-098",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 1,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-001",
+      "live_key": "b1-live-001",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 10,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-010",
+      "live_key": "b1-live-010",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 12,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-012",
+      "live_key": "b1-live-012",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 28,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-028",
+      "live_key": "b1-live-028",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 42,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-042",
+      "live_key": "b1-live-042",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 65,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-065",
+      "live_key": "b1-live-065",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 76,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-076",
+      "live_key": "b1-live-076",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 77,
+      "deadline_delta": 1,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-077",
+      "live_key": "b1-live-077",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 83,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-083",
+      "live_key": "b1-live-083",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 89,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-089",
+      "live_key": "b1-live-089",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 94,
+      "deadline_delta": 0,
+      "correctness_delta": -1,
+      "admission_key": "b1-admission-094",
+      "live_key": "b1-live-094",
+      "initial_budget_match": true
+    },
+    {
+      "block": 1,
+      "index": 98,
+      "deadline_delta": 0,
+      "correctness_delta": 0,
+      "admission_key": "b1-admission-098",
+      "live_key": "b1-live-098",
+      "initial_budget_match": true
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "shard": 0,
+    "condition": "late_burst",
+    "requests": 98,
+    "measured_requests": 96,
+    "live_reductions": 4,
+    "binding_live_cutoffs": 4,
+    "overlap_by_phase": {
+      "calib": true,
+      "b0-fixed2048": true,
+      "b0-admission": true,
+      "b0-live": true,
+      "b0-fixed4096": true,
+      "b1-fixed4096": true,
+      "b1-live": true,
+      "b1-admission": true,
+      "b1-fixed2048": true
+    },
+    "paired_initial_budget_matches": 24,
+    "paired_initial_budget_total": 24,
+    "note": "Caps retained as scientific failures; no-cut/low-overlap traces remain valid workload outcomes. No quality-driven continuation gate."
+  },
+  "input_hashes": {
+    "plan.json": "e5d482a5a860299075314c133f9fa79fa6ed6273263f2c7b29efdb979f620b90",
+    "trace.json": "c0bae791623a19feda5d5e75482494f07f00940ef7d4da784a4d427cf64f9d99",
+    "manifest.json": "4ec4fd9becb02d33b4f8f758dd391b8a62b864a85c93824a55e258a3c9ca35f1"
+  },
+  "analysis_sources": {
+    "week4/baseline-controls/analyze.py": "7d732461ddbd19fa8ff9af5a6e018ccbd3318d1d290a78605aaddcdfb30ff298",
+    "week4/baseline-controls/validate.py": "48f0dabd12f67add33add6572c5837c6511aeadd4ef9847a9498dcc68f505171",
+    "week3/larb/code/grade_stage3.py": "75fca15b0f3c341e52d4374dc71568183e77817d63c933578657704de85ef530",
+    "week3/larb/code/baseline.py": "83cde820443c0be577804955deb582fb8e1ccc7d89ba49673f836c982d00f532"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

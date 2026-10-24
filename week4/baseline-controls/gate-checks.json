@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "job": "6512258",
+  "raw_requests": 26,
+  "excluded_gate_outcomes": 24,
+  "corruptions": {
+    "receipt_clock": "rejected",
+    "fixed_initial_budget": "rejected",
+    "forced_cue_token": "rejected"
+  },
+  "lossless_archive_hashes_verified": true,
+  "all_four_policy_phases_overlap": true,
+  "fixed_cutoffs": {
+    "fixed2048": 6,
+    "fixed4096": 3
+  },
+  "failures_by_policy": {
+    "fixed2048": {},
+    "fixed4096": {},
+    "admission": {},
+    "live": {}
+  },
+  "prepared_commit": "030b246cfce1928df6eb41f8fe5c7e9502e0be5d",
+  "all_locked_sources_match_prepared_commit": true
+}

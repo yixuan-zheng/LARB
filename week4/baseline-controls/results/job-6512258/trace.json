@@ -1,0 +1,58 @@
+{
+  "shard": 1,
+  "condition": "late_burst",
+  "arrivals_by_block": [
+    [
+      {
+        "index": 1,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 4,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 5,
+        "offset_seconds": 6.654621783993207
+      }
+    ],
+    [
+      {
+        "index": 5,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 1,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 4,
+        "offset_seconds": 6.654621783993207
+      }
+    ]
+  ],
+  "relative_deadline_seconds": 96.01631070580333,
+  "observation_horizon_seconds": 102.67093248979654,
+  "calibration_latencies_seconds": [
+    26.618487135972828,
+    48.00815535290167
+  ],
+  "unit_seconds": 48.00815535290167,
+  "burst_at_seconds": 6.654621783993207,
+  "orders": [
+    [
+      "fixed2048",
+      "admission",
+      "live",
+      "fixed4096"
+    ],
+    [
+      "fixed4096",
+      "live",
+      "admission",
+      "fixed2048"
+    ]
+  ],
+  "frozen_monotonic": 1490853.203817491,
+  "clock_domain": "client.monotonic"
+}

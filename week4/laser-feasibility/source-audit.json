@@ -1,0 +1,131 @@
+{
+  "upstream_helper_cases": [
+    {
+      "case": "single_token",
+      "observed": {
+        "exception": "ZeroDivisionError"
+      }
+    },
+    {
+      "case": "sampled_first_is_not_top_one",
+      "observed": 0.2
+    },
+    {
+      "case": "empty_window",
+      "observed": 0.0
+    }
+  ],
+  "helper_limit": "Single unmodified AST function, scalar exp stub rather than Torch float32; synthetic compatibility findings, not a DEER/LASER accuracy or full-system result.",
+  "load_sensitivity": [
+    {
+      "target": 10,
+      "active": 0,
+      "first": 0.97,
+      "after_100": 0.97,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 10,
+      "active": 1,
+      "first": 0.97,
+      "after_100": 0.97,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 10,
+      "active": 2,
+      "first": 0.97,
+      "after_100": 0.97,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 2,
+      "active": 0,
+      "first": 0.97,
+      "after_100": 0.97,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 2,
+      "active": 1,
+      "first": 0.97,
+      "after_100": 0.9684846862904004,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 2,
+      "active": 2,
+      "first": 0.97,
+      "after_100": 0.95,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 1,
+      "active": 0,
+      "first": 0.97,
+      "after_100": 0.97,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 1,
+      "active": 1,
+      "first": 0.97,
+      "after_100": 0.95,
+      "chunks_at_275_prompt_tokens": 15
+    },
+    {
+      "target": 1,
+      "active": 2,
+      "first": 0.965197958490209,
+      "after_100": 0.9195362337617694,
+      "chunks_at_275_prompt_tokens": 7
+    }
+  ],
+  "installed_vllm_matches_official_tag": {
+    "async_llm.py": true,
+    "sampling_params.py": true,
+    "logprobs.py": true,
+    "sampler.py": true,
+    "logprobs-core.py": true
+  },
+  "public_async_methods": [
+    "__init__",
+    "from_vllm_config",
+    "from_engine_args",
+    "__del__",
+    "shutdown",
+    "get_supported_tasks",
+    "add_request",
+    "_add_request",
+    "generate",
+    "_run_output_handler",
+    "abort",
+    "encode",
+    "tokenizer",
+    "tokenizer",
+    "get_tokenizer",
+    "is_tracing_enabled",
+    "do_log_stats",
+    "check_health",
+    "start_profile",
+    "stop_profile",
+    "reset_mm_cache",
+    "reset_prefix_cache",
+    "sleep",
+    "wake_up",
+    "is_sleeping",
+    "add_lora",
+    "remove_lora",
+    "list_loras",
+    "pin_lora",
+    "collective_rpc",
+    "wait_for_requests_to_drain",
+    "scale_elastic_ep",
+    "is_running",
+    "is_stopped",
+    "errored",
+    "dead_error"
+  ],
+  "gpu_runs": 0,
+  "generated_dataset_questions": 0
+}

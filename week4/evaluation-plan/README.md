@@ -2,7 +2,7 @@
 
 These notes cover **5A (evaluation planning)** and **6A (closest-method comparison planning)**, prepared on 2026-10-22. They preserve the current candidate and make the next experiments concrete; no new GPU inference or controller changes were made.
 
-The repository audit finds **100 exposed MATH-500 questions** and **400 provisionally reserved questions**. The validation plan selects 24 by an outcome-independent hash rule, leaving 376 for later work. This is a repository-based exposure check, not a claim about unrecorded runs or model pretraining.
+At planning time, the repository audit found **100 exposed MATH-500 questions** and **400 provisionally reserved questions**. The validation plan selects 24 by an outcome-independent hash rule, leaving 376 for later work. This is a repository-based exposure check, not a claim about unrecorded runs or model pretraining.
 
 | File | What it helps answer |
 | --- | --- |
@@ -37,4 +37,4 @@ The script checks the source hash and evaluates three reviewed pure functions, w
 
 ## Picking up from here
 
-A useful next step is to prepare the 5B replay/data-manifest support and the 6B baseline contract checks on exposed questions. The plans explain what remains before launch. [The shared handoff](../HANDOFF.md) records current state; a short update there can link any changed plan, checks, active jobs, and next action. Local environment and cluster settings can stay outside these notes.
+5B execution and the [5C assessment](../reserved-validation/REPORT.md) are now complete. The selected 24 questions are exposed, bringing recorded project exposure to 124; the saved planning audit remains the pre-campaign snapshot. The [6B CPU/interface investigation](../laser-feasibility/REPORT.md) is now complete. Its conditional next step is baseline orchestration and a small mechanics gate before any large 6C comparison, without treating the consumed validation cohort as untouched. [The shared handoff](../HANDOFF.md) records current state; a short update there can link any changed plan, checks, active jobs, and next action. Local environment and cluster settings can stay outside these notes.

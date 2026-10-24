@@ -1,0 +1,69 @@
+{
+  "arrivals": [
+    {
+      "index": 0,
+      "offset_seconds": 0
+    },
+    {
+      "index": 1,
+      "offset_seconds": 0
+    },
+    {
+      "index": 2,
+      "offset_seconds": 0
+    },
+    {
+      "index": 4,
+      "offset_seconds": 0
+    },
+    {
+      "index": 5,
+      "offset_seconds": 0
+    },
+    {
+      "index": 10,
+      "offset_seconds": 0
+    },
+    {
+      "index": 12,
+      "offset_seconds": 0
+    },
+    {
+      "index": 28,
+      "offset_seconds": 0
+    },
+    {
+      "index": 42,
+      "offset_seconds": 0
+    },
+    {
+      "index": 65,
+      "offset_seconds": 0
+    },
+    {
+      "index": 76,
+      "offset_seconds": 0
+    },
+    {
+      "index": 77,
+      "offset_seconds": 0
+    },
+    {
+      "index": 83,
+      "offset_seconds": 0
+    },
+    {
+      "index": 89,
+      "offset_seconds": 0
+    },
+    {
+      "index": 94,
+      "offset_seconds": 0
+    },
+    {
+      "index": 98,
+      "offset_seconds": 0
+    }
+  ],
+  "arrival_snapshot_max_age_s": 2
+}
