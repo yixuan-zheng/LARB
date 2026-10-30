@@ -283,7 +283,8 @@ test, which is the cheapest of the three workloads and the only one that can rev
   can see how little room there is.
 - **Pressure is mild.** Mean queue wait was 4.7–27.4 s against 100–122 s deadlines, and the
   changing-load rush is three near-simultaneous arrivals against two slots. Both are real two-slot
-  queues, but neither produces many deadline misses: three in the whole study.
+  queues, but they produce few misses: nine of 141 answers were not on time in the whole study, five
+  of them the wrong question 36 and four the rush question 63 arriving late.
 - **One model, one GPU type, one engine configuration, one cue.** All runs share them; the comparison
   would restart if any changed.
 - **Deadlines are per session**, two calibration requests each: 122.0 s under constant pressure,
@@ -306,9 +307,10 @@ test, which is the cheapest of the three workloads and the only one that can rev
 | Session 2, attempts 4 and 5 | **The orphan-engine failure recurred.** The gate's `EngineCore` survived the launcher's `pkill` and kept 65.6 GB, so `one_at_a_time` and then `slack_rush_recovery` died at engine start (`ValueError: Free memory on device (14.53/79.22 GiB)`), 46 s and 26 s in | `session2b.sh` hard-kills the PIDs listed by `nvidia-smi --query-compute-apps`, polls until the device is under 2 GiB and refuses to start a condition otherwise. `launch.sh` was deliberately left frozen so the source lock still describes the engine the measured runs used |
 | Engine startup | 171 s cold in session 1, **370 s** cold on this node (Lustre page cache), 50 s warm | budget 3–7 min of startup per condition; conditions run back-to-back on one node |
 
-Neither failed session-2 start produced a measured answer; both are kept as
-`results/attempt4-…-engine-oom` and `results/attempt5-…-engine-oom`. Nothing was rerun because its
-result was unfavourable: the only reruns in this lane are of runs that never produced an answer.
+No start that failed produced a measured answer: they are kept as `results/attempt1…attempt8`, and
+the three aborted `slack_rush_recovery` starts (attempts 6–8) stopped before their first measured
+request. Nothing was rerun because its result was unfavourable — the only reruns in this lane are of
+runs that never produced an answer.
 
 ### 8.2 Compute actually used
 
@@ -349,7 +351,9 @@ which is why the premise workload is the expensive one per answer.
 - Scoring and verdicts: [analyze5.py](one-waiter/analyze5.py), [verdicts.py](one-waiter/verdicts.py),
   [verdicts.json](one-waiter/verdicts.json), [coverage-audit.json](one-waiter/coverage-audit.json)
 - Launchers and logs: [launch.sh](one-waiter/launch.sh), [session2.sh](one-waiter/session2.sh),
-  [session2b.sh](one-waiter/session2b.sh), [run_condition.sbatch](one-waiter/run_condition.sbatch),
-  [session2b.log](one-waiter/session2b.log), [scoring.log](one-waiter/scoring.log)
+  [session2b.sh](one-waiter/session2b.sh), [session2c.sh](one-waiter/session2c.sh),
+  [session2d.sh](one-waiter/session2d.sh), [run_condition.sbatch](one-waiter/run_condition.sbatch),
+  [session2b.log](one-waiter/session2b.log), [session2d.log](one-waiter/session2d.log),
+  [scoring.log](one-waiter/scoring.log)
 - Failed attempts: [results/README.md](one-waiter/results/README.md)
 
