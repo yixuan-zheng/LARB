@@ -30,3 +30,5 @@ INFO 10-29 21:06:45 [vllm.py:500] Cudagraph is disabled under eager mode
 [1;36m(EngineCore_DP0 pid=2605826)[0;0m WARNING 10-29 21:07:04 [scheduler.py:166] Using custom scheduler class w5_adapter.AdmissionScheduler. This scheduler interface is not public and compatibility may not be maintained.
 [1;36m(EngineCore_DP0 pid=2605826)[0;0m INFO 10-29 21:07:05 [vllm.py:500] Cudagraph is disabled under eager mode
 WARNING 10-29 21:07:06 [async_llm.py:288] Processor has been moved under OpenAIServing and will be removed from AsyncLLM in v0.13.
+/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
