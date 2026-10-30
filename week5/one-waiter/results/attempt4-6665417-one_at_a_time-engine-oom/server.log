@@ -1,0 +1,85 @@
+INFO 10-29 19:34:09 [arg_utils.py:592] HF_HUB_OFFLINE is True, replace model_id [/home/hice1/jwang3221/scratch/LARB-week5-env/model/Qwen3-4B] to model_path [/home/hice1/jwang3221/scratch/LARB-week5-env/model/Qwen3-4B]
+INFO 10-29 19:34:09 [model.py:631] Resolved architecture: Qwen3ForCausalLM
+INFO 10-29 19:34:09 [model.py:1745] Using max model len 24576
+INFO 10-29 19:34:09 [scheduler.py:216] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 10-29 19:34:09 [vllm.py:500] Cudagraph is disabled under eager mode
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m INFO 10-29 19:34:20 [core.py:93] Initializing a V1 LLM engine (v0.11.2) with config: model='/home/hice1/jwang3221/scratch/LARB-week5-env/model/Qwen3-4B', speculative_config=None, tokenizer='/home/hice1/jwang3221/scratch/LARB-week5-env/model/Qwen3-4B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=24576, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=6222, served_model_name=/home/hice1/jwang3221/scratch/LARB-week5-env/model/Qwen3-4B, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': None, 'compile_mm_encoder': False, 'use_inductor': None, 'compile_sizes': [], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {}, 'max_cudagraph_capture_size': 0, 'local_cache_dir': None}
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m INFO 10-29 19:34:21 [parallel_state.py:1208] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.27.150.91:36305 backend=nccl
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m INFO 10-29 19:34:21 [parallel_state.py:1394] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842] EngineCore failed to start.
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842] Traceback (most recent call last):
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 833, in run_engine_core
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     engine_core = EngineCoreProc(*args, **kwargs)
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 606, in __init__
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     super().__init__(
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 102, in __init__
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     self.model_executor = executor_class(vllm_config)
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/executor/abstract.py", line 101, in __init__
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     self._init_executor()
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/executor/uniproc_executor.py", line 47, in _init_executor
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     self.driver_worker.init_device()
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/worker/worker_base.py", line 324, in init_device
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     self.worker.init_device()  # type: ignore
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 247, in init_device
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842]     raise ValueError(
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ERROR 10-29 19:34:21 [core.py:842] ValueError: Free memory on device (14.53/79.22 GiB) on startup is less than desired GPU memory utilization (0.8, 63.38 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m Process EngineCore_DP0:
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m Traceback (most recent call last):
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     self.run()
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/multiprocessing/process.py", line 108, in run
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     self._target(*self._args, **self._kwargs)
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 846, in run_engine_core
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     raise e
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 833, in run_engine_core
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 606, in __init__
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     super().__init__(
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 102, in __init__
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     self.model_executor = executor_class(vllm_config)
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/executor/abstract.py", line 101, in __init__
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     self._init_executor()
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/executor/uniproc_executor.py", line 47, in _init_executor
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     self.driver_worker.init_device()
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/worker/worker_base.py", line 324, in init_device
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     self.worker.init_device()  # type: ignore
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m   File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 247, in init_device
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m     raise ValueError(
+[1;36m(EngineCore_DP0 pid=2481241)[0;0m ValueError: Free memory on device (14.53/79.22 GiB) on startup is less than desired GPU memory utilization (0.8, 63.38 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+[rank0]:[W1029 19:34:22.188020469 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+Traceback (most recent call last):
+  File "/storage/ice1/3/0/jwang3221/LARB/week5/one-waiter/w5_server.py", line 128, in <module>
+    engine = AsyncLLM.from_engine_args(args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 232, in from_engine_args
+    return cls(
+           ^^^^
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 133, in __init__
+    self.engine_core = EngineCoreClient.make_async_mp_client(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 121, in make_async_mp_client
+    return AsyncMPClient(*client_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 808, in __init__
+    super().__init__(
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 469, in __init__
+    with launch_core_engines(vllm_config, executor_class, log_stats) as (
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 907, in launch_core_engines
+    wait_for_engine_startup(
+  File "/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 964, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

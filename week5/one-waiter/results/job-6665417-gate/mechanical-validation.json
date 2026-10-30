@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "failures": [],
+  "condition": "gate",
+  "requests": 8,
+  "measured_requests": 6,
+  "phases_completed": [
+    "b0-live_one",
+    "b0-fixed2048"
+  ],
+  "skipped": [],
+  "live_reductions": 2,
+  "binding_live_cutoffs": 2,
+  "overlap_by_phase": {
+    "b0-live_one": 2,
+    "b0-fixed2048": 2
+  },
+  "rows": [
+    {
+      "key": "b0-live_one-001",
+      "index": 1,
+      "block": 0,
+      "policy": "live_one",
+      "initial_budget": 16384,
+      "trigger": 1,
+      "admission_waiting": [],
+      "live_reduction": true,
+      "binding_live_cutoff": true,
+      "reduction_waiting": [
+        "b0-live_one-005"
+      ],
+      "reduction_tokens": 123,
+      "cap": null,
+      "close_index": 2060,
+      "cue_start": 2048,
+      "output_tokens": 2723,
+      "request_sha256": "e92047158449090108603f990b6df19e0194d02b01cc6cd5bd7ac37111030ea5"
+    },
+    {
+      "key": "b0-live_one-004",
+      "index": 4,
+      "block": 0,
+      "policy": "live_one",
+      "initial_budget": 16384,
+      "trigger": 1,
+      "admission_waiting": [],
+      "live_reduction": true,
+      "binding_live_cutoff": true,
+      "reduction_waiting": [
+        "b0-live_one-005"
+      ],
+      "reduction_tokens": 5,
+      "cap": null,
+      "close_index": 2060,
+      "cue_start": 2048,
+      "output_tokens": 2624,
+      "request_sha256": "16f97c523b513d0cf8f7a3daae9bb3e623e63177ff492498732bd2eb8261893d"
+    },
+    {
+      "key": "b0-live_one-005",
+      "index": 5,
+      "block": 0,
+      "policy": "live_one",
+      "initial_budget": 16384,
+      "trigger": 1,
+      "admission_waiting": [],
+      "live_reduction": false,
+      "binding_live_cutoff": false,
+      "reduction_waiting": [],
+      "reduction_tokens": null,
+      "cap": null,
+      "close_index": 3323,
+      "cue_start": null,
+      "output_tokens": 3726,
+      "request_sha256": "154fdce0d41882f80e76a1d79cd9763d1ca072ef89d0b8fbabf9f11ff600f5a7"
+    },
+    {
+      "key": "b0-fixed2048-004",
+      "index": 4,
+      "block": 0,
+      "policy": "fixed2048",
+      "initial_budget": 2048,
+      "trigger": null,
+      "admission_waiting": [],
+      "live_reduction": false,
+      "binding_live_cutoff": false,
+      "reduction_waiting": [],
+      "reduction_tokens": null,
+      "cap": null,
+      "close_index": 2060,
+      "cue_start": 2048,
+      "output_tokens": 2624,
+      "request_sha256": "0e4cc2fd8e1287fdfdafad1b14b7b2007de68cd09cacb8b10b4d8e6d3b71d54c"
+    },
+    {
+      "key": "b0-fixed2048-001",
+      "index": 1,
+      "block": 0,
+      "policy": "fixed2048",
+      "initial_budget": 2048,
+      "trigger": null,
+      "admission_waiting": [],
+      "live_reduction": false,
+      "binding_live_cutoff": false,
+      "reduction_waiting": [],
+      "reduction_tokens": null,
+      "cap": null,
+      "close_index": 2060,
+      "cue_start": 2048,
+      "output_tokens": 2781,
+      "request_sha256": "c55798e9d88db30e740b43602ed51337d35bb7a32946e40b12a91fa1e3367338"
+    },
+    {
+      "key": "b0-fixed2048-005",
+      "index": 5,
+      "block": 0,
+      "policy": "fixed2048",
+      "initial_budget": 2048,
+      "trigger": null,
+      "admission_waiting": [],
+      "live_reduction": false,
+      "binding_live_cutoff": false,
+      "reduction_waiting": [],
+      "reduction_tokens": null,
+      "cap": null,
+      "close_index": 2060,
+      "cue_start": 2048,
+      "output_tokens": 2489,
+      "request_sha256": "cbb8b808f1bafd7f557deeeaf37bdc41d23f205436b1a0cc2d4026ff03e66b0a"
+    }
+  ],
+  "coverage": {
+    "questions": 3,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 6,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads and takes the next unspent slice of the same rank order for each: one_at_a_time positions 6-11 and slack_rush_recovery positions 12-17. Positions 0-5 are not reused, because their answers under all four policies already exist and could only reproduce the same result; the slices are still rank order, never chosen by difficulty or by outcome, and were fixed before either condition ran. Coverage stays 6 questions per condition, so three workloads need about 5 GPU-hours against 3.3 available; slack_rush_recovery is the first to be truncated by its wall-clock cap, and any skipped phase is recorded as such.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+}

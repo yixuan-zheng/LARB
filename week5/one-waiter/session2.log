@@ -1,0 +1,43 @@
+=== gate cap=800s start=2026-10-29T19:23:00-04:00 remaining=13046s
+job=6665417 condition=gate cap=800s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-gate started=2026-10-29T19:23:12-04:00
+runner_exit=0 validation_exit=0 finished=2026-10-29T19:33:54-04:00
+=== gate exit=0 end=2026-10-29T19:33:55-04:00 remaining=12391s
+=== one_at_a_time cap=6600s start=2026-10-29T19:33:55-04:00 remaining=12391s
+job=6665417 condition=one_at_a_time cap=6600s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-one_at_a_time started=2026-10-29T19:33:58-04:00
+Traceback (most recent call last):
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/run_week5.py", line 198, in <module>
+    asyncio.run(main())
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/run_week5.py", line 185, in main
+    raise RuntimeError('Server exited before readiness')
+RuntimeError: Server exited before readiness
+runner_exit=1 validation_exit=1 finished=2026-10-29T19:34:45-04:00
+=== one_at_a_time exit=1 end=2026-10-29T19:34:46-04:00 remaining=12340s
+=== slack_rush_recovery cap=12100s start=2026-10-29T19:34:46-04:00 remaining=12340s
+job=6665417 condition=slack_rush_recovery cap=12100s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-slack_rush_recovery started=2026-10-29T19:34:48-04:00
+Traceback (most recent call last):
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/run_week5.py", line 198, in <module>
+    asyncio.run(main())
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/run_week5.py", line 185, in main
+    raise RuntimeError('Server exited before readiness')
+RuntimeError: Server exited before readiness
+runner_exit=1 validation_exit=1 finished=2026-10-29T19:35:15-04:00
+=== slack_rush_recovery exit=1 end=2026-10-29T19:35:16-04:00 remaining=12310s
+=== chain done 2026-10-29T19:35:16-04:00

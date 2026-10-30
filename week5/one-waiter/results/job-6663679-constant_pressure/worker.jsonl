@@ -1,0 +1,195 @@
+{"event": "initialized", "monotonic": 254706.355887959, "pid": 2616463}
+{"event": "admitted", "monotonic": 254714.004191895, "pid": 2616463, "key": "calib-002", "policy": "full", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 1, "trigger": null, "waiting": [], "output_object": 140720969331904}
+{"event": "admitted", "monotonic": 254714.044228558, "pid": 2616463, "key": "calib-000", "policy": "full", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 2, "trigger": null, "waiting": [], "output_object": 140721081277120}
+{"event": "generation_observed", "monotonic": 254714.044768263, "pid": 2616463, "key": "calib-002", "tokens": 1, "budget": 16384}
+{"event": "generation_observed", "monotonic": 254714.0936607, "pid": 2616463, "key": "calib-000", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 254738.187704274, "pid": 2616463, "key": "calib-000", "close_index": 1215, "forced": false}
+{"event": "thinking_closed", "monotonic": 254767.535225747, "pid": 2616463, "key": "calib-002", "close_index": 2710, "forced": false}
+{"event": "admitted", "monotonic": 254775.49879751, "pid": 2616463, "key": "b0-fixed2048-019", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 3095, "trigger": null, "waiting": [], "output_object": 140721081279232}
+{"event": "generation_observed", "monotonic": 254775.536927913, "pid": 2616463, "key": "b0-fixed2048-019", "tokens": 1, "budget": 2048}
+{"event": "admitted", "monotonic": 254793.801867399, "pid": 2616463, "key": "b0-fixed2048-067", "policy": "fixed2048", "row": 1, "initial_budget": 2048, "tokens": 0, "admission_step": 4062, "trigger": null, "waiting": [], "output_object": 140720946672064}
+{"event": "generation_observed", "monotonic": 254793.823921064, "pid": 2616463, "key": "b0-fixed2048-067", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 254815.440671, "pid": 2616463, "key": "b0-fixed2048-019", "tokens": 2048, "budget": 2048, "output_object": 140721081279232}
+{"event": "thinking_closed", "monotonic": 254815.674810305, "pid": 2616463, "key": "b0-fixed2048-019", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 254826.95416517, "pid": 2616463, "key": "b0-fixed2048-087", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 5741, "trigger": null, "waiting": [], "output_object": 140720946662016}
+{"event": "generation_observed", "monotonic": 254826.989903876, "pid": 2616463, "key": "b0-fixed2048-087", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 254833.982527847, "pid": 2616463, "key": "b0-fixed2048-067", "tokens": 2048, "budget": 2048, "output_object": 140720946672064}
+{"event": "thinking_closed", "monotonic": 254834.195371336, "pid": 2616463, "key": "b0-fixed2048-067", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 254841.350349934, "pid": 2616463, "key": "b0-fixed2048-039", "policy": "fixed2048", "row": 1, "initial_budget": 2048, "tokens": 0, "admission_step": 6490, "trigger": null, "waiting": [], "output_object": 140720946620608}
+{"event": "generation_observed", "monotonic": 254841.372606955, "pid": 2616463, "key": "b0-fixed2048-039", "tokens": 1, "budget": 2048}
+{"event": "thinking_closed", "monotonic": 254866.171579228, "pid": 2616463, "key": "b0-fixed2048-087", "close_index": 2001, "forced": false}
+{"event": "admitted", "monotonic": 254879.039845529, "pid": 2616463, "key": "b0-fixed2048-027", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 8347, "trigger": null, "waiting": ["b0-fixed2048-035"], "output_object": 140720946673280}
+{"event": "generation_observed", "monotonic": 254879.07204587, "pid": 2616463, "key": "b0-fixed2048-027", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 254882.811819845, "pid": 2616463, "key": "b0-fixed2048-039", "tokens": 2048, "budget": 2048, "output_object": 140720946620608}
+{"event": "thinking_closed", "monotonic": 254883.066502941, "pid": 2616463, "key": "b0-fixed2048-039", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 254893.278149975, "pid": 2616463, "key": "b0-fixed2048-035", "policy": "fixed2048", "row": 1, "initial_budget": 2048, "tokens": 0, "admission_step": 9051, "trigger": null, "waiting": [], "output_object": 140721028578752}
+{"event": "generation_observed", "monotonic": 254893.321953738, "pid": 2616463, "key": "b0-fixed2048-035", "tokens": 1, "budget": 2048}
+{"event": "thinking_closed", "monotonic": 254911.279426757, "pid": 2616463, "key": "b0-fixed2048-027", "close_index": 1602, "forced": false}
+{"event": "row_move", "monotonic": 254918.125349532, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "cue_started", "monotonic": 254933.911781776, "pid": 2616463, "key": "b0-fixed2048-035", "tokens": 2048, "budget": 2048, "output_object": 140721028578752}
+{"event": "thinking_closed", "monotonic": 254934.153794416, "pid": 2616463, "key": "b0-fixed2048-035", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 254940.879572805, "pid": 2616463, "key": "b0-fixed4096-019", "policy": "fixed4096", "row": 0, "initial_budget": 4096, "tokens": 0, "admission_step": 11433, "trigger": null, "waiting": [], "output_object": 140721028747712}
+{"event": "generation_observed", "monotonic": 254940.905727137, "pid": 2616463, "key": "b0-fixed4096-019", "tokens": 1, "budget": 4096}
+{"event": "admitted", "monotonic": 254959.172633078, "pid": 2616463, "key": "b0-fixed4096-067", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 12412, "trigger": null, "waiting": [], "output_object": 140720969331136}
+{"event": "generation_observed", "monotonic": 254959.188082586, "pid": 2616463, "key": "b0-fixed4096-067", "tokens": 1, "budget": 4096}
+{"event": "cue_started", "monotonic": 255022.725745916, "pid": 2616463, "key": "b0-fixed4096-019", "tokens": 4096, "budget": 4096, "output_object": 140721028747712}
+{"event": "thinking_closed", "monotonic": 255022.953081075, "pid": 2616463, "key": "b0-fixed4096-019", "close_index": 4108, "forced": true}
+{"event": "admitted", "monotonic": 255037.027237498, "pid": 2616463, "key": "b0-fixed4096-087", "policy": "fixed4096", "row": 0, "initial_budget": 4096, "tokens": 0, "admission_step": 16201, "trigger": null, "waiting": ["b0-fixed4096-039", "b0-fixed4096-027", "b0-fixed4096-035"], "output_object": 140720969330560}
+{"event": "generation_observed", "monotonic": 255037.098367843, "pid": 2616463, "key": "b0-fixed4096-087", "tokens": 1, "budget": 4096}
+{"event": "cue_started", "monotonic": 255043.526724688, "pid": 2616463, "key": "b0-fixed4096-067", "tokens": 4096, "budget": 4096, "output_object": 140720969331136}
+{"event": "thinking_closed", "monotonic": 255043.738866511, "pid": 2616463, "key": "b0-fixed4096-067", "close_index": 4108, "forced": true}
+{"event": "admitted", "monotonic": 255051.208621896, "pid": 2616463, "key": "b0-fixed4096-039", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 16887, "trigger": null, "waiting": ["b0-fixed4096-027", "b0-fixed4096-035"], "output_object": 140720969331008}
+{"event": "generation_observed", "monotonic": 255051.22367451, "pid": 2616463, "key": "b0-fixed4096-039", "tokens": 1, "budget": 4096}
+{"event": "thinking_closed", "monotonic": 255086.880022863, "pid": 2616463, "key": "b0-fixed4096-087", "close_index": 2423, "forced": false}
+{"event": "thinking_closed", "monotonic": 255096.823411885, "pid": 2616463, "key": "b0-fixed4096-039", "close_index": 2183, "forced": false}
+{"event": "admitted", "monotonic": 255098.679901376, "pid": 2616463, "key": "b0-fixed4096-027", "policy": "fixed4096", "row": 0, "initial_budget": 4096, "tokens": 0, "admission_step": 19158, "trigger": null, "waiting": ["b0-fixed4096-035"], "output_object": 140720969325696}
+{"event": "generation_observed", "monotonic": 255098.712223098, "pid": 2616463, "key": "b0-fixed4096-027", "tokens": 1, "budget": 4096}
+{"event": "admitted", "monotonic": 255106.365815863, "pid": 2616463, "key": "b0-fixed4096-035", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 19527, "trigger": null, "waiting": [], "output_object": 140720969331264}
+{"event": "generation_observed", "monotonic": 255106.381308388, "pid": 2616463, "key": "b0-fixed4096-035", "tokens": 1, "budget": 4096}
+{"event": "thinking_closed", "monotonic": 255127.865177866, "pid": 2616463, "key": "b0-fixed4096-027", "close_index": 1508, "forced": false}
+{"event": "row_move", "monotonic": 255133.725609143, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "thinking_closed", "monotonic": 255154.821318765, "pid": 2616463, "key": "b0-fixed4096-035", "close_index": 2658, "forced": false}
+{"event": "admitted", "monotonic": 255162.079476431, "pid": 2616463, "key": "b0-live-019", "policy": "live", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 22558, "trigger": 2, "waiting": [], "output_object": 140720969384512}
+{"event": "generation_observed", "monotonic": 255162.095552435, "pid": 2616463, "key": "b0-live-019", "tokens": 1, "budget": 16384}
+{"event": "admitted", "monotonic": 255180.397513446, "pid": 2616463, "key": "b0-live-067", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 23601, "trigger": 2, "waiting": [], "output_object": 140721046705152}
+{"event": "generation_observed", "monotonic": 255180.413332688, "pid": 2616463, "key": "b0-live-067", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255216.988268, "pid": 2616463, "key": "b0-live-019", "row": 0, "tokens": 3003, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live-087", "b0-live-039"], "pressure_step": 25561, "pressure_age_ms": 5.050074018072337, "output_object": 140720969384512}
+{"event": "live_reduction", "monotonic": 255216.988566246, "pid": 2616463, "key": "b0-live-067", "row": 1, "tokens": 1960, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live-087", "b0-live-039"], "pressure_step": 25561, "pressure_age_ms": 5.35810602013953, "output_object": 140721046705152}
+{"event": "cue_started", "monotonic": 255217.000655074, "pid": 2616463, "key": "b0-live-019", "tokens": 3003, "budget": 2048, "output_object": 140720969384512}
+{"event": "thinking_closed", "monotonic": 255217.249884695, "pid": 2616463, "key": "b0-live-019", "close_index": 3015, "forced": true}
+{"event": "cue_started", "monotonic": 255220.501495973, "pid": 2616463, "key": "b0-live-067", "tokens": 2048, "budget": 2048, "output_object": 140721046705152}
+{"event": "thinking_closed", "monotonic": 255220.771271467, "pid": 2616463, "key": "b0-live-067", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 255231.93729249, "pid": 2616463, "key": "b0-live-087", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 26090, "trigger": 2, "waiting": ["b0-live-039"], "output_object": 140720969329344}
+{"event": "generation_observed", "monotonic": 255231.998108565, "pid": 2616463, "key": "b0-live-087", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255235.284145751, "pid": 2616463, "key": "b0-live-087", "row": 1, "tokens": 176, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live-039", "b0-live-027"], "pressure_step": 26266, "pressure_age_ms": 2.152998000383377, "output_object": 140720969329344}
+{"event": "admitted", "monotonic": 255236.233060919, "pid": 2616463, "key": "b0-live-039", "policy": "live", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 26315, "trigger": 2, "waiting": ["b0-live-027"], "output_object": 140720969391424}
+{"event": "generation_observed", "monotonic": 255236.24824681, "pid": 2616463, "key": "b0-live-039", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255253.572061809, "pid": 2616463, "key": "b0-live-039", "row": 0, "tokens": 925, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live-027", "b0-live-035"], "pressure_step": 27240, "pressure_age_ms": 3.0077180126681924, "output_object": 140720969391424}
+{"event": "thinking_closed", "monotonic": 255265.912939874, "pid": 2616463, "key": "b0-live-087", "close_index": 1807, "forced": false}
+{"event": "cue_started", "monotonic": 255274.884004339, "pid": 2616463, "key": "b0-live-039", "tokens": 2048, "budget": 2048, "output_object": 140720969391424}
+{"event": "thinking_closed", "monotonic": 255275.111349189, "pid": 2616463, "key": "b0-live-039", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 255278.372445132, "pid": 2616463, "key": "b0-live-027", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 28539, "trigger": 2, "waiting": ["b0-live-035"], "output_object": 140720946669120}
+{"event": "generation_observed", "monotonic": 255278.387927994, "pid": 2616463, "key": "b0-live-027", "tokens": 1, "budget": 16384}
+{"event": "admitted", "monotonic": 255287.750401134, "pid": 2616463, "key": "b0-live-035", "policy": "live", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 28943, "trigger": 2, "waiting": [], "output_object": 140720946623616}
+{"event": "generation_observed", "monotonic": 255287.765581096, "pid": 2616463, "key": "b0-live-035", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 255318.551212047, "pid": 2616463, "key": "b0-live-027", "close_index": 1355, "forced": false}
+{"event": "thinking_closed", "monotonic": 255352.702277381, "pid": 2616463, "key": "b0-live-035", "close_index": 2809, "forced": false}
+{"event": "admitted", "monotonic": 255360.127900865, "pid": 2616463, "key": "b0-live_one-019", "policy": "live_one", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 32123, "trigger": 1, "waiting": [], "output_object": 140720969384128}
+{"event": "generation_observed", "monotonic": 255360.294089793, "pid": 2616463, "key": "b0-live_one-019", "tokens": 1, "budget": 16384}
+{"event": "admitted", "monotonic": 255378.258032514, "pid": 2616463, "key": "b0-live_one-067", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 33121, "trigger": 1, "waiting": [], "output_object": 140720947028800}
+{"event": "generation_observed", "monotonic": 255378.273520776, "pid": 2616463, "key": "b0-live_one-067", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255396.569707304, "pid": 2616463, "key": "b0-live_one-019", "row": 0, "tokens": 1992, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live_one-087"], "pressure_step": 34115, "pressure_age_ms": 2.40007002139464, "output_object": 140720969384128}
+{"event": "live_reduction", "monotonic": 255396.569994355, "pid": 2616463, "key": "b0-live_one-067", "row": 1, "tokens": 994, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live_one-087"], "pressure_step": 34115, "pressure_age_ms": 2.7185500075574964, "output_object": 140720947028800}
+{"event": "cue_started", "monotonic": 255397.692376743, "pid": 2616463, "key": "b0-live_one-019", "tokens": 2048, "budget": 2048, "output_object": 140720969384128}
+{"event": "thinking_closed", "monotonic": 255397.96864406, "pid": 2616463, "key": "b0-live_one-019", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 255409.210026874, "pid": 2616463, "key": "b0-live_one-087", "policy": "live_one", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 34809, "trigger": 1, "waiting": [], "output_object": 140721046968640}
+{"event": "generation_observed", "monotonic": 255409.242019187, "pid": 2616463, "key": "b0-live_one-087", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255414.856397701, "pid": 2616463, "key": "b0-live_one-087", "row": 0, "tokens": 315, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live_one-039"], "pressure_step": 35124, "pressure_age_ms": 2.2083230142015964, "output_object": 140721046968640}
+{"event": "cue_started", "monotonic": 255415.591549431, "pid": 2616463, "key": "b0-live_one-067", "tokens": 2048, "budget": 2048, "output_object": 140720947028800}
+{"event": "thinking_closed", "monotonic": 255415.80243878, "pid": 2616463, "key": "b0-live_one-067", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 255423.064980982, "pid": 2616463, "key": "b0-live_one-039", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 35589, "trigger": 1, "waiting": [], "output_object": 140720947029568}
+{"event": "generation_observed", "monotonic": 255423.098351497, "pid": 2616463, "key": "b0-live_one-039", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255433.158220484, "pid": 2616463, "key": "b0-live_one-039", "row": 1, "tokens": 583, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b0-live_one-027"], "pressure_step": 36172, "pressure_age_ms": 2.676937001524493, "output_object": 140720947029568}
+{"event": "thinking_closed", "monotonic": 255444.626696053, "pid": 2616463, "key": "b0-live_one-087", "close_index": 2035, "forced": false}
+{"event": "admitted", "monotonic": 255454.743174935, "pid": 2616463, "key": "b0-live_one-027", "policy": "live_one", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 37452, "trigger": 1, "waiting": ["b0-live_one-035"], "output_object": 140720969324288}
+{"event": "generation_observed", "monotonic": 255454.758622139, "pid": 2616463, "key": "b0-live_one-027", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 255457.858368423, "pid": 2616463, "key": "b0-live_one-039", "tokens": 2048, "budget": 2048, "output_object": 140720947029568}
+{"event": "thinking_closed", "monotonic": 255458.053643873, "pid": 2616463, "key": "b0-live_one-039", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 255464.931201895, "pid": 2616463, "key": "b0-live_one-035", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 38062, "trigger": 1, "waiting": [], "output_object": 140720969331456}
+{"event": "generation_observed", "monotonic": 255464.946337118, "pid": 2616463, "key": "b0-live_one-035", "tokens": 1, "budget": 16384}
+{"event": "cue_started", "monotonic": 255488.613749837, "pid": 2616463, "key": "b0-live_one-027", "tokens": 2048, "budget": 2048, "output_object": 140720969324288}
+{"event": "thinking_closed", "monotonic": 255488.838455332, "pid": 2616463, "key": "b0-live_one-027", "close_index": 2060, "forced": true}
+{"event": "row_move", "monotonic": 255494.824958303, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "thinking_closed", "monotonic": 255508.128650617, "pid": 2616463, "key": "b0-live_one-035", "close_index": 2645, "forced": false}
+{"event": "admitted", "monotonic": 255514.855720277, "pid": 2616463, "key": "b1-live_one-039", "policy": "live_one", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 41077, "trigger": 1, "waiting": [], "output_object": 140731311194816}
+{"event": "generation_observed", "monotonic": 255515.144954529, "pid": 2616463, "key": "b1-live_one-039", "tokens": 1, "budget": 16384}
+{"event": "admitted", "monotonic": 255533.155051778, "pid": 2616463, "key": "b1-live_one-027", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 42128, "trigger": 1, "waiting": [], "output_object": 140720946650432}
+{"event": "generation_observed", "monotonic": 255533.172709759, "pid": 2616463, "key": "b1-live_one-027", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 255548.464837232, "pid": 2616463, "key": "b1-live_one-027", "close_index": 897, "forced": false}
+{"event": "live_reduction", "monotonic": 255551.464936333, "pid": 2616463, "key": "b1-live_one-039", "row": 0, "tokens": 2122, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b1-live_one-035"], "pressure_step": 43199, "pressure_age_ms": 2.276415005326271, "output_object": 140731311194816}
+{"event": "cue_started", "monotonic": 255551.477117719, "pid": 2616463, "key": "b1-live_one-039", "tokens": 2122, "budget": 2048, "output_object": 140731311194816}
+{"event": "thinking_closed", "monotonic": 255551.717061651, "pid": 2616463, "key": "b1-live_one-039", "close_index": 2134, "forced": true}
+{"event": "admitted", "monotonic": 255554.826732673, "pid": 2616463, "key": "b1-live_one-035", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 43376, "trigger": 1, "waiting": [], "output_object": 140720946645120}
+{"event": "generation_observed", "monotonic": 255554.843882513, "pid": 2616463, "key": "b1-live_one-035", "tokens": 1, "budget": 16384}
+{"event": "row_move", "monotonic": 255557.530344001, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "admitted", "monotonic": 255569.75152375, "pid": 2616463, "key": "b1-live_one-019", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 44280, "trigger": 1, "waiting": [], "output_object": 140721082188864}
+{"event": "generation_observed", "monotonic": 255569.766791595, "pid": 2616463, "key": "b1-live_one-019", "tokens": 1, "budget": 16384}
+{"event": "live_reduction", "monotonic": 255588.080159993, "pid": 2616463, "key": "b1-live_one-035", "row": 0, "tokens": 2030, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b1-live_one-067"], "pressure_step": 45406, "pressure_age_ms": 17.892625008244067, "output_object": 140720946645120}
+{"event": "live_reduction", "monotonic": 255588.080438224, "pid": 2616463, "key": "b1-live_one-019", "row": 1, "tokens": 1126, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b1-live_one-067"], "pressure_step": 45406, "pressure_age_ms": 18.204785010311753, "output_object": 140721082188864}
+{"event": "cue_started", "monotonic": 255588.379550417, "pid": 2616463, "key": "b1-live_one-035", "tokens": 2048, "budget": 2048, "output_object": 140720946645120}
+{"event": "thinking_closed", "monotonic": 255588.564645943, "pid": 2616463, "key": "b1-live_one-035", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 255593.67171497, "pid": 2616463, "key": "b1-live_one-067", "policy": "live_one", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 45757, "trigger": 1, "waiting": [], "output_object": 140720946658880}
+{"event": "generation_observed", "monotonic": 255593.688300424, "pid": 2616463, "key": "b1-live_one-067", "tokens": 1, "budget": 16384}
+{"event": "cue_started", "monotonic": 255603.189148135, "pid": 2616463, "key": "b1-live_one-019", "tokens": 2048, "budget": 2048, "output_object": 140721082188864}
+{"event": "thinking_closed", "monotonic": 255603.381318323, "pid": 2616463, "key": "b1-live_one-019", "close_index": 2060, "forced": true}
+{"event": "live_reduction", "monotonic": 255606.356883506, "pid": 2616463, "key": "b1-live_one-067", "row": 0, "tokens": 771, "previous_budget": 16384, "budget": 2048, "version": 1, "waiting": ["b1-live_one-087"], "pressure_step": 46528, "pressure_age_ms": 3.723792004166171, "output_object": 140720946658880}
+{"event": "admitted", "monotonic": 255613.001955203, "pid": 2616463, "key": "b1-live_one-087", "policy": "live_one", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 46937, "trigger": 1, "waiting": [], "output_object": 140721028748800}
+{"event": "generation_observed", "monotonic": 255613.01721738, "pid": 2616463, "key": "b1-live_one-087", "tokens": 1, "budget": 16384}
+{"event": "cue_started", "monotonic": 255627.205560963, "pid": 2616463, "key": "b1-live_one-067", "tokens": 2048, "budget": 2048, "output_object": 140720946658880}
+{"event": "thinking_closed", "monotonic": 255627.407605122, "pid": 2616463, "key": "b1-live_one-067", "close_index": 2060, "forced": true}
+{"event": "row_move", "monotonic": 255634.230976288, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "thinking_closed", "monotonic": 255649.178868657, "pid": 2616463, "key": "b1-live_one-087", "close_index": 2205, "forced": false}
+{"event": "admitted", "monotonic": 255657.331553788, "pid": 2616463, "key": "b1-live-039", "policy": "live", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 49635, "trigger": 2, "waiting": [], "output_object": 140721046874368}
+{"event": "generation_observed", "monotonic": 255657.348641579, "pid": 2616463, "key": "b1-live-039", "tokens": 1, "budget": 16384}
+{"event": "admitted", "monotonic": 255675.63558012, "pid": 2616463, "key": "b1-live-027", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 50873, "trigger": 2, "waiting": [], "output_object": 140720946497600}
+{"event": "generation_observed", "monotonic": 255675.650753997, "pid": 2616463, "key": "b1-live-027", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 255690.074863173, "pid": 2616463, "key": "b1-live-027", "close_index": 904, "forced": false}
+{"event": "thinking_closed", "monotonic": 255694.220211044, "pid": 2616463, "key": "b1-live-039", "close_index": 2402, "forced": false}
+{"event": "admitted", "monotonic": 255695.484451717, "pid": 2616463, "key": "b1-live-035", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 52119, "trigger": 2, "waiting": [], "output_object": 140720946662208}
+{"event": "generation_observed", "monotonic": 255695.499735468, "pid": 2616463, "key": "b1-live-035", "tokens": 1, "budget": 16384}
+{"event": "row_move", "monotonic": 255699.10133462, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "admitted", "monotonic": 255712.232542801, "pid": 2616463, "key": "b1-live-019", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 53248, "trigger": 2, "waiting": [], "output_object": 140720946646720}
+{"event": "generation_observed", "monotonic": 255712.250626063, "pid": 2616463, "key": "b1-live-019", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 255734.314450267, "pid": 2616463, "key": "b1-live-035", "close_index": 2465, "forced": false}
+{"event": "admitted", "monotonic": 255740.169036793, "pid": 2616463, "key": "b1-live-067", "policy": "live", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 54959, "trigger": 2, "waiting": [], "output_object": 140720971055616}
+{"event": "generation_observed", "monotonic": 255740.185508794, "pid": 2616463, "key": "b1-live-067", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 255801.467895169, "pid": 2616463, "key": "b1-live-019", "close_index": 5588, "forced": false}
+{"event": "admitted", "monotonic": 255813.542786612, "pid": 2616463, "key": "b1-live-087", "policy": "live", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 59604, "trigger": 2, "waiting": [], "output_object": 140720946664512}
+{"event": "generation_observed", "monotonic": 255813.558455895, "pid": 2616463, "key": "b1-live-087", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 255814.520608437, "pid": 2616463, "key": "b1-live-067", "close_index": 4707, "forced": false}
+{"event": "row_move", "monotonic": 255820.792837291, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "thinking_closed", "monotonic": 255839.597917281, "pid": 2616463, "key": "b1-live-087", "close_index": 1731, "forced": false}
+{"event": "admitted", "monotonic": 255848.212951692, "pid": 2616463, "key": "b1-fixed4096-039", "policy": "fixed4096", "row": 0, "initial_budget": 4096, "tokens": 0, "admission_step": 61889, "trigger": null, "waiting": [], "output_object": 140720894468032}
+{"event": "generation_observed", "monotonic": 255848.229245554, "pid": 2616463, "key": "b1-fixed4096-039", "tokens": 1, "budget": 4096}
+{"event": "admitted", "monotonic": 255866.522721094, "pid": 2616463, "key": "b1-fixed4096-027", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 63127, "trigger": null, "waiting": [], "output_object": 140720946658816}
+{"event": "generation_observed", "monotonic": 255866.542531949, "pid": 2616463, "key": "b1-fixed4096-027", "tokens": 1, "budget": 4096}
+{"event": "thinking_closed", "monotonic": 255880.90046954, "pid": 2616463, "key": "b1-fixed4096-027", "close_index": 904, "forced": false}
+{"event": "thinking_closed", "monotonic": 255885.143648986, "pid": 2616463, "key": "b1-fixed4096-039", "close_index": 2402, "forced": false}
+{"event": "admitted", "monotonic": 255886.460312761, "pid": 2616463, "key": "b1-fixed4096-035", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 64373, "trigger": null, "waiting": [], "output_object": 140721081860864}
+{"event": "generation_observed", "monotonic": 255886.489397526, "pid": 2616463, "key": "b1-fixed4096-035", "tokens": 1, "budget": 4096}
+{"event": "row_move", "monotonic": 255890.348780461, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "admitted", "monotonic": 255903.133858061, "pid": 2616463, "key": "b1-fixed4096-019", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 65424, "trigger": null, "waiting": [], "output_object": 140721046791360}
+{"event": "generation_observed", "monotonic": 255903.149309717, "pid": 2616463, "key": "b1-fixed4096-019", "tokens": 1, "budget": 4096}
+{"event": "thinking_closed", "monotonic": 255928.014432741, "pid": 2616463, "key": "b1-fixed4096-035", "close_index": 2534, "forced": false}
+{"event": "admitted", "monotonic": 255933.405527355, "pid": 2616463, "key": "b1-fixed4096-067", "policy": "fixed4096", "row": 0, "initial_budget": 4096, "tokens": 0, "admission_step": 67228, "trigger": null, "waiting": [], "output_object": 140720946499840}
+{"event": "generation_observed", "monotonic": 255933.42082478, "pid": 2616463, "key": "b1-fixed4096-067", "tokens": 1, "budget": 4096}
+{"event": "cue_started", "monotonic": 255971.420539642, "pid": 2616463, "key": "b1-fixed4096-019", "tokens": 4096, "budget": 4096, "output_object": 140721046791360}
+{"event": "thinking_closed", "monotonic": 255971.628100436, "pid": 2616463, "key": "b1-fixed4096-019", "close_index": 4108, "forced": true}
+{"event": "admitted", "monotonic": 255981.609646343, "pid": 2616463, "key": "b1-fixed4096-087", "policy": "fixed4096", "row": 1, "initial_budget": 4096, "tokens": 0, "admission_step": 70149, "trigger": null, "waiting": [], "output_object": 140720894460672}
+{"event": "generation_observed", "monotonic": 255981.636612599, "pid": 2616463, "key": "b1-fixed4096-087", "tokens": 1, "budget": 4096}
+{"event": "thinking_closed", "monotonic": 255992.312332538, "pid": 2616463, "key": "b1-fixed4096-067", "close_index": 3557, "forced": false}
+{"event": "row_move", "monotonic": 255998.298486825, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "thinking_closed", "monotonic": 256018.07693522, "pid": 2616463, "key": "b1-fixed4096-087", "close_index": 2316, "forced": false}
+{"event": "admitted", "monotonic": 256028.188285165, "pid": 2616463, "key": "b1-fixed2048-039", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 73112, "trigger": null, "waiting": [], "output_object": 140720946620160}
+{"event": "generation_observed", "monotonic": 256028.236919849, "pid": 2616463, "key": "b1-fixed2048-039", "tokens": 1, "budget": 2048}
+{"event": "admitted", "monotonic": 256046.492331631, "pid": 2616463, "key": "b1-fixed2048-027", "policy": "fixed2048", "row": 1, "initial_budget": 2048, "tokens": 0, "admission_step": 74322, "trigger": null, "waiting": [], "output_object": 140720946497216}
+{"event": "generation_observed", "monotonic": 256046.508489692, "pid": 2616463, "key": "b1-fixed2048-027", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 256059.83222714, "pid": 2616463, "key": "b1-fixed2048-039", "tokens": 2048, "budget": 2048, "output_object": 140720946620160}
+{"event": "thinking_closed", "monotonic": 256060.119845604, "pid": 2616463, "key": "b1-fixed2048-039", "close_index": 2060, "forced": true}
+{"event": "thinking_closed", "monotonic": 256060.957651457, "pid": 2616463, "key": "b1-fixed2048-027", "close_index": 904, "forced": false}
+{"event": "admitted", "monotonic": 256064.843360132, "pid": 2616463, "key": "b1-fixed2048-035", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 75474, "trigger": null, "waiting": [], "output_object": 140720969334592}
+{"event": "generation_observed", "monotonic": 256064.858956283, "pid": 2616463, "key": "b1-fixed2048-035", "tokens": 1, "budget": 2048}
+{"event": "admitted", "monotonic": 256083.093591169, "pid": 2616463, "key": "b1-fixed2048-019", "policy": "fixed2048", "row": 1, "initial_budget": 2048, "tokens": 0, "admission_step": 76688, "trigger": null, "waiting": [], "output_object": 140721028710272}
+{"event": "generation_observed", "monotonic": 256083.111205922, "pid": 2616463, "key": "b1-fixed2048-019", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 256096.690942797, "pid": 2616463, "key": "b1-fixed2048-035", "tokens": 2048, "budget": 2048, "output_object": 140720969334592}
+{"event": "thinking_closed", "monotonic": 256096.889032947, "pid": 2616463, "key": "b1-fixed2048-035", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 256103.189183287, "pid": 2616463, "key": "b1-fixed2048-067", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 77920, "trigger": null, "waiting": [], "output_object": 140720970856768}
+{"event": "generation_observed", "monotonic": 256103.205083552, "pid": 2616463, "key": "b1-fixed2048-067", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 256116.807456721, "pid": 2616463, "key": "b1-fixed2048-019", "tokens": 2048, "budget": 2048, "output_object": 140721028710272}
+{"event": "thinking_closed", "monotonic": 256116.989805777, "pid": 2616463, "key": "b1-fixed2048-019", "close_index": 2060, "forced": true}
+{"event": "admitted", "monotonic": 256127.430685047, "pid": 2616463, "key": "b1-fixed2048-087", "policy": "fixed2048", "row": 1, "initial_budget": 2048, "tokens": 0, "admission_step": 79428, "trigger": null, "waiting": [], "output_object": 140720969327168}
+{"event": "generation_observed", "monotonic": 256127.446431224, "pid": 2616463, "key": "b1-fixed2048-087", "tokens": 1, "budget": 2048}
+{"event": "cue_started", "monotonic": 256135.765645533, "pid": 2616463, "key": "b1-fixed2048-067", "tokens": 2048, "budget": 2048, "output_object": 140720970856768}
+{"event": "thinking_closed", "monotonic": 256135.949067305, "pid": 2616463, "key": "b1-fixed2048-067", "close_index": 2060, "forced": true}
+{"event": "row_move", "monotonic": 256142.286661031, "pid": 2616463, "source": 1, "target": 0, "direction": "UNIDIRECTIONAL"}
+{"event": "thinking_closed", "monotonic": 256156.647462075, "pid": 2616463, "key": "b1-fixed2048-087", "close_index": 1975, "forced": false}

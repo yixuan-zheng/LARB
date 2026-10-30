@@ -1,0 +1,412 @@
+12:19:24 calib:2* b0-fixed2048:0
+12:19:44 calib:2* b0-fixed2048:0
+12:20:04 calib:2* b0-fixed2048:1
+12:20:24 calib:2* b0-fixed2048:2
+12:20:44 calib:2* b0-fixed2048:2
+12:21:04 calib:2* b0-fixed2048:3
+12:21:24 calib:2* b0-fixed2048:4
+12:21:44 calib:2* b0-fixed2048:5
+12:22:04 calib:2* b0-fixed2048:6* b0-fixed4096:0
+12:22:24 calib:2* b0-fixed2048:6* b0-fixed4096:0
+12:22:44 calib:2* b0-fixed2048:6* b0-fixed4096:0
+12:23:04 calib:2* b0-fixed2048:6* b0-fixed4096:0
+12:23:24 calib:2* b0-fixed2048:6* b0-fixed4096:0
+12:23:44 calib:2* b0-fixed2048:6* b0-fixed4096:2
+12:24:04 calib:2* b0-fixed2048:6* b0-fixed4096:2
+12:24:24 calib:2* b0-fixed2048:6* b0-fixed4096:2
+12:24:45 calib:2* b0-fixed2048:6* b0-fixed4096:4
+12:25:05 calib:2* b0-fixed2048:6* b0-fixed4096:4
+12:25:25 calib:2* b0-fixed2048:6* b0-fixed4096:5
+12:25:45 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:0
+12:26:05 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:0
+12:26:25 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:0
+12:26:45 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:1
+12:27:05 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:2
+12:27:25 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:2
+12:27:45 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:4
+12:28:05 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:4
+12:28:25 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:5
+12:28:45 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:5
+12:29:05 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:0
+12:29:25 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:0
+12:29:45 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:1
+12:30:05 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:2
+12:30:25 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:2
+12:30:45 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:4
+12:31:05 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:4
+12:31:25 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:5
+12:31:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:0
+12:32:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:0
+12:32:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:2
+12:32:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:3
+12:33:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:4
+12:33:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:5
+12:33:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:5
+12:34:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:0
+12:34:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:0
+12:34:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:2
+12:35:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:2
+12:35:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:3
+12:35:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:3
+12:36:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:3
+12:36:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:4
+12:36:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:5
+12:37:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:0
+12:37:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:0
+12:37:46 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:2
+12:38:06 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:2
+12:38:26 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:3
+12:38:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:3
+12:39:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:3
+12:39:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:4
+12:39:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:5
+12:40:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:0
+12:40:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:0
+12:40:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:2
+12:41:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:2
+12:41:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:3
+12:41:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:4
+12:42:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:5
+12:42:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:42:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:43:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:43:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:43:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:44:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:44:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:44:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:45:07 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:45:27 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:45:47 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:46:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:46:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:46:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:47:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:47:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:47:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:48:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:48:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:48:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:49:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:49:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:49:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:50:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:50:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:50:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:51:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:51:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:51:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:52:08 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:52:28 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:52:48 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:53:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:53:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:53:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:54:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:54:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:54:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:55:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:55:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:55:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:56:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:56:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:56:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:57:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:57:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:57:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:58:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:58:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:58:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:59:09 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:59:29 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+12:59:49 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:00:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:00:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:00:50 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:01:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:01:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:01:50 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:02:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:02:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:02:50 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:03:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:03:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:03:50 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:04:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:04:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:04:50 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:05:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:05:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:05:50 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:06:10 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:06:30 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:06:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:07:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:07:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:07:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:08:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:08:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:08:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:09:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:09:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:09:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:10:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:10:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:10:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:11:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:11:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:11:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:12:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:12:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:12:51 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:13:11 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:13:31 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:13:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:14:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:14:32 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:14:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:15:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:15:32 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:15:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:16:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:16:32 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:16:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:17:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:17:32 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:17:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:18:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:18:32 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:18:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:19:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:19:32 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:19:52 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:20:12 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:20:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:20:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:21:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:21:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:21:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:22:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:22:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:22:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:23:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:23:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:23:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:24:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:24:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:24:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:25:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:25:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:25:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:26:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:26:33 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:26:53 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:27:13 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:27:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:27:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:28:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:28:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:28:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:29:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:29:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:29:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:30:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:30:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:30:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:31:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:31:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:31:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:32:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:32:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:32:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:33:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:33:34 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:33:54 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:34:14 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:34:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:34:55 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:35:15 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:35:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:35:55 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:36:15 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:36:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:36:55 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:37:15 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:37:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:37:55 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:38:15 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:38:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:38:55 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:39:15 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:39:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:39:55 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:40:15 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:40:35 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:40:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:41:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:41:36 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:41:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:42:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:42:36 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:42:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:43:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:43:36 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:43:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:44:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:44:36 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:44:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:45:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:45:36 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:45:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:46:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:46:36 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:46:56 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:47:16 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:47:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:47:57 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:48:17 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:48:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:48:57 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:49:17 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:49:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:49:57 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:50:17 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:50:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:50:57 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:51:17 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:51:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:51:57 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:52:17 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:52:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:52:57 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:53:17 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:53:37 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:53:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:54:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:54:38 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:54:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:55:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:55:38 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:55:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:56:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:56:38 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:56:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:57:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:57:38 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:57:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:58:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:58:38 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:58:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:59:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:59:38 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+13:59:58 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:00:18 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:00:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:00:59 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:01:19 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:01:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:01:59 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:02:19 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:02:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:02:59 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:03:19 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:03:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:03:59 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:04:19 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:04:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:04:59 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:05:19 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:05:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:05:59 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:06:19 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:06:39 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:07:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:07:20 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:07:40 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:08:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:08:20 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:08:40 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:09:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:09:20 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:09:40 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:10:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:10:20 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:10:40 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:11:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:11:20 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:11:40 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:12:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:12:20 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:12:40 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:13:00 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:13:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:13:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:14:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:14:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:14:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:15:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:15:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:15:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:16:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:16:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:16:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:17:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:17:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:17:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:18:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:18:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:18:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:19:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:19:21 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:19:41 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:20:01 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:20:22 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:20:42 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:21:02 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:21:22 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:21:42 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:22:02 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:22:22 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:22:42 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:23:02 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:23:22 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:23:42 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:24:02 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:24:22 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:24:42 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:25:02 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:25:22 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:25:42 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:26:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:26:23 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:26:43 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:27:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:27:23 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:27:43 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:28:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:28:23 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:28:43 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:29:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:29:23 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:29:43 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:30:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:30:23 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:30:43 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:31:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:31:23 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:31:43 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:32:03 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:32:24 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:32:44 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:33:04 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:33:24 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:33:44 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:34:04 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:34:24 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:34:44 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:35:04 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:35:24 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:35:44 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:36:04 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:36:24 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*
+14:36:44 calib:2* b0-fixed2048:6* b0-fixed4096:6* b0-live:6* b0-live_one:6* b1-live_one:6* b1-live:6* b1-fixed4096:6* b1-fixed2048:6*

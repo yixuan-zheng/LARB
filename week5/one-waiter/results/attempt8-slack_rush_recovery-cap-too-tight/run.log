@@ -1,0 +1,22 @@
+job=6665417 condition=slack_rush_recovery cap=3300s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-slack_rush_recovery started=2026-10-29T21:00:09-04:00
+Traceback (most recent call last):
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 181, in <module>
+    result = validate(args.root)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 28, in validate
+    plan, manifest, complete, trace = [read(root, n) for n in
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 28, in <listcomp>
+    plan, manifest, complete, trace = [read(root, n) for n in
+                                       ^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 16, in read
+    return json.loads((root / name).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-slack_rush_recovery/run-complete.json'
+runner_exit=143 validation_exit=1 finished=2026-10-29T21:06:23-04:00

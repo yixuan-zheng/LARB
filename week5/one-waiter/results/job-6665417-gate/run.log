@@ -1,0 +1,43 @@
+job=6665417 condition=gate cap=800s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-gate started=2026-10-29T19:23:12-04:00
+{
+  "passed": true,
+  "failures": [],
+  "condition": "gate",
+  "requests": 8,
+  "measured_requests": 6,
+  "phases_completed": [
+    "b0-live_one",
+    "b0-fixed2048"
+  ],
+  "skipped": [],
+  "live_reductions": 2,
+  "binding_live_cutoffs": 2,
+  "overlap_by_phase": {
+    "b0-live_one": 2,
+    "b0-fixed2048": 2
+  },
+  "coverage": {
+    "questions": 3,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 6,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads and takes the next unspent slice of the same rank order for each: one_at_a_time positions 6-11 and slack_rush_recovery positions 12-17. Positions 0-5 are not reused, because their answers under all four policies already exist and could only reproduce the same result; the slices are still rank order, never chosen by difficulty or by outcome, and were fixed before either condition ran. Coverage stays 6 questions per condition, so three workloads need about 5 GPU-hours against 3.3 available; slack_rush_recovery is the first to be truncated by its wall-clock cap, and any skipped phase is recorded as such.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+}
+runner_exit=0 validation_exit=0 finished=2026-10-29T19:33:54-04:00

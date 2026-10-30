@@ -1,0 +1,9 @@
+{"event": "initialized", "monotonic": 1988393.80097661, "pid": 2603165}
+{"event": "admitted", "monotonic": 1988424.089209723, "pid": 2603165, "key": "calib-002", "policy": "full", "row": 0, "initial_budget": 16384, "tokens": 0, "admission_step": 1, "trigger": null, "waiting": [], "output_object": 140720970244672}
+{"event": "admitted", "monotonic": 1988425.114712474, "pid": 2603165, "key": "calib-000", "policy": "full", "row": 1, "initial_budget": 16384, "tokens": 0, "admission_step": 2, "trigger": null, "waiting": [], "output_object": 140721082068160}
+{"event": "generation_observed", "monotonic": 1988425.115247812, "pid": 2603165, "key": "calib-002", "tokens": 1, "budget": 16384}
+{"event": "generation_observed", "monotonic": 1988425.147295406, "pid": 2603165, "key": "calib-000", "tokens": 1, "budget": 16384}
+{"event": "thinking_closed", "monotonic": 1988445.609725908, "pid": 2603165, "key": "calib-000", "close_index": 1215, "forced": false}
+{"event": "thinking_closed", "monotonic": 1988470.141350305, "pid": 2603165, "key": "calib-002", "close_index": 2710, "forced": false}
+{"event": "admitted", "monotonic": 1988476.844829673, "pid": 2603165, "key": "b0-fixed2048-097", "policy": "fixed2048", "row": 0, "initial_budget": 2048, "tokens": 0, "admission_step": 3095, "trigger": null, "waiting": [], "output_object": 140720947396160}
+{"event": "generation_observed", "monotonic": 1988476.869528412, "pid": 2603165, "key": "b0-fixed2048-097", "tokens": 1, "budget": 2048}

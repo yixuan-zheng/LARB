@@ -1,0 +1,242 @@
+{
+  "constant_pressure": {
+    "condition": "constant_pressure",
+    "runs": [
+      "job-6663679-constant_pressure"
+    ],
+    "answers": 48,
+    "questions": 6,
+    "policies": {
+      "fixed2048": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 46.1,
+        "slowest_s": 73.4,
+        "queue_s": 7.7,
+        "thinking": 22866,
+        "output": 28343,
+        "cuts": 0,
+        "binding": 0
+      },
+      "fixed4096": {
+        "n": 12,
+        "on_time": 11,
+        "eventual": 12,
+        "median_s": 90.0,
+        "slowest_s": 129.2,
+        "queue_s": 27.4,
+        "thinking": 32773,
+        "output": 38152,
+        "cuts": 0,
+        "binding": 0
+      },
+      "live": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 76.9,
+        "slowest_s": 105.6,
+        "queue_s": 17.2,
+        "thinking": 30867,
+        "output": 36767,
+        "cuts": 4,
+        "binding": 3
+      },
+      "live_one": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 47.7,
+        "slowest_s": 62.9,
+        "queue_s": 6.0,
+        "thinking": 24240,
+        "output": 29588,
+        "cuts": 8,
+        "binding": 7
+      }
+    },
+    "fix_verdict": {
+      "cells": 12,
+      "on_time": {
+        "fixed2048": 12,
+        "fixed4096": 11,
+        "live": 12,
+        "live_one": 12
+      },
+      "eventual": {
+        "fixed2048": 12,
+        "fixed4096": 12,
+        "live": 12,
+        "live_one": 12
+      },
+      "on_time_delta": 0,
+      "eventual_delta": 0,
+      "median_s": {
+        "fixed2048": 46.1,
+        "fixed4096": 90.0,
+        "live": 76.9,
+        "live_one": 47.7
+      },
+      "median_ratio": 1.04,
+      "guard_passes": true
+    }
+  },
+  "one_at_a_time": {
+    "condition": "one_at_a_time",
+    "runs": [
+      "job-6665417-one_at_a_time"
+    ],
+    "answers": 48,
+    "questions": 6,
+    "policies": {
+      "fixed2048": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 35.2,
+        "slowest_s": 44.4,
+        "queue_s": 0.1,
+        "thinking": 21040,
+        "output": 25664,
+        "cuts": 0,
+        "binding": 0
+      },
+      "fixed4096": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 39.2,
+        "slowest_s": 65.0,
+        "queue_s": 0.1,
+        "thinking": 26498,
+        "output": 31714,
+        "cuts": 0,
+        "binding": 0
+      },
+      "live": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 38.6,
+        "slowest_s": 68.2,
+        "queue_s": 0.1,
+        "thinking": 26608,
+        "output": 31762,
+        "cuts": 0,
+        "binding": 0
+      },
+      "live_one": {
+        "n": 12,
+        "on_time": 12,
+        "eventual": 12,
+        "median_s": 38.1,
+        "slowest_s": 65.4,
+        "queue_s": 0.0,
+        "thinking": 26608,
+        "output": 31762,
+        "cuts": 0,
+        "binding": 0
+      }
+    },
+    "longer_than_2048": {
+      "fixed4096": {
+        "on_time": [],
+        "eventual": []
+      },
+      "live": {
+        "on_time": [],
+        "eventual": []
+      }
+    },
+    "reductions": 0,
+    "live_vs_live_one": {
+      "identical_cells": 12,
+      "cells": 12
+    },
+    "premise_verdict": "dead on this cohort"
+  },
+  "slack_rush_recovery": {
+    "condition": "slack_rush_recovery",
+    "runs": [
+      "job-6665417-slack_rush_recovery"
+    ],
+    "answers": 45,
+    "questions": 9,
+    "policies": {
+      "fixed2048": {
+        "n": 9,
+        "on_time": 8,
+        "eventual": 8,
+        "median_s": 42.5,
+        "slowest_s": 89.5,
+        "queue_s": 4.7,
+        "thinking": 17416,
+        "output": 22076,
+        "cuts": 0,
+        "binding": 0
+      },
+      "fixed4096": {
+        "n": 9,
+        "on_time": 7,
+        "eventual": 8,
+        "median_s": 52.0,
+        "slowest_s": 131.6,
+        "queue_s": 5.7,
+        "thinking": 23274,
+        "output": 27777,
+        "cuts": 0,
+        "binding": 0
+      },
+      "live": {
+        "n": 9,
+        "on_time": 7,
+        "eventual": 8,
+        "median_s": 47.9,
+        "slowest_s": 132.2,
+        "queue_s": 5.1,
+        "thinking": 22989,
+        "output": 27193,
+        "cuts": 2,
+        "binding": 1
+      },
+      "live_one": {
+        "n": 18,
+        "on_time": 15,
+        "eventual": 16,
+        "median_s": 55.1,
+        "slowest_s": 120.4,
+        "queue_s": 5.5,
+        "thinking": 46068,
+        "output": 55079,
+        "cuts": 3,
+        "binding": 1
+      }
+    },
+    "fix_verdict": {
+      "cells": 9,
+      "on_time": {
+        "fixed2048": 8,
+        "fixed4096": 7,
+        "live": 7,
+        "live_one": 7
+      },
+      "eventual": {
+        "fixed2048": 8,
+        "fixed4096": 8,
+        "live": 8,
+        "live_one": 8
+      },
+      "on_time_delta": -1,
+      "eventual_delta": 0,
+      "median_s": {
+        "fixed2048": 42.5,
+        "fixed4096": 52.0,
+        "live": 47.9,
+        "live_one": 48.7
+      },
+      "median_ratio": 1.15,
+      "guard_passes": true
+    }
+  }
+}

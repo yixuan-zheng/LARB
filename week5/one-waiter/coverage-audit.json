@@ -1,0 +1,44 @@
+{
+  "plan": "week5-one-waiter-v1",
+  "planned_design_answers": 576,
+  "expected_with_week5_coverage": 168,
+  "achieved_measured_answers": 141,
+  "gate_answers_excluded": {
+    "run": "job-6665417-gate",
+    "answers": 6,
+    "phases": [
+      "b0-live_one",
+      "b0-fixed2048"
+    ]
+  },
+  "fractions": 0.2448,
+  "coverage_of_week5_plan": 0.8393,
+  "per_condition": [
+    {
+      "condition": "constant_pressure",
+      "expected_answers": 48,
+      "achieved_answers": 48,
+      "note": "complete"
+    },
+    {
+      "condition": "one_at_a_time",
+      "expected_answers": 48,
+      "achieved_answers": 48,
+      "note": "complete"
+    },
+    {
+      "condition": "slack_rush_recovery",
+      "expected_answers": 72,
+      "achieved_answers": 45,
+      "note": [
+        "truncated inside the frozen wall-clock cap",
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "accounting": "Every achieved answer has a raw request record and a graded row; missing answers are conditions that did not run, not dropped records."
+}

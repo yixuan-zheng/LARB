@@ -1,0 +1,184 @@
+{
+  "condition": "gate",
+  "validation_passed": true,
+  "coverage": {
+    "questions": 3,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 6,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads and takes the next unspent slice of the same rank order for each: one_at_a_time positions 6-11 and slack_rush_recovery positions 12-17. Positions 0-5 are not reused, because their answers under all four policies already exist and could only reproduce the same result; the slices are still rank order, never chosen by difficulty or by outcome, and were fixed before either condition ran. Coverage stays 6 questions per condition, so three workloads need about 5 GPU-hours against 3.3 available; slack_rush_recovery is the first to be truncated by its wall-clock cap, and any skipped phase is recorded as such.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "measured_outcomes": 6,
+  "unique_questions": 3,
+  "relative_deadline_seconds": 117.65379402600229,
+  "unit_seconds": 58.826897013001144,
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 3,
+      "correct_on_time": 3,
+      "completed_correct": 3,
+      "correct_on_time_per_minute": 0.751541950983684,
+      "observation_horizon_seconds": 239.50758805200456,
+      "median_client_seconds": 49.59733130899258,
+      "p95_client_seconds": 87.33335434785113,
+      "mean_queue_seconds": 15.645849120027075,
+      "median_queue_seconds": 0.013692606939002872,
+      "terminal_receipts": 3,
+      "normal_completions": 3,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 6144,
+      "cue_tokens": 42,
+      "output_tokens": 7894,
+      "token_accounting_complete": true,
+      "answer_tokens": 1708
+    },
+    {
+      "policy": "fixed4096",
+      "n": 0,
+      "correct_on_time": 0,
+      "completed_correct": 0,
+      "correct_on_time_per_minute": 0.0,
+      "observation_horizon_seconds": 239.50758805200456,
+      "median_client_seconds": null,
+      "p95_client_seconds": null,
+      "mean_queue_seconds": null,
+      "median_queue_seconds": null,
+      "terminal_receipts": 0,
+      "normal_completions": 0,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 0,
+      "cue_tokens": 0,
+      "output_tokens": 0,
+      "token_accounting_complete": true,
+      "answer_tokens": 0
+    },
+    {
+      "policy": "live",
+      "n": 0,
+      "correct_on_time": 0,
+      "completed_correct": 0,
+      "correct_on_time_per_minute": 0.0,
+      "observation_horizon_seconds": 239.50758805200456,
+      "median_client_seconds": null,
+      "p95_client_seconds": null,
+      "mean_queue_seconds": null,
+      "median_queue_seconds": null,
+      "terminal_receipts": 0,
+      "normal_completions": 0,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 0,
+      "cue_tokens": 0,
+      "output_tokens": 0,
+      "token_accounting_complete": true,
+      "answer_tokens": 0
+    },
+    {
+      "policy": "live_one",
+      "n": 3,
+      "correct_on_time": 3,
+      "completed_correct": 3,
+      "correct_on_time_per_minute": 0.751541950983684,
+      "observation_horizon_seconds": 239.50758805200456,
+      "median_client_seconds": 52.186655313009396,
+      "p95_client_seconds": 112.6378116759006,
+      "mean_queue_seconds": 16.709901551327977,
+      "median_queue_seconds": 0.039965010015293956,
+      "terminal_receipts": 3,
+      "normal_completions": 3,
+      "failures": {},
+      "live_reductions": 2,
+      "binding_live_cutoffs": 2,
+      "thinking_tokens": 7419,
+      "cue_tokens": 28,
+      "output_tokens": 9073,
+      "token_accounting_complete": true,
+      "answer_tokens": 1625
+    }
+  ],
+  "paired": [],
+  "overlap_by_phase": {
+    "b0-live_one": 2,
+    "b0-fixed2048": 2
+  },
+  "binding_cut_to_finish_seconds": [
+    50.07116227108054,
+    50.43520054593682
+  ],
+  "reduction_after_short_tokens": [
+    -1925,
+    -2043
+  ],
+  "audit": {
+    "passed": true,
+    "failures": [],
+    "condition": "gate",
+    "requests": 8,
+    "measured_requests": 6,
+    "phases_completed": [
+      "b0-live_one",
+      "b0-fixed2048"
+    ],
+    "skipped": [],
+    "live_reductions": 2,
+    "binding_live_cutoffs": 2,
+    "overlap_by_phase": {
+      "b0-live_one": 2,
+      "b0-fixed2048": 2
+    },
+    "coverage": {
+      "questions": 3,
+      "frozen_intent": {
+        "constant_pressure": 6,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 6,
+        "cohort_offset": {
+          "constant_pressure": 0,
+          "one_at_a_time": 6,
+          "slack_rush_recovery": 12
+        },
+        "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads and takes the next unspent slice of the same rank order for each: one_at_a_time positions 6-11 and slack_rush_recovery positions 12-17. Positions 0-5 are not reused, because their answers under all four policies already exist and could only reproduce the same result; the slices are still rank order, never chosen by difficulty or by outcome, and were fixed before either condition ran. Coverage stays 6 questions per condition, so three workloads need about 5 GPU-hours against 3.3 available; slack_rush_recovery is the first to be truncated by its wall-clock cap, and any skipped phase is recorded as such.",
+        "planned_full_design": {
+          "questions": 24,
+          "policies": 4,
+          "conditions": 3,
+          "blocks": 2,
+          "measured_outcomes": 576
+        }
+      },
+      "truncated": false
+    },
+    "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+  },
+  "input_hashes": {
+    "plan.json": "feb57fefe5ac0c88427c02c2a8549dfd109743a54e0d2c83afb0a394c4c9eba7",
+    "trace.json": "1957020347288fb4ce0d642a29625f124aa97bed27eef129a28ceae1059c33ab",
+    "manifest.json": "bac07b819c7be8c90f2a6a98827e9d6069b56639cdc5570f7961913890f5956f"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

@@ -1,0 +1,3 @@
+2026-10-29T20:58:56-04:00 starting slack with cap 3400s
+job=6662944 condition=slack_rush_recovery cap=3400s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6662944-slack_rush_recovery started=2026-10-29T20:59:05-04:00
+2026-10-29T20:59:27-04:00 slack exit=0

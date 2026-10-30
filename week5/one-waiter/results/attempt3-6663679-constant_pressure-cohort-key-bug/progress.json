@@ -1,0 +1,49 @@
+[
+  {
+    "phase": "calib",
+    "policy": "full",
+    "block": null,
+    "epoch": 254539.378259638,
+    "arrivals": [
+      {
+        "index": 0,
+        "offset_seconds": 0
+      },
+      {
+        "index": 2,
+        "offset_seconds": 0
+      }
+    ],
+    "completed": true,
+    "client": [
+      {
+        "key": "calib-000",
+        "index": 0,
+        "scheduled": 254539.378259638,
+        "client_submitted": 254539.379399947,
+        "injection_lag_ms": 1.140309002948925,
+        "status": "terminal",
+        "client_first": 254539.490806065,
+        "client_finished": 254573.340010788,
+        "tokens": 1606,
+        "server_finished": 254573.336484818,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "calib-002",
+        "index": 2,
+        "scheduled": 254539.378259638,
+        "client_submitted": 254539.379187976,
+        "injection_lag_ms": 0.9283380059059709,
+        "status": "terminal",
+        "client_first": 254539.444268225,
+        "client_finished": 254601.944525434,
+        "tokens": 3093,
+        "server_finished": 254601.91786845,
+        "finish_reason": "stop"
+      }
+    ],
+    "clock_domain": "client.monotonic",
+    "finished": 254601.947595641
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "condition": "gate",
+  "arrivals_by_block": [
+    [
+      {
+        "index": 1,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 4,
+        "offset_seconds": 2.0
+      },
+      {
+        "index": 5,
+        "offset_seconds": 2.1
+      }
+    ]
+  ],
+  "block_order": [
+    0
+  ],
+  "orders": {
+    "0": [
+      "live_one",
+      "fixed2048"
+    ]
+  },
+  "relative_deadline_seconds": 126.28546200995333,
+  "observation_horizon_seconds": 128.38546200995333,
+  "calibration_latencies_seconds": [
+    34.65143490198534,
+    63.14273100497667
+  ],
+  "unit_seconds": 63.14273100497667,
+  "burst_at_seconds": 8.662858725496335,
+  "frozen_monotonic": 254024.380465491,
+  "clock_domain": "client.monotonic"
+}

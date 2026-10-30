@@ -1,0 +1,66 @@
+job=6665417 condition=slack_rush_recovery cap=4200s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-slack_rush_recovery started=2026-10-29T21:06:34-04:00
+{
+  "passed": true,
+  "failures": [],
+  "condition": "slack_rush_recovery",
+  "requests": 47,
+  "measured_requests": 45,
+  "phases_completed": [
+    "b0-fixed2048",
+    "b0-fixed4096",
+    "b0-live",
+    "b0-live_one",
+    "b1-live_one"
+  ],
+  "skipped": [
+    {
+      "block": 1,
+      "policy": "live",
+      "reason": "frozen measured-phase cap"
+    },
+    {
+      "block": 1,
+      "policy": "fixed4096",
+      "reason": "frozen measured-phase cap"
+    },
+    {
+      "block": 1,
+      "policy": "fixed2048",
+      "reason": "frozen measured-phase cap"
+    }
+  ],
+  "live_reductions": 5,
+  "binding_live_cutoffs": 2,
+  "overlap_by_phase": {
+    "b0-fixed2048": 2,
+    "b0-fixed4096": 2,
+    "b0-live": 2,
+    "b0-live_one": 2,
+    "b1-live_one": 2
+  },
+  "coverage": {
+    "questions": 9,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 9,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "revision": "Session-2 edits, all made before the condition they affect was measured and none chosen from an answer: (1) each condition takes the next unspent slice of the rank order, because positions 0-5 already have answers under all four policies; (2) slack_rush_recovery runs 9 questions, not 6, because the frozen trace splits the cohort in thirds and with 6 questions the 'rush' is two near-simultaneous arrivals against two slots, which forms no queue at all - the workload would then measure nothing that one_at_a_time does not already measure. Nine questions give a three-arrival rush. The trace rule is unchanged; only the count differs.",
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads: one_at_a_time on positions 6-11 and slack_rush_recovery on positions 12-20. At roughly 28 s per answer with two slots and 122 s between no-load arrivals, the one-at-a-time condition needs ~1.6 GPU-hours and the changing-load condition ~2.2, so slack_rush_recovery is expected to be truncated by its wall-clock cap after block 0; any skipped phase is recorded in run-complete.json.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": true
+  },
+  "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+}
+runner_exit=0 validation_exit=0 finished=2026-10-29T22:05:52-04:00

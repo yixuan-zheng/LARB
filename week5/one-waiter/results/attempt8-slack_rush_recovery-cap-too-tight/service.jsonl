@@ -1,0 +1,11 @@
+{"event": "phase", "monotonic": 1988423.288254226, "pid": 2600207, "phase": "calib", "policy": "full"}
+{"event": "arrival", "monotonic": 1988423.793235474, "pid": 2600207, "key": "calib-002", "index": 2, "policy": "full", "budget": 16384, "waiting": [], "pressure_age_s": 86.38974647084251, "pressure_step": 0, "pressure_valid": false, "trigger": null, "fallback": false}
+{"event": "arrival", "monotonic": 1988424.081898755, "pid": 2600207, "key": "calib-000", "index": 0, "policy": "full", "budget": 16384, "waiting": [], "pressure_age_s": 86.67855891981162, "pressure_step": 0, "pressure_valid": false, "trigger": null, "fallback": false}
+{"event": "first_token", "monotonic": 1988425.11143213, "pid": 2600207, "key": "calib-002", "tokens": 1}
+{"event": "first_token", "monotonic": 1988425.14549491, "pid": 2600207, "key": "calib-000", "tokens": 1}
+{"event": "completed", "monotonic": 1988452.684209155, "pid": 2600207, "key": "calib-000", "tokens": 1606, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 1988476.303549998, "pid": 2600207, "key": "calib-002", "tokens": 3093, "finish_reason": "stop"}
+{"event": "phase", "monotonic": 1988476.317454819, "pid": 2600207, "phase": "b0-fixed2048", "policy": "fixed2048"}
+{"event": "arrival", "monotonic": 1988476.820167128, "pid": 2600207, "key": "b0-fixed2048-097", "index": 97, "policy": "fixed2048", "budget": 2048, "waiting": [], "pressure_age_s": 0.5194097540806979, "pressure_step": 3094, "pressure_valid": true, "trigger": null, "fallback": false}
+{"event": "first_token", "monotonic": 1988476.867673403, "pid": 2600207, "key": "b0-fixed2048-097", "tokens": 1}
+{"event": "failed", "monotonic": 1988493.781527192, "pid": 2600207, "key": "b0-fixed2048-097", "reason": "stream_without_terminal"}

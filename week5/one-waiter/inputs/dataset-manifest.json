@@ -1,0 +1,26 @@
+{
+  "rows": 500,
+  "unique_ids": 500,
+  "first_100_equal_saved": true,
+  "sparse_input_sha256": "bf9c61642d539059678831dc3c9851f61caa7e6c07daa346c1b129ee4dbfe6f0",
+  "development_prefix_sha256": "ec8bd946d000517564ddfbc5f2e48dad8024591efcfc7e935b04dd4504781598",
+  "selected_indices": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    10,
+    12,
+    28,
+    42,
+    65,
+    76,
+    77,
+    83,
+    89,
+    94,
+    98
+  ],
+  "note": "Exact rows from the pinned previously exposed 100-row development input; remaining 400 positions null"
+}

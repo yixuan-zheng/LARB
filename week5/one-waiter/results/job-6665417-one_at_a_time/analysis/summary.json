@@ -1,0 +1,559 @@
+{
+  "condition": "one_at_a_time",
+  "validation_passed": true,
+  "coverage": {
+    "questions": 6,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 9,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "revision": "Session-2 edits, all made before the condition they affect was measured and none chosen from an answer: (1) each condition takes the next unspent slice of the rank order, because positions 0-5 already have answers under all four policies; (2) slack_rush_recovery runs 9 questions, not 6, because the frozen trace splits the cohort in thirds and with 6 questions the 'rush' is two near-simultaneous arrivals against two slots, which forms no queue at all - the workload would then measure nothing that one_at_a_time does not already measure. Nine questions give a three-arrival rush. The trace rule is unchanged; only the count differs.",
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads: one_at_a_time on positions 6-11 and slack_rush_recovery on positions 12-20. At roughly 28 s per answer with two slots and 122 s between no-load arrivals, the one-at-a-time condition needs ~1.6 GPU-hours and the changing-load condition ~2.2, so slack_rush_recovery is expected to be truncated by its wall-clock cap after block 0; any skipped phase is recorded in run-complete.json.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "measured_outcomes": 48,
+  "unique_questions": 6,
+  "relative_deadline_seconds": 113.97805403638631,
+  "unit_seconds": 56.989027018193156,
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 35.215068790945224,
+      "p95_client_seconds": 44.42798299272545,
+      "mean_queue_seconds": 0.14966524413709217,
+      "median_queue_seconds": 0.007681326009333134,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 21040,
+      "cue_tokens": 84,
+      "output_tokens": 25664,
+      "token_accounting_complete": true,
+      "answer_tokens": 4534
+    },
+    {
+      "policy": "fixed4096",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 39.21995887311641,
+      "p95_client_seconds": 64.95982325170189,
+      "mean_queue_seconds": 0.12460324808489531,
+      "median_queue_seconds": 0.019849216914735734,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26498,
+      "cue_tokens": 28,
+      "output_tokens": 31714,
+      "token_accounting_complete": true,
+      "answer_tokens": 5178
+    },
+    {
+      "policy": "live",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 38.61969088856131,
+      "p95_client_seconds": 68.18305213772692,
+      "mean_queue_seconds": 0.11027954185071091,
+      "median_queue_seconds": 0.016962673398666084,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26608,
+      "cue_tokens": 0,
+      "output_tokens": 31762,
+      "token_accounting_complete": true,
+      "answer_tokens": 5142
+    },
+    {
+      "policy": "live_one",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 38.1158971429104,
+      "p95_client_seconds": 65.42991240182891,
+      "mean_queue_seconds": 0.027787910716142505,
+      "median_queue_seconds": 0.007587646367028356,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26608,
+      "cue_tokens": 0,
+      "output_tokens": 31762,
+      "token_accounting_complete": true,
+      "answer_tokens": 5142
+    }
+  ],
+  "paired": [
+    {
+      "block": 0,
+      "index": 3,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 38.47884181491099,
+        "fixed4096": 37.44349486497231,
+        "live": 35.56854622694664,
+        "live_one": 35.39922225708142
+      },
+      "thinking": {
+        "fixed2048": 1879,
+        "fixed4096": 1879,
+        "live": 1879,
+        "live_one": 1879
+      }
+    },
+    {
+      "block": 0,
+      "index": 6,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 44.42798299272545,
+        "fixed4096": 49.17007728549652,
+        "live": 48.414966120617464,
+        "live_one": 47.56347362464294
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2544,
+        "live": 2544,
+        "live_one": 2544
+      }
+    },
+    {
+      "block": 0,
+      "index": 30,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 35.20210879482329,
+        "fixed4096": 64.95982325170189,
+        "live": 68.18305213772692,
+        "live_one": 65.27381785400212
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 4096,
+        "live": 4151,
+        "live_one": 4151
+      }
+    },
+    {
+      "block": 0,
+      "index": 58,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 37.08119527017698,
+        "fixed4096": 40.996422881260514,
+        "live": 40.746111701242626,
+        "live_one": 40.20311691216193
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2233,
+        "live": 2233,
+        "live_one": 2233
+      }
+    },
+    {
+      "block": 0,
+      "index": 66,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 35.58790904516354,
+        "fixed4096": 27.65344378608279,
+        "live": 29.147047013044357,
+        "live_one": 29.79444110020995
+      },
+      "thinking": {
+        "fixed2048": 1449,
+        "fixed4096": 1449,
+        "live": 1449,
+        "live_one": 1449
+      }
+    },
+    {
+      "block": 0,
+      "index": 86,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 20.021808808436617,
+        "fixed4096": 19.90377511153929,
+        "live": 19.557065109489486,
+        "live_one": 19.436670480528846
+      },
+      "thinking": {
+        "fixed2048": 1048,
+        "fixed4096": 1048,
+        "live": 1048,
+        "live_one": 1048
+      }
+    },
+    {
+      "block": 1,
+      "index": 3,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 35.18856477178633,
+        "fixed4096": 35.277075595688075,
+        "live": 37.01099269185215,
+        "live_one": 36.028677373658866
+      },
+      "thinking": {
+        "fixed2048": 1879,
+        "fixed4096": 1879,
+        "live": 1879,
+        "live_one": 1879
+      }
+    },
+    {
+      "block": 1,
+      "index": 6,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 39.06647589034401,
+        "fixed4096": 46.16011683829129,
+        "live": 49.463565001497045,
+        "live_one": 47.55737849837169
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2544,
+        "live": 2544,
+        "live_one": 2544
+      }
+    },
+    {
+      "block": 1,
+      "index": 30,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 34.016170733841136,
+        "fixed4096": 64.53679413092323,
+        "live": 66.64021030510776,
+        "live_one": 65.42991240182891
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 4096,
+        "live": 4151,
+        "live_one": 4151
+      }
+    },
+    {
+      "block": 1,
+      "index": 58,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 35.22802878706716,
+        "fixed4096": 46.34389865398407,
+        "live": 40.228389085270464,
+        "live_one": 41.9981408668682
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2233,
+        "live": 2233,
+        "live_one": 2233
+      }
+    },
+    {
+      "block": 1,
+      "index": 66,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 26.884121384238824,
+        "fixed4096": 26.70074830809608,
+        "live": 30.185408366378397,
+        "live_one": 29.889034011168405
+      },
+      "thinking": {
+        "fixed2048": 1449,
+        "fixed4096": 1449,
+        "live": 1449,
+        "live_one": 1449
+      }
+    },
+    {
+      "block": 1,
+      "index": 86,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 18.77468472556211,
+        "fixed4096": 21.367646859493107,
+        "live": 20.339947210624814,
+        "live_one": 19.527396441437304
+      },
+      "thinking": {
+        "fixed2048": 1048,
+        "fixed4096": 1048,
+        "live": 1048,
+        "live_one": 1048
+      }
+    }
+  ],
+  "overlap_by_phase": {
+    "b0-fixed2048": 1,
+    "b0-fixed4096": 1,
+    "b0-live": 1,
+    "b0-live_one": 1,
+    "b1-live_one": 1,
+    "b1-live": 1,
+    "b1-fixed4096": 1,
+    "b1-fixed2048": 1
+  },
+  "binding_cut_to_finish_seconds": [],
+  "reduction_after_short_tokens": [],
+  "audit": {
+    "passed": true,
+    "failures": [],
+    "condition": "one_at_a_time",
+    "requests": 50,
+    "measured_requests": 48,
+    "phases_completed": [
+      "b0-fixed2048",
+      "b0-fixed4096",
+      "b0-live",
+      "b0-live_one",
+      "b1-live_one",
+      "b1-live",
+      "b1-fixed4096",
+      "b1-fixed2048"
+    ],
+    "skipped": [],
+    "live_reductions": 0,
+    "binding_live_cutoffs": 0,
+    "overlap_by_phase": {
+      "b0-fixed2048": 1,
+      "b0-fixed4096": 1,
+      "b0-live": 1,
+      "b0-live_one": 1,
+      "b1-live_one": 1,
+      "b1-live": 1,
+      "b1-fixed4096": 1,
+      "b1-fixed2048": 1
+    },
+    "coverage": {
+      "questions": 6,
+      "frozen_intent": {
+        "constant_pressure": 6,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 9,
+        "cohort_offset": {
+          "constant_pressure": 0,
+          "one_at_a_time": 6,
+          "slack_rush_recovery": 12
+        },
+        "revision": "Session-2 edits, all made before the condition they affect was measured and none chosen from an answer: (1) each condition takes the next unspent slice of the rank order, because positions 0-5 already have answers under all four policies; (2) slack_rush_recovery runs 9 questions, not 6, because the frozen trace splits the cohort in thirds and with 6 questions the 'rush' is two near-simultaneous arrivals against two slots, which forms no queue at all - the workload would then measure nothing that one_at_a_time does not already measure. Nine questions give a three-arrival rush. The trace rule is unchanged; only the count differs.",
+        "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads: one_at_a_time on positions 6-11 and slack_rush_recovery on positions 12-20. At roughly 28 s per answer with two slots and 122 s between no-load arrivals, the one-at-a-time condition needs ~1.6 GPU-hours and the changing-load condition ~2.2, so slack_rush_recovery is expected to be truncated by its wall-clock cap after block 0; any skipped phase is recorded in run-complete.json.",
+        "planned_full_design": {
+          "questions": 24,
+          "policies": 4,
+          "conditions": 3,
+          "blocks": 2,
+          "measured_outcomes": 576
+        }
+      },
+      "truncated": false
+    },
+    "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+  },
+  "input_hashes": {
+    "plan.json": "921411532f484f93d76ecda0abaa8132bd6e8ea89aa78e57b066b8dca7477c0a",
+    "trace.json": "c210a92755bda2e01c215d0d946e23e59ec295496884e2866fe0e66d6251249f",
+    "manifest.json": "d122cf4e8689627197a83751e3c164d2bf9e34ad5f38d2695d94f3aeacd84081"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

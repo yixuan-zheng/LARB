@@ -1,0 +1,37 @@
+job=6665417 condition=one_at_a_time cap=6600s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-one_at_a_time started=2026-10-29T19:33:58-04:00
+Traceback (most recent call last):
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/run_week5.py", line 198, in <module>
+    asyncio.run(main())
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/run_week5.py", line 185, in main
+    raise RuntimeError('Server exited before readiness')
+RuntimeError: Server exited before readiness
+Traceback (most recent call last):
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 181, in <module>
+    result = validate(args.root)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 28, in validate
+    plan, manifest, complete, trace = [read(root, n) for n in
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 28, in <listcomp>
+    plan, manifest, complete, trace = [read(root, n) for n in
+                                       ^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 16, in read
+    return json.loads((root / name).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/python-3.11.9-gez6evjb3kmoe3n3tinddqlajwxaph4c/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-one_at_a_time/run-complete.json'
+runner_exit=1 validation_exit=1 finished=2026-10-29T19:34:45-04:00

@@ -1,0 +1,12 @@
+job=6663679 condition=gate cap=600s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6663679-gate started=2026-10-29T12:02:40-04:00
+Traceback (most recent call last):
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 176, in <module>
+    result = validate(args.root)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 83, in validate
+    counts = [len(set(s['active']) & phase_keys) for s in steps.values()]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/validate5.py", line 83, in <listcomp>
+    counts = [len(set(s['active']) & phase_keys) for s in steps.values()]
+                  ^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'dict'
