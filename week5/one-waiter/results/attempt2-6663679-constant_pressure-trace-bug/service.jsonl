@@ -1,0 +1,7 @@
+{"event": "phase", "monotonic": 254416.483868663, "pid": 2610666, "phase": "calib", "policy": "full"}
+{"event": "arrival", "monotonic": 254416.988784187, "pid": 2610666, "key": "calib-002", "index": 2, "policy": "full", "budget": 16384, "waiting": [], "pressure_age_s": 19.814152421982726, "pressure_step": 0, "pressure_valid": false, "trigger": null, "fallback": false}
+{"event": "arrival", "monotonic": 254417.007304107, "pid": 2610666, "key": "calib-000", "index": 0, "policy": "full", "budget": 16384, "waiting": [], "pressure_age_s": 19.832405023975298, "pressure_step": 0, "pressure_valid": false, "trigger": null, "fallback": false}
+{"event": "first_token", "monotonic": 254417.05394532, "pid": 2610666, "key": "calib-002", "tokens": 1}
+{"event": "first_token", "monotonic": 254417.085724735, "pid": 2610666, "key": "calib-000", "tokens": 1}
+{"event": "completed", "monotonic": 254450.302235367, "pid": 2610666, "key": "calib-000", "tokens": 1606, "finish_reason": "stop"}
+{"event": "completed", "monotonic": 254479.498119141, "pid": 2610666, "key": "calib-002", "tokens": 3093, "finish_reason": "stop"}

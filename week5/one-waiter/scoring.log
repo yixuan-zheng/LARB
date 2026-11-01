@@ -1,0 +1,236 @@
+2026-10-29T20:59:14-04:00 scoring one_at_a_time
+{
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 35.215068790945224,
+      "p95_client_seconds": 44.42798299272545,
+      "mean_queue_seconds": 0.14966524413709217,
+      "median_queue_seconds": 0.007681326009333134,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 21040,
+      "cue_tokens": 84,
+      "output_tokens": 25664,
+      "token_accounting_complete": true,
+      "answer_tokens": 4534
+    },
+    {
+      "policy": "fixed4096",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 39.21995887311641,
+      "p95_client_seconds": 64.95982325170189,
+      "mean_queue_seconds": 0.12460324808489531,
+      "median_queue_seconds": 0.019849216914735734,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26498,
+      "cue_tokens": 28,
+      "output_tokens": 31714,
+      "token_accounting_complete": true,
+      "answer_tokens": 5178
+    },
+    {
+      "policy": "live",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 38.61969088856131,
+      "p95_client_seconds": 68.18305213772692,
+      "mean_queue_seconds": 0.11027954185071091,
+      "median_queue_seconds": 0.016962673398666084,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26608,
+      "cue_tokens": 0,
+      "output_tokens": 31762,
+      "token_accounting_complete": true,
+      "answer_tokens": 5142
+    },
+    {
+      "policy": "live_one",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 0.5264171292207325,
+      "observation_horizon_seconds": 1367.7366484366357,
+      "median_client_seconds": 38.1158971429104,
+      "p95_client_seconds": 65.42991240182891,
+      "mean_queue_seconds": 0.027787910716142505,
+      "median_queue_seconds": 0.007587646367028356,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 26608,
+      "cue_tokens": 0,
+      "output_tokens": 31762,
+      "token_accounting_complete": true,
+      "answer_tokens": 5142
+    }
+  ],
+  "coverage": {
+    "questions": 6,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 9,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "revision": "Session-2 edits, all made before the condition they affect was measured and none chosen from an answer: (1) each condition takes the next unspent slice of the rank order, because positions 0-5 already have answers under all four policies; (2) slack_rush_recovery runs 9 questions, not 6, because the frozen trace splits the cohort in thirds and with 6 questions the 'rush' is two near-simultaneous arrivals against two slots, which forms no queue at all - the workload would then measure nothing that one_at_a_time does not already measure. Nine questions give a three-arrival rush. The trace rule is unchanged; only the count differs.",
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads: one_at_a_time on positions 6-11 and slack_rush_recovery on positions 12-20. At roughly 28 s per answer with two slots and 122 s between no-load arrivals, the one-at-a-time condition needs ~1.6 GPU-hours and the changing-load condition ~2.2, so slack_rush_recovery is expected to be truncated by its wall-clock cap after block 0; any skipped phase is recorded in run-complete.json.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  }
+}
+2026-10-29T20:59:21-04:00 scored one_at_a_time exit=0 -> /home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-one_at_a_time/analysis/summary.json
+2026-10-29T22:05:51-04:00 scoring slack_rush_recovery
+{
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 9,
+      "correct_on_time": 8,
+      "completed_correct": 8,
+      "correct_on_time_per_minute": 0.31463482402611276,
+      "observation_horizon_seconds": 1525.5781094344566,
+      "median_client_seconds": 42.49700268544257,
+      "p95_client_seconds": 89.47856875695288,
+      "mean_queue_seconds": 4.688361319195893,
+      "median_queue_seconds": 0.006473553832620382,
+      "terminal_receipts": 9,
+      "normal_completions": 9,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 17416,
+      "cue_tokens": 98,
+      "output_tokens": 22076,
+      "token_accounting_complete": true,
+      "answer_tokens": 4560
+    },
+    {
+      "policy": "fixed4096",
+      "n": 9,
+      "correct_on_time": 7,
+      "completed_correct": 8,
+      "correct_on_time_per_minute": 0.27530547102284864,
+      "observation_horizon_seconds": 1525.5781094344566,
+      "median_client_seconds": 51.97878517443314,
+      "p95_client_seconds": 131.55155408172868,
+      "mean_queue_seconds": 5.691878471833964,
+      "median_queue_seconds": 0.00812341901473701,
+      "terminal_receipts": 9,
+      "normal_completions": 9,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 23274,
+      "cue_tokens": 28,
+      "output_tokens": 27777,
+      "token_accounting_complete": true,
+      "answer_tokens": 4468
+    },
+    {
+      "policy": "live",
+      "n": 9,
+      "correct_on_time": 7,
+      "completed_correct": 8,
+      "correct_on_time_per_minute": 0.27530547102284864,
+      "observation_horizon_seconds": 1525.5781094344566,
+      "median_client_seconds": 47.85716667957604,
+      "p95_client_seconds": 132.16102689597756,
+      "mean_queue_seconds": 5.114091373566124,
+      "median_queue_seconds": 0.025012322003021836,
+      "terminal_receipts": 9,
+      "normal_completions": 9,
+      "failures": {},
+      "live_reductions": 2,
+      "binding_live_cutoffs": 1,
+      "thinking_tokens": 22989,
+      "cue_tokens": 14,
+      "output_tokens": 27193,
+      "token_accounting_complete": true,
+      "answer_tokens": 4182
+    },
+    {
+      "policy": "live_one",
+      "n": 18,
+      "correct_on_time": 15,
+      "completed_correct": 16,
+      "correct_on_time_per_minute": 0.5899402950489614,
+      "observation_horizon_seconds": 1525.5781094344566,
+      "median_client_seconds": 55.11251851625275,
+      "p95_client_seconds": 120.39904926996678,
+      "mean_queue_seconds": 5.517233893223521,
+      "median_queue_seconds": 0.028727683471515775,
+      "terminal_receipts": 18,
+      "normal_completions": 18,
+      "failures": {},
+      "live_reductions": 3,
+      "binding_live_cutoffs": 1,
+      "thinking_tokens": 46068,
+      "cue_tokens": 14,
+      "output_tokens": 55079,
+      "token_accounting_complete": true,
+      "answer_tokens": 8980
+    }
+  ],
+  "coverage": {
+    "questions": 9,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 6,
+      "slack_rush_recovery": 9,
+      "cohort_offset": {
+        "constant_pressure": 0,
+        "one_at_a_time": 6,
+        "slack_rush_recovery": 12
+      },
+      "revision": "Session-2 edits, all made before the condition they affect was measured and none chosen from an answer: (1) each condition takes the next unspent slice of the rank order, because positions 0-5 already have answers under all four policies; (2) slack_rush_recovery runs 9 questions, not 6, because the frozen trace splits the cohort in thirds and with 6 questions the 'rush' is two near-simultaneous arrivals against two slots, which forms no queue at all - the workload would then measure nothing that one_at_a_time does not already measure. Nine questions give a three-arrival rush. The trace rule is unchanged; only the count differs.",
+      "reason": "Session 1 (job 6663679, 3-hour interactive H100) ran only constant_pressure, on cohort positions 0-5. Session 2 (job 6665417, 4-hour interactive H100, 19:00-23:00) spends the remaining wall clock on the two missing workloads: one_at_a_time on positions 6-11 and slack_rush_recovery on positions 12-20. At roughly 28 s per answer with two slots and 122 s between no-load arrivals, the one-at-a-time condition needs ~1.6 GPU-hours and the changing-load condition ~2.2, so slack_rush_recovery is expected to be truncated by its wall-clock cap after block 0; any skipped phase is recorded in run-complete.json.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": true
+  }
+}
+2026-10-29T22:06:07-04:00 scored slack_rush_recovery exit=0 -> /home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6665417-slack_rush_recovery/analysis/summary.json
+2026-10-29T22:06:07-04:00 watcher done
+autofinish done 2026-10-29T22:06:10-04:00

@@ -1,0 +1,177 @@
+[
+  {
+    "phase": "calib",
+    "policy": "full",
+    "block": null,
+    "epoch": 1982680.101539924,
+    "arrivals": [
+      {
+        "index": 0,
+        "offset_seconds": 0
+      },
+      {
+        "index": 2,
+        "offset_seconds": 0
+      }
+    ],
+    "completed": true,
+    "client": [
+      {
+        "key": "calib-000",
+        "index": 0,
+        "scheduled": 1982680.101539924,
+        "client_submitted": 1982680.102444032,
+        "injection_lag_ms": 0.9041079320013523,
+        "status": "terminal",
+        "client_first": 1982681.751617712,
+        "client_finished": 1982714.107414454,
+        "tokens": 1606,
+        "server_finished": 1982714.10520177,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "calib-002",
+        "index": 2,
+        "scheduled": 1982680.101539924,
+        "client_submitted": 1982680.102089871,
+        "injection_lag_ms": 0.5499469116330147,
+        "status": "terminal",
+        "client_first": 1982681.718582078,
+        "client_finished": 1982738.928436937,
+        "tokens": 3093,
+        "server_finished": 1982738.925907589,
+        "finish_reason": "stop"
+      }
+    ],
+    "clock_domain": "client.monotonic",
+    "finished": 1982738.930176951
+  },
+  {
+    "phase": "b0-live_one",
+    "policy": "live_one",
+    "block": 0,
+    "epoch": 1982739.437954819,
+    "arrivals": [
+      {
+        "index": 1,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 4,
+        "offset_seconds": 2.0
+      },
+      {
+        "index": 5,
+        "offset_seconds": 2.1
+      }
+    ],
+    "completed": true,
+    "client": [
+      {
+        "key": "b0-live_one-001",
+        "index": 1,
+        "scheduled": 1982739.437954819,
+        "client_submitted": 1982739.43929639,
+        "injection_lag_ms": 1.3415708672255278,
+        "status": "terminal",
+        "client_first": 1982739.51242082,
+        "client_finished": 1982791.624610132,
+        "tokens": 2723,
+        "server_finished": 1982791.600986762,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "b0-live_one-004",
+        "index": 4,
+        "scheduled": 1982741.437954819,
+        "client_submitted": 1982741.438970653,
+        "injection_lag_ms": 1.0158340446650982,
+        "status": "terminal",
+        "client_first": 1982741.483705398,
+        "client_finished": 1982791.988909334,
+        "tokens": 2624,
+        "server_finished": 1982791.986321824,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "b0-live_one-005",
+        "index": 5,
+        "scheduled": 1982741.5379548192,
+        "client_submitted": 1982741.539404986,
+        "injection_lag_ms": 1.450166804715991,
+        "status": "terminal",
+        "client_first": 1982791.636280793,
+        "client_finished": 1982854.175766495,
+        "tokens": 3726,
+        "server_finished": 1982854.173690026,
+        "finish_reason": "stop"
+      }
+    ],
+    "clock_domain": "client.monotonic",
+    "finished": 1982854.177590607
+  },
+  {
+    "phase": "b0-fixed2048",
+    "policy": "fixed2048",
+    "block": 0,
+    "epoch": 1982854.680548845,
+    "arrivals": [
+      {
+        "index": 1,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 4,
+        "offset_seconds": 2.0
+      },
+      {
+        "index": 5,
+        "offset_seconds": 2.1
+      }
+    ],
+    "completed": true,
+    "client": [
+      {
+        "key": "b0-fixed2048-004",
+        "index": 4,
+        "scheduled": 1982856.680548845,
+        "client_submitted": 1982856.68075836,
+        "injection_lag_ms": 0.20951498299837112,
+        "status": "terminal",
+        "client_first": 1982856.709366515,
+        "client_finished": 1982903.700182993,
+        "tokens": 2624,
+        "server_finished": 1982903.698014536,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "b0-fixed2048-001",
+        "index": 1,
+        "scheduled": 1982854.680548845,
+        "client_submitted": 1982854.681105104,
+        "injection_lag_ms": 0.5562589503824711,
+        "status": "terminal",
+        "client_first": 1982854.703196426,
+        "client_finished": 1982904.277880154,
+        "tokens": 2781,
+        "server_finished": 1982904.274928792,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "b0-fixed2048-005",
+        "index": 5,
+        "scheduled": 1982856.7805488452,
+        "client_submitted": 1982856.781922928,
+        "injection_lag_ms": 1.3740828726440668,
+        "status": "terminal",
+        "client_first": 1982903.714490337,
+        "client_finished": 1982944.113903193,
+        "tokens": 2489,
+        "server_finished": 1982944.111948267,
+        "finish_reason": "stop"
+      }
+    ],
+    "clock_domain": "client.monotonic",
+    "finished": 1982944.116732336
+  }
+]

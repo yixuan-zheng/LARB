@@ -1,0 +1,174 @@
+{
+  "condition": "gate",
+  "validation_passed": true,
+  "coverage": {
+    "questions": 3,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 2,
+      "slack_rush_recovery": 0,
+      "reason": "The only allocation available was a 2-hour interactive H100 (job 6662944, 10:27-12:27). 576 outcomes need roughly 12 GPU-hours, so coverage is reduced by rank order, never by outcome. slack_rush_recovery is not run and its claim is untested; one_at_a_time is limited to two cohort questions, which makes the premise check preliminary rather than a two-block verdict.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "measured_outcomes": 6,
+  "unique_questions": 3,
+  "relative_deadline_seconds": 126.28546200995333,
+  "unit_seconds": 63.14273100497667,
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 3,
+      "correct_on_time": 3,
+      "completed_correct": 3,
+      "correct_on_time_per_minute": 0.7010139511981706,
+      "observation_horizon_seconds": 256.77092401990666,
+      "median_client_seconds": 55.78345572098624,
+      "p95_client_seconds": 100.18310690499493,
+      "mean_queue_seconds": 17.90751832400565,
+      "median_queue_seconds": 0.022669188008876517,
+      "terminal_receipts": 3,
+      "normal_completions": 3,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 6144,
+      "cue_tokens": 42,
+      "output_tokens": 7701,
+      "token_accounting_complete": true,
+      "answer_tokens": 1515
+    },
+    {
+      "policy": "fixed4096",
+      "n": 0,
+      "correct_on_time": 0,
+      "completed_correct": 0,
+      "correct_on_time_per_minute": 0.0,
+      "observation_horizon_seconds": 256.77092401990666,
+      "median_client_seconds": null,
+      "p95_client_seconds": null,
+      "mean_queue_seconds": null,
+      "median_queue_seconds": null,
+      "terminal_receipts": 0,
+      "normal_completions": 0,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 0,
+      "cue_tokens": 0,
+      "output_tokens": 0,
+      "token_accounting_complete": true,
+      "answer_tokens": 0
+    },
+    {
+      "policy": "live",
+      "n": 0,
+      "correct_on_time": 0,
+      "completed_correct": 0,
+      "correct_on_time_per_minute": 0.0,
+      "observation_horizon_seconds": 256.77092401990666,
+      "median_client_seconds": null,
+      "p95_client_seconds": null,
+      "mean_queue_seconds": null,
+      "median_queue_seconds": null,
+      "terminal_receipts": 0,
+      "normal_completions": 0,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 0,
+      "cue_tokens": 0,
+      "output_tokens": 0,
+      "token_accounting_complete": true,
+      "answer_tokens": 0
+    },
+    {
+      "policy": "live_one",
+      "n": 3,
+      "correct_on_time": 2,
+      "completed_correct": 3,
+      "correct_on_time_per_minute": 0.4673426341321137,
+      "observation_horizon_seconds": 256.77092401990666,
+      "median_client_seconds": 57.49429227900691,
+      "p95_client_seconds": 126.78521322199958,
+      "mean_queue_seconds": 17.945903501007706,
+      "median_queue_seconds": 0.05014276702422649,
+      "terminal_receipts": 3,
+      "normal_completions": 3,
+      "failures": {},
+      "live_reductions": 2,
+      "binding_live_cutoffs": 2,
+      "thinking_tokens": 7419,
+      "cue_tokens": 28,
+      "output_tokens": 9164,
+      "token_accounting_complete": true,
+      "answer_tokens": 1716
+    }
+  ],
+  "paired": [],
+  "overlap_by_phase": {
+    "b0-live_one": 2,
+    "b0-fixed2048": 2
+  },
+  "binding_cut_to_finish_seconds": [
+    53.766383768001106,
+    55.37941260798834
+  ],
+  "reduction_after_short_tokens": [
+    -2046,
+    -1938
+  ],
+  "audit": {
+    "passed": true,
+    "failures": [],
+    "condition": "gate",
+    "requests": 8,
+    "measured_requests": 6,
+    "phases_completed": [
+      "b0-live_one",
+      "b0-fixed2048"
+    ],
+    "skipped": [],
+    "live_reductions": 2,
+    "binding_live_cutoffs": 2,
+    "overlap_by_phase": {
+      "b0-live_one": 2,
+      "b0-fixed2048": 2
+    },
+    "coverage": {
+      "questions": 3,
+      "frozen_intent": {
+        "constant_pressure": 6,
+        "one_at_a_time": 2,
+        "slack_rush_recovery": 0,
+        "reason": "The only allocation available was a 2-hour interactive H100 (job 6662944, 10:27-12:27). 576 outcomes need roughly 12 GPU-hours, so coverage is reduced by rank order, never by outcome. slack_rush_recovery is not run and its claim is untested; one_at_a_time is limited to two cohort questions, which makes the premise check preliminary rather than a two-block verdict.",
+        "planned_full_design": {
+          "questions": 24,
+          "policies": 4,
+          "conditions": 3,
+          "blocks": 2,
+          "measured_outcomes": 576
+        }
+      },
+      "truncated": false
+    },
+    "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+  },
+  "input_hashes": {
+    "plan.json": "bd2ea3ecba82aaf7e5635f6e0d79c1a965363f0907fcb64c9024bbfcd7d86bcc",
+    "trace.json": "46eb041b181bf531151128d70f55a65eb71d1e50a329837dd60f8dc4b25b9c4c",
+    "manifest.json": "1024ea77ef9f153de60caba3275b158586558127c15670694812547c2a99a738"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

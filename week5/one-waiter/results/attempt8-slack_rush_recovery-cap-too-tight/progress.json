@@ -1,0 +1,96 @@
+[
+  {
+    "phase": "calib",
+    "policy": "full",
+    "block": null,
+    "epoch": 1988423.788813105,
+    "arrivals": [
+      {
+        "index": 0,
+        "offset_seconds": 0
+      },
+      {
+        "index": 2,
+        "offset_seconds": 0
+      }
+    ],
+    "completed": true,
+    "client": [
+      {
+        "key": "calib-000",
+        "index": 0,
+        "scheduled": 1988423.788813105,
+        "client_submitted": 1988423.789917211,
+        "injection_lag_ms": 1.1041059624403715,
+        "status": "terminal",
+        "client_first": 1988425.145810668,
+        "client_finished": 1988452.684503107,
+        "tokens": 1606,
+        "server_finished": 1988452.67687891,
+        "finish_reason": "stop"
+      },
+      {
+        "key": "calib-002",
+        "index": 2,
+        "scheduled": 1988423.788813105,
+        "client_submitted": 1988423.789595536,
+        "injection_lag_ms": 0.7824308704584837,
+        "status": "terminal",
+        "client_first": 1988425.111851426,
+        "client_finished": 1988476.30381407,
+        "tokens": 3093,
+        "server_finished": 1988476.300180303,
+        "finish_reason": "stop"
+      }
+    ],
+    "clock_domain": "client.monotonic",
+    "finished": 1988476.307799459
+  },
+  {
+    "phase": "b0-fixed2048",
+    "policy": "fixed2048",
+    "block": 0,
+    "epoch": 1988476.8177754,
+    "arrivals": [
+      {
+        "index": 97,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 36,
+        "offset_seconds": 105.03000192996114
+      },
+      {
+        "index": 92,
+        "offset_seconds": 210.0600038599223
+      },
+      {
+        "index": 29,
+        "offset_seconds": 269.7989273254061
+      },
+      {
+        "index": 48,
+        "offset_seconds": 269.8489273254061
+      },
+      {
+        "index": 63,
+        "offset_seconds": 269.89892732540613
+      },
+      {
+        "index": 93,
+        "offset_seconds": 479.8589311853284
+      },
+      {
+        "index": 14,
+        "offset_seconds": 584.8889331152895
+      },
+      {
+        "index": 20,
+        "offset_seconds": 689.9189350452507
+      }
+    ],
+    "completed": false,
+    "client": [],
+    "clock_domain": "client.monotonic"
+  }
+]

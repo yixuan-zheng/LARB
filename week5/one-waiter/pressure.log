@@ -1,0 +1,52 @@
+job=6663679 condition=constant_pressure cap=3300s out=/home/hice1/jwang3221/scratch/LARB/week5/one-waiter/results/job-6663679-constant_pressure started=2026-10-29T12:17:35-04:00
+{
+  "passed": false,
+  "failures": [
+    "admission budget below its own trigger: b0-live-087",
+    "admission budget below its own trigger: b0-live-039"
+  ],
+  "condition": "constant_pressure",
+  "requests": 50,
+  "measured_requests": 48,
+  "phases_completed": [
+    "b0-fixed2048",
+    "b0-fixed4096",
+    "b0-live",
+    "b0-live_one",
+    "b1-live_one",
+    "b1-live",
+    "b1-fixed4096",
+    "b1-fixed2048"
+  ],
+  "skipped": [],
+  "live_reductions": 12,
+  "binding_live_cutoffs": 10,
+  "overlap_by_phase": {
+    "b0-fixed2048": 2,
+    "b0-fixed4096": 2,
+    "b0-live": 2,
+    "b0-live_one": 2,
+    "b1-live_one": 2,
+    "b1-live": 2,
+    "b1-fixed4096": 2,
+    "b1-fixed2048": 2
+  },
+  "coverage": {
+    "questions": 6,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 2,
+      "slack_rush_recovery": 0,
+      "reason": "The only allocation available was a 2-hour interactive H100 (job 6662944, 10:27-12:27). 576 outcomes need roughly 12 GPU-hours, so coverage is reduced by rank order, never by outcome. slack_rush_recovery is not run and its claim is untested; one_at_a_time is limited to two cohort questions, which makes the premise check preliminary rather than a two-block verdict.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+}

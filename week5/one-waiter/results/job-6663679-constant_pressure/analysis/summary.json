@@ -1,0 +1,571 @@
+{
+  "condition": "constant_pressure",
+  "validation_passed": true,
+  "coverage": {
+    "questions": 6,
+    "frozen_intent": {
+      "constant_pressure": 6,
+      "one_at_a_time": 2,
+      "slack_rush_recovery": 0,
+      "reason": "The only allocation available was a 2-hour interactive H100 (job 6662944, 10:27-12:27). 576 outcomes need roughly 12 GPU-hours, so coverage is reduced by rank order, never by outcome. slack_rush_recovery is not run and its claim is untested; one_at_a_time is limited to two cohort questions, which makes the premise check preliminary rather than a two-block verdict.",
+      "planned_full_design": {
+        "questions": 24,
+        "policies": 4,
+        "conditions": 3,
+        "blocks": 2,
+        "measured_outcomes": 576
+      }
+    },
+    "truncated": false
+  },
+  "measured_outcomes": 48,
+  "unique_questions": 6,
+  "relative_deadline_seconds": 121.98505373002263,
+  "unit_seconds": 60.992526865011314,
+  "summary": [
+    {
+      "policy": "fixed2048",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 1.6863892700295289,
+      "observation_horizon_seconds": 426.9476880550792,
+      "median_client_seconds": 46.1007910334738,
+      "p95_client_seconds": 73.37438399044913,
+      "mean_queue_seconds": 7.6798405061636,
+      "median_queue_seconds": 0.938516371010337,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 22866,
+      "cue_tokens": 112,
+      "output_tokens": 28343,
+      "token_accounting_complete": true,
+      "answer_tokens": 5361
+    },
+    {
+      "policy": "fixed4096",
+      "n": 12,
+      "correct_on_time": 11,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 1.5458568308604015,
+      "observation_horizon_seconds": 426.9476880550792,
+      "median_client_seconds": 90.01441450651328,
+      "p95_client_seconds": 129.21556318749208,
+      "mean_queue_seconds": 27.424064615413954,
+      "median_queue_seconds": 6.831518624996534,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 0,
+      "binding_live_cutoffs": 0,
+      "thinking_tokens": 32773,
+      "cue_tokens": 42,
+      "output_tokens": 38152,
+      "token_accounting_complete": true,
+      "answer_tokens": 5328
+    },
+    {
+      "policy": "live",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 1.6863892700295289,
+      "observation_horizon_seconds": 426.9476880550792,
+      "median_client_seconds": 76.93195803299022,
+      "p95_client_seconds": 105.60184323746944,
+      "mean_queue_seconds": 17.152991219001706,
+      "median_queue_seconds": 5.608110729997861,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 4,
+      "binding_live_cutoffs": 3,
+      "thinking_tokens": 30867,
+      "cue_tokens": 42,
+      "output_tokens": 36767,
+      "token_accounting_complete": true,
+      "answer_tokens": 5849
+    },
+    {
+      "policy": "live_one",
+      "n": 12,
+      "correct_on_time": 12,
+      "completed_correct": 12,
+      "correct_on_time_per_minute": 1.6863892700295289,
+      "observation_horizon_seconds": 426.9476880550792,
+      "median_client_seconds": 47.71868676749,
+      "p95_client_seconds": 62.907914764480665,
+      "mean_queue_seconds": 5.988841091163825,
+      "median_queue_seconds": 4.5042521840077825,
+      "terminal_receipts": 12,
+      "normal_completions": 12,
+      "failures": {},
+      "live_reductions": 8,
+      "binding_live_cutoffs": 7,
+      "thinking_tokens": 24240,
+      "cue_tokens": 112,
+      "output_tokens": 29588,
+      "token_accounting_complete": true,
+      "answer_tokens": 5232
+    }
+  ],
+  "paired": [
+    {
+      "block": 0,
+      "index": 19,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 51.48665406598593,
+        "fixed4096": 96.16322524100542,
+        "live": 74.1601717589947,
+        "live_one": 49.247954735998064
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 4096,
+        "live": 3003,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 0,
+      "index": 27,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 69.4415244939737,
+        "fixed4096": 119.67070398599026,
+        "live": 89.84966078196885,
+        "live_one": 61.68851128098322
+      },
+      "thinking": {
+        "fixed2048": 1602,
+        "fixed4096": 1508,
+        "live": 1355,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 0,
+      "index": 35,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": false,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 73.37438399044913,
+        "fixed4096": 129.21556318749208,
+        "live": 105.60184323746944,
+        "live_one": 62.907914764480665
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2658,
+        "live": 2809,
+        "live_one": 2645
+      }
+    },
+    {
+      "block": 0,
+      "index": 39,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 62.893392731493805,
+        "fixed4096": 110.60161385245738,
+        "live": 70.79686012549791,
+        "live_one": 50.108233696519164
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2183,
+        "live": 2048,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 0,
+      "index": 67,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 47.54858222647454,
+        "fixed4096": 92.04934797150781,
+        "live": 51.56562646946986,
+        "live_one": 44.82457271849853
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 4096,
+        "live": 2048,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 0,
+      "index": 87,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 66.95121172798099,
+        "fixed4096": 121.23459038199508,
+        "live": 79.70374430698575,
+        "live_one": 58.19937350900727
+      },
+      "thinking": {
+        "fixed2048": 2001,
+        "fixed4096": 2423,
+        "live": 1807,
+        "live_one": 2035
+      }
+    },
+    {
+      "block": 1,
+      "index": 19,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 44.354274925455684,
+        "fixed4096": 78.45703627247713,
+        "live": 101.32750808945275,
+        "live_one": 43.25843752047513
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 4096,
+        "live": 5588,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 1,
+      "index": 27,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 19.74687225249363,
+        "fixed4096": 19.95638516850886,
+        "live": 19.862632087490056,
+        "live_one": 21.6779092955112
+      },
+      "thinking": {
+        "fixed2048": 904,
+        "fixed4096": 904,
+        "live": 904,
+        "live_one": 897
+      }
+    },
+    {
+      "block": 1,
+      "index": 35,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 38.41241026399075,
+        "fixed4096": 48.64426819598884,
+        "live": 46.26600174498162,
+        "live_one": 42.224546017008834
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2534,
+        "live": 2465,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 1,
+      "index": 39,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 36.66085767498589,
+        "fixed4096": 42.14009755599545,
+        "live": 41.776195467973594,
+        "live_one": 42.680658856988885
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 2402,
+        "live": 2402,
+        "live_one": 2122
+      }
+    },
+    {
+      "block": 1,
+      "index": 67,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 40.890891258983174,
+        "fixed4096": 76.90104774499196,
+        "live": 90.27976255398244,
+        "live_one": 46.18941879898193
+      },
+      "thinking": {
+        "fixed2048": 2048,
+        "fixed4096": 3557,
+        "live": 4707,
+        "live_one": 2048
+      }
+    },
+    {
+      "block": 1,
+      "index": 87,
+      "on_time": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "eventual": {
+        "fixed2048": true,
+        "fixed4096": true,
+        "live": true,
+        "live_one": true
+      },
+      "live_one_minus_fixed2048": 0,
+      "eventual_live_one_minus_fixed2048": 0,
+      "completion": {
+        "fixed2048": 44.65299984047306,
+        "fixed4096": 87.97948104151874,
+        "live": 98.88528252649121,
+        "live_one": 50.4790674385149
+      },
+      "thinking": {
+        "fixed2048": 1975,
+        "fixed4096": 2316,
+        "live": 1731,
+        "live_one": 2205
+      }
+    }
+  ],
+  "overlap_by_phase": {
+    "b0-fixed2048": 2,
+    "b0-fixed4096": 2,
+    "b0-live": 2,
+    "b0-live_one": 2,
+    "b1-live_one": 2,
+    "b1-live": 2,
+    "b1-fixed4096": 2,
+    "b1-fixed2048": 2
+  },
+  "binding_cut_to_finish_seconds": [
+    14.94776219499181,
+    19.244847671012394,
+    34.191016406985,
+    12.624987019982655,
+    26.499076011008583,
+    31.790026978997048,
+    6.065391739975894,
+    5.589571359014371,
+    24.92094269100926,
+    27.873236746992916
+  ],
+  "reduction_after_short_tokens": [
+    -88,
+    955,
+    -1872,
+    -1123,
+    -56,
+    -1054,
+    -1733,
+    -1465,
+    74,
+    -18,
+    -922,
+    -1277
+  ],
+  "audit": {
+    "passed": true,
+    "failures": [],
+    "condition": "constant_pressure",
+    "requests": 50,
+    "measured_requests": 48,
+    "phases_completed": [
+      "b0-fixed2048",
+      "b0-fixed4096",
+      "b0-live",
+      "b0-live_one",
+      "b1-live_one",
+      "b1-live",
+      "b1-fixed4096",
+      "b1-fixed2048"
+    ],
+    "skipped": [],
+    "live_reductions": 12,
+    "binding_live_cutoffs": 10,
+    "overlap_by_phase": {
+      "b0-fixed2048": 2,
+      "b0-fixed4096": 2,
+      "b0-live": 2,
+      "b0-live_one": 2,
+      "b1-live_one": 2,
+      "b1-live": 2,
+      "b1-fixed4096": 2,
+      "b1-fixed2048": 2
+    },
+    "coverage": {
+      "questions": 6,
+      "frozen_intent": {
+        "constant_pressure": 6,
+        "one_at_a_time": 2,
+        "slack_rush_recovery": 0,
+        "reason": "The only allocation available was a 2-hour interactive H100 (job 6662944, 10:27-12:27). 576 outcomes need roughly 12 GPU-hours, so coverage is reduced by rank order, never by outcome. slack_rush_recovery is not run and its claim is untested; one_at_a_time is limited to two cohort questions, which makes the premise check preliminary rather than a two-block verdict.",
+        "planned_full_design": {
+          "questions": 24,
+          "policies": 4,
+          "conditions": 3,
+          "blocks": 2,
+          "measured_outcomes": 576
+        }
+      },
+      "truncated": false
+    },
+    "note": "Caps and wrong answers are scientific outcomes; partial coverage is reported."
+  },
+  "input_hashes": {
+    "plan.json": "bd2ea3ecba82aaf7e5635f6e0d79c1a965363f0907fcb64c9024bbfcd7d86bcc",
+    "trace.json": "2e39675ac91e0e385ebdfeab4804f6dc3b82bd806fdf596622e827b87833b22b",
+    "manifest.json": "5f10c91271a3ce0e6f3a2cc93202325da3444b760c86d1415180aec0e2d53ede"
+  },
+  "grading_versions": {
+    "math-verify": "0.9.0",
+    "sympy": "1.14.0",
+    "latex2sympy2_extended": "1.11.0"
+  }
+}

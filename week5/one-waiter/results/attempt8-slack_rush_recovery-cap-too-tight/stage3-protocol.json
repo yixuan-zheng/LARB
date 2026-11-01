@@ -1,0 +1,62 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dataset": "HuggingFaceH4/MATH-500",
+  "dataset_revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "selection": "first 100 rows, indices 0 through 99; includes the ten development examples already used in Stages 1 and 2; remaining 400 not evaluated",
+  "problems_sha256": "ec8bd946d000517564ddfbc5f2e48dad8024591efcfc7e935b04dd4504781598",
+  "configurations": [
+    {
+      "name": "full",
+      "thinking": true,
+      "budget": null
+    },
+    {
+      "name": "budget-256",
+      "thinking": true,
+      "budget": 256
+    },
+    {
+      "name": "budget-512",
+      "thinking": true,
+      "budget": 512
+    },
+    {
+      "name": "budget-1024",
+      "thinking": true,
+      "budget": 1024
+    },
+    {
+      "name": "budget-2048",
+      "thinking": true,
+      "budget": 2048
+    },
+    {
+      "name": "nonthinking",
+      "thinking": false,
+      "budget": null
+    }
+  ],
+  "sampling": {
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "seed_base": 6222,
+  "transition_text": "\n\nI will stop checking and give the final answer now.\n</think>\n\n",
+  "full_thinking_safety_cap": 16384,
+  "answer_cap": 2048,
+  "budget_definition": "normal generated pre-close tokens, including opening marker and whitespace; forced cue tokens are additional and timed",
+  "primary_accuracy": "correct final answer AND normal EOS completion, out of all 100; cap hits and missing final answers are failures",
+  "secondary_accuracy": "correct extracted boxed answer regardless of normal EOS completion",
+  "grader": "last complete boxed answer; canonical exact match then math-verify 0.9.0 mathematical equivalence; extraction/parser ambiguities reviewed without changing generation",
+  "timing": "same instrumented single-request Transformers path for all configurations; CUDA-synchronized generate wall time, includes cutoff and answer, excludes load/tokenization/queue/warmup",
+  "screen": {
+    "max_accuracy_drop_pp": 3,
+    "min_median_time_reduction_fraction": 0.25
+  },
+  "uncertainty": "paired per-problem bootstrap, 10000 draws, seed 622203; exploratory candidate selection on development examples, not confirmation of a 3pp floor",
+  "execution": "30 tasks: task % 6 selects configuration, task // 6 selects a contiguous 20-problem shard; at most six concurrent L40S allocations; per-item resumable records",
+  "frozen_before_submission": true
+}

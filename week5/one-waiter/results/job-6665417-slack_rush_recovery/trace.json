@@ -1,0 +1,109 @@
+{
+  "condition": "slack_rush_recovery",
+  "arrivals_by_block": [
+    [
+      {
+        "index": 97,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 36,
+        "offset_seconds": 100.80676242383197
+      },
+      {
+        "index": 92,
+        "offset_seconds": 201.61352484766394
+      },
+      {
+        "index": 29,
+        "offset_seconds": 258.75524259806843
+      },
+      {
+        "index": 48,
+        "offset_seconds": 258.80524259806845
+      },
+      {
+        "index": 63,
+        "offset_seconds": 258.85524259806846
+      },
+      {
+        "index": 93,
+        "offset_seconds": 460.3687674457324
+      },
+      {
+        "index": 14,
+        "offset_seconds": 561.1755298695643
+      },
+      {
+        "index": 20,
+        "offset_seconds": 661.9822922933963
+      }
+    ],
+    [
+      {
+        "index": 29,
+        "offset_seconds": 0.0
+      },
+      {
+        "index": 48,
+        "offset_seconds": 100.80676242383197
+      },
+      {
+        "index": 63,
+        "offset_seconds": 201.61352484766394
+      },
+      {
+        "index": 93,
+        "offset_seconds": 258.75524259806843
+      },
+      {
+        "index": 14,
+        "offset_seconds": 258.80524259806845
+      },
+      {
+        "index": 20,
+        "offset_seconds": 258.85524259806846
+      },
+      {
+        "index": 97,
+        "offset_seconds": 460.3687674457324
+      },
+      {
+        "index": 36,
+        "offset_seconds": 561.1755298695643
+      },
+      {
+        "index": 92,
+        "offset_seconds": 661.9822922933963
+      }
+    ]
+  ],
+  "block_order": [
+    0,
+    1
+  ],
+  "orders": {
+    "0": [
+      "fixed2048",
+      "fixed4096",
+      "live",
+      "live_one"
+    ],
+    "1": [
+      "live_one",
+      "live",
+      "fixed4096",
+      "fixed2048"
+    ]
+  },
+  "relative_deadline_seconds": 100.80676242383197,
+  "observation_horizon_seconds": 762.7890547172283,
+  "calibration_latencies_seconds": [
+    26.953346153954044,
+    50.403381211915985
+  ],
+  "unit_seconds": 50.403381211915985,
+  "burst_at_seconds": 6.738336538488511,
+  "frozen_monotonic": 1988587.695911362,
+  "clock_domain": "client.monotonic"
+}

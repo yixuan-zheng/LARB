@@ -1,0 +1,8 @@
+=== slack 4th start 2026-10-29T21:06:32-04:00 gpu=0MiB
+=== slack exit=0 2026-10-29T22:05:53-04:00
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+KeyError: 'mean_client_seconds'
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+KeyError: 'mean_client_seconds'

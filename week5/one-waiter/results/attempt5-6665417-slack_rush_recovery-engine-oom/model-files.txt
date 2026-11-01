@@ -1,0 +1,12 @@
+total 7872004
+-rw-r--r--. 1 jwang3221 gtperson        726 Oct 29 10:50 config.json
+-rw-r--r--. 1 jwang3221 gtperson        239 Oct 29 10:50 generation_config.json
+-rw-r--r--. 1 jwang3221 gtperson    1671853 Oct 29 10:50 merges.txt
+-rw-r--r--. 1 jwang3221 gtperson 3957900840 Oct 29 10:51 model-00001-of-00003.safetensors
+-rw-r--r--. 1 jwang3221 gtperson 3987450520 Oct 29 10:51 model-00002-of-00003.safetensors
+-rw-r--r--. 1 jwang3221 gtperson   99630640 Oct 29 10:51 model-00003-of-00003.safetensors
+-rw-r--r--. 1 jwang3221 gtperson      32819 Oct 29 10:50 model.safetensors.index.json
+-rw-r--r--. 1 jwang3221 gtperson       9732 Oct 29 10:50 tokenizer_config.json
+-rw-r--r--. 1 jwang3221 gtperson   11422654 Oct 29 10:50 tokenizer.json
+-rw-r--r--. 1 jwang3221 gtperson    2776833 Oct 29 10:50 vocab.json
+6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2  /home/hice1/jwang3221/scratch/LARB-week5-env/model/Qwen3-4B/model.safetensors.index.json
