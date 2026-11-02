@@ -1,0 +1,605 @@
+{
+  "state": "COMPLETED",
+  "elapsed_seconds": 8446,
+  "coverage": {
+    "total": 76,
+    "probes": 4,
+    "measured": 72,
+    "unique_measured_questions": 12,
+    "all_phases_drained": true,
+    "injection_valid": true
+  },
+  "source_lock_sha256": "e30dbed1bb503d415a22246b59959f8646a572322c7483322da9bd13770a4a78",
+  "trace_sha256": "e80f0f4dc56735eefd2232117c312c0df5fa3bb2f28937abda2e3189a3ae6a98",
+  "independent_summary_reproduction": true,
+  "queue_gate": {
+    "passed": true,
+    "requests": 4,
+    "waiting_steps": 5386,
+    "max_waiting": 1,
+    "live_cuts": 2,
+    "checks": [
+      {
+        "key": "probe-pressure--r00",
+        "complete": true,
+        "answer_capped": false,
+        "initial_budget": 8192,
+        "cue_start": 8192
+      },
+      {
+        "key": "probe-pressure--r02",
+        "complete": true,
+        "answer_capped": false,
+        "initial_budget": 8192,
+        "cue_start": 4096
+      },
+      {
+        "key": "probe-pressure--r01",
+        "complete": true,
+        "answer_capped": true,
+        "initial_budget": 8192,
+        "cue_start": 4096
+      },
+      {
+        "key": "probe-recovery--r00",
+        "complete": true,
+        "answer_capped": false,
+        "initial_budget": 8192,
+        "cue_start": 8192
+      }
+    ],
+    "recovery_budget": 8192,
+    "note": "Mechanical gate only. Caps retained;no correctness gate or performance claim."
+  },
+  "phase_summary": [
+    {
+      "role": "probe",
+      "phase": "probe-pressure",
+      "policy": "live",
+      "planned": 3,
+      "present": 3,
+      "correct": 0,
+      "correct_on_time": 0,
+      "goodput_per_minute": 0.0,
+      "deadline_misses": 0,
+      "horizon_seconds": 900,
+      "mean_latency": 135.81974712122852,
+      "max_latency": 225.85405667312443,
+      "p95_latency": 225.85405667312443,
+      "total_output_tokens": 21520,
+      "interventions": 2,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "probe",
+      "phase": "probe-recovery",
+      "policy": "live",
+      "planned": 1,
+      "present": 1,
+      "correct": 0,
+      "correct_on_time": 0,
+      "goodput_per_minute": 0.0,
+      "deadline_misses": 0,
+      "horizon_seconds": 900,
+      "mean_latency": 140.84752220194787,
+      "max_latency": 140.84752220194787,
+      "p95_latency": 140.84752220194787,
+      "total_output_tokens": 9345,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "low-fixed4k",
+      "policy": "fixed4k",
+      "planned": 4,
+      "present": 4,
+      "correct": 0,
+      "correct_on_time": 0,
+      "goodput_per_minute": 0.0,
+      "deadline_misses": 0,
+      "horizon_seconds": 827.1278790073993,
+      "mean_latency": 87.50446621177252,
+      "max_latency": 99.17609281977639,
+      "p95_latency": 99.17609281977639,
+      "total_output_tokens": 22776,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "low-fixed8k",
+      "policy": "fixed8k",
+      "planned": 4,
+      "present": 4,
+      "correct": 0,
+      "correct_on_time": 0,
+      "goodput_per_minute": 0.0,
+      "deadline_misses": 0,
+      "horizon_seconds": 827.1278790073993,
+      "mean_latency": 148.03576790133957,
+      "max_latency": 154.0895846481435,
+      "p95_latency": 154.0895846481435,
+      "total_output_tokens": 39212,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "low-live",
+      "policy": "live",
+      "planned": 4,
+      "present": 4,
+      "correct": 0,
+      "correct_on_time": 0,
+      "goodput_per_minute": 0.0,
+      "deadline_misses": 0,
+      "horizon_seconds": 827.1278790073993,
+      "mean_latency": 152.0256133285584,
+      "max_latency": 169.1262993728742,
+      "p95_latency": 169.1262993728742,
+      "total_output_tokens": 39212,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "near-fixed8k",
+      "policy": "fixed8k",
+      "planned": 8,
+      "present": 8,
+      "correct": 3,
+      "correct_on_time": 3,
+      "goodput_per_minute": 0.26569947336825184,
+      "deadline_misses": 0,
+      "horizon_seconds": 677.4571199489176,
+      "mean_latency": 164.65595552994637,
+      "max_latency": 210.81256589433178,
+      "p95_latency": 210.81256589433178,
+      "total_output_tokens": 71115,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "near-live",
+      "policy": "live",
+      "planned": 8,
+      "present": 8,
+      "correct": 3,
+      "correct_on_time": 3,
+      "goodput_per_minute": 0.26569947336825184,
+      "deadline_misses": 0,
+      "horizon_seconds": 677.4571199489176,
+      "mean_latency": 120.14903573977062,
+      "max_latency": 155.91598081216216,
+      "p95_latency": 155.91598081216216,
+      "total_output_tokens": 62942,
+      "interventions": 5,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "near-fixed4k",
+      "policy": "fixed4k",
+      "planned": 8,
+      "present": 8,
+      "correct": 3,
+      "correct_on_time": 3,
+      "goodput_per_minute": 0.26569947336825184,
+      "deadline_misses": 0,
+      "horizon_seconds": 677.4571199489176,
+      "mean_latency": 80.9039399359026,
+      "max_latency": 87.63538005203009,
+      "p95_latency": 87.63538005203009,
+      "total_output_tokens": 44847,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "burst-live",
+      "policy": "live",
+      "planned": 12,
+      "present": 12,
+      "correct": 6,
+      "correct_on_time": 4,
+      "goodput_per_minute": 0.16468579970933087,
+      "deadline_misses": 2,
+      "horizon_seconds": 1457.3205487273226,
+      "mean_latency": 160.6658460474961,
+      "max_latency": 279.9255110048689,
+      "p95_latency": 279.9255110048689,
+      "total_output_tokens": 83829,
+      "interventions": 3,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "burst-fixed4k",
+      "policy": "fixed4k",
+      "planned": 12,
+      "present": 12,
+      "correct": 4,
+      "correct_on_time": 3,
+      "goodput_per_minute": 0.12351434978199814,
+      "deadline_misses": 1,
+      "horizon_seconds": 1457.3205487273226,
+      "mean_latency": 125.67965411018425,
+      "max_latency": 250.85590295493603,
+      "p95_latency": 250.85590295493603,
+      "total_output_tokens": 62716,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    },
+    {
+      "role": "measured",
+      "phase": "burst-fixed8k",
+      "policy": "fixed8k",
+      "planned": 12,
+      "present": 12,
+      "correct": 6,
+      "correct_on_time": 4,
+      "goodput_per_minute": 0.16468579970933087,
+      "deadline_misses": 4,
+      "horizon_seconds": 1457.3205487273226,
+      "mean_latency": 238.29523680921798,
+      "max_latency": 493.5434333747253,
+      "p95_latency": 493.5434333747253,
+      "total_output_tokens": 110381,
+      "interventions": 0,
+      "injection_valid": true,
+      "fully_drained": true
+    }
+  ],
+  "pooled": [
+    {
+      "policy": "fixed4k",
+      "n": 24,
+      "correct": 7,
+      "correct_on_time": 6,
+      "deadline_misses": 1,
+      "mean_latency": 104.39188473568841,
+      "output_tokens": 130339,
+      "caps": 6,
+      "horizon_seconds": 2961.9055476836393,
+      "goodput_per_minute": 0.12154337611526414
+    },
+    {
+      "policy": "fixed8k",
+      "n": 24,
+      "correct": 9,
+      "correct_on_time": 7,
+      "deadline_misses": 4,
+      "mean_latency": 198.7055648981477,
+      "output_tokens": 220708,
+      "caps": 4,
+      "horizon_seconds": 2961.9055476836393,
+      "goodput_per_minute": 0.14180060546780818
+    },
+    {
+      "policy": "live",
+      "n": 24,
+      "correct": 9,
+      "correct_on_time": 7,
+      "deadline_misses": 2,
+      "mean_latency": 145.720203825098,
+      "output_tokens": 185983,
+      "caps": 6,
+      "horizon_seconds": 2961.9055476836393,
+      "goodput_per_minute": 0.14180060546780818
+    }
+  ],
+  "comparisons": [
+    {
+      "condition": "low",
+      "baseline": "fixed4k",
+      "good_delta": 0,
+      "correct_delta": 0,
+      "mean_latency_ratio": 1.7373469025070796,
+      "token_ratio": 1.7216368106779065,
+      "good_wins": [],
+      "good_losses": []
+    },
+    {
+      "condition": "low",
+      "baseline": "fixed8k",
+      "good_delta": 0,
+      "correct_delta": 0,
+      "mean_latency_ratio": 1.0269519014477495,
+      "token_ratio": 1.0,
+      "good_wins": [],
+      "good_losses": []
+    },
+    {
+      "condition": "near",
+      "baseline": "fixed4k",
+      "good_delta": 0,
+      "correct_delta": 0,
+      "mean_latency_ratio": 1.4850826280519906,
+      "token_ratio": 1.4034829531518274,
+      "good_wins": [],
+      "good_losses": []
+    },
+    {
+      "condition": "near",
+      "baseline": "fixed8k",
+      "good_delta": 0,
+      "correct_delta": 0,
+      "mean_latency_ratio": 0.7296974795297874,
+      "token_ratio": 0.8850734725444702,
+      "good_wins": [
+        21
+      ],
+      "good_losses": [
+        29
+      ]
+    },
+    {
+      "condition": "burst",
+      "baseline": "fixed4k",
+      "good_delta": 1,
+      "correct_delta": 2,
+      "mean_latency_ratio": 1.278375940680416,
+      "token_ratio": 1.3366445564130365,
+      "good_wins": [
+        25,
+        24
+      ],
+      "good_losses": [
+        1
+      ]
+    },
+    {
+      "condition": "burst",
+      "baseline": "fixed8k",
+      "good_delta": 0,
+      "correct_delta": 0,
+      "mean_latency_ratio": 0.6742302036701099,
+      "token_ratio": 0.7594513548527373,
+      "good_wins": [
+        19
+      ],
+      "good_losses": [
+        23
+      ]
+    }
+  ],
+  "telemetry": [
+    {
+      "phase": "probe-pressure",
+      "max_waiting": 1,
+      "waiting_steps": 5386,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 85.05787687329575,
+      "max_scheduler_interval_seconds": 0.8943964787758887
+    },
+    {
+      "phase": "probe-recovery",
+      "max_waiting": 0,
+      "waiting_steps": 0,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 0.005724784918129444,
+      "max_scheduler_interval_seconds": 1.6153395110741258
+    },
+    {
+      "phase": "low-fixed4k",
+      "max_waiting": 0,
+      "waiting_steps": 0,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 0.9598667975515127,
+      "max_scheduler_interval_seconds": 119.55019155796617
+    },
+    {
+      "phase": "low-fixed8k",
+      "max_waiting": 0,
+      "waiting_steps": 0,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 0.20651174616068602,
+      "max_scheduler_interval_seconds": 57.27820039121434
+    },
+    {
+      "phase": "low-live",
+      "max_waiting": 0,
+      "waiting_steps": 0,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 0.6837969389744103,
+      "max_scheduler_interval_seconds": 52.29489995678887
+    },
+    {
+      "phase": "near-fixed8k",
+      "max_waiting": 2,
+      "waiting_steps": 16019,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 64.63496784726158,
+      "max_scheduler_interval_seconds": 1.5607423856854439
+    },
+    {
+      "phase": "near-live",
+      "max_waiting": 1,
+      "waiting_steps": 3664,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 22.452128845266998,
+      "max_scheduler_interval_seconds": 0.636011631693691
+    },
+    {
+      "phase": "near-fixed4k",
+      "max_waiting": 0,
+      "waiting_steps": 0,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 1.0632574609480798,
+      "max_scheduler_interval_seconds": 3.1996096428483725
+    },
+    {
+      "phase": "burst-live",
+      "max_waiting": 6,
+      "waiting_steps": 13489,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 202.63874909328297,
+      "max_scheduler_interval_seconds": 271.68876405386254
+    },
+    {
+      "phase": "burst-fixed4k",
+      "max_waiting": 6,
+      "waiting_steps": 12394,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 183.92411017604172,
+      "max_scheduler_interval_seconds": 301.72927677910775
+    },
+    {
+      "phase": "burst-fixed8k",
+      "max_waiting": 6,
+      "waiting_steps": 24073,
+      "max_preemptions": 0,
+      "max_scheduled_to_first_active_seconds": 356.9470135299489,
+      "max_scheduler_interval_seconds": 78.51665471727028
+    }
+  ],
+  "cut_audit": [
+    {
+      "key": "probe-pressure--r02",
+      "cut_tokens": 1,
+      "cue_start": 4096,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 4.912252072244883
+    },
+    {
+      "key": "probe-pressure--r01",
+      "cut_tokens": 0,
+      "cue_start": 4096,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 5.187910050153732
+    },
+    {
+      "key": "near-live--r01",
+      "cut_tokens": 4263,
+      "cue_start": 4263,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 1.6921539790928364
+    },
+    {
+      "key": "near-live--r02",
+      "cut_tokens": 7325,
+      "cue_start": 7325,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 4.11558011546731
+    },
+    {
+      "key": "near-live--r03",
+      "cut_tokens": 4352,
+      "cue_start": 4352,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 4.432454239577055
+    },
+    {
+      "key": "near-live--r04",
+      "cut_tokens": 7791,
+      "cue_start": 7791,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 1.7182067967951298
+    },
+    {
+      "key": "near-live--r05",
+      "cut_tokens": 4374,
+      "cue_start": 4374,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 2.0176200196146965
+    },
+    {
+      "key": "burst-live--r01",
+      "cut_tokens": 5165,
+      "cue_start": 5165,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 1.6843890771269798
+    },
+    {
+      "key": "burst-live--r00",
+      "cut_tokens": 5164,
+      "cue_start": 5164,
+      "waiters": 1,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 2.0755287259817123
+    },
+    {
+      "key": "burst-live--r02",
+      "cut_tokens": 0,
+      "cue_start": 4096,
+      "waiters": 5,
+      "same_snapshot_active": true,
+      "pressure_age_ms": 2.2964230738580227
+    }
+  ],
+  "low_live_vs8k": [
+    {
+      "id": 11,
+      "identical_tokens": true
+    },
+    {
+      "id": 28,
+      "identical_tokens": true
+    },
+    {
+      "id": 23,
+      "identical_tokens": true
+    },
+    {
+      "id": 26,
+      "identical_tokens": true
+    }
+  ],
+  "burst_live_recovery": [
+    {
+      "key": "burst-live--r08",
+      "id": 10,
+      "initial_budget": 8192,
+      "cue_start": 8192,
+      "cut": false
+    },
+    {
+      "key": "burst-live--r09",
+      "id": 25,
+      "initial_budget": 8192,
+      "cue_start": 8192,
+      "cut": false
+    },
+    {
+      "key": "burst-live--r10",
+      "id": 4,
+      "initial_budget": 8192,
+      "cue_start": 8192,
+      "cut": false
+    },
+    {
+      "key": "burst-live--r11",
+      "id": 24,
+      "initial_budget": 8192,
+      "cue_start": 8192,
+      "cut": false
+    }
+  ],
+  "review_counts": {
+    "wrong_canonical_integer|normal": 30,
+    "missing_complete_box|capped": 14,
+    "noncanonical_integer_box|normal": 4,
+    "wrong_canonical_integer|capped": 3
+  },
+  "max_injection_lag_ms": 98.7578029744327
+}

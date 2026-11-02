@@ -1,0 +1,23 @@
+{
+  "week5/pressure-followup/screen/common.py": "3096890b7500b0989320d855c4aded24aee20c310c1c551ccfd8f04310f3260a",
+  "week5/pressure-followup/screen/inputs/manifest.json": "35ee5ce972bf7ec4c02ce761e4f779b66e0386731844b1056c4cea237f5a5df1",
+  "week5/pressure-followup/screen/inputs/problems.json": "f0329c3848d5cdffb88c0b7818ef58af73affb543b847330a33c73c567806f94",
+  "week5/pressure-followup/serving/PROTOCOL.md": "9632c2438257fefae2656c2cc687e1a72ff465db3fe809d45462da10caeaaad2",
+  "week5/pressure-followup/serving/analyze.py": "64dab5b61551c4cc159455d137e3d8bfd32e995d0a5dfe4acda50b7a19a65685",
+  "week5/pressure-followup/serving/control.py": "c9cf5db01af17f7911d4a9dbe431979ffdd7d9019f7a4f0a6f83284b083291bd",
+  "week5/pressure-followup/serving/evidence.py": "ca1d178fb6673015a8773a48a84e0039ce16f334031cadda050176e26108bd8d",
+  "week5/pressure-followup/serving/freeze.py": "4392ef949ca974d507d8ddcfdf4c9759034e4fdb1f7050061cd6e3323d3cb09e",
+  "week5/pressure-followup/serving/mechanics.py": "a9548023c19f577de9985603c34b0aeeff200737d6f5a9a46c0aca8e1925caa8",
+  "week5/pressure-followup/serving/mechanics_adapter.py": "2bee04da74c1b5f77db2bce4017746c6976885d08b5c8af4c10295fc997e4f77",
+  "week5/pressure-followup/serving/pressure_adapter.py": "042c3323eb894c678868dc7cff60177746f8ae9b5c3c8185dbecbf0b478c69e5",
+  "week5/pressure-followup/serving/queue_policy.py": "a1e57a0fcc7b5ff03527b5476c13b1e907cb3d5429310ac7a2f5f1a1bc56380f",
+  "week5/pressure-followup/serving/readiness.py": "b4e4902ae7175a5a3acc2774e37f842b006e315c38e7f8835cd1cf71db450e5c",
+  "week5/pressure-followup/serving/run.py": "7488e3aea8e336f53e065f82e09af239e40b0427ff81b86853f6e189a666209b",
+  "week5/pressure-followup/serving/run.sbatch": "c43ad7083521ed45df77d9a00884477775ac98ba622e3229b032668a167337d1",
+  "week5/pressure-followup/serving/server.py": "6556f59137be444e5f39dd560dfe01eba4bfd57c7b921067974e0aa1982ab4f1",
+  "week5/pressure-followup/serving/spec.json": "192e9a8f67d62c887a76e096419abf44427a89698939e4329bda630065e70c12",
+  "week5/pressure-followup/serving/test_analysis.py": "81eaa130e74adbeeb9af9bd6be0b6210fcac30dc12a5ccf51aa79c4ff92c93fa",
+  "week5/pressure-followup/serving/test_policy.py": "7a0c5ec5a2679edcd2990f0ef833b2e13f01ce7a3870b18c2689072a43e7f206",
+  "week5/pressure-followup/serving/test_workload.py": "1ec2fa936d0ede72ca6091481403457a7aa657dd462c939225a162f74258286a",
+  "week5/pressure-followup/serving/workload.py": "5c017da5bc4794d647d5150ca5247c0cef43ff6021c426a6eadb4a75be91b9e3"
+}

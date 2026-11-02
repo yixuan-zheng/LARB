@@ -1,0 +1,482 @@
+[
+  {
+    "id": 14,
+    "seed": 6236,
+    "repeat_4gram_fraction": 0.1980440097799511,
+    "suffix_repeat_4gram_fraction": 0.43873517786561267,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 26,
+    "seed": 6248,
+    "repeat_4gram_fraction": 0.17603911980440098,
+    "suffix_repeat_4gram_fraction": 0.2608695652173913,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 1,
+    "seed": 6223,
+    "repeat_4gram_fraction": 0.31442542787286065,
+    "suffix_repeat_4gram_fraction": 0.5335968379446641,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 13,
+    "seed": 6235,
+    "repeat_4gram_fraction": 0.21515892420537897,
+    "suffix_repeat_4gram_fraction": 0.3201581027667984,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 2,
+    "seed": 6224,
+    "repeat_4gram_fraction": 0.22200488997555012,
+    "suffix_repeat_4gram_fraction": 0.4031620553359684,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 4,
+    "seed": 6226,
+    "repeat_4gram_fraction": 0.28117359413202936,
+    "suffix_repeat_4gram_fraction": 0.4782608695652174,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 17,
+    "seed": 6239,
+    "repeat_4gram_fraction": 0.37017114914425425,
+    "suffix_repeat_4gram_fraction": 0.7707509881422925,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 6,
+    "seed": 6228,
+    "repeat_4gram_fraction": 0.2777506112469438,
+    "suffix_repeat_4gram_fraction": 0.3201581027667984,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 21,
+    "seed": 6243,
+    "repeat_4gram_fraction": 0.3388753056234719,
+    "suffix_repeat_4gram_fraction": 0.38735177865612647,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 15,
+    "seed": 6237,
+    "repeat_4gram_fraction": 0.28753056234718827,
+    "suffix_repeat_4gram_fraction": 0.4268774703557312,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 10,
+    "seed": 6232,
+    "repeat_4gram_fraction": 0.39315403422982886,
+    "suffix_repeat_4gram_fraction": 0.549407114624506,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 8,
+    "seed": 6230,
+    "repeat_4gram_fraction": 0.3354523227383863,
+    "suffix_repeat_4gram_fraction": 0.4743083003952569,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 8,
+    "seed": 16230,
+    "repeat_4gram_fraction": 0.3535452322738386,
+    "suffix_repeat_4gram_fraction": 0.5375494071146245,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 10,
+    "seed": 16232,
+    "repeat_4gram_fraction": 0.30855745721271394,
+    "suffix_repeat_4gram_fraction": 0.5928853754940712,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 15,
+    "seed": 16237,
+    "repeat_4gram_fraction": 0.3212713936430318,
+    "suffix_repeat_4gram_fraction": 0.4426877470355731,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 21,
+    "seed": 16243,
+    "repeat_4gram_fraction": 0.34425427872860637,
+    "suffix_repeat_4gram_fraction": 0.39920948616600793,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 6,
+    "seed": 16228,
+    "repeat_4gram_fraction": 0.3080684596577017,
+    "suffix_repeat_4gram_fraction": 0.22134387351778656,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 17,
+    "seed": 16239,
+    "repeat_4gram_fraction": 0.39070904645476773,
+    "suffix_repeat_4gram_fraction": 0.7035573122529645,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 4,
+    "seed": 16226,
+    "repeat_4gram_fraction": 0.26748166259168704,
+    "suffix_repeat_4gram_fraction": 0.3241106719367589,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 2,
+    "seed": 16224,
+    "repeat_4gram_fraction": 0.19364303178484107,
+    "suffix_repeat_4gram_fraction": 0.3241106719367589,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 13,
+    "seed": 16235,
+    "repeat_4gram_fraction": 0.2430317848410758,
+    "suffix_repeat_4gram_fraction": 0.31620553359683795,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 1,
+    "seed": 16223,
+    "repeat_4gram_fraction": 0.341320293398533,
+    "suffix_repeat_4gram_fraction": 0.5691699604743083,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 26,
+    "seed": 16248,
+    "repeat_4gram_fraction": 0.25770171149144255,
+    "suffix_repeat_4gram_fraction": 0.4268774703557312,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 14,
+    "seed": 16236,
+    "repeat_4gram_fraction": 0.239119804400978,
+    "suffix_repeat_4gram_fraction": 0.5335968379446641,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 28,
+    "seed": 6250,
+    "repeat_4gram_fraction": 0.3926650366748166,
+    "suffix_repeat_4gram_fraction": 0.6837944664031621,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 5,
+    "seed": 6227,
+    "repeat_4gram_fraction": 0.2806845965770171,
+    "suffix_repeat_4gram_fraction": 0.4426877470355731,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 18,
+    "seed": 6240,
+    "repeat_4gram_fraction": 0.27677261613691934,
+    "suffix_repeat_4gram_fraction": 0.5454545454545454,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 3,
+    "seed": 6225,
+    "repeat_4gram_fraction": 0.2948655256723716,
+    "suffix_repeat_4gram_fraction": 0.5533596837944664,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 24,
+    "seed": 6246,
+    "repeat_4gram_fraction": 0.2982885085574572,
+    "suffix_repeat_4gram_fraction": 0.5770750988142292,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 19,
+    "seed": 6241,
+    "repeat_4gram_fraction": 0.30073349633251834,
+    "suffix_repeat_4gram_fraction": 0.44664031620553357,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 12,
+    "seed": 6234,
+    "repeat_4gram_fraction": 0.3687041564792176,
+    "suffix_repeat_4gram_fraction": 0.4782608695652174,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 29,
+    "seed": 6251,
+    "repeat_4gram_fraction": 0.3897310513447433,
+    "suffix_repeat_4gram_fraction": 0.7312252964426877,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 25,
+    "seed": 6247,
+    "repeat_4gram_fraction": 0.3506112469437653,
+    "suffix_repeat_4gram_fraction": 0.48616600790513836,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 7,
+    "seed": 6229,
+    "repeat_4gram_fraction": 0.29095354523227385,
+    "suffix_repeat_4gram_fraction": 0.541501976284585,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 20,
+    "seed": 6242,
+    "repeat_4gram_fraction": 0.28948655256723715,
+    "suffix_repeat_4gram_fraction": 0.4624505928853755,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 9,
+    "seed": 6231,
+    "repeat_4gram_fraction": 0.3882640586797066,
+    "suffix_repeat_4gram_fraction": 0.6482213438735178,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 27,
+    "seed": 6249,
+    "repeat_4gram_fraction": 0.33398533007334963,
+    "suffix_repeat_4gram_fraction": 0.3794466403162055,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 16,
+    "seed": 6238,
+    "repeat_4gram_fraction": 0.2278728606356968,
+    "suffix_repeat_4gram_fraction": 0.20948616600790515,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 30,
+    "seed": 6252,
+    "repeat_4gram_fraction": 0.3515892420537897,
+    "suffix_repeat_4gram_fraction": 0.541501976284585,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 11,
+    "seed": 6233,
+    "repeat_4gram_fraction": 0.2860635696821516,
+    "suffix_repeat_4gram_fraction": 0.549407114624506,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 22,
+    "seed": 6244,
+    "repeat_4gram_fraction": 0.43276283618581907,
+    "suffix_repeat_4gram_fraction": 0.5335968379446641,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 23,
+    "seed": 6245,
+    "repeat_4gram_fraction": 0.3056234718826406,
+    "suffix_repeat_4gram_fraction": 0.33201581027667987,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 23,
+    "seed": 16245,
+    "repeat_4gram_fraction": 0.23863080684596577,
+    "suffix_repeat_4gram_fraction": 0.3241106719367589,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 22,
+    "seed": 16244,
+    "repeat_4gram_fraction": 0.46112469437652814,
+    "suffix_repeat_4gram_fraction": 0.7747035573122529,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 11,
+    "seed": 16233,
+    "repeat_4gram_fraction": 0.4136919315403423,
+    "suffix_repeat_4gram_fraction": 0.5652173913043478,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 30,
+    "seed": 16252,
+    "repeat_4gram_fraction": 0.37603911980440097,
+    "suffix_repeat_4gram_fraction": 0.5612648221343873,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 16,
+    "seed": 16238,
+    "repeat_4gram_fraction": 0.2215158924205379,
+    "suffix_repeat_4gram_fraction": 0.28063241106719367,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 27,
+    "seed": 16249,
+    "repeat_4gram_fraction": 0.3501222493887531,
+    "suffix_repeat_4gram_fraction": 0.6403162055335968,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 9,
+    "seed": 16231,
+    "repeat_4gram_fraction": 0.3721271393643032,
+    "suffix_repeat_4gram_fraction": 0.5533596837944664,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 20,
+    "seed": 16242,
+    "repeat_4gram_fraction": 0.2748166259168704,
+    "suffix_repeat_4gram_fraction": 0.16600790513833993,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 7,
+    "seed": 16229,
+    "repeat_4gram_fraction": 0.28312958435207825,
+    "suffix_repeat_4gram_fraction": 0.5019762845849802,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 25,
+    "seed": 16247,
+    "repeat_4gram_fraction": 0.32078239608801956,
+    "suffix_repeat_4gram_fraction": 0.525691699604743,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 29,
+    "seed": 16251,
+    "repeat_4gram_fraction": 0.27677261613691934,
+    "suffix_repeat_4gram_fraction": 0.466403162055336,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 12,
+    "seed": 16234,
+    "repeat_4gram_fraction": 0.3643031784841076,
+    "suffix_repeat_4gram_fraction": 0.48616600790513836,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 19,
+    "seed": 16241,
+    "repeat_4gram_fraction": 0.30855745721271394,
+    "suffix_repeat_4gram_fraction": 0.31225296442687744,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 24,
+    "seed": 16246,
+    "repeat_4gram_fraction": 0.3110024449877751,
+    "suffix_repeat_4gram_fraction": 0.45454545454545453,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 3,
+    "seed": 16225,
+    "repeat_4gram_fraction": 0.2679706601466993,
+    "suffix_repeat_4gram_fraction": 0.40711462450592883,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 18,
+    "seed": 16240,
+    "repeat_4gram_fraction": 0.2317848410757946,
+    "suffix_repeat_4gram_fraction": 0.3715415019762846,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 5,
+    "seed": 16227,
+    "repeat_4gram_fraction": 0.22836185819070903,
+    "suffix_repeat_4gram_fraction": 0.2015810276679842,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  },
+  {
+    "id": 28,
+    "seed": 16250,
+    "repeat_4gram_fraction": 0.33643031784841076,
+    "suffix_repeat_4gram_fraction": 0.6284584980237155,
+    "boxed_scalar_count": 0,
+    "stable_last_two_boxed_scalars": false
+  }
+]

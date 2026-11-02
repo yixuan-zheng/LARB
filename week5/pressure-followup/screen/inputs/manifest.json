@@ -1,0 +1,15 @@
+{
+  "dataset": "MathArena/aime_2025",
+  "revision": "c94da77eb22bbd6439e62a323bec18493a421302",
+  "url": "https://huggingface.co/datasets/MathArena/aime_2025",
+  "source_file": "data/train-00000-of-00001.parquet",
+  "source_sha256": "9f9066ff48ad2e31f9bf1b1ac6d5e80693195f987985f2859f89dd25ffa51c2d",
+  "normalized_sha256": "f0329c3848d5cdffb88c0b7818ef58af73affb543b847330a33c73c567806f94",
+  "rows": 30,
+  "diagram_code_ids": [
+    11
+  ],
+  "normalization": "Sort by problem_idx; preserve exact problem and integer reference; rename keys only.",
+  "license": "CC-BY-NC-SA-4.0",
+  "inference_performed": false
+}

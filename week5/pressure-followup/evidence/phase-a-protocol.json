@@ -1,0 +1,39 @@
+{
+  "checkpoint": 2048,
+  "branches": [
+    2048,
+    8192
+  ],
+  "features": [
+    "repeat_4gram_fraction",
+    "suffix_repeat_4gram_fraction",
+    "boxed_scalar_count",
+    "stable_last_two_boxed_scalars"
+  ],
+  "rules": [
+    "no_box",
+    "no_stable_box",
+    "low_repeat_0.1",
+    "low_repeat_0.2",
+    "low_repeat_0.3",
+    "no_stable_box_low_repeat_0.1",
+    "no_stable_box_low_repeat_0.2",
+    "no_stable_box_low_repeat_0.3"
+  ],
+  "thresholds": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "selection": "On outer-training questions only: among candidates with mean tokens and replay time <=75% of fixed8K, maximize accuracy; ties prefer fewer tokens then rule name. If none meets cost ceiling choose lowest-token candidate and mark training cost infeasible. Evaluate gain-retention separately; do not tune to outer outcomes.",
+  "validation": "Leave-one-question-out, both seeds grouped. Fixed candidate family also reported separately; any full-data chosen candidate is development-only.",
+  "random_comparators": "10000 fixed-count random extension assignments matching aggregate selected extension count; report extension-matched and expected token/time-budget-matched 2K/8K mixtures. Descriptive random intervals are not selection-corrected significance tests.",
+  "bootstrap": "5000 paired question-cluster resamples of stored out-of-fold decisions; descriptive fixed-prediction intervals, does not refit selector within bootstrap.",
+  "target": {
+    "min_gain_retention": 0.8,
+    "max_cost_ratio": 0.75
+  },
+  "scope": "No GPU jobs. No reruns or modifications to original results. All2025 problems are development data. Only first2048 token IDs plus pinned-tokenizer decode are routing inputs; no IDs, references, final outputs or future tokens.",
+  "natural_close": "If close/EOS occurs before checkpoint return observed normal early result without invoking gate; audit this condition before replay.",
+  "timing": "Whole branch time measured in original fixed runs is replay estimate; exclude inference speedup claims until live validation. CPU feature timing reported separately."
+}

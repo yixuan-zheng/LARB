@@ -1,0 +1,28 @@
+{
+  "stage": "synthetic mechanics",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed_seconds": 403,
+  "start_eastern": "2026-11-01 20:10:20",
+  "end_eastern": "2026-11-01 20:17:03",
+  "gpu": "H100 80GB",
+  "source_lock_sha256": "0f30a3bf38721e5e5d7a2965eda46b92b17828d641e0789e8fa64e01e3276caf",
+  "passed": true,
+  "cases": [
+    {
+      "case": "mechanics-below--r0",
+      "passed": true,
+      "pressure_at": 64,
+      "cue_start": 4096,
+      "total_tokens": 5170
+    },
+    {
+      "case": "mechanics-late--r0",
+      "passed": true,
+      "pressure_at": 5000,
+      "cue_start": 5000,
+      "total_tokens": 6207
+    }
+  ],
+  "scope": "Synthetic boundary mechanics only; not actual congestion efficacy or goodput. Calibration remains unsubmitted."
+}

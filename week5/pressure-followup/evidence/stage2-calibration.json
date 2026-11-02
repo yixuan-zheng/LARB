@@ -1,0 +1,249 @@
+{
+  "stage": "calibration",
+  "state": "COMPLETED",
+  "elapsed_seconds": 831,
+  "planned": 8,
+  "present": 8,
+  "source_lock_sha256": "0f30a3bf38721e5e5d7a2965eda46b92b17828d641e0789e8fa64e01e3276caf",
+  "independent_token_grading_audit": "PASS",
+  "trace_recipe_reproduced": true,
+  "summary": [
+    {
+      "policy": "fixed4k",
+      "n": 4,
+      "correct": 1,
+      "normal": 1,
+      "answer_caps": 3,
+      "mean_seconds": 84.19835700924159,
+      "min_seconds": 73.40923577698413,
+      "max_seconds": 88.46313468401786,
+      "mean_output_tokens": 5916.75
+    },
+    {
+      "policy": "fixed8k",
+      "n": 4,
+      "correct": 1,
+      "normal": 4,
+      "answer_caps": 0,
+      "mean_seconds": 153.22192245625774,
+      "min_seconds": 148.01819386298303,
+      "max_seconds": 157.54816742998082,
+      "mean_output_tokens": 9813.5
+    }
+  ],
+  "rows": [
+    {
+      "key": "calib-fixed4k-0--r01",
+      "id": 28,
+      "seed": 6250,
+      "policy": "fixed4k",
+      "latency_seconds": 88.44804861303419,
+      "output_tokens": 6158,
+      "normal": false,
+      "finish": "answer_cap",
+      "correct": false,
+      "extracted": null,
+      "reference": 248,
+      "issue": "missing_complete_box",
+      "injection_lag_ms": 0.8654550183564425,
+      "arrival_pressure_age_ms": 75034.29564798716,
+      "scheduled_to_first_observed_active_seconds": 0.33986274898052216,
+      "received_to_first_observed_active_seconds": 0.33592463401146233
+    },
+    {
+      "key": "calib-fixed4k-0--r00",
+      "id": 11,
+      "seed": 6233,
+      "policy": "fixed4k",
+      "latency_seconds": 88.46313468401786,
+      "output_tokens": 6158,
+      "normal": false,
+      "finish": "answer_cap",
+      "correct": false,
+      "extracted": null,
+      "reference": 259,
+      "issue": "missing_complete_box",
+      "injection_lag_ms": 1.3146450510248542,
+      "arrival_pressure_age_ms": 75368.45001205802,
+      "scheduled_to_first_observed_active_seconds": 1.523605679976754,
+      "received_to_first_observed_active_seconds": 1.185513200936839
+    },
+    {
+      "key": "calib-fixed4k-1--r01",
+      "id": 26,
+      "seed": 6248,
+      "policy": "fixed4k",
+      "latency_seconds": 73.40923577698413,
+      "output_tokens": 5193,
+      "normal": true,
+      "finish": "normal",
+      "correct": true,
+      "extracted": 113,
+      "reference": 113,
+      "issue": null,
+      "injection_lag_ms": 0.6538319867104292,
+      "arrival_pressure_age_ms": 507.7622099779546,
+      "scheduled_to_first_observed_active_seconds": 0.004969715024344623,
+      "received_to_first_observed_active_seconds": 0.003459674073383212
+    },
+    {
+      "key": "calib-fixed4k-1--r00",
+      "id": 23,
+      "seed": 6245,
+      "policy": "fixed4k",
+      "latency_seconds": 86.47300896293018,
+      "output_tokens": 6158,
+      "normal": false,
+      "finish": "answer_cap",
+      "correct": false,
+      "extracted": null,
+      "reference": 610,
+      "issue": "missing_complete_box",
+      "injection_lag_ms": 0.9394589578732848,
+      "arrival_pressure_age_ms": 509.63283597957343,
+      "scheduled_to_first_observed_active_seconds": 0.05062934500165284,
+      "received_to_first_observed_active_seconds": 0.04724867804907262
+    },
+    {
+      "key": "calib-fixed8k-0--r01",
+      "id": 28,
+      "seed": 6250,
+      "policy": "fixed8k",
+      "latency_seconds": 152.04987768200226,
+      "output_tokens": 9953,
+      "normal": true,
+      "finish": "normal",
+      "correct": false,
+      "extracted": 408,
+      "reference": 248,
+      "issue": null,
+      "injection_lag_ms": 0.9123720228672028,
+      "arrival_pressure_age_ms": 528.167344047688,
+      "scheduled_to_first_observed_active_seconds": 0.005506735062226653,
+      "received_to_first_observed_active_seconds": 0.003621103009209037
+    },
+    {
+      "key": "calib-fixed8k-0--r00",
+      "id": 11,
+      "seed": 6233,
+      "policy": "fixed8k",
+      "latency_seconds": 155.27145085006487,
+      "output_tokens": 10182,
+      "normal": true,
+      "finish": "normal",
+      "correct": false,
+      "extracted": 86,
+      "reference": 259,
+      "issue": null,
+      "injection_lag_ms": 1.1668279767036438,
+      "arrival_pressure_age_ms": 530.1928130211309,
+      "scheduled_to_first_observed_active_seconds": 0.02044190396554768,
+      "received_to_first_observed_active_seconds": 0.016530802939087152
+    },
+    {
+      "key": "calib-fixed8k-1--r01",
+      "id": 26,
+      "seed": 6248,
+      "policy": "fixed8k",
+      "latency_seconds": 148.01819386298303,
+      "output_tokens": 9290,
+      "normal": true,
+      "finish": "normal",
+      "correct": true,
+      "extracted": 113,
+      "reference": 113,
+      "issue": null,
+      "injection_lag_ms": 1.528776017948985,
+      "arrival_pressure_age_ms": 511.3182590575889,
+      "scheduled_to_first_observed_active_seconds": 0.006263311952352524,
+      "received_to_first_observed_active_seconds": 0.003892680979333818
+    },
+    {
+      "key": "calib-fixed8k-1--r00",
+      "id": 23,
+      "seed": 6245,
+      "policy": "fixed8k",
+      "latency_seconds": 157.54816742998082,
+      "output_tokens": 9829,
+      "normal": true,
+      "finish": "normal",
+      "correct": false,
+      "extracted": 574,
+      "reference": 610,
+      "issue": null,
+      "injection_lag_ms": 1.80553097743541,
+      "arrival_pressure_age_ms": 513.2999370107427,
+      "scheduled_to_first_observed_active_seconds": 0.02210038690827787,
+      "received_to_first_observed_active_seconds": 0.017748077982105315
+    }
+  ],
+  "telemetry": [
+    {
+      "phase": "calib-fixed4k-0",
+      "scheduler_steps": 6159,
+      "max_scheduled_active": 2,
+      "max_waiting": 0,
+      "max_preemptions": 0
+    },
+    {
+      "phase": "calib-fixed4k-1",
+      "scheduler_steps": 6159,
+      "max_scheduled_active": 2,
+      "max_waiting": 0,
+      "max_preemptions": 0
+    },
+    {
+      "phase": "calib-fixed8k-0",
+      "scheduler_steps": 10183,
+      "max_scheduled_active": 2,
+      "max_waiting": 0,
+      "max_preemptions": 0
+    },
+    {
+      "phase": "calib-fixed8k-1",
+      "scheduler_steps": 9830,
+      "max_scheduled_active": 2,
+      "max_waiting": 0,
+      "max_preemptions": 0
+    }
+  ],
+  "live_interventions": 0,
+  "max_injection_lag_ms": 1.80553097743541,
+  "arrival_pressure_ages_ms": [
+    75034.29564798716,
+    75368.45001205802,
+    507.7622099779546,
+    509.63283597957343,
+    528.167344047688,
+    530.1928130211309,
+    511.3182590575889,
+    513.2999370107427
+  ],
+  "max_observed_scheduler_gap_seconds": 1.7260741029167548,
+  "trace": {
+    "scale_seconds": 157.54816742998082,
+    "relative_deadline_seconds": 236.32225114497123,
+    "conditions": [
+      {
+        "name": "low",
+        "n": 4,
+        "horizon_seconds": 827.1278790073993,
+        "last_arrival_seconds": 590.8056278624281
+      },
+      {
+        "name": "near",
+        "n": 8,
+        "horizon_seconds": 677.4571199489176,
+        "last_arrival_seconds": 441.13486880394635
+      },
+      {
+        "name": "burst",
+        "n": 12,
+        "horizon_seconds": 1457.3205487273226,
+        "last_arrival_seconds": 1220.9982975823514
+      }
+    ],
+    "total_common_horizons_seconds": 8885.716643050919
+  },
+  "caution": "Timing calibration only. Four difficult questions,not representative accuracy or congestion test. Pressure age can include prior idle time;inspect within-active-step freshness separately."
+}

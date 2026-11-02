@@ -1,0 +1,28 @@
+{
+  "checkpoint": 4096,
+  "branches": [
+    4096,
+    8192
+  ],
+  "rules": [
+    "no_box",
+    "no_candidate",
+    "recent_correction",
+    "no_candidate_or_recent_correction",
+    "low_suffix_repeat_0.25",
+    "low_suffix_repeat_0.5",
+    "low_suffix_repeat_0.75",
+    "no_candidate_low_suffix_repeat_0.5"
+  ],
+  "features": {
+    "no_box": "No complete boxed scalar integer in observed prefix",
+    "no_candidate": "No complete scalar box and no explicit answer/result is/equals/: integer candidate in observed prefix",
+    "recent_correction": "At least one correction phrase in last2048 characters: wait, mistake, incorrect, contradiction, recalculate, reconsider; case-insensitive whole words",
+    "suffix_repeat": "Fraction of final253 token fourgrams that occur more than once anywhere in checkpoint prefix"
+  },
+  "selection": "Leave-one-question-out. Train only on other29 questions, keep both seeds together. Maximize accuracy among rules with tokens AND replay time <=75% fixed8K, ties lowest tokens then name. If none feasible choose fixed4K fallback. Include fixed4K fallback in family. No threshold expansion.",
+  "comparators": "Fixed4K and8K;10000 random assignments among eligible cells matching extension count; nonselective expected token/time-cost matched mixtures.",
+  "target": "Retain80% of fixed4K->8K gain and save25% time AND tokens vs8K; selection value positive against both expected matched-cost mixtures. Practical pass is point-estimate feasibility, not proof.",
+  "limits": "All2025 is development data; no GPU inference. No feature uses final answer phase,future tokens,reference,ID,seed,or manual semantic labels. Early thinking closure bypasses gate and retains4K outcome. Features are proxies, not mathematical-progress verification.",
+  "uncertainty": "5000 question-cluster resamples of stored OOF decisions; descriptive, no selector refitting in bootstrap."
+}

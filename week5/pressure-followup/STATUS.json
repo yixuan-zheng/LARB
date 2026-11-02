@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-11-02",
+  "mechanics": "completed; two synthetic boundary checks independently passed",
+  "monitor": "disabled at user request",
+  "calibration": "completed; 8/8 records audited; timing calibration passes",
+  "measured_pilot": "completed; 76/76 records audited: 4 probes and 72 measured responses; live ties 8K primary goodput with lower latency/tokens",
+  "public_bundle": "portable preparation and compact audited evidence; not the exact executed GPU source bundle",
+  "note": "Stages 1\u20133 complete. No queued follow-up job or monitor remains. Follow-up is a proposal, not a result. See FOLLOWUP-PLAN.md.",
+  "followup": "cancelled by user before execution ahead of cluster maintenance; both allocations had zero runtime and zero responses",
+  "followup_planned_measured": 160,
+  "followup_planned_probes": 8,
+  "followup_observed_responses": 0
+}

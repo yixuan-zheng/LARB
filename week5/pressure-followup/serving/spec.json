@@ -1,0 +1,38 @@
+{
+  "name": "larb-queue-pressure-v1",
+  "status": "portable-handoff-live-unverified",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dataset_revision": "c94da77eb22bbd6439e62a323bec18493a421302",
+  "policies": [
+    "fixed4k",
+    "fixed8k",
+    "live"
+  ],
+  "optional_diagnostic_not_in_pilot": "arrival",
+  "short": 4096,
+  "long": 8192,
+  "waiting_threshold": 1,
+  "max_num_seqs": 2,
+  "answer_cap": 2048,
+  "transition_text": "\n\nI will stop checking and give the final answer now.\n</think>\n\n",
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "engine_seed": 6222,
+  "selection_salt": "larb-pressure-v1",
+  "request_seed_base": 6222,
+  "requests_per_condition": {
+    "low": 4,
+    "near": 8,
+    "burst": 12
+  },
+  "calibration_request_count": 8,
+  "deadline_multiplier": 1.5,
+  "phase_drain_timeout_seconds": 1800,
+  "max_injection_lag_seconds": 1.0,
+  "versions": {
+    "vllm": "0.11.2",
+    "torch": "2.9.0",
+    "transformers": "4.57.6"
+  }
+}

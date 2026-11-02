@@ -1,0 +1,280 @@
+{
+  "pilot": {
+    "summary": [
+      {
+        "budget": 2048,
+        "n": 24,
+        "correct": 11,
+        "accuracy": 0.4583333333333333,
+        "mean_seconds": 39.55347118177451,
+        "median_seconds": 38.35345297353342,
+        "mean_output_tokens": 3317.7083333333335,
+        "finishes": {
+          "normal": 21,
+          "answer_cap": 3
+        }
+      },
+      {
+        "budget": 4096,
+        "n": 24,
+        "correct": 11,
+        "accuracy": 0.4583333333333333,
+        "mean_seconds": 62.774376166868024,
+        "median_seconds": 62.33772877138108,
+        "mean_output_tokens": 5257.583333333333,
+        "finishes": {
+          "normal": 20,
+          "answer_cap": 4
+        }
+      },
+      {
+        "budget": 8192,
+        "n": 24,
+        "correct": 14,
+        "accuracy": 0.5833333333333334,
+        "mean_seconds": 94.67896384920459,
+        "median_seconds": 110.06029163859785,
+        "mean_output_tokens": 7951.5,
+        "finishes": {
+          "normal": 23,
+          "answer_cap": 1
+        }
+      },
+      {
+        "budget": 16384,
+        "n": 24,
+        "correct": 15,
+        "accuracy": 0.625,
+        "mean_seconds": 136.07666633400368,
+        "median_seconds": 145.94253452005796,
+        "mean_output_tokens": 11428.958333333334,
+        "finishes": {
+          "thinking_cap": 9,
+          "normal": 15
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "budget": 4096,
+        "delta": 0.0,
+        "bootstrap95": [
+          -0.125,
+          0.125
+        ],
+        "wins": 1,
+        "losses": 1
+      },
+      {
+        "budget": 8192,
+        "delta": 0.125,
+        "bootstrap95": [
+          -0.08333333333333333,
+          0.375
+        ],
+        "wins": 4,
+        "losses": 1
+      },
+      {
+        "budget": 16384,
+        "delta": 0.16666666666666666,
+        "bootstrap95": [
+          -0.041666666666666664,
+          0.4166666666666667
+        ],
+        "wins": 5,
+        "losses": 1
+      }
+    ]
+  },
+  "remainder": {
+    "summary": [
+      {
+        "budget": 2048,
+        "n": 36,
+        "correct": 7,
+        "accuracy": 0.19444444444444445,
+        "mean_seconds": 41.39955349597666,
+        "median_seconds": 42.670853706018534,
+        "mean_output_tokens": 3681.972222222222,
+        "finishes": {
+          "answer_cap": 15,
+          "normal": 21
+        }
+      },
+      {
+        "budget": 4096,
+        "n": 36,
+        "correct": 11,
+        "accuracy": 0.3055555555555556,
+        "mean_seconds": 62.902426262534895,
+        "median_seconds": 61.920022597536445,
+        "mean_output_tokens": 5594.527777777777,
+        "finishes": {
+          "answer_cap": 9,
+          "normal": 27
+        }
+      },
+      {
+        "budget": 8192,
+        "n": 36,
+        "correct": 13,
+        "accuracy": 0.3611111111111111,
+        "mean_seconds": 104.26259339827811,
+        "median_seconds": 106.15604036656441,
+        "mean_output_tokens": 9279.527777777777,
+        "finishes": {
+          "normal": 32,
+          "answer_cap": 4
+        }
+      },
+      {
+        "budget": 16384,
+        "n": 36,
+        "correct": 16,
+        "accuracy": 0.4444444444444444,
+        "mean_seconds": 152.8055031239702,
+        "median_seconds": 180.07876573700923,
+        "mean_output_tokens": 13615.194444444445,
+        "finishes": {
+          "thinking_cap": 16,
+          "normal": 20
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "budget": 4096,
+        "delta": 0.1111111111111111,
+        "bootstrap95": [
+          0,
+          0.25
+        ],
+        "wins": 4,
+        "losses": 0
+      },
+      {
+        "budget": 8192,
+        "delta": 0.16666666666666666,
+        "bootstrap95": [
+          0.05555555555555555,
+          0.3055555555555556
+        ],
+        "wins": 6,
+        "losses": 0
+      },
+      {
+        "budget": 16384,
+        "delta": 0.25,
+        "bootstrap95": [
+          0.08333333333333333,
+          0.4444444444444444
+        ],
+        "wins": 9,
+        "losses": 0
+      }
+    ]
+  },
+  "pooled": {
+    "summary": [
+      {
+        "budget": 2048,
+        "n": 60,
+        "correct": 18,
+        "accuracy": 0.3,
+        "mean_seconds": 40.6611205702958,
+        "median_seconds": 40.01556883152807,
+        "mean_output_tokens": 3536.266666666667,
+        "finishes": {
+          "normal": 42,
+          "answer_cap": 18
+        }
+      },
+      {
+        "budget": 4096,
+        "n": 60,
+        "correct": 22,
+        "accuracy": 0.36666666666666664,
+        "mean_seconds": 62.85120622426815,
+        "median_seconds": 62.284831562428735,
+        "mean_output_tokens": 5459.75,
+        "finishes": {
+          "normal": 47,
+          "answer_cap": 13
+        }
+      },
+      {
+        "budget": 8192,
+        "n": 60,
+        "correct": 27,
+        "accuracy": 0.45,
+        "mean_seconds": 100.42914157864871,
+        "median_seconds": 107.04814226651797,
+        "mean_output_tokens": 8748.316666666668,
+        "finishes": {
+          "normal": 55,
+          "answer_cap": 5
+        }
+      },
+      {
+        "budget": 16384,
+        "n": 60,
+        "correct": 31,
+        "accuracy": 0.5166666666666667,
+        "mean_seconds": 146.11396840798358,
+        "median_seconds": 170.66079210059252,
+        "mean_output_tokens": 12740.7,
+        "finishes": {
+          "thinking_cap": 25,
+          "normal": 35
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "budget": 4096,
+        "delta": 0.06666666666666667,
+        "bootstrap95": [
+          -0.016666666666666666,
+          0.16666666666666666
+        ],
+        "wins": 5,
+        "losses": 1
+      },
+      {
+        "budget": 8192,
+        "delta": 0.15,
+        "bootstrap95": [
+          0.03333333333333333,
+          0.2833333333333333
+        ],
+        "wins": 10,
+        "losses": 1
+      },
+      {
+        "budget": 16384,
+        "delta": 0.21666666666666667,
+        "bootstrap95": [
+          0.06666666666666667,
+          0.36666666666666664
+        ],
+        "wins": 14,
+        "losses": 1
+      }
+    ]
+  },
+  "prefix_audit": {
+    "4096": {
+      "matches": 60,
+      "total": 60
+    },
+    "8192": {
+      "matches": 60,
+      "total": 60
+    },
+    "16384": {
+      "matches": 60,
+      "total": 60
+    }
+  }
+}
