@@ -1,0 +1,6 @@
+category,points,waiters,head_slack_s,max_running_tokens,cuttable_running,share_running_past_2048
+agree,249,4,56.9,3593,1,0.896
+doomed,1303,4,-0.2,2706,1,0.698
+fine,1048,1.0,88.0,1997.0,2.0,0.478
+one_of_two,256,4.0,64.2,2616.5,2.0,0.723
+other,0,,,,,

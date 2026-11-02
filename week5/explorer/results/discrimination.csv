@@ -1,0 +1,9 @@
+condition,policy,points,cuttable,agree,doomed,fine,one_of_two,other,disagree_share,episodes_cuttable,episodes_never,episodes_later,episodes_same_time
+late_burst,admission,1413,568,81,226,205,56,0,0.857,6,0,6,0
+late_burst,fixed2048,389,0,0,0,0,0,0,,0,0,0,0
+late_burst,fixed4096,544,522,8,404,56,54,0,0.985,2,0,2,0
+late_burst,live,1291,94,0,82,12,0,0,1.0,6,6,0,0
+sustained_pressure,admission,1391,701,128,219,283,71,0,0.817,9,3,6,0
+sustained_pressure,fixed2048,335,0,0,0,0,0,0,,0,0,0,0
+sustained_pressure,fixed4096,536,533,32,334,92,75,0,0.94,2,0,2,0
+sustained_pressure,live,1196,438,0,38,400,0,0,1.0,13,13,0,0
