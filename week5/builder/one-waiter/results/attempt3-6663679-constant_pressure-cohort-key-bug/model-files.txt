@@ -1,0 +1,12 @@
+total 7872004
+-rw-r--r--. 1 <user> <group>        726 Oct 29 10:50 config.json
+-rw-r--r--. 1 <user> <group>        239 Oct 29 10:50 generation_config.json
+-rw-r--r--. 1 <user> <group>    1671853 Oct 29 10:50 merges.txt
+-rw-r--r--. 1 <user> <group> 3957900840 Oct 29 10:51 model-00001-of-00003.safetensors
+-rw-r--r--. 1 <user> <group> 3987450520 Oct 29 10:51 model-00002-of-00003.safetensors
+-rw-r--r--. 1 <user> <group>   99630640 Oct 29 10:51 model-00003-of-00003.safetensors
+-rw-r--r--. 1 <user> <group>      32819 Oct 29 10:50 model.safetensors.index.json
+-rw-r--r--. 1 <user> <group>       9732 Oct 29 10:50 tokenizer_config.json
+-rw-r--r--. 1 <user> <group>   11422654 Oct 29 10:50 tokenizer.json
+-rw-r--r--. 1 <user> <group>    2776833 Oct 29 10:50 vocab.json
+6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2  <ENV>/model/Qwen3-4B/model.safetensors.index.json

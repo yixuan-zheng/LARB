@@ -8,7 +8,7 @@ This folder packages the essential evidence and portable preparation from the fo
 
 | Existing work | What it contributed | What this follow-up adds |
 |---|---|---|
-| [Builder report](../REPORT.md) and [one-waiter design](../one-waiter/PLAN.md) | A real in-flight budget controller and evidence that triggering at the first waiter can reduce congestion latency | A harder quality workload, explicit 4K/8K controls, and a staged experiment focused on correct answers delivered before deadlines |
+| [Builder report](../builder/REPORT.md) and [one-waiter design](../builder/one-waiter/PLAN.md) | A real in-flight budget controller and evidence that triggering at the first waiter can reduce congestion latency | A harder quality workload, explicit 4K/8K controls, and a staged experiment focused on correct answers delivered before deadlines |
 | [Explorer targeting](../explorer/targeting.py) | Shadow decisions about which active request to cut to help waiting deadlines | A correction to FIFO lane reuse, documented and tested separately in [fifo/](fifo); the new queue-count policy does not depend on this estimator |
 | [Earlier controller](../../week3/larb/serving-proof/control.py) | Request-local cue, token-cap, and row-movement mechanics | A separately versioned policy with 8K under slack and reductions toward 4K under observed queue pressure |
 
