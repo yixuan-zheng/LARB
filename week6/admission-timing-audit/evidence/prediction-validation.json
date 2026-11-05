@@ -1,0 +1,782 @@
+[
+  {
+    "run": "pilot",
+    "key": "near-fixed8k--r02",
+    "phase": "near-fixed8k",
+    "states": 20,
+    "median_abs_error": 4.739600668661296,
+    "median_signed_error": -4.739600668661296,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "near-fixed8k--r03",
+    "phase": "near-fixed8k",
+    "states": 31,
+    "median_abs_error": 12.51366314664483,
+    "median_signed_error": -12.51366314664483,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "near-fixed8k--r04",
+    "phase": "near-fixed8k",
+    "states": 34,
+    "median_abs_error": 17.95937996241264,
+    "median_signed_error": -17.95937996241264,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "near-fixed8k--r05",
+    "phase": "near-fixed8k",
+    "states": 48,
+    "median_abs_error": 7.843895334517583,
+    "median_signed_error": 7.843895334517583,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "near-fixed8k--r06",
+    "phase": "near-fixed8k",
+    "states": 62,
+    "median_abs_error": 18.956232156371698,
+    "median_signed_error": -18.9287039891351,
+    "deadline_classification_error_rate": 0.016129032258064516,
+    "sensitivity_interval_coverage": 0.9838709677419355
+  },
+  {
+    "run": "pilot",
+    "key": "near-fixed8k--r07",
+    "phase": "near-fixed8k",
+    "states": 49,
+    "median_abs_error": 97.54293665941805,
+    "median_signed_error": 97.54293665941805,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed4k--r02",
+    "phase": "burst-fixed4k",
+    "states": 18,
+    "median_abs_error": 0.7827284750528634,
+    "median_signed_error": 0.5694742240011692,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed4k--r03",
+    "phase": "burst-fixed4k",
+    "states": 19,
+    "median_abs_error": 0.6510522500611842,
+    "median_signed_error": 0.6252228524535894,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed4k--r04",
+    "phase": "burst-fixed4k",
+    "states": 93,
+    "median_abs_error": 11.28641658835113,
+    "median_signed_error": -11.28641658835113,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed4k--r05",
+    "phase": "burst-fixed4k",
+    "states": 94,
+    "median_abs_error": 2.3890705693047494,
+    "median_signed_error": 2.105444186134264,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed4k--r06",
+    "phase": "burst-fixed4k",
+    "states": 172,
+    "median_abs_error": 2.3155428054742515,
+    "median_signed_error": -1.9323122976347804,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed4k--r07",
+    "phase": "burst-fixed4k",
+    "states": 186,
+    "median_abs_error": 19.941754398634657,
+    "median_signed_error": 19.941754398634657,
+    "deadline_classification_error_rate": 1,
+    "sensitivity_interval_coverage": 0.8870967741935484
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed8k--r02",
+    "phase": "burst-fixed8k",
+    "states": 69,
+    "median_abs_error": 6.614004916977137,
+    "median_signed_error": -6.614004916977137,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed8k--r03",
+    "phase": "burst-fixed8k",
+    "states": 73,
+    "median_abs_error": 10.878165353089571,
+    "median_signed_error": -10.878165353089571,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed8k--r04",
+    "phase": "burst-fixed8k",
+    "states": 206,
+    "median_abs_error": 12.263589172856882,
+    "median_signed_error": -12.263589172856882,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed8k--r05",
+    "phase": "burst-fixed8k",
+    "states": 211,
+    "median_abs_error": 2.36729734018445,
+    "median_signed_error": -1.3921103938482702,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed8k--r06",
+    "phase": "burst-fixed8k",
+    "states": 350,
+    "median_abs_error": 11.0500507238321,
+    "median_signed_error": -11.0500507238321,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "pilot",
+    "key": "burst-fixed8k--r07",
+    "phase": "burst-fixed8k",
+    "states": 357,
+    "median_abs_error": 57.86637313384563,
+    "median_signed_error": 57.86637313384563,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0.7086834733893558
+  },
+  {
+    "run": "b0",
+    "key": "near-fixed8k--r02",
+    "phase": "near-fixed8k",
+    "states": 42,
+    "median_abs_error": 30.283424545938033,
+    "median_signed_error": -30.283424545938033,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-fixed8k--r03",
+    "phase": "near-fixed8k",
+    "states": 47,
+    "median_abs_error": 9.299185529729584,
+    "median_signed_error": -9.299185529729584,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-fixed8k--r04",
+    "phase": "near-fixed8k",
+    "states": 77,
+    "median_abs_error": 18.81207129867107,
+    "median_signed_error": -18.81207129867107,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-fixed8k--r05",
+    "phase": "near-fixed8k",
+    "states": 62,
+    "median_abs_error": 6.1665386464082985,
+    "median_signed_error": 6.1665386464082985,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-fixed8k--r06",
+    "phase": "near-fixed8k",
+    "states": 105,
+    "median_abs_error": 7.509883407576126,
+    "median_signed_error": -7.366311115125427,
+    "deadline_classification_error_rate": 0.7047619047619048,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-fixed8k--r07",
+    "phase": "near-fixed8k",
+    "states": 76,
+    "median_abs_error": 67.88592867962143,
+    "median_signed_error": 67.88592867962143,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0
+  },
+  {
+    "run": "b0",
+    "key": "near-arrival--r02",
+    "phase": "near-arrival",
+    "states": 23,
+    "median_abs_error": 3.5603071078367066,
+    "median_signed_error": 2.716513647697866,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-arrival--r03",
+    "phase": "near-arrival",
+    "states": 28,
+    "median_abs_error": 10.457194580478244,
+    "median_signed_error": -10.457194580478244,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-arrival--r04",
+    "phase": "near-arrival",
+    "states": 31,
+    "median_abs_error": 9.58911402587546,
+    "median_signed_error": 9.58911402587546,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-arrival--r05",
+    "phase": "near-arrival",
+    "states": 47,
+    "median_abs_error": 1.072238080232637,
+    "median_signed_error": 1.072238080232637,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-arrival--r06",
+    "phase": "near-arrival",
+    "states": 44,
+    "median_abs_error": 7.410114538390189,
+    "median_signed_error": -7.410114538390189,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "near-arrival--r07",
+    "phase": "near-arrival",
+    "states": 57,
+    "median_abs_error": 75.76990226711496,
+    "median_signed_error": 75.76990226711496,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0
+  },
+  {
+    "run": "b0",
+    "key": "burst-arrival--r02",
+    "phase": "burst-arrival",
+    "states": 63,
+    "median_abs_error": 5.833639745862456,
+    "median_signed_error": -5.833639745862456,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-arrival--r03",
+    "phase": "burst-arrival",
+    "states": 67,
+    "median_abs_error": 10.174852530559292,
+    "median_signed_error": -10.174852530559292,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-arrival--r04",
+    "phase": "burst-arrival",
+    "states": 198,
+    "median_abs_error": 9.156344584014732,
+    "median_signed_error": -8.108996884344378,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-arrival--r05",
+    "phase": "burst-arrival",
+    "states": 203,
+    "median_abs_error": 6.803028898953926,
+    "median_signed_error": 4.307637458696263,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-arrival--r06",
+    "phase": "burst-arrival",
+    "states": 279,
+    "median_abs_error": 4.113861416466534,
+    "median_signed_error": 2.5987867343064863,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-arrival--r07",
+    "phase": "burst-arrival",
+    "states": 288,
+    "median_abs_error": 13.14314967856626,
+    "median_signed_error": 13.14314967856626,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed4k--r02",
+    "phase": "burst-fixed4k",
+    "states": 14,
+    "median_abs_error": 7.590007879567565,
+    "median_signed_error": 7.590007879567565,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed4k--r03",
+    "phase": "burst-fixed4k",
+    "states": 15,
+    "median_abs_error": 7.494766647025244,
+    "median_signed_error": 7.494766647025244,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed4k--r04",
+    "phase": "burst-fixed4k",
+    "states": 89,
+    "median_abs_error": 2.7330171300855,
+    "median_signed_error": -2.648821956565371,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed4k--r05",
+    "phase": "burst-fixed4k",
+    "states": 90,
+    "median_abs_error": 9.908690887270495,
+    "median_signed_error": 9.908690887270495,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed4k--r06",
+    "phase": "burst-fixed4k",
+    "states": 171,
+    "median_abs_error": 11.968677124881651,
+    "median_signed_error": 11.968677124881651,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed4k--r07",
+    "phase": "burst-fixed4k",
+    "states": 184,
+    "median_abs_error": 34.52608127093117,
+    "median_signed_error": 34.52608127093117,
+    "deadline_classification_error_rate": 1,
+    "sensitivity_interval_coverage": 0.75
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed8k--r02",
+    "phase": "burst-fixed8k",
+    "states": 70,
+    "median_abs_error": 4.719188448914792,
+    "median_signed_error": -4.683035830123117,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed8k--r03",
+    "phase": "burst-fixed8k",
+    "states": 74,
+    "median_abs_error": 8.801550424686866,
+    "median_signed_error": -8.801550424686866,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed8k--r04",
+    "phase": "burst-fixed8k",
+    "states": 210,
+    "median_abs_error": 10.146947595581878,
+    "median_signed_error": -10.146947595581878,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed8k--r05",
+    "phase": "burst-fixed8k",
+    "states": 215,
+    "median_abs_error": 2.9179055166605394,
+    "median_signed_error": 0.9173441796156112,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed8k--r06",
+    "phase": "burst-fixed8k",
+    "states": 357,
+    "median_abs_error": 9.682315908750752,
+    "median_signed_error": -9.682315908750752,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b0",
+    "key": "burst-fixed8k--r07",
+    "phase": "burst-fixed8k",
+    "states": 364,
+    "median_abs_error": 60.70892912792624,
+    "median_signed_error": 60.70892912792624,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0.7005494505494505
+  },
+  {
+    "run": "b1",
+    "key": "near-arrival--r02",
+    "phase": "near-arrival",
+    "states": 27,
+    "median_abs_error": 6.363234354357701,
+    "median_signed_error": -6.363234354357701,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-arrival--r03",
+    "phase": "near-arrival",
+    "states": 34,
+    "median_abs_error": 10.31033261513221,
+    "median_signed_error": -10.31033261513221,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-arrival--r04",
+    "phase": "near-arrival",
+    "states": 45,
+    "median_abs_error": 14.49714215498534,
+    "median_signed_error": -12.437095811677864,
+    "deadline_classification_error_rate": 0.022222222222222223,
+    "sensitivity_interval_coverage": 0.9777777777777777
+  },
+  {
+    "run": "b1",
+    "key": "near-arrival--r05",
+    "phase": "near-arrival",
+    "states": 52,
+    "median_abs_error": 2.4252017784747295,
+    "median_signed_error": -2.4252017784747295,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-arrival--r06",
+    "phase": "near-arrival",
+    "states": 77,
+    "median_abs_error": 28.776321990328142,
+    "median_signed_error": -28.776321990328142,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-arrival--r07",
+    "phase": "near-arrival",
+    "states": 76,
+    "median_abs_error": 1.550466517728637,
+    "median_signed_error": -0.9159037057834212,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-fixed8k--r02",
+    "phase": "near-fixed8k",
+    "states": 20,
+    "median_abs_error": 3.76646189080202,
+    "median_signed_error": -3.7350755735242274,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-fixed8k--r03",
+    "phase": "near-fixed8k",
+    "states": 28,
+    "median_abs_error": 7.01478505707928,
+    "median_signed_error": -7.01478505707928,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-fixed8k--r04",
+    "phase": "near-fixed8k",
+    "states": 31,
+    "median_abs_error": 8.400511900515994,
+    "median_signed_error": -8.400511900515994,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-fixed8k--r05",
+    "phase": "near-fixed8k",
+    "states": 45,
+    "median_abs_error": 2.85106849350268,
+    "median_signed_error": -2.54182088986272,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-fixed8k--r06",
+    "phase": "near-fixed8k",
+    "states": 58,
+    "median_abs_error": 15.392799263063353,
+    "median_signed_error": -15.392799263063353,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "near-fixed8k--r07",
+    "phase": "near-fixed8k",
+    "states": 59,
+    "median_abs_error": 83.05394998023985,
+    "median_signed_error": 83.05394998023985,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed8k--r02",
+    "phase": "burst-fixed8k",
+    "states": 64,
+    "median_abs_error": 8.84552898030961,
+    "median_signed_error": -8.84552898030961,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed8k--r03",
+    "phase": "burst-fixed8k",
+    "states": 73,
+    "median_abs_error": 20.36436250191764,
+    "median_signed_error": -20.36436250191764,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed8k--r04",
+    "phase": "burst-fixed8k",
+    "states": 209,
+    "median_abs_error": 21.582688034483,
+    "median_signed_error": -21.582688034483,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed8k--r05",
+    "phase": "burst-fixed8k",
+    "states": 221,
+    "median_abs_error": 9.578376970777754,
+    "median_signed_error": -9.578376970777754,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed8k--r06",
+    "phase": "burst-fixed8k",
+    "states": 361,
+    "median_abs_error": 25.0866288964462,
+    "median_signed_error": -25.0866288964462,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed8k--r07",
+    "phase": "burst-fixed8k",
+    "states": 364,
+    "median_abs_error": 63.960871305069304,
+    "median_signed_error": 63.960871305069304,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0.6401098901098901
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed4k--r02",
+    "phase": "burst-fixed4k",
+    "states": 5,
+    "median_abs_error": 7.672113499138504,
+    "median_signed_error": 7.672113499138504,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed4k--r03",
+    "phase": "burst-fixed4k",
+    "states": 14,
+    "median_abs_error": 15.176138302136678,
+    "median_signed_error": -15.176138302136678,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed4k--r04",
+    "phase": "burst-fixed4k",
+    "states": 82,
+    "median_abs_error": 19.367245458823163,
+    "median_signed_error": -19.367245458823163,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed4k--r05",
+    "phase": "burst-fixed4k",
+    "states": 105,
+    "median_abs_error": 25.76416157244239,
+    "median_signed_error": -25.76416157244239,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0.7904761904761904
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed4k--r06",
+    "phase": "burst-fixed4k",
+    "states": 174,
+    "median_abs_error": 33.79920720514201,
+    "median_signed_error": -33.79920720514201,
+    "deadline_classification_error_rate": 0.4367816091954023,
+    "sensitivity_interval_coverage": 0.6724137931034483
+  },
+  {
+    "run": "b1",
+    "key": "burst-fixed4k--r07",
+    "phase": "burst-fixed4k",
+    "states": 191,
+    "median_abs_error": 10.994166171352845,
+    "median_signed_error": 1.4785748707945459,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0.9790575916230366
+  },
+  {
+    "run": "b1",
+    "key": "burst-arrival--r02",
+    "phase": "burst-arrival",
+    "states": 64,
+    "median_abs_error": 9.378898989816662,
+    "median_signed_error": -9.378898989816662,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-arrival--r03",
+    "phase": "burst-arrival",
+    "states": 74,
+    "median_abs_error": 20.613976917637046,
+    "median_signed_error": -20.613976917637046,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-arrival--r04",
+    "phase": "burst-arrival",
+    "states": 207,
+    "median_abs_error": 19.376964604860405,
+    "median_signed_error": -19.376964604860405,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-arrival--r05",
+    "phase": "burst-arrival",
+    "states": 219,
+    "median_abs_error": 11.42741744464729,
+    "median_signed_error": -11.42741744464729,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  },
+  {
+    "run": "b1",
+    "key": "burst-arrival--r06",
+    "phase": "burst-arrival",
+    "states": 300,
+    "median_abs_error": 32.2375043642096,
+    "median_signed_error": -32.2375043642096,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 0.8466666666666667
+  },
+  {
+    "run": "b1",
+    "key": "burst-arrival--r07",
+    "phase": "burst-arrival",
+    "states": 302,
+    "median_abs_error": 5.388115712194121,
+    "median_signed_error": -5.167702794569777,
+    "deadline_classification_error_rate": 0,
+    "sensitivity_interval_coverage": 1
+  }
+]

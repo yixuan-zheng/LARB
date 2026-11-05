@@ -1,0 +1,1264 @@
+[
+  {
+    "run": "pilot",
+    "phase": "near-fixed8k",
+    "step": 135706,
+    "finished": "near-fixed8k--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0021745478734374046
+  },
+  {
+    "run": "pilot",
+    "phase": "near-fixed8k",
+    "step": 140510,
+    "finished": "near-fixed8k--r01",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016126451082527637
+  },
+  {
+    "run": "pilot",
+    "phase": "near-fixed8k",
+    "step": 144942,
+    "finished": "near-fixed8k--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009550531394779682
+  },
+  {
+    "run": "pilot",
+    "phase": "near-fixed8k",
+    "step": 150050,
+    "finished": "near-fixed8k--r03",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001015429850667715
+  },
+  {
+    "run": "pilot",
+    "phase": "near-fixed8k",
+    "step": 155011,
+    "finished": "near-fixed8k--r04",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0008894698694348335
+  },
+  {
+    "run": "pilot",
+    "phase": "near-fixed8k",
+    "step": 158251,
+    "finished": "near-fixed8k--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001025928184390068
+  },
+  {
+    "run": "pilot",
+    "phase": "near-live",
+    "step": 175520,
+    "finished": "near-live--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.000998467206954956
+  },
+  {
+    "run": "pilot",
+    "phase": "near-live",
+    "step": 183982,
+    "finished": "near-live--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.00790601409971714
+  },
+  {
+    "run": "pilot",
+    "phase": "near-live",
+    "step": 192834,
+    "finished": "near-live--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010486668907105923
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "step": 246219,
+    "finished": "burst-live--r00",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-live--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009771226905286312
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "step": 246303,
+    "finished": "burst-live--r01",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-live--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.002190832979977131
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "step": 251798,
+    "finished": "burst-live--r03",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-live--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009442209266126156
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "step": 252377,
+    "finished": "burst-live--r02",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-live--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0036684712395071983
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "step": 257602,
+    "finished": "burst-live--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-live--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0013909260742366314
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "step": 257730,
+    "finished": "burst-live--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-live--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009685559198260307
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed4k",
+    "step": 306253,
+    "finished": "burst-fixed4k--r01",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009942548349499702
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed4k",
+    "step": 306254,
+    "finished": "burst-fixed4k--r00",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0024207360111176968
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed4k",
+    "step": 311286,
+    "finished": "burst-fixed4k--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016878019087016582
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed4k",
+    "step": 311296,
+    "finished": "burst-fixed4k--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001209452748298645
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed4k",
+    "step": 316610,
+    "finished": "burst-fixed4k--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0015724548138678074
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed4k",
+    "step": 317444,
+    "finished": "burst-fixed4k--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009729228913784027
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed8k",
+    "step": 352416,
+    "finished": "burst-fixed8k--r01",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001987976022064686
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed8k",
+    "step": 352718,
+    "finished": "burst-fixed8k--r00",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009548459202051163
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed8k",
+    "step": 361711,
+    "finished": "burst-fixed8k--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001001390628516674
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed8k",
+    "step": 362008,
+    "finished": "burst-fixed8k--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009909537620842457
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed8k",
+    "step": 371376,
+    "finished": "burst-fixed8k--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010060607455670834
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-fixed8k",
+    "step": 371839,
+    "finished": "burst-fixed8k--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0015470539219677448
+  },
+  {
+    "run": "b0",
+    "phase": "near-fixed8k",
+    "step": 65974,
+    "finished": "near-fixed8k--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009499989973846823
+  },
+  {
+    "run": "b0",
+    "phase": "near-fixed8k",
+    "step": 70069,
+    "finished": "near-fixed8k--r01",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.000960142002440989
+  },
+  {
+    "run": "b0",
+    "phase": "near-fixed8k",
+    "step": 76090,
+    "finished": "near-fixed8k--r02",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009581229969626293
+  },
+  {
+    "run": "b0",
+    "phase": "near-fixed8k",
+    "step": 79251,
+    "finished": "near-fixed8k--r03",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.03212641899881419
+  },
+  {
+    "run": "b0",
+    "phase": "near-fixed8k",
+    "step": 86344,
+    "finished": "near-fixed8k--r04",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009603039943613112
+  },
+  {
+    "run": "b0",
+    "phase": "near-fixed8k",
+    "step": 88655,
+    "finished": "near-fixed8k--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009280969970859587
+  },
+  {
+    "run": "b0",
+    "phase": "near-arrival",
+    "step": 106030,
+    "finished": "near-arrival--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0020642169984057546
+  },
+  {
+    "run": "b0",
+    "phase": "near-arrival",
+    "step": 110627,
+    "finished": "near-arrival--r01",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014708340022480115
+  },
+  {
+    "run": "b0",
+    "phase": "near-arrival",
+    "step": 115040,
+    "finished": "near-arrival--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009065770136658102
+  },
+  {
+    "run": "b0",
+    "phase": "near-arrival",
+    "step": 120414,
+    "finished": "near-arrival--r03",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.00028365699108690023
+  },
+  {
+    "run": "b0",
+    "phase": "near-arrival",
+    "step": 124425,
+    "finished": "near-arrival--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0017541139968670905
+  },
+  {
+    "run": "b0",
+    "phase": "near-arrival",
+    "step": 129642,
+    "finished": "near-arrival--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0012530889944173396
+  },
+  {
+    "run": "b0",
+    "phase": "near-live",
+    "step": 144408,
+    "finished": "near-live--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.000943477003602311
+  },
+  {
+    "run": "b0",
+    "phase": "near-live",
+    "step": 153456,
+    "finished": "near-live--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016960770008154213
+  },
+  {
+    "run": "b0",
+    "phase": "near-live",
+    "step": 162591,
+    "finished": "near-live--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010531200096011162
+  },
+  {
+    "run": "b0",
+    "phase": "burst-arrival",
+    "step": 181641,
+    "finished": "burst-arrival--r01",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0015284380060620606
+  },
+  {
+    "run": "b0",
+    "phase": "burst-arrival",
+    "step": 181943,
+    "finished": "burst-arrival--r00",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009100220049731433
+  },
+  {
+    "run": "b0",
+    "phase": "burst-arrival",
+    "step": 190936,
+    "finished": "burst-arrival--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010026879899669439
+  },
+  {
+    "run": "b0",
+    "phase": "burst-arrival",
+    "step": 191233,
+    "finished": "burst-arrival--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009511080279480666
+  },
+  {
+    "run": "b0",
+    "phase": "burst-arrival",
+    "step": 196458,
+    "finished": "burst-arrival--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010928290139418095
+  },
+  {
+    "run": "b0",
+    "phase": "burst-arrival",
+    "step": 197094,
+    "finished": "burst-arrival--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.002053611009614542
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "step": 246325,
+    "finished": "burst-live--r00",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-live--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014427819987758994
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "step": 246526,
+    "finished": "burst-live--r01",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-live--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010221249831374735
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "step": 252016,
+    "finished": "burst-live--r03",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-live--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009980109753087163
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "step": 252204,
+    "finished": "burst-live--r02",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-live--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009480939770583063
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "step": 257614,
+    "finished": "burst-live--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-live--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.000898937025340274
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "step": 258174,
+    "finished": "burst-live--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-live--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.016983914014417678
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed4k",
+    "step": 306900,
+    "finished": "burst-fixed4k--r01",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014100330008659512
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed4k",
+    "step": 306901,
+    "finished": "burst-fixed4k--r00",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0008901460096240044
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed4k",
+    "step": 311933,
+    "finished": "burst-fixed4k--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0015181430208031088
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed4k",
+    "step": 311943,
+    "finished": "burst-fixed4k--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0011256700090598315
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed4k",
+    "step": 317257,
+    "finished": "burst-fixed4k--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001767417008522898
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed4k",
+    "step": 318091,
+    "finished": "burst-fixed4k--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010252360079903156
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed8k",
+    "step": 353063,
+    "finished": "burst-fixed8k--r01",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.002396880998276174
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed8k",
+    "step": 353365,
+    "finished": "burst-fixed8k--r00",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016474020085297525
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed8k",
+    "step": 362358,
+    "finished": "burst-fixed8k--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.1645901580050122
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed8k",
+    "step": 362655,
+    "finished": "burst-fixed8k--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009692590101622045
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed8k",
+    "step": 372023,
+    "finished": "burst-fixed8k--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009088289807550609
+  },
+  {
+    "run": "b0",
+    "phase": "burst-fixed8k",
+    "step": 372486,
+    "finished": "burst-fixed8k--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0013242519926279783
+  },
+  {
+    "run": "b1",
+    "phase": "near-live",
+    "step": 34915,
+    "finished": "near-live--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014142149884719402
+  },
+  {
+    "run": "b1",
+    "phase": "near-live",
+    "step": 42399,
+    "finished": "near-live--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001620904979063198
+  },
+  {
+    "run": "b1",
+    "phase": "near-live",
+    "step": 51365,
+    "finished": "near-live--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-live--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014522949932143092
+  },
+  {
+    "run": "b1",
+    "phase": "near-arrival",
+    "step": 71806,
+    "finished": "near-arrival--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0013881420018151402
+  },
+  {
+    "run": "b1",
+    "phase": "near-arrival",
+    "step": 76352,
+    "finished": "near-arrival--r01",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016473559953738004
+  },
+  {
+    "run": "b1",
+    "phase": "near-arrival",
+    "step": 80897,
+    "finished": "near-arrival--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.026250648981658742
+  },
+  {
+    "run": "b1",
+    "phase": "near-arrival",
+    "step": 85216,
+    "finished": "near-arrival--r03",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009934080007951707
+  },
+  {
+    "run": "b1",
+    "phase": "near-arrival",
+    "step": 90933,
+    "finished": "near-arrival--r04",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0013415089924819767
+  },
+  {
+    "run": "b1",
+    "phase": "near-arrival",
+    "step": 95002,
+    "finished": "near-arrival--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-arrival--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009746089926920831
+  },
+  {
+    "run": "b1",
+    "phase": "near-fixed8k",
+    "step": 111238,
+    "finished": "near-fixed8k--r00",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0025556930049788207
+  },
+  {
+    "run": "b1",
+    "phase": "near-fixed8k",
+    "step": 115887,
+    "finished": "near-fixed8k--r01",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.002167025988455862
+  },
+  {
+    "run": "b1",
+    "phase": "near-fixed8k",
+    "step": 120257,
+    "finished": "near-fixed8k--r02",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0011082369892392308
+  },
+  {
+    "run": "b1",
+    "phase": "near-fixed8k",
+    "step": 125372,
+    "finished": "near-fixed8k--r03",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.039064619020791724
+  },
+  {
+    "run": "b1",
+    "phase": "near-fixed8k",
+    "step": 130511,
+    "finished": "near-fixed8k--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009905649931170046
+  },
+  {
+    "run": "b1",
+    "phase": "near-fixed8k",
+    "step": 134876,
+    "finished": "near-fixed8k--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "near-fixed8k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010469399858266115
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed8k",
+    "step": 184440,
+    "finished": "burst-fixed8k--r00",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0017965020088013262
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed8k",
+    "step": 185117,
+    "finished": "burst-fixed8k--r01",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009463870082981884
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed8k",
+    "step": 193968,
+    "finished": "burst-fixed8k--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010645469883456826
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed8k",
+    "step": 194748,
+    "finished": "burst-fixed8k--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009545809880364686
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed8k",
+    "step": 204086,
+    "finished": "burst-fixed8k--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.00010393100092187524
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed8k",
+    "step": 204222,
+    "finished": "burst-fixed8k--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-fixed8k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014457840006798506
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed4k",
+    "step": 258406,
+    "finished": "burst-fixed4k--r00",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.002738728013355285
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed4k",
+    "step": 259082,
+    "finished": "burst-fixed4k--r01",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014327559911180288
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed4k",
+    "step": 263673,
+    "finished": "burst-fixed4k--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0015312440227717161
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed4k",
+    "step": 265240,
+    "finished": "burst-fixed4k--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009241779916919768
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed4k",
+    "step": 269831,
+    "finished": "burst-fixed4k--r04",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.02331253999727778
+  },
+  {
+    "run": "b1",
+    "phase": "burst-fixed4k",
+    "step": 270903,
+    "finished": "burst-fixed4k--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-fixed4k--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.00230229101725854
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "step": 304663,
+    "finished": "burst-live--r00",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-live--r02",
+      "burst-live--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": 0.001969033997738734
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "step": 304663,
+    "finished": "burst-live--r01",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-live--r02",
+      "burst-live--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009530890092719346
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "step": 309684,
+    "finished": "burst-live--r03",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-live--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0014555400121025741
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "step": 310182,
+    "finished": "burst-live--r02",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-live--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001235968986293301
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "step": 315581,
+    "finished": "burst-live--r05",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-live--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0015304170083254576
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "step": 315842,
+    "finished": "burst-live--r04",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-live--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016929269768297672
+  },
+  {
+    "run": "b1",
+    "phase": "burst-arrival",
+    "step": 369900,
+    "finished": "burst-arrival--r00",
+    "persistent_waiters": 6,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r02"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0008494330104440451
+  },
+  {
+    "run": "b1",
+    "phase": "burst-arrival",
+    "step": 370577,
+    "finished": "burst-arrival--r01",
+    "persistent_waiters": 5,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r03"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.001353859988739714
+  },
+  {
+    "run": "b1",
+    "phase": "burst-arrival",
+    "step": 379428,
+    "finished": "burst-arrival--r02",
+    "persistent_waiters": 4,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r04"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0008768310071900487
+  },
+  {
+    "run": "b1",
+    "phase": "burst-arrival",
+    "step": 380208,
+    "finished": "burst-arrival--r03",
+    "persistent_waiters": 3,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r05"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0009585719963070005
+  },
+  {
+    "run": "b1",
+    "phase": "burst-arrival",
+    "step": 385586,
+    "finished": "burst-arrival--r04",
+    "persistent_waiters": 2,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r06"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0010123260144609958
+  },
+  {
+    "run": "b1",
+    "phase": "burst-arrival",
+    "step": 385716,
+    "finished": "burst-arrival--r05",
+    "persistent_waiters": 1,
+    "new_prior_waiters_same_step": [
+      "burst-arrival--r07"
+    ],
+    "scheduled_active": 2,
+    "service_finish_minus_scheduler_event": -0.0016017629823181778
+  }
+]

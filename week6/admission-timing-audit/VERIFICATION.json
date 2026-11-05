@@ -1,0 +1,91 @@
+{
+  "original_full_audit": {
+    "full_cpu_reproduction": "PASS",
+    "json_artifacts_compared": 25,
+    "verification": {
+      "audit": "PASS",
+      "raw_records": 244,
+      "measured_records": 232,
+      "immutable_input_files_verified": 21,
+      "paired_cases": 40,
+      "queued_releases": 105,
+      "counterfactual_accuracy_computed": false,
+      "gpu_submissions": 0
+    },
+    "inputs_unchanged": true,
+    "new_gpu_jobs": 0
+  },
+  "relocated_full_audit": {
+    "result": "PASS",
+    "matching_json_artifacts": 25,
+    "raw_verification": {
+      "audit": "PASS",
+      "raw_records": 244,
+      "measured_records": 232,
+      "immutable_input_files_verified": 21,
+      "paired_cases": 40,
+      "queued_releases": 105,
+      "counterfactual_accuracy_computed": false,
+      "gpu_submissions": 0
+    }
+  },
+  "public_reproduction_scope": "Compact metrics and hashes only; original raw evidence is required for full scheduler/token/grading/predictor audit.",
+  "new_inference_or_jobs": false,
+  "public_compact_reproduction": {
+    "compact_accounting": "PASS",
+    "derived_records": 244,
+    "measured_records": 232,
+    "paired_cases": 40,
+    "queued_release_steps": 104,
+    "goodput_gains": 3,
+    "goodput_losses": 3,
+    "net_correct": -3,
+    "pooled": [
+      {
+        "policy": "fixed4k",
+        "n": 40,
+        "correct": 10,
+        "good": 8,
+        "caps": 15,
+        "output_tokens": 219813,
+        "mean_queue": 28.535527986300803,
+        "mean_service": 83.31002404645005,
+        "mean_latency": 111.88791345321006
+      },
+      {
+        "policy": "fixed8k",
+        "n": 40,
+        "correct": 17,
+        "good": 12,
+        "caps": 10,
+        "output_tokens": 368033,
+        "mean_queue": 81.15288431084772,
+        "mean_service": 136.91441800377726,
+        "mean_latency": 218.08738360942044
+      },
+      {
+        "policy": "arrival",
+        "n": 40,
+        "correct": 16,
+        "good": 11,
+        "caps": 11,
+        "output_tokens": 343840,
+        "mean_queue": 70.49531182762549,
+        "mean_service": 126.44351405299821,
+        "mean_latency": 196.95874226150627
+      },
+      {
+        "policy": "live",
+        "n": 40,
+        "correct": 13,
+        "good": 11,
+        "caps": 11,
+        "output_tokens": 287346,
+        "mean_queue": 36.38681649097343,
+        "mean_service": 104.31614455292728,
+        "mean_latency": 140.7334559943316
+      }
+    ],
+    "limits": "Derived accounting only: full token/extraction/event/predictor audits require the preserved private input collections."
+  }
+}

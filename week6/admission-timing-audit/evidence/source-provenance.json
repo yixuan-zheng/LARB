@@ -1,0 +1,47 @@
+[
+  {
+    "run": "pilot",
+    "input_sha256": {
+      "manifest.json": "e57af1ee602077ef590e5850e8a9d83cac6e2eee92e74ef347cc2aaf844aa38e",
+      "source-lock.json": "e30dbed1bb503d415a22246b59959f8646a572322c7483322da9bd13770a4a78",
+      "trace.json": "e80f0f4dc56735eefd2232117c312c0df5fa3bb2f28937abda2e3189a3ae6a98",
+      "progress.json": "96d78aa27edf5076aab976a2d74d549945acddda1943b105c05db4b7a9b6199d",
+      "worker.jsonl": "45448d9dd89d397621f87af88800fb951fbf812a1c260679560d485de8eb857d",
+      "scheduler.jsonl": "0f7cfe647fbe6767711a1c861971005745676bd285e22e518e2ee02258ff9746",
+      "summary.json": "f45aa381edb20d4ee769195dbc966bce43af65ef45f0d3c815a3d6e5618958f4"
+    },
+    "requests": 76,
+    "measured": 72,
+    "probes": 4
+  },
+  {
+    "run": "b0",
+    "input_sha256": {
+      "manifest.json": "8ba5eba983231f668cc01ed856264ff29e13815e738499648c2f3c3620816186",
+      "source-lock.json": "a7872f0e29e6a55cf13e9bed69ef33bcfad69e1a3e16fb265ffc0bbe5ebea0cc",
+      "trace.json": "f9055320b436d64c8a55f1439b74040d6876bd9511bdaa904f4020f3021330bd",
+      "progress.json": "904f22f6d0f37e71cb497b93ff51e715c037ded2924c62230ae71ab075fcb0fa",
+      "worker.jsonl": "5ad9bd0f7b3c3b33ca8687fdfe5f989d145ef1252101dedd409a582dac4ef2c1",
+      "scheduler.jsonl": "b01640481988835863b1788885524d1e399cc90c0b6d558f6bcbfe961165fe7d",
+      "summary.json": "edb9d7680cb45a4977895f4ad7158647c8368405a1795526a5317699758365df"
+    },
+    "requests": 84,
+    "measured": 80,
+    "probes": 4
+  },
+  {
+    "run": "b1",
+    "input_sha256": {
+      "manifest.json": "8ba5eba983231f668cc01ed856264ff29e13815e738499648c2f3c3620816186",
+      "source-lock.json": "a7872f0e29e6a55cf13e9bed69ef33bcfad69e1a3e16fb265ffc0bbe5ebea0cc",
+      "trace.json": "8fd2f5758ef06ef49bcde732716dade78630ff9da1e5ba99f0f290d7f6b34ab1",
+      "progress.json": "101d5527aecb176ff0af8242c0d8ef20dda8430e142ccf08e420813ccc7f8197",
+      "worker.jsonl": "8aee12f7f269ec98dbeab3c587cbc23eb6f6d7b9d0d06bd3c9894c105fb77029",
+      "scheduler.jsonl": "ce3c7192c171bd19742edfc4fb10ffadf2a88bd80f955b3fbf9d912b170f94e7",
+      "summary.json": "431a2c96b77fa6499e1a1b49cd805d4e74c0c5ec083ada9a8ef757eb634ba488"
+    },
+    "requests": 84,
+    "measured": 80,
+    "probes": 4
+  }
+]

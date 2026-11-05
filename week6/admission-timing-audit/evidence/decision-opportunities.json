@@ -1,0 +1,490 @@
+[
+  {
+    "run": "pilot",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 174054,
+    "eligible": 1,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r01",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 55.17040901770815,
+        "tokens": 4263,
+        "short_finish_seconds_after_decision": 18.962211900390685
+      }
+    ],
+    "waiting": [
+      "near-live--r02"
+    ],
+    "observed_cuts": [
+      "near-live--r01"
+    ]
+  },
+  {
+    "run": "pilot",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 182845,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r02",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 12.463711632415652,
+        "tokens": 7325,
+        "short_finish_seconds_after_decision": 18.988995637279004
+      },
+      {
+        "key": "near-live--r03",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 54.00475948350504,
+        "tokens": 4352,
+        "short_finish_seconds_after_decision": 18.988995637279004
+      }
+    ],
+    "waiting": [
+      "near-live--r04"
+    ],
+    "observed_cuts": [
+      "near-live--r02",
+      "near-live--r03"
+    ]
+  },
+  {
+    "run": "pilot",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 191773,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r04",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 5.9759785621427,
+        "tokens": 7791,
+        "short_finish_seconds_after_decision": 19.06421330012381
+      },
+      {
+        "key": "near-live--r05",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 53.91006012749858,
+        "tokens": 4374,
+        "short_finish_seconds_after_decision": 19.06421330012381
+      }
+    ],
+    "waiting": [
+      "near-live--r06"
+    ],
+    "observed_cuts": [
+      "near-live--r04",
+      "near-live--r05"
+    ]
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "policy": "live",
+    "step": 244241,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "burst-live--r01",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 42.716100204735994,
+        "tokens": 5165,
+        "short_finish_seconds_after_decision": 19.0207012379542
+      },
+      {
+        "key": "burst-live--r00",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 42.73009630572051,
+        "tokens": 5164,
+        "short_finish_seconds_after_decision": 19.0207012379542
+      }
+    ],
+    "waiting": [
+      "burst-live--r02"
+    ],
+    "observed_cuts": [
+      "burst-live--r01",
+      "burst-live--r00"
+    ]
+  },
+  {
+    "run": "pilot",
+    "phase": "burst-live",
+    "policy": "live",
+    "step": 246219,
+    "eligible": 1,
+    "point_rescue_exists": true,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "burst-live--r02",
+        "gains": [
+          "burst-live--r05"
+        ],
+        "robust_gains": [],
+        "predicted_release_saving": 57.984137741848826,
+        "tokens": 0,
+        "short_finish_seconds_after_decision": 76.75405760295689
+      }
+    ],
+    "waiting": [
+      "burst-live--r03",
+      "burst-live--r04",
+      "burst-live--r05",
+      "burst-live--r06",
+      "burst-live--r07"
+    ],
+    "observed_cuts": [
+      "burst-live--r02"
+    ]
+  },
+  {
+    "run": "b0",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 143626,
+    "eligible": 1,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r01",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 54.12946677731816,
+        "tokens": 4316,
+        "short_finish_seconds_after_decision": 22.630969701189315
+      }
+    ],
+    "waiting": [
+      "near-live--r02"
+    ],
+    "observed_cuts": [
+      "near-live--r01"
+    ]
+  },
+  {
+    "run": "b0",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 152490,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r02",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 0,
+        "tokens": 8082,
+        "short_finish_seconds_after_decision": 22.56868613034021
+      },
+      {
+        "key": "near-live--r03",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 53.548420569626614,
+        "tokens": 4346,
+        "short_finish_seconds_after_decision": 22.56868613034021
+      }
+    ],
+    "waiting": [
+      "near-live--r04"
+    ],
+    "observed_cuts": [
+      "near-live--r02",
+      "near-live--r03"
+    ]
+  },
+  {
+    "run": "b0",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 161589,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r04",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 0,
+        "tokens": 8133,
+        "short_finish_seconds_after_decision": 21.945736316381954
+      },
+      {
+        "key": "near-live--r05",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 50.27772391564213,
+        "tokens": 4474,
+        "short_finish_seconds_after_decision": 21.945736316381954
+      }
+    ],
+    "waiting": [
+      "near-live--r06"
+    ],
+    "observed_cuts": [
+      "near-live--r04",
+      "near-live--r05"
+    ]
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "policy": "live",
+    "step": 244668,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "burst-live--r01",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 38.933832960319705,
+        "tokens": 5380,
+        "short_finish_seconds_after_decision": 22.730743758875178
+      },
+      {
+        "key": "burst-live--r00",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 38.94833885933622,
+        "tokens": 5379,
+        "short_finish_seconds_after_decision": 22.730743758875178
+      }
+    ],
+    "waiting": [
+      "burst-live--r02"
+    ],
+    "observed_cuts": [
+      "burst-live--r01",
+      "burst-live--r00"
+    ]
+  },
+  {
+    "run": "b0",
+    "phase": "burst-live",
+    "policy": "live",
+    "step": 246325,
+    "eligible": 1,
+    "point_rescue_exists": true,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "burst-live--r02",
+        "gains": [
+          "burst-live--r05"
+        ],
+        "robust_gains": [],
+        "predicted_release_saving": 57.66248785331845,
+        "tokens": 0,
+        "short_finish_seconds_after_decision": 82.2940193329996
+      }
+    ],
+    "waiting": [
+      "burst-live--r03",
+      "burst-live--r04",
+      "burst-live--r05",
+      "burst-live--r06",
+      "burst-live--r07"
+    ],
+    "observed_cuts": [
+      "burst-live--r02"
+    ]
+  },
+  {
+    "run": "b1",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 33144,
+    "eligible": 1,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r01",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 61.26274835485674,
+        "tokens": 4100,
+        "short_finish_seconds_after_decision": 17.58874578998075
+      }
+    ],
+    "waiting": [
+      "near-live--r02"
+    ],
+    "observed_cuts": [
+      "near-live--r01"
+    ]
+  },
+  {
+    "run": "b1",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 41116,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r02",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 30.080490324326092,
+        "tokens": 6201,
+        "short_finish_seconds_after_decision": 17.652203266101424
+      },
+      {
+        "key": "near-live--r03",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 61.54356219150941,
+        "tokens": 3868,
+        "short_finish_seconds_after_decision": 21.06007993390085
+      }
+    ],
+    "waiting": [
+      "near-live--r04"
+    ],
+    "observed_cuts": [
+      "near-live--r02",
+      "near-live--r03"
+    ]
+  },
+  {
+    "run": "b1",
+    "phase": "near-live",
+    "policy": "live",
+    "step": 49459,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "near-live--r04",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 17.010349611140555,
+        "tokens": 7060,
+        "short_finish_seconds_after_decision": 17.415884604037274
+      },
+      {
+        "key": "near-live--r05",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 60.71964848189964,
+        "tokens": 4053,
+        "short_finish_seconds_after_decision": 18.049993865657598
+      }
+    ],
+    "waiting": [
+      "near-live--r06"
+    ],
+    "observed_cuts": [
+      "near-live--r04",
+      "near-live--r05"
+    ]
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "policy": "live",
+    "step": 302601,
+    "eligible": 2,
+    "point_rescue_exists": false,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "burst-live--r01",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 44.455999368256016,
+        "tokens": 5215,
+        "short_finish_seconds_after_decision": 17.509599884593626
+      },
+      {
+        "key": "burst-live--r00",
+        "gains": [],
+        "robust_gains": [],
+        "predicted_release_saving": 44.47082544775185,
+        "tokens": 5214,
+        "short_finish_seconds_after_decision": 17.509599884593626
+      }
+    ],
+    "waiting": [
+      "burst-live--r02"
+    ],
+    "observed_cuts": [
+      "burst-live--r01",
+      "burst-live--r00"
+    ]
+  },
+  {
+    "run": "b1",
+    "phase": "burst-live",
+    "policy": "live",
+    "step": 304663,
+    "eligible": 1,
+    "point_rescue_exists": true,
+    "robust_rescue_exists": false,
+    "chosen": null,
+    "options": [
+      {
+        "key": "burst-live--r02",
+        "gains": [
+          "burst-live--r05"
+        ],
+        "robust_gains": [],
+        "predicted_release_saving": 59.70827510991512,
+        "tokens": 0,
+        "short_finish_seconds_after_decision": 76.5222993940697
+      }
+    ],
+    "waiting": [
+      "burst-live--r04",
+      "burst-live--r05",
+      "burst-live--r06",
+      "burst-live--r07"
+    ],
+    "observed_cuts": [
+      "burst-live--r02"
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "run": "pilot",
+    "training_runs": [
+      "b0",
+      "b1"
+    ],
+    "timing_profile_rows": 120,
+    "profile_rows_by_budget": {
+      "4096": 49,
+      "8192": 71
+    },
+    "fallback_tau": 0.014663420741271693,
+    "prefill_median": 0.017216899505001493,
+    "validation_waiter_requests": 18,
+    "median_abs_error_per_request": {
+      "n": 18,
+      "mean": 16.553430758649483,
+      "median": 10.964108038460836,
+      "p90": 57.86637313384563,
+      "max": 97.54293665941805
+    },
+    "median_signed_error_per_request": {
+      "n": 18,
+      "mean": 4.274283531975622,
+      "median": -3.3359564831480384,
+      "p90": 57.86637313384563,
+      "max": 97.54293665941805
+    },
+    "mean_request_deadline_classification_error": 0.056451612903225805,
+    "mean_request_sensitivity_interval_coverage": 0.9210917341847134,
+    "eligible_states": 550,
+    "point_rescue_states": 1,
+    "robust_rescue_states": 0,
+    "important": "One-second sampled correlated states; \u00b125% is a sensitivity bracket, not a calibrated confidence interval. No causal counterfactual accuracy/goodput computed."
+  },
+  {
+    "run": "b0",
+    "training_runs": [
+      "b1"
+    ],
+    "timing_profile_rows": 60,
+    "profile_rows_by_budget": {
+      "4096": 25,
+      "8192": 35
+    },
+    "fallback_tau": 0.01479940149874892,
+    "prefill_median": 0.016411769509431906,
+    "validation_waiter_requests": 30,
+    "median_abs_error_per_request": {
+      "n": 30,
+      "mean": 15.607961917485955,
+      "median": 9.227765056872158,
+      "p90": 34.52608127093117,
+      "max": 75.76990226711496
+    },
+    "median_signed_error_per_request": {
+      "n": 30,
+      "mean": 5.7551947950310325,
+      "median": 0.9947911299241241,
+      "p90": 34.52608127093117,
+      "max": 75.76990226711496
+    },
+    "mean_request_deadline_classification_error": 0.05682539682539683,
+    "mean_request_sensitivity_interval_coverage": 0.915018315018315,
+    "eligible_states": 1060,
+    "point_rescue_states": 64,
+    "robust_rescue_states": 0,
+    "important": "One-second sampled correlated states; \u00b125% is a sensitivity bracket, not a calibrated confidence interval. No causal counterfactual accuracy/goodput computed."
+  },
+  {
+    "run": "b1",
+    "training_runs": [
+      "b0"
+    ],
+    "timing_profile_rows": 60,
+    "profile_rows_by_budget": {
+      "4096": 24,
+      "8192": 36
+    },
+    "fallback_tau": 0.014527439983794466,
+    "prefill_median": 0.017779811008949764,
+    "validation_waiter_requests": 30,
+    "median_abs_error_per_request": {
+      "n": 30,
+      "mean": 18.16722143092047,
+      "median": 12.962279799816315,
+      "p90": 32.2375043642096,
+      "max": 83.05394998023985
+    },
+    "median_signed_error_per_request": {
+      "n": 30,
+      "mean": -7.330479210759222,
+      "median": -9.944354792954982,
+      "p90": 1.4785748707945459,
+      "max": 83.05394998023985
+    },
+    "mean_request_deadline_classification_error": 0.015300127713920818,
+    "mean_request_sensitivity_interval_coverage": 0.9302167303252337,
+    "eligible_states": 1040,
+    "point_rescue_states": 80,
+    "robust_rescue_states": 0,
+    "important": "One-second sampled correlated states; \u00b125% is a sensitivity bracket, not a calibrated confidence interval. No causal counterfactual accuracy/goodput computed."
+  }
+]
