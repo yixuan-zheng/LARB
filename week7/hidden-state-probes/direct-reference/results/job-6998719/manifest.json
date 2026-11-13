@@ -1,0 +1,35 @@
+{
+  "config": {
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "upstream": "ac1d6b8decc47380f76dcb07c191c93bc762b619",
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "sklearn": "1.7.2",
+    "checkpoints": [
+      0,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      192,
+      256,
+      384,
+      512,
+      4096
+    ],
+    "relative_l2_max": 0.02,
+    "cosine_min": 0.999,
+    "max_peak_gib": 36,
+    "max_projected_seconds": 2400,
+    "seed": 356,
+    "folds": 5,
+    "pca_max": 128,
+    "bootstrap": 10000
+  },
+  "release_sha256": "a8ca56a3e820ae1fe0d9ad74a3031899ee98a03b68cb868d9a7608e6937e4a33",
+  "gpu": "NVIDIA L40S",
+  "free_bytes": 47296610304,
+  "total_bytes": 47751888896
+}

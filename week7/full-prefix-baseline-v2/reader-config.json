@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "vllm": "0.31.0",
+  "torch": "2.13.0",
+  "transformers": "5.17.0",
+  "dtype": "bfloat16",
+  "max_model_len": 16384,
+  "max_num_seqs": 8,
+  "reasoning_effort": "medium",
+  "max_tokens": 6144,
+  "temperature": 0,
+  "concurrency": 8,
+  "thinking_token_budget": 4096
+}

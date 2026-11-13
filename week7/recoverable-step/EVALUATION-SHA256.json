@@ -1,0 +1,10 @@
+{
+  "week7/recoverable-step/PLAN.md": "0cda81ad6e11140b89f918c6ea7a9a6dce6add38295948004bb7ce6a4c0349ab",
+  "week7/recoverable-step/packets.py": "1a901e2653537403e28dc4217ce357fc3cf03ba1c3bad5494f519c01389711fa",
+  "week7/recoverable-step/step_reader.py": "4d3e8e42912b5ae0f13e2e201267b4ada518aa854c3893b90cfb0cd30130119c",
+  "week7/recoverable-step/score.py": "7d3d4bbacb853d3163d0f3baa6108e0a696f6b5b240771bef36d5713cfd7b95d",
+  "week7/recoverable-step/audit_packet.py": "e6de52988b6da1816fa55608962b5821a3d6f55d3444fb0f102fd2222a501e64",
+  "week7/recoverable-step/inputs/source.parquet": "ae72853349a46c5f08666feb42db2d09fb4ac4fd4768c726b29702df21c7768e",
+  "week7/bounded-prefix/read.py": "c73ab55e3548efdf7d7855bda7a1d77370a8410706610389e25d09bb6bce8903",
+  "week7/bounded-prefix/reader-lock.json": "0dd036f216f9cb221b0173ab8edb0ebae2d52b95498ebf8203c98d67a5ff4a6b"
+}

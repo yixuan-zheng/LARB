@@ -1,0 +1,7155 @@
+{
+  "prefixes": {
+    "q09-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q03-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 7,
+          "missing": 0,
+          "probability": 0.875,
+          "missing_data_bounds": [
+            0.875,
+            0.875
+          ],
+          "wilson_95": [
+            0.5291118177871563,
+            0.9775825085499423
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.125,
+      "independent_draw_gain": 0.125,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3673180622601737,
+        0.5208820577710822
+      ],
+      "delta_missing_data_bounds": [
+        0.125,
+        0.125
+      ]
+    },
+    "q15-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q23-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 3,
+          "missing": 0,
+          "probability": 0.375,
+          "missing_data_bounds": [
+            0.375,
+            0.375
+          ],
+          "wilson_95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        }
+      },
+      "delta": 0.375,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.26704814947056504,
+        0.72774013600329
+      ],
+      "delta_missing_data_bounds": [
+        0.375,
+        0.375
+      ]
+    },
+    "q12-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 2,
+          "missing": 0,
+          "probability": 0.25,
+          "missing_data_bounds": [
+            0.25,
+            0.25
+          ],
+          "wilson_95": [
+            0.07147921275211133,
+            0.5907245696898228
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 7,
+          "missing": 0,
+          "probability": 0.875,
+          "missing_data_bounds": [
+            0.875,
+            0.875
+          ],
+          "wilson_95": [
+            0.5291118177871563,
+            0.9775825085499423
+          ]
+        }
+      },
+      "delta": 0.625,
+      "independent_draw_gain": 0.65625,
+      "independent_draw_loss": 0.03125,
+      "delta_approx_95": [
+        -0.15302229101543552,
+        0.920842268569977
+      ],
+      "delta_missing_data_bounds": [
+        0.625,
+        0.625
+      ]
+    },
+    "q21-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 7,
+          "missing": 0,
+          "probability": 0.875,
+          "missing_data_bounds": [
+            0.875,
+            0.875
+          ],
+          "wilson_95": [
+            0.5291118177871563,
+            0.9775825085499423
+          ]
+        }
+      },
+      "delta": 0.875,
+      "independent_draw_gain": 0.875,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        0.09337392427255103,
+        0.981574044303807
+      ],
+      "delta_missing_data_bounds": [
+        0.875,
+        0.875
+      ]
+    },
+    "q26-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q03-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q30-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q27-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q06-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q05-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q20-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q14-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q02-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 7,
+          "missing": 0,
+          "probability": 0.875,
+          "missing_data_bounds": [
+            0.875,
+            0.875
+          ],
+          "wilson_95": [
+            0.5291118177871563,
+            0.9775825085499423
+          ]
+        }
+      },
+      "delta": 0.875,
+      "independent_draw_gain": 0.875,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        0.09337392427255103,
+        0.981574044303807
+      ],
+      "delta_missing_data_bounds": [
+        0.875,
+        0.875
+      ]
+    },
+    "q08-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q16-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q10-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q29-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q16-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q05-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q26-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q23-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 3,
+          "missing": 0,
+          "probability": 0.375,
+          "missing_data_bounds": [
+            0.375,
+            0.375
+          ],
+          "wilson_95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        }
+      },
+      "delta": 0.375,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.26704814947056504,
+        0.72774013600329
+      ],
+      "delta_missing_data_bounds": [
+        0.375,
+        0.375
+      ]
+    },
+    "q19-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 5,
+          "missing": 0,
+          "probability": 0.625,
+          "missing_data_bounds": [
+            0.625,
+            0.625
+          ],
+          "wilson_95": [
+            0.3057423946026341,
+            0.8631557141763988
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.375,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.267048149470565,
+        0.72774013600329
+      ],
+      "delta_missing_data_bounds": [
+        0.375,
+        0.375
+      ]
+    },
+    "q15-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q17-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q06-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q22-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 7,
+          "missing": 0,
+          "probability": 0.875,
+          "missing_data_bounds": [
+            0.875,
+            0.875
+          ],
+          "wilson_95": [
+            0.5291118177871563,
+            0.9775825085499423
+          ]
+        }
+      },
+      "delta": -0.125,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.125,
+      "delta_approx_95": [
+        -0.5208820577710822,
+        0.3673180622601737
+      ],
+      "delta_missing_data_bounds": [
+        -0.125,
+        -0.125
+      ]
+    },
+    "q24-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 3,
+          "missing": 0,
+          "probability": 0.375,
+          "missing_data_bounds": [
+            0.375,
+            0.375
+          ],
+          "wilson_95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 2,
+          "missing": 0,
+          "probability": 0.25,
+          "missing_data_bounds": [
+            0.25,
+            0.25
+          ],
+          "wilson_95": [
+            0.07147921275211133,
+            0.5907245696898228
+          ]
+        }
+      },
+      "delta": -0.125,
+      "independent_draw_gain": 0.15625,
+      "independent_draw_loss": 0.28125,
+      "delta_approx_95": [
+        -0.66700836026946,
+        0.5134443647585516
+      ],
+      "delta_missing_data_bounds": [
+        -0.125,
+        -0.125
+      ]
+    },
+    "q04-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q25-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q24-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 2,
+          "missing": 0,
+          "probability": 0.25,
+          "missing_data_bounds": [
+            0.25,
+            0.25
+          ],
+          "wilson_95": [
+            0.07147921275211133,
+            0.5907245696898228
+          ]
+        }
+      },
+      "delta": 0.25,
+      "independent_draw_gain": 0.25,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3250122422225367,
+        0.6321402332443533
+      ],
+      "delta_missing_data_bounds": [
+        0.25,
+        0.25
+      ]
+    },
+    "q12-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 6,
+          "missing": 0,
+          "probability": 0.75,
+          "missing_data_bounds": [
+            0.75,
+            0.75
+          ],
+          "wilson_95": [
+            0.40927543031017727,
+            0.9285207872478887
+          ]
+        }
+      },
+      "delta": 0.75,
+      "independent_draw_gain": 0.75,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.017884251200720125,
+        0.9392682242661698
+      ],
+      "delta_missing_data_bounds": [
+        0.75,
+        0.75
+      ]
+    },
+    "q17-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 1,
+          "missing": 0,
+          "probability": 0.125,
+          "missing_data_bounds": [
+            0.125,
+            0.125
+          ],
+          "wilson_95": [
+            0.02241749145005756,
+            0.47088818221284356
+          ]
+        }
+      },
+      "delta": 0.125,
+      "independent_draw_gain": 0.125,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3673180622601738,
+        0.5208820577710822
+      ],
+      "delta_missing_data_bounds": [
+        0.125,
+        0.125
+      ]
+    },
+    "q28-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q28-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q18-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 1,
+          "missing": 0,
+          "probability": 0.125,
+          "missing_data_bounds": [
+            0.125,
+            0.125
+          ],
+          "wilson_95": [
+            0.02241749145005756,
+            0.47088818221284356
+          ]
+        }
+      },
+      "delta": 0.125,
+      "independent_draw_gain": 0.125,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3673180622601738,
+        0.5208820577710822
+      ],
+      "delta_missing_data_bounds": [
+        0.125,
+        0.125
+      ]
+    },
+    "q07-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q02-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 5,
+          "missing": 0,
+          "probability": 0.625,
+          "missing_data_bounds": [
+            0.625,
+            0.625
+          ],
+          "wilson_95": [
+            0.3057423946026341,
+            0.8631557141763988
+          ]
+        }
+      },
+      "delta": 0.625,
+      "independent_draw_gain": 0.625,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.11348415395965677,
+        0.8813041315141983
+      ],
+      "delta_missing_data_bounds": [
+        0.625,
+        0.625
+      ]
+    },
+    "q27-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q22-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 3,
+          "missing": 0,
+          "probability": 0.375,
+          "missing_data_bounds": [
+            0.375,
+            0.375
+          ],
+          "wilson_95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        }
+      },
+      "delta": 0.375,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.26704814947056504,
+        0.72774013600329
+      ],
+      "delta_missing_data_bounds": [
+        0.375,
+        0.375
+      ]
+    },
+    "q10-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q13-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 1,
+          "missing": 0,
+          "probability": 0.125,
+          "missing_data_bounds": [
+            0.125,
+            0.125
+          ],
+          "wilson_95": [
+            0.02241749145005756,
+            0.47088818221284356
+          ]
+        }
+      },
+      "delta": 0.125,
+      "independent_draw_gain": 0.125,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3673180622601738,
+        0.5208820577710822
+      ],
+      "delta_missing_data_bounds": [
+        0.125,
+        0.125
+      ]
+    },
+    "q13-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 2,
+          "missing": 0,
+          "probability": 0.25,
+          "missing_data_bounds": [
+            0.25,
+            0.25
+          ],
+          "wilson_95": [
+            0.07147921275211133,
+            0.5907245696898228
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 4,
+          "missing": 0,
+          "probability": 0.5,
+          "missing_data_bounds": [
+            0.5,
+            0.5
+          ],
+          "wilson_95": [
+            0.2152160622138829,
+            0.7847839377861171
+          ]
+        }
+      },
+      "delta": 0.25,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.125,
+      "delta_approx_95": [
+        -0.4426817030822668,
+        0.7498096941040834
+      ],
+      "delta_missing_data_bounds": [
+        0.25,
+        0.25
+      ]
+    },
+    "q07-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 5,
+          "missing": 0,
+          "probability": 0.625,
+          "missing_data_bounds": [
+            0.625,
+            0.625
+          ],
+          "wilson_95": [
+            0.3057423946026341,
+            0.8631557141763988
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.375,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.267048149470565,
+        0.72774013600329
+      ],
+      "delta_missing_data_bounds": [
+        0.375,
+        0.375
+      ]
+    },
+    "q11-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 3,
+          "missing": 0,
+          "probability": 0.375,
+          "missing_data_bounds": [
+            0.375,
+            0.375
+          ],
+          "wilson_95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        }
+      },
+      "delta": 0.375,
+      "independent_draw_gain": 0.375,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.26704814947056504,
+        0.72774013600329
+      ],
+      "delta_missing_data_bounds": [
+        0.375,
+        0.375
+      ]
+    },
+    "q18-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q04-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q09-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q11-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q21-b0": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 6,
+          "missing": 0,
+          "probability": 0.75,
+          "missing_data_bounds": [
+            0.75,
+            0.75
+          ],
+          "wilson_95": [
+            0.40927543031017727,
+            0.9285207872478887
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.25,
+      "independent_draw_gain": 0.25,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.32501224222253655,
+        0.6321402332443533
+      ],
+      "delta_missing_data_bounds": [
+        0.25,
+        0.25
+      ]
+    },
+    "q19-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 1,
+          "missing": 0,
+          "probability": 0.125,
+          "missing_data_bounds": [
+            0.125,
+            0.125
+          ],
+          "wilson_95": [
+            0.02241749145005756,
+            0.47088818221284356
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.875,
+      "independent_draw_gain": 0.875,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        0.09337392427255109,
+        0.981574044303807
+      ],
+      "delta_missing_data_bounds": [
+        0.875,
+        0.875
+      ]
+    },
+    "q14-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q30-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q20-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q25-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q08-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 8,
+          "missing": 0,
+          "probability": 1.0,
+          "missing_data_bounds": [
+            1.0,
+            1.0
+          ],
+          "wilson_95": [
+            0.6755924351161318,
+            1.0
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.3857440179563667,
+        0.3857440179563667
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "q29-b1": {
+      "arms": {
+        "short": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        },
+        "long": {
+          "planned": 8,
+          "successes": 0,
+          "missing": 0,
+          "probability": 0.0,
+          "missing_data_bounds": [
+            0.0,
+            0.0
+          ],
+          "wilson_95": [
+            0.0,
+            0.3244075648838681
+          ]
+        }
+      },
+      "delta": 0.0,
+      "independent_draw_gain": 0.0,
+      "independent_draw_loss": 0.0,
+      "delta_approx_95": [
+        -0.38574401795636676,
+        0.38574401795636676
+      ],
+      "delta_missing_data_bounds": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "cohort": {
+    "mean_delta": 0.13577586206896552,
+    "question_cluster_bootstrap_95": [
+      0.05818965517241379,
+      0.22413793103448276
+    ],
+    "mean_p4": 0.3599137931034483,
+    "mean_p8": 0.4956896551724138
+  },
+  "cohort_delta_missing_data_bounds": [
+    0.13577586206896552,
+    0.13577586206896552
+  ],
+  "grades": [
+    {
+      "call_id": "q09-b0-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q03-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-00",
+      "correct": 0,
+      "reason": "multiple_grouped_final_boxes"
+    },
+    {
+      "call_id": "q09-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q09-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q02-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b0-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q19-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-long-00",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q22-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q28-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b1-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q11-b1-long-00",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q26-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-long-00",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q21-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q30-b1-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q02-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-short-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-short-00",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q05-b0-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-00",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-long-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-00",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-01",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q21-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q15-b1-short-01",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q04-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q19-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-01",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q19-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-01",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q07-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b1-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q24-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-short-01",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q30-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-long-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q26-b1-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q03-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-01",
+      "correct": 0,
+      "reason": "multiple_grouped_final_boxes"
+    },
+    {
+      "call_id": "q25-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q20-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-long-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-long-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-long-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q24-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-01",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-long-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-long-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-short-01",
+      "correct": 0,
+      "reason": "multiple_grouped_final_boxes"
+    },
+    {
+      "call_id": "q15-b1-long-01",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q05-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-01",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-01",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q21-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q08-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-02",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q29-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q10-b1-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b1-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q26-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-long-02",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q08-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q08-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q21-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q13-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q08-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q15-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q29-b1-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q10-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b0-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-long-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q13-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b0-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-long-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-02",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b0-short-02",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q03-b0-short-02",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b0-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q09-b0-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q26-b0-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q02-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q21-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-03",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q21-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-short-03",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q18-b1-long-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q16-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-long-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b1-short-03",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q17-b0-short-03",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q11-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q19-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q16-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q26-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b1-long-03",
+      "correct": 0,
+      "reason": "multiple_grouped_final_boxes"
+    },
+    {
+      "call_id": "q29-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q30-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-long-03",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q09-b0-long-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q20-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-long-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-long-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b0-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-03",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q08-b1-short-03",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-long-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-03",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q15-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q28-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q24-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q21-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-04",
+      "correct": 0,
+      "reason": "multiple_grouped_final_boxes"
+    },
+    {
+      "call_id": "q16-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q28-b1-long-04",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q19-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q10-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-long-04",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q05-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b0-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q10-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q05-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-short-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q03-b1-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-long-04",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-04",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-short-04",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q15-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q13-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q24-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b1-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q29-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q15-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-long-05",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q12-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-long-05",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q21-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q16-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q30-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-short-05",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q02-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q11-b0-long-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q02-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q28-b0-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q23-b1-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q09-b0-short-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q08-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-short-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-long-05",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b1-long-05",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-short-05",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-06",
+      "correct": 0,
+      "reason": "multiple_grouped_final_boxes"
+    },
+    {
+      "call_id": "q20-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-long-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q05-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q21-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q29-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q22-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-long-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q11-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q08-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b1-long-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q06-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q09-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q10-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b0-long-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-long-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b1-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q25-b0-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-long-06",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q16-b1-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-short-06",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-long-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q28-b1-long-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-06",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-short-06",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q16-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q27-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q05-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q12-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q09-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q05-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q29-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q26-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q16-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q18-b0-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q21-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q14-b0-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b1-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q30-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q24-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q03-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b0-short-07",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q22-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q20-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b0-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q03-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q17-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q24-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q19-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q08-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q07-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q17-b1-short-07",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q26-b1-long-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q26-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q04-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q22-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q06-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q28-b1-long-07",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q20-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q10-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q12-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q25-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q29-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q16-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q23-b0-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q04-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q15-b1-long-07",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q15-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b1-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q27-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q21-b0-short-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b1-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q30-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q07-b0-long-07",
+      "correct": 1,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q13-b1-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q18-b1-long-07",
+      "correct": 0,
+      "reason": "noncanonical_integer_box"
+    },
+    {
+      "call_id": "q10-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q02-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q09-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q14-b1-short-07",
+      "correct": 0,
+      "reason": "answer_cap"
+    },
+    {
+      "call_id": "q28-b0-long-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q11-b0-short-07",
+      "correct": 0,
+      "reason": "graded"
+    },
+    {
+      "call_id": "q05-b1-short-07",
+      "correct": 1,
+      "reason": "graded"
+    }
+  ],
+  "mode": "full",
+  "planned": 928
+}

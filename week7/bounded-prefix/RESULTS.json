@@ -1,0 +1,1479 @@
+{
+  "population": 57,
+  "questions": 30,
+  "target_correct": 28,
+  "reader_usage": {
+    "question": {
+      "unique_calls": 30,
+      "costed_calls": 57,
+      "input_tokens": 16885,
+      "output_tokens": 5372,
+      "median_call_seconds": 2.626443687498977,
+      "p95_call_seconds": 3.3788927524510655,
+      "offline_inference_seconds": 80.60937750198354
+    },
+    "bounded": {
+      "unique_calls": 57,
+      "costed_calls": 57,
+      "input_tokens": 46070,
+      "output_tokens": 4753,
+      "median_call_seconds": 2.969743166002445,
+      "p95_call_seconds": 4.056903332992806,
+      "offline_inference_seconds": 174.32611645795987
+    }
+  },
+  "reader_token_equivalents_at_factor_one": {
+    "Q": 0,
+    "question": 22257,
+    "bounded": 50823
+  },
+  "half_allocation": {
+    "Q": {
+      "extensions": 28,
+      "expected_correct": 24.0,
+      "expected_tokens": 413107.0,
+      "expected_gains_captured": 4.0,
+      "partially_selected_tied_cases": 0
+    },
+    "question": {
+      "extensions": 28,
+      "expected_correct": 25.0,
+      "expected_tokens": 401126.0,
+      "expected_gains_captured": 5.0,
+      "partially_selected_tied_cases": 0
+    },
+    "bounded": {
+      "extensions": 28,
+      "expected_correct": 22.0,
+      "expected_tokens": 391896.0,
+      "expected_gains_captured": 2.0,
+      "partially_selected_tied_cases": 0
+    }
+  },
+  "half_allocation_question_bootstrap_95": {
+    "Q": [
+      -0.10909090909090909,
+      0.03508771929824561
+    ],
+    "question": [
+      -0.125,
+      0.03508771929824561
+    ]
+  },
+  "gain_auc": {
+    "Q": 0.6352040816326531,
+    "question": 0.5408163265306123,
+    "bounded": 0.3239795918367347
+  },
+  "frontier": {
+    "Q": [
+      {
+        "extensions": 0,
+        "expected_correct": 20.0,
+        "expected_tokens": 313276.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 1,
+        "expected_correct": 20.5,
+        "expected_tokens": 317283.5,
+        "expected_gains_captured": 0.5,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 2,
+        "expected_correct": 21.0,
+        "expected_tokens": 321291.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 3,
+        "expected_correct": 21.0,
+        "expected_tokens": 325600.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 4,
+        "expected_correct": 21.0,
+        "expected_tokens": 329909.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 5,
+        "expected_correct": 21.333333333333332,
+        "expected_tokens": 333429.3333333333,
+        "expected_gains_captured": 1.3333333333333333,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 6,
+        "expected_correct": 21.666666666666668,
+        "expected_tokens": 336949.6666666667,
+        "expected_gains_captured": 1.6666666666666665,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 7,
+        "expected_correct": 22.0,
+        "expected_tokens": 340470.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 8,
+        "expected_correct": 22.333333333333332,
+        "expected_tokens": 343990.3333333333,
+        "expected_gains_captured": 2.333333333333333,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 9,
+        "expected_correct": 22.666666666666668,
+        "expected_tokens": 347510.6666666667,
+        "expected_gains_captured": 2.666666666666667,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 10,
+        "expected_correct": 23.0,
+        "expected_tokens": 351031.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 11,
+        "expected_correct": 23.0,
+        "expected_tokens": 354074.5,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 12,
+        "expected_correct": 23.0,
+        "expected_tokens": 357118.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 13,
+        "expected_correct": 23.0,
+        "expected_tokens": 360181.5,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 14,
+        "expected_correct": 23.0,
+        "expected_tokens": 363245.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 15,
+        "expected_correct": 23.0,
+        "expected_tokens": 367361.5,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 16,
+        "expected_correct": 23.0,
+        "expected_tokens": 371478.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 17,
+        "expected_correct": 23.0,
+        "expected_tokens": 375594.5,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 18,
+        "expected_correct": 23.0,
+        "expected_tokens": 379711.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 19,
+        "expected_correct": 23.0,
+        "expected_tokens": 382819.6666666667,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 20,
+        "expected_correct": 23.0,
+        "expected_tokens": 385928.3333333333,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 21,
+        "expected_correct": 23.0,
+        "expected_tokens": 389037.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 22,
+        "expected_correct": 23.0,
+        "expected_tokens": 392145.6666666667,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 23,
+        "expected_correct": 23.0,
+        "expected_tokens": 395254.3333333333,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 24,
+        "expected_correct": 23.0,
+        "expected_tokens": 398363.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 25,
+        "expected_correct": 23.25,
+        "expected_tokens": 402049.0,
+        "expected_gains_captured": 3.25,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 26,
+        "expected_correct": 23.5,
+        "expected_tokens": 405735.0,
+        "expected_gains_captured": 3.5,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 27,
+        "expected_correct": 23.75,
+        "expected_tokens": 409421.0,
+        "expected_gains_captured": 3.75,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 28,
+        "expected_correct": 24.0,
+        "expected_tokens": 413107.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 29,
+        "expected_correct": 24.333333333333336,
+        "expected_tokens": 416501.6666666667,
+        "expected_gains_captured": 4.333333333333333,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 30,
+        "expected_correct": 24.666666666666664,
+        "expected_tokens": 419896.3333333333,
+        "expected_gains_captured": 4.666666666666667,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 31,
+        "expected_correct": 25.0,
+        "expected_tokens": 423291.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 32,
+        "expected_correct": 25.333333333333336,
+        "expected_tokens": 426685.6666666667,
+        "expected_gains_captured": 5.333333333333333,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 33,
+        "expected_correct": 25.666666666666664,
+        "expected_tokens": 430080.3333333333,
+        "expected_gains_captured": 5.666666666666667,
+        "partially_selected_tied_cases": 6
+      },
+      {
+        "extensions": 34,
+        "expected_correct": 26.0,
+        "expected_tokens": 433475.0,
+        "expected_gains_captured": 6.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 35,
+        "expected_correct": 26.5,
+        "expected_tokens": 437461.0,
+        "expected_gains_captured": 6.5,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 36,
+        "expected_correct": 27.0,
+        "expected_tokens": 441447.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 37,
+        "expected_correct": 27.5,
+        "expected_tokens": 445433.0,
+        "expected_gains_captured": 7.5,
+        "partially_selected_tied_cases": 4
+      },
+      {
+        "extensions": 38,
+        "expected_correct": 28.0,
+        "expected_tokens": 449419.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 39,
+        "expected_correct": 28.0,
+        "expected_tokens": 453708.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 40,
+        "expected_correct": 28.0,
+        "expected_tokens": 457998.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 41,
+        "expected_correct": 28.0,
+        "expected_tokens": 462118.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 42,
+        "expected_correct": 28.0,
+        "expected_tokens": 466239.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 43,
+        "expected_correct": 28.0,
+        "expected_tokens": 467909.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 44,
+        "expected_correct": 28.0,
+        "expected_tokens": 469580.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 45,
+        "expected_correct": 28.0,
+        "expected_tokens": 472784.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 46,
+        "expected_correct": 28.0,
+        "expected_tokens": 475989.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 47,
+        "expected_correct": 28.0,
+        "expected_tokens": 477889.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 48,
+        "expected_correct": 28.0,
+        "expected_tokens": 479789.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 49,
+        "expected_correct": 28.0,
+        "expected_tokens": 483456.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 50,
+        "expected_correct": 28.0,
+        "expected_tokens": 487124.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 51,
+        "expected_correct": 28.0,
+        "expected_tokens": 488621.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 52,
+        "expected_correct": 28.0,
+        "expected_tokens": 492444.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 53,
+        "expected_correct": 28.0,
+        "expected_tokens": 496268.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 54,
+        "expected_correct": 28.0,
+        "expected_tokens": 496560.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 55,
+        "expected_correct": 28.0,
+        "expected_tokens": 496852.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 56,
+        "expected_correct": 28.0,
+        "expected_tokens": 498376.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 57,
+        "expected_correct": 28.0,
+        "expected_tokens": 499900.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      }
+    ],
+    "question": [
+      {
+        "extensions": 0,
+        "expected_correct": 20.0,
+        "expected_tokens": 313276.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 1,
+        "expected_correct": 20.0,
+        "expected_tokens": 317372.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 2,
+        "expected_correct": 20.0,
+        "expected_tokens": 321468.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 3,
+        "expected_correct": 20.0,
+        "expected_tokens": 325497.5,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 4,
+        "expected_correct": 20.0,
+        "expected_tokens": 329527.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 5,
+        "expected_correct": 20.0,
+        "expected_tokens": 333350.5,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 6,
+        "expected_correct": 20.0,
+        "expected_tokens": 337174.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 7,
+        "expected_correct": 20.0,
+        "expected_tokens": 338555.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 8,
+        "expected_correct": 20.0,
+        "expected_tokens": 339936.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 9,
+        "expected_correct": 20.0,
+        "expected_tokens": 344136.5,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 10,
+        "expected_correct": 20.0,
+        "expected_tokens": 348337.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 11,
+        "expected_correct": 20.0,
+        "expected_tokens": 348457.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 12,
+        "expected_correct": 21.0,
+        "expected_tokens": 352399.5,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 13,
+        "expected_correct": 22.0,
+        "expected_tokens": 356342.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 14,
+        "expected_correct": 22.0,
+        "expected_tokens": 360587.5,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 15,
+        "expected_correct": 22.0,
+        "expected_tokens": 364833.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 16,
+        "expected_correct": 22.0,
+        "expected_tokens": 365297.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 17,
+        "expected_correct": 22.0,
+        "expected_tokens": 366821.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 18,
+        "expected_correct": 22.0,
+        "expected_tokens": 368345.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 19,
+        "expected_correct": 22.5,
+        "expected_tokens": 372352.5,
+        "expected_gains_captured": 2.5,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 20,
+        "expected_correct": 23.0,
+        "expected_tokens": 376360.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 21,
+        "expected_correct": 23.0,
+        "expected_tokens": 379403.5,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 22,
+        "expected_correct": 23.0,
+        "expected_tokens": 382447.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 23,
+        "expected_correct": 23.0,
+        "expected_tokens": 385651.5,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 24,
+        "expected_correct": 23.0,
+        "expected_tokens": 388856.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 25,
+        "expected_correct": 24.0,
+        "expected_tokens": 390920.5,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 26,
+        "expected_correct": 25.0,
+        "expected_tokens": 392985.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 27,
+        "expected_correct": 25.0,
+        "expected_tokens": 397055.5,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 28,
+        "expected_correct": 25.0,
+        "expected_tokens": 401126.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 29,
+        "expected_correct": 25.0,
+        "expected_tokens": 404793.5,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 30,
+        "expected_correct": 25.0,
+        "expected_tokens": 408461.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 31,
+        "expected_correct": 25.0,
+        "expected_tokens": 412581.5,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 32,
+        "expected_correct": 25.0,
+        "expected_tokens": 416702.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 33,
+        "expected_correct": 25.5,
+        "expected_tokens": 419978.0,
+        "expected_gains_captured": 5.5,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 34,
+        "expected_correct": 26.0,
+        "expected_tokens": 423254.0,
+        "expected_gains_captured": 6.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 35,
+        "expected_correct": 26.0,
+        "expected_tokens": 427213.5,
+        "expected_gains_captured": 6.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 36,
+        "expected_correct": 26.0,
+        "expected_tokens": 431173.0,
+        "expected_gains_captured": 6.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 37,
+        "expected_correct": 26.0,
+        "expected_tokens": 432670.0,
+        "expected_gains_captured": 6.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 38,
+        "expected_correct": 26.5,
+        "expected_tokens": 436790.5,
+        "expected_gains_captured": 6.5,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 39,
+        "expected_correct": 27.0,
+        "expected_tokens": 440911.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 40,
+        "expected_correct": 27.0,
+        "expected_tokens": 444898.5,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 41,
+        "expected_correct": 27.0,
+        "expected_tokens": 448886.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 42,
+        "expected_correct": 27.0,
+        "expected_tokens": 451949.5,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 43,
+        "expected_correct": 27.0,
+        "expected_tokens": 455013.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 44,
+        "expected_correct": 27.0,
+        "expected_tokens": 459302.5,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 45,
+        "expected_correct": 27.0,
+        "expected_tokens": 463592.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 46,
+        "expected_correct": 27.0,
+        "expected_tokens": 467752.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 47,
+        "expected_correct": 27.0,
+        "expected_tokens": 471912.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 48,
+        "expected_correct": 27.5,
+        "expected_tokens": 474152.0,
+        "expected_gains_captured": 7.5,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 49,
+        "expected_correct": 28.0,
+        "expected_tokens": 476392.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 50,
+        "expected_correct": 28.0,
+        "expected_tokens": 478062.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 51,
+        "expected_correct": 28.0,
+        "expected_tokens": 479733.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 52,
+        "expected_correct": 28.0,
+        "expected_tokens": 484042.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 53,
+        "expected_correct": 28.0,
+        "expected_tokens": 488351.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 54,
+        "expected_correct": 28.0,
+        "expected_tokens": 492225.5,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 55,
+        "expected_correct": 28.0,
+        "expected_tokens": 496100.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 56,
+        "expected_correct": 28.0,
+        "expected_tokens": 498000.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 2
+      },
+      {
+        "extensions": 57,
+        "expected_correct": 28.0,
+        "expected_tokens": 499900.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      }
+    ],
+    "bounded": [
+      {
+        "extensions": 0,
+        "expected_correct": 20.0,
+        "expected_tokens": 313276.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 1,
+        "expected_correct": 20.0,
+        "expected_tokens": 314448.0,
+        "expected_gains_captured": 0.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 2,
+        "expected_correct": 21.0,
+        "expected_tokens": 317507.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 3,
+        "expected_correct": 21.0,
+        "expected_tokens": 318918.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 4,
+        "expected_correct": 21.0,
+        "expected_tokens": 320794.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 5,
+        "expected_correct": 21.0,
+        "expected_tokens": 324734.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 6,
+        "expected_correct": 21.0,
+        "expected_tokens": 328496.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 7,
+        "expected_correct": 21.0,
+        "expected_tokens": 331143.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 8,
+        "expected_correct": 21.0,
+        "expected_tokens": 332580.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 9,
+        "expected_correct": 21.0,
+        "expected_tokens": 336910.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 10,
+        "expected_correct": 21.0,
+        "expected_tokens": 341461.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 11,
+        "expected_correct": 21.0,
+        "expected_tokens": 344490.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 12,
+        "expected_correct": 21.0,
+        "expected_tokens": 346420.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 13,
+        "expected_correct": 21.0,
+        "expected_tokens": 349672.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 14,
+        "expected_correct": 21.0,
+        "expected_tokens": 352730.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 15,
+        "expected_correct": 21.0,
+        "expected_tokens": 356061.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 16,
+        "expected_correct": 21.0,
+        "expected_tokens": 356181.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 17,
+        "expected_correct": 21.0,
+        "expected_tokens": 357506.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 18,
+        "expected_correct": 21.0,
+        "expected_tokens": 361602.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 19,
+        "expected_correct": 21.0,
+        "expected_tokens": 363562.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 20,
+        "expected_correct": 21.0,
+        "expected_tokens": 367552.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 21,
+        "expected_correct": 21.0,
+        "expected_tokens": 370893.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 22,
+        "expected_correct": 21.0,
+        "expected_tokens": 375198.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 23,
+        "expected_correct": 21.0,
+        "expected_tokens": 379518.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 24,
+        "expected_correct": 21.0,
+        "expected_tokens": 383663.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 25,
+        "expected_correct": 22.0,
+        "expected_tokens": 384296.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 26,
+        "expected_correct": 22.0,
+        "expected_tokens": 388549.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 27,
+        "expected_correct": 22.0,
+        "expected_tokens": 391432.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 28,
+        "expected_correct": 22.0,
+        "expected_tokens": 391896.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 29,
+        "expected_correct": 22.0,
+        "expected_tokens": 393393.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 30,
+        "expected_correct": 23.0,
+        "expected_tokens": 396889.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 31,
+        "expected_correct": 23.0,
+        "expected_tokens": 398310.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 32,
+        "expected_correct": 23.0,
+        "expected_tokens": 401890.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 33,
+        "expected_correct": 23.0,
+        "expected_tokens": 402807.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 34,
+        "expected_correct": 24.0,
+        "expected_tokens": 406851.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 35,
+        "expected_correct": 24.0,
+        "expected_tokens": 410947.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 36,
+        "expected_correct": 24.0,
+        "expected_tokens": 415206.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 37,
+        "expected_correct": 24.0,
+        "expected_tokens": 419231.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 38,
+        "expected_correct": 24.0,
+        "expected_tokens": 423398.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 39,
+        "expected_correct": 24.0,
+        "expected_tokens": 427514.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 40,
+        "expected_correct": 24.0,
+        "expected_tokens": 431610.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 41,
+        "expected_correct": 24.0,
+        "expected_tokens": 435365.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 42,
+        "expected_correct": 24.0,
+        "expected_tokens": 439401.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 43,
+        "expected_correct": 24.0,
+        "expected_tokens": 443717.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 44,
+        "expected_correct": 24.0,
+        "expected_tokens": 448376.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 45,
+        "expected_correct": 25.0,
+        "expected_tokens": 451958.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 46,
+        "expected_correct": 25.0,
+        "expected_tokens": 456681.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 47,
+        "expected_correct": 25.0,
+        "expected_tokens": 461046.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 48,
+        "expected_correct": 25.0,
+        "expected_tokens": 465170.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 49,
+        "expected_correct": 25.0,
+        "expected_tokens": 469266.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 50,
+        "expected_correct": 25.0,
+        "expected_tokens": 473362.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 51,
+        "expected_correct": 25.0,
+        "expected_tokens": 476644.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 52,
+        "expected_correct": 25.0,
+        "expected_tokens": 480297.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 53,
+        "expected_correct": 25.0,
+        "expected_tokens": 484232.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 54,
+        "expected_correct": 26.0,
+        "expected_tokens": 488073.0,
+        "expected_gains_captured": 6.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 55,
+        "expected_correct": 27.0,
+        "expected_tokens": 491343.0,
+        "expected_gains_captured": 7.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 56,
+        "expected_correct": 28.0,
+        "expected_tokens": 495322.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      },
+      {
+        "extensions": 57,
+        "expected_correct": 28.0,
+        "expected_tokens": 499900.0,
+        "expected_gains_captured": 8.0,
+        "partially_selected_tied_cases": 0
+      }
+    ]
+  },
+  "matched_cost_sensitivity": [
+    {
+      "reader_token_factor": 0,
+      "archival_ceiling": 413107.0,
+      "local_ceiling": 401126.0,
+      "bounded_at_archival_ceiling": {
+        "extensions": 34,
+        "expected_correct": 24.0,
+        "expected_tokens": 406851.0,
+        "expected_gains_captured": 4.0,
+        "partially_selected_tied_cases": 0
+      },
+      "bounded_at_local_ceiling": {
+        "extensions": 30,
+        "expected_correct": 23.0,
+        "expected_tokens": 396889.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      "local_at_archival_ceiling": {
+        "extensions": 26,
+        "expected_correct": 25.0,
+        "expected_tokens": 392985.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      }
+    },
+    {
+      "reader_token_factor": 0.25,
+      "archival_ceiling": 413107.0,
+      "local_ceiling": 406690.25,
+      "bounded_at_archival_ceiling": {
+        "extensions": 30,
+        "expected_correct": 23.0,
+        "expected_tokens": 396889.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      },
+      "bounded_at_local_ceiling": {
+        "extensions": 25,
+        "expected_correct": 22.0,
+        "expected_tokens": 384296.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      "local_at_archival_ceiling": {
+        "extensions": 26,
+        "expected_correct": 25.0,
+        "expected_tokens": 392985.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      }
+    },
+    {
+      "reader_token_factor": 0.5,
+      "archival_ceiling": 413107.0,
+      "local_ceiling": 412254.5,
+      "bounded_at_archival_ceiling": {
+        "extensions": 25,
+        "expected_correct": 22.0,
+        "expected_tokens": 384296.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      "bounded_at_local_ceiling": {
+        "extensions": 25,
+        "expected_correct": 22.0,
+        "expected_tokens": 384296.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      },
+      "local_at_archival_ceiling": {
+        "extensions": 26,
+        "expected_correct": 25.0,
+        "expected_tokens": 392985.0,
+        "expected_gains_captured": 5.0,
+        "partially_selected_tied_cases": 0
+      }
+    },
+    {
+      "reader_token_factor": 1,
+      "archival_ceiling": 413107.0,
+      "local_ceiling": 423383.0,
+      "bounded_at_archival_ceiling": {
+        "extensions": 2,
+        "expected_correct": 21.0,
+        "expected_tokens": 317507.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      "bounded_at_local_ceiling": {
+        "extensions": 2,
+        "expected_correct": 21.0,
+        "expected_tokens": 317507.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      "local_at_archival_ceiling": {
+        "extensions": 20,
+        "expected_correct": 23.0,
+        "expected_tokens": 376360.0,
+        "expected_gains_captured": 3.0,
+        "partially_selected_tied_cases": 0
+      }
+    },
+    {
+      "reader_token_factor": 2,
+      "archival_ceiling": 413107.0,
+      "local_ceiling": 445640.0,
+      "bounded_at_archival_ceiling": null,
+      "bounded_at_local_ceiling": {
+        "extensions": 2,
+        "expected_correct": 21.0,
+        "expected_tokens": 317507.0,
+        "expected_gains_captured": 1.0,
+        "partially_selected_tied_cases": 0
+      },
+      "local_at_archival_ceiling": {
+        "extensions": 13,
+        "expected_correct": 22.0,
+        "expected_tokens": 356342.0,
+        "expected_gains_captured": 2.0,
+        "partially_selected_tied_cases": 0
+      }
+    }
+  ],
+  "equal_accuracy": {
+    "Q": {
+      "extensions": 38,
+      "expected_correct": 28.0,
+      "expected_tokens": 449419.0,
+      "expected_gains_captured": 8.0,
+      "partially_selected_tied_cases": 0
+    },
+    "question": {
+      "extensions": 49,
+      "expected_correct": 28.0,
+      "expected_tokens": 476392.0,
+      "expected_gains_captured": 8.0,
+      "partially_selected_tied_cases": 0
+    },
+    "bounded": {
+      "extensions": 56,
+      "expected_correct": 28.0,
+      "expected_tokens": 495322.0,
+      "expected_gains_captured": 8.0,
+      "partially_selected_tied_cases": 0
+    }
+  },
+  "equal_accuracy_break_even_reader_token_factor": {
+    "Q": -0.9031934360427366,
+    "question": -0.6626759084226003
+  },
+  "discordant": [
+    {
+      "question": 10,
+      "gain": "q10-b1",
+      "other": "q10-b0",
+      "score_gap": -0.22618250211235136
+    },
+    {
+      "question": 13,
+      "gain": "q13-b0",
+      "other": "q13-b1",
+      "score_gap": 0.13417575741186738
+    },
+    {
+      "question": 14,
+      "gain": "q14-b1",
+      "other": "q14-b0",
+      "score_gap": -0.035051431914325804
+    },
+    {
+      "question": 29,
+      "gain": "q29-b0",
+      "other": "q29-b1",
+      "score_gap": -0.5708586909313453
+    }
+  ],
+  "failures": [
+    "Fewer than two additional correct answers at the archival cost ceiling.",
+    "No charged cost saving at fixed-long accuracy versus archival question-only.",
+    "Fewer than three strict gain-seed wins among four discordant questions."
+  ],
+  "decision": "stop"
+}

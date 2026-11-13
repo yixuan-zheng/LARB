@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "checks": [],
+  "failure": "AttributeError(\"module 'hashlib' has no attribute 'file_digest'\")"
+}

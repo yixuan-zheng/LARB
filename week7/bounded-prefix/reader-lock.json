@@ -1,0 +1,10 @@
+{
+  "reader": "mlx-community/Qwen3-4B-4bit",
+  "reader_revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "reader_weights_sha256": "e240c0bdc0ebb0681bf0da0f98d9719fd6ebe269a3633f81542c13e81345651d",
+  "generator_tokenizer": "Qwen/Qwen3-4B",
+  "generator_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2",
+  "transformers": "5.22.2"
+}

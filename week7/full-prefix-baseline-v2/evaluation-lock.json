@@ -1,0 +1,13 @@
+{
+  "week7/full-prefix-baseline-v2/PLAN.md": "6950f039eac34cdfda6a4b5240b1c62060863c99326c3aeb5f4738522534fb1a",
+  "week7/full-prefix-baseline-v2/score.py": "ffcf8a984b68b1bd28308bd0ce4dbe87d106f4a47fe13174a819bd55306160bc",
+  "week7/full-prefix-baseline-v2/mapping.json": "6dcf990d558b6b304ffee129d76884d9146e5d5de0d55b0efe94c55019df9ffa",
+  "week7/full-prefix-baseline-v2/packets.json": "a60c33e3d62af9d2239a1b40c415ad024e2e08510a2c20e1bfbf3d765900c9b4",
+  "week7/full-prefix-baseline-v2/smoke-packets.json": "af7b8fbae05b84873c917f4d1b98df6af95ce3928df087403d9b746354896f6b",
+  "week7/full-prefix-baseline-v2/PROMPT.txt": "371af91becd5a81c9d6739765691259f57b37069455f0895742c887bab64c5c8",
+  "week7/full-prefix-baseline-v2/reader-config.json": "beca6917eb892683245c77dddfc2064101c4c8ff4191df399d6642012874db42",
+  "week7/full-prefix-baseline-v2/run.sbatch": "871edb9541be0db396f62257e4b2f9f14a2fa29efe10f16f5553c4020c995a46",
+  "week7/full-prefix-baseline-v2/read_forecasts.py": "07eaafe49a3cf6d997bad902247086b8ea3c3696c8a4b0a9154380bff7c30130",
+  "week6/question-prefix-comparison/evaluate.py": "a7de205a7532387f9808fa09db4bb5c382dfc0a1d1ea296402fba7f4956f850e",
+  "week6/aime-budget-screen/common.py": "b6ca358e93e3f9b645e2915a9c8a7917b8a6a5b52ea296f981dd40b2a77d49db"
+}

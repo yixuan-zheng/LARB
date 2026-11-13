@@ -1,0 +1,12 @@
+[
+  {"case_id":"case-004","judgment":"unsupported_advance","notes":"Both quoted equations support the arithmetic, but the excerpt already derives P(0,2)=1/4 and has moved on to later states. Repeating that result does not advance the remaining recurrence."},
+  {"case_id":"case-079","judgment":"unsupported_advance","notes":"The perimeter formula supports 12 cells for a 4x4 loop. The second quote paraphrases the excerpt. Ruling out four identical loops in the 6x6 illustration does not advance the requested count of 10x10 partitions."},
+  {"case_id":"case-059","judgment":"unsupported_advance","notes":"The first quote is exact and the second is not. The subtraction repeats the existing provisional total and leaves the unresolved composite-count check untouched."},
+  {"case_id":"case-072","judgment":"unsupported_advance","notes":"The exact quote is a tentative count for a shorter example. Taking its square root does not advance the count for the ten-square grid."},
+  {"case_id":"case-044","judgment":"unsupported_advance","notes":"The first quote is exact. The response correctly identifies the unmet obligation to count other lengths, but performs no operation toward the next length or total."},
+  {"case_id":"case-012","judgment":"not_ready","notes":"The response proposes a sign change without establishing the vector orientation and gives no count of admissible values."},
+  {"case_id":"case-043","judgment":"not_ready","notes":"The response writes perimeter expressions and explicitly leaves a needed relation unresolved. It provides no minimum."},
+  {"case_id":"case-039","judgment":"not_ready","notes":"Different cousins can pair with the same elements of S. The proposed lower bound treats those elements as consumed across distinct cousins, which is unsupported."},
+  {"case_id":"case-065","judgment":"not_ready","notes":"The calculation finds the vertex tangency radius but does not establish whether off-vertex tangencies add other radii. The question asks for the sum of all radii."},
+  {"case_id":"case-055","judgment":"ready_supported","notes":"The excerpt establishes the positive common divisors of the term differences and excludes negative differences. All four positive divisors produce valid term indices, and summing their tenth terms gives 178."}
+]

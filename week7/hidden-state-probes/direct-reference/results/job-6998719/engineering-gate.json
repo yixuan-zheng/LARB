@@ -1,0 +1,284 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 0,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 4,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 8,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 16,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 32,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 64,
+      "relative_l2": 0.0,
+      "cosine": 0.9999998807907104
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 128,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 192,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 256,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 384,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 512,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 4096,
+      "relative_l2": 0.0,
+      "cosine": 0.9999998807907104
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 0,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 4,
+      "relative_l2": 0.0,
+      "cosine": 0.9999998807907104
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 8,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 16,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 32,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 64,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 128,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 192,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 256,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 384,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 512,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    },
+    {
+      "key": "week6:q10-b0",
+      "checkpoint": 4096,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 0,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 4,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 8,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 16,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 32,
+      "relative_l2": 0.0,
+      "cosine": 0.9999998807907104
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 64,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 128,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 192,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 256,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 384,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 512,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "key": "week6:q23-b1",
+      "checkpoint": 4096,
+      "relative_l2": 0.0,
+      "cosine": 0.9999999403953552
+    }
+  ],
+  "full_projected_seconds": 1266.712315261364,
+  "core_projected_seconds": 1201.9342483822256,
+  "available_seconds": 2400,
+  "replay_seconds": [
+    {
+      "0": 10.274285039049573,
+      "4": 0.03727986302692443,
+      "8": 0.023604425019584596,
+      "16": 0.02538727200590074,
+      "32": 0.029914123006165028,
+      "64": 0.024104115087538958,
+      "128": 0.2571788339409977,
+      "192": 0.07322387001477182,
+      "256": 0.02644475200213492,
+      "384": 0.036575922975316644,
+      "512": 0.04466242005582899,
+      "4096": 0.45727075007744133
+    },
+    {
+      "0": 0.02361438295338303,
+      "4": 0.023132233996875584,
+      "8": 0.2953790210885927,
+      "16": 0.0236307040322572,
+      "32": 0.023783485987223685,
+      "64": 0.023786743986420333,
+      "128": 0.025540046975947917,
+      "192": 0.026585896965116262,
+      "256": 0.026623057085089386,
+      "384": 0.033374828984960914,
+      "512": 0.039789733942598104,
+      "4096": 0.4644840790424496
+    },
+    {
+      "0": 0.03368073399178684,
+      "4": 0.03159762907307595,
+      "8": 0.031297890935093164,
+      "16": 0.03230267995968461,
+      "32": 0.03236791200470179,
+      "64": 0.03291191591415554,
+      "128": 0.03828022093512118,
+      "192": 0.038539714994840324,
+      "256": 0.03970003791619092,
+      "384": 0.044035369995981455,
+      "512": 0.05586065910756588,
+      "4096": 0.5329743269830942
+    }
+  ],
+  "peak_gib": 9.48046875,
+  "checkpoints": [
+    0,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    192,
+    256,
+    384,
+    512,
+    4096
+  ],
+  "scope": "full"
+}

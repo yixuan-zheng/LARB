@@ -1,0 +1,350 @@
+{
+  "case-001": {
+    "condition": "bounded",
+    "key": "q15-b0"
+  },
+  "case-002": {
+    "condition": "question",
+    "key": "6"
+  },
+  "case-003": {
+    "condition": "question",
+    "key": "29"
+  },
+  "case-004": {
+    "condition": "bounded",
+    "key": "q22-b1"
+  },
+  "case-005": {
+    "condition": "bounded",
+    "key": "q30-b1"
+  },
+  "case-006": {
+    "condition": "bounded",
+    "key": "q19-b0"
+  },
+  "case-007": {
+    "condition": "bounded",
+    "key": "q09-b1"
+  },
+  "case-008": {
+    "condition": "bounded",
+    "key": "q06-b1"
+  },
+  "case-009": {
+    "condition": "bounded",
+    "key": "q21-b0"
+  },
+  "case-010": {
+    "condition": "question",
+    "key": "5"
+  },
+  "case-011": {
+    "condition": "bounded",
+    "key": "q03-b0"
+  },
+  "case-012": {
+    "condition": "bounded",
+    "key": "q18-b0"
+  },
+  "case-013": {
+    "condition": "question",
+    "key": "15"
+  },
+  "case-014": {
+    "condition": "bounded",
+    "key": "q27-b1"
+  },
+  "case-015": {
+    "condition": "question",
+    "key": "3"
+  },
+  "case-016": {
+    "condition": "bounded",
+    "key": "q02-b0"
+  },
+  "case-017": {
+    "condition": "question",
+    "key": "27"
+  },
+  "case-018": {
+    "condition": "question",
+    "key": "22"
+  },
+  "case-019": {
+    "condition": "bounded",
+    "key": "q08-b0"
+  },
+  "case-020": {
+    "condition": "bounded",
+    "key": "q17-b0"
+  },
+  "case-021": {
+    "condition": "bounded",
+    "key": "q24-b0"
+  },
+  "case-022": {
+    "condition": "question",
+    "key": "14"
+  },
+  "case-023": {
+    "condition": "bounded",
+    "key": "q06-b0"
+  },
+  "case-024": {
+    "condition": "question",
+    "key": "21"
+  },
+  "case-025": {
+    "condition": "bounded",
+    "key": "q23-b1"
+  },
+  "case-026": {
+    "condition": "question",
+    "key": "23"
+  },
+  "case-027": {
+    "condition": "bounded",
+    "key": "q29-b1"
+  },
+  "case-028": {
+    "condition": "question",
+    "key": "4"
+  },
+  "case-029": {
+    "condition": "bounded",
+    "key": "q25-b1"
+  },
+  "case-030": {
+    "condition": "question",
+    "key": "13"
+  },
+  "case-031": {
+    "condition": "bounded",
+    "key": "q12-b0"
+  },
+  "case-032": {
+    "condition": "question",
+    "key": "28"
+  },
+  "case-033": {
+    "condition": "bounded",
+    "key": "q19-b1"
+  },
+  "case-034": {
+    "condition": "bounded",
+    "key": "q05-b0"
+  },
+  "case-035": {
+    "condition": "bounded",
+    "key": "q05-b1"
+  },
+  "case-036": {
+    "condition": "bounded",
+    "key": "q11-b1"
+  },
+  "case-037": {
+    "condition": "bounded",
+    "key": "q14-b0"
+  },
+  "case-038": {
+    "condition": "question",
+    "key": "24"
+  },
+  "case-039": {
+    "condition": "bounded",
+    "key": "q28-b1"
+  },
+  "case-040": {
+    "condition": "bounded",
+    "key": "q10-b0"
+  },
+  "case-041": {
+    "condition": "bounded",
+    "key": "q12-b1"
+  },
+  "case-042": {
+    "condition": "question",
+    "key": "10"
+  },
+  "case-043": {
+    "condition": "bounded",
+    "key": "q23-b0"
+  },
+  "case-044": {
+    "condition": "bounded",
+    "key": "q02-b1"
+  },
+  "case-045": {
+    "condition": "question",
+    "key": "2"
+  },
+  "case-046": {
+    "condition": "bounded",
+    "key": "q08-b1"
+  },
+  "case-047": {
+    "condition": "bounded",
+    "key": "q04-b0"
+  },
+  "case-048": {
+    "condition": "bounded",
+    "key": "q26-b0"
+  },
+  "case-049": {
+    "condition": "question",
+    "key": "7"
+  },
+  "case-050": {
+    "condition": "bounded",
+    "key": "q18-b1"
+  },
+  "case-051": {
+    "condition": "question",
+    "key": "8"
+  },
+  "case-052": {
+    "condition": "bounded",
+    "key": "q09-b0"
+  },
+  "case-053": {
+    "condition": "bounded",
+    "key": "q14-b1"
+  },
+  "case-054": {
+    "condition": "question",
+    "key": "16"
+  },
+  "case-055": {
+    "condition": "bounded",
+    "key": "q16-b0"
+  },
+  "case-056": {
+    "condition": "question",
+    "key": "18"
+  },
+  "case-057": {
+    "condition": "bounded",
+    "key": "q20-b1"
+  },
+  "case-058": {
+    "condition": "bounded",
+    "key": "q13-b1"
+  },
+  "case-059": {
+    "condition": "bounded",
+    "key": "q04-b1"
+  },
+  "case-060": {
+    "condition": "bounded",
+    "key": "q24-b1"
+  },
+  "case-061": {
+    "condition": "question",
+    "key": "20"
+  },
+  "case-062": {
+    "condition": "question",
+    "key": "26"
+  },
+  "case-063": {
+    "condition": "bounded",
+    "key": "q10-b1"
+  },
+  "case-064": {
+    "condition": "question",
+    "key": "30"
+  },
+  "case-065": {
+    "condition": "bounded",
+    "key": "q21-b1"
+  },
+  "case-066": {
+    "condition": "question",
+    "key": "12"
+  },
+  "case-067": {
+    "condition": "bounded",
+    "key": "q13-b0"
+  },
+  "case-068": {
+    "condition": "bounded",
+    "key": "q16-b1"
+  },
+  "case-069": {
+    "condition": "question",
+    "key": "17"
+  },
+  "case-070": {
+    "condition": "bounded",
+    "key": "q20-b0"
+  },
+  "case-071": {
+    "condition": "question",
+    "key": "11"
+  },
+  "case-072": {
+    "condition": "bounded",
+    "key": "q17-b1"
+  },
+  "case-073": {
+    "condition": "question",
+    "key": "9"
+  },
+  "case-074": {
+    "condition": "bounded",
+    "key": "q07-b1"
+  },
+  "case-075": {
+    "condition": "bounded",
+    "key": "q30-b0"
+  },
+  "case-076": {
+    "condition": "bounded",
+    "key": "q22-b0"
+  },
+  "case-077": {
+    "condition": "question",
+    "key": "19"
+  },
+  "case-078": {
+    "condition": "bounded",
+    "key": "q29-b0"
+  },
+  "case-079": {
+    "condition": "bounded",
+    "key": "q15-b1"
+  },
+  "case-080": {
+    "condition": "bounded",
+    "key": "q26-b1"
+  },
+  "case-081": {
+    "condition": "bounded",
+    "key": "q28-b0"
+  },
+  "case-082": {
+    "condition": "question",
+    "key": "25"
+  },
+  "case-083": {
+    "condition": "bounded",
+    "key": "q07-b0"
+  },
+  "case-084": {
+    "condition": "bounded",
+    "key": "q11-b0"
+  },
+  "case-085": {
+    "condition": "bounded",
+    "key": "q03-b1"
+  },
+  "case-086": {
+    "condition": "bounded",
+    "key": "q27-b0"
+  },
+  "case-087": {
+    "condition": "bounded",
+    "key": "q25-b0"
+  }
+}

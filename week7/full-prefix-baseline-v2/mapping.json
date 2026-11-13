@@ -1,0 +1,872 @@
+{
+  "case-001": [
+    "week7",
+    "question",
+    10
+  ],
+  "case-002": [
+    "week7",
+    "prefix",
+    "q07-b1"
+  ],
+  "case-003": [
+    "week6",
+    "prefix",
+    "q21-b0"
+  ],
+  "case-004": [
+    "week7",
+    "prefix",
+    "q17-b1"
+  ],
+  "case-005": [
+    "week6",
+    "prefix",
+    "q12-b1"
+  ],
+  "case-006": [
+    "week6",
+    "prefix",
+    "q07-b1"
+  ],
+  "case-007": [
+    "week7",
+    "prefix",
+    "q14-b0"
+  ],
+  "case-008": [
+    "week6",
+    "prefix",
+    "q30-b0"
+  ],
+  "case-009": [
+    "week6",
+    "prefix",
+    "q10-b0"
+  ],
+  "case-010": [
+    "week7",
+    "prefix",
+    "q13-b1"
+  ],
+  "case-011": [
+    "week6",
+    "prefix",
+    "q24-b1"
+  ],
+  "case-012": [
+    "week7",
+    "prefix",
+    "q24-b0"
+  ],
+  "case-013": [
+    "week7",
+    "question",
+    6
+  ],
+  "case-014": [
+    "week6",
+    "prefix",
+    "q17-b1"
+  ],
+  "case-015": [
+    "week7",
+    "prefix",
+    "q20-b0"
+  ],
+  "case-016": [
+    "week6",
+    "question",
+    14
+  ],
+  "case-017": [
+    "week6",
+    "prefix",
+    "q29-b0"
+  ],
+  "case-018": [
+    "week6",
+    "question",
+    2
+  ],
+  "case-019": [
+    "week7",
+    "prefix",
+    "q02-b0"
+  ],
+  "case-020": [
+    "week7",
+    "question",
+    25
+  ],
+  "case-021": [
+    "week7",
+    "prefix",
+    "q17-b0"
+  ],
+  "case-022": [
+    "week7",
+    "prefix",
+    "q06-b0"
+  ],
+  "case-023": [
+    "week7",
+    "prefix",
+    "q13-b0"
+  ],
+  "case-024": [
+    "week6",
+    "question",
+    8
+  ],
+  "case-025": [
+    "week6",
+    "prefix",
+    "q03-b1"
+  ],
+  "case-026": [
+    "week6",
+    "prefix",
+    "q22-b0"
+  ],
+  "case-027": [
+    "week6",
+    "prefix",
+    "q15-b1"
+  ],
+  "case-028": [
+    "week7",
+    "prefix",
+    "q16-b1"
+  ],
+  "case-029": [
+    "week7",
+    "question",
+    11
+  ],
+  "case-030": [
+    "week7",
+    "prefix",
+    "q07-b0"
+  ],
+  "case-031": [
+    "week6",
+    "question",
+    13
+  ],
+  "case-032": [
+    "week6",
+    "prefix",
+    "q09-b1"
+  ],
+  "case-033": [
+    "week7",
+    "question",
+    15
+  ],
+  "case-034": [
+    "week6",
+    "prefix",
+    "q15-b0"
+  ],
+  "case-035": [
+    "week6",
+    "question",
+    24
+  ],
+  "case-036": [
+    "week6",
+    "prefix",
+    "q13-b0"
+  ],
+  "case-037": [
+    "week6",
+    "prefix",
+    "q05-b1"
+  ],
+  "case-038": [
+    "week6",
+    "question",
+    19
+  ],
+  "case-039": [
+    "week7",
+    "prefix",
+    "q12-b0"
+  ],
+  "case-040": [
+    "week6",
+    "prefix",
+    "q06-b1"
+  ],
+  "case-041": [
+    "week6",
+    "question",
+    27
+  ],
+  "case-042": [
+    "week7",
+    "prefix",
+    "q15-b0"
+  ],
+  "case-043": [
+    "week7",
+    "prefix",
+    "q18-b0"
+  ],
+  "case-044": [
+    "week7",
+    "question",
+    14
+  ],
+  "case-045": [
+    "week6",
+    "prefix",
+    "q26-b1"
+  ],
+  "case-046": [
+    "week6",
+    "prefix",
+    "q09-b0"
+  ],
+  "case-047": [
+    "week7",
+    "prefix",
+    "q16-b0"
+  ],
+  "case-048": [
+    "week6",
+    "question",
+    6
+  ],
+  "case-049": [
+    "week6",
+    "prefix",
+    "q06-b0"
+  ],
+  "case-050": [
+    "week6",
+    "prefix",
+    "q08-b0"
+  ],
+  "case-051": [
+    "week6",
+    "prefix",
+    "q20-b1"
+  ],
+  "case-052": [
+    "week6",
+    "prefix",
+    "q27-b1"
+  ],
+  "case-053": [
+    "week6",
+    "prefix",
+    "q08-b1"
+  ],
+  "case-054": [
+    "week6",
+    "prefix",
+    "q24-b0"
+  ],
+  "case-055": [
+    "week7",
+    "prefix",
+    "q25-b0"
+  ],
+  "case-056": [
+    "week6",
+    "prefix",
+    "q18-b1"
+  ],
+  "case-057": [
+    "week7",
+    "prefix",
+    "q11-b0"
+  ],
+  "case-058": [
+    "week7",
+    "prefix",
+    "q18-b1"
+  ],
+  "case-059": [
+    "week7",
+    "question",
+    4
+  ],
+  "case-060": [
+    "week7",
+    "prefix",
+    "q24-b1"
+  ],
+  "case-061": [
+    "week6",
+    "question",
+    4
+  ],
+  "case-062": [
+    "week7",
+    "prefix",
+    "q09-b0"
+  ],
+  "case-063": [
+    "week6",
+    "prefix",
+    "q13-b1"
+  ],
+  "case-064": [
+    "week7",
+    "prefix",
+    "q12-b1"
+  ],
+  "case-065": [
+    "week6",
+    "prefix",
+    "q21-b1"
+  ],
+  "case-066": [
+    "week7",
+    "question",
+    3
+  ],
+  "case-067": [
+    "week7",
+    "question",
+    28
+  ],
+  "case-068": [
+    "week6",
+    "question",
+    29
+  ],
+  "case-069": [
+    "week6",
+    "prefix",
+    "q19-b0"
+  ],
+  "case-070": [
+    "week6",
+    "prefix",
+    "q01-b1"
+  ],
+  "case-071": [
+    "week7",
+    "question",
+    23
+  ],
+  "case-072": [
+    "week6",
+    "question",
+    22
+  ],
+  "case-073": [
+    "week7",
+    "prefix",
+    "q04-b0"
+  ],
+  "case-074": [
+    "week7",
+    "prefix",
+    "q03-b1"
+  ],
+  "case-075": [
+    "week7",
+    "prefix",
+    "q29-b0"
+  ],
+  "case-076": [
+    "week7",
+    "prefix",
+    "q02-b1"
+  ],
+  "case-077": [
+    "week7",
+    "prefix",
+    "q22-b0"
+  ],
+  "case-078": [
+    "week7",
+    "question",
+    16
+  ],
+  "case-079": [
+    "week6",
+    "question",
+    20
+  ],
+  "case-080": [
+    "week6",
+    "question",
+    15
+  ],
+  "case-081": [
+    "week6",
+    "question",
+    12
+  ],
+  "case-082": [
+    "week7",
+    "question",
+    17
+  ],
+  "case-083": [
+    "week7",
+    "question",
+    22
+  ],
+  "case-084": [
+    "week7",
+    "prefix",
+    "q04-b1"
+  ],
+  "case-085": [
+    "week6",
+    "prefix",
+    "q11-b0"
+  ],
+  "case-086": [
+    "week6",
+    "question",
+    1
+  ],
+  "case-087": [
+    "week7",
+    "prefix",
+    "q21-b1"
+  ],
+  "case-088": [
+    "week7",
+    "prefix",
+    "q05-b0"
+  ],
+  "case-089": [
+    "week6",
+    "question",
+    23
+  ],
+  "case-090": [
+    "week6",
+    "prefix",
+    "q28-b1"
+  ],
+  "case-091": [
+    "week7",
+    "question",
+    21
+  ],
+  "case-092": [
+    "week6",
+    "prefix",
+    "q02-b0"
+  ],
+  "case-093": [
+    "week6",
+    "prefix",
+    "q05-b0"
+  ],
+  "case-094": [
+    "week6",
+    "question",
+    30
+  ],
+  "case-095": [
+    "week6",
+    "prefix",
+    "q14-b1"
+  ],
+  "case-096": [
+    "week6",
+    "prefix",
+    "q20-b0"
+  ],
+  "case-097": [
+    "week6",
+    "question",
+    25
+  ],
+  "case-098": [
+    "week7",
+    "question",
+    12
+  ],
+  "case-099": [
+    "week7",
+    "prefix",
+    "q11-b1"
+  ],
+  "case-100": [
+    "week7",
+    "prefix",
+    "q08-b1"
+  ],
+  "case-101": [
+    "week6",
+    "question",
+    18
+  ],
+  "case-102": [
+    "week6",
+    "prefix",
+    "q17-b0"
+  ],
+  "case-103": [
+    "week6",
+    "prefix",
+    "q25-b0"
+  ],
+  "case-104": [
+    "week6",
+    "question",
+    5
+  ],
+  "case-105": [
+    "week7",
+    "question",
+    24
+  ],
+  "case-106": [
+    "week6",
+    "prefix",
+    "q28-b0"
+  ],
+  "case-107": [
+    "week6",
+    "prefix",
+    "q23-b1"
+  ],
+  "case-108": [
+    "week7",
+    "question",
+    2
+  ],
+  "case-109": [
+    "week6",
+    "prefix",
+    "q16-b1"
+  ],
+  "case-110": [
+    "week6",
+    "prefix",
+    "q03-b0"
+  ],
+  "case-111": [
+    "week6",
+    "prefix",
+    "q26-b0"
+  ],
+  "case-112": [
+    "week7",
+    "question",
+    27
+  ],
+  "case-113": [
+    "week7",
+    "prefix",
+    "q21-b0"
+  ],
+  "case-114": [
+    "week7",
+    "question",
+    8
+  ],
+  "case-115": [
+    "week7",
+    "prefix",
+    "q27-b1"
+  ],
+  "case-116": [
+    "week6",
+    "prefix",
+    "q11-b1"
+  ],
+  "case-117": [
+    "week7",
+    "prefix",
+    "q19-b1"
+  ],
+  "case-118": [
+    "week7",
+    "prefix",
+    "q23-b1"
+  ],
+  "case-119": [
+    "week7",
+    "question",
+    30
+  ],
+  "case-120": [
+    "week6",
+    "prefix",
+    "q12-b0"
+  ],
+  "case-121": [
+    "week7",
+    "prefix",
+    "q25-b1"
+  ],
+  "case-122": [
+    "week7",
+    "prefix",
+    "q23-b0"
+  ],
+  "case-123": [
+    "week7",
+    "prefix",
+    "q30-b0"
+  ],
+  "case-124": [
+    "week7",
+    "question",
+    19
+  ],
+  "case-125": [
+    "week6",
+    "prefix",
+    "q25-b1"
+  ],
+  "case-126": [
+    "week6",
+    "question",
+    17
+  ],
+  "case-127": [
+    "week7",
+    "prefix",
+    "q26-b0"
+  ],
+  "case-128": [
+    "week7",
+    "question",
+    13
+  ],
+  "case-129": [
+    "week7",
+    "question",
+    9
+  ],
+  "case-130": [
+    "week7",
+    "prefix",
+    "q05-b1"
+  ],
+  "case-131": [
+    "week7",
+    "prefix",
+    "q10-b0"
+  ],
+  "case-132": [
+    "week6",
+    "prefix",
+    "q29-b1"
+  ],
+  "case-133": [
+    "week7",
+    "prefix",
+    "q03-b0"
+  ],
+  "case-134": [
+    "week7",
+    "question",
+    29
+  ],
+  "case-135": [
+    "week7",
+    "question",
+    20
+  ],
+  "case-136": [
+    "week7",
+    "question",
+    26
+  ],
+  "case-137": [
+    "week6",
+    "prefix",
+    "q30-b1"
+  ],
+  "case-138": [
+    "week7",
+    "prefix",
+    "q10-b1"
+  ],
+  "case-139": [
+    "week6",
+    "question",
+    7
+  ],
+  "case-140": [
+    "week6",
+    "prefix",
+    "q10-b1"
+  ],
+  "case-141": [
+    "week6",
+    "question",
+    26
+  ],
+  "case-142": [
+    "week7",
+    "prefix",
+    "q26-b1"
+  ],
+  "case-143": [
+    "week6",
+    "question",
+    21
+  ],
+  "case-144": [
+    "week7",
+    "prefix",
+    "q20-b1"
+  ],
+  "case-145": [
+    "week7",
+    "prefix",
+    "q06-b1"
+  ],
+  "case-146": [
+    "week7",
+    "prefix",
+    "q27-b0"
+  ],
+  "case-147": [
+    "week7",
+    "prefix",
+    "q08-b0"
+  ],
+  "case-148": [
+    "week6",
+    "question",
+    3
+  ],
+  "case-149": [
+    "week6",
+    "question",
+    28
+  ],
+  "case-150": [
+    "week6",
+    "question",
+    11
+  ],
+  "case-151": [
+    "week6",
+    "prefix",
+    "q04-b1"
+  ],
+  "case-152": [
+    "week6",
+    "prefix",
+    "q14-b0"
+  ],
+  "case-153": [
+    "week7",
+    "question",
+    5
+  ],
+  "case-154": [
+    "week7",
+    "question",
+    18
+  ],
+  "case-155": [
+    "week6",
+    "question",
+    9
+  ],
+  "case-156": [
+    "week7",
+    "prefix",
+    "q19-b0"
+  ],
+  "case-157": [
+    "week7",
+    "prefix",
+    "q30-b1"
+  ],
+  "case-158": [
+    "week7",
+    "prefix",
+    "q29-b1"
+  ],
+  "case-159": [
+    "week7",
+    "prefix",
+    "q09-b1"
+  ],
+  "case-160": [
+    "week6",
+    "prefix",
+    "q19-b1"
+  ],
+  "case-161": [
+    "week7",
+    "prefix",
+    "q28-b1"
+  ],
+  "case-162": [
+    "week7",
+    "prefix",
+    "q15-b1"
+  ],
+  "case-163": [
+    "week7",
+    "question",
+    7
+  ],
+  "case-164": [
+    "week6",
+    "prefix",
+    "q23-b0"
+  ],
+  "case-165": [
+    "week6",
+    "prefix",
+    "q02-b1"
+  ],
+  "case-166": [
+    "week7",
+    "prefix",
+    "q22-b1"
+  ],
+  "case-167": [
+    "week7",
+    "prefix",
+    "q28-b0"
+  ],
+  "case-168": [
+    "week6",
+    "prefix",
+    "q18-b0"
+  ],
+  "case-169": [
+    "week6",
+    "prefix",
+    "q22-b1"
+  ],
+  "case-170": [
+    "week6",
+    "prefix",
+    "q27-b0"
+  ],
+  "case-171": [
+    "week6",
+    "prefix",
+    "q16-b0"
+  ],
+  "case-172": [
+    "week7",
+    "prefix",
+    "q14-b1"
+  ],
+  "case-173": [
+    "week6",
+    "question",
+    10
+  ],
+  "case-174": [
+    "week6",
+    "question",
+    16
+  ]
+}

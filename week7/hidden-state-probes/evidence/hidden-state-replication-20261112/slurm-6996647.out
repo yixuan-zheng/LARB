@@ -1,0 +1,31 @@
+---------------------------------------
+Begin Slurm Prolog: Nov-12-2026 19:23:57
+Job ID:    6996647
+User ID:   yzheng609
+Account:   coc
+Job name:  larb-hidden-state
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Traceback (most recent call last):
+  File "/storage/ice1/4/2/yzheng609/LARB-aime-screen/hidden-state-replication-20261112/extract.py", line 152, in <module>
+    run(args.model,args.out)
+  File "/storage/ice1/4/2/yzheng609/LARB-aime-screen/hidden-state-replication-20261112/extract.py", line 74, in run
+    assert digest(HERE/name) == expected, name
+  File "/storage/ice1/4/2/yzheng609/LARB-aime-screen/hidden-state-replication-20261112/extract.py", line 23, in digest
+    return hashlib.file_digest(stream, 'sha256').hexdigest()
+AttributeError: module 'hashlib' has no attribute 'file_digest'
+srun: error: atl1-1-03-004-27-0: task 0: Exited with exit code 1
+srun: Terminating StepId=6996647.0
+---------------------------------------
+Begin Slurm Epilog: Nov-12-2026 19:26:46
+Job ID:        6996647
+User ID:       yzheng609
+Account:       coc
+Job name:      larb-hidden-state
+Resources:     cpu=8,gres/gpu:l40s=1,mem=48G,node=1
+Rsrc Used:     cput=00:22:40,vmem=0,walltime=00:02:50,mem=8284K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-27-0
+---------------------------------------

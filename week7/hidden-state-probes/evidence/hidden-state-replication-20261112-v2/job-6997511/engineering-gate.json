@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "key": "week7:q04-b0",
+      "checkpoint": 0,
+      "cosine": 0.9997971653938293,
+      "relative_l2": 0.02015073224902153
+    }
+  ],
+  "failure": "AssertionError()"
+}
