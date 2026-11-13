@@ -1,19 +1,56 @@
+# Local run outputs
 preflight/run-output/
+tmp/
+
+# Python and tooling caches
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and caches
 .venv/
 venv/
 pip-cache/
 hf-cache/
+.cache/
+wandb/
+mlruns/
+
+# Model weights and large binary artifacts
 *.safetensors
 *.pt
 *.pth
 *.bin
+*.gguf
+*.onnx
+*.ckpt
+
+# Secrets and local token files. Deliberately narrower than "*token*": dataset
+# token-count artifacts and tokenizer configs are legitimate data, not secrets.
+.hf_token
+hf_token
+*.token
+*token.txt
+*tokens.txt
+*access_token*
+*access-token*
 .env
 .env.*
-*token*
 !preflight/code/access_status.json
 
 # Week 1 latency profile local run artifacts
 week1/latency-baselines/run-output/
-tmp/
+
+# Week 7 scaled-serving outputs accidentally written from the repo root.
+# Canonical run outputs live under week7/scaled-serving/results/.
+/results/
+
+# Large raw scheduler dumps and Slurm capture files are never committed.
+**/scheduler.jsonl
+**/scheduler.jsonl.gz
+slurm-*.out
+

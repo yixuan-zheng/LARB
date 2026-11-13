@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-11-13T18:25:51.999506+00:00",
+  "provisional": true,
+  "protocol_sha256": "67c9dedf1577be7c5f7b539deb9efdca0189b3bd1425919b0fa1b81c1929f510",
+  "cohort_sha256": "56ce0868334a8b3b2e03ebbec418cc2f0797f9e4a439cae898aed41bd5cc5a7b",
+  "traces": {
+    "low": {
+      "file": "artifacts/traces/low.jsonl",
+      "sha256": "7176ed5ca5d45b58c53fe3f34009d614d41ee7ba6f09dfc1fc806c3750e3df5b",
+      "summary": {
+        "requests": 172,
+        "signal": 120,
+        "filler": 52,
+        "signal_questions": 60,
+        "seeds_per_question": 2.0,
+        "first_arrival_s": 7.807716,
+        "last_arrival_s": 2061.965703,
+        "median_arrival_s": 960.509887,
+        "p90_arrival_s": 1760.802147,
+        "span_s": 2054.157987
+      },
+      "provisional": true,
+      "note": "Provisional P0 arrival rate; replace after P1 Gate F calibration."
+    },
+    "sustained": {
+      "file": "artifacts/traces/sustained.jsonl",
+      "sha256": "c088ae6298d9531183c23400ffe7efe557ff3b53c34f86875796c4ae1b5aed9d",
+      "summary": {
+        "requests": 1229,
+        "signal": 860,
+        "filler": 369,
+        "signal_questions": 215,
+        "seeds_per_question": 4.0,
+        "first_arrival_s": 3.711828,
+        "last_arrival_s": 5177.316662,
+        "median_arrival_s": 2431.16423,
+        "p90_arrival_s": 4522.457143,
+        "span_s": 5173.604834
+      },
+      "provisional": true,
+      "note": "Provisional P0 arrival rate; replace after P1 Gate F calibration."
+    },
+    "burst": {
+      "file": "artifacts/traces/burst.jsonl",
+      "sha256": "2c752e62c45d79ec35ac66c1492118d4d320fc772fd9701390378c715e63fa8b",
+      "summary": {
+        "requests": 1229,
+        "signal": 860,
+        "filler": 369,
+        "signal_questions": 215,
+        "seeds_per_question": 4.0,
+        "first_arrival_s": 0.420612,
+        "last_arrival_s": 6043.922235,
+        "median_arrival_s": 2808.524386,
+        "p90_arrival_s": 5311.808295,
+        "span_s": 6043.501623
+      },
+      "provisional": true,
+      "note": "Provisional P0 arrival rate; replace after P1 Gate F calibration."
+    },
+    "gate-bridge": {
+      "file": "artifacts/traces/gate-bridge.jsonl",
+      "sha256": "aa6a12be1cc2e73d2b91c86848707285342f1be5a1be5a66615268c67b2ab820",
+      "summary": {
+        "requests": 60,
+        "signal": 60,
+        "filler": 0,
+        "signal_questions": 30,
+        "seeds_per_question": 2.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 472.0,
+        "median_arrival_s": 232.0,
+        "p90_arrival_s": 424.0,
+        "span_s": 472.0
+      },
+      "provisional": false,
+      "note": "P1 gate trace; deadline is loose because these gates score quality, not SLO attainment."
+    },
+    "gate-screen": {
+      "file": "artifacts/traces/gate-screen.jsonl",
+      "sha256": "0f828ddebe505aaf455b43203fcdeb714a11f82892b82375eb09a91abb57446b",
+      "summary": {
+        "requests": 48,
+        "signal": 48,
+        "filler": 0,
+        "signal_questions": 48,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 376.0,
+        "median_arrival_s": 184.0,
+        "p90_arrival_s": 336.0,
+        "span_s": 376.0
+      },
+      "provisional": false,
+      "note": "P1 gate trace; deadline is loose because these gates score quality, not SLO attainment."
+    },
+    "gate-preview": {
+      "file": "artifacts/traces/gate-preview.jsonl",
+      "sha256": "bccc58099b29b3cb1ba51a1ef56fc099e48a56bde0e86829756fe601a40ad416",
+      "summary": {
+        "requests": 24,
+        "signal": 24,
+        "filler": 0,
+        "signal_questions": 24,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 184.0,
+        "median_arrival_s": 88.0,
+        "p90_arrival_s": 160.0,
+        "span_s": 184.0
+      },
+      "provisional": false,
+      "note": "P1 gate trace; deadline is loose because these gates score quality, not SLO attainment."
+    },
+    "gate-contract": {
+      "file": "artifacts/traces/gate-contract.jsonl",
+      "sha256": "d6f6b87619b45946db7d7aef02bc05d08083f159fc11987f6f823c4ecd90b2e5",
+      "summary": {
+        "requests": 96,
+        "signal": 96,
+        "filler": 0,
+        "signal_questions": 48,
+        "seeds_per_question": 2.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 760.0,
+        "median_arrival_s": 376.0,
+        "p90_arrival_s": 680.0,
+        "span_s": 760.0
+      },
+      "provisional": false,
+      "note": "P1 gate trace; deadline is loose because these gates score quality, not SLO attainment."
+    },
+    "gate-mechanics": {
+      "file": "artifacts/traces/gate-mechanics.jsonl",
+      "sha256": "134f9177b4ecc0fecbabcfa2f8bb87fbe826826d4bddfbc436f37c79e8638a2a",
+      "summary": {
+        "requests": 32,
+        "signal": 32,
+        "filler": 0,
+        "signal_questions": 32,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 15.5,
+        "median_arrival_s": 7.5,
+        "p90_arrival_s": 13.5,
+        "span_s": 15.5
+      },
+      "provisional": false,
+      "note": "P1 gate trace; deadline is loose because these gates score quality, not SLO attainment."
+    }
+  }
+}

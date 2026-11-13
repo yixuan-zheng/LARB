@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated outputs, logs and local datasets stay untracked inside
+# week7/scaled-serving. Working copies remain on disk.
+results/
+logs/
+data/
+
+# The rules below govern the separate runs/ directory if it is ever used.
+runs/*
+!runs/*/
+runs/**/*
+!runs/**/
+!runs/**/manifest.json
+!runs/**/phase.json
+!runs/**/analysis.json
+runs/**/requests.jsonl
+runs/**/scheduler/**
+runs/**/tokens/**
+runs/**/*.jsonl.gz
+
+# Slurm capture files written from the submission directory.
+slurm-*.out

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "license_note": "Record the license from the Hugging Face dataset card for every pool. MathArena pools used by this project are treated as research/non-commercial; do not redistribute raw question text outside those terms.",
+  "main": [
+    {"id": "MathArena/aime_2026", "slug": "aime2026", "expected_rows": 30, "exposure": "fresh", "answer_type": "integer"},
+    {"id": "MathArena/hmmt_feb_2025", "slug": "hmmt-feb2025", "expected_rows": 30, "exposure": "recent", "answer_type": "expression"},
+    {"id": "MathArena/hmmt_nov_2025", "slug": "hmmt-nov2025", "expected_rows": 30, "exposure": "fresh", "answer_type": "expression"},
+    {"id": "MathArena/hmmt_feb_2026", "slug": "hmmt-feb2026", "expected_rows": 33, "exposure": "fresh", "answer_type": "expression"},
+    {"id": "MathArena/smt_2025", "slug": "smt2025", "expected_rows": 53, "exposure": "recent", "answer_type": "expression"},
+    {"id": "MathArena/brumo_2025", "slug": "brumo2025", "expected_rows": 30, "exposure": "recent", "answer_type": "expression"},
+    {"id": "MathArena/cmimc_2025", "slug": "cmimc2025", "expected_rows": 40, "exposure": "recent", "answer_type": "expression"}
+  ],
+  "bridge": [
+    {"id": "MathArena/aime_2025", "slug": "aime2025", "expected_rows": 30, "exposure": "exposed", "answer_type": "integer"}
+  ],
+  "screen": [
+    {"id": "MathArena/aime_2023_I", "slug": "aime2023-I", "expected_rows": 15, "exposure": "exposed", "answer_type": "integer"},
+    {"id": "MathArena/aime_2023_II", "slug": "aime2023-II", "expected_rows": 15, "exposure": "exposed", "answer_type": "integer"},
+    {"id": "MathArena/hmmt_feb_2024", "slug": "hmmt-feb2024", "expected_rows": 30, "exposure": "exposed", "answer_type": "expression"}
+  ],
+  "filler": [
+    {"id": "HuggingFaceH4/MATH-500", "slug": "math500", "expected_rows": 500, "exposure": "exposed", "answer_type": "expression", "filter": {"level_max": 2, "row_index_min": 100}}
+  ],
+  "roles": {
+    "main": "Scored 2025-2026 cohort; the 24-item preview is excluded before the main run.",
+    "bridge": "AIME 2025 rig-validity bridge; not in the main cohort.",
+    "screen": "Disjoint 2023-2024 slope/contract screening set.",
+    "filler": "Unscored short traffic; fixed 1024-token budget; never in an accuracy denominator."
+  }
+}
