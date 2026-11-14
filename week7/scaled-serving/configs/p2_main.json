@@ -2,12 +2,36 @@
   "schema_version": 1,
   "outer_hours": 16,
   "inner_hours": 15,
-  "arms": ["fixed4k", "fixed8k", "arrival", "live"],
-  "conditions": ["low", "sustained", "burst"],
+  "arms": [
+    "fixed4k",
+    "fixed8k",
+    "arrival",
+    "live"
+  ],
+  "conditions": [
+    "low",
+    "sustained",
+    "burst"
+  ],
   "orders": {
-    "low": ["fixed4k", "fixed8k", "arrival", "live"],
-    "sustained": ["fixed4k", "fixed8k", "arrival", "live"],
-    "burst": ["live", "arrival", "fixed8k", "fixed4k"]
+    "low": [
+      "fixed4k",
+      "fixed8k",
+      "arrival",
+      "live"
+    ],
+    "sustained": [
+      "fixed4k",
+      "fixed8k",
+      "arrival",
+      "live"
+    ],
+    "burst": [
+      "live",
+      "arrival",
+      "fixed8k",
+      "fixed4k"
+    ]
   },
   "signal_questions": 215,
   "seeds": 4,
@@ -17,9 +41,17 @@
     "2_seeds_min_tokens_per_second": 1000,
     "below_1000": "split into two jobs"
   },
-  "filler_share": 0.30,
+  "filler_share": 0.3,
   "deadline_seconds": 180,
   "drain_allowance_seconds": 300,
   "phases_as_ordered": true,
-  "notes": "The P0 traces are provisional. P1 Gate F replaces the arrival rates with calibrated values and freezes the main trace before P2."
+  "notes": "P2 withheld by Gate E: the main-cohort slope preview failed, so the pool must change before a main run. The rig decisions below are still frozen.",
+  "max_num_seqs": 32,
+  "answer_contract": "legacy",
+  "enforce_eager": true,
+  "arrival_rate_per_hour": null,
+  "pressure_threshold": 8,
+  "pressure_persistence_steps": 2,
+  "source_lock": "artifacts/source-lock-p1.json",
+  "p2_status": "withheld"
 }

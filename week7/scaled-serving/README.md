@@ -3,10 +3,11 @@
 **Start here:** [PLAN.md](PLAN.md) is the execution plan. This README orients you and indexes the
 background binder in [binder/](binder/); the plan's detailed chapters live in [plan/](plan/).
 
-> **P0 implementation is live:** `code/` (package, tools, tests, sbatch drafts), `configs/`
-> (frozen protocol/dataset/gate configs), `data/` (raw and normalized datasets), `artifacts/`
-> (cohort, traces, freeze), `logs/` and `results/` (isolated run outputs), and
-> [reports/P0-REPORT.md](reports/P0-REPORT.md) for the consolidated P0 status.
+> **P0 complete; P1 GPU gates complete.** The rig, datasets and CPU code live in `code/`,
+> `configs/`, `data/` and `artifacts/`. The P1 gate job is written up in
+> [reports/P1-REPORT.md](reports/P1-REPORT.md): the rig passes (bridge, 32-row mechanics, contract,
+> throughput), but the 2025-2026 main pool fails the slope preview, so **P2 is withheld pending a
+> pool change**. P0 status: [reports/P0-REPORT.md](reports/P0-REPORT.md).
 
 **The [binder](binder/) is not itself a plan.** It is the information set the plan was written from:
 what our experiments actually are, what they have shown, what the nearest published work does, which
@@ -30,7 +31,7 @@ November 2026.
 | [configs/](configs/) | Frozen protocol, dataset, gate and main-run configurations. |
 | [data/](data/) | Raw and normalized dataset snapshots with manifests. |
 | [artifacts/](artifacts/) | Frozen cohort, traces and hash manifest. |
-| [reports/](reports/P0-REPORT.md) | Consolidated P0 status report. |
+| [reports/](reports/) | Consolidated P0 status and the P1 GPU gate report. |
 | [logs/](logs/), [results/](results/) | Isolated local outputs; logs and large run records are gitignored. |
 | [experiment-matrix.csv](experiment-matrix.csv) | Arm-by-condition matrix for P1-P4. |
 | [feasibility.py](feasibility.py) | CPU-only reproduction of the arithmetic in [plan/12-feasibility-notes.md](plan/12-feasibility-notes.md). |

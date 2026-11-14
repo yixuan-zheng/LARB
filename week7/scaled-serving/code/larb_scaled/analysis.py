@@ -51,7 +51,12 @@ def audit_completion(raw, cue_start=None):
     else:
         thinking = close
     answer_tokens = len(token_ids) - close - 1
-    capped = answer_tokens > answer_cap
+    # The controller forces EOS when the answer allowance is reached, so a cap
+    # lands at exactly answer_cap tokens. `short_answer_closed` means the short
+    # contract's closing brace+EOS were forced on an answer that finished
+    # inside the allowance: that is a successful short answer, not a cap.
+    flag = raw.get("capped")
+    capped = (flag is True or flag == "answer_cap") or answer_tokens >= answer_cap
     return dict(normal=not capped, reason="answer_cap" if capped else "normal",
                 complete=True, thinking_tokens=thinking, answer_tokens=answer_tokens,
                 close_index=close, forced=forced)

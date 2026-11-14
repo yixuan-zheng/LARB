@@ -20,6 +20,7 @@ class PressureBus:
         self.first_active = {}
         self.cues = {}
         self.cuts = {}
+        self.caps = {}
         self.preemptions = {}
 
     def update(self, snapshot):
@@ -44,12 +45,41 @@ class PressureBus:
         with self._lock:
             self.cuts.setdefault(key, []).append(event)
 
+    def record_cap(self, key, reason):
+        with self._lock:
+            self.caps[key] = reason
+
     def state(self, key):
         with self._lock:
             return {"scheduler_start": self.first_active.get(key),
                     "cue": self.cues.get(key),
                     "cuts": list(self.cuts.get(key, [])),
+                    "cap": self.caps.get(key),
                     "preemptions": self.preemptions.get(key, 0)}
+
+    def write_snapshot(self, snapshot):
+        """Persist the queue snapshot so the frontend process can read it.
+
+        vLLM may run the scheduler in a separate engine-core process; the
+        in-process bus is then invisible to the HTTP layer. The file is the
+        admission-time fallback and the audit trail.
+        """
+        try:
+            atomic(OUT / "pressure.json", snapshot)
+        except OSError:
+            pass
+
+
+def read_snapshot(max_age=5.0):
+    path = OUT / "pressure.json"
+    try:
+        value = json.loads(path.read_text())
+        age = time.monotonic() - float(value.get("monotonic", 0.0))
+    except (OSError, ValueError, TypeError):
+        return None
+    if age < 0 or age > max_age:
+        return None
+    return value
 
 
 BUS = PressureBus()
@@ -58,7 +88,10 @@ _EMIT_LOCK = threading.Lock()
 
 def emit(stream, event, **data):
     OUT.mkdir(parents=True, exist_ok=True)
-    row = dict(event=event, monotonic=time.monotonic(), pid=os.getpid(), **data)
+    row = dict(data)
+    row["event"] = event
+    row["pid"] = os.getpid()
+    row.setdefault("monotonic", time.monotonic())
     with _EMIT_LOCK:
         with (OUT / f"{stream}.jsonl").open("a") as handle:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")

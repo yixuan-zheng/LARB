@@ -6,6 +6,7 @@ Run on the GPU node as a module:
 The module imports vLLM only inside main()/route construction so the CPU tests
 and readiness checker can import the rest of the package without torch.
 """
+import asyncio
 import json
 import os
 import time
@@ -17,7 +18,7 @@ from fastapi.responses import StreamingResponse
 from transformers import AutoTokenizer
 
 from larb_scaled import config
-from larb_scaled.bus import BUS, atomic, emit
+from larb_scaled.bus import BUS, atomic, emit, read_snapshot
 from larb_scaled.contract import Contract
 from larb_scaled.policy import admission_budget, pressure_threshold
 
@@ -53,8 +54,9 @@ def build_contract(name):
     closing_brace = TOKENIZER.convert_tokens_to_ids("}")
     if closing_brace is None or closing_brace < 0:
         closing_brace = TOKENIZER.encode("}", add_special_tokens=False)[-1]
+    answer_cap = int(os.environ.get("LARB_FORCE_ANSWER_CAP") or cfg["answer_cap"])
     contract = Contract(name=name, cue=list(cue), close_id=close_id, eos_id=eos_id,
-                        answer_cap=int(cfg["answer_cap"]),
+                        answer_cap=answer_cap,
                         closing_brace_id=closing_brace if name == "short_boxed" else None,
                         force_closing_brace=bool(cfg.get("force_closing_brace", False)),
                         cue_text=cfg["cue"])
@@ -71,9 +73,43 @@ def render_prompt(question):
 
 
 def _threshold(max_num_seqs):
+    explicit = int(os.environ.get("LARB_THRESHOLD", "0"))
+    if explicit:
+        return explicit
     pressure = PROTOCOL["policy"]["pressure"]
     return pressure_threshold(max_num_seqs, pressure["threshold_fraction"],
                               pressure["threshold_minimum"])
+
+
+def _queue_snapshot():
+    """Latest queue snapshot, preferring the in-process bus.
+
+    When vLLM runs the engine core in a separate process, the in-process bus
+    of the HTTP frontend never updates; fall back to the file the scheduler
+    writes at a fixed stride.
+    """
+    snapshot = BUS.get()
+    if time.monotonic() - float(snapshot.get("monotonic", 0.0)) > 0.5:
+        snapshot = read_snapshot() or snapshot
+    return snapshot
+
+
+async def read_request_state(key, timeout=3.0):
+    """Read the controller state the engine-core process persisted for `key`.
+
+    The final event write can trail the last streamed token by a scheduler
+    step, so retry briefly. An empty dict means the controller never saw the
+    request (recorded as a failure, not imputed).
+    """
+    path = OUT / "request-state" / f"{key}.json"
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            return json.loads(path.read_text())
+        except (OSError, json.JSONDecodeError):
+            if time.monotonic() >= deadline:
+                return {}
+            await asyncio.sleep(0.02)
 
 
 @APP.get("/health")
@@ -112,12 +148,17 @@ async def generate(body: dict):
     if request_class not in ("signal", "filler"):
         raise HTTPException(400, "Unknown request class")
     seed = int(body["seed"])
-    threshold = _threshold(int(os.environ.get("LARB_MAX_NUM_SEQS", PROTOCOL["engine"]["max_num_seqs"])))
-    waiting = [k for k in BUS.get().get("waiting", []) if k.startswith(f"{CONDITION}--")]
+    max_num_seqs = int(os.environ.get("LARB_MAX_NUM_SEQS", PROTOCOL["engine"]["max_num_seqs"]))
+    threshold = _threshold(max_num_seqs)
+    snapshot = _queue_snapshot()
+    waiting = [k for k in snapshot.get("waiting", []) if k.startswith(f"{CONDITION}--")]
     if request_class == "filler":
         budget = int(body.get("initial_budget") or PROTOCOL["workload"]["filler_budget"])
     else:
-        budget = admission_budget(ARM, len(waiting), threshold)
+        # Gate-only override: forces a cue at a known position to prove the
+        # controller's exact-cue contract. Unexpensive and unused by P2.
+        budget = (int(os.environ.get("LARB_FORCE_BUDGET") or 0)
+                  or admission_budget(ARM, len(waiting), threshold))
     rendered, prompt_ids = render_prompt(question)
     max_tokens = (PROTOCOL["budgets"]["long"] if request_class == "signal" else budget) + \
         len(CONTRACT.cue) + CONTRACT.answer_cap + 2
@@ -168,25 +209,42 @@ async def generate(body: dict):
                  traceback=traceback.format_exc())
         finally:
             state = BUS.state(key)
-            cuts = state["cuts"]
-            final_budget = cuts[-1]["budget"] if cuts else budget
-            cue = state["cue"] or {}
+            persisted = await read_request_state(key)
+            if persisted:
+                cuts = persisted.get("cuts") or []
+                cue = {"tokens": persisted.get("cue_start"),
+                       "monotonic": persisted.get("cue_time")}
+                scheduler_start = (persisted.get("scheduler_start")
+                                   or state["scheduler_start"])
+                capped = persisted.get("cap") or state["cap"]
+                preemptions = persisted.get("preemptions", state["preemptions"])
+                final_budget = persisted.get("budget", budget)
+            else:
+                cuts = state["cuts"]
+                cue = state["cue"] or {}
+                scheduler_start = state["scheduler_start"]
+                capped = state["cap"]
+                preemptions = state["preemptions"]
+                final_budget = cuts[-1]["budget"] if cuts else budget
             record = dict(
                 key=key, trace_id=body.get("trace_id"), phase=PHASE, condition=CONDITION,
                 arm=ARM, policy=ARM, **{"class": request_class}, question_id=question_id,
                 seed=seed, scored=bool(body.get("scored", request_class == "signal")),
                 received=received, scheduled=body.get("scheduled"),
-                scheduler_start=state["scheduler_start"], first_token=first_token,
+                scheduler_start=scheduler_start, first_token=first_token,
                 finished=finished, complete=complete, error=error,
                 initial_budget=budget, final_budget=final_budget,
                 waiting_at_arrival=len(waiting), pressure_threshold=threshold,
+                pressure_fraction=(len(waiting) / max_num_seqs if max_num_seqs else None),
+                pressure_at_arrival=bool(len(waiting) >= threshold),
+                capped=capped, max_num_seqs=max_num_seqs,
                 deadline_s=body.get("deadline_s"), prompt=rendered,
                 prompt_token_ids=prompt_ids, raw_output=text, token_ids=token_ids,
                 cue_ids=list(CONTRACT.cue), close_id=CONTRACT.close_id,
                 eos_id=CONTRACT.eos_id, answer_cap=CONTRACT.answer_cap,
                 closing_brace_id=CONTRACT.closing_brace_id, contract=CONTRACT.name,
                 cue_start=cue.get("tokens"), cue_start_time=cue.get("monotonic"),
-                cut_events=cuts, preemptions=state["preemptions"],
+                cut_events=cuts, preemptions=preemptions,
                 reference=question["answer"], source=question["pool"],
                 exposure=question["exposure"], answer_type=question["answer_type"],
             )
@@ -198,22 +256,6 @@ async def generate(body: dict):
                               tokens=len(token_ids))) + "\n"
 
     return StreamingResponse(stream(), media_type="application/x-ndjson")
-
-    return dict(ready=True, phase=PHASE, arm=ARM, active=sorted(ACTIVE))
-
-
-@APP.post("/phase")
-async def set_phase(body: dict):
-    global PHASE, ARM, CONDITION
-    if ACTIVE:
-        raise HTTPException(409, "Drain before changing phase")
-    if body.get("arm") not in PROTOCOL["policy"]["arms"]:
-        raise HTTPException(400, "Unknown arm")
-    PHASE = body["phase"]
-    ARM = body["arm"]
-    CONDITION = body.get("condition", PHASE.split("-")[0])
-    emit("service", "phase", phase=PHASE, arm=ARM, condition=CONDITION)
-    return dict(phase=PHASE, arm=ARM, condition=CONDITION)
 
 
 def main():
@@ -247,7 +289,7 @@ def main():
         enable_prefix_caching=False,
         seed=PROTOCOL["seeding"]["seed_base"],
         logits_processors=["larb_scaled.controller:PressureProcessor"],
-        scheduler_cls="larb_scaled.controller:QueueAuditScheduler",
+        scheduler_cls="larb_scaled.controller.QueueAuditScheduler",
         disable_log_stats=True,
         generation_config="vllm",
     )
