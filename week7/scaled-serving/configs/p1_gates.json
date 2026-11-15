@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "outer_hours": 8,
+  "inner_hours": 7,
+  "injection_lag_limit_seconds": 1.0,
+  "gates": {
+    "bridge": {
+      "role": "bridge",
+      "arms": ["fixed4k", "fixed8k"],
+      "seeds": 2,
+      "contract": "legacy",
+      "expected_responses": 120,
+      "reference": {"fixed4k": 0.367, "fixed8k": 0.450},
+      "tolerance_points": 10,
+      "purpose": "Rig-validity comparison with the saved AIME 2025 screen."
+    },
+    "mechanics": {
+      "concurrency": 32,
+      "request_count": 32,
+      "budgets": [4096, 8192],
+      "purpose": "Exact cue position, row-state survival, natural close, answer cap, preemption observation."
+    },
+    "graphs": {
+      "modes": ["eager", "graph"],
+      "request_count": 32,
+      "purpose": "Compare exact cue positions and token IDs; graphs are enabled only if outputs match."
+    },
+    "throughput": {
+      "concurrency": [1, 2, 4, 8, 16, 24, 32],
+      "thinking_tokens": [4096, 8192],
+      "answer_tokens": 128,
+      "seconds_per_point": 300,
+      "purpose": "Choose the main concurrency and N; full 4-seed design needs about 1500 output tokens/s."
+    },
+    "contract": {
+      "role": "screen",
+      "questions": 48,
+      "budgets": [4096, 8192],
+      "seeds": 2,
+      "contracts": ["legacy", "short_boxed"],
+      "expected_responses": 384,
+      "purpose": "Select the answer contract; legacy is the fallback."
+    },
+    "slope": {
+      "role": "screen",
+      "questions": 48,
+      "budgets": [4096, 6096, 8192],
+      "seeds": 1,
+      "expected_responses": 144,
+      "preview_questions": 24,
+      "preview_expected_responses": 72,
+      "purpose": "Pool-level go/no-go plus a 24-item main-cohort preview."
+    },
+    "calibration": {
+      "rates_per_hour": [800, 1000, 1200],
+      "minutes_per_rate": 20,
+      "deadline_seconds": 180,
+      "target_miss_fraction": [0.15, 0.40],
+      "purpose": "Choose the arrival rate and freeze the trace; tune load, not the deadline."
+    }
+  }
+}

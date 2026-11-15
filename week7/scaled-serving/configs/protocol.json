@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "name": "larb-scaled-serving-v1",
+  "status": "P0 CPU-side frozen draft; GPU calibration and execution pending",
+  "hypothesis": "Under bursty or sustained load, shortening the thinking budget of requests already running when the queue builds delivers more correct-by-deadline answers than (a) choosing the budget once at admission or (b) a fixed short budget, while keeping eventual accuracy within about 3 percentage points of full thinking.",
+  "primary_endpoint": "correct_on_time_signal",
+  "primary_family": ["H1", "H2", "H3"],
+  "claims": {
+    "H1": "live > fixed4k on correct-on-time, pooled over sustained and burst/recovery",
+    "H2": "live > arrival on correct-on-time, burst/recovery primary; sustained descriptive",
+    "H3": "live non-inferior to fixed8k on eventual accuracy within the agreed margin",
+    "H4": "live uses fewer tokens or lower latency than fixed8k at comparable goodput"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "dtype": "bfloat16",
+    "local_path_env": "LARB_MODEL_PATH",
+    "local_path_default": "/storage/ice1/3/0/jwang3221/LARB-week5-env/model/Qwen3-4B"
+  },
+  "engine": {
+    "vllm": "0.11.2",
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "max_num_seqs": 32,
+    "max_num_batched_tokens": 8192,
+    "max_model_len": 12288,
+    "gpu_memory_utilization": 0.85,
+    "gpu_memory_utilization_fallback": 0.90,
+    "enforce_eager": false,
+    "enforce_eager_fallback": true,
+    "enable_prefix_caching": false,
+    "swap_space_gb": 8,
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20
+    }
+  },
+  "budgets": {
+    "short": 4096,
+    "long": 8192,
+    "full_bridge": 16384,
+    "cut_target": 4096,
+    "safety": 8192
+  },
+  "answer_contracts": {
+    "legacy": {
+      "name": "legacy",
+      "cue": "\n\nI will stop checking and give the final answer now.\n</think>\n\n",
+      "answer_cap": 2048,
+      "description": "Weeks 3-6 contract; cue tokens count as tokens but not thinking."
+    },
+    "short_boxed": {
+      "name": "short_boxed",
+      "cue": "\n\nFinal answer: </think>\n\\boxed{",
+      "answer_cap": 128,
+      "force_closing_brace": true,
+      "description": "Gated short-answer contract; answer cap starts after the cue."
+    },
+    "default": "legacy",
+    "main_path_selection": "after P1 answer-contract bridge"
+  },
+  "policy": {
+    "arms": {
+      "fixed4k": {"admission": "fixed", "initial_budget": 4096, "live_cut": false},
+      "fixed6k": {"admission": "fixed", "initial_budget": 6096, "live_cut": false},
+      "fixed8k": {"admission": "fixed", "initial_budget": 8192, "live_cut": false},
+      "arrival": {"admission": "queue_aware", "short": 4096, "long": 8192, "live_cut": false},
+      "live": {"admission": "queue_aware", "short": 4096, "long": 8192, "live_cut": true}
+    },
+    "pressure": {
+      "threshold_fraction": 0.25,
+      "threshold_minimum": 4,
+      "threshold_grid": [4, 8, 12],
+      "persistence_steps": 2,
+      "definition": "waiting_same_phase >= max(minimum, ceil(fraction * max_num_seqs)) for persistence_steps consecutive scheduler steps"
+    },
+    "cut": {
+      "target": 4096,
+      "progress_floor": 512,
+      "min_saving": 1024,
+      "cascade": "one eligible request per scheduler step",
+      "selection": "largest remaining budget; earliest arrival tie-break",
+      "one_way": true,
+      "no_cut_after_close": true,
+      "no_cut_at_or_below_target": true
+    },
+    "restoration": "new admissions after pressure clears may receive 8192; a cut request never recovers"
+  },
+  "workload": {
+    "signal_questions_target": 220,
+    "signal_questions_min": 200,
+    "signal_questions_max": 246,
+    "seeds_per_question": 4,
+    "seed_extension": 6,
+    "filler_share": 0.30,
+    "filler_budget": 1024,
+    "conditions": {
+      "low": {"description": "no-queue control", "provisional_rate_per_hour": 300, "signal_questions": 60, "seeds": 2},
+      "sustained": {"description": "constant Poisson load", "provisional_rate_per_hour": 810, "signal_questions": 220, "seeds": 4},
+      "burst": {"description": "slack, burst, recovery", "provisional_baseline_per_hour": 700, "burst_count": 90, "burst_start_s": 600, "burst_spacing_s": 0.05, "recovery_rate_per_hour": 700, "signal_questions": 220, "seeds": 4}
+    }
+  },
+  "deadline": {
+    "slo_seconds": 180,
+    "fallback_slo_seconds": 240,
+    "measured_from": "client_arrival",
+    "drain_allowance_seconds": 300,
+    "target_reference_miss_fraction": [0.15, 0.40]
+  },
+  "seeding": {
+    "seed_base": 700000,
+    "question_stride": 17,
+    "seed_stride": 1,
+    "description": "seed = seed_base + question_index * question_stride + seed_index"
+  },
+  "analysis": {
+    "bootstrap_resamples": 10000,
+    "alpha": 0.05,
+    "planned_mde_points": [5.0, 6.0],
+    "noninferiority_margin_points_interim": 5.0,
+    "noninferiority_margin_points_extension": 3.0,
+    "multiplicity": "Holm for H1-H3; unadjusted CIs reported and labelled",
+    "primary_unit": "question",
+    "seed_unit": "repeated measurement"
+  },
+  "gates": {
+    "p1_gate_order": ["bridge", "mechanics", "graphs", "throughput", "contract", "slope", "calibration"],
+    "p1_outer_hours": 8,
+    "p2_outer_hours": 16,
+    "injection_lag_limit_seconds": 1.0
+  },
+  "paths": {
+    "datasets": "data/processed/questions.jsonl",
+    "cohort": "artifacts/cohort.json",
+    "traces": "artifacts/traces",
+    "freeze": "artifacts/freeze.json",
+    "logs": "logs",
+    "results": "results"
+  }
+}
