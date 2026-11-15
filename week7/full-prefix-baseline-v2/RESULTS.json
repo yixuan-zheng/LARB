@@ -1,0 +1,561 @@
+{
+  "cohorts": {
+    "week6": {
+      "eligible": 57,
+      "comparisons": {
+        "question": {
+          "extensions": 28,
+          "expected_correct": 21.0,
+          "expected_tokens": 393652.0,
+          "expected_gains_captured": 1.0,
+          "partially_selected_tied_cases": 0,
+          "expected_losses_captured": 0.0
+        },
+        "prefix": {
+          "extensions": 28,
+          "expected_correct": 27.0,
+          "expected_tokens": 415069.0,
+          "expected_gains_captured": 7.0,
+          "partially_selected_tied_cases": 0,
+          "expected_losses_captured": 0.0
+        }
+      },
+      "delta_correct": 6.0,
+      "metrics": {
+        "question": {
+          "gain_auc": 0.18112244897959184,
+          "joint_brier": 0.8529649122807017,
+          "reliability": {
+            "ww": [
+              {
+                "count": 40,
+                "mean_prediction": 0.1015,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 4,
+                "mean_prediction": 0.21,
+                "realized_frequency": 1.0
+              },
+              {
+                "count": 13,
+                "mean_prediction": 0.52,
+                "realized_frequency": 0.38461538461538464
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "wc": [
+              {
+                "count": 48,
+                "mean_prediction": 0.08458333333333334,
+                "realized_frequency": 0.14583333333333334
+              },
+              {
+                "count": 9,
+                "mean_prediction": 0.22666666666666668,
+                "realized_frequency": 0.1111111111111111
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cw": [
+              {
+                "count": 29,
+                "mean_prediction": 0.09758620689655173,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 26,
+                "mean_prediction": 0.24384615384615382,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 2,
+                "mean_prediction": 0.55,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cc": [
+              {
+                "count": 11,
+                "mean_prediction": 0.12818181818181817,
+                "realized_frequency": 0.36363636363636365
+              },
+              {
+                "count": 2,
+                "mean_prediction": 0.22,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 16,
+                "mean_prediction": 0.5,
+                "realized_frequency": 0.125
+              },
+              {
+                "count": 25,
+                "mean_prediction": 0.6688,
+                "realized_frequency": 0.4
+              },
+              {
+                "count": 3,
+                "mean_prediction": 0.8,
+                "realized_frequency": 1.0
+              }
+            ]
+          }
+        },
+        "prefix": {
+          "gain_auc": 0.6760204081632653,
+          "joint_brier": 0.7203684210526315,
+          "reliability": {
+            "ww": [
+              {
+                "count": 39,
+                "mean_prediction": 0.06333333333333332,
+                "realized_frequency": 0.46153846153846156
+              },
+              {
+                "count": 6,
+                "mean_prediction": 0.34,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 6,
+                "mean_prediction": 0.49666666666666665,
+                "realized_frequency": 0.8333333333333334
+              },
+              {
+                "count": 3,
+                "mean_prediction": 0.6666666666666667,
+                "realized_frequency": 1.0
+              },
+              {
+                "count": 3,
+                "mean_prediction": 0.88,
+                "realized_frequency": 0.0
+              }
+            ],
+            "wc": [
+              {
+                "count": 33,
+                "mean_prediction": 0.07696969696969697,
+                "realized_frequency": 0.06060606060606061
+              },
+              {
+                "count": 12,
+                "mean_prediction": 0.30833333333333335,
+                "realized_frequency": 0.25
+              },
+              {
+                "count": 11,
+                "mean_prediction": 0.4981818181818182,
+                "realized_frequency": 0.2727272727272727
+              },
+              {
+                "count": 1,
+                "mean_prediction": 0.68,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cw": [
+              {
+                "count": 49,
+                "mean_prediction": 0.05775510204081633,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 5,
+                "mean_prediction": 0.29,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 3,
+                "mean_prediction": 0.49333333333333335,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cc": [
+              {
+                "count": 16,
+                "mean_prediction": 0.066875,
+                "realized_frequency": 0.25
+              },
+              {
+                "count": 10,
+                "mean_prediction": 0.267,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 7,
+                "mean_prediction": 0.4857142857142857,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 11,
+                "mean_prediction": 0.7118181818181819,
+                "realized_frequency": 0.36363636363636365
+              },
+              {
+                "count": 13,
+                "mean_prediction": 0.9030769230769231,
+                "realized_frequency": 0.9230769230769231
+              }
+            ]
+          }
+        }
+      },
+      "discordant": [
+        {
+          "question": 10,
+          "higher_net": "q10-b1",
+          "lower_net": "q10-b0",
+          "higher_outcome": "wc",
+          "lower_outcome": "ww",
+          "prefix_score_gap": -80
+        },
+        {
+          "question": 29,
+          "higher_net": "q29-b0",
+          "lower_net": "q29-b1",
+          "higher_outcome": "wc",
+          "lower_outcome": "ww",
+          "prefix_score_gap": 50
+        },
+        {
+          "question": 14,
+          "higher_net": "q14-b1",
+          "lower_net": "q14-b0",
+          "higher_outcome": "wc",
+          "lower_outcome": "ww",
+          "prefix_score_gap": 14
+        },
+        {
+          "question": 13,
+          "higher_net": "q13-b0",
+          "lower_net": "q13-b1",
+          "higher_outcome": "wc",
+          "lower_outcome": "ww",
+          "prefix_score_gap": 10
+        }
+      ]
+    },
+    "week7": {
+      "eligible": 58,
+      "comparisons": {
+        "question": {
+          "extensions": 29,
+          "expected_correct": 26.0,
+          "expected_tokens": 410742.5,
+          "expected_gains_captured": 5.0,
+          "partially_selected_tied_cases": 2,
+          "expected_losses_captured": 0.0
+        },
+        "prefix": {
+          "extensions": 29,
+          "expected_correct": 25.0,
+          "expected_tokens": 428227.3333333333,
+          "expected_gains_captured": 4.0,
+          "partially_selected_tied_cases": 3,
+          "expected_losses_captured": 0.0
+        }
+      },
+      "delta_correct": -1.0,
+      "metrics": {
+        "question": {
+          "gain_auc": 0.7564102564102564,
+          "joint_brier": 0.8663034482758619,
+          "reliability": {
+            "ww": [
+              {
+                "count": 44,
+                "mean_prediction": 0.10318181818181818,
+                "realized_frequency": 0.5681818181818182
+              },
+              {
+                "count": 10,
+                "mean_prediction": 0.316,
+                "realized_frequency": 0.4
+              },
+              {
+                "count": 4,
+                "mean_prediction": 0.475,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "wc": [
+              {
+                "count": 48,
+                "mean_prediction": 0.075,
+                "realized_frequency": 0.0625
+              },
+              {
+                "count": 10,
+                "mean_prediction": 0.244,
+                "realized_frequency": 0.3
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cw": [
+              {
+                "count": 34,
+                "mean_prediction": 0.08529411764705883,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 24,
+                "mean_prediction": 0.24083333333333332,
+                "realized_frequency": 0.041666666666666664
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cc": [
+              {
+                "count": 2,
+                "mean_prediction": 0.15,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 8,
+                "mean_prediction": 0.305,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 16,
+                "mean_prediction": 0.49,
+                "realized_frequency": 0.4375
+              },
+              {
+                "count": 22,
+                "mean_prediction": 0.6563636363636364,
+                "realized_frequency": 0.2727272727272727
+              },
+              {
+                "count": 10,
+                "mean_prediction": 0.866,
+                "realized_frequency": 0.3
+              }
+            ]
+          }
+        },
+        "prefix": {
+          "gain_auc": 0.6522435897435898,
+          "joint_brier": 0.8455172413793103,
+          "reliability": {
+            "ww": [
+              {
+                "count": 41,
+                "mean_prediction": 0.05,
+                "realized_frequency": 0.5121951219512195
+              },
+              {
+                "count": 3,
+                "mean_prediction": 0.33333333333333337,
+                "realized_frequency": 0.6666666666666666
+              },
+              {
+                "count": 4,
+                "mean_prediction": 0.46,
+                "realized_frequency": 0.75
+              },
+              {
+                "count": 7,
+                "mean_prediction": 0.7057142857142857,
+                "realized_frequency": 0.7142857142857143
+              },
+              {
+                "count": 3,
+                "mean_prediction": 0.8566666666666667,
+                "realized_frequency": 0.0
+              }
+            ],
+            "wc": [
+              {
+                "count": 43,
+                "mean_prediction": 0.06465116279069767,
+                "realized_frequency": 0.046511627906976744
+              },
+              {
+                "count": 11,
+                "mean_prediction": 0.28363636363636363,
+                "realized_frequency": 0.18181818181818182
+              },
+              {
+                "count": 2,
+                "mean_prediction": 0.505,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 2,
+                "mean_prediction": 0.61,
+                "realized_frequency": 0.5
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cw": [
+              {
+                "count": 47,
+                "mean_prediction": 0.06425531914893617,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 7,
+                "mean_prediction": 0.29428571428571426,
+                "realized_frequency": 0.14285714285714285
+              },
+              {
+                "count": 2,
+                "mean_prediction": 0.55,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 2,
+                "mean_prediction": 0.675,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 0
+              }
+            ],
+            "cc": [
+              {
+                "count": 16,
+                "mean_prediction": 0.06875,
+                "realized_frequency": 0.3125
+              },
+              {
+                "count": 6,
+                "mean_prediction": 0.26,
+                "realized_frequency": 0.16666666666666666
+              },
+              {
+                "count": 5,
+                "mean_prediction": 0.48200000000000004,
+                "realized_frequency": 0.0
+              },
+              {
+                "count": 15,
+                "mean_prediction": 0.6946666666666667,
+                "realized_frequency": 0.13333333333333333
+              },
+              {
+                "count": 16,
+                "mean_prediction": 0.903125,
+                "realized_frequency": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "discordant": [
+        {
+          "question": 6,
+          "higher_net": "q06-b1",
+          "lower_net": "q06-b0",
+          "higher_outcome": "wc",
+          "lower_outcome": "cc",
+          "prefix_score_gap": 36
+        },
+        {
+          "question": 12,
+          "higher_net": "q12-b0",
+          "lower_net": "q12-b1",
+          "higher_outcome": "wc",
+          "lower_outcome": "cc",
+          "prefix_score_gap": 83
+        },
+        {
+          "question": 19,
+          "higher_net": "q19-b1",
+          "lower_net": "q19-b0",
+          "higher_outcome": "wc",
+          "lower_outcome": "cc",
+          "prefix_score_gap": 119
+        },
+        {
+          "question": 21,
+          "higher_net": "q21-b1",
+          "lower_net": "q21-b0",
+          "higher_outcome": "wc",
+          "lower_outcome": "cc",
+          "prefix_score_gap": -52
+        },
+        {
+          "question": 13,
+          "higher_net": "q13-b1",
+          "lower_net": "q13-b0",
+          "higher_outcome": "ww",
+          "lower_outcome": "cw",
+          "prefix_score_gap": 25
+        }
+      ]
+    }
+  },
+  "pooled_delta_correct": 5.0,
+  "pooled_delta_accuracy": 0.043478260869565216,
+  "bootstrap_95": {
+    "week6": [
+      0.017543859649122806,
+      0.19298245614035087
+    ],
+    "week7": [
+      -0.06896551724137931,
+      0.034482758620689655
+    ],
+    "pooled": [
+      -0.008849557522123894,
+      0.09565217391304348
+    ]
+  },
+  "decision": "inconclusive"
+}

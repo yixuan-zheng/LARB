@@ -1,0 +1,147 @@
+[
+  {
+    "prior_requested_hours": 10,
+    "replay_job": "7019565",
+    "replay_hours": 0.5
+  },
+  {
+    "job": "7019781",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7019782",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7019783",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7019784",
+    "shard": 3,
+    "requested_hours": 3
+  },
+  {
+    "job": "7024257",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7024258",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7024259",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7024260",
+    "shard": 3,
+    "requested_hours": 3
+  },
+  {
+    "job": "7029409",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7029410",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7029411",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7029412",
+    "shard": 3,
+    "requested_hours": 3
+  },
+  {
+    "job": "7044688",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7044689",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7044690",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7044691",
+    "shard": 3,
+    "requested_hours": 3
+  },
+  {
+    "job": "7049059",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7049060",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7049061",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7049062",
+    "shard": 3,
+    "requested_hours": 3
+  },
+  {
+    "job": "7055307",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7055308",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7055309",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7055310",
+    "shard": 3,
+    "requested_hours": 3
+  },
+  {
+    "job": "7063442",
+    "shard": 0,
+    "requested_hours": 3
+  },
+  {
+    "job": "7063443",
+    "shard": 1,
+    "requested_hours": 3
+  },
+  {
+    "job": "7063444",
+    "shard": 2,
+    "requested_hours": 3
+  },
+  {
+    "job": "7063445",
+    "shard": 3,
+    "requested_hours": 3
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "job": "7019565",
+  "passed": true,
+  "seal": "f3da6affc775aca71261144182e3ba761376d2f65f082ce629a4d249b7c81702",
+  "release": "1ceafcdaf963f97da28c3d7ada3e6b871ab3fc7a87892fc6b4eff61abf21eb1e",
+  "comparisons": [
+    {
+      "call_id": "2023-I-9-b0-long-00",
+      "differences": [],
+      "expected_hash": "ab3554b33597265506b1cf99e15abd9a672b3cf9fd6e3fbbe01fe82eec633dab",
+      "observed_hash": "ab3554b33597265506b1cf99e15abd9a672b3cf9fd6e3fbbe01fe82eec633dab"
+    },
+    {
+      "call_id": "2022-II-14-b0-long-00",
+      "differences": [],
+      "expected_hash": "fe3724561b1879ef0a6b15771c1c873776a69b14edf9413942530dcef3a4bc5b",
+      "observed_hash": "fe3724561b1879ef0a6b15771c1c873776a69b14edf9413942530dcef3a4bc5b"
+    },
+    {
+      "call_id": "2023-I-9-b0-short-00",
+      "differences": [],
+      "expected_hash": "995d69aa2b271c24a8a09e8b34e7fb6a1bffb778496aad6b5cff8b8ed917a17a",
+      "observed_hash": "995d69aa2b271c24a8a09e8b34e7fb6a1bffb778496aad6b5cff8b8ed917a17a"
+    },
+    {
+      "call_id": "2020-I-4-b0-long-00",
+      "differences": [],
+      "expected_hash": "cd948e6cab99f110dfbb51b53084dcee5d6d1e4f0bd904ac180a7ad50cb9e6d2",
+      "observed_hash": "cd948e6cab99f110dfbb51b53084dcee5d6d1e4f0bd904ac180a7ad50cb9e6d2"
+    },
+    {
+      "call_id": "2022-II-14-b0-short-00",
+      "differences": [],
+      "expected_hash": "a5c7fe4c7733cb5b1f0a4bb1bf4f4876f08195643e8f74411c2b05043b06c93c",
+      "observed_hash": "a5c7fe4c7733cb5b1f0a4bb1bf4f4876f08195643e8f74411c2b05043b06c93c"
+    },
+    {
+      "call_id": "2020-I-4-b0-short-00",
+      "differences": [],
+      "expected_hash": "32451630fbfeef5d85302aa7443017418c74b872ecf8f012d1c5aeac1acc8a6e",
+      "observed_hash": "32451630fbfeef5d85302aa7443017418c74b872ecf8f012d1c5aeac1acc8a6e"
+    }
+  ]
+}
