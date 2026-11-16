@@ -1,0 +1,42 @@
+{
+  "count_accuracy_diff": {
+    "observed": 0.07017543859649122,
+    "low": 0.0,
+    "median": 0.058333333333333334,
+    "high": 0.15677966101694915
+  },
+  "count_token_diff": {
+    "observed": 1289.0,
+    "low": -8983.583333333314,
+    "median": 757.0,
+    "high": 9019.0
+  },
+  "cost_matched_correct_diff": {
+    "observed": 4.0,
+    "low": 0.0,
+    "median": 3.333333333333332,
+    "high": 9.0
+  },
+  "headroom_per_prefix": {
+    "observed": 1432.9473684210527,
+    "low": 124.10714285714286,
+    "median": 1386.9298245614036,
+    "high": 2078.927272727273
+  },
+  "missed_gains_q": {
+    "observed": 4.0,
+    "low": 0.0,
+    "median": 3.3333333333333335,
+    "high": 9.0
+  },
+  "missed_gains_p": {
+    "observed": 0.0,
+    "low": 0.0,
+    "median": 0.0,
+    "high": 0.0
+  },
+  "reader_wins_share": {
+    "bounded 512-token reader (4-bit qwen3-4b)": 0.0008,
+    "full-prefix reader (qwen3.8-27b)": 0.0
+  }
+}
