@@ -10,6 +10,7 @@ LARB tests whether evidence at a 4,096-token checkpoint can identify which Qwen3
 | **Hidden-state correctness replication** | **Complete.** Direct per-checkpoint extraction covered all 115 trajectories. The 4K four-token mean reached **0.767 AUROC** versus **0.673** for prompt-only. The lift interval included zero. The target was archived 8K correctness. [Report](hidden-state-probes/direct-reference/REPORT.md) |
 | **Bounded-prefix reader** | The 512-token readout reached **22/57 correct** versus **25/57** for the same reader with the question alone, at 28 extensions. [Report](bounded-prefix/REPORT.md) |
 | **Recoverable-step reader** | The demonstrated-step readout reached **25/60 correct** versus **26/60** for question-only at the charged ceiling. The audit found output truncation and reasoning errors. [Report](recoverable-step/REPORT.md) · [Audit](recoverable-step/METHODOLOGY-AUDIT.md) |
+| **Cost-matched scoring protocol** | **Proposed for review.** No predictor passes once reading cost is charged. Recommends keeping question-only allocation and moving to frozen-budget scheduling. [Protocol](scoring/PROTOCOL.md) |
 
 [Post–Experiment 3 findings](follow-up/RESULTS.md) · [Possible directions for next week](follow-up/NEXT-WEEK.md)
 
