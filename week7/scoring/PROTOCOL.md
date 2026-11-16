@@ -92,6 +92,8 @@ Costs are in Section 3.
 | Qwen3.8-27B full-prefix reader | At equal extensions, +6 over its own question-only control on Week 6 (+3 over archived) and −1 on Week 7. Free headroom at most 2,309 tokens per checkpoint over its own control, 580 over archived | Fails Gate A (1, 2) |
 | Hidden-state probe | +2.2 points at matched cost on protected data (interval −0.3 to +5.0); 46% within-question concordance | Failed Gate B: below 3.45, lower bound below zero |
 
+Three later follow-ups, a nonlinear readout, temporal checkpoint features and a repair-evidence screen, also failed to show a within-question signal ([follow-up results](../follow-up/RESULTS.md)).
+
 **No candidate passes.**
 
 The hidden-state probe is the only one worth keeping on record. By the Experiment 3 planning proxy, which assumes similar clustering and eligibility, a decisive test of its 2.24-point lift at 80% power needs about **460 protected questions** and **220 base L40S-hours**, 2.3 times the Experiment 3 budget. A gain this small is unlikely to justify that before the serving workload shows it matters.
