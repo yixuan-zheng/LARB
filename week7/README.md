@@ -11,6 +11,8 @@ LARB tests whether evidence at a 4,096-token checkpoint can identify which Qwen3
 | **Bounded-prefix reader** | The 512-token readout reached **22/57 correct** versus **25/57** for the same reader with the question alone, at 28 extensions. [Report](bounded-prefix/REPORT.md) |
 | **Recoverable-step reader** | The demonstrated-step readout reached **25/60 correct** versus **26/60** for question-only at the charged ceiling. The audit found output truncation and reasoning errors. [Report](recoverable-step/REPORT.md) · [Audit](recoverable-step/METHODOLOGY-AUDIT.md) |
 
+[Post–Experiment 3 findings](follow-up/RESULTS.md) · [Possible directions for next week](follow-up/NEXT-WEEK.md)
+
 ## Reproduce the completed analyses
 
 Run from the repository root in a disposable checkout. Extract the archived inputs and copy the shared Week 6 helpers into their historical paths first. The archives include the draw and branch records used for grading. Reader packets, forecasts and locks are preserved where needed to replay a comparison. The hidden-state feature matrix is included so scoring requires no GPU.

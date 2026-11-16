@@ -1,0 +1,65 @@
+{
+  "primary": {
+    "informative_pairs": 65,
+    "ranking_fixed": 5,
+    "ranking_broken": 4,
+    "expected_correct_diff": 0.75,
+    "expected_correct_diff_95": [
+      -2.515290519877676,
+      3.521406727828746
+    ],
+    "concordance_diff_95": [
+      -7.597370983446932,
+      10.714285714285714
+    ],
+    "static": {
+      "expected_correct": 163.75,
+      "concordance": 0.36923076923076925,
+      "correct": 24,
+      "wrong": 41,
+      "ties": 0
+    },
+    "temporal": {
+      "expected_correct": 164.5,
+      "concordance": 0.38461538461538464,
+      "correct": 25,
+      "wrong": 40,
+      "ties": 0
+    },
+    "concordance_gain_pp": 1.5384615384615385,
+    "between": 0.125,
+    "within": 0.625
+  },
+  "swapped": {
+    "informative_pairs": 64,
+    "ranking_fixed": 4,
+    "ranking_broken": 7,
+    "expected_correct_diff": -3.0,
+    "expected_correct_diff_95": [
+      -6.854166666666666,
+      1.015432098765432
+    ],
+    "concordance_diff_95": [
+      -15.0,
+      5.00158227848099
+    ],
+    "static": {
+      "expected_correct": 161.25,
+      "concordance": 0.5,
+      "correct": 32,
+      "wrong": 32,
+      "ties": 0
+    },
+    "temporal": {
+      "expected_correct": 158.25,
+      "concordance": 0.453125,
+      "correct": 29,
+      "wrong": 35,
+      "ties": 0
+    },
+    "concordance_gain_pp": -4.6875,
+    "between": -2.125,
+    "within": -0.875
+  },
+  "advance": false
+}
