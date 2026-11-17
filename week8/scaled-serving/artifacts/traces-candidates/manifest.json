@@ -1,0 +1,77 @@
+{
+  "pool": "aime-2025-2026-v1",
+  "config": "configs/pool_aime_2025_2026.json",
+  "cohort_sha256": "83d576b8482642a774883945aa509b01e7b1f3a62dac6f569c19e3825c078127",
+  "traces": {
+    "gate-aime-preview": {
+      "file": "artifacts/traces-candidates/gate-aime-preview.jsonl",
+      "sha256": "716f7fab278bd19661680d093d52c73f6080bbea61380c67308520d66b9fc204",
+      "summary": {
+        "requests": 24,
+        "signal": 24,
+        "filler": 0,
+        "signal_questions": 24,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 34.5,
+        "median_arrival_s": 16.5,
+        "p90_arrival_s": 30.0,
+        "span_s": 34.5
+      },
+      "sources": [
+        "MathArena/aime_2025",
+        "MathArena/aime_2026"
+      ],
+      "exposure": [
+        "exposed",
+        "fresh"
+      ]
+    },
+    "gate-aime-preview48": {
+      "file": "artifacts/traces-candidates/gate-aime-preview48.jsonl",
+      "sha256": "e65db8336773833ceafd6f9c19badcb05fb8d0f8bcff5b0514366a695fb5404d",
+      "summary": {
+        "requests": 48,
+        "signal": 48,
+        "filler": 0,
+        "signal_questions": 48,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 70.5,
+        "median_arrival_s": 34.5,
+        "p90_arrival_s": 63.0,
+        "span_s": 70.5
+      },
+      "sources": [
+        "MathArena/aime_2025",
+        "MathArena/aime_2026"
+      ],
+      "exposure": [
+        "exposed",
+        "fresh"
+      ]
+    },
+    "gate-aime-preview48-s2": {
+      "file": "artifacts/traces-candidates/gate-aime-preview48-s2.jsonl",
+      "sha256": "4d9fba9cf055860ff9e8679eb56a1e71db8310b5b840254dd6ffc77c689c571c",
+      "summary": {
+        "requests": 48,
+        "signal": 48,
+        "filler": 0,
+        "signal_questions": 48,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 70.5,
+        "median_arrival_s": 34.5,
+        "p90_arrival_s": 63.0,
+        "span_s": 70.5
+      },
+      "seeds": [
+        910000,
+        910017,
+        910034
+      ],
+      "note": "Second-seed stability replicate of the 48-item set (exploratory)."
+    }
+  }
+}

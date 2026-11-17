@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "name": "omni-math-hard-v1",
+  "dataset": "KbsdJames/Omni-MATH",
+  "slug": "omni-math",
+  "revision": "40ba231d8f16e29ecd40e6407e2c8640145a8f62",
+  "license": "apache-2.0",
+  "source_file": "test.jsonl",
+  "source_url": "https://huggingface.co/datasets/KbsdJames/Omni-MATH/resolve/40ba231d8f16e29ecd40e6407e2c8640145a8f62/test.jsonl",
+  "source_sha256": "7c87be8ee41ac7c7a597ef5a5500e84bd2b639a85a06db3da7f69bf9a32ef168",
+  "source_bytes": 7504961,
+  "expected_rows": 4428,
+  "exposure": "exposed",
+  "exposure_note": "Omni-MATH is a public benchmark released in 2024; contamination cannot be excluded and is reported, not corrected.",
+  "question_id_prefix": "omni",
+  "salt": "larb-week8-v1",
+  "filters": {
+    "difficulty_min": 5.0,
+    "difficulty_max": 8.0,
+    "prompt_max_tokens": 1850,
+    "answer_max_chars": 160,
+    "require_self_gradable": true,
+    "exclude_text_answers": true,
+    "exclusion_rules": [
+      "missing_problem",
+      "missing_answer",
+      "proof_like",
+      "diagram_dependent",
+      "multiple_choice",
+      "prompt_too_long",
+      "answer_too_long_for_budget"
+    ]
+  },
+  "strata": [
+    {"name": "d5_6", "min_inclusive": 5.0, "max_exclusive": 6.0, "target": 80},
+    {"name": "d6_7", "min_inclusive": 6.0, "max_exclusive": 7.0, "target": 80},
+    {"name": "d7_8", "min_inclusive": 7.0, "max_exclusive": 8.01, "target": 80}
+  ],
+  "source_cap_per_stratum": 20,
+  "preview": {
+    "size": 24,
+    "per_stratum": 8,
+    "escalation_size": 48,
+    "escalation_per_stratum": 8
+  },
+  "calibration": {
+    "signal_questions": 48,
+    "filler_share": 0.3,
+    "warmup_seconds": 600,
+    "measured_seconds": 900,
+    "total_seconds": 1500,
+    "signal_selection": "hash-ranked main-cohort ids, disjoint from the preview"
+  },
+  "seeding": {
+    "seed_base": 800000,
+    "question_stride": 17,
+    "preview_seed_index": 0,
+    "main_seed_indices": [0, 1, 2, 3]
+  },
+  "notes": [
+    "The difficulty bands are published labels, not observed Qwen3-4B accuracy.",
+    "At most 20 items per source per band keeps the pool from being one event family.",
+    "The 24-item preview is held out of the main cohort; the optional 48-item escalation draws 24 more hash-ranked main items and removes them from the main cohort.",
+    "All items are exposed; the fresh/exposed split of the original 2025-2026 cohort is not available in this fallback pool."
+  ]
+}
