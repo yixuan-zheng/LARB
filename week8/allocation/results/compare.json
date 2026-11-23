@@ -1,0 +1,1504 @@
+{
+ "protocol_commit": "66953570ae579ab592122e182285648affe8ea33",
+ "frozen_inputs": {
+  "week8/allocation/draws.csv": "9881c09c4cc54000c3320d0879a0d4fac9be9351f30e9aafaf92f9e795f39a02",
+  "week8/allocation/calibration.json": "e6367abd11ae437808cf923766094e56599646f1efbf0a79d69852ceea68562f",
+  "week8/allocation/sim.py": "97a70f4b73071b4071ba0c922e326beda31d6f31e17acbd172adb21ac86ddb74",
+  "week7/continuation-sampling/results/full-summary.json": "47da981d4198f7273672b9590aa1dea4403ee87423f68194bc4eb39be89235c3",
+  "week7/scaled-serving/artifacts/traces/burst.jsonl": "2c752e62c45d79ec35ac66c1492118d4d320fc772fd9701390378c715e63fa8b",
+  "week7/scaled-serving/artifacts/traces/sustained.jsonl": "c088ae6298d9531183c23400ffe7efe557ff3b53c34f86875796c4ae1b5aed9d"
+ },
+ "rate_per_hour": 540,
+ "lam": 8.689655172413794,
+ "primary": {
+  "setting": {
+   "trace": "burst",
+   "rate": 540,
+   "seed": 8222,
+   "speed": 1.0,
+   "lag": 0.0,
+   "deadline": 240.0
+  },
+  "policies": {
+   "fixed4k": {
+    "requests": 1229,
+    "good": 413,
+    "correct": 441,
+    "on_time": 1139,
+    "extended": 0,
+    "tokens": 6815626,
+    "goodput_per_min": 3.0246205805824964,
+    "latency_p50": 83.1068272574521,
+    "latency_p90": 187.30071659914074,
+    "slot_seconds": 103173.33949163357
+   },
+   "fixed8k": {
+    "requests": 1229,
+    "good": 457,
+    "correct": 606,
+    "on_time": 930,
+    "extended": 1229,
+    "tokens": 11161806,
+    "goodput_per_min": 3.3468561872305105,
+    "latency_p50": 155.65643812371945,
+    "latency_p90": 469.5916886323437,
+    "slot_seconds": 185213.35222637604
+   },
+   "arrival": {
+    "requests": 1229,
+    "good": 535,
+    "correct": 583,
+    "on_time": 1095,
+    "extended": 1073,
+    "tokens": 10613417,
+    "goodput_per_min": 3.9180920353792628,
+    "latency_p50": 152.2316760192598,
+    "latency_p90": 252.12084867125304,
+    "slot_seconds": 171742.19914218844
+   },
+   "constant": {
+    "requests": 1229,
+    "good": 545,
+    "correct": 583,
+    "on_time": 1123,
+    "extended": 1060,
+    "tokens": 10568307,
+    "goodput_per_min": 3.9913274005265387,
+    "latency_p50": 151.03677481531577,
+    "latency_p90": 198.36485121492092,
+    "slot_seconds": 170543.96297712985
+   },
+   "aware": {
+    "requests": 1229,
+    "good": 516,
+    "correct": 551,
+    "on_time": 1128,
+    "extended": 349,
+    "tokens": 8107030,
+    "goodput_per_min": 3.778944841599438,
+    "latency_p50": 92.24825565704987,
+    "latency_p90": 193.36485121492092,
+    "slot_seconds": 124905.0702986505
+   },
+   "aware_in_sample": {
+    "requests": 1229,
+    "good": 556,
+    "correct": 591,
+    "on_time": 1128,
+    "extended": 349,
+    "tokens": 8110292,
+    "goodput_per_min": 4.071886302188542,
+    "latency_p50": 91.90472342767589,
+    "latency_p90": 191.77365806655996,
+    "slot_seconds": 124979.3561648158
+   },
+   "shuffled": {
+    "good": 453.1,
+    "good_min": 426,
+    "good_max": 486
+   }
+  },
+  "contrasts": {
+   "primary": -29,
+   "selection": 62.89999999999998,
+   "fixed_check": 59
+  },
+  "primary_95": [
+   -52,
+   -2
+  ],
+  "selection_95": [
+   3.6000000000000227,
+   133.35000000000002
+  ]
+ },
+ "question_accounting": {
+  "questions_gaining": 2,
+  "questions_losing": 5,
+  "questions_tied": 22,
+  "requests_gained": 3,
+  "requests_lost": 32,
+  "largest": [
+   {
+    "question_id": "aime2026-024",
+    "requests": 42,
+    "good_constant": 16,
+    "good_aware": 6,
+    "extended_constant": 36,
+    "extended_aware": 18,
+    "difference": -10,
+    "value_b0": -0.125,
+    "value_b1": 0.25
+   },
+   {
+    "question_id": "aime2026-007",
+    "requests": 43,
+    "good_constant": 36,
+    "good_aware": 27,
+    "extended_constant": 36,
+    "extended_aware": 18,
+    "difference": -9,
+    "value_b0": 0.0,
+    "value_b1": 0.375
+   },
+   {
+    "question_id": "aime2026-022",
+    "requests": 42,
+    "good_constant": 26,
+    "good_aware": 19,
+    "extended_constant": 38,
+    "extended_aware": 19,
+    "difference": -7,
+    "value_b0": 0.375,
+    "value_b1": -0.125
+   },
+   {
+    "question_id": "aime2026-011",
+    "requests": 42,
+    "good_constant": 4,
+    "good_aware": 0,
+    "extended_constant": 37,
+    "extended_aware": 18,
+    "difference": -4,
+    "value_b0": 0.0,
+    "value_b1": 0.375
+   },
+   {
+    "question_id": "aime2026-004",
+    "requests": 44,
+    "good_constant": 41,
+    "good_aware": 42,
+    "extended_constant": 39,
+    "extended_aware": 0,
+    "difference": 1,
+    "value_b0": 0.0,
+    "value_b1": 0.0
+   }
+  ]
+ },
+ "cells": {
+  "rate x0.9": {
+   "setting": {
+    "trace": "burst",
+    "rate": 486.0,
+    "seed": 8222,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 414,
+     "correct": 441,
+     "on_time": 1147,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 2.7287497053875023,
+     "latency_p50": 81.87122643924158,
+     "latency_p90": 172.94032413370292,
+     "slot_seconds": 102012.08251528049
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 491,
+     "correct": 606,
+     "on_time": 994,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 3.236270785858125,
+     "latency_p50": 150.592758779615,
+     "latency_p90": 419.1382696551723,
+     "slot_seconds": 180322.1679492109
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 539,
+     "correct": 583,
+     "on_time": 1099,
+     "extended": 1085,
+     "tokens": 10658841,
+     "goodput_per_min": 3.552647563294357,
+     "latency_p50": 148.53435176635867,
+     "latency_p90": 247.06435046980403,
+     "slot_seconds": 168480.8882630938
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 549,
+     "correct": 585,
+     "on_time": 1127,
+     "extended": 1077,
+     "tokens": 10632366,
+     "goodput_per_min": 3.6185593919269055,
+     "latency_p50": 147.68583167677411,
+     "latency_p90": 191.68814465683874,
+     "slot_seconds": 167744.92354875003
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 520,
+     "correct": 552,
+     "on_time": 1138,
+     "extended": 350,
+     "tokens": 8110862,
+     "goodput_per_min": 3.427415088892515,
+     "latency_p50": 90.7274074889051,
+     "latency_p90": 181.97767484780934,
+     "slot_seconds": 123111.738946444
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 559,
+     "correct": 592,
+     "on_time": 1137,
+     "extended": 352,
+     "tokens": 8122290,
+     "goodput_per_min": 3.6844712205594536,
+     "latency_p50": 90.53698412357664,
+     "latency_p90": 182.7561096834163,
+     "slot_seconds": 123338.00002283882
+    },
+    "shuffled": {
+     "good": 457.15,
+     "good_min": 430,
+     "good_max": 489
+    }
+   },
+   "contrasts": {
+    "primary": -29,
+    "selection": 62.85000000000002,
+    "fixed_check": 29
+   },
+   "primary_95": [
+    -55,
+    -4
+   ]
+  },
+  "rate x1.1": {
+   "setting": {
+    "trace": "burst",
+    "rate": 594.0,
+    "seed": 8222,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 409,
+     "correct": 441,
+     "on_time": 1127,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 3.2948590779759446,
+     "latency_p50": 84.22632076568425,
+     "latency_p90": 193.58467190315957,
+     "slot_seconds": 104589.93400017491
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 413,
+     "correct": 606,
+     "on_time": 832,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 3.327082638640746,
+     "latency_p50": 165.63287667672375,
+     "latency_p90": 526.260213400242,
+     "slot_seconds": 190803.80085574996
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 532,
+     "correct": 580,
+     "on_time": 1092,
+     "extended": 1048,
+     "tokens": 10522510,
+     "goodput_per_min": 4.285733568418588,
+     "latency_p50": 156.53428521484966,
+     "latency_p90": 272.3795964863782,
+     "slot_seconds": 174586.04077777942
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 536,
+     "correct": 570,
+     "on_time": 1120,
+     "extended": 1014,
+     "tokens": 10421814,
+     "goodput_per_min": 4.317957129083389,
+     "latency_p50": 154.4203201502305,
+     "latency_p90": 205.91748477606893,
+     "slot_seconds": 171895.2524749887
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 515,
+     "correct": 551,
+     "on_time": 1121,
+     "extended": 345,
+     "tokens": 8091963,
+     "goodput_per_min": 4.148783435593182,
+     "latency_p50": 93.99720847038952,
+     "latency_p90": 201.3795964863782,
+     "slot_seconds": 126782.69385619153
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 552,
+     "correct": 588,
+     "on_time": 1123,
+     "extended": 342,
+     "tokens": 8086746,
+     "goodput_per_min": 4.446851371742595,
+     "latency_p50": 94.0569645937012,
+     "latency_p90": 197.17376810157077,
+     "slot_seconds": 126675.02759954764
+    },
+    "shuffled": {
+     "good": 451.15,
+     "good_min": 425,
+     "good_max": 484
+    }
+   },
+   "contrasts": {
+    "primary": -21,
+    "selection": 63.85000000000002,
+    "fixed_check": 102
+   },
+   "primary_95": [
+    -53,
+    -1
+   ]
+  },
+  "speed x0.75": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8222,
+    "speed": 0.75,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 382,
+     "correct": 441,
+     "on_time": 1063,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 2.797590948625941,
+     "latency_p50": 116.46319244769256,
+     "latency_p90": 290.8776731633768,
+     "slot_seconds": 143982.98847273082
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 54,
+     "correct": 606,
+     "on_time": 105,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 0.39547097179529006,
+     "latency_p50": 783.6315549874771,
+     "latency_p90": 880.474940611045,
+     "slot_seconds": 269373.94887868897
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 434,
+     "correct": 563,
+     "on_time": 817,
+     "extended": 893,
+     "tokens": 9963319,
+     "goodput_per_min": 3.1784148473917755,
+     "latency_p50": 223.09364254134698,
+     "latency_p90": 394.11754059314364,
+     "slot_seconds": 231993.4424792718
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 471,
+     "correct": 551,
+     "on_time": 968,
+     "extended": 837,
+     "tokens": 9776350,
+     "goodput_per_min": 3.449385698436697,
+     "latency_p50": 215.0314602015833,
+     "latency_p90": 319.5265775165391,
+     "slot_seconds": 224620.81812172197
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 478,
+     "correct": 543,
+     "on_time": 1054,
+     "extended": 323,
+     "tokens": 8009841,
+     "goodput_per_min": 3.5006504540397896,
+     "latency_p50": 132.00200353148784,
+     "latency_p90": 307.11754059314364,
+     "slot_seconds": 173950.1610746786
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 515,
+     "correct": 579,
+     "on_time": 1054,
+     "extended": 327,
+     "tokens": 8030555,
+     "goodput_per_min": 3.771621305084711,
+     "latency_p50": 132.44155222281825,
+     "latency_p90": 311.0337599657737,
+     "slot_seconds": 174660.68175779513
+    },
+    "shuffled": {
+     "good": 420.45,
+     "good_min": 397,
+     "good_max": 452
+    }
+   },
+   "contrasts": {
+    "primary": 7,
+    "selection": 57.55000000000001,
+    "fixed_check": 96
+   },
+   "primary_95": [
+    -21,
+    48
+   ]
+  },
+  "speed x1.25": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8222,
+    "speed": 1.25,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 428,
+     "correct": 441,
+     "on_time": 1189,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 3.13447362830341,
+     "latency_p50": 64.85897997055963,
+     "latency_p90": 103.52979543227161,
+     "slot_seconds": 80786.47878176329
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 531,
+     "correct": 606,
+     "on_time": 1075,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 3.8887978893203523,
+     "latency_p50": 117.0250046131091,
+     "latency_p90": 288.349343674862,
+     "slot_seconds": 140892.03233399545
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 556,
+     "correct": 583,
+     "on_time": 1147,
+     "extended": 1090,
+     "tokens": 10676455,
+     "goodput_per_min": 4.071886302188542,
+     "latency_p50": 116.01064541493861,
+     "latency_p90": 177.86941226720387,
+     "slot_seconds": 132248.11419797898
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 571,
+     "correct": 585,
+     "on_time": 1179,
+     "extended": 1079,
+     "tokens": 10640019,
+     "goodput_per_min": 4.181739349909456,
+     "latency_p50": 115.58282621117837,
+     "latency_p90": 145.7733689161713,
+     "slot_seconds": 131511.7459972052
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 539,
+     "correct": 552,
+     "on_time": 1185,
+     "extended": 353,
+     "tokens": 8122600,
+     "goodput_per_min": 3.947386181438173,
+     "latency_p50": 71.58382868277204,
+     "latency_p90": 131.85999168062006,
+     "slot_seconds": 97348.57691439312
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 579,
+     "correct": 592,
+     "on_time": 1186,
+     "extended": 355,
+     "tokens": 8134028,
+     "goodput_per_min": 4.240327642027276,
+     "latency_p50": 71.41841227803934,
+     "latency_p90": 135.86941226720387,
+     "slot_seconds": 97520.33346916799
+    },
+    "shuffled": {
+     "good": 473.15,
+     "good_min": 446,
+     "good_max": 508
+    }
+   },
+   "contrasts": {
+    "primary": -32,
+    "selection": 65.85000000000002,
+    "fixed_check": 8
+   },
+   "primary_95": [
+    -59,
+    -5
+   ]
+  },
+  "lag 5 s": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8222,
+    "speed": 1.0,
+    "lag": 5.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 413,
+     "correct": 441,
+     "on_time": 1139,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 3.0246205805824964,
+     "latency_p50": 83.1068272574521,
+     "latency_p90": 187.30071659914074,
+     "slot_seconds": 103173.33949163357
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 457,
+     "correct": 606,
+     "on_time": 930,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 3.3468561872305105,
+     "latency_p50": 155.65643812371945,
+     "latency_p90": 469.5916886323437,
+     "slot_seconds": 185213.35222637604
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 518,
+     "correct": 585,
+     "on_time": 1065,
+     "extended": 1091,
+     "tokens": 10666180,
+     "goodput_per_min": 3.7935919146288937,
+     "latency_p50": 152.31355090834495,
+     "latency_p90": 337.26852804512896,
+     "slot_seconds": 173326.5556252344
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 543,
+     "correct": 584,
+     "on_time": 1118,
+     "extended": 1061,
+     "tokens": 10573085,
+     "goodput_per_min": 3.9766803274970832,
+     "latency_p50": 151.0105029887668,
+     "latency_p90": 200.0145452773586,
+     "slot_seconds": 170674.55316688394
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 516,
+     "correct": 551,
+     "on_time": 1128,
+     "extended": 349,
+     "tokens": 8107030,
+     "goodput_per_min": 3.778944841599438,
+     "latency_p50": 92.24825565704987,
+     "latency_p90": 193.36485121492092,
+     "slot_seconds": 124905.0702986505
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 556,
+     "correct": 591,
+     "on_time": 1128,
+     "extended": 349,
+     "tokens": 8110292,
+     "goodput_per_min": 4.071886302188542,
+     "latency_p50": 91.90472342767589,
+     "latency_p90": 191.77365806655996,
+     "slot_seconds": 124979.3561648158
+    },
+    "shuffled": {
+     "good": 453.1,
+     "good_min": 426,
+     "good_max": 486
+    }
+   },
+   "contrasts": {
+    "primary": -27,
+    "selection": 62.89999999999998,
+    "fixed_check": 59
+   },
+   "primary_95": [
+    -52,
+    -1
+   ]
+  },
+  "lag 20 s": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8222,
+    "speed": 1.0,
+    "lag": 20.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 413,
+     "correct": 441,
+     "on_time": 1139,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 3.0246205805824964,
+     "latency_p50": 83.1068272574521,
+     "latency_p90": 187.30071659914074,
+     "slot_seconds": 103173.33949163357
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 457,
+     "correct": 606,
+     "on_time": 930,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 3.3468561872305105,
+     "latency_p50": 155.65643812371945,
+     "latency_p90": 469.5916886323437,
+     "slot_seconds": 185213.35222637604
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 519,
+     "correct": 589,
+     "on_time": 1058,
+     "extended": 1100,
+     "tokens": 10693473,
+     "goodput_per_min": 3.800915451143621,
+     "latency_p50": 152.6095982256802,
+     "latency_p90": 341.9078128236961,
+     "slot_seconds": 173919.38795585913
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 543,
+     "correct": 584,
+     "on_time": 1117,
+     "extended": 1061,
+     "tokens": 10573976,
+     "goodput_per_min": 3.9766803274970832,
+     "latency_p50": 151.06565365073652,
+     "latency_p90": 206.34235373462332,
+     "slot_seconds": 170810.43264864397
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 516,
+     "correct": 551,
+     "on_time": 1128,
+     "extended": 350,
+     "tokens": 8110360,
+     "goodput_per_min": 3.778944841599438,
+     "latency_p50": 92.24825565704987,
+     "latency_p90": 195.30071659914074,
+     "slot_seconds": 124977.91552729966
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 556,
+     "correct": 590,
+     "on_time": 1128,
+     "extended": 349,
+     "tokens": 8109307,
+     "goodput_per_min": 4.071886302188542,
+     "latency_p50": 91.90472342767589,
+     "latency_p90": 193.36485121492092,
+     "slot_seconds": 124958.02117776003
+    },
+    "shuffled": {
+     "good": 452.95,
+     "good_min": 426,
+     "good_max": 486
+    }
+   },
+   "contrasts": {
+    "primary": -27,
+    "selection": 63.05000000000001,
+    "fixed_check": 59
+   },
+   "primary_95": [
+    -52,
+    -2
+   ]
+  },
+  "deadline 180 s": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8222,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 180.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 397,
+     "correct": 441,
+     "on_time": 1099,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 2.9074439963468546,
+     "latency_p50": 83.1068272574521,
+     "latency_p90": 187.30071659914074,
+     "slot_seconds": 103173.33949163357
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 447,
+     "correct": 606,
+     "on_time": 895,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 3.2736208220832346,
+     "latency_p50": 155.65643812371945,
+     "latency_p90": 469.5916886323437,
+     "slot_seconds": 185213.35222637604
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 528,
+     "correct": 583,
+     "on_time": 1065,
+     "extended": 1073,
+     "tokens": 10613417,
+     "goodput_per_min": 3.8668272797761696,
+     "latency_p50": 152.2316760192598,
+     "latency_p90": 252.12084867125304,
+     "slot_seconds": 171742.19914218844
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 531,
+     "correct": 583,
+     "on_time": 1092,
+     "extended": 1060,
+     "tokens": 10568307,
+     "goodput_per_min": 3.8887978893203523,
+     "latency_p50": 151.03677481531577,
+     "latency_p90": 198.36485121492092,
+     "slot_seconds": 170543.96297712985
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 503,
+     "correct": 551,
+     "on_time": 1097,
+     "extended": 349,
+     "tokens": 8107030,
+     "goodput_per_min": 3.6837388669079796,
+     "latency_p50": 92.24825565704987,
+     "latency_p90": 193.36485121492092,
+     "slot_seconds": 124905.0702986505
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 541,
+     "correct": 591,
+     "on_time": 1096,
+     "extended": 349,
+     "tokens": 8110292,
+     "goodput_per_min": 3.962033254467628,
+     "latency_p50": 91.90472342767589,
+     "latency_p90": 191.77365806655996,
+     "slot_seconds": 124979.3561648158
+    },
+    "shuffled": {
+     "good": 438.95,
+     "good_min": 412,
+     "good_max": 472
+    }
+   },
+   "contrasts": {
+    "primary": -28,
+    "selection": 64.05000000000001,
+    "fixed_check": 56
+   },
+   "primary_95": [
+    -57,
+    -5
+   ]
+  },
+  "seed 8223": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8223,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 407,
+     "correct": 438,
+     "on_time": 1139,
+     "extended": 0,
+     "tokens": 6844443,
+     "goodput_per_min": 2.9806793614941305,
+     "latency_p50": 83.83460137733073,
+     "latency_p90": 188.29987230919482,
+     "slot_seconds": 103653.15245243364
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 461,
+     "correct": 605,
+     "on_time": 929,
+     "extended": 1229,
+     "tokens": 11171758,
+     "goodput_per_min": 3.3761503332894205,
+     "latency_p50": 155.7962302057731,
+     "latency_p90": 472.12117390162757,
+     "slot_seconds": 185494.0350892758
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 538,
+     "correct": 583,
+     "on_time": 1093,
+     "extended": 1074,
+     "tokens": 10631416,
+     "goodput_per_min": 3.9400626449234455,
+     "latency_p50": 152.8251446826289,
+     "latency_p90": 268.3367107012905,
+     "slot_seconds": 172080.84590511434
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 541,
+     "correct": 580,
+     "on_time": 1120,
+     "extended": 1052,
+     "tokens": 10553879,
+     "goodput_per_min": 3.962033254467628,
+     "latency_p50": 151.21612104945962,
+     "latency_p90": 199.30071659914074,
+     "slot_seconds": 170239.58983345955
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 513,
+     "correct": 547,
+     "on_time": 1131,
+     "extended": 353,
+     "tokens": 8147042,
+     "goodput_per_min": 3.7569742320552555,
+     "latency_p50": 93.0541197487546,
+     "latency_p90": 198.46652826765683,
+     "slot_seconds": 125601.02045621762
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 550,
+     "correct": 585,
+     "on_time": 1129,
+     "extended": 355,
+     "tokens": 8150527,
+     "goodput_per_min": 4.027945083100176,
+     "latency_p50": 92.87157697967632,
+     "latency_p90": 197.67025302484603,
+     "slot_seconds": 125664.4394261224
+    },
+    "shuffled": {
+     "good": 451.9,
+     "good_min": 423,
+     "good_max": 493
+    }
+   },
+   "contrasts": {
+    "primary": -28,
+    "selection": 61.10000000000002,
+    "fixed_check": 52
+   },
+   "primary_95": [
+    -57,
+    -4
+   ]
+  },
+  "seed 8224": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8224,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 418,
+     "correct": 452,
+     "on_time": 1139,
+     "extended": 0,
+     "tokens": 6825908,
+     "goodput_per_min": 3.061238263156134,
+     "latency_p50": 83.09802396002033,
+     "latency_p90": 188.291773737516,
+     "slot_seconds": 103289.07740276874
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 470,
+     "correct": 612,
+     "on_time": 930,
+     "extended": 1229,
+     "tokens": 11151880,
+     "goodput_per_min": 3.442062161921969,
+     "latency_p50": 155.8866925326697,
+     "latency_p90": 468.99267112968755,
+     "slot_seconds": 185069.8476778237
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 546,
+     "correct": 597,
+     "on_time": 1094,
+     "extended": 1073,
+     "tokens": 10601450,
+     "goodput_per_min": 3.998650937041266,
+     "latency_p50": 152.03382114227315,
+     "latency_p90": 268.63611748942446,
+     "slot_seconds": 171559.34086072232
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 550,
+     "correct": 594,
+     "on_time": 1120,
+     "extended": 1057,
+     "tokens": 10548155,
+     "goodput_per_min": 4.027945083100176,
+     "latency_p50": 150.6766240979136,
+     "latency_p90": 204.75172022378115,
+     "slot_seconds": 170206.4049628266
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 530,
+     "correct": 566,
+     "on_time": 1135,
+     "extended": 356,
+     "tokens": 8113502,
+     "goodput_per_min": 3.8814743528056246,
+     "latency_p50": 92.37053456218928,
+     "latency_p90": 195.30071659914074,
+     "slot_seconds": 124954.67411952873
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 564,
+     "correct": 600,
+     "on_time": 1134,
+     "extended": 353,
+     "tokens": 8113469,
+     "goodput_per_min": 4.130474594306363,
+     "latency_p50": 92.30252301522069,
+     "latency_p90": 195.63611748942446,
+     "slot_seconds": 124857.68877551383
+    },
+    "shuffled": {
+     "good": 460.95,
+     "good_min": 432,
+     "good_max": 496
+    }
+   },
+   "contrasts": {
+    "primary": -20,
+    "selection": 69.05000000000001,
+    "fixed_check": 60
+   },
+   "primary_95": [
+    -53,
+    0
+   ]
+  },
+  "seed 8225": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8225,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 414,
+     "correct": 443,
+     "on_time": 1140,
+     "extended": 0,
+     "tokens": 6818099,
+     "goodput_per_min": 3.0319441170972237,
+     "latency_p50": 83.02639574883051,
+     "latency_p90": 189.47172357796308,
+     "slot_seconds": 103198.70451745905
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 472,
+     "correct": 616,
+     "on_time": 929,
+     "extended": 1229,
+     "tokens": 11177137,
+     "goodput_per_min": 3.456709234951424,
+     "latency_p50": 156.5612728554579,
+     "latency_p90": 472.86042720638375,
+     "slot_seconds": 185693.6212764996
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 548,
+     "correct": 594,
+     "on_time": 1093,
+     "extended": 1073,
+     "tokens": 10623995,
+     "goodput_per_min": 4.013298010070721,
+     "latency_p50": 152.72714529517407,
+     "latency_p90": 261.9210296267894,
+     "slot_seconds": 172055.12774352203
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 554,
+     "correct": 592,
+     "on_time": 1116,
+     "extended": 1067,
+     "tokens": 10605614,
+     "goodput_per_min": 4.057239229159087,
+     "latency_p50": 151.5530433147594,
+     "latency_p90": 203.3046620566589,
+     "slot_seconds": 171531.47930480173
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 531,
+     "correct": 561,
+     "on_time": 1133,
+     "extended": 353,
+     "tokens": 8122303,
+     "goodput_per_min": 3.8887978893203523,
+     "latency_p50": 93.07303325629437,
+     "latency_p90": 197.02101843534024,
+     "slot_seconds": 125219.60966448797
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 564,
+     "correct": 596,
+     "on_time": 1135,
+     "extended": 348,
+     "tokens": 8114734,
+     "goodput_per_min": 4.130474594306363,
+     "latency_p50": 92.88869248985648,
+     "latency_p90": 195.86942159883313,
+     "slot_seconds": 125033.65477374537
+    },
+    "shuffled": {
+     "good": 461.4,
+     "good_min": 431,
+     "good_max": 492
+    }
+   },
+   "contrasts": {
+    "primary": -23,
+    "selection": 69.60000000000002,
+    "fixed_check": 59
+   },
+   "primary_95": [
+    -53,
+    -2
+   ]
+  },
+  "seed 8226": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8226,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 414,
+     "correct": 448,
+     "on_time": 1139,
+     "extended": 0,
+     "tokens": 6821274,
+     "goodput_per_min": 3.0319441170972237,
+     "latency_p50": 83.45300374871022,
+     "latency_p90": 186.36849819042163,
+     "slot_seconds": 103255.87964875465
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 464,
+     "correct": 612,
+     "on_time": 930,
+     "extended": 1229,
+     "tokens": 11168532,
+     "goodput_per_min": 3.3981209428336037,
+     "latency_p50": 156.1679684377823,
+     "latency_p90": 475.87384114796896,
+     "slot_seconds": 185379.54447467512
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 539,
+     "correct": 590,
+     "on_time": 1092,
+     "extended": 1074,
+     "tokens": 10615390,
+     "goodput_per_min": 3.947386181438173,
+     "latency_p50": 152.07299683879228,
+     "latency_p90": 266.36202503244,
+     "slot_seconds": 171693.50640023328
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 544,
+     "correct": 586,
+     "on_time": 1121,
+     "extended": 1058,
+     "tokens": 10555708,
+     "goodput_per_min": 3.984003864011811,
+     "latency_p50": 150.82513415846256,
+     "latency_p90": 203.87420651262948,
+     "slot_seconds": 170233.92461029804
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 513,
+     "correct": 552,
+     "on_time": 1128,
+     "extended": 354,
+     "tokens": 8128136,
+     "goodput_per_min": 3.7569742320552555,
+     "latency_p50": 92.9926877220214,
+     "latency_p90": 197.53936525986444,
+     "slot_seconds": 125379.07406115963
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 554,
+     "correct": 592,
+     "on_time": 1132,
+     "extended": 352,
+     "tokens": 8125532,
+     "goodput_per_min": 4.057239229159087,
+     "latency_p50": 92.6186449134616,
+     "latency_p90": 194.058980600435,
+     "slot_seconds": 125161.75686008643
+    },
+    "shuffled": {
+     "good": 456.75,
+     "good_min": 433,
+     "good_max": 488
+    }
+   },
+   "contrasts": {
+    "primary": -31,
+    "selection": 56.25,
+    "fixed_check": 49
+   },
+   "primary_95": [
+    -56,
+    -3
+   ]
+  },
+  "seed 8227": {
+   "setting": {
+    "trace": "burst",
+    "rate": 540,
+    "seed": 8227,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 413,
+     "correct": 440,
+     "on_time": 1139,
+     "extended": 0,
+     "tokens": 6828675,
+     "goodput_per_min": 3.0246205805824964,
+     "latency_p50": 83.72517246106963,
+     "latency_p90": 189.70910372264075,
+     "slot_seconds": 103353.58064168165
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 469,
+     "correct": 608,
+     "on_time": 934,
+     "extended": 1229,
+     "tokens": 11172641,
+     "goodput_per_min": 3.4347386254072414,
+     "latency_p50": 156.197156757833,
+     "latency_p90": 479.8787087420328,
+     "slot_seconds": 185445.07060569956
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 536,
+     "correct": 582,
+     "on_time": 1093,
+     "extended": 1074,
+     "tokens": 10620094,
+     "goodput_per_min": 3.92541557189399,
+     "latency_p50": 152.57007096489815,
+     "latency_p90": 268.800781888016,
+     "slot_seconds": 171921.40545427834
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 544,
+     "correct": 581,
+     "on_time": 1122,
+     "extended": 1058,
+     "tokens": 10568068,
+     "goodput_per_min": 3.984003864011811,
+     "latency_p50": 151.4686886444788,
+     "latency_p90": 203.64863474561935,
+     "slot_seconds": 170622.43586116945
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 522,
+     "correct": 553,
+     "on_time": 1133,
+     "extended": 353,
+     "tokens": 8128998,
+     "goodput_per_min": 3.822886060687804,
+     "latency_p50": 92.4133077813458,
+     "latency_p90": 198.44121393650767,
+     "slot_seconds": 125157.54419285542
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 552,
+     "correct": 587,
+     "on_time": 1128,
+     "extended": 356,
+     "tokens": 8137213,
+     "goodput_per_min": 4.042592156129632,
+     "latency_p50": 92.60647894256999,
+     "latency_p90": 201.06137772314764,
+     "slot_seconds": 125470.03112395399
+    },
+    "shuffled": {
+     "good": 456.55,
+     "good_min": 427,
+     "good_max": 487
+    }
+   },
+   "contrasts": {
+    "primary": -22,
+    "selection": 65.44999999999999,
+    "fixed_check": 53
+   },
+   "primary_95": [
+    -55,
+    -3
+   ]
+  }
+ },
+ "context": {
+  "sustained": {
+   "setting": {
+    "trace": "sustained",
+    "rate": 540,
+    "seed": 8222,
+    "speed": 1.0,
+    "lag": 0.0,
+    "deadline": 240.0
+   },
+   "policies": {
+    "fixed4k": {
+     "requests": 1229,
+     "good": 441,
+     "correct": 441,
+     "on_time": 1229,
+     "extended": 0,
+     "tokens": 6815626,
+     "goodput_per_min": 3.23177182944801,
+     "latency_p50": 82.12748412692326,
+     "latency_p90": 92.38683858460149,
+     "slot_seconds": 101215.23270832973
+    },
+    "fixed8k": {
+     "requests": 1229,
+     "good": 606,
+     "correct": 606,
+     "on_time": 1229,
+     "extended": 1229,
+     "tokens": 11161806,
+     "goodput_per_min": 4.4409381601938644,
+     "latency_p50": 154.34742762446422,
+     "latency_p90": 175.8381989406239,
+     "slot_seconds": 183826.9167130843
+    },
+    "arrival": {
+     "requests": 1229,
+     "good": 603,
+     "correct": 603,
+     "on_time": 1229,
+     "extended": 1221,
+     "tokens": 11132326,
+     "goodput_per_min": 4.418953317816667,
+     "latency_p50": 154.09736633779676,
+     "latency_p90": 175.1290587100675,
+     "slot_seconds": 183180.6317578653
+    },
+    "constant": {
+     "requests": 1229,
+     "good": 597,
+     "correct": 597,
+     "on_time": 1229,
+     "extended": 1180,
+     "tokens": 10988987,
+     "goodput_per_min": 4.374983633062272,
+     "latency_p50": 152.44450494096964,
+     "latency_p90": 170.47972939405008,
+     "slot_seconds": 179557.0711386454
+    },
+    "aware": {
+     "requests": 1229,
+     "good": 568,
+     "correct": 568,
+     "on_time": 1229,
+     "extended": 402,
+     "tokens": 8302888,
+     "goodput_per_min": 4.162463490082698,
+     "latency_p50": 90.57009378619375,
+     "latency_p90": 149.44215606059151,
+     "slot_seconds": 127052.39861994368
+    },
+    "aware_in_sample": {
+     "requests": 1229,
+     "good": 613,
+     "correct": 613,
+     "on_time": 1229,
+     "extended": 402,
+     "tokens": 8307493,
+     "goodput_per_min": 4.492236125740658,
+     "latency_p50": 89.97817922140302,
+     "latency_p90": 149.830240732064,
+     "slot_seconds": 127108.66926594767
+    },
+    "shuffled": {
+     "good": 492.95,
+     "good_min": 462,
+     "good_max": 531
+    }
+   },
+   "contrasts": {
+    "primary": -29,
+    "selection": 75.05000000000001,
+    "fixed_check": -38
+   }
+  },
+  "lambda_sweep": [
+   {
+    "anchor_waiting": 1,
+    "lam": 8.689655172413794,
+    "good_constant": 545,
+    "good_aware": 516,
+    "extended_constant": 0.8624898291293734,
+    "extended_aware": 0.2839707078925956,
+    "difference": -29
+   },
+   {
+    "anchor_waiting": 2,
+    "lam": 2.896551724137931,
+    "good_constant": 545,
+    "good_aware": 516,
+    "extended_constant": 0.8689991863303499,
+    "extended_aware": 0.2847843775427177,
+    "difference": -29
+   },
+   {
+    "anchor_waiting": 4,
+    "lam": 1.2413793103448276,
+    "good_constant": 543,
+    "good_aware": 516,
+    "extended_constant": 0.8738812042310822,
+    "extended_aware": 0.28641171684296174,
+    "difference": -27
+   },
+   {
+    "anchor_waiting": 8,
+    "lam": 0.5793103448275863,
+    "good_constant": 544,
+    "good_aware": 516,
+    "extended_constant": 0.8771358828315704,
+    "extended_aware": 0.2921074043938161,
+    "difference": -28
+   }
+  ]
+ },
+ "cost": {
+  "table_tokens": 6927065,
+  "table_tokens_per_question": 238864.3103448276,
+  "tokens_saved_per_request": 2002.66639544345,
+  "break_even_requests_per_question": 119.27314049324522
+ },
+ "conditions": {
+  "a_primary_lower_bound_above_0": false,
+  "b_primary_positive_in_all_cells": false,
+  "c_selection_positive": true,
+  "d_fixed_check_not_negative": true
+ },
+ "verdict": "stop"
+}
