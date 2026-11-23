@@ -1,0 +1,192 @@
+{
+  "pace_job": 7254049,
+  "gpu": "L40S",
+  "allocation_elapsed_seconds": 478,
+  "rollout_summary": {
+    "seconds": 128.9783662019763,
+    "generated_tokens": 17337,
+    "modes": {
+      "Low": {
+        "n": 2,
+        "correct": 1,
+        "reasoning_tokens": 0,
+        "answer_tokens": 373,
+        "forced_closures": 0,
+        "failures": {
+          "normal": 2
+        },
+        "leakage": 0
+      },
+      "Medium": {
+        "n": 2,
+        "correct": 2,
+        "reasoning_tokens": 362,
+        "answer_tokens": 1333,
+        "forced_closures": 0,
+        "failures": {
+          "normal": 2
+        },
+        "leakage": 0
+      },
+      "High": {
+        "n": 2,
+        "correct": 2,
+        "reasoning_tokens": 4957,
+        "answer_tokens": 1145,
+        "forced_closures": 0,
+        "failures": {
+          "normal": 2
+        },
+        "leakage": 0
+      },
+      "NativeThink": {
+        "n": 2,
+        "correct": 2,
+        "reasoning_tokens": 6690,
+        "answer_tokens": 1156,
+        "forced_closures": 0,
+        "failures": {
+          "normal": 2
+        },
+        "leakage": 0
+      },
+      "NativeDirect": {
+        "n": 2,
+        "correct": 1,
+        "reasoning_tokens": 0,
+        "answer_tokens": 1309,
+        "forced_closures": 0,
+        "failures": {
+          "normal": 2
+        },
+        "leakage": 0
+      }
+    }
+  },
+  "training_replay": {
+    "controlled_log_probability_lift": [
+      2.10563325881958,
+      0.4695254862308502,
+      0.7949599027633667
+    ],
+    "math_group_rewards": [
+      1.0,
+      0.0,
+      1.1251086665906835
+    ],
+    "synthetic_timing_advantage": false,
+    "root_gradients": [
+      -1.8078882931149565e-05,
+      0.0006670146831311285,
+      -0.0001294622925342992
+    ],
+    "math_gradient_norm": 0.13241688907146454,
+    "group_seconds": 5.058787978021428,
+    "training_input_tokens": 7016,
+    "longest_sequence": 5447,
+    "peak_reserved_gib": 10.1796875,
+    "total_seconds": 38.9300009009894
+  },
+  "cases": [
+    {
+      "question_id": "fixture-easy",
+      "mode": "High",
+      "correct": true,
+      "leaked": false,
+      "seconds": 13.259985184064135,
+      "thinking_tokens": 503,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-easy",
+      "mode": "Low",
+      "correct": true,
+      "leaked": false,
+      "seconds": 2.678660345962271,
+      "thinking_tokens": 0,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-easy",
+      "mode": "Medium",
+      "correct": true,
+      "leaked": false,
+      "seconds": 11.736031336011365,
+      "thinking_tokens": 362,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-easy",
+      "mode": "NativeDirect",
+      "correct": true,
+      "leaked": false,
+      "seconds": 3.0836493431124836,
+      "thinking_tokens": 0,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-easy",
+      "mode": "NativeThink",
+      "correct": true,
+      "leaked": false,
+      "seconds": 12.682743404060602,
+      "thinking_tokens": 563,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-harder",
+      "mode": "High",
+      "correct": true,
+      "leaked": false,
+      "seconds": 86.78094328590669,
+      "thinking_tokens": 4454,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-harder",
+      "mode": "Low",
+      "correct": false,
+      "leaked": false,
+      "seconds": 7.6143989090342075,
+      "thinking_tokens": 0,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-harder",
+      "mode": "Medium",
+      "correct": true,
+      "leaked": false,
+      "seconds": 18.42084992513992,
+      "thinking_tokens": 0,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-harder",
+      "mode": "NativeDirect",
+      "correct": false,
+      "leaked": false,
+      "seconds": 18.198570271022618,
+      "thinking_tokens": 0,
+      "forced_close": false,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-harder",
+      "mode": "NativeThink",
+      "correct": true,
+      "leaked": false,
+      "seconds": 110.73582333000377,
+      "thinking_tokens": 6127,
+      "forced_close": false,
+      "contract_status": "normal"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "pace_job": 7255384,
+  "gpu": "L40S",
+  "allocation_elapsed_seconds": 437,
+  "rollout_summary": {
+    "seconds": 127.73892004787922,
+    "generated_tokens": 10518,
+    "modes": {
+      "Medium": {
+        "n": 1,
+        "correct": 1,
+        "reasoning_tokens": 2048,
+        "answer_tokens": 13,
+        "forced_closures": 1,
+        "failures": {
+          "normal": 1
+        },
+        "leakage": 0
+      },
+      "High": {
+        "n": 1,
+        "correct": 1,
+        "reasoning_tokens": 8192,
+        "answer_tokens": 237,
+        "forced_closures": 1,
+        "failures": {
+          "normal": 1
+        },
+        "leakage": 0
+      }
+    }
+  },
+  "training_replay": {
+    "controlled_log_probability_lift": [
+      2.10563325881958,
+      0.4695254862308502,
+      0.7949599027633667
+    ],
+    "math_group_rewards": [
+      1.0,
+      1.0594583848422114
+    ],
+    "synthetic_timing_advantage": false,
+    "root_gradients": [
+      1.763506475072063e-06,
+      -7.2123225436371285e-06
+    ],
+    "math_gradient_norm": 0.0015662598889321089,
+    "group_seconds": 7.858940789941698,
+    "training_input_tokens": 10644,
+    "longest_sequence": 8506,
+    "peak_reserved_gib": 11.705078125,
+    "total_seconds": 41.07118665892631
+  },
+  "cases": [
+    {
+      "question_id": "fixture-easy",
+      "mode": "High",
+      "correct": true,
+      "leaked": false,
+      "seconds": 127.73546152515337,
+      "thinking_tokens": 8192,
+      "forced_close": true,
+      "contract_status": "normal"
+    },
+    {
+      "question_id": "fixture-easy",
+      "mode": "Medium",
+      "correct": true,
+      "leaked": false,
+      "seconds": 33.436277196975425,
+      "thinking_tokens": 2048,
+      "forced_close": true,
+      "contract_status": "normal"
+    }
+  ]
+}
