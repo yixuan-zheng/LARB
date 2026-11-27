@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "name": "p3c-prefill-cut-stress",
+  "status": "predeclared before measurement",
+  "declared_on": "2026-11-26",
+  "basis": [
+    "P2C completed with 240 responses/arm: AIME 4k->8k slope +14.6 points; admission-only arrival 41.7% correct-on-time; live 39.2%, fixed8k 37.9%, fixed4k 34.6%. The in-flight 8k->4k cut was 2.5 points below admission-only overall and 9.5 below it in the P2C burst window.",
+    "The P2C burst hit a partially empty rig: only about 15-25 requests were running when the burst began, so admission alone could send burst arrivals to 4k and avoid most misses. That is not the case in which an in-flight cut is most likely to be justified.",
+    "A cut can only beat admission when the queue is already occupied by requests that admission cannot shorten: a burst that arrives while a full cohort of 8k requests is already running. The cut can free those slots earlier; admission can only change new arrivals.",
+    "The current cut target is 4k. A less destructive 6k cut may capture most of the slot-release benefit with a smaller accuracy loss. The extension tests both.",
+    "The central hypothesis remains: live should deliver more correct-by-deadline answers than a fixed short budget and admission-only, while keeping eventual accuracy close to full thinking. This extension tests its most favorable natural case, not a post-hoc threshold change."
+  ],
+  "rig": {
+    "model": "Qwen/Qwen3-4B",
+    "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "engine": "vLLM 0.11.2",
+    "max_num_seqs": 32,
+    "max_num_batched_tokens": 8192,
+    "max_model_len": 12288,
+    "budgets": {"short": 4096, "middle": 6096, "long": 8192, "filler": 1024},
+    "answer_contract": "legacy",
+    "answer_cap_tokens": 2048,
+    "enforce_eager": true,
+    "enable_prefix_caching": false,
+    "pressure_threshold": 8,
+    "pressure_persistence_steps": 2,
+    "cut_target": 4096,
+    "cut_target_middle": 6096,
+    "cut_progress_floor": 512,
+    "cut_min_saving": 1024
+  },
+  "pool": {
+    "name": "aime-2025-2026-v1",
+    "questions": 60,
+    "seeds_per_question": 3,
+    "filler_share": 0.30,
+    "filler_budget": 1024
+  },
+  "design": {
+    "purpose": "Test whether an in-flight cut is justified when a burst hits a full 8k cohort, and whether a 6k cut preserves more accuracy than the 4k cut while still recovering timeliness.",
+    "condition": "gate-p3c-prefill",
+    "trace_name": "p3c-prefill",
+    "seed_base": 950000,
+    "rng_seed": 20261126,
+    "deadline_seconds": 240,
+    "cohort_size": 32,
+    "cohort_spacing_s": 0.02,
+    "burst_count": 64,
+    "burst_start_s": 10.0,
+    "burst_spacing_s": 0.25,
+    "tail_start_s": 120.0,
+    "tail_spacing_s": 6.0,
+    "drain_allowance_seconds": 300,
+    "arms": [
+      {"label": "fixed4k", "arm": "fixed4k", "cut_target": 4096},
+      {"label": "fixed6k", "arm": "fixed6k", "cut_target": 4096},
+      {"label": "fixed8k", "arm": "fixed8k", "cut_target": 4096},
+      {"label": "arrival", "arm": "arrival", "cut_target": 4096},
+      {"label": "live4k", "arm": "live", "cut_target": 4096},
+      {"label": "live6k", "arm": "live", "cut_target": 6096}
+    ],
+    "trace_shape": "32 signal requests at 0-0.62 s fill all 32 slots at 8k; 64 requests arrive at 4/s from 10 s; the remaining requests arrive deterministically every 6 s from 120 s to 1080 s. All requests have the same 240 s deadline.",
+    "why_this_shape": "A full running cohort is the one condition where admission cannot shorten the requests that block the burst. If a cut cannot win here, it is hard to justify over admission on this workload."
+  },
+  "endpoints": {
+    "primary": "correct-on-time signal responses across all 180 signal responses per arm",
+    "co_key": "eventual accuracy",
+    "secondary": [
+      "burst-window correct-on-time and accuracy",
+      "cohort-window accuracy and on-time",
+      "tail-window accuracy and on-time",
+      "cap rate, thinking tokens, latency/queue/service",
+      "worker cuts, cut after close, pressure, admission budget split"
+    ],
+    "failed_outcomes": "Caps, missing outputs, late answers and errors stay in the denominator. Correct-on-time requires a correct normal completion received within 240 s of client submission."
+  },
+  "decision": {
+    "validity_requires": [
+      "all six arm phases present and injection valid",
+      "live4k and live6k each have at least one worker cut",
+      "no cut after the close token (strict > cue_start)",
+      "live arms show both a 4096 and an 8192 admission",
+      "fixed4k, fixed6k and fixed8k have zero cuts"
+    ],
+    "cut_go_if": {
+      "best_live_minus_arrival_correct_on_time_min": 0.05,
+      "best_live_minus_arrival_accuracy_min": -0.05,
+      "best_live_minus_fixed8k_accuracy_min": -0.10
+    },
+    "cut_stop_if": [
+      "no live variant beats arrival on correct-on-time",
+      "both live variants are more than 10 points below arrival on eventual accuracy",
+      "validity fails"
+    ],
+    "admission_comparison": "Report arrival vs fixed4k, fixed6k and fixed8k on the same trace; this independently checks the P2C admission finding on the prefilled-cohort load.",
+    "inconclusive": "Valid, but the best live variant is between the stop and GO thresholds; record it and do not spend a confirmatory block without a new pre-declaration.",
+    "no_post_hoc_changes": ["trace", "cohort size", "burst size", "cut targets", "deadline", "thresholds", "decision rules"]
+  },
+  "power": {
+    "planned_signal_responses_per_arm": 180,
+    "questions": 60,
+    "responses_per_question": 3,
+    "note": "This is a screening extension, not a powered P2. At 180 responses/arm the 80% MDE is roughly 12-16 points at ICC 0.2-0.6 and 20% discordance. A GO justifies a larger confirmatory run; a STOP is a strong signal against the cut on this workload."
+  },
+  "records": {
+    "trace": "artifacts/traces-candidates/p3c-prefill.jsonl",
+    "run": "results/p3c/prefill",
+    "analysis": "results/p3c/prefill/prefill.json, PREFILL.md, summary.json, paired.csv",
+    "report": "reports/P3C-PREFILL-RESULT.md"
+  }
+}

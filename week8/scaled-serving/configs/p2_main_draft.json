@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "name": "larb-week8-p2-omni-draft",
+  "status": "withheld_pending_preview_and_calibration",
+  "p2_authorised": false,
+  "pool": "omni-math-hard-v1",
+  "outer_hours": 16,
+  "inner_hours": 15,
+  "arms": ["fixed4k", "fixed8k", "arrival", "live"],
+  "conditions": ["low", "sustained", "burst"],
+  "orders": {
+    "low": ["fixed4k", "fixed8k", "arrival", "live"],
+    "sustained": ["fixed4k", "fixed8k", "arrival", "live"],
+    "burst": ["live", "arrival", "fixed8k", "fixed4k"]
+  },
+  "signal_questions": 216,
+  "seeds": 4,
+  "filler_share": 0.30,
+  "deadline_seconds": 240,
+  "drain_allowance_seconds": 600,
+  "max_num_seqs": 32,
+  "answer_contract": "legacy",
+  "enforce_eager": true,
+  "pressure_threshold": 8,
+  "pressure_persistence_steps": 2,
+  "arrival_rate_per_hour": null,
+  "preview_pass": null,
+  "calibration_rate_per_hour": null,
+  "live_check_pass": null,
+  "main_cohort_variant": "main",
+  "source_lock": "artifacts/source-lock-p2a.json",
+  "notes": "Draft only. The runner must read a frozen copy written after a passing preview, calibration and live check."
+}

@@ -1,0 +1,397 @@
+{
+  "pool": "aime-2025-2026-v1",
+  "config": "configs/pool_aime_2025_2026.json",
+  "cohort_sha256": "83d576b8482642a774883945aa509b01e7b1f3a62dac6f569c19e3825c078127",
+  "traces": {
+    "gate-aime-preview": {
+      "file": "artifacts/traces-candidates/gate-aime-preview.jsonl",
+      "sha256": "716f7fab278bd19661680d093d52c73f6080bbea61380c67308520d66b9fc204",
+      "summary": {
+        "requests": 24,
+        "signal": 24,
+        "filler": 0,
+        "signal_questions": 24,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 34.5,
+        "median_arrival_s": 16.5,
+        "p90_arrival_s": 30.0,
+        "span_s": 34.5
+      },
+      "sources": [
+        "MathArena/aime_2025",
+        "MathArena/aime_2026"
+      ],
+      "exposure": [
+        "exposed",
+        "fresh"
+      ]
+    },
+    "gate-aime-preview48": {
+      "file": "artifacts/traces-candidates/gate-aime-preview48.jsonl",
+      "sha256": "e65db8336773833ceafd6f9c19badcb05fb8d0f8bcff5b0514366a695fb5404d",
+      "summary": {
+        "requests": 48,
+        "signal": 48,
+        "filler": 0,
+        "signal_questions": 48,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 70.5,
+        "median_arrival_s": 34.5,
+        "p90_arrival_s": 63.0,
+        "span_s": 70.5
+      },
+      "sources": [
+        "MathArena/aime_2025",
+        "MathArena/aime_2026"
+      ],
+      "exposure": [
+        "exposed",
+        "fresh"
+      ]
+    },
+    "gate-aime-cal-600": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-600.jsonl",
+      "sha256": "b569118334e6651aff8b6f01d2852ff5e319957145062f41021dde65da655a28",
+      "summary": {
+        "requests": 250,
+        "signal": 175,
+        "filler": 75,
+        "signal_questions": 48,
+        "seeds_per_question": 3.6458333333333335,
+        "first_arrival_s": 2.429599,
+        "last_arrival_s": 1394.942628,
+        "median_arrival_s": 717.950602,
+        "p90_arrival_s": 1241.108722,
+        "span_s": 1392.513029
+      },
+      "rows": 250,
+      "kind": "calibration",
+      "rate_per_hour": 600,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-650": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-650.jsonl",
+      "sha256": "7b51f372d169e24388e04b8c711fe57b6c3b48a7cbeb6573052efcfbe6901639",
+      "summary": {
+        "requests": 271,
+        "signal": 190,
+        "filler": 81,
+        "signal_questions": 48,
+        "seeds_per_question": 3.9583333333333335,
+        "first_arrival_s": 4.889723,
+        "last_arrival_s": 1510.859089,
+        "median_arrival_s": 797.983357,
+        "p90_arrival_s": 1408.022935,
+        "span_s": 1505.969366
+      },
+      "rows": 271,
+      "kind": "calibration",
+      "rate_per_hour": 650,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-700": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-700.jsonl",
+      "sha256": "f8581bc7078dc89f85c33df83b93fba36fc497ff0929c8650479248e54a80687",
+      "summary": {
+        "requests": 292,
+        "signal": 204,
+        "filler": 88,
+        "signal_questions": 48,
+        "seeds_per_question": 4.25,
+        "first_arrival_s": 2.162369,
+        "last_arrival_s": 1520.524055,
+        "median_arrival_s": 658.438524,
+        "p90_arrival_s": 1378.261103,
+        "span_s": 1518.3616860000002
+      },
+      "rows": 292,
+      "kind": "calibration",
+      "rate_per_hour": 700,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-750": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-750.jsonl",
+      "sha256": "c37af54b7038159ccd19e3a1a19e41220b1f859ef4b53fcc7f37c765e5d179c8",
+      "summary": {
+        "requests": 312,
+        "signal": 218,
+        "filler": 94,
+        "signal_questions": 48,
+        "seeds_per_question": 4.541666666666667,
+        "first_arrival_s": 2.246488,
+        "last_arrival_s": 1454.494528,
+        "median_arrival_s": 634.491191,
+        "p90_arrival_s": 1289.458901,
+        "span_s": 1452.24804
+      },
+      "rows": 312,
+      "kind": "calibration",
+      "rate_per_hour": 750,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-800": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-800.jsonl",
+      "sha256": "44e1bd492ac216cde1121665c96b953957a7b1f745cec038be904f11b19272e0",
+      "summary": {
+        "requests": 333,
+        "signal": 233,
+        "filler": 100,
+        "signal_questions": 48,
+        "seeds_per_question": 4.854166666666667,
+        "first_arrival_s": 1.23501,
+        "last_arrival_s": 1566.777286,
+        "median_arrival_s": 833.147605,
+        "p90_arrival_s": 1403.497031,
+        "span_s": 1565.542276
+      },
+      "rows": 333,
+      "kind": "calibration",
+      "rate_per_hour": 800,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-850": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-850.jsonl",
+      "sha256": "94dd2d3e1a076b7ad0bfac77dc09bf007869672e9d7dfc8c8b693a2f189d2508",
+      "summary": {
+        "requests": 354,
+        "signal": 248,
+        "filler": 106,
+        "signal_questions": 48,
+        "seeds_per_question": 5.166666666666667,
+        "first_arrival_s": 3.154661,
+        "last_arrival_s": 1369.518919,
+        "median_arrival_s": 714.713148,
+        "p90_arrival_s": 1240.256103,
+        "span_s": 1366.364258
+      },
+      "rows": 354,
+      "kind": "calibration",
+      "rate_per_hour": 850,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-900": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-900.jsonl",
+      "sha256": "14e1adb804f6ccd892293e44d6e3fde1375a555e8edd1f08836d26e818e96e59",
+      "summary": {
+        "requests": 375,
+        "signal": 262,
+        "filler": 113,
+        "signal_questions": 48,
+        "seeds_per_question": 5.458333333333333,
+        "first_arrival_s": 6.722668,
+        "last_arrival_s": 1435.782564,
+        "median_arrival_s": 784.86953,
+        "p90_arrival_s": 1310.833696,
+        "span_s": 1429.059896
+      },
+      "rows": 375,
+      "kind": "calibration",
+      "rate_per_hour": 900,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-950": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-950.jsonl",
+      "sha256": "fbacecd0965c47a146ecd85e51e7a68959f35520afad45035ba7e05641c0acb1",
+      "summary": {
+        "requests": 396,
+        "signal": 277,
+        "filler": 119,
+        "signal_questions": 48,
+        "seeds_per_question": 5.770833333333333,
+        "first_arrival_s": 7.298514,
+        "last_arrival_s": 1460.146295,
+        "median_arrival_s": 765.012333,
+        "p90_arrival_s": 1318.446143,
+        "span_s": 1452.847781
+      },
+      "rows": 396,
+      "kind": "calibration",
+      "rate_per_hour": 950,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-1000": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-1000.jsonl",
+      "sha256": "6446f9942728dd5702b121dcc224e69264f67aaccc5efd35f451aaea8f6981d9",
+      "summary": {
+        "requests": 417,
+        "signal": 292,
+        "filler": 125,
+        "signal_questions": 48,
+        "seeds_per_question": 6.083333333333333,
+        "first_arrival_s": 1.379901,
+        "last_arrival_s": 1563.578168,
+        "median_arrival_s": 753.030088,
+        "p90_arrival_s": 1408.312137,
+        "span_s": 1562.198267
+      },
+      "rows": 417,
+      "kind": "calibration",
+      "rate_per_hour": 1000,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-1050": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-1050.jsonl",
+      "sha256": "8a0a1ef5397094cd3f0597d6d8d7fec6100287549b1ff3e267c64a0db08248e5",
+      "summary": {
+        "requests": 438,
+        "signal": 307,
+        "filler": 131,
+        "signal_questions": 48,
+        "seeds_per_question": 6.395833333333333,
+        "first_arrival_s": 0.690215,
+        "last_arrival_s": 1424.427134,
+        "median_arrival_s": 768.966871,
+        "p90_arrival_s": 1315.49244,
+        "span_s": 1423.736919
+      },
+      "rows": 438,
+      "kind": "calibration",
+      "rate_per_hour": 1050,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-1100": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-1100.jsonl",
+      "sha256": "d6814e8ad757ae647f811ca4ea4b71d81be2a5ca52579b50fa60770288498ace",
+      "summary": {
+        "requests": 458,
+        "signal": 321,
+        "filler": 137,
+        "signal_questions": 48,
+        "seeds_per_question": 6.6875,
+        "first_arrival_s": 1.399701,
+        "last_arrival_s": 1495.659673,
+        "median_arrival_s": 717.069498,
+        "p90_arrival_s": 1370.813688,
+        "span_s": 1494.259972
+      },
+      "rows": 458,
+      "kind": "calibration",
+      "rate_per_hour": 1100,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-1150": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-1150.jsonl",
+      "sha256": "3bf3d72d513803881c478a3e05ce8e1d3c1e49aa61a8c0986b0ecde14d48b7ed",
+      "summary": {
+        "requests": 479,
+        "signal": 335,
+        "filler": 144,
+        "signal_questions": 48,
+        "seeds_per_question": 6.979166666666667,
+        "first_arrival_s": 5.080382,
+        "last_arrival_s": 1433.039617,
+        "median_arrival_s": 688.079508,
+        "p90_arrival_s": 1236.893935,
+        "span_s": 1427.9592349999998
+      },
+      "rows": 479,
+      "kind": "calibration",
+      "rate_per_hour": 1150,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-cal-1200": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-1200.jsonl",
+      "sha256": "ddb0f7b8d430faa0005a5c947396fe648b2ec3d212b66e391e4d97491cd14758",
+      "summary": {
+        "requests": 500,
+        "signal": 350,
+        "filler": 150,
+        "signal_questions": 48,
+        "seeds_per_question": 7.291666666666667,
+        "first_arrival_s": 1.967831,
+        "last_arrival_s": 1374.118428,
+        "median_arrival_s": 696.576597,
+        "p90_arrival_s": 1232.002861,
+        "span_s": 1372.150597
+      },
+      "rows": 500,
+      "kind": "calibration",
+      "rate_per_hour": 1200,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    },
+    "gate-aime-preview48-s2": {
+      "file": "artifacts/traces-candidates/gate-aime-preview48-s2.jsonl",
+      "sha256": "4d9fba9cf055860ff9e8679eb56a1e71db8310b5b840254dd6ffc77c689c571c",
+      "summary": {
+        "requests": 48,
+        "signal": 48,
+        "filler": 0,
+        "signal_questions": 48,
+        "seeds_per_question": 1.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 70.5,
+        "median_arrival_s": 34.5,
+        "p90_arrival_s": 63.0,
+        "span_s": 70.5
+      },
+      "rows": 48,
+      "kind": "preview-replicate",
+      "note": "Second-seed stability replicate of the 48-item set."
+    },
+    "gate-aime-cal-1025": {
+      "file": "artifacts/traces-candidates/gate-aime-cal-1025.jsonl",
+      "sha256": "667a26557d7905ba959642f07c1053d45b621897cfce43bc4e74449d008952dc",
+      "summary": {
+        "requests": 427,
+        "signal": 299,
+        "filler": 128,
+        "signal_questions": 48,
+        "seeds_per_question": 6.229166666666667,
+        "first_arrival_s": 0.320017,
+        "last_arrival_s": 1452.291878,
+        "median_arrival_s": 674.31274,
+        "p90_arrival_s": 1299.026507,
+        "span_s": 1451.971861
+      },
+      "rows": 427,
+      "kind": "calibration",
+      "rate_per_hour": 1025.0,
+      "deadline_seconds": 240,
+      "warmup_seconds": 600,
+      "measured_seconds": 900,
+      "note": "Signal questions are the 48 measured preview items (declared reuse)."
+    }
+  },
+  "questions_sha256": "c631b04e69aacd3c03ec57bf4735323747c22e2012a224ef111124f9c01eaf3d"
+}

@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-11-17T01:32:16.564107+00:00",
+  "stage": "P2A-pre-run",
+  "pool": "omni-math-hard-v1",
+  "week7_source_lock": {
+    "ok": true,
+    "files": 35,
+    "source_lock_sha256": "b5ece1ab7baa2fac621e5848f62e15330b6bb6f59405ef205295deb08227ace5"
+  },
+  "week8_code": {
+    "code/larb_week8/__init__.py": "b03716612a3fa7d756324442fa7f406184338f8bc6298f95b72c733c726b7cbb",
+    "code/larb_week8/analyze_main.py": "0bf754500049df0dd34605f643c22e4a514dec99b164d3b23d0cedf85c36c1dd",
+    "code/larb_week8/audit.py": "45ef03796c6d4635855da09ea0ae05a886f8b38ff7497ff5fe421ae92a4e5783",
+    "code/larb_week8/calibrate.py": "2c31347c7598380444f514f9d496e97730bee72c84f41a7f7b4ff17a9d9ce060",
+    "code/larb_week8/config.py": "e43793297daa393a48b60e128b3253fb54fcfbb79d978aceb544a5de866a89f2",
+    "code/larb_week8/decision.py": "7bd80bf800beff65f389dc8e3681968aa6437f4a6fd02db81a59799d57eda9f2",
+    "code/larb_week8/pool.py": "059689031aaea05c0704ed30c4fb5f999fe3237186d7ce002e5d456718f9ce2e",
+    "code/larb_week8/precalibrate.py": "eb0268279226cebf786f7aeb9fbc080de57447a2a70634c89c23d3f45b818734",
+    "code/larb_week8/preview.py": "841373bcda2b49045a682b1c1a3bff84d897b9c7dda74be469534d86df0af1cf",
+    "code/larb_week8/questions.py": "03aad55e1c3f45b07c95e21c9aa796c5205e6e9103798c141c4dff4e2395d4d7",
+    "code/larb_week8/runner.py": "ec5f69a8a7fdb9f3e806df8bc06decdfc25a04b5da78fd3a66b00321cf969b2e",
+    "code/larb_week8/server_entry.py": "a579844146072812d1ea9b46345b859cb9545a3ad7f6b07249e1e1f801ea2f01",
+    "code/larb_week8/traces.py": "354347adeccd656c9288a9ce1a6a86708b305df48a57931cf6052a440c4d3b1c",
+    "code/larb_week8/transition.py": "be28eacd2409ff02c9c1749ab6a3bf49cec2a65b9704fb7c6cf43880665065bc",
+    "code/tests/test_pipeline.py": "40cf496d88207d2cd6816c30b35ab302a0c03ef02d19cb5f3f1087b8cb9d71f4",
+    "code/tools/audit_p1_screen.py": "7dee96c04dba3257475e39ed8f1fc93a3279f21b6b560e0697c40d9cda794b20",
+    "code/tools/build_omni_pool.py": "1798f80b7b97db9b9d8417e71a9d23f461add6c682a78551f352f616aca6bf04",
+    "code/tools/build_traces.py": "ff0d86e8561433abcb88b2d2254b3fc5796cea998dcfb5e3e902da82464e2cf8"
+  },
+  "configs": {
+    "configs/p2_main_draft.json": "e28c5dd610cf9f2a63a54f8a1d337a407017dcce4f190d2c41df2141cc1ee5f1",
+    "configs/pool_omni.json": "d548db08ed7c0fa9290d05486a5a213431745db50b8bbf8ce11516c7ff92b514",
+    "configs/qualify.json": "06694cfec57af42f9a33bb49f7c5f34b573f1b3303504688ece8ea0f19be67b8"
+  },
+  "artifacts": {
+    "data/processed/prompt-token-counts.json": "a44698b480c3e28707fb6dde510f839f80513e0d4c18b6de99f9979cf5a4c574",
+    "data/processed/questions.jsonl": "1de35aef381eea316e1e549d84ffed506b2716f0529fb3c669ed43024e61ff06",
+    "artifacts/traces/gate-omni-cal-1000.jsonl": "fb8e1b12071daecef03ecaff22f9ac9aefa1396da5364072619622353189ba15",
+    "artifacts/traces/gate-omni-cal-1050.jsonl": "a30c13cb7ba523d6b19cd30958a4c1b44813b666dba8b1a633bd1d386dba6333",
+    "artifacts/traces/gate-omni-cal-1100.jsonl": "e74a6703fb6dc0814e5916113ef3ef24327de292894093571e38b5294bb02331",
+    "artifacts/traces/gate-omni-cal-1150.jsonl": "1501919983e8a2e5c7af63a09eed005062e551e8a8e454332c95bd9d70302393",
+    "artifacts/traces/gate-omni-cal-1200.jsonl": "ed53ef08ed6f55a8a1b303859cd26126094fb54eaebe1d1529430f9b4f12835e",
+    "artifacts/traces/gate-omni-cal-600.jsonl": "b1d8559885fce9c0ca402fca65e9ceef8877f428ae0afccfea75ac250b106748",
+    "artifacts/traces/gate-omni-cal-650.jsonl": "9ef98f4eb6cfb6599ab0166ba67d315448ff822b9c331aa7995b457a22d3fd6c",
+    "artifacts/traces/gate-omni-cal-700.jsonl": "1fec5d5c575411bd19ebd722cfdb60f5d9f173bee93201291ee4bea3d37c8213",
+    "artifacts/traces/gate-omni-cal-750.jsonl": "b476b5b00ad2ccd19d80ac3f8fb86228b83cd25da27371ddadb8731cd20c2ad7",
+    "artifacts/traces/gate-omni-cal-800.jsonl": "f0a3388789529f32a29832035685ac1d421b82fc3a9efc119beb88d04323821c",
+    "artifacts/traces/gate-omni-cal-850.jsonl": "1dc8b458f6cddb042d61c41237db084a0d0b8b3b789565fb52539f1b48dca01e",
+    "artifacts/traces/gate-omni-cal-900.jsonl": "81f55af1dc53f91fc5a1d9255b8e2dbde5066133e53f384849717b8472206d49",
+    "artifacts/traces/gate-omni-cal-950.jsonl": "c4ad300e66161d0d2bd312ddaccaadbf092d0e87e1ea980b9db07e9d185921f2",
+    "artifacts/traces/gate-omni-preview.jsonl": "1e082c01403e37c21a333f4421b15ad9aa801a88d1885c4a03278bdc180fbd7e",
+    "artifacts/traces/gate-omni-preview48.jsonl": "3528672812221121f7ad87392bdd3feb42ee32a59f63d4be8cc7e80532642c04",
+    "artifacts/cohort.json": "00522f9b257f18465b7605688ee5713e29d7f54427e7ef144603520b0951a71c"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "dtype": "bfloat16",
+    "local_path_env": "LARB_MODEL_PATH",
+    "local_path_default": "${LARB_MODEL_PATH}"
+  },
+  "engine": {
+    "vllm": "0.11.2",
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "max_num_seqs": 32,
+    "max_num_batched_tokens": 8192,
+    "max_model_len": 12288,
+    "gpu_memory_utilization": 0.85,
+    "gpu_memory_utilization_fallback": 0.9,
+    "enforce_eager": false,
+    "enforce_eager_fallback": true,
+    "enable_prefix_caching": false,
+    "swap_space_gb": 8,
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20
+    }
+  },
+  "slo_seconds": 240,
+  "preview_pass_rule": {
+    "gain_4k_to_8k_min_points": 8.0,
+    "answer_change_fraction_min": 0.1,
+    "accuracy_8k_band": [
+      0.35,
+      0.75
+    ],
+    "cap_rate_8k_max": 0.2,
+    "thinking_median_8k_max": 8192,
+    "all_criteria": "AND"
+  },
+  "calibration_rates": [
+    600,
+    650,
+    700,
+    750,
+    800,
+    850,
+    900,
+    950,
+    1000,
+    1050,
+    1100,
+    1150,
+    1200
+  ],
+  "p2_authorised": false
+}

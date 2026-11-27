@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "name": "aime-2025-2026-v1",
+  "status": "predeclared before measurement",
+  "dataset": "MathArena AIME 2025 and AIME 2026, frozen week 7 question set",
+  "sources": [
+    "MathArena/aime_2025",
+    "MathArena/aime_2026"
+  ],
+  "exposure": {
+    "MathArena/aime_2025": "exposed",
+    "MathArena/aime_2026": "fresh"
+  },
+  "why": "AIME is the only family with positive 4k->8k evidence in this rig; AIME 2026 is fresh and has never been used as a slope pool.",
+  "filters": {
+    "inherited": "week 7 P0 exclusion rules and self-gradable references",
+    "answer_type": "integer",
+    "selection": "12 hash-ranked items per source in the preview, the next 12 per source in the escalation; salt=larb-week8-aime-candidate-v1"
+  },
+  "counts": {
+    "preview": 24,
+    "escalation": 24,
+    "preview48": 48,
+    "reserve": 12
+  },
+  "seeding": {
+    "seed_base": 900000,
+    "question_stride": 17,
+    "preview_seed_index": 0
+  },
+  "preview": {
+    "size": 24,
+    "escalation_size": 48,
+    "spacing_seconds": 1.5,
+    "deadline_seconds": 1800.0,
+    "rule": "configs/qualify.json preview pass / near-miss / stop, unchanged"
+  },
+  "traces": {
+    "preview": "artifacts/traces-candidates/gate-aime-preview.jsonl",
+    "preview48": "artifacts/traces-candidates/gate-aime-preview48.jsonl"
+  }
+}

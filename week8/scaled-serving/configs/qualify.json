@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "name": "larb-week8-p2a-qualification-v1",
+  "status": "predeclared before measurement",
+  "pool": "omni-math-hard-v1",
+  "basis": [
+    "week8/PLAN.md: qualify the serving workload, then calibrate the deadline band, then freeze P2 or stop.",
+    "week7/scaled-serving/reports/P1-REPORT.md: the 2025-2026 pool fails the preview; the 2023-2024 screen carries a slope; the 180 s calibration has no usable band and 240 s is the pre-declared fallback.",
+    "week7/scaled-serving/plan/09-main-path.md P1.5 and plan/11-open-questions.md 11.1."
+  ],
+  "frozen_rig": {
+    "model": "Qwen/Qwen3-4B",
+    "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "engine": "vLLM 0.11.2",
+    "max_num_seqs": 32,
+    "max_num_batched_tokens": 8192,
+    "max_model_len": 12288,
+    "enforce_eager": true,
+    "enable_prefix_caching": false,
+    "answer_contract": "legacy",
+    "pressure_threshold": 8,
+    "pressure_persistence_steps": 2,
+    "cut_target": 4096,
+    "cut_progress_floor": 512,
+    "cut_min_saving": 1024
+  },
+  "slo": {
+    "deadline_seconds": 240,
+    "measured_from": "actual client submission time",
+    "rationale": "P1 Gate F found no 15-40% band at 180 s (0% at 800/h, 74.7% at 931/h) and the report names 240 s as the practical fallback. The deadline is frozen here before any qualification measurement.",
+    "no_band_policy": "Adjust the arrival rate within the pre-declared grid. Do not move the deadline after seeing miss rates."
+  },
+  "preview": {
+    "role": "gate",
+    "questions": 24,
+    "per_stratum": 8,
+    "seeds": 1,
+    "budgets": [4096, 6096, 8192],
+    "arms": ["fixed4k", "fixed6k", "fixed8k"],
+    "spacing_seconds": 1.5,
+    "deadline_seconds": 1800,
+    "deadline_note": "Quality gate only; no SLO claim is made from the preview.",
+    "pass": {
+      "gain_4k_to_8k_min_points": 8.0,
+      "answer_change_fraction_min": 0.10,
+      "accuracy_8k_band": [0.35, 0.75],
+      "cap_rate_8k_max": 0.20,
+      "thinking_median_8k_max": 8192,
+      "all_criteria": "AND"
+    },
+    "near_miss": {
+      "gain_4k_to_8k_min_points": 4.0,
+      "answer_change_fraction_min": 0.10,
+      "accuracy_8k_min": 0.30,
+      "cap_rate_8k_max": 0.25,
+      "action": "run the pre-declared 48-item escalation preview before deciding",
+      "note": "At 24 items one answer is 4.17 points, so 5 points is not representable; a one-answer gain is the smallest slope signal and triggers the larger preview."
+    },
+    "escalation": {
+      "questions": 48,
+      "added_from_main_per_stratum": 8,
+      "same_pass_rule": true,
+      "main_cohort_after_escalation": 192
+    },
+    "stop": {
+      "rule": "gain below 5 points, accuracy_8k below 0.30, cap_rate_8k above 0.25, or a grader/coverage failure",
+      "action": "write a documented stop; do not calibrate or run P2"
+    }
+  },
+  "calibration": {
+    "role": "load and SLO calibration",
+    "reference_arm": "fixed8k",
+    "reference_questions": 48,
+    "reference_selection": "hash-ranked main-cohort ids, disjoint from the preview",
+    "filler_share": 0.30,
+    "deadline_seconds": 240,
+    "warmup_seconds": 600,
+    "measured_seconds": 900,
+    "total_seconds_per_rate": 1500,
+    "candidate_rates_per_hour": [600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200],
+    "band": [0.15, 0.40],
+    "target_miss_rate": 0.25,
+    "rate_grid_rationale": "P1 at 180 s places the knee between 800/h (0%) and 931/h (74.7%); 240 s moves it right. Omni-MATH may be slower than the screen, so the grid extends down to 600/h to catch a left-shifted knee, and up to 1200/h to bracket a right-shifted one.",
+    "refinement": {
+      "max_rounds": 1,
+      "points": 3,
+      "minutes_per_point": 25,
+      "rule": "If no rate is in band, use the midpoint between the highest sub-band rate and the lowest over-band rate, plus one step on each side; the same band and target apply.",
+      "after_refinement": "If no rate is in band, stop and report the bracket; do not move the deadline."
+    },
+    "metrics": [
+      "signal miss rate",
+      "signal latency p50/p90",
+      "service time p50/p90",
+      "pressure fraction at waiting >= 8",
+      "waiting count mean/p90/max",
+      "running count mean",
+      "preemptions",
+      "injection lag",
+      "admission budget split"
+    ],
+    "live_check": {
+      "required_after_band": true,
+      "arm": "live",
+      "minutes": 25,
+      "requirements": [
+        "at least one in-flight cut",
+        "pressure fraction at waiting >= 8 is positive",
+        "no cut after the close token",
+        "at least one 4096 admission and one 8192 admission"
+      ],
+      "failure_action": "documented stop; the live mechanism is not validated"
+    }
+  },
+  "p2": {
+    "status_before_qualification": "withheld",
+    "conditions": ["low", "sustained", "burst"],
+    "arms": ["fixed4k", "fixed8k", "arrival", "live"],
+    "seeds": 4,
+    "deadline_seconds": 240,
+    "max_num_seqs": 32,
+    "signal_questions": 216,
+    "signal_questions_after_preview48": 192,
+    "filler_share": 0.30,
+    "drain_allowance_seconds": 600,
+    "seed_reduction_rule": {
+      "max_seeds": 4,
+      "allowed_seeds": [4, 3, 2],
+      "target_inner_hours": 13.5,
+      "overhead_factor": 1.10,
+      "low_control_requests_per_arm": 172,
+      "low_rate_per_hour": 300,
+      "pressure_phases": 8,
+      "rule": "Choose the largest seed count whose estimated arrival span plus the low control, times the overhead factor, is at most target_inner_hours. If none fits, stop and split rather than overrun the 15 h inner allocation.",
+      "note": "This is an operational wall-time rule, not an outcome-dependent scientific threshold. The realised seed count and MDE must be reported."
+    },
+    "freeze_requires": [
+      "preview pass",
+      "calibration rate in the 15-40% band",
+      "live manipulation check pass",
+      "source lock and trace hashes verified"
+    ]
+  },
+  "decision": {
+    "go": "preview pass AND calibration band AND live check pass",
+    "stop": "any one of the three fails; the stop is recorded with the evidence",
+    "no_post_hoc_changes": [
+      "pool",
+      "difficulty filter",
+      "deadline",
+      "pressure threshold",
+      "cut rule",
+      "preview pass thresholds"
+    ]
+  }
+}
