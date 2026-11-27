@@ -3,10 +3,10 @@
 # Usage: bash week8/scaled-serving/code/tools/run_cpu_all.sh
 set -euo pipefail
 
-ROOT=${LARB_ROOT:-/home/hice1/jwang3221/scratch/LARB}
+ROOT=${LARB_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../../../.." && pwd)}
 WEEK8=${LARB_WEEK8_ROOT:-$ROOT/week8/scaled-serving}
-PY=${LARB_PYTHON:-/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/bin/python}
-APY=${LARB_ANALYSIS_PYTHON:-/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python}
+PY=${LARB_PYTHON:-python3}
+APY=${LARB_ANALYSIS_PYTHON:-python3}
 export PYTHONPATH="$WEEK8/code:$ROOT/week7/scaled-serving/code"
 
 cd "$ROOT"

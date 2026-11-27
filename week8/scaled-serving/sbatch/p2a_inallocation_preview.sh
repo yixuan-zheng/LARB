@@ -5,13 +5,13 @@
 # comparable with a full qualification sequence.
 set -uo pipefail
 
-ROOT=/home/hice1/jwang3221/scratch/LARB
+ROOT=${LARB_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)}
 WEEK8=$ROOT/week8/scaled-serving
-PY=/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/bin/python
-APY=/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python
+PY=${LARB_PYTHON:-python3}
+APY=${LARB_ANALYSIS_PYTHON:-python3}
 
 export PYTHONPATH="$WEEK8/code:$ROOT/week7/scaled-serving/code"
-export LARB_MODEL_PATH=/storage/ice1/3/0/jwang3221/LARB-week5-env/model/Qwen3-4B
+export LARB_MODEL_PATH=${LARB_MODEL_PATH:?set LARB_MODEL_PATH to the Qwen3-4B checkout}
 export LARB_DATA_DIR="$WEEK8/data"
 export LARB_WEEK8_ROOT="$WEEK8"
 export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1

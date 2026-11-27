@@ -23,7 +23,9 @@ SALT = "larb-week8-aime-candidate-v1"
 SEED_BASE = 900000
 STRIDE = 17
 SOURCES = ("MathArena/aime_2025", "MathArena/aime_2026")
-OUT_DIR = config.DATA_DIR / "candidates" / CANDIDATE
+# Cohort and questions live under artifacts/ so the handoff runs from tracked
+# files; the builder stays idempotent and refuses a moved source hash upstream.
+OUT_DIR = config.ARTIFACTS_DIR / "candidates" / CANDIDATE
 TRACE_DIR = config.ARTIFACTS_DIR / "traces-candidates"
 CONFIG_PATH = config.CONFIG_DIR / "pool_aime_2025_2026.json"
 

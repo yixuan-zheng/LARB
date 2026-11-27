@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "name": "p2c-burst-pilot-aime-v1",
+  "status": "predeclared before measurement",
+  "declared_on": "2026-11-24",
+  "supersedes": "The P2B 240 s sustained-rate calibration is closed as a documented stop. This is a new pre-declaration for the next cycle, not a retry or a threshold change; every P2B record remains authoritative for that cycle.",
+  "basis": [
+    "P2B-CALIBRATION-STOP.md: no rate is in the 15-40% band at 240 s. The queue is stable at <=1000/h and above capacity at >=1025/h; the 25/h grid cannot resolve the knee because realised-rate sampling error and batch-size-dependent service time are both larger than the step.",
+    "The AIME 2025+2026 preview carries a reproducible 4k->8k quality slope: +18.8 points on 96 responses (p=5.3e-4), and +17.2 points on 87 historical AIME pairs. This is the fact that works; it is used here as the positive control and quality endpoint.",
+    "The measured service-time mix is about 80 s at 4k and 150 s at 8k for signal requests, and about 24 s for 1k filler. A 32-slot rig therefore clears a fixed4k burst but not a fixed8k burst of the same shape, which is exactly the mechanism contrast to test.",
+    "P2B-CALIBRATION-STOP.md section 6: a next cycle should control the warm-up backlog. A scripted burst does that directly: the baseline is below capacity, the burst is deterministic, and the recovery window is part of the same trace."
+  ],
+  "rig": {
+    "model": "Qwen/Qwen3-4B",
+    "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "engine": "vLLM 0.11.2",
+    "max_num_seqs": 32,
+    "max_num_batched_tokens": 8192,
+    "max_model_len": 12288,
+    "budgets": {"short": 4096, "long": 8192, "filler": 1024},
+    "answer_contract": "legacy",
+    "answer_cap_tokens": 2048,
+    "enforce_eager": true,
+    "enable_prefix_caching": false,
+    "pressure_threshold": 8,
+    "pressure_persistence_steps": 2,
+    "cut_target": 4096,
+    "cut_progress_floor": 512,
+    "cut_min_saving": 1024
+  },
+  "pool": {
+    "name": "aime-2025-2026-v1",
+    "questions": 60,
+    "question_set": "all 60 items: 48 measured in the preview plus 12 reserve items",
+    "exposure": "30 fresh (AIME 2026) + 30 exposed (AIME 2025); reported separately",
+    "filler_pool": "frozen week 7 MATH-500 filler ids",
+    "filler_share": 0.30
+  },
+  "design": {
+    "purpose": "Test whether the pressure-cut policy preserves AIME quality and improves correct-on-time goodput under a controlled burst, without using the fragile sustained-rate calibration that stopped P2B.",
+    "condition": "burst",
+    "arms": ["fixed4k", "fixed8k", "arrival", "live"],
+    "deadline_seconds": 240,
+    "seeds_per_question_per_trace": 2,
+    "traces": [
+      {
+        "name": "pilot-burst-a",
+        "seed_base": 920000,
+        "rng_seed": 20261124,
+        "baseline_rate_per_hour": 600.0,
+        "burst_start_s": 420.0,
+        "burst_count": 64,
+        "burst_spacing_s": 0.25,
+        "recovery_rate_per_hour": 600.0,
+        "arm_order": ["fixed4k", "fixed8k", "arrival", "live"]
+      },
+      {
+        "name": "pilot-burst-b",
+        "seed_base": 930000,
+        "rng_seed": 20261125,
+        "baseline_rate_per_hour": 600.0,
+        "burst_start_s": 420.0,
+        "burst_count": 64,
+        "burst_spacing_s": 0.25,
+        "recovery_rate_per_hour": 600.0,
+        "arm_order": ["live", "arrival", "fixed8k", "fixed4k"]
+      }
+    ],
+    "drain_allowance_seconds": 300,
+    "trace_shape_note": "600/h baseline for 420 s, 64 requests at 4/s for 16 s, then 600/h recovery. At 600/h the rig is below capacity, so there is no warm-up backlog cliff; the burst is the only pressure source.",
+    "why_64": "A 32-slot, 150 s fixed8k burst leaves the second wave waiting about 150 s and finishing about 300 s after arrival, while fixed4k finishes the same burst in about 165 s. The burst is large enough to separate the arms and small enough that a working cut can still save the second wave."
+  },
+  "endpoints": {
+    "primary": "correct_on_time signal responses, pooled over both traces (240 responses per arm)",
+    "co_key": "eventual accuracy (correct regardless of timeliness)",
+    "secondary": [
+      "burst-window correct-on-time and accuracy",
+      "pre/post-burst accuracy",
+      "cap rate, missing-box rate, thinking tokens",
+      "queue time, service time, p50/p90 latency",
+      "cuts, cut-after-close, pressure fraction, admission budget split",
+      "fresh vs exposed subsets"
+    ],
+    "failed_outcomes": "Caps, missing outputs, late answers and errors stay in the planned denominator. Correct-on-time requires a normal completion, a correct answer, and client receipt <= deadline."
+  },
+  "decision": {
+    "validity_requires": [
+      "all planned phases present and injection_valid",
+      "live phases have at least one in-flight cut and positive pressure at waiting >= 8",
+      "no cut after the close token",
+      "live phases show both a 4096 and an 8192 admission",
+      "fixed4k and fixed8k phases have zero cuts"
+    ],
+    "stage_a_continue_if": {
+      "fixed8k_minus_fixed4k_accuracy_min": 0.08,
+      "live_minus_fixed4k_correct_on_time_min": -0.02,
+      "live_minus_fixed4k_accuracy_min": -0.02,
+      "live_minus_fixed8k_accuracy_min": -0.15
+    },
+    "final_go_if": {
+      "fixed8k_minus_fixed4k_accuracy_min": 0.08,
+      "live_minus_fixed4k_correct_on_time_min": 0.05,
+      "live_minus_fixed4k_accuracy_min": 0.05,
+      "live_minus_fixed8k_accuracy_min": -0.15
+    },
+    "stop_if": [
+      "validity fails",
+      "fixed8k - fixed4k eventual accuracy is below 8 points (the known slope did not reproduce)",
+      "live correct-on-time is not above fixed4k",
+      "live eventual accuracy is below fixed4k",
+      "live eventual accuracy is more than 15 points below fixed8k"
+    ],
+    "inconclusive": "Valid and slope reproduced, but the live effect is between the stop and go thresholds. Record it; do not spend the confirmatory GPU block without a new pre-declaration.",
+    "no_post_hoc_changes": ["trace", "burst size", "baseline rate", "deadline", "band", "pressure threshold", "cut rule", "decision thresholds"]
+  },
+  "power": {
+    "planned_signal_responses_per_arm": 240,
+    "questions": 60,
+    "responses_per_question": 4,
+    "note": "Stage A has 120 responses/arm (2 seeds, one trace); Stage B adds an independent trace for 240/arm. At ICC 0.2-0.6 and 20% discordance the 80% MDE is roughly 10-14 points. This is a screening pilot, not a powered P2: a null result is not proof of no effect, and a positive result is a reason to run a confirmatory block."
+  },
+  "records": {
+    "traces": "artifacts/traces-candidates/pilot-burst-{a,b}.jsonl",
+    "run": "results/p2c/pilot",
+    "analysis": "results/p2c/pilot/pilot.json, PILOT.md, summary.json, paired.csv",
+    "report": "reports/P2C-RESULT.md"
+  }
+}

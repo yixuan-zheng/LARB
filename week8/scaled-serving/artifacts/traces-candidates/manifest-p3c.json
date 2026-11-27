@@ -1,0 +1,52 @@
+{
+  "traces": {
+    "p3c-prefill": {
+      "file": "week8/scaled-serving/artifacts/traces-candidates/p3c-prefill.jsonl",
+      "sha256": "6d032b1184383744efba6b720a8b9f67ef47b1ad72d8a2925e9de09da18a201b",
+      "summary": {
+        "requests": 258,
+        "signal": 180,
+        "filler": 78,
+        "signal_questions": 60,
+        "seeds_per_question": 3.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 1086.0,
+        "median_arrival_s": 312.0,
+        "p90_arrival_s": 930.0,
+        "span_s": 1086.0
+      },
+      "cohort": 32,
+      "burst": 64,
+      "tail": 162,
+      "burst_start_s": 10.0,
+      "burst_end_s": 26.0,
+      "cohort_end_s": 0.64,
+      "tail_start_s": 120.0
+    },
+    "p3c-prefill-b": {
+      "file": "week8/scaled-serving/artifacts/traces-candidates/p3c-prefill-b.jsonl",
+      "sha256": "2e1290581485129fc4917d801bf3fbd986bdbd0c7f9a5134635df78c795782fc",
+      "summary": {
+        "requests": 258,
+        "signal": 180,
+        "filler": 78,
+        "signal_questions": 60,
+        "seeds_per_question": 3.0,
+        "first_arrival_s": 0.0,
+        "last_arrival_s": 1086.0,
+        "median_arrival_s": 312.0,
+        "p90_arrival_s": 930.0,
+        "span_s": 1086.0
+      },
+      "cohort": 32,
+      "burst": 64,
+      "tail": 162,
+      "burst_start_s": 10.0,
+      "burst_end_s": 26.0,
+      "cohort_end_s": 0.64,
+      "tail_start_s": 120.0
+    }
+  },
+  "config": "configs/p3c_prefill_b.json",
+  "generated_at": "2026-11-26T18:55:57.715920+00:00"
+}

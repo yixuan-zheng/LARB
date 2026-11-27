@@ -90,7 +90,11 @@ def phase_metrics(run_dir: Path, phase: dict, deadline: float,
         preemptions.append(raw.get("preemptions") or 0)
         cue_start = raw.get("cue_start")
         for cut in raw.get("cut_events") or []:
-            if cue_start is not None and cut.get("tokens", 0) >= cue_start:
+            # A cut at exactly cue_start is the boundary cut that triggered the
+            # cue: RequestControl.change() rejects cuts once force_start is set,
+            # so a same-position cut is before the cue, not after it.  Only a
+            # cut strictly beyond the cue is after close.
+            if cue_start is not None and cut.get("tokens", 0) > cue_start:
                 cut_after_close += 1
     scheduler = [row for row in load_jsonl(run_dir / "scheduler.jsonl")
                  if row.get("event") == "step"]

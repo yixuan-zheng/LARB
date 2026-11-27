@@ -1,0 +1,86 @@
+{
+  "traces": {
+    "pilot-burst-a": {
+      "file": "week8/scaled-serving/artifacts/traces-candidates/pilot-burst-a.jsonl",
+      "sha256": "e2d36caf10e69f701d8cd1e3a76dc44e561482a39dca3b46b0931102bc6f1b7c",
+      "summary": {
+        "requests": 172,
+        "signal": 120,
+        "filler": 52,
+        "signal_questions": 60,
+        "seeds_per_question": 2.0,
+        "first_arrival_s": 2.63084,
+        "last_arrival_s": 699.112939,
+        "median_arrival_s": 428.75,
+        "p90_arrival_s": 580.597806,
+        "span_s": 696.482099
+      },
+      "signal": 120,
+      "filler": 52,
+      "questions": 60,
+      "seeds_per_question": 2.0,
+      "burst_start_s": 420.0,
+      "burst_end_s": 436.0,
+      "burst_rows": 67,
+      "burst_signal": 42,
+      "spec": {
+        "name": "pilot-burst-a",
+        "seed_base": 920000,
+        "rng_seed": 20261124,
+        "baseline_rate_per_hour": 600.0,
+        "burst_start_s": 420.0,
+        "burst_count": 64,
+        "burst_spacing_s": 0.25,
+        "recovery_rate_per_hour": 600.0,
+        "arm_order": [
+          "fixed4k",
+          "fixed8k",
+          "arrival",
+          "live"
+        ]
+      }
+    },
+    "pilot-burst-b": {
+      "file": "week8/scaled-serving/artifacts/traces-candidates/pilot-burst-b.jsonl",
+      "sha256": "bb143a61eb8a055c2a941c8eeacb8c51f8b4cd06a516420ffa1c674fecbf1ec5",
+      "summary": {
+        "requests": 172,
+        "signal": 120,
+        "filler": 52,
+        "signal_questions": 60,
+        "seeds_per_question": 2.0,
+        "first_arrival_s": 10.891239,
+        "last_arrival_s": 646.411922,
+        "median_arrival_s": 423.75,
+        "p90_arrival_s": 592.799518,
+        "span_s": 635.520683
+      },
+      "signal": 120,
+      "filler": 52,
+      "questions": 60,
+      "seeds_per_question": 2.0,
+      "burst_start_s": 420.0,
+      "burst_end_s": 436.0,
+      "burst_rows": 64,
+      "burst_signal": 45,
+      "spec": {
+        "name": "pilot-burst-b",
+        "seed_base": 930000,
+        "rng_seed": 20261125,
+        "baseline_rate_per_hour": 600.0,
+        "burst_start_s": 420.0,
+        "burst_count": 64,
+        "burst_spacing_s": 0.25,
+        "recovery_rate_per_hour": 600.0,
+        "arm_order": [
+          "live",
+          "arrival",
+          "fixed8k",
+          "fixed4k"
+        ]
+      }
+    }
+  },
+  "config": "configs/p2c_burst_pilot.json",
+  "generated_at": "2026-11-24T20:25:18.141018+00:00"
+}

@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "code"))
 import larb_week8  # noqa: E402,F401
 from larb_week8 import audit, calibrate, config, preview  # noqa: E402
 from larb_week8 import analyze_main  # noqa: E402
-from larb_week8 import runner, traces  # noqa: E402
+from larb_week8 import candidate, runner, traces  # noqa: E402
 from larb_scaled import analysis  # noqa: E402
 
 CLOSE = 151668
@@ -213,9 +213,10 @@ class CalibrationTest(unittest.TestCase):
                     "key": key, "condition": condition, "arm": "live", "class": "signal",
                     "scored": True, "initial_budget": 4096 if index < 10 else 8192,
                     "preemptions": 0, "scheduler_start": submitted + 0.1,
-                    "finished": submitted + 200.0, "cue_start": 50 if index == 19 else None,
+                    "finished": submitted + 200.0,
+                    "cue_start": 50 if index == 19 else (100 if index == 18 else None),
                     "cut_events": ([{"tokens": 100, "budget": 4096}]
-                                   if index < 5 or index == 19 else []),
+                                   if index < 5 or index in (18, 19) else []),
                     "answer_cap": 2048,
                 })
                 clients.append({"key": key, "condition": condition, "arm": "live",
@@ -325,6 +326,68 @@ class RunnerBoundaryTest(unittest.TestCase):
                               1800.0, 600.0)
         self.assertEqual(phase["server_env"]["LARB_ENFORCE_EAGER"], "1")
         self.assertEqual(phase["server_env"]["LARB_CONTRACT"], "legacy")
+
+
+class CandidatePoolTest(unittest.TestCase):
+    """AIME 2025+2026 handoff plumbing: traces, plans, freeze, main plan."""
+
+    def test_calibration_plan_and_context_margin(self):
+        phases = candidate.calibration_plan([600, 1000, 1200])
+        self.assertEqual([p["arm"] for p in phases], ["fixed8k"] * 3)
+        self.assertTrue(all(p["deadline_s"] == 240.0 for p in phases))
+        self.assertTrue(all(100 <= p["request_count"] <= 500 for p in phases))
+        margin = candidate.prompt_margin()
+        self.assertEqual(margin["questions"], 60)
+        self.assertGreater(margin["margin_tokens"], 800)
+
+    def test_calibration_summary_reads_rate_from_condition(self):
+        tools = str(ROOT / "code" / "tools")
+        if tools not in sys.path:
+            sys.path.insert(0, tools)
+        import candidate_phase
+        result = {"band_found": True, "chosen_rate_per_hour": 1000.0,
+                  "rates": [{"condition": "gate-aime-cal-1000", "signal_miss_rate": 0.2},
+                            {"condition": "gate-aime-cal-1025", "signal_miss_rate": 0.95}]}
+        summary = candidate_phase._calibration_summary(result)
+        self.assertEqual(summary["rates"], [1000.0, 1025.0])
+        self.assertTrue(summary["band_found"])
+        self.assertEqual(summary["chosen_rate_per_hour"], 1000.0)
+        unbanded = candidate_phase._calibration_summary(
+            {"band_found": False, "chosen_rate_per_hour": None,
+             "rates": [{"condition": "gate-aime-cal-750"}]})
+        self.assertIsNone(unbanded["chosen_rate_per_hour"])
+
+    def test_freeze_and_main_plan(self):
+        with tempfile.TemporaryDirectory() as folder:
+            temp = Path(folder)
+            originals = (candidate.TRACE_DIR, candidate.MANIFEST_PATH,
+                         candidate.FROZEN_PATH, candidate.SOURCE_LOCK_PATH)
+            candidate.TRACE_DIR = temp / "traces"
+            candidate.MANIFEST_PATH = temp / "traces" / "manifest.json"
+            candidate.FROZEN_PATH = temp / "p2_main_frozen_aime.json"
+            candidate.SOURCE_LOCK_PATH = temp / "source-lock-p2b.json"
+            try:
+                band = {"band_found": True, "chosen_rate_per_hour": 1000.0,
+                        "chosen_miss_rate": 0.22}
+                live = {"pass": True, "cuts": 9, "pressure_fraction": 0.3}
+                packet = candidate.freeze(1000.0, band, live)
+                self.assertEqual(packet["seeds"], 4)
+                self.assertEqual(packet["signal_questions"], 60)
+                self.assertLess(packet["seed_wall_time_estimates"][4]["estimated_inner_hours"], 7.0)
+                phases = candidate.main_plan()
+                self.assertEqual(len(phases), 12)
+                by_name = {phase["name"]: phase for phase in phases}
+                self.assertEqual(by_name["main-low-fixed4k"]["request_count"], 172)
+                self.assertEqual(by_name["main-sustained-fixed8k"]["request_count"], 343)
+                frozen = json.loads(candidate.FROZEN_PATH.read_text())
+                self.assertTrue(frozen["p2_authorised"])
+                frozen["seeds"] = 3
+                candidate.FROZEN_PATH.write_text(json.dumps(frozen))
+                with self.assertRaises(RuntimeError):
+                    candidate.main_plan()
+            finally:
+                (candidate.TRACE_DIR, candidate.MANIFEST_PATH,
+                 candidate.FROZEN_PATH, candidate.SOURCE_LOCK_PATH) = originals
 
 
 if __name__ == "__main__":

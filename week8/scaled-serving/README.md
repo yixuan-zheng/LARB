@@ -1,184 +1,114 @@
-# Week 8 scaled serving: qualification package
+# Week 8 scaled serving
 
-**Status:** the one GPU qualification job ran on 2026-11-16 and **stopped at the
-24-item preview**: the Omni-MATH fallback pool shows no 4k→8k budget slope
-(8/24 at 4k, 7/24 at 8k, -4.2 points; 8k accuracy 29.2%). P2 is not authorised
-and `configs/p2_main_frozen.json` does not exist. See
-[reports/P2A-STATUS.md](reports/P2A-STATUS.md) and `results/p2a/STOP.md`.
+**Status:** complete. The serving-qualification thread closed the sustained-rate
+search (P2B), ran two controlled-burst cut tests (P2C, P3C) and an independent
+admission replication (P3D). The one-way 8k→4k cut is **not advanced**; the
+queue-aware admission rule is the best candidate but is **not confirmed**.
 
-A follow-up in the same allocation explains that result and tests the next
-candidate. [reports/SLOPE-ANALYSIS.md](reports/SLOPE-ANALYSIS.md) shows the
-slope lives in the AIME family (+17.2 points on 87 paired responses, p = 0.0015)
-and not in Omni-MATH, HMMT or the 2025-2026 mix (−2.9 on 69 pairs). The
-pre-declared candidate `aime-2025-2026-v1` then reached **+8.3 points** with
-41.7% at 8k and no derailments, but 20.8% of 8k answers exhausted the
-2,048-token answer allowance, so the gate returns **`inconclusive_grader`** — a
-stop that names the legacy contract, not the pool, as the blocker.
+**Result in one line:** more thinking buys AIME accuracy (4k→8k +18.8 points on
+96 responses, +14.6 under burst), but the rig's capacity is a cliff rather than
+a tunable miss band, and the in-flight cut does not beat admission-only on
+correct-on-time.
 
-An exploratory 48-item run in the same allocation measured **+18.8 points**
-(18/48 → 27/48 at 8k, p = 0.022) and a second seed reproduced it exactly
-(+18.8; 96 responses combined, p = 5.3e-4). Re-measuring the same 24 questions
-inside the 48-item traces reproduced **0 of 48 token sequences** and raised
-their gain from +8.3 to +20.8/+25.0, so the single-wave 24-item trace
-systematically understates the 8k arm. Gate shape and answer space are the next
-pre-measurement decisions, not another measurement of this pool.
+## Key results
 
-
-This folder builds on [week7/scaled-serving](../../week7/scaled-serving/README.md)
-rather than replacing it. The frozen week 7 package remains the rig; this
-package adds the pool decision, the 2023 AIME evidence audit, the Omni-MATH
-fallback pool, the 240 s calibration design, the GPU transition scaffolding and
-the executed qualification record.
+| Result | Evidence |
+|---|---|
+| AIME carries the 4k→8k slope | +17.2 points over 87 historical pairs; +18.8 over 96 AIME 2025+2026 responses (p = 5.3e-4); +14.6 under P2C burst |
+| No 15–40% sustained-miss band at 240 s | 0–1.1% through 1000/h; 95.9% at 1025/h; 56.2% at 1050/h |
+| Admission-only is the best point estimate | P2C 41.7%, P3C 45.0%, P3D 38.9% correct-on-time; but the P3D interval over fixed4k includes zero (+2.8, CI [−3.3, +9.4]) |
+| The cut is not a goodput win | P2C live −2.5 vs arrival; P3C live4k +0.6 and live6k −1.1, with 6–16 cohort accuracy points lost |
+| Full thinking is accurate but late | fixed8k +14.6 accuracy over fixed4k, but only 69.6% on-time in P2C and 76.7% in P3C |
 
 ## Start here
 
 | Document | What it answers |
 |---|---|
-| [reports/P2A-STATUS.md](reports/P2A-STATUS.md) | The GPU verdict: preview stop, why, what is settled, what is open, the next action |
-| [reports/SLOPE-ANALYSIS.md](reports/SLOPE-ANALYSIS.md) | Why the 4k→8k slope disappeared (156 paired responses by family) and the next candidate pool |
-| [reports/P2A-DECISION.md](reports/P2A-DECISION.md) | The qualification decision record: preview numbers, what was not run, open limitations |
-| [reports/POOL-DECISION.md](reports/POOL-DECISION.md) | Does the 2023 AIME intersection carry a slope? Is it a usable main pool? Which fallback pool was pre-declared and why? |
-| [reports/P1-SCREEN-AUDIT.md](reports/P1-SCREEN-AUDIT.md) | Per-pool 4k/6k/8k numbers, the grading-contract defects and the prompt audit |
-| [reports/P2A-QUALIFICATION-PLAN.md](reports/P2A-QUALIFICATION-PLAN.md) | The GPU job order, transition risks, commands and pass/fail records, and how the run was executed |
-| [reports/PRECALIBRATION-240.md](reports/PRECALIBRATION-240.md) | Why the 240 s grid is 600-1200/h and why the CPU simulation is not a point predictor |
-| [configs/qualify.json](configs/qualify.json) | The frozen preview, calibration and live-check rules |
+| [reports/CONSOLIDATED-FINDINGS.md](reports/CONSOLIDATED-FINDINGS.md) | One-page verdict, cycle history, what is established, and the record map |
+| [reports/P2C-RESULT.md](reports/P2C-RESULT.md) | Quality-first burst pilot: pre-declared design, results, decision `inconclusive` |
+| [reports/P3C-PREFILL-RESULT.md](reports/P3C-PREFILL-RESULT.md) | Prefilled-cohort cut stress: pre-declared design and result; the cut's best natural case still ties admission |
+| [reports/P3D-ADMISSION-RESULT.md](reports/P3D-ADMISSION-RESULT.md) | Independent admission replication: pre-declared design and result; direction repeats, magnitude does not |
+| [reports/P2B-CALIBRATION-STOP.md](reports/P2B-CALIBRATION-STOP.md) | Preview authorisation and the 240 s calibration stop |
+| [reports/SLOPE-ANALYSIS.md](reports/SLOPE-ANALYSIS.md) | Why the budget slope is family-dependent, and every AIME pool measurement |
+| [reports/POOL-DECISION.md](reports/POOL-DECISION.md) | The AIME 2025+2026 pool, its power limits, and why Omni-MATH was dropped |
 
-## What was decided before measurement (CPU)
+## What is decided
 
-1. **The 2023 AIME subset is a valid slope witness, not a main pool.** The 24
-   measured AIME 2023 items show +29.2 points from 4k to 8k (6/24 to 13/24),
-   70.8% answer change, 54.2% accuracy at 8k and an 8.3% cap rate. The HMMT
-   2024 half does not carry the slope (+4.2 points) and contains five
-   `\dfrac` grading false negatives. The aggregate P1 screen pass is carried
-   by AIME 2023.
-2. **25 AIME 2023 items cannot resolve 5-6 points.** At 4 seeds the MDE is
-   about 16-21 points. The AIME intersection therefore fails the "credible
-   main pool" test even though it passes the slope test.
-3. **The pre-declared fallback is Omni-MATH hard, `omni-math-hard-v1`.** It is
-   filtered by published difficulty (5.0-8.0), source-diverse (59 sources),
-   self-gradable and context-safe. The cohort is 240 signal items: 216 main,
-   24 preview, 24 escalation, 48 calibration, 92 reused filler.
-4. **The deadline is 240 s.** The P1 180 s calibration has no 15-40% band
-   (0% at 800/h, 74.7% at 931/h). The 240 s grid is 600-1200/h, 25 minutes per
-   rate, with a 10-minute warm-up and a pre-declared one-round refinement.
-5. **The grading rule is stricter than P1.** Exact normalised match first;
-   Math-Verify only when its parse is not lossy. This rejects both the
-   `\dfrac` false negatives and the radical-expression false positive found in
-   the P1 records.
+1. **Pool.** `aime-2025-2026-v1`: AIME 2026 (30 items, `fresh`) + AIME 2025
+   (30 items, `exposed`), all integer-answer, self-gradable and context-safe.
+   48 items were measured in the preview; 12 are held out.
+2. **Rig.** Frozen week 7 package: vLLM 0.11.2, Qwen3-4B rev `1cfa9a72...`,
+   32 slots, 8,192 batched tokens, 12,288 window, eager, no prefix caching,
+   legacy contract with a 2,048-token answer allowance.
+3. **Answer space held constant** at the legacy 2,048-token allowance, so arm
+   differences stay comparable with P1 and P2A. Pool filtering is not applied;
+   it remains an open option with an explicit trigger (8k caps above 20%).
+4. **Power.** 60 questions × 4 seeds give an 80% MDE of roughly 10–13 points at
+   ICC 0.2–0.6. The screening cycles (P2C 240/arm, P3C/P3D 180/arm) have
+   MDEs of roughly 10–16 points. None supports a 3–5-point claim.
+5. **Closed policy.** The current one-way 8k→4k cut is not advanced. Admission
+   needs a powered multi-trace replication before it is called confirmed. A
+   value/deadline-aware cut remains the only untested cut hypothesis.
 
-## Directory map
+## Repository layout
 
-| Path | What it is |
+| Path | Contents |
 |---|---|
-| `code/larb_week8/` | Week 8 pool, traces, preview/calibration analysis, decision, GPU runner and transition check. Imports the frozen week 7 code; does not copy it. |
-| `code/tools/` | `build_omni_pool.py`, `build_traces.py`, `audit_p1_screen.py`, `analyze_slope_history.py`, `build_candidate_pool.py`, `run_candidate_preview.py` |
-| `code/tests/` | Synthetic end-to-end tests for the preview and calibration analyzers |
-| `configs/` | Pool, qualification and withheld P2 draft; `pool_aime_2025_2026.json` is the candidate pre-declaration |
-| `data/` | Raw source snapshot and processed Omni-MATH questions; `data/candidates/` holds the AIME candidate set (gitignored outputs) |
-| `artifacts/` | Cohort, traces, source lock; `artifacts/traces-candidates/` holds the candidate preview traces |
-| `results/`, `logs/` | Local outputs (gitignored): `results/p2a` is the Omni qualification, `results/p2b` the candidate preview |
-| `sbatch/` | Qualification and P2 main scripts, the in-allocation stage scripts and `p2b_candidate_preview.sh`; none submits itself |
+| `configs/` | Frozen configs: `qualify_aime_v1.json`, `pool_aime_2025_2026.json`, `p2c_burst_pilot.json`, `p3c_prefill.json`, `p3c_live6k_fixed.json`, `p3d_admission.json`, plus the historical Omni-MATH configs |
+| `artifacts/` | Candidate `cohort.json` / `questions.jsonl`, hashed traces, and source locks |
+| `artifacts/traces-candidates/` | Preview, second-seed, calibration, P2C burst and P3C prefilled-cohort traces with manifests |
+| `code/larb_week8/` | Pool, traces, preview/calibration analysis, decision, GPU runner, transition check, `pilot.py` (P2C), `prefill.py` (P3C). Imports the frozen week 7 code. |
+| `code/tools/` | Pool/trace builders, slope analysis, candidate stage runner, CPU test driver |
+| `code/tests/` | CPU end-to-end tests for preview, calibration, live, P2C and P3C plumbing |
+| `results/` | Run outputs (gitignored): `p2a/`, `p2b/`, `p2c/`, `p3c/`, `p3d/` and generated decisions |
+| `reports/` | Curated findings: `CONSOLIDATED-FINDINGS.md`, per-cycle results, pool and slope analysis |
+| `sbatch/` | Batch and in-allocation scripts; they never submit themselves |
 
-## CPU checks (login node)
+Generated summaries inside `results/` (`PILOT.md`, `PREFILL.md`,
+`CALIBRATION.md`) are the authoritative per-run tables and decisions.
 
-The one-command reproduction is:
+## Running the code
 
-```sh
-bash week8/scaled-serving/code/tools/run_cpu_all.sh
-```
-
-It rebuilds the pool and traces, runs the P1 audit, the pre-calibration, the
-unit tests and both transition checks, and writes the source lock. The
-individual commands are:
+The code expects the Week 7 package to be present in the same checkout. Set the
+paths for your environment; `PY` runs serving code and `APY` runs analysis code
+(the latter needs `math_verify`).
 
 ```sh
-export ROOT=/home/hice1/jwang3221/scratch/LARB
+export ROOT=/path/to/LARB
 export WEEK8=$ROOT/week8/scaled-serving
 export PYTHONPATH=$WEEK8/code:$ROOT/week7/scaled-serving/code
+export PY=${PY:-python3}    # serving environment
+export APY=${APY:-python3}  # analysis environment with math_verify
 
-# Rebuild the pool and traces
-/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/bin/python \
-  $WEEK8/code/tools/build_omni_pool.py
-/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/bin/python \
-  $WEEK8/code/tools/build_traces.py --stage all
+bash $WEEK8/code/tools/run_cpu_all.sh          # pool, traces, audit, pre-calibration, tests
+$APY -m unittest discover -s $WEEK8/code/tests -p 'test_*.py'
 
-# Evidence audit and pre-calibration
-/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python \
-  $WEEK8/code/tools/audit_p1_screen.py
-python3 -m larb_week8.precalibrate
+# P2C: build traces, plan, run on GPU, analyse
+$APY -m larb_week8.pilot --stage build --which both
+$APY -m larb_week8.pilot --stage plan --which both
+$PY  -m larb_week8.pilot --stage run --which a --out $WEEK8/results/p2c/pilot
+$APY -m larb_week8.pilot --stage analyse --out $WEEK8/results/p2c/pilot
 
-# Tests
-/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python \
-  -m unittest discover -s $WEEK8/code/tests -p 'test_*.py'
+# P3C: prefilled-cohort cut stress
+$APY -m larb_week8.prefill --stage build
+$APY -m larb_week8.prefill --stage plan
+$PY  -m larb_week8.prefill --stage run --out $WEEK8/results/p3c/prefill
+$APY -m larb_week8.prefill --stage analyse --out $WEEK8/results/p3c/prefill
 ```
 
-## GPU qualification (executed; 12 h request if resubmitted)
+`run` refuses to start without `SLURM_JOB_ID` unless `LARB_ALLOW_NO_SLURM=1` is
+set. `analyse` is CPU-only but needs the analysis environment for `math_verify`.
+See [code/README.md](code/README.md) for the module-level map.
 
-```sh
-export LARB_ROOT=$ROOT
-export LARB_PYTHON=/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/bin/python
-export LARB_ANALYSIS_PYTHON=/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python
-export LARB_MODEL_PATH=/storage/ice1/3/0/jwang3221/LARB-week5-env/model/Qwen3-4B
-export LARB_WEEK8_ROOT=$WEEK8
-export LARB_OUT=$WEEK8/results/p2a
-sbatch $WEEK8/sbatch/p2a_qualify.sbatch
-```
+## Limits to carry into the write-up
 
-## What the GPU qualification found
-
-The 24-item preview is the only scored GPU phase that ran, and it stopped the
-line:
-
-| arm | correct | accuracy | cap rate | missing box |
-|---|---:|---:|---:|---:|
-| fixed4k | 8/24 | 0.333 | 0.042 | 0.042 |
-| fixed6k | 7/24 | 0.292 | 0.000 | 0.000 |
-| fixed8k | 7/24 | 0.292 | 0.042 | 0.042 |
-
-Gain 4k→8k **-4.2 points** against a +8.0 pass floor and a +4.0 near-miss
-floor; 8k accuracy below the 0.35 band floor; answer change 62.5% and 8k
-thinking median 8192, so the manipulation fired but did not move accuracy. The
-verdict is robust to the grader (safe 8/7/7, loose 8/8/8, exact 8/7/7). The
-frozen stop rule closed the calibration, refinement and live phases; the record
-is `results/p2a/STOP.md`, `results/p2a/decision.json` and
-`results/p2a/PREVIEW-24.md`.
-
-The run also found and fixed three scaffolding defects that CPU checks could
-not: two undefined code-path exports, a non-string environment value that
-aborted the server spawn, and a forced-cue smoke that did not pin the frozen
-rig (it ran with CUDA graphs on the first attempt). Details are in
-[reports/P2A-QUALIFICATION-PLAN.md](reports/P2A-QUALIFICATION-PLAN.md) §4,
-items 13-15, and each is locked by a unit test.
-
-## Test suite (login node)
-
-```sh
-/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python \
-  -m unittest discover -s week8/scaled-serving/code/tests -p 'test_*.py'
-```
-
-10 tests: preview pass/near-miss/stop, the safe grader, warm-up and band
-handling, cut-after-close, the P2 plan, and the three runner-boundary defects.
-
-## GPU qualification (executed 2026-11-16)
-
-```sh
-export LARB_ROOT=$ROOT
-export LARB_PYTHON=/storage/ice1/3/0/jwang3221/LARB-week5-env/venv/bin/python
-export LARB_ANALYSIS_PYTHON=/storage/ice1/3/0/jwang3221/LARB-week5-env/analysis-venv/bin/python
-export LARB_MODEL_PATH=/storage/ice1/3/0/jwang3221/LARB-week5-env/model/Qwen3-4B
-export LARB_WEEK8_ROOT=$WEEK8
-export LARB_OUT=$WEEK8/results/p2a
-sbatch $WEEK8/sbatch/p2a_qualify.sbatch
-```
-
-The job checks both environments, runs a forced-cue smoke, the 24-item
-preview, the optional 48-item escalation, the 240 s calibration, the live
-check, and then either writes a frozen P2 packet (`GO.md`) or a documented
-stop (`STOP.md`). It never starts P2. No H100 was idle on 2026-11-16, so the
-run used an existing 3 h interactive allocation (`7119809`) with the same
-environment and the same stage layouts; the commands are in
-[reports/P2A-QUALIFICATION-PLAN.md](reports/P2A-QUALIFICATION-PLAN.md) §3. The
-sbatch file requests 12 h with an 11 h inner timeout so a full sequence can
-absorb slow queue drain.
+- One model (Qwen3-4B), one H100, one block; no 3-point claim.
+- 30 of the 60 items are `exposed` (AIME 2025) and 30 are `fresh` (AIME 2026);
+  report the halves separately.
+- 12 items were never used in the preview; report them as the unseen subset.
+- The burst and prefilled-cohort traces are controlled load shapes, not
+  representative service loads.
+- Capped, late, missing or unparseable responses stay in the denominator.
+- Cut counts use `worker.jsonl`; the frozen controller can leave a request
+  record's cut list empty.
 

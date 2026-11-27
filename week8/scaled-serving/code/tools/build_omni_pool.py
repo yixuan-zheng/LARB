@@ -3,8 +3,7 @@
 
 Run with the serving Python (it has ``tokenizers``):
     PYTHONPATH=week8/scaled-serving/code:week7/scaled-serving/code \
-      /storage/.../LARB-week5-env/venv/bin/python \
-      week8/scaled-serving/code/tools/build_omni_pool.py
+      python week8/scaled-serving/code/tools/build_omni_pool.py
 """
 import argparse
 import json

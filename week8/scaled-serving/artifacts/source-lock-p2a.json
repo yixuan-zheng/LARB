@@ -57,7 +57,7 @@
     "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
     "dtype": "bfloat16",
     "local_path_env": "LARB_MODEL_PATH",
-    "local_path_default": "/storage/ice1/3/0/jwang3221/LARB-week5-env/model/Qwen3-4B"
+    "local_path_default": "${LARB_MODEL_PATH}"
   },
   "engine": {
     "vllm": "0.11.2",
